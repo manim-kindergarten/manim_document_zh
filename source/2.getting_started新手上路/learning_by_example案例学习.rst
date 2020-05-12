@@ -26,13 +26,13 @@ example_scenes.py中自定义一个类。
 
 .. code::
 
-    python -m manim  example_scenes.py FirstScene -pl
+    python -m manim  example_scenes.py FirstScene -ps
 
 新版本中，任何py文件只要不选定里面的类（比如FirstScene）
 
 .. code::
 
-   python -m manim  example_scenes.py -pl
+   python -m manim  example_scenes.py -ps
 
 就会让你选：
 
@@ -243,7 +243,7 @@ You can add a :class:`~mobject.mobject.Mobject` to the :class:`~scene.scene.Scen
   例子中， ``transform()``  变换后  ``square``  还是  :class:`~mobject.geometry.Square` 的实例，仅仅是渲染出来圆形外表，还要调用 :class:`~mobject.geometry.Square` 的属性和方法。`03:40动画很清晰 <https://www.bilibili.com/video/BV1W4411Z7Zt?p=11>`_ 。
    
 
-补充一个类似的案例：from ` manim-tutorial <https://github.com/malhotra5/Manim-Tutorial>`_. 
+补充一个类似的案例：from `manim-tutorial <https://github.com/malhotra5/Manim-Tutorial>`_ 。
 
 .. literalinclude:: ../assets/code/manim-tutorial/basics.py
    :linenos:
