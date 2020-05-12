@@ -1,0 +1,37 @@
+
+
+
+
+#from manimlib.extensions.x import * 
+
+from manimlib.extensions.check_formula_by_txt.check_formula_by_txt import *
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

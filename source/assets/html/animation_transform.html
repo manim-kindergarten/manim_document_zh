@@ -1,0 +1,1938 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0036)http://localhost:8080/transform.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style><title>Pydoc: module transform</title>
+
+<link rel="stylesheet" type="text/css" href="./animation_transform_files/_pydoc.css"></head><body bgcolor="#f0f0f8">
+            <div style="float:left">
+                Python 3.7.6 [default, MSC v.1916 64 bit (AMD64)]<br>Windows-10
+            </div>
+            <div style="float:right">
+                <div style="text-align:center">
+                  <a href="">Module Index</a>
+                  : <a href="">Topics</a>
+                  : <a href="">Keywords</a>
+                </div>
+                <div>
+                    <form action="" style="display:inline;">
+                      <input type="text" name="q" size="15">
+                      <input type="submit" value="Get">
+                    </form>&nbsp;
+                    <form action="../../search.html" style="display:inline;">
+                      <input type="text" name="q" size="15">
+                      <input type="submit" value="Search">
+                    </form>
+                </div>
+            </div>
+            <div style="clear:both;padding-top:.5em;">
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="heading">
+<tbody><tr bgcolor="#7799ee">
+<td valign="bottom">&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>transform</strong></big></big></font></td><td align="right" valign="bottom"><font color="#ffffff" face="helvetica, arial"><a href="">index</a><br><a href="">transform.py</a></font></td></tr></tbody></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#aa55cc">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tbody><tr><td width="25%" valign="top"><a href="">inspect</a><br>
+</td><td width="25%" valign="top"><a href="">numpy</a><br>
+</td><td width="25%" valign="top"></td><td width="25%" valign="top"></td></tr></tbody></table></td></tr></tbody></table></p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ee77aa">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="">manimlib.animation.animation.Animation</a>(<a href="">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="">Transform</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="">ApplyFunction</a>
+</font></dt><dt><font face="helvetica, arial"><a href="">ApplyMethod</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="">ApplyComplexFunction</a>
+</font></dt><dt><font face="helvetica, arial"><a href="">ApplyPointwiseFunction</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="">ApplyMatrix</a>
+</font></dt><dt><font face="helvetica, arial"><a href="">ApplyPointwiseFunctionToCenter</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="">FadeToColor</a>
+</font></dt><dt><font face="helvetica, arial"><a href="">Restore</a>
+</font></dt><dt><font face="helvetica, arial"><a href="">ScaleInPlace</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="">ShrinkToCenter</a>
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="">ClockwiseTransform</a>
+</font></dt><dt><font face="helvetica, arial"><a href="">CounterclockwiseTransform</a>
+</font></dt><dt><font face="helvetica, arial"><a href="">CyclicReplace</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="">Swap</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="">MoveToTarget</a>
+</font></dt><dt><font face="helvetica, arial"><a href="">ReplacementTransform</a>
+</font></dt><dt><font face="helvetica, arial"><a href="">TransformAnimations</a>
+</font></dt><dt><font face="helvetica, arial"><a href="">TransformFromCopy</a>
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ApplyComplexFunction">class <strong>ApplyComplexFunction</strong></a>(<a href="">ApplyMethod</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">ApplyComplexFunction</a>(function,&nbsp;mobject,&nbsp;**kwargs)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">ApplyComplexFunction</a></dd>
+<dd><a href="">ApplyMethod</a></dd>
+<dd><a href="">Transform</a></dd>
+<dd><a href="">manimlib.animation.animation.Animation</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ApplyComplexFunction-__init__"><strong>__init__</strong></a>(self, function, mobject, **kwargs)</dt><dd><tt>method&nbsp;is&nbsp;a&nbsp;method&nbsp;of&nbsp;Mobject,&nbsp;*args&nbsp;are&nbsp;arguments&nbsp;for<br>
+that&nbsp;method.&nbsp;&nbsp;Key&nbsp;word&nbsp;arguments&nbsp;should&nbsp;be&nbsp;passed&nbsp;in<br>
+as&nbsp;the&nbsp;last&nbsp;arg,&nbsp;as&nbsp;a&nbsp;dict,&nbsp;since&nbsp;**kwargs&nbsp;is&nbsp;for<br>
+configuration&nbsp;of&nbsp;the&nbsp;transform&nbsp;itslef<br>
+&nbsp;<br>
+Relies&nbsp;on&nbsp;the&nbsp;fact&nbsp;that&nbsp;mobject&nbsp;methods&nbsp;return&nbsp;the&nbsp;mobject</tt></dd></dl>
+
+<dl><dt><a name="ApplyComplexFunction-init_path_func"><strong>init_path_func</strong></a>(self)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">ApplyMethod</a>:<br>
+<dl><dt><a name="ApplyComplexFunction-check_validity_of_input"><strong>check_validity_of_input</strong></a>(self, method)</dt></dl>
+
+<dl><dt><a name="ApplyComplexFunction-create_target"><strong>create_target</strong></a>(self)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">Transform</a>:<br>
+<dl><dt><a name="ApplyComplexFunction-begin"><strong>begin</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyComplexFunction-check_target_mobject_validity"><strong>check_target_mobject_validity</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyComplexFunction-clean_up_from_scene"><strong>clean_up_from_scene</strong></a>(self, scene)</dt></dl>
+
+<dl><dt><a name="ApplyComplexFunction-get_all_families_zipped"><strong>get_all_families_zipped</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyComplexFunction-get_all_mobjects"><strong>get_all_mobjects</strong></a>(self)</dt><dd><tt>Ordering&nbsp;must&nbsp;match&nbsp;the&nbsp;ording&nbsp;of&nbsp;arguments&nbsp;to&nbsp;interpolate_submobject</tt></dd></dl>
+
+<dl><dt><a name="ApplyComplexFunction-interpolate_submobject"><strong>interpolate_submobject</strong></a>(self, submob, start, target_copy, alpha)</dt></dl>
+
+<dl><dt><a name="ApplyComplexFunction-update_config"><strong>update_config</strong></a>(self, **kwargs)</dt></dl>
+
+<hr>
+Data and other attributes inherited from <a href="">Transform</a>:<br>
+<dl><dt><strong>CONFIG</strong> = {'path_arc': 0, 'path_arc_axis': array([0., 0., 1.]), 'path_func': None, 'replace_mobject_with_target_in_scene': False}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><a name="ApplyComplexFunction-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="ApplyComplexFunction-copy"><strong>copy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyComplexFunction-create_starting_mobject"><strong>create_starting_mobject</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyComplexFunction-finish"><strong>finish</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyComplexFunction-get_all_mobjects_to_update"><strong>get_all_mobjects_to_update</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyComplexFunction-get_rate_func"><strong>get_rate_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyComplexFunction-get_run_time"><strong>get_run_time</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyComplexFunction-get_sub_alpha"><strong>get_sub_alpha</strong></a>(self, alpha, index, num_submobjects)</dt></dl>
+
+<dl><dt><a name="ApplyComplexFunction-interpolate"><strong>interpolate</strong></a>(self, alpha)</dt><dd><tt>#&nbsp;Methods&nbsp;for&nbsp;interpolation,&nbsp;the&nbsp;mean&nbsp;of&nbsp;an&nbsp;<a href="">Animation</a></tt></dd></dl>
+
+<dl><dt><a name="ApplyComplexFunction-interpolate_mobject"><strong>interpolate_mobject</strong></a>(self, alpha)</dt></dl>
+
+<dl><dt><a name="ApplyComplexFunction-is_remover"><strong>is_remover</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyComplexFunction-set_name"><strong>set_name</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="ApplyComplexFunction-set_rate_func"><strong>set_rate_func</strong></a>(self, rate_func)</dt></dl>
+
+<dl><dt><a name="ApplyComplexFunction-set_run_time"><strong>set_run_time</strong></a>(self, run_time)</dt><dd><tt>#&nbsp;Getters&nbsp;and&nbsp;setters</tt></dd></dl>
+
+<dl><dt><a name="ApplyComplexFunction-update"><strong>update</strong></a>(self, alpha)</dt><dd><tt>This&nbsp;method&nbsp;shouldn't&nbsp;exist,&nbsp;but&nbsp;it's&nbsp;here&nbsp;to<br>
+keep&nbsp;many&nbsp;old&nbsp;scenes&nbsp;from&nbsp;breaking</tt></dd></dl>
+
+<dl><dt><a name="ApplyComplexFunction-update_mobjects"><strong>update_mobjects</strong></a>(self, dt)</dt><dd><tt>Updates&nbsp;things&nbsp;like&nbsp;starting_mobject,&nbsp;and&nbsp;(for<br>
+Transforms)&nbsp;target_mobject.&nbsp;&nbsp;Note,&nbsp;since&nbsp;typically<br>
+(always?)&nbsp;self.<strong>mobject</strong>&nbsp;will&nbsp;have&nbsp;its&nbsp;updating<br>
+suspended&nbsp;during&nbsp;the&nbsp;animation,&nbsp;this&nbsp;will&nbsp;do<br>
+nothing&nbsp;to&nbsp;self.<strong>mobject</strong>.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ApplyFunction">class <strong>ApplyFunction</strong></a>(<a href="">Transform</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">ApplyFunction</a>(function,&nbsp;mobject,&nbsp;**kwargs)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">ApplyFunction</a></dd>
+<dd><a href="">Transform</a></dd>
+<dd><a href="">manimlib.animation.animation.Animation</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ApplyFunction-__init__"><strong>__init__</strong></a>(self, function, mobject, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="ApplyFunction-create_target"><strong>create_target</strong></a>(self)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">Transform</a>:<br>
+<dl><dt><a name="ApplyFunction-begin"><strong>begin</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyFunction-check_target_mobject_validity"><strong>check_target_mobject_validity</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyFunction-clean_up_from_scene"><strong>clean_up_from_scene</strong></a>(self, scene)</dt></dl>
+
+<dl><dt><a name="ApplyFunction-get_all_families_zipped"><strong>get_all_families_zipped</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyFunction-get_all_mobjects"><strong>get_all_mobjects</strong></a>(self)</dt><dd><tt>Ordering&nbsp;must&nbsp;match&nbsp;the&nbsp;ording&nbsp;of&nbsp;arguments&nbsp;to&nbsp;interpolate_submobject</tt></dd></dl>
+
+<dl><dt><a name="ApplyFunction-init_path_func"><strong>init_path_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyFunction-interpolate_submobject"><strong>interpolate_submobject</strong></a>(self, submob, start, target_copy, alpha)</dt></dl>
+
+<dl><dt><a name="ApplyFunction-update_config"><strong>update_config</strong></a>(self, **kwargs)</dt></dl>
+
+<hr>
+Data and other attributes inherited from <a href="">Transform</a>:<br>
+<dl><dt><strong>CONFIG</strong> = {'path_arc': 0, 'path_arc_axis': array([0., 0., 1.]), 'path_func': None, 'replace_mobject_with_target_in_scene': False}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><a name="ApplyFunction-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="ApplyFunction-copy"><strong>copy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyFunction-create_starting_mobject"><strong>create_starting_mobject</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyFunction-finish"><strong>finish</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyFunction-get_all_mobjects_to_update"><strong>get_all_mobjects_to_update</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyFunction-get_rate_func"><strong>get_rate_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyFunction-get_run_time"><strong>get_run_time</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyFunction-get_sub_alpha"><strong>get_sub_alpha</strong></a>(self, alpha, index, num_submobjects)</dt></dl>
+
+<dl><dt><a name="ApplyFunction-interpolate"><strong>interpolate</strong></a>(self, alpha)</dt><dd><tt>#&nbsp;Methods&nbsp;for&nbsp;interpolation,&nbsp;the&nbsp;mean&nbsp;of&nbsp;an&nbsp;<a href="">Animation</a></tt></dd></dl>
+
+<dl><dt><a name="ApplyFunction-interpolate_mobject"><strong>interpolate_mobject</strong></a>(self, alpha)</dt></dl>
+
+<dl><dt><a name="ApplyFunction-is_remover"><strong>is_remover</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyFunction-set_name"><strong>set_name</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="ApplyFunction-set_rate_func"><strong>set_rate_func</strong></a>(self, rate_func)</dt></dl>
+
+<dl><dt><a name="ApplyFunction-set_run_time"><strong>set_run_time</strong></a>(self, run_time)</dt><dd><tt>#&nbsp;Getters&nbsp;and&nbsp;setters</tt></dd></dl>
+
+<dl><dt><a name="ApplyFunction-update"><strong>update</strong></a>(self, alpha)</dt><dd><tt>This&nbsp;method&nbsp;shouldn't&nbsp;exist,&nbsp;but&nbsp;it's&nbsp;here&nbsp;to<br>
+keep&nbsp;many&nbsp;old&nbsp;scenes&nbsp;from&nbsp;breaking</tt></dd></dl>
+
+<dl><dt><a name="ApplyFunction-update_mobjects"><strong>update_mobjects</strong></a>(self, dt)</dt><dd><tt>Updates&nbsp;things&nbsp;like&nbsp;starting_mobject,&nbsp;and&nbsp;(for<br>
+Transforms)&nbsp;target_mobject.&nbsp;&nbsp;Note,&nbsp;since&nbsp;typically<br>
+(always?)&nbsp;self.<strong>mobject</strong>&nbsp;will&nbsp;have&nbsp;its&nbsp;updating<br>
+suspended&nbsp;during&nbsp;the&nbsp;animation,&nbsp;this&nbsp;will&nbsp;do<br>
+nothing&nbsp;to&nbsp;self.<strong>mobject</strong>.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ApplyMatrix">class <strong>ApplyMatrix</strong></a>(<a href="">ApplyPointwiseFunction</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">ApplyMatrix</a>(matrix,&nbsp;mobject,&nbsp;**kwargs)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">ApplyMatrix</a></dd>
+<dd><a href="">ApplyPointwiseFunction</a></dd>
+<dd><a href="">ApplyMethod</a></dd>
+<dd><a href="">Transform</a></dd>
+<dd><a href="">manimlib.animation.animation.Animation</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ApplyMatrix-__init__"><strong>__init__</strong></a>(self, matrix, mobject, **kwargs)</dt><dd><tt>method&nbsp;is&nbsp;a&nbsp;method&nbsp;of&nbsp;Mobject,&nbsp;*args&nbsp;are&nbsp;arguments&nbsp;for<br>
+that&nbsp;method.&nbsp;&nbsp;Key&nbsp;word&nbsp;arguments&nbsp;should&nbsp;be&nbsp;passed&nbsp;in<br>
+as&nbsp;the&nbsp;last&nbsp;arg,&nbsp;as&nbsp;a&nbsp;dict,&nbsp;since&nbsp;**kwargs&nbsp;is&nbsp;for<br>
+configuration&nbsp;of&nbsp;the&nbsp;transform&nbsp;itslef<br>
+&nbsp;<br>
+Relies&nbsp;on&nbsp;the&nbsp;fact&nbsp;that&nbsp;mobject&nbsp;methods&nbsp;return&nbsp;the&nbsp;mobject</tt></dd></dl>
+
+<dl><dt><a name="ApplyMatrix-initialize_matrix"><strong>initialize_matrix</strong></a>(self, matrix)</dt></dl>
+
+<hr>
+Data and other attributes inherited from <a href="">ApplyPointwiseFunction</a>:<br>
+<dl><dt><strong>CONFIG</strong> = {'run_time': 3.0}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">ApplyMethod</a>:<br>
+<dl><dt><a name="ApplyMatrix-check_validity_of_input"><strong>check_validity_of_input</strong></a>(self, method)</dt></dl>
+
+<dl><dt><a name="ApplyMatrix-create_target"><strong>create_target</strong></a>(self)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">Transform</a>:<br>
+<dl><dt><a name="ApplyMatrix-begin"><strong>begin</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyMatrix-check_target_mobject_validity"><strong>check_target_mobject_validity</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyMatrix-clean_up_from_scene"><strong>clean_up_from_scene</strong></a>(self, scene)</dt></dl>
+
+<dl><dt><a name="ApplyMatrix-get_all_families_zipped"><strong>get_all_families_zipped</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyMatrix-get_all_mobjects"><strong>get_all_mobjects</strong></a>(self)</dt><dd><tt>Ordering&nbsp;must&nbsp;match&nbsp;the&nbsp;ording&nbsp;of&nbsp;arguments&nbsp;to&nbsp;interpolate_submobject</tt></dd></dl>
+
+<dl><dt><a name="ApplyMatrix-init_path_func"><strong>init_path_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyMatrix-interpolate_submobject"><strong>interpolate_submobject</strong></a>(self, submob, start, target_copy, alpha)</dt></dl>
+
+<dl><dt><a name="ApplyMatrix-update_config"><strong>update_config</strong></a>(self, **kwargs)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><a name="ApplyMatrix-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="ApplyMatrix-copy"><strong>copy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyMatrix-create_starting_mobject"><strong>create_starting_mobject</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyMatrix-finish"><strong>finish</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyMatrix-get_all_mobjects_to_update"><strong>get_all_mobjects_to_update</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyMatrix-get_rate_func"><strong>get_rate_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyMatrix-get_run_time"><strong>get_run_time</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyMatrix-get_sub_alpha"><strong>get_sub_alpha</strong></a>(self, alpha, index, num_submobjects)</dt></dl>
+
+<dl><dt><a name="ApplyMatrix-interpolate"><strong>interpolate</strong></a>(self, alpha)</dt><dd><tt>#&nbsp;Methods&nbsp;for&nbsp;interpolation,&nbsp;the&nbsp;mean&nbsp;of&nbsp;an&nbsp;<a href="">Animation</a></tt></dd></dl>
+
+<dl><dt><a name="ApplyMatrix-interpolate_mobject"><strong>interpolate_mobject</strong></a>(self, alpha)</dt></dl>
+
+<dl><dt><a name="ApplyMatrix-is_remover"><strong>is_remover</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyMatrix-set_name"><strong>set_name</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="ApplyMatrix-set_rate_func"><strong>set_rate_func</strong></a>(self, rate_func)</dt></dl>
+
+<dl><dt><a name="ApplyMatrix-set_run_time"><strong>set_run_time</strong></a>(self, run_time)</dt><dd><tt>#&nbsp;Getters&nbsp;and&nbsp;setters</tt></dd></dl>
+
+<dl><dt><a name="ApplyMatrix-update"><strong>update</strong></a>(self, alpha)</dt><dd><tt>This&nbsp;method&nbsp;shouldn't&nbsp;exist,&nbsp;but&nbsp;it's&nbsp;here&nbsp;to<br>
+keep&nbsp;many&nbsp;old&nbsp;scenes&nbsp;from&nbsp;breaking</tt></dd></dl>
+
+<dl><dt><a name="ApplyMatrix-update_mobjects"><strong>update_mobjects</strong></a>(self, dt)</dt><dd><tt>Updates&nbsp;things&nbsp;like&nbsp;starting_mobject,&nbsp;and&nbsp;(for<br>
+Transforms)&nbsp;target_mobject.&nbsp;&nbsp;Note,&nbsp;since&nbsp;typically<br>
+(always?)&nbsp;self.<strong>mobject</strong>&nbsp;will&nbsp;have&nbsp;its&nbsp;updating<br>
+suspended&nbsp;during&nbsp;the&nbsp;animation,&nbsp;this&nbsp;will&nbsp;do<br>
+nothing&nbsp;to&nbsp;self.<strong>mobject</strong>.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ApplyMethod">class <strong>ApplyMethod</strong></a>(<a href="">Transform</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">ApplyMethod</a>(method,&nbsp;*args,&nbsp;**kwargs)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">ApplyMethod</a></dd>
+<dd><a href="">Transform</a></dd>
+<dd><a href="">manimlib.animation.animation.Animation</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ApplyMethod-__init__"><strong>__init__</strong></a>(self, method, *args, **kwargs)</dt><dd><tt>method&nbsp;is&nbsp;a&nbsp;method&nbsp;of&nbsp;Mobject,&nbsp;*args&nbsp;are&nbsp;arguments&nbsp;for<br>
+that&nbsp;method.&nbsp;&nbsp;Key&nbsp;word&nbsp;arguments&nbsp;should&nbsp;be&nbsp;passed&nbsp;in<br>
+as&nbsp;the&nbsp;last&nbsp;arg,&nbsp;as&nbsp;a&nbsp;dict,&nbsp;since&nbsp;**kwargs&nbsp;is&nbsp;for<br>
+configuration&nbsp;of&nbsp;the&nbsp;transform&nbsp;itslef<br>
+&nbsp;<br>
+Relies&nbsp;on&nbsp;the&nbsp;fact&nbsp;that&nbsp;mobject&nbsp;methods&nbsp;return&nbsp;the&nbsp;mobject</tt></dd></dl>
+
+<dl><dt><a name="ApplyMethod-check_validity_of_input"><strong>check_validity_of_input</strong></a>(self, method)</dt></dl>
+
+<dl><dt><a name="ApplyMethod-create_target"><strong>create_target</strong></a>(self)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">Transform</a>:<br>
+<dl><dt><a name="ApplyMethod-begin"><strong>begin</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyMethod-check_target_mobject_validity"><strong>check_target_mobject_validity</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyMethod-clean_up_from_scene"><strong>clean_up_from_scene</strong></a>(self, scene)</dt></dl>
+
+<dl><dt><a name="ApplyMethod-get_all_families_zipped"><strong>get_all_families_zipped</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyMethod-get_all_mobjects"><strong>get_all_mobjects</strong></a>(self)</dt><dd><tt>Ordering&nbsp;must&nbsp;match&nbsp;the&nbsp;ording&nbsp;of&nbsp;arguments&nbsp;to&nbsp;interpolate_submobject</tt></dd></dl>
+
+<dl><dt><a name="ApplyMethod-init_path_func"><strong>init_path_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyMethod-interpolate_submobject"><strong>interpolate_submobject</strong></a>(self, submob, start, target_copy, alpha)</dt></dl>
+
+<dl><dt><a name="ApplyMethod-update_config"><strong>update_config</strong></a>(self, **kwargs)</dt></dl>
+
+<hr>
+Data and other attributes inherited from <a href="">Transform</a>:<br>
+<dl><dt><strong>CONFIG</strong> = {'path_arc': 0, 'path_arc_axis': array([0., 0., 1.]), 'path_func': None, 'replace_mobject_with_target_in_scene': False}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><a name="ApplyMethod-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="ApplyMethod-copy"><strong>copy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyMethod-create_starting_mobject"><strong>create_starting_mobject</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyMethod-finish"><strong>finish</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyMethod-get_all_mobjects_to_update"><strong>get_all_mobjects_to_update</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyMethod-get_rate_func"><strong>get_rate_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyMethod-get_run_time"><strong>get_run_time</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyMethod-get_sub_alpha"><strong>get_sub_alpha</strong></a>(self, alpha, index, num_submobjects)</dt></dl>
+
+<dl><dt><a name="ApplyMethod-interpolate"><strong>interpolate</strong></a>(self, alpha)</dt><dd><tt>#&nbsp;Methods&nbsp;for&nbsp;interpolation,&nbsp;the&nbsp;mean&nbsp;of&nbsp;an&nbsp;<a href="">Animation</a></tt></dd></dl>
+
+<dl><dt><a name="ApplyMethod-interpolate_mobject"><strong>interpolate_mobject</strong></a>(self, alpha)</dt></dl>
+
+<dl><dt><a name="ApplyMethod-is_remover"><strong>is_remover</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyMethod-set_name"><strong>set_name</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="ApplyMethod-set_rate_func"><strong>set_rate_func</strong></a>(self, rate_func)</dt></dl>
+
+<dl><dt><a name="ApplyMethod-set_run_time"><strong>set_run_time</strong></a>(self, run_time)</dt><dd><tt>#&nbsp;Getters&nbsp;and&nbsp;setters</tt></dd></dl>
+
+<dl><dt><a name="ApplyMethod-update"><strong>update</strong></a>(self, alpha)</dt><dd><tt>This&nbsp;method&nbsp;shouldn't&nbsp;exist,&nbsp;but&nbsp;it's&nbsp;here&nbsp;to<br>
+keep&nbsp;many&nbsp;old&nbsp;scenes&nbsp;from&nbsp;breaking</tt></dd></dl>
+
+<dl><dt><a name="ApplyMethod-update_mobjects"><strong>update_mobjects</strong></a>(self, dt)</dt><dd><tt>Updates&nbsp;things&nbsp;like&nbsp;starting_mobject,&nbsp;and&nbsp;(for<br>
+Transforms)&nbsp;target_mobject.&nbsp;&nbsp;Note,&nbsp;since&nbsp;typically<br>
+(always?)&nbsp;self.<strong>mobject</strong>&nbsp;will&nbsp;have&nbsp;its&nbsp;updating<br>
+suspended&nbsp;during&nbsp;the&nbsp;animation,&nbsp;this&nbsp;will&nbsp;do<br>
+nothing&nbsp;to&nbsp;self.<strong>mobject</strong>.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ApplyPointwiseFunction">class <strong>ApplyPointwiseFunction</strong></a>(<a href="">ApplyMethod</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">ApplyPointwiseFunction</a>(function,&nbsp;mobject,&nbsp;**kwargs)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">ApplyPointwiseFunction</a></dd>
+<dd><a href="">ApplyMethod</a></dd>
+<dd><a href="">Transform</a></dd>
+<dd><a href="">manimlib.animation.animation.Animation</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ApplyPointwiseFunction-__init__"><strong>__init__</strong></a>(self, function, mobject, **kwargs)</dt><dd><tt>method&nbsp;is&nbsp;a&nbsp;method&nbsp;of&nbsp;Mobject,&nbsp;*args&nbsp;are&nbsp;arguments&nbsp;for<br>
+that&nbsp;method.&nbsp;&nbsp;Key&nbsp;word&nbsp;arguments&nbsp;should&nbsp;be&nbsp;passed&nbsp;in<br>
+as&nbsp;the&nbsp;last&nbsp;arg,&nbsp;as&nbsp;a&nbsp;dict,&nbsp;since&nbsp;**kwargs&nbsp;is&nbsp;for<br>
+configuration&nbsp;of&nbsp;the&nbsp;transform&nbsp;itslef<br>
+&nbsp;<br>
+Relies&nbsp;on&nbsp;the&nbsp;fact&nbsp;that&nbsp;mobject&nbsp;methods&nbsp;return&nbsp;the&nbsp;mobject</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>CONFIG</strong> = {'run_time': 3.0}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">ApplyMethod</a>:<br>
+<dl><dt><a name="ApplyPointwiseFunction-check_validity_of_input"><strong>check_validity_of_input</strong></a>(self, method)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunction-create_target"><strong>create_target</strong></a>(self)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">Transform</a>:<br>
+<dl><dt><a name="ApplyPointwiseFunction-begin"><strong>begin</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunction-check_target_mobject_validity"><strong>check_target_mobject_validity</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunction-clean_up_from_scene"><strong>clean_up_from_scene</strong></a>(self, scene)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunction-get_all_families_zipped"><strong>get_all_families_zipped</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunction-get_all_mobjects"><strong>get_all_mobjects</strong></a>(self)</dt><dd><tt>Ordering&nbsp;must&nbsp;match&nbsp;the&nbsp;ording&nbsp;of&nbsp;arguments&nbsp;to&nbsp;interpolate_submobject</tt></dd></dl>
+
+<dl><dt><a name="ApplyPointwiseFunction-init_path_func"><strong>init_path_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunction-interpolate_submobject"><strong>interpolate_submobject</strong></a>(self, submob, start, target_copy, alpha)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunction-update_config"><strong>update_config</strong></a>(self, **kwargs)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><a name="ApplyPointwiseFunction-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="ApplyPointwiseFunction-copy"><strong>copy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunction-create_starting_mobject"><strong>create_starting_mobject</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunction-finish"><strong>finish</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunction-get_all_mobjects_to_update"><strong>get_all_mobjects_to_update</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunction-get_rate_func"><strong>get_rate_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunction-get_run_time"><strong>get_run_time</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunction-get_sub_alpha"><strong>get_sub_alpha</strong></a>(self, alpha, index, num_submobjects)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunction-interpolate"><strong>interpolate</strong></a>(self, alpha)</dt><dd><tt>#&nbsp;Methods&nbsp;for&nbsp;interpolation,&nbsp;the&nbsp;mean&nbsp;of&nbsp;an&nbsp;<a href="">Animation</a></tt></dd></dl>
+
+<dl><dt><a name="ApplyPointwiseFunction-interpolate_mobject"><strong>interpolate_mobject</strong></a>(self, alpha)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunction-is_remover"><strong>is_remover</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunction-set_name"><strong>set_name</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunction-set_rate_func"><strong>set_rate_func</strong></a>(self, rate_func)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunction-set_run_time"><strong>set_run_time</strong></a>(self, run_time)</dt><dd><tt>#&nbsp;Getters&nbsp;and&nbsp;setters</tt></dd></dl>
+
+<dl><dt><a name="ApplyPointwiseFunction-update"><strong>update</strong></a>(self, alpha)</dt><dd><tt>This&nbsp;method&nbsp;shouldn't&nbsp;exist,&nbsp;but&nbsp;it's&nbsp;here&nbsp;to<br>
+keep&nbsp;many&nbsp;old&nbsp;scenes&nbsp;from&nbsp;breaking</tt></dd></dl>
+
+<dl><dt><a name="ApplyPointwiseFunction-update_mobjects"><strong>update_mobjects</strong></a>(self, dt)</dt><dd><tt>Updates&nbsp;things&nbsp;like&nbsp;starting_mobject,&nbsp;and&nbsp;(for<br>
+Transforms)&nbsp;target_mobject.&nbsp;&nbsp;Note,&nbsp;since&nbsp;typically<br>
+(always?)&nbsp;self.<strong>mobject</strong>&nbsp;will&nbsp;have&nbsp;its&nbsp;updating<br>
+suspended&nbsp;during&nbsp;the&nbsp;animation,&nbsp;this&nbsp;will&nbsp;do<br>
+nothing&nbsp;to&nbsp;self.<strong>mobject</strong>.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ApplyPointwiseFunctionToCenter">class <strong>ApplyPointwiseFunctionToCenter</strong></a>(<a href="">ApplyPointwiseFunction</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">ApplyPointwiseFunctionToCenter</a>(function,&nbsp;mobject,&nbsp;**kwargs)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">ApplyPointwiseFunctionToCenter</a></dd>
+<dd><a href="">ApplyPointwiseFunction</a></dd>
+<dd><a href="">ApplyMethod</a></dd>
+<dd><a href="">Transform</a></dd>
+<dd><a href="">manimlib.animation.animation.Animation</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-__init__"><strong>__init__</strong></a>(self, function, mobject, **kwargs)</dt><dd><tt>method&nbsp;is&nbsp;a&nbsp;method&nbsp;of&nbsp;Mobject,&nbsp;*args&nbsp;are&nbsp;arguments&nbsp;for<br>
+that&nbsp;method.&nbsp;&nbsp;Key&nbsp;word&nbsp;arguments&nbsp;should&nbsp;be&nbsp;passed&nbsp;in<br>
+as&nbsp;the&nbsp;last&nbsp;arg,&nbsp;as&nbsp;a&nbsp;dict,&nbsp;since&nbsp;**kwargs&nbsp;is&nbsp;for<br>
+configuration&nbsp;of&nbsp;the&nbsp;transform&nbsp;itslef<br>
+&nbsp;<br>
+Relies&nbsp;on&nbsp;the&nbsp;fact&nbsp;that&nbsp;mobject&nbsp;methods&nbsp;return&nbsp;the&nbsp;mobject</tt></dd></dl>
+
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-begin"><strong>begin</strong></a>(self)</dt></dl>
+
+<hr>
+Data and other attributes inherited from <a href="">ApplyPointwiseFunction</a>:<br>
+<dl><dt><strong>CONFIG</strong> = {'run_time': 3.0}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">ApplyMethod</a>:<br>
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-check_validity_of_input"><strong>check_validity_of_input</strong></a>(self, method)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-create_target"><strong>create_target</strong></a>(self)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">Transform</a>:<br>
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-check_target_mobject_validity"><strong>check_target_mobject_validity</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-clean_up_from_scene"><strong>clean_up_from_scene</strong></a>(self, scene)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-get_all_families_zipped"><strong>get_all_families_zipped</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-get_all_mobjects"><strong>get_all_mobjects</strong></a>(self)</dt><dd><tt>Ordering&nbsp;must&nbsp;match&nbsp;the&nbsp;ording&nbsp;of&nbsp;arguments&nbsp;to&nbsp;interpolate_submobject</tt></dd></dl>
+
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-init_path_func"><strong>init_path_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-interpolate_submobject"><strong>interpolate_submobject</strong></a>(self, submob, start, target_copy, alpha)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-update_config"><strong>update_config</strong></a>(self, **kwargs)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-copy"><strong>copy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-create_starting_mobject"><strong>create_starting_mobject</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-finish"><strong>finish</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-get_all_mobjects_to_update"><strong>get_all_mobjects_to_update</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-get_rate_func"><strong>get_rate_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-get_run_time"><strong>get_run_time</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-get_sub_alpha"><strong>get_sub_alpha</strong></a>(self, alpha, index, num_submobjects)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-interpolate"><strong>interpolate</strong></a>(self, alpha)</dt><dd><tt>#&nbsp;Methods&nbsp;for&nbsp;interpolation,&nbsp;the&nbsp;mean&nbsp;of&nbsp;an&nbsp;<a href="">Animation</a></tt></dd></dl>
+
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-interpolate_mobject"><strong>interpolate_mobject</strong></a>(self, alpha)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-is_remover"><strong>is_remover</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-set_name"><strong>set_name</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-set_rate_func"><strong>set_rate_func</strong></a>(self, rate_func)</dt></dl>
+
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-set_run_time"><strong>set_run_time</strong></a>(self, run_time)</dt><dd><tt>#&nbsp;Getters&nbsp;and&nbsp;setters</tt></dd></dl>
+
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-update"><strong>update</strong></a>(self, alpha)</dt><dd><tt>This&nbsp;method&nbsp;shouldn't&nbsp;exist,&nbsp;but&nbsp;it's&nbsp;here&nbsp;to<br>
+keep&nbsp;many&nbsp;old&nbsp;scenes&nbsp;from&nbsp;breaking</tt></dd></dl>
+
+<dl><dt><a name="ApplyPointwiseFunctionToCenter-update_mobjects"><strong>update_mobjects</strong></a>(self, dt)</dt><dd><tt>Updates&nbsp;things&nbsp;like&nbsp;starting_mobject,&nbsp;and&nbsp;(for<br>
+Transforms)&nbsp;target_mobject.&nbsp;&nbsp;Note,&nbsp;since&nbsp;typically<br>
+(always?)&nbsp;self.<strong>mobject</strong>&nbsp;will&nbsp;have&nbsp;its&nbsp;updating<br>
+suspended&nbsp;during&nbsp;the&nbsp;animation,&nbsp;this&nbsp;will&nbsp;do<br>
+nothing&nbsp;to&nbsp;self.<strong>mobject</strong>.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ClockwiseTransform">class <strong>ClockwiseTransform</strong></a>(<a href="">Transform</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">ClockwiseTransform</a>(mobject,&nbsp;target_mobject=None,&nbsp;**kwargs)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">ClockwiseTransform</a></dd>
+<dd><a href="">Transform</a></dd>
+<dd><a href="">manimlib.animation.animation.Animation</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>CONFIG</strong> = {'path_arc': -3.141592653589793}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">Transform</a>:<br>
+<dl><dt><a name="ClockwiseTransform-__init__"><strong>__init__</strong></a>(self, mobject, target_mobject=None, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="ClockwiseTransform-begin"><strong>begin</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ClockwiseTransform-check_target_mobject_validity"><strong>check_target_mobject_validity</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ClockwiseTransform-clean_up_from_scene"><strong>clean_up_from_scene</strong></a>(self, scene)</dt></dl>
+
+<dl><dt><a name="ClockwiseTransform-create_target"><strong>create_target</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ClockwiseTransform-get_all_families_zipped"><strong>get_all_families_zipped</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ClockwiseTransform-get_all_mobjects"><strong>get_all_mobjects</strong></a>(self)</dt><dd><tt>Ordering&nbsp;must&nbsp;match&nbsp;the&nbsp;ording&nbsp;of&nbsp;arguments&nbsp;to&nbsp;interpolate_submobject</tt></dd></dl>
+
+<dl><dt><a name="ClockwiseTransform-init_path_func"><strong>init_path_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ClockwiseTransform-interpolate_submobject"><strong>interpolate_submobject</strong></a>(self, submob, start, target_copy, alpha)</dt></dl>
+
+<dl><dt><a name="ClockwiseTransform-update_config"><strong>update_config</strong></a>(self, **kwargs)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><a name="ClockwiseTransform-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="ClockwiseTransform-copy"><strong>copy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ClockwiseTransform-create_starting_mobject"><strong>create_starting_mobject</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ClockwiseTransform-finish"><strong>finish</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ClockwiseTransform-get_all_mobjects_to_update"><strong>get_all_mobjects_to_update</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ClockwiseTransform-get_rate_func"><strong>get_rate_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ClockwiseTransform-get_run_time"><strong>get_run_time</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ClockwiseTransform-get_sub_alpha"><strong>get_sub_alpha</strong></a>(self, alpha, index, num_submobjects)</dt></dl>
+
+<dl><dt><a name="ClockwiseTransform-interpolate"><strong>interpolate</strong></a>(self, alpha)</dt><dd><tt>#&nbsp;Methods&nbsp;for&nbsp;interpolation,&nbsp;the&nbsp;mean&nbsp;of&nbsp;an&nbsp;<a href="">Animation</a></tt></dd></dl>
+
+<dl><dt><a name="ClockwiseTransform-interpolate_mobject"><strong>interpolate_mobject</strong></a>(self, alpha)</dt></dl>
+
+<dl><dt><a name="ClockwiseTransform-is_remover"><strong>is_remover</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ClockwiseTransform-set_name"><strong>set_name</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="ClockwiseTransform-set_rate_func"><strong>set_rate_func</strong></a>(self, rate_func)</dt></dl>
+
+<dl><dt><a name="ClockwiseTransform-set_run_time"><strong>set_run_time</strong></a>(self, run_time)</dt><dd><tt>#&nbsp;Getters&nbsp;and&nbsp;setters</tt></dd></dl>
+
+<dl><dt><a name="ClockwiseTransform-update"><strong>update</strong></a>(self, alpha)</dt><dd><tt>This&nbsp;method&nbsp;shouldn't&nbsp;exist,&nbsp;but&nbsp;it's&nbsp;here&nbsp;to<br>
+keep&nbsp;many&nbsp;old&nbsp;scenes&nbsp;from&nbsp;breaking</tt></dd></dl>
+
+<dl><dt><a name="ClockwiseTransform-update_mobjects"><strong>update_mobjects</strong></a>(self, dt)</dt><dd><tt>Updates&nbsp;things&nbsp;like&nbsp;starting_mobject,&nbsp;and&nbsp;(for<br>
+Transforms)&nbsp;target_mobject.&nbsp;&nbsp;Note,&nbsp;since&nbsp;typically<br>
+(always?)&nbsp;self.<strong>mobject</strong>&nbsp;will&nbsp;have&nbsp;its&nbsp;updating<br>
+suspended&nbsp;during&nbsp;the&nbsp;animation,&nbsp;this&nbsp;will&nbsp;do<br>
+nothing&nbsp;to&nbsp;self.<strong>mobject</strong>.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CounterclockwiseTransform">class <strong>CounterclockwiseTransform</strong></a>(<a href="">Transform</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">CounterclockwiseTransform</a>(mobject,&nbsp;target_mobject=None,&nbsp;**kwargs)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">CounterclockwiseTransform</a></dd>
+<dd><a href="">Transform</a></dd>
+<dd><a href="">manimlib.animation.animation.Animation</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>CONFIG</strong> = {'path_arc': 3.141592653589793}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">Transform</a>:<br>
+<dl><dt><a name="CounterclockwiseTransform-__init__"><strong>__init__</strong></a>(self, mobject, target_mobject=None, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="CounterclockwiseTransform-begin"><strong>begin</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CounterclockwiseTransform-check_target_mobject_validity"><strong>check_target_mobject_validity</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CounterclockwiseTransform-clean_up_from_scene"><strong>clean_up_from_scene</strong></a>(self, scene)</dt></dl>
+
+<dl><dt><a name="CounterclockwiseTransform-create_target"><strong>create_target</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CounterclockwiseTransform-get_all_families_zipped"><strong>get_all_families_zipped</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CounterclockwiseTransform-get_all_mobjects"><strong>get_all_mobjects</strong></a>(self)</dt><dd><tt>Ordering&nbsp;must&nbsp;match&nbsp;the&nbsp;ording&nbsp;of&nbsp;arguments&nbsp;to&nbsp;interpolate_submobject</tt></dd></dl>
+
+<dl><dt><a name="CounterclockwiseTransform-init_path_func"><strong>init_path_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CounterclockwiseTransform-interpolate_submobject"><strong>interpolate_submobject</strong></a>(self, submob, start, target_copy, alpha)</dt></dl>
+
+<dl><dt><a name="CounterclockwiseTransform-update_config"><strong>update_config</strong></a>(self, **kwargs)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><a name="CounterclockwiseTransform-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="CounterclockwiseTransform-copy"><strong>copy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CounterclockwiseTransform-create_starting_mobject"><strong>create_starting_mobject</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CounterclockwiseTransform-finish"><strong>finish</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CounterclockwiseTransform-get_all_mobjects_to_update"><strong>get_all_mobjects_to_update</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CounterclockwiseTransform-get_rate_func"><strong>get_rate_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CounterclockwiseTransform-get_run_time"><strong>get_run_time</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CounterclockwiseTransform-get_sub_alpha"><strong>get_sub_alpha</strong></a>(self, alpha, index, num_submobjects)</dt></dl>
+
+<dl><dt><a name="CounterclockwiseTransform-interpolate"><strong>interpolate</strong></a>(self, alpha)</dt><dd><tt>#&nbsp;Methods&nbsp;for&nbsp;interpolation,&nbsp;the&nbsp;mean&nbsp;of&nbsp;an&nbsp;<a href="">Animation</a></tt></dd></dl>
+
+<dl><dt><a name="CounterclockwiseTransform-interpolate_mobject"><strong>interpolate_mobject</strong></a>(self, alpha)</dt></dl>
+
+<dl><dt><a name="CounterclockwiseTransform-is_remover"><strong>is_remover</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CounterclockwiseTransform-set_name"><strong>set_name</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="CounterclockwiseTransform-set_rate_func"><strong>set_rate_func</strong></a>(self, rate_func)</dt></dl>
+
+<dl><dt><a name="CounterclockwiseTransform-set_run_time"><strong>set_run_time</strong></a>(self, run_time)</dt><dd><tt>#&nbsp;Getters&nbsp;and&nbsp;setters</tt></dd></dl>
+
+<dl><dt><a name="CounterclockwiseTransform-update"><strong>update</strong></a>(self, alpha)</dt><dd><tt>This&nbsp;method&nbsp;shouldn't&nbsp;exist,&nbsp;but&nbsp;it's&nbsp;here&nbsp;to<br>
+keep&nbsp;many&nbsp;old&nbsp;scenes&nbsp;from&nbsp;breaking</tt></dd></dl>
+
+<dl><dt><a name="CounterclockwiseTransform-update_mobjects"><strong>update_mobjects</strong></a>(self, dt)</dt><dd><tt>Updates&nbsp;things&nbsp;like&nbsp;starting_mobject,&nbsp;and&nbsp;(for<br>
+Transforms)&nbsp;target_mobject.&nbsp;&nbsp;Note,&nbsp;since&nbsp;typically<br>
+(always?)&nbsp;self.<strong>mobject</strong>&nbsp;will&nbsp;have&nbsp;its&nbsp;updating<br>
+suspended&nbsp;during&nbsp;the&nbsp;animation,&nbsp;this&nbsp;will&nbsp;do<br>
+nothing&nbsp;to&nbsp;self.<strong>mobject</strong>.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CyclicReplace">class <strong>CyclicReplace</strong></a>(<a href="">Transform</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">CyclicReplace</a>(*mobjects,&nbsp;**kwargs)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">CyclicReplace</a></dd>
+<dd><a href="">Transform</a></dd>
+<dd><a href="">manimlib.animation.animation.Animation</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="CyclicReplace-__init__"><strong>__init__</strong></a>(self, *mobjects, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="CyclicReplace-create_target"><strong>create_target</strong></a>(self)</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>CONFIG</strong> = {'path_arc': 1.5707963267948966}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">Transform</a>:<br>
+<dl><dt><a name="CyclicReplace-begin"><strong>begin</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CyclicReplace-check_target_mobject_validity"><strong>check_target_mobject_validity</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CyclicReplace-clean_up_from_scene"><strong>clean_up_from_scene</strong></a>(self, scene)</dt></dl>
+
+<dl><dt><a name="CyclicReplace-get_all_families_zipped"><strong>get_all_families_zipped</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CyclicReplace-get_all_mobjects"><strong>get_all_mobjects</strong></a>(self)</dt><dd><tt>Ordering&nbsp;must&nbsp;match&nbsp;the&nbsp;ording&nbsp;of&nbsp;arguments&nbsp;to&nbsp;interpolate_submobject</tt></dd></dl>
+
+<dl><dt><a name="CyclicReplace-init_path_func"><strong>init_path_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CyclicReplace-interpolate_submobject"><strong>interpolate_submobject</strong></a>(self, submob, start, target_copy, alpha)</dt></dl>
+
+<dl><dt><a name="CyclicReplace-update_config"><strong>update_config</strong></a>(self, **kwargs)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><a name="CyclicReplace-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="CyclicReplace-copy"><strong>copy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CyclicReplace-create_starting_mobject"><strong>create_starting_mobject</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CyclicReplace-finish"><strong>finish</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CyclicReplace-get_all_mobjects_to_update"><strong>get_all_mobjects_to_update</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CyclicReplace-get_rate_func"><strong>get_rate_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CyclicReplace-get_run_time"><strong>get_run_time</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CyclicReplace-get_sub_alpha"><strong>get_sub_alpha</strong></a>(self, alpha, index, num_submobjects)</dt></dl>
+
+<dl><dt><a name="CyclicReplace-interpolate"><strong>interpolate</strong></a>(self, alpha)</dt><dd><tt>#&nbsp;Methods&nbsp;for&nbsp;interpolation,&nbsp;the&nbsp;mean&nbsp;of&nbsp;an&nbsp;<a href="">Animation</a></tt></dd></dl>
+
+<dl><dt><a name="CyclicReplace-interpolate_mobject"><strong>interpolate_mobject</strong></a>(self, alpha)</dt></dl>
+
+<dl><dt><a name="CyclicReplace-is_remover"><strong>is_remover</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CyclicReplace-set_name"><strong>set_name</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="CyclicReplace-set_rate_func"><strong>set_rate_func</strong></a>(self, rate_func)</dt></dl>
+
+<dl><dt><a name="CyclicReplace-set_run_time"><strong>set_run_time</strong></a>(self, run_time)</dt><dd><tt>#&nbsp;Getters&nbsp;and&nbsp;setters</tt></dd></dl>
+
+<dl><dt><a name="CyclicReplace-update"><strong>update</strong></a>(self, alpha)</dt><dd><tt>This&nbsp;method&nbsp;shouldn't&nbsp;exist,&nbsp;but&nbsp;it's&nbsp;here&nbsp;to<br>
+keep&nbsp;many&nbsp;old&nbsp;scenes&nbsp;from&nbsp;breaking</tt></dd></dl>
+
+<dl><dt><a name="CyclicReplace-update_mobjects"><strong>update_mobjects</strong></a>(self, dt)</dt><dd><tt>Updates&nbsp;things&nbsp;like&nbsp;starting_mobject,&nbsp;and&nbsp;(for<br>
+Transforms)&nbsp;target_mobject.&nbsp;&nbsp;Note,&nbsp;since&nbsp;typically<br>
+(always?)&nbsp;self.<strong>mobject</strong>&nbsp;will&nbsp;have&nbsp;its&nbsp;updating<br>
+suspended&nbsp;during&nbsp;the&nbsp;animation,&nbsp;this&nbsp;will&nbsp;do<br>
+nothing&nbsp;to&nbsp;self.<strong>mobject</strong>.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="FadeToColor">class <strong>FadeToColor</strong></a>(<a href="">ApplyMethod</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">FadeToColor</a>(mobject,&nbsp;color,&nbsp;**kwargs)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">FadeToColor</a></dd>
+<dd><a href="">ApplyMethod</a></dd>
+<dd><a href="">Transform</a></dd>
+<dd><a href="">manimlib.animation.animation.Animation</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="FadeToColor-__init__"><strong>__init__</strong></a>(self, mobject, color, **kwargs)</dt><dd><tt>method&nbsp;is&nbsp;a&nbsp;method&nbsp;of&nbsp;Mobject,&nbsp;*args&nbsp;are&nbsp;arguments&nbsp;for<br>
+that&nbsp;method.&nbsp;&nbsp;Key&nbsp;word&nbsp;arguments&nbsp;should&nbsp;be&nbsp;passed&nbsp;in<br>
+as&nbsp;the&nbsp;last&nbsp;arg,&nbsp;as&nbsp;a&nbsp;dict,&nbsp;since&nbsp;**kwargs&nbsp;is&nbsp;for<br>
+configuration&nbsp;of&nbsp;the&nbsp;transform&nbsp;itslef<br>
+&nbsp;<br>
+Relies&nbsp;on&nbsp;the&nbsp;fact&nbsp;that&nbsp;mobject&nbsp;methods&nbsp;return&nbsp;the&nbsp;mobject</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="">ApplyMethod</a>:<br>
+<dl><dt><a name="FadeToColor-check_validity_of_input"><strong>check_validity_of_input</strong></a>(self, method)</dt></dl>
+
+<dl><dt><a name="FadeToColor-create_target"><strong>create_target</strong></a>(self)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">Transform</a>:<br>
+<dl><dt><a name="FadeToColor-begin"><strong>begin</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="FadeToColor-check_target_mobject_validity"><strong>check_target_mobject_validity</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="FadeToColor-clean_up_from_scene"><strong>clean_up_from_scene</strong></a>(self, scene)</dt></dl>
+
+<dl><dt><a name="FadeToColor-get_all_families_zipped"><strong>get_all_families_zipped</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="FadeToColor-get_all_mobjects"><strong>get_all_mobjects</strong></a>(self)</dt><dd><tt>Ordering&nbsp;must&nbsp;match&nbsp;the&nbsp;ording&nbsp;of&nbsp;arguments&nbsp;to&nbsp;interpolate_submobject</tt></dd></dl>
+
+<dl><dt><a name="FadeToColor-init_path_func"><strong>init_path_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="FadeToColor-interpolate_submobject"><strong>interpolate_submobject</strong></a>(self, submob, start, target_copy, alpha)</dt></dl>
+
+<dl><dt><a name="FadeToColor-update_config"><strong>update_config</strong></a>(self, **kwargs)</dt></dl>
+
+<hr>
+Data and other attributes inherited from <a href="">Transform</a>:<br>
+<dl><dt><strong>CONFIG</strong> = {'path_arc': 0, 'path_arc_axis': array([0., 0., 1.]), 'path_func': None, 'replace_mobject_with_target_in_scene': False}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><a name="FadeToColor-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="FadeToColor-copy"><strong>copy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="FadeToColor-create_starting_mobject"><strong>create_starting_mobject</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="FadeToColor-finish"><strong>finish</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="FadeToColor-get_all_mobjects_to_update"><strong>get_all_mobjects_to_update</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="FadeToColor-get_rate_func"><strong>get_rate_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="FadeToColor-get_run_time"><strong>get_run_time</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="FadeToColor-get_sub_alpha"><strong>get_sub_alpha</strong></a>(self, alpha, index, num_submobjects)</dt></dl>
+
+<dl><dt><a name="FadeToColor-interpolate"><strong>interpolate</strong></a>(self, alpha)</dt><dd><tt>#&nbsp;Methods&nbsp;for&nbsp;interpolation,&nbsp;the&nbsp;mean&nbsp;of&nbsp;an&nbsp;<a href="">Animation</a></tt></dd></dl>
+
+<dl><dt><a name="FadeToColor-interpolate_mobject"><strong>interpolate_mobject</strong></a>(self, alpha)</dt></dl>
+
+<dl><dt><a name="FadeToColor-is_remover"><strong>is_remover</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="FadeToColor-set_name"><strong>set_name</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="FadeToColor-set_rate_func"><strong>set_rate_func</strong></a>(self, rate_func)</dt></dl>
+
+<dl><dt><a name="FadeToColor-set_run_time"><strong>set_run_time</strong></a>(self, run_time)</dt><dd><tt>#&nbsp;Getters&nbsp;and&nbsp;setters</tt></dd></dl>
+
+<dl><dt><a name="FadeToColor-update"><strong>update</strong></a>(self, alpha)</dt><dd><tt>This&nbsp;method&nbsp;shouldn't&nbsp;exist,&nbsp;but&nbsp;it's&nbsp;here&nbsp;to<br>
+keep&nbsp;many&nbsp;old&nbsp;scenes&nbsp;from&nbsp;breaking</tt></dd></dl>
+
+<dl><dt><a name="FadeToColor-update_mobjects"><strong>update_mobjects</strong></a>(self, dt)</dt><dd><tt>Updates&nbsp;things&nbsp;like&nbsp;starting_mobject,&nbsp;and&nbsp;(for<br>
+Transforms)&nbsp;target_mobject.&nbsp;&nbsp;Note,&nbsp;since&nbsp;typically<br>
+(always?)&nbsp;self.<strong>mobject</strong>&nbsp;will&nbsp;have&nbsp;its&nbsp;updating<br>
+suspended&nbsp;during&nbsp;the&nbsp;animation,&nbsp;this&nbsp;will&nbsp;do<br>
+nothing&nbsp;to&nbsp;self.<strong>mobject</strong>.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="MoveToTarget">class <strong>MoveToTarget</strong></a>(<a href="">Transform</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">MoveToTarget</a>(mobject,&nbsp;**kwargs)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">MoveToTarget</a></dd>
+<dd><a href="">Transform</a></dd>
+<dd><a href="">manimlib.animation.animation.Animation</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="MoveToTarget-__init__"><strong>__init__</strong></a>(self, mobject, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="MoveToTarget-check_validity_of_input"><strong>check_validity_of_input</strong></a>(self, mobject)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">Transform</a>:<br>
+<dl><dt><a name="MoveToTarget-begin"><strong>begin</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MoveToTarget-check_target_mobject_validity"><strong>check_target_mobject_validity</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MoveToTarget-clean_up_from_scene"><strong>clean_up_from_scene</strong></a>(self, scene)</dt></dl>
+
+<dl><dt><a name="MoveToTarget-create_target"><strong>create_target</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MoveToTarget-get_all_families_zipped"><strong>get_all_families_zipped</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MoveToTarget-get_all_mobjects"><strong>get_all_mobjects</strong></a>(self)</dt><dd><tt>Ordering&nbsp;must&nbsp;match&nbsp;the&nbsp;ording&nbsp;of&nbsp;arguments&nbsp;to&nbsp;interpolate_submobject</tt></dd></dl>
+
+<dl><dt><a name="MoveToTarget-init_path_func"><strong>init_path_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MoveToTarget-interpolate_submobject"><strong>interpolate_submobject</strong></a>(self, submob, start, target_copy, alpha)</dt></dl>
+
+<dl><dt><a name="MoveToTarget-update_config"><strong>update_config</strong></a>(self, **kwargs)</dt></dl>
+
+<hr>
+Data and other attributes inherited from <a href="">Transform</a>:<br>
+<dl><dt><strong>CONFIG</strong> = {'path_arc': 0, 'path_arc_axis': array([0., 0., 1.]), 'path_func': None, 'replace_mobject_with_target_in_scene': False}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><a name="MoveToTarget-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="MoveToTarget-copy"><strong>copy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MoveToTarget-create_starting_mobject"><strong>create_starting_mobject</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MoveToTarget-finish"><strong>finish</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MoveToTarget-get_all_mobjects_to_update"><strong>get_all_mobjects_to_update</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MoveToTarget-get_rate_func"><strong>get_rate_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MoveToTarget-get_run_time"><strong>get_run_time</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MoveToTarget-get_sub_alpha"><strong>get_sub_alpha</strong></a>(self, alpha, index, num_submobjects)</dt></dl>
+
+<dl><dt><a name="MoveToTarget-interpolate"><strong>interpolate</strong></a>(self, alpha)</dt><dd><tt>#&nbsp;Methods&nbsp;for&nbsp;interpolation,&nbsp;the&nbsp;mean&nbsp;of&nbsp;an&nbsp;<a href="">Animation</a></tt></dd></dl>
+
+<dl><dt><a name="MoveToTarget-interpolate_mobject"><strong>interpolate_mobject</strong></a>(self, alpha)</dt></dl>
+
+<dl><dt><a name="MoveToTarget-is_remover"><strong>is_remover</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MoveToTarget-set_name"><strong>set_name</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="MoveToTarget-set_rate_func"><strong>set_rate_func</strong></a>(self, rate_func)</dt></dl>
+
+<dl><dt><a name="MoveToTarget-set_run_time"><strong>set_run_time</strong></a>(self, run_time)</dt><dd><tt>#&nbsp;Getters&nbsp;and&nbsp;setters</tt></dd></dl>
+
+<dl><dt><a name="MoveToTarget-update"><strong>update</strong></a>(self, alpha)</dt><dd><tt>This&nbsp;method&nbsp;shouldn't&nbsp;exist,&nbsp;but&nbsp;it's&nbsp;here&nbsp;to<br>
+keep&nbsp;many&nbsp;old&nbsp;scenes&nbsp;from&nbsp;breaking</tt></dd></dl>
+
+<dl><dt><a name="MoveToTarget-update_mobjects"><strong>update_mobjects</strong></a>(self, dt)</dt><dd><tt>Updates&nbsp;things&nbsp;like&nbsp;starting_mobject,&nbsp;and&nbsp;(for<br>
+Transforms)&nbsp;target_mobject.&nbsp;&nbsp;Note,&nbsp;since&nbsp;typically<br>
+(always?)&nbsp;self.<strong>mobject</strong>&nbsp;will&nbsp;have&nbsp;its&nbsp;updating<br>
+suspended&nbsp;during&nbsp;the&nbsp;animation,&nbsp;this&nbsp;will&nbsp;do<br>
+nothing&nbsp;to&nbsp;self.<strong>mobject</strong>.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ReplacementTransform">class <strong>ReplacementTransform</strong></a>(<a href="">Transform</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">ReplacementTransform</a>(mobject,&nbsp;target_mobject=None,&nbsp;**kwargs)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">ReplacementTransform</a></dd>
+<dd><a href="">Transform</a></dd>
+<dd><a href="">manimlib.animation.animation.Animation</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>CONFIG</strong> = {'replace_mobject_with_target_in_scene': True}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">Transform</a>:<br>
+<dl><dt><a name="ReplacementTransform-__init__"><strong>__init__</strong></a>(self, mobject, target_mobject=None, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="ReplacementTransform-begin"><strong>begin</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ReplacementTransform-check_target_mobject_validity"><strong>check_target_mobject_validity</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ReplacementTransform-clean_up_from_scene"><strong>clean_up_from_scene</strong></a>(self, scene)</dt></dl>
+
+<dl><dt><a name="ReplacementTransform-create_target"><strong>create_target</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ReplacementTransform-get_all_families_zipped"><strong>get_all_families_zipped</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ReplacementTransform-get_all_mobjects"><strong>get_all_mobjects</strong></a>(self)</dt><dd><tt>Ordering&nbsp;must&nbsp;match&nbsp;the&nbsp;ording&nbsp;of&nbsp;arguments&nbsp;to&nbsp;interpolate_submobject</tt></dd></dl>
+
+<dl><dt><a name="ReplacementTransform-init_path_func"><strong>init_path_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ReplacementTransform-interpolate_submobject"><strong>interpolate_submobject</strong></a>(self, submob, start, target_copy, alpha)</dt></dl>
+
+<dl><dt><a name="ReplacementTransform-update_config"><strong>update_config</strong></a>(self, **kwargs)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><a name="ReplacementTransform-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="ReplacementTransform-copy"><strong>copy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ReplacementTransform-create_starting_mobject"><strong>create_starting_mobject</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ReplacementTransform-finish"><strong>finish</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ReplacementTransform-get_all_mobjects_to_update"><strong>get_all_mobjects_to_update</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ReplacementTransform-get_rate_func"><strong>get_rate_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ReplacementTransform-get_run_time"><strong>get_run_time</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ReplacementTransform-get_sub_alpha"><strong>get_sub_alpha</strong></a>(self, alpha, index, num_submobjects)</dt></dl>
+
+<dl><dt><a name="ReplacementTransform-interpolate"><strong>interpolate</strong></a>(self, alpha)</dt><dd><tt>#&nbsp;Methods&nbsp;for&nbsp;interpolation,&nbsp;the&nbsp;mean&nbsp;of&nbsp;an&nbsp;<a href="">Animation</a></tt></dd></dl>
+
+<dl><dt><a name="ReplacementTransform-interpolate_mobject"><strong>interpolate_mobject</strong></a>(self, alpha)</dt></dl>
+
+<dl><dt><a name="ReplacementTransform-is_remover"><strong>is_remover</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ReplacementTransform-set_name"><strong>set_name</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="ReplacementTransform-set_rate_func"><strong>set_rate_func</strong></a>(self, rate_func)</dt></dl>
+
+<dl><dt><a name="ReplacementTransform-set_run_time"><strong>set_run_time</strong></a>(self, run_time)</dt><dd><tt>#&nbsp;Getters&nbsp;and&nbsp;setters</tt></dd></dl>
+
+<dl><dt><a name="ReplacementTransform-update"><strong>update</strong></a>(self, alpha)</dt><dd><tt>This&nbsp;method&nbsp;shouldn't&nbsp;exist,&nbsp;but&nbsp;it's&nbsp;here&nbsp;to<br>
+keep&nbsp;many&nbsp;old&nbsp;scenes&nbsp;from&nbsp;breaking</tt></dd></dl>
+
+<dl><dt><a name="ReplacementTransform-update_mobjects"><strong>update_mobjects</strong></a>(self, dt)</dt><dd><tt>Updates&nbsp;things&nbsp;like&nbsp;starting_mobject,&nbsp;and&nbsp;(for<br>
+Transforms)&nbsp;target_mobject.&nbsp;&nbsp;Note,&nbsp;since&nbsp;typically<br>
+(always?)&nbsp;self.<strong>mobject</strong>&nbsp;will&nbsp;have&nbsp;its&nbsp;updating<br>
+suspended&nbsp;during&nbsp;the&nbsp;animation,&nbsp;this&nbsp;will&nbsp;do<br>
+nothing&nbsp;to&nbsp;self.<strong>mobject</strong>.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Restore">class <strong>Restore</strong></a>(<a href="">ApplyMethod</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">Restore</a>(mobject,&nbsp;**kwargs)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">Restore</a></dd>
+<dd><a href="">ApplyMethod</a></dd>
+<dd><a href="">Transform</a></dd>
+<dd><a href="">manimlib.animation.animation.Animation</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Restore-__init__"><strong>__init__</strong></a>(self, mobject, **kwargs)</dt><dd><tt>method&nbsp;is&nbsp;a&nbsp;method&nbsp;of&nbsp;Mobject,&nbsp;*args&nbsp;are&nbsp;arguments&nbsp;for<br>
+that&nbsp;method.&nbsp;&nbsp;Key&nbsp;word&nbsp;arguments&nbsp;should&nbsp;be&nbsp;passed&nbsp;in<br>
+as&nbsp;the&nbsp;last&nbsp;arg,&nbsp;as&nbsp;a&nbsp;dict,&nbsp;since&nbsp;**kwargs&nbsp;is&nbsp;for<br>
+configuration&nbsp;of&nbsp;the&nbsp;transform&nbsp;itslef<br>
+&nbsp;<br>
+Relies&nbsp;on&nbsp;the&nbsp;fact&nbsp;that&nbsp;mobject&nbsp;methods&nbsp;return&nbsp;the&nbsp;mobject</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="">ApplyMethod</a>:<br>
+<dl><dt><a name="Restore-check_validity_of_input"><strong>check_validity_of_input</strong></a>(self, method)</dt></dl>
+
+<dl><dt><a name="Restore-create_target"><strong>create_target</strong></a>(self)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">Transform</a>:<br>
+<dl><dt><a name="Restore-begin"><strong>begin</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Restore-check_target_mobject_validity"><strong>check_target_mobject_validity</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Restore-clean_up_from_scene"><strong>clean_up_from_scene</strong></a>(self, scene)</dt></dl>
+
+<dl><dt><a name="Restore-get_all_families_zipped"><strong>get_all_families_zipped</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Restore-get_all_mobjects"><strong>get_all_mobjects</strong></a>(self)</dt><dd><tt>Ordering&nbsp;must&nbsp;match&nbsp;the&nbsp;ording&nbsp;of&nbsp;arguments&nbsp;to&nbsp;interpolate_submobject</tt></dd></dl>
+
+<dl><dt><a name="Restore-init_path_func"><strong>init_path_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Restore-interpolate_submobject"><strong>interpolate_submobject</strong></a>(self, submob, start, target_copy, alpha)</dt></dl>
+
+<dl><dt><a name="Restore-update_config"><strong>update_config</strong></a>(self, **kwargs)</dt></dl>
+
+<hr>
+Data and other attributes inherited from <a href="">Transform</a>:<br>
+<dl><dt><strong>CONFIG</strong> = {'path_arc': 0, 'path_arc_axis': array([0., 0., 1.]), 'path_func': None, 'replace_mobject_with_target_in_scene': False}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><a name="Restore-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="Restore-copy"><strong>copy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Restore-create_starting_mobject"><strong>create_starting_mobject</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Restore-finish"><strong>finish</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Restore-get_all_mobjects_to_update"><strong>get_all_mobjects_to_update</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Restore-get_rate_func"><strong>get_rate_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Restore-get_run_time"><strong>get_run_time</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Restore-get_sub_alpha"><strong>get_sub_alpha</strong></a>(self, alpha, index, num_submobjects)</dt></dl>
+
+<dl><dt><a name="Restore-interpolate"><strong>interpolate</strong></a>(self, alpha)</dt><dd><tt>#&nbsp;Methods&nbsp;for&nbsp;interpolation,&nbsp;the&nbsp;mean&nbsp;of&nbsp;an&nbsp;<a href="">Animation</a></tt></dd></dl>
+
+<dl><dt><a name="Restore-interpolate_mobject"><strong>interpolate_mobject</strong></a>(self, alpha)</dt></dl>
+
+<dl><dt><a name="Restore-is_remover"><strong>is_remover</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Restore-set_name"><strong>set_name</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="Restore-set_rate_func"><strong>set_rate_func</strong></a>(self, rate_func)</dt></dl>
+
+<dl><dt><a name="Restore-set_run_time"><strong>set_run_time</strong></a>(self, run_time)</dt><dd><tt>#&nbsp;Getters&nbsp;and&nbsp;setters</tt></dd></dl>
+
+<dl><dt><a name="Restore-update"><strong>update</strong></a>(self, alpha)</dt><dd><tt>This&nbsp;method&nbsp;shouldn't&nbsp;exist,&nbsp;but&nbsp;it's&nbsp;here&nbsp;to<br>
+keep&nbsp;many&nbsp;old&nbsp;scenes&nbsp;from&nbsp;breaking</tt></dd></dl>
+
+<dl><dt><a name="Restore-update_mobjects"><strong>update_mobjects</strong></a>(self, dt)</dt><dd><tt>Updates&nbsp;things&nbsp;like&nbsp;starting_mobject,&nbsp;and&nbsp;(for<br>
+Transforms)&nbsp;target_mobject.&nbsp;&nbsp;Note,&nbsp;since&nbsp;typically<br>
+(always?)&nbsp;self.<strong>mobject</strong>&nbsp;will&nbsp;have&nbsp;its&nbsp;updating<br>
+suspended&nbsp;during&nbsp;the&nbsp;animation,&nbsp;this&nbsp;will&nbsp;do<br>
+nothing&nbsp;to&nbsp;self.<strong>mobject</strong>.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ScaleInPlace">class <strong>ScaleInPlace</strong></a>(<a href="">ApplyMethod</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">ScaleInPlace</a>(mobject,&nbsp;scale_factor,&nbsp;**kwargs)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">ScaleInPlace</a></dd>
+<dd><a href="">ApplyMethod</a></dd>
+<dd><a href="">Transform</a></dd>
+<dd><a href="">manimlib.animation.animation.Animation</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ScaleInPlace-__init__"><strong>__init__</strong></a>(self, mobject, scale_factor, **kwargs)</dt><dd><tt>method&nbsp;is&nbsp;a&nbsp;method&nbsp;of&nbsp;Mobject,&nbsp;*args&nbsp;are&nbsp;arguments&nbsp;for<br>
+that&nbsp;method.&nbsp;&nbsp;Key&nbsp;word&nbsp;arguments&nbsp;should&nbsp;be&nbsp;passed&nbsp;in<br>
+as&nbsp;the&nbsp;last&nbsp;arg,&nbsp;as&nbsp;a&nbsp;dict,&nbsp;since&nbsp;**kwargs&nbsp;is&nbsp;for<br>
+configuration&nbsp;of&nbsp;the&nbsp;transform&nbsp;itslef<br>
+&nbsp;<br>
+Relies&nbsp;on&nbsp;the&nbsp;fact&nbsp;that&nbsp;mobject&nbsp;methods&nbsp;return&nbsp;the&nbsp;mobject</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="">ApplyMethod</a>:<br>
+<dl><dt><a name="ScaleInPlace-check_validity_of_input"><strong>check_validity_of_input</strong></a>(self, method)</dt></dl>
+
+<dl><dt><a name="ScaleInPlace-create_target"><strong>create_target</strong></a>(self)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">Transform</a>:<br>
+<dl><dt><a name="ScaleInPlace-begin"><strong>begin</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ScaleInPlace-check_target_mobject_validity"><strong>check_target_mobject_validity</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ScaleInPlace-clean_up_from_scene"><strong>clean_up_from_scene</strong></a>(self, scene)</dt></dl>
+
+<dl><dt><a name="ScaleInPlace-get_all_families_zipped"><strong>get_all_families_zipped</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ScaleInPlace-get_all_mobjects"><strong>get_all_mobjects</strong></a>(self)</dt><dd><tt>Ordering&nbsp;must&nbsp;match&nbsp;the&nbsp;ording&nbsp;of&nbsp;arguments&nbsp;to&nbsp;interpolate_submobject</tt></dd></dl>
+
+<dl><dt><a name="ScaleInPlace-init_path_func"><strong>init_path_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ScaleInPlace-interpolate_submobject"><strong>interpolate_submobject</strong></a>(self, submob, start, target_copy, alpha)</dt></dl>
+
+<dl><dt><a name="ScaleInPlace-update_config"><strong>update_config</strong></a>(self, **kwargs)</dt></dl>
+
+<hr>
+Data and other attributes inherited from <a href="">Transform</a>:<br>
+<dl><dt><strong>CONFIG</strong> = {'path_arc': 0, 'path_arc_axis': array([0., 0., 1.]), 'path_func': None, 'replace_mobject_with_target_in_scene': False}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><a name="ScaleInPlace-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="ScaleInPlace-copy"><strong>copy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ScaleInPlace-create_starting_mobject"><strong>create_starting_mobject</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ScaleInPlace-finish"><strong>finish</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ScaleInPlace-get_all_mobjects_to_update"><strong>get_all_mobjects_to_update</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ScaleInPlace-get_rate_func"><strong>get_rate_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ScaleInPlace-get_run_time"><strong>get_run_time</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ScaleInPlace-get_sub_alpha"><strong>get_sub_alpha</strong></a>(self, alpha, index, num_submobjects)</dt></dl>
+
+<dl><dt><a name="ScaleInPlace-interpolate"><strong>interpolate</strong></a>(self, alpha)</dt><dd><tt>#&nbsp;Methods&nbsp;for&nbsp;interpolation,&nbsp;the&nbsp;mean&nbsp;of&nbsp;an&nbsp;<a href="">Animation</a></tt></dd></dl>
+
+<dl><dt><a name="ScaleInPlace-interpolate_mobject"><strong>interpolate_mobject</strong></a>(self, alpha)</dt></dl>
+
+<dl><dt><a name="ScaleInPlace-is_remover"><strong>is_remover</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ScaleInPlace-set_name"><strong>set_name</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="ScaleInPlace-set_rate_func"><strong>set_rate_func</strong></a>(self, rate_func)</dt></dl>
+
+<dl><dt><a name="ScaleInPlace-set_run_time"><strong>set_run_time</strong></a>(self, run_time)</dt><dd><tt>#&nbsp;Getters&nbsp;and&nbsp;setters</tt></dd></dl>
+
+<dl><dt><a name="ScaleInPlace-update"><strong>update</strong></a>(self, alpha)</dt><dd><tt>This&nbsp;method&nbsp;shouldn't&nbsp;exist,&nbsp;but&nbsp;it's&nbsp;here&nbsp;to<br>
+keep&nbsp;many&nbsp;old&nbsp;scenes&nbsp;from&nbsp;breaking</tt></dd></dl>
+
+<dl><dt><a name="ScaleInPlace-update_mobjects"><strong>update_mobjects</strong></a>(self, dt)</dt><dd><tt>Updates&nbsp;things&nbsp;like&nbsp;starting_mobject,&nbsp;and&nbsp;(for<br>
+Transforms)&nbsp;target_mobject.&nbsp;&nbsp;Note,&nbsp;since&nbsp;typically<br>
+(always?)&nbsp;self.<strong>mobject</strong>&nbsp;will&nbsp;have&nbsp;its&nbsp;updating<br>
+suspended&nbsp;during&nbsp;the&nbsp;animation,&nbsp;this&nbsp;will&nbsp;do<br>
+nothing&nbsp;to&nbsp;self.<strong>mobject</strong>.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ShrinkToCenter">class <strong>ShrinkToCenter</strong></a>(<a href="">ScaleInPlace</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">ShrinkToCenter</a>(mobject,&nbsp;**kwargs)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">ShrinkToCenter</a></dd>
+<dd><a href="">ScaleInPlace</a></dd>
+<dd><a href="">ApplyMethod</a></dd>
+<dd><a href="">Transform</a></dd>
+<dd><a href="">manimlib.animation.animation.Animation</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ShrinkToCenter-__init__"><strong>__init__</strong></a>(self, mobject, **kwargs)</dt><dd><tt>method&nbsp;is&nbsp;a&nbsp;method&nbsp;of&nbsp;Mobject,&nbsp;*args&nbsp;are&nbsp;arguments&nbsp;for<br>
+that&nbsp;method.&nbsp;&nbsp;Key&nbsp;word&nbsp;arguments&nbsp;should&nbsp;be&nbsp;passed&nbsp;in<br>
+as&nbsp;the&nbsp;last&nbsp;arg,&nbsp;as&nbsp;a&nbsp;dict,&nbsp;since&nbsp;**kwargs&nbsp;is&nbsp;for<br>
+configuration&nbsp;of&nbsp;the&nbsp;transform&nbsp;itslef<br>
+&nbsp;<br>
+Relies&nbsp;on&nbsp;the&nbsp;fact&nbsp;that&nbsp;mobject&nbsp;methods&nbsp;return&nbsp;the&nbsp;mobject</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="">ApplyMethod</a>:<br>
+<dl><dt><a name="ShrinkToCenter-check_validity_of_input"><strong>check_validity_of_input</strong></a>(self, method)</dt></dl>
+
+<dl><dt><a name="ShrinkToCenter-create_target"><strong>create_target</strong></a>(self)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">Transform</a>:<br>
+<dl><dt><a name="ShrinkToCenter-begin"><strong>begin</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ShrinkToCenter-check_target_mobject_validity"><strong>check_target_mobject_validity</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ShrinkToCenter-clean_up_from_scene"><strong>clean_up_from_scene</strong></a>(self, scene)</dt></dl>
+
+<dl><dt><a name="ShrinkToCenter-get_all_families_zipped"><strong>get_all_families_zipped</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ShrinkToCenter-get_all_mobjects"><strong>get_all_mobjects</strong></a>(self)</dt><dd><tt>Ordering&nbsp;must&nbsp;match&nbsp;the&nbsp;ording&nbsp;of&nbsp;arguments&nbsp;to&nbsp;interpolate_submobject</tt></dd></dl>
+
+<dl><dt><a name="ShrinkToCenter-init_path_func"><strong>init_path_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ShrinkToCenter-interpolate_submobject"><strong>interpolate_submobject</strong></a>(self, submob, start, target_copy, alpha)</dt></dl>
+
+<dl><dt><a name="ShrinkToCenter-update_config"><strong>update_config</strong></a>(self, **kwargs)</dt></dl>
+
+<hr>
+Data and other attributes inherited from <a href="">Transform</a>:<br>
+<dl><dt><strong>CONFIG</strong> = {'path_arc': 0, 'path_arc_axis': array([0., 0., 1.]), 'path_func': None, 'replace_mobject_with_target_in_scene': False}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><a name="ShrinkToCenter-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="ShrinkToCenter-copy"><strong>copy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ShrinkToCenter-create_starting_mobject"><strong>create_starting_mobject</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ShrinkToCenter-finish"><strong>finish</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ShrinkToCenter-get_all_mobjects_to_update"><strong>get_all_mobjects_to_update</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ShrinkToCenter-get_rate_func"><strong>get_rate_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ShrinkToCenter-get_run_time"><strong>get_run_time</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ShrinkToCenter-get_sub_alpha"><strong>get_sub_alpha</strong></a>(self, alpha, index, num_submobjects)</dt></dl>
+
+<dl><dt><a name="ShrinkToCenter-interpolate"><strong>interpolate</strong></a>(self, alpha)</dt><dd><tt>#&nbsp;Methods&nbsp;for&nbsp;interpolation,&nbsp;the&nbsp;mean&nbsp;of&nbsp;an&nbsp;<a href="">Animation</a></tt></dd></dl>
+
+<dl><dt><a name="ShrinkToCenter-interpolate_mobject"><strong>interpolate_mobject</strong></a>(self, alpha)</dt></dl>
+
+<dl><dt><a name="ShrinkToCenter-is_remover"><strong>is_remover</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ShrinkToCenter-set_name"><strong>set_name</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="ShrinkToCenter-set_rate_func"><strong>set_rate_func</strong></a>(self, rate_func)</dt></dl>
+
+<dl><dt><a name="ShrinkToCenter-set_run_time"><strong>set_run_time</strong></a>(self, run_time)</dt><dd><tt>#&nbsp;Getters&nbsp;and&nbsp;setters</tt></dd></dl>
+
+<dl><dt><a name="ShrinkToCenter-update"><strong>update</strong></a>(self, alpha)</dt><dd><tt>This&nbsp;method&nbsp;shouldn't&nbsp;exist,&nbsp;but&nbsp;it's&nbsp;here&nbsp;to<br>
+keep&nbsp;many&nbsp;old&nbsp;scenes&nbsp;from&nbsp;breaking</tt></dd></dl>
+
+<dl><dt><a name="ShrinkToCenter-update_mobjects"><strong>update_mobjects</strong></a>(self, dt)</dt><dd><tt>Updates&nbsp;things&nbsp;like&nbsp;starting_mobject,&nbsp;and&nbsp;(for<br>
+Transforms)&nbsp;target_mobject.&nbsp;&nbsp;Note,&nbsp;since&nbsp;typically<br>
+(always?)&nbsp;self.<strong>mobject</strong>&nbsp;will&nbsp;have&nbsp;its&nbsp;updating<br>
+suspended&nbsp;during&nbsp;the&nbsp;animation,&nbsp;this&nbsp;will&nbsp;do<br>
+nothing&nbsp;to&nbsp;self.<strong>mobject</strong>.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Swap">class <strong>Swap</strong></a>(<a href="">CyclicReplace</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">Swap</a>(*mobjects,&nbsp;**kwargs)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">Swap</a></dd>
+<dd><a href="">CyclicReplace</a></dd>
+<dd><a href="">Transform</a></dd>
+<dd><a href="">manimlib.animation.animation.Animation</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods inherited from <a href="">CyclicReplace</a>:<br>
+<dl><dt><a name="Swap-__init__"><strong>__init__</strong></a>(self, *mobjects, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Swap-create_target"><strong>create_target</strong></a>(self)</dt></dl>
+
+<hr>
+Data and other attributes inherited from <a href="">CyclicReplace</a>:<br>
+<dl><dt><strong>CONFIG</strong> = {'path_arc': 1.5707963267948966}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">Transform</a>:<br>
+<dl><dt><a name="Swap-begin"><strong>begin</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Swap-check_target_mobject_validity"><strong>check_target_mobject_validity</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Swap-clean_up_from_scene"><strong>clean_up_from_scene</strong></a>(self, scene)</dt></dl>
+
+<dl><dt><a name="Swap-get_all_families_zipped"><strong>get_all_families_zipped</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Swap-get_all_mobjects"><strong>get_all_mobjects</strong></a>(self)</dt><dd><tt>Ordering&nbsp;must&nbsp;match&nbsp;the&nbsp;ording&nbsp;of&nbsp;arguments&nbsp;to&nbsp;interpolate_submobject</tt></dd></dl>
+
+<dl><dt><a name="Swap-init_path_func"><strong>init_path_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Swap-interpolate_submobject"><strong>interpolate_submobject</strong></a>(self, submob, start, target_copy, alpha)</dt></dl>
+
+<dl><dt><a name="Swap-update_config"><strong>update_config</strong></a>(self, **kwargs)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><a name="Swap-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="Swap-copy"><strong>copy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Swap-create_starting_mobject"><strong>create_starting_mobject</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Swap-finish"><strong>finish</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Swap-get_all_mobjects_to_update"><strong>get_all_mobjects_to_update</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Swap-get_rate_func"><strong>get_rate_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Swap-get_run_time"><strong>get_run_time</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Swap-get_sub_alpha"><strong>get_sub_alpha</strong></a>(self, alpha, index, num_submobjects)</dt></dl>
+
+<dl><dt><a name="Swap-interpolate"><strong>interpolate</strong></a>(self, alpha)</dt><dd><tt>#&nbsp;Methods&nbsp;for&nbsp;interpolation,&nbsp;the&nbsp;mean&nbsp;of&nbsp;an&nbsp;<a href="">Animation</a></tt></dd></dl>
+
+<dl><dt><a name="Swap-interpolate_mobject"><strong>interpolate_mobject</strong></a>(self, alpha)</dt></dl>
+
+<dl><dt><a name="Swap-is_remover"><strong>is_remover</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Swap-set_name"><strong>set_name</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="Swap-set_rate_func"><strong>set_rate_func</strong></a>(self, rate_func)</dt></dl>
+
+<dl><dt><a name="Swap-set_run_time"><strong>set_run_time</strong></a>(self, run_time)</dt><dd><tt>#&nbsp;Getters&nbsp;and&nbsp;setters</tt></dd></dl>
+
+<dl><dt><a name="Swap-update"><strong>update</strong></a>(self, alpha)</dt><dd><tt>This&nbsp;method&nbsp;shouldn't&nbsp;exist,&nbsp;but&nbsp;it's&nbsp;here&nbsp;to<br>
+keep&nbsp;many&nbsp;old&nbsp;scenes&nbsp;from&nbsp;breaking</tt></dd></dl>
+
+<dl><dt><a name="Swap-update_mobjects"><strong>update_mobjects</strong></a>(self, dt)</dt><dd><tt>Updates&nbsp;things&nbsp;like&nbsp;starting_mobject,&nbsp;and&nbsp;(for<br>
+Transforms)&nbsp;target_mobject.&nbsp;&nbsp;Note,&nbsp;since&nbsp;typically<br>
+(always?)&nbsp;self.<strong>mobject</strong>&nbsp;will&nbsp;have&nbsp;its&nbsp;updating<br>
+suspended&nbsp;during&nbsp;the&nbsp;animation,&nbsp;this&nbsp;will&nbsp;do<br>
+nothing&nbsp;to&nbsp;self.<strong>mobject</strong>.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Transform">class <strong>Transform</strong></a>(<a href="">manimlib.animation.animation.Animation</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">Transform</a>(mobject,&nbsp;target_mobject=None,&nbsp;**kwargs)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">Transform</a></dd>
+<dd><a href="">manimlib.animation.animation.Animation</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Transform-__init__"><strong>__init__</strong></a>(self, mobject, target_mobject=None, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Transform-begin"><strong>begin</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Transform-check_target_mobject_validity"><strong>check_target_mobject_validity</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Transform-clean_up_from_scene"><strong>clean_up_from_scene</strong></a>(self, scene)</dt></dl>
+
+<dl><dt><a name="Transform-create_target"><strong>create_target</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Transform-get_all_families_zipped"><strong>get_all_families_zipped</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Transform-get_all_mobjects"><strong>get_all_mobjects</strong></a>(self)</dt><dd><tt>Ordering&nbsp;must&nbsp;match&nbsp;the&nbsp;ording&nbsp;of&nbsp;arguments&nbsp;to&nbsp;interpolate_submobject</tt></dd></dl>
+
+<dl><dt><a name="Transform-init_path_func"><strong>init_path_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Transform-interpolate_submobject"><strong>interpolate_submobject</strong></a>(self, submob, start, target_copy, alpha)</dt></dl>
+
+<dl><dt><a name="Transform-update_config"><strong>update_config</strong></a>(self, **kwargs)</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>CONFIG</strong> = {'path_arc': 0, 'path_arc_axis': array([0., 0., 1.]), 'path_func': None, 'replace_mobject_with_target_in_scene': False}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><a name="Transform-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="Transform-copy"><strong>copy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Transform-create_starting_mobject"><strong>create_starting_mobject</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Transform-finish"><strong>finish</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Transform-get_all_mobjects_to_update"><strong>get_all_mobjects_to_update</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Transform-get_rate_func"><strong>get_rate_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Transform-get_run_time"><strong>get_run_time</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Transform-get_sub_alpha"><strong>get_sub_alpha</strong></a>(self, alpha, index, num_submobjects)</dt></dl>
+
+<dl><dt><a name="Transform-interpolate"><strong>interpolate</strong></a>(self, alpha)</dt><dd><tt>#&nbsp;Methods&nbsp;for&nbsp;interpolation,&nbsp;the&nbsp;mean&nbsp;of&nbsp;an&nbsp;<a href="">Animation</a></tt></dd></dl>
+
+<dl><dt><a name="Transform-interpolate_mobject"><strong>interpolate_mobject</strong></a>(self, alpha)</dt></dl>
+
+<dl><dt><a name="Transform-is_remover"><strong>is_remover</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Transform-set_name"><strong>set_name</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="Transform-set_rate_func"><strong>set_rate_func</strong></a>(self, rate_func)</dt></dl>
+
+<dl><dt><a name="Transform-set_run_time"><strong>set_run_time</strong></a>(self, run_time)</dt><dd><tt>#&nbsp;Getters&nbsp;and&nbsp;setters</tt></dd></dl>
+
+<dl><dt><a name="Transform-update"><strong>update</strong></a>(self, alpha)</dt><dd><tt>This&nbsp;method&nbsp;shouldn't&nbsp;exist,&nbsp;but&nbsp;it's&nbsp;here&nbsp;to<br>
+keep&nbsp;many&nbsp;old&nbsp;scenes&nbsp;from&nbsp;breaking</tt></dd></dl>
+
+<dl><dt><a name="Transform-update_mobjects"><strong>update_mobjects</strong></a>(self, dt)</dt><dd><tt>Updates&nbsp;things&nbsp;like&nbsp;starting_mobject,&nbsp;and&nbsp;(for<br>
+Transforms)&nbsp;target_mobject.&nbsp;&nbsp;Note,&nbsp;since&nbsp;typically<br>
+(always?)&nbsp;self.<strong>mobject</strong>&nbsp;will&nbsp;have&nbsp;its&nbsp;updating<br>
+suspended&nbsp;during&nbsp;the&nbsp;animation,&nbsp;this&nbsp;will&nbsp;do<br>
+nothing&nbsp;to&nbsp;self.<strong>mobject</strong>.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TransformAnimations">class <strong>TransformAnimations</strong></a>(<a href="">Transform</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">TransformAnimations</a>(start_anim,&nbsp;end_anim,&nbsp;**kwargs)<br>
+&nbsp;<br>
+#&nbsp;TODO,&nbsp;this&nbsp;may&nbsp;be&nbsp;depricated...worth&nbsp;reimplementing?<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">TransformAnimations</a></dd>
+<dd><a href="">Transform</a></dd>
+<dd><a href="">manimlib.animation.animation.Animation</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TransformAnimations-__init__"><strong>__init__</strong></a>(self, start_anim, end_anim, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="TransformAnimations-interpolate"><strong>interpolate</strong></a>(self, alpha)</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>CONFIG</strong> = {'rate_func': &lt;function squish_rate_func.&lt;locals&gt;.result&gt;}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">Transform</a>:<br>
+<dl><dt><a name="TransformAnimations-begin"><strong>begin</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TransformAnimations-check_target_mobject_validity"><strong>check_target_mobject_validity</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TransformAnimations-clean_up_from_scene"><strong>clean_up_from_scene</strong></a>(self, scene)</dt></dl>
+
+<dl><dt><a name="TransformAnimations-create_target"><strong>create_target</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TransformAnimations-get_all_families_zipped"><strong>get_all_families_zipped</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TransformAnimations-get_all_mobjects"><strong>get_all_mobjects</strong></a>(self)</dt><dd><tt>Ordering&nbsp;must&nbsp;match&nbsp;the&nbsp;ording&nbsp;of&nbsp;arguments&nbsp;to&nbsp;interpolate_submobject</tt></dd></dl>
+
+<dl><dt><a name="TransformAnimations-init_path_func"><strong>init_path_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TransformAnimations-interpolate_submobject"><strong>interpolate_submobject</strong></a>(self, submob, start, target_copy, alpha)</dt></dl>
+
+<dl><dt><a name="TransformAnimations-update_config"><strong>update_config</strong></a>(self, **kwargs)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><a name="TransformAnimations-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="TransformAnimations-copy"><strong>copy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TransformAnimations-create_starting_mobject"><strong>create_starting_mobject</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TransformAnimations-finish"><strong>finish</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TransformAnimations-get_all_mobjects_to_update"><strong>get_all_mobjects_to_update</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TransformAnimations-get_rate_func"><strong>get_rate_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TransformAnimations-get_run_time"><strong>get_run_time</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TransformAnimations-get_sub_alpha"><strong>get_sub_alpha</strong></a>(self, alpha, index, num_submobjects)</dt></dl>
+
+<dl><dt><a name="TransformAnimations-interpolate_mobject"><strong>interpolate_mobject</strong></a>(self, alpha)</dt></dl>
+
+<dl><dt><a name="TransformAnimations-is_remover"><strong>is_remover</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TransformAnimations-set_name"><strong>set_name</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="TransformAnimations-set_rate_func"><strong>set_rate_func</strong></a>(self, rate_func)</dt></dl>
+
+<dl><dt><a name="TransformAnimations-set_run_time"><strong>set_run_time</strong></a>(self, run_time)</dt><dd><tt>#&nbsp;Getters&nbsp;and&nbsp;setters</tt></dd></dl>
+
+<dl><dt><a name="TransformAnimations-update"><strong>update</strong></a>(self, alpha)</dt><dd><tt>This&nbsp;method&nbsp;shouldn't&nbsp;exist,&nbsp;but&nbsp;it's&nbsp;here&nbsp;to<br>
+keep&nbsp;many&nbsp;old&nbsp;scenes&nbsp;from&nbsp;breaking</tt></dd></dl>
+
+<dl><dt><a name="TransformAnimations-update_mobjects"><strong>update_mobjects</strong></a>(self, dt)</dt><dd><tt>Updates&nbsp;things&nbsp;like&nbsp;starting_mobject,&nbsp;and&nbsp;(for<br>
+Transforms)&nbsp;target_mobject.&nbsp;&nbsp;Note,&nbsp;since&nbsp;typically<br>
+(always?)&nbsp;self.<strong>mobject</strong>&nbsp;will&nbsp;have&nbsp;its&nbsp;updating<br>
+suspended&nbsp;during&nbsp;the&nbsp;animation,&nbsp;this&nbsp;will&nbsp;do<br>
+nothing&nbsp;to&nbsp;self.<strong>mobject</strong>.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TransformFromCopy">class <strong>TransformFromCopy</strong></a>(<a href="">Transform</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">TransformFromCopy</a>(mobject,&nbsp;target_mobject,&nbsp;**kwargs)<br>
+&nbsp;<br>
+Performs&nbsp;a&nbsp;reversed&nbsp;<a href="">Transform</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">TransformFromCopy</a></dd>
+<dd><a href="">Transform</a></dd>
+<dd><a href="">manimlib.animation.animation.Animation</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TransformFromCopy-__init__"><strong>__init__</strong></a>(self, mobject, target_mobject, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="TransformFromCopy-interpolate"><strong>interpolate</strong></a>(self, alpha)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">Transform</a>:<br>
+<dl><dt><a name="TransformFromCopy-begin"><strong>begin</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TransformFromCopy-check_target_mobject_validity"><strong>check_target_mobject_validity</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TransformFromCopy-clean_up_from_scene"><strong>clean_up_from_scene</strong></a>(self, scene)</dt></dl>
+
+<dl><dt><a name="TransformFromCopy-create_target"><strong>create_target</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TransformFromCopy-get_all_families_zipped"><strong>get_all_families_zipped</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TransformFromCopy-get_all_mobjects"><strong>get_all_mobjects</strong></a>(self)</dt><dd><tt>Ordering&nbsp;must&nbsp;match&nbsp;the&nbsp;ording&nbsp;of&nbsp;arguments&nbsp;to&nbsp;interpolate_submobject</tt></dd></dl>
+
+<dl><dt><a name="TransformFromCopy-init_path_func"><strong>init_path_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TransformFromCopy-interpolate_submobject"><strong>interpolate_submobject</strong></a>(self, submob, start, target_copy, alpha)</dt></dl>
+
+<dl><dt><a name="TransformFromCopy-update_config"><strong>update_config</strong></a>(self, **kwargs)</dt></dl>
+
+<hr>
+Data and other attributes inherited from <a href="">Transform</a>:<br>
+<dl><dt><strong>CONFIG</strong> = {'path_arc': 0, 'path_arc_axis': array([0., 0., 1.]), 'path_func': None, 'replace_mobject_with_target_in_scene': False}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><a name="TransformFromCopy-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="TransformFromCopy-copy"><strong>copy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TransformFromCopy-create_starting_mobject"><strong>create_starting_mobject</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TransformFromCopy-finish"><strong>finish</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TransformFromCopy-get_all_mobjects_to_update"><strong>get_all_mobjects_to_update</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TransformFromCopy-get_rate_func"><strong>get_rate_func</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TransformFromCopy-get_run_time"><strong>get_run_time</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TransformFromCopy-get_sub_alpha"><strong>get_sub_alpha</strong></a>(self, alpha, index, num_submobjects)</dt></dl>
+
+<dl><dt><a name="TransformFromCopy-interpolate_mobject"><strong>interpolate_mobject</strong></a>(self, alpha)</dt></dl>
+
+<dl><dt><a name="TransformFromCopy-is_remover"><strong>is_remover</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="TransformFromCopy-set_name"><strong>set_name</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="TransformFromCopy-set_rate_func"><strong>set_rate_func</strong></a>(self, rate_func)</dt></dl>
+
+<dl><dt><a name="TransformFromCopy-set_run_time"><strong>set_run_time</strong></a>(self, run_time)</dt><dd><tt>#&nbsp;Getters&nbsp;and&nbsp;setters</tt></dd></dl>
+
+<dl><dt><a name="TransformFromCopy-update"><strong>update</strong></a>(self, alpha)</dt><dd><tt>This&nbsp;method&nbsp;shouldn't&nbsp;exist,&nbsp;but&nbsp;it's&nbsp;here&nbsp;to<br>
+keep&nbsp;many&nbsp;old&nbsp;scenes&nbsp;from&nbsp;breaking</tt></dd></dl>
+
+<dl><dt><a name="TransformFromCopy-update_mobjects"><strong>update_mobjects</strong></a>(self, dt)</dt><dd><tt>Updates&nbsp;things&nbsp;like&nbsp;starting_mobject,&nbsp;and&nbsp;(for<br>
+Transforms)&nbsp;target_mobject.&nbsp;&nbsp;Note,&nbsp;since&nbsp;typically<br>
+(always?)&nbsp;self.<strong>mobject</strong>&nbsp;will&nbsp;have&nbsp;its&nbsp;updating<br>
+suspended&nbsp;during&nbsp;the&nbsp;animation,&nbsp;this&nbsp;will&nbsp;do<br>
+nothing&nbsp;to&nbsp;self.<strong>mobject</strong>.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.animation.animation.Animation</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table></p></td></tr></tbody></table></p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#55aa55">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>DEFAULT_POINTWISE_FUNCTION_RUN_TIME</strong> = 3.0<br>
+<strong>DEGREES</strong> = 0.017453292519943295<br>
+<strong>OUT</strong> = array([0., 0., 1.])</td></tr></tbody></table></p></div>
+</body></html>

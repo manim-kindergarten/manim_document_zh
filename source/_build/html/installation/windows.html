@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Windows &#8212; Manim  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Getting Started" href="../getting_started/index.html" />
+    <link rel="prev" title="Mac" href="mac.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="windows">
+<h1>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="install-system-libraries">
+<h2>Install System Libraries<a class="headerlink" href="#install-system-libraries" title="Permalink to this headline">¶</a></h2>
+<p>Make sure you have <em>Python 3</em> for Windows installed first:</p>
+<p><a class="reference external" href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a></p>
+<p>Install ffmpeg:</p>
+<p><a class="reference external" href="https://ffmpeg.org/download.html#build-windows">https://ffmpeg.org/download.html#build-windows</a></p>
+<p>Install sox:</p>
+<p><a class="reference external" href="http://sox.sourceforge.net/Main/HomePage">http://sox.sourceforge.net/Main/HomePage</a></p>
+<p>Install a latex distribution. On Windows MikTex is commonly used:</p>
+<p><a class="reference external" href="https://miktex.org/howto/install-miktex">https://miktex.org/howto/install-miktex</a></p>
+</div>
+<div class="section" id="path-configuration">
+<h2>Path configuration<a class="headerlink" href="#path-configuration" title="Permalink to this headline">¶</a></h2>
+<p>To invoke commandline without supplying path to the binary
+the PATH environment needs to be configured. Below are template examples, please change
+the path according to your username and specific python version. Assuming all the
+softwares are installed with no alteration to the installation paths:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>C:\Users\$username\AppData\local\Programs\Python\Python$version\
+C:\Users\$username\AppData\local\Programs\Python\Python$version\Scripts\
+C:\MikTex\miktex\bin\x64\
+C:\ffmpeg\bin\
+</pre></div>
+</div>
+<p>The path entries should be separated by semicolon.</p>
+</div>
+<div class="section" id="installing-python-packages-and-manim">
+<h2>Installing python packages and manim<a class="headerlink" href="#installing-python-packages-and-manim" title="Permalink to this headline">¶</a></h2>
+<p>Make sure you can start pip using <code class="docutils literal notranslate"><span class="pre">pip</span></code> in your commandline. Then do
+<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">pyreadline</span></code> for the <code class="docutils literal notranslate"><span class="pre">readline</span></code> package.</p>
+<p>Grab the pycairo wheel binary <code class="docutils literal notranslate"><span class="pre">pycairo‑1.18.0‑cp37‑cp37m‑win32.whl</span></code> from <a class="reference external" href="https://www.lfd.uci.edu/~gohlke/pythonlibs/#pycairo">https://www.lfd.uci.edu/~gohlke/pythonlibs/#pycairo</a>
+and install it via <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">pip</span> <span class="pre">install</span> <span class="pre">C:\absolute\path\to\the\whl\file</span></code></p>
+<p>clone the manim repository if you have git <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/3b1b/manim</span></code> or download the zip file from
+the repository page with <code class="docutils literal notranslate"><span class="pre">Clone</span> <span class="pre">or</span> <span class="pre">download</span></code> button and unzip it.</p>
+<p>Open the commandline within the manim directory with <code class="docutils literal notranslate"><span class="pre">Shift</span> <span class="pre">+</span> <span class="pre">Right</span> <span class="pre">click</span></code> on an empty space in the folder and select <code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">command</span> <span class="pre">window</span> <span class="pre">here</span></code></p>
+<p>Install manim python dependencies with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code></p>
+</div>
+<div class="section" id="test-the-installation">
+<h2>Test the installation<a class="headerlink" href="#test-the-installation" title="Permalink to this headline">¶</a></h2>
+<p>Type in <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">manim</span> <span class="pre">-h</span></code> and if nothing went wrong during the installation process you should see the help text.</p>
+<p>Use <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">manim</span> <span class="pre">example_scenes.py</span> <span class="pre">SquareToCircle</span> <span class="pre">-pl</span></code> to render the example scene and the file should play after rendering. The movie file should be
+in <code class="docutils literal notranslate"><span class="pre">media/videos/example_scenes/480p15</span></code></p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Manim</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Installation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="linux.html">Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mac.html">Mac</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../coordinate.html">Coordinate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../animation.html">Animation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../constants.html">Manim Constants</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Installation</a><ul>
+      <li>Previous: <a href="mac.html" title="previous chapter">Mac</a></li>
+      <li>Next: <a href="../getting_started/index.html" title="next chapter">Getting Started</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, EulerTour.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/installation/windows.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

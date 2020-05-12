@@ -1,0 +1,2938 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0043)http://localhost:8080/three_dimensions.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style><title>Pydoc: module three_dimensions</title>
+
+<link rel="stylesheet" type="text/css" href="./mobject_three_dimensions_files/_pydoc.css"></head><body bgcolor="#f0f0f8">
+            <div style="float:left">
+                Python 3.7.6 [default, MSC v.1916 64 bit (AMD64)]<br>Windows-10
+            </div>
+            <div style="float:right">
+                <div style="text-align:center">
+                  <a href="">Module Index</a>
+                  : <a href="">Topics</a>
+                  : <a href="">Keywords</a>
+                </div>
+                <div>
+                    <form action="" style="display:inline;">
+                      <input type="text" name="q" size="15">
+                      <input type="submit" value="Get">
+                    </form>&nbsp;
+                    <form action="../../search.html" style="display:inline;">
+                      <input type="text" name="q" size="15">
+                      <input type="submit" value="Search">
+                    </form>
+                </div>
+            </div>
+            <div style="clear:both;padding-top:.5em;">
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="heading">
+<tbody><tr bgcolor="#7799ee">
+<td valign="bottom">&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>three_dimensions</strong></big></big></font></td><td align="right" valign="bottom"><font color="#ffffff" face="helvetica, arial"><a href="">index</a><br><a href="">manim\three_dimensions.py</a></font></td></tr></tbody></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#aa55cc">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tbody><tr><td width="25%" valign="top"><a href="">numpy</a><br>
+</td><td width="25%" valign="top"><a href="">os</a><br>
+</td><td width="25%" valign="top"></td><td width="25%" valign="top"></td></tr></tbody></table></td></tr></tbody></table></p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ee77aa">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="">manimlib.mobject.types.vectorized_mobject.VGroup</a>(<a href="">manimlib.mobject.types.vectorized_mobject.VMobject</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="">Cube</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="">Prism</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="">ParametricSurface</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="">Sphere</a>
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="">manimlib.mobject.types.vectorized_mobject.VMobject</a>(<a href="">manimlib.mobject.mobject.Mobject</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="">ThreeDVMobject</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Cube">class <strong>Cube</strong></a>(<a href="">manimlib.mobject.types.vectorized_mobject.VGroup</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">Cube</a>(*vmobjects,&nbsp;**kwargs)<br>
+&nbsp;<br>
+Mathematical&nbsp;Object<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">Cube</a></dd>
+<dd><a href="">manimlib.mobject.types.vectorized_mobject.VGroup</a></dd>
+<dd><a href="">manimlib.mobject.types.vectorized_mobject.VMobject</a></dd>
+<dd><a href="">manimlib.mobject.mobject.Mobject</a></dd>
+<dd><a href="">manimlib.container.container.Container</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Cube-generate_points"><strong>generate_points</strong></a>(self)</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>CONFIG</strong> = {'fill_color': '#58C4DD', 'fill_opacity': 0.75, 'side_length': 2, 'stroke_width': 0}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.mobject.types.vectorized_mobject.VGroup</a>:<br>
+<dl><dt><a name="Cube-__init__"><strong>__init__</strong></a>(self, *vmobjects, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.mobject.types.vectorized_mobject.VMobject</a>:<br>
+<dl><dt><a name="Cube-add_cubic_bezier_curve"><strong>add_cubic_bezier_curve</strong></a>(self, anchor1, handle1, handle2, anchor2)</dt></dl>
+
+<dl><dt><a name="Cube-add_cubic_bezier_curve_to"><strong>add_cubic_bezier_curve_to</strong></a>(self, handle1, handle2, anchor)</dt><dd><tt>Add&nbsp;cubic&nbsp;bezier&nbsp;curve&nbsp;to&nbsp;the&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="Cube-add_line_to"><strong>add_line_to</strong></a>(self, point)</dt></dl>
+
+<dl><dt><a name="Cube-add_points_as_corners"><strong>add_points_as_corners</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="Cube-add_smooth_curve_to"><strong>add_smooth_curve_to</strong></a>(self, *points)</dt><dd><tt>If&nbsp;two&nbsp;points&nbsp;are&nbsp;passed&nbsp;in,&nbsp;the&nbsp;first&nbsp;is&nbsp;intepretted<br>
+as&nbsp;a&nbsp;handle,&nbsp;the&nbsp;second&nbsp;as&nbsp;an&nbsp;anchor</tt></dd></dl>
+
+<dl><dt><a name="Cube-add_subpath"><strong>add_subpath</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="Cube-align_points"><strong>align_points</strong></a>(self, vmobject)</dt><dd><tt>#&nbsp;Alignment</tt></dd></dl>
+
+<dl><dt><a name="Cube-align_rgbas"><strong>align_rgbas</strong></a>(self, vmobject)</dt></dl>
+
+<dl><dt><a name="Cube-append_points"><strong>append_points</strong></a>(self, new_points)</dt></dl>
+
+<dl><dt><a name="Cube-append_vectorized_mobject"><strong>append_vectorized_mobject</strong></a>(self, vectorized_mobject)</dt></dl>
+
+<dl><dt><a name="Cube-apply_function"><strong>apply_function</strong></a>(self, function)</dt></dl>
+
+<dl><dt><a name="Cube-change_anchor_mode"><strong>change_anchor_mode</strong></a>(self, mode)</dt></dl>
+
+<dl><dt><a name="Cube-clear_points"><strong>clear_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-color_using_background_image"><strong>color_using_background_image</strong></a>(self, background_image_file)</dt></dl>
+
+<dl><dt><a name="Cube-consider_points_equals"><strong>consider_points_equals</strong></a>(self, p0, p1)</dt></dl>
+
+<dl><dt><a name="Cube-fade"><strong>fade</strong></a>(self, darkness=0.5, family=True)</dt></dl>
+
+<dl><dt><a name="Cube-generate_rgbas_array"><strong>generate_rgbas_array</strong></a>(self, color, opacity)</dt><dd><tt>First&nbsp;arg&nbsp;can&nbsp;be&nbsp;either&nbsp;a&nbsp;color,&nbsp;or&nbsp;a&nbsp;tuple/list&nbsp;of&nbsp;colors.<br>
+Likewise,&nbsp;opacity&nbsp;can&nbsp;either&nbsp;be&nbsp;a&nbsp;float,&nbsp;or&nbsp;a&nbsp;tuple&nbsp;of&nbsp;floats.<br>
+If&nbsp;self.<strong>sheen_factor</strong>&nbsp;is&nbsp;not&nbsp;zero,&nbsp;and&nbsp;only<br>
+one&nbsp;color&nbsp;was&nbsp;passed&nbsp;in,&nbsp;a&nbsp;second&nbsp;slightly&nbsp;light&nbsp;color<br>
+will&nbsp;automatically&nbsp;be&nbsp;added&nbsp;for&nbsp;the&nbsp;gradient</tt></dd></dl>
+
+<dl><dt><a name="Cube-get_anchors"><strong>get_anchors</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_anchors_and_handles"><strong>get_anchors_and_handles</strong></a>(self)</dt><dd><tt>returns&nbsp;anchors1,&nbsp;handles1,&nbsp;handles2,&nbsp;anchors2,<br>
+where&nbsp;(anchors1[i],&nbsp;handles1[i],&nbsp;handles2[i],&nbsp;anchors2[i])<br>
+will&nbsp;be&nbsp;four&nbsp;points&nbsp;defining&nbsp;a&nbsp;cubic&nbsp;bezier&nbsp;curve<br>
+for&nbsp;any&nbsp;i&nbsp;in&nbsp;range(0,&nbsp;len(anchors1))</tt></dd></dl>
+
+<dl><dt><a name="Cube-get_arc_length"><strong>get_arc_length</strong></a>(self, n_sample_points=None)</dt></dl>
+
+<dl><dt><a name="Cube-get_background_image_file"><strong>get_background_image_file</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_color"><strong>get_color</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_cubic_bezier_tuples"><strong>get_cubic_bezier_tuples</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_cubic_bezier_tuples_from_points"><strong>get_cubic_bezier_tuples_from_points</strong></a>(self, points)</dt><dd><tt>#&nbsp;Information&nbsp;about&nbsp;line</tt></dd></dl>
+
+<dl><dt><a name="Cube-get_end_anchors"><strong>get_end_anchors</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_fill_color"><strong>get_fill_color</strong></a>(self)</dt><dd><tt>If&nbsp;there&nbsp;are&nbsp;multiple&nbsp;colors&nbsp;(for&nbsp;gradient)<br>
+this&nbsp;returns&nbsp;the&nbsp;first&nbsp;one</tt></dd></dl>
+
+<dl><dt><a name="Cube-get_fill_colors"><strong>get_fill_colors</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_fill_opacities"><strong>get_fill_opacities</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_fill_opacity"><strong>get_fill_opacity</strong></a>(self)</dt><dd><tt>If&nbsp;there&nbsp;are&nbsp;multiple&nbsp;opacities,&nbsp;this&nbsp;returns&nbsp;the<br>
+first</tt></dd></dl>
+
+<dl><dt><a name="Cube-get_fill_rgbas"><strong>get_fill_rgbas</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_gradient_start_and_end_points"><strong>get_gradient_start_and_end_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_group_class"><strong>get_group_class</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_last_point"><strong>get_last_point</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_nth_curve_function"><strong>get_nth_curve_function</strong></a>(self, n)</dt></dl>
+
+<dl><dt><a name="Cube-get_nth_curve_points"><strong>get_nth_curve_points</strong></a>(self, n)</dt></dl>
+
+<dl><dt><a name="Cube-get_num_curves"><strong>get_num_curves</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_point_mobject"><strong>get_point_mobject</strong></a>(self, center=None)</dt><dd><tt>The&nbsp;simplest&nbsp;mobject&nbsp;to&nbsp;be&nbsp;transformed&nbsp;to&nbsp;or&nbsp;from&nbsp;self.<br>
+Should&nbsp;by&nbsp;a&nbsp;point&nbsp;of&nbsp;the&nbsp;appropriate&nbsp;type</tt></dd></dl>
+
+<dl><dt><a name="Cube-get_points"><strong>get_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_points_defining_boundary"><strong>get_points_defining_boundary</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_sheen_direction"><strong>get_sheen_direction</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_sheen_factor"><strong>get_sheen_factor</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_start_anchors"><strong>get_start_anchors</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_stroke_color"><strong>get_stroke_color</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="Cube-get_stroke_colors"><strong>get_stroke_colors</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="Cube-get_stroke_opacities"><strong>get_stroke_opacities</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="Cube-get_stroke_opacity"><strong>get_stroke_opacity</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="Cube-get_stroke_rgbas"><strong>get_stroke_rgbas</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="Cube-get_stroke_width"><strong>get_stroke_width</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="Cube-get_style"><strong>get_style</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_subcurve"><strong>get_subcurve</strong></a>(self, a, b)</dt></dl>
+
+<dl><dt><a name="Cube-get_subpaths"><strong>get_subpaths</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_subpaths_from_points"><strong>get_subpaths_from_points</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="Cube-has_new_path_started"><strong>has_new_path_started</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-init_colors"><strong>init_colors</strong></a>(self)</dt><dd><tt>#&nbsp;Colors</tt></dd></dl>
+
+<dl><dt><a name="Cube-insert_n_curves"><strong>insert_n_curves</strong></a>(self, n)</dt></dl>
+
+<dl><dt><a name="Cube-insert_n_curves_to_point_list"><strong>insert_n_curves_to_point_list</strong></a>(self, n, points)</dt></dl>
+
+<dl><dt><a name="Cube-interpolate_color"><strong>interpolate_color</strong></a>(self, mobject1, mobject2, alpha)</dt></dl>
+
+<dl><dt><a name="Cube-is_closed"><strong>is_closed</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-make_jagged"><strong>make_jagged</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-make_smooth"><strong>make_smooth</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-match_background_image_file"><strong>match_background_image_file</strong></a>(self, vmobject)</dt></dl>
+
+<dl><dt><a name="Cube-match_style"><strong>match_style</strong></a>(self, vmobject, family=True)</dt></dl>
+
+<dl><dt><a name="Cube-point_from_proportion"><strong>point_from_proportion</strong></a>(self, alpha)</dt></dl>
+
+<dl><dt><a name="Cube-pointwise_become_partial"><strong>pointwise_become_partial</strong></a>(self, vmobject, a, b)</dt></dl>
+
+<dl><dt><a name="Cube-scale_handle_to_anchor_distances"><strong>scale_handle_to_anchor_distances</strong></a>(self, factor)</dt><dd><tt>If&nbsp;the&nbsp;distance&nbsp;between&nbsp;a&nbsp;given&nbsp;handle&nbsp;point&nbsp;H&nbsp;and&nbsp;its&nbsp;associated<br>
+anchor&nbsp;point&nbsp;A&nbsp;is&nbsp;d,&nbsp;then&nbsp;it&nbsp;changes&nbsp;H&nbsp;to&nbsp;be&nbsp;a&nbsp;distances&nbsp;factor*d<br>
+away&nbsp;from&nbsp;A,&nbsp;but&nbsp;so&nbsp;that&nbsp;the&nbsp;line&nbsp;from&nbsp;A&nbsp;to&nbsp;H&nbsp;doesn't&nbsp;change.<br>
+This&nbsp;is&nbsp;mostly&nbsp;useful&nbsp;in&nbsp;the&nbsp;context&nbsp;of&nbsp;applying&nbsp;a&nbsp;(differentiable)<br>
+function,&nbsp;to&nbsp;preserve&nbsp;tangency&nbsp;properties.&nbsp;&nbsp;One&nbsp;would&nbsp;pull&nbsp;all&nbsp;the<br>
+handles&nbsp;closer&nbsp;to&nbsp;their&nbsp;anchors,&nbsp;apply&nbsp;the&nbsp;function&nbsp;then&nbsp;push&nbsp;them&nbsp;out<br>
+again.</tt></dd></dl>
+
+<dl><dt><a name="Cube-set_anchors_and_handles"><strong>set_anchors_and_handles</strong></a>(self, anchors1, handles1, handles2, anchors2)</dt></dl>
+
+<dl><dt><a name="Cube-set_background_stroke"><strong>set_background_stroke</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-set_color"><strong>set_color</strong></a>(self, color, family=True)</dt><dd><tt>Condition&nbsp;is&nbsp;function&nbsp;which&nbsp;takes&nbsp;in&nbsp;one&nbsp;arguments,&nbsp;(x,&nbsp;y,&nbsp;z).<br>
+Here&nbsp;it&nbsp;just&nbsp;recurses&nbsp;to&nbsp;submobjects,&nbsp;but&nbsp;in&nbsp;subclasses&nbsp;this<br>
+should&nbsp;be&nbsp;further&nbsp;implemented&nbsp;based&nbsp;on&nbsp;the&nbsp;the&nbsp;inner&nbsp;workings<br>
+of&nbsp;color</tt></dd></dl>
+
+<dl><dt><a name="Cube-set_fill"><strong>set_fill</strong></a>(self, color=None, opacity=None, family=True)</dt></dl>
+
+<dl><dt><a name="Cube-set_opacity"><strong>set_opacity</strong></a>(self, opacity, family=True)</dt></dl>
+
+<dl><dt><a name="Cube-set_points"><strong>set_points</strong></a>(self, points)</dt><dd><tt>#&nbsp;Points</tt></dd></dl>
+
+<dl><dt><a name="Cube-set_points_as_corners"><strong>set_points_as_corners</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="Cube-set_points_smoothly"><strong>set_points_smoothly</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="Cube-set_shade_in_3d"><strong>set_shade_in_3d</strong></a>(self, value=True, z_index_as_group=False)</dt></dl>
+
+<dl><dt><a name="Cube-set_sheen"><strong>set_sheen</strong></a>(self, factor, direction=None, family=True)</dt></dl>
+
+<dl><dt><a name="Cube-set_sheen_direction"><strong>set_sheen_direction</strong></a>(self, direction, family=True)</dt></dl>
+
+<dl><dt><a name="Cube-set_stroke"><strong>set_stroke</strong></a>(self, color=None, width=None, opacity=None, background=False, family=True)</dt></dl>
+
+<dl><dt><a name="Cube-set_style"><strong>set_style</strong></a>(self, fill_color=None, fill_opacity=None, stroke_color=None, stroke_width=None, stroke_opacity=None, background_stroke_color=None, background_stroke_width=None, background_stroke_opacity=None, sheen_factor=None, sheen_direction=None, background_image_file=None, family=True)</dt></dl>
+
+<dl><dt><a name="Cube-start_new_path"><strong>start_new_path</strong></a>(self, point)</dt></dl>
+
+<dl><dt><a name="Cube-update_rgbas_array"><strong>update_rgbas_array</strong></a>(self, array_name, color=None, opacity=None)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.mobject.mobject.Mobject</a>:<br>
+<dl><dt><a name="Cube-__getitem__"><strong>__getitem__</strong></a>(self, value)</dt></dl>
+
+<dl><dt><a name="Cube-__iter__"><strong>__iter__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-__len__"><strong>__len__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="Cube-add"><strong>add</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="Cube-add_background_rectangle"><strong>add_background_rectangle</strong></a>(self, color='#000000', opacity=0.75, **kwargs)</dt><dd><tt>#&nbsp;Background&nbsp;rectangle</tt></dd></dl>
+
+<dl><dt><a name="Cube-add_background_rectangle_to_family_members_with_points"><strong>add_background_rectangle_to_family_members_with_points</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-add_background_rectangle_to_submobjects"><strong>add_background_rectangle_to_submobjects</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-add_n_more_submobjects"><strong>add_n_more_submobjects</strong></a>(self, n)</dt></dl>
+
+<dl><dt><a name="Cube-add_to_back"><strong>add_to_back</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="Cube-add_updater"><strong>add_updater</strong></a>(self, update_function, index=None, call_updater=True)</dt></dl>
+
+<dl><dt><a name="Cube-align_data"><strong>align_data</strong></a>(self, mobject)</dt><dd><tt>#&nbsp;Alignment</tt></dd></dl>
+
+<dl><dt><a name="Cube-align_on_border"><strong>align_on_border</strong></a>(self, direction, buff=0.5)</dt><dd><tt>Direction&nbsp;just&nbsp;needs&nbsp;to&nbsp;be&nbsp;a&nbsp;vector&nbsp;pointing&nbsp;towards&nbsp;side&nbsp;or<br>
+corner&nbsp;in&nbsp;the&nbsp;2d&nbsp;plane.</tt></dd></dl>
+
+<dl><dt><a name="Cube-align_points_with_larger"><strong>align_points_with_larger</strong></a>(self, larger_mobject)</dt></dl>
+
+<dl><dt><a name="Cube-align_submobjects"><strong>align_submobjects</strong></a>(self, mobject)</dt></dl>
+
+<dl><dt><a name="Cube-align_to"><strong>align_to</strong></a>(self, mobject_or_point, direction=array([0., 0., 0.]), alignment_vect=array([0., 1., 0.]))</dt><dd><tt>Examples:<br>
+mob1.<a href="">align_to</a>(mob2,&nbsp;UP)&nbsp;moves&nbsp;mob1&nbsp;vertically&nbsp;so&nbsp;that&nbsp;its<br>
+top&nbsp;edge&nbsp;lines&nbsp;ups&nbsp;with&nbsp;mob2's&nbsp;top&nbsp;edge.<br>
+&nbsp;<br>
+mob1.<a href="">align_to</a>(mob2,&nbsp;alignment_vect&nbsp;=&nbsp;RIGHT)&nbsp;moves&nbsp;mob1<br>
+horizontally&nbsp;so&nbsp;that&nbsp;it's&nbsp;center&nbsp;is&nbsp;directly&nbsp;above/below<br>
+the&nbsp;center&nbsp;of&nbsp;mob2</tt></dd></dl>
+
+<dl><dt><a name="Cube-apply_complex_function"><strong>apply_complex_function</strong></a>(self, function, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-apply_function_to_position"><strong>apply_function_to_position</strong></a>(self, function)</dt></dl>
+
+<dl><dt><a name="Cube-apply_function_to_submobject_positions"><strong>apply_function_to_submobject_positions</strong></a>(self, function)</dt></dl>
+
+<dl><dt><a name="Cube-apply_matrix"><strong>apply_matrix</strong></a>(self, matrix, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-apply_over_attr_arrays"><strong>apply_over_attr_arrays</strong></a>(self, func)</dt></dl>
+
+<dl><dt><a name="Cube-apply_points_function_about_point"><strong>apply_points_function_about_point</strong></a>(self, func, about_point=None, about_edge=None)</dt></dl>
+
+<dl><dt><a name="Cube-apply_to_family"><strong>apply_to_family</strong></a>(self, func)</dt></dl>
+
+<dl><dt><a name="Cube-arrange"><strong>arrange</strong></a>(self, direction=array([1., 0., 0.]), center=True, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-arrange_in_grid"><strong>arrange_in_grid</strong></a>(self, n_rows=None, n_cols=None, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-arrange_submobjects"><strong>arrange_submobjects</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;Just&nbsp;here&nbsp;to&nbsp;keep&nbsp;from&nbsp;breaking&nbsp;old&nbsp;scenes.</tt></dd></dl>
+
+<dl><dt><a name="Cube-become"><strong>become</strong></a>(self, mobject, copy_submobjects=True)</dt><dd><tt>Edit&nbsp;points,&nbsp;colors&nbsp;and&nbsp;submobjects&nbsp;to&nbsp;be&nbsp;idential<br>
+to&nbsp;another&nbsp;mobject</tt></dd></dl>
+
+<dl><dt><a name="Cube-become_partial"><strong>become_partial</strong></a>(self, mobject, a, b)</dt><dd><tt>Set&nbsp;points&nbsp;in&nbsp;such&nbsp;a&nbsp;way&nbsp;as&nbsp;to&nbsp;become&nbsp;only<br>
+part&nbsp;of&nbsp;mobject.<br>
+Inputs&nbsp;0&nbsp;&lt;=&nbsp;a&nbsp;&lt;&nbsp;b&nbsp;&lt;=&nbsp;1&nbsp;determine&nbsp;what&nbsp;portion<br>
+of&nbsp;mobject&nbsp;to&nbsp;become.</tt></dd></dl>
+
+<dl><dt><a name="Cube-center"><strong>center</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-clear_updaters"><strong>clear_updaters</strong></a>(self, recursive=True)</dt></dl>
+
+<dl><dt><a name="Cube-copy"><strong>copy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-deepcopy"><strong>deepcopy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-digest_mobject_attrs"><strong>digest_mobject_attrs</strong></a>(self)</dt><dd><tt>Ensures&nbsp;all&nbsp;attributes&nbsp;which&nbsp;are&nbsp;mobjects&nbsp;are&nbsp;included<br>
+in&nbsp;the&nbsp;submobjects&nbsp;list.</tt></dd></dl>
+
+<dl><dt><a name="Cube-fade_to"><strong>fade_to</strong></a>(self, color, alpha, family=True)</dt></dl>
+
+<dl><dt><a name="Cube-family_members_with_points"><strong>family_members_with_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-flip"><strong>flip</strong></a>(self, axis=array([0., 1., 0.]), **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-generate_target"><strong>generate_target</strong></a>(self, use_deepcopy=False)</dt></dl>
+
+<dl><dt><a name="Cube-get_all_points"><strong>get_all_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_array_attrs"><strong>get_array_attrs</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_bottom"><strong>get_bottom</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_boundary_point"><strong>get_boundary_point</strong></a>(self, direction)</dt></dl>
+
+<dl><dt><a name="Cube-get_center"><strong>get_center</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_center_of_mass"><strong>get_center_of_mass</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_coord"><strong>get_coord</strong></a>(self, dim, direction=array([0., 0., 0.]))</dt><dd><tt>Meant&nbsp;to&nbsp;generalize&nbsp;get_x,&nbsp;get_y,&nbsp;get_z</tt></dd></dl>
+
+<dl><dt><a name="Cube-get_corner"><strong>get_corner</strong></a>(self, direction)</dt></dl>
+
+<dl><dt><a name="Cube-get_critical_point"><strong>get_critical_point</strong></a>(self, direction)</dt><dd><tt>Picture&nbsp;a&nbsp;box&nbsp;bounding&nbsp;the&nbsp;mobject.&nbsp;&nbsp;Such&nbsp;a&nbsp;box&nbsp;has<br>
+9&nbsp;'critical&nbsp;points':&nbsp;4&nbsp;corners,&nbsp;4&nbsp;edge&nbsp;center,&nbsp;the<br>
+center.&nbsp;&nbsp;This&nbsp;returns&nbsp;one&nbsp;of&nbsp;them.</tt></dd></dl>
+
+<dl><dt><a name="Cube-get_depth"><strong>get_depth</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_edge_center"><strong>get_edge_center</strong></a>(self, direction)</dt></dl>
+
+<dl><dt><a name="Cube-get_end"><strong>get_end</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_extremum_along_dim"><strong>get_extremum_along_dim</strong></a>(self, points=None, dim=0, key=0)</dt></dl>
+
+<dl><dt><a name="Cube-get_family"><strong>get_family</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_family_updaters"><strong>get_family_updaters</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_height"><strong>get_height</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_image"><strong>get_image</strong></a>(self, camera=None)</dt></dl>
+
+<dl><dt><a name="Cube-get_left"><strong>get_left</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_merged_array"><strong>get_merged_array</strong></a>(self, array_attr)</dt></dl>
+
+<dl><dt><a name="Cube-get_nadir"><strong>get_nadir</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_num_points"><strong>get_num_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_pieces"><strong>get_pieces</strong></a>(self, n_pieces)</dt></dl>
+
+<dl><dt><a name="Cube-get_right"><strong>get_right</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_start"><strong>get_start</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_start_and_end"><strong>get_start_and_end</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_time_based_updaters"><strong>get_time_based_updaters</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_top"><strong>get_top</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_updaters"><strong>get_updaters</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_width"><strong>get_width</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_x"><strong>get_x</strong></a>(self, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Cube-get_y"><strong>get_y</strong></a>(self, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Cube-get_z"><strong>get_z</strong></a>(self, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Cube-get_z_index_reference_point"><strong>get_z_index_reference_point</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-get_zenith"><strong>get_zenith</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-has_no_points"><strong>has_no_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-has_points"><strong>has_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-has_time_based_updater"><strong>has_time_based_updater</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-interpolate"><strong>interpolate</strong></a>(self, mobject1, mobject2, alpha, path_func=&lt;function straight_path at 0x0000020789397A68&gt;)</dt><dd><tt>Turns&nbsp;self&nbsp;into&nbsp;an&nbsp;interpolation&nbsp;between&nbsp;mobject1<br>
+and&nbsp;mobject2.</tt></dd></dl>
+
+<dl><dt><a name="Cube-is_off_screen"><strong>is_off_screen</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-length_over_dim"><strong>length_over_dim</strong></a>(self, dim)</dt></dl>
+
+<dl><dt><a name="Cube-match_color"><strong>match_color</strong></a>(self, mobject)</dt></dl>
+
+<dl><dt><a name="Cube-match_coord"><strong>match_coord</strong></a>(self, mobject, dim, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Cube-match_depth"><strong>match_depth</strong></a>(self, mobject, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-match_dim_size"><strong>match_dim_size</strong></a>(self, mobject, dim, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-match_height"><strong>match_height</strong></a>(self, mobject, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-match_updaters"><strong>match_updaters</strong></a>(self, mobject)</dt></dl>
+
+<dl><dt><a name="Cube-match_width"><strong>match_width</strong></a>(self, mobject, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-match_x"><strong>match_x</strong></a>(self, mobject, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Cube-match_y"><strong>match_y</strong></a>(self, mobject, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Cube-match_z"><strong>match_z</strong></a>(self, mobject, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Cube-move_to"><strong>move_to</strong></a>(self, point_or_mobject, aligned_edge=array([0., 0., 0.]), coor_mask=array([1, 1, 1]))</dt></dl>
+
+<dl><dt><a name="Cube-next_to"><strong>next_to</strong></a>(self, mobject_or_point, direction=array([1., 0., 0.]), buff=0.25, aligned_edge=array([0., 0., 0.]), submobject_to_align=None, index_of_submobject_to_align=None, coor_mask=array([1, 1, 1]))</dt></dl>
+
+<dl><dt><a name="Cube-nonempty_submobjects"><strong>nonempty_submobjects</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-null_point_align"><strong>null_point_align</strong></a>(self, mobject)</dt><dd><tt>If&nbsp;a&nbsp;mobject&nbsp;with&nbsp;points&nbsp;is&nbsp;being&nbsp;aligned&nbsp;to<br>
+one&nbsp;without,&nbsp;treat&nbsp;both&nbsp;as&nbsp;groups,&nbsp;and&nbsp;push<br>
+the&nbsp;one&nbsp;with&nbsp;points&nbsp;into&nbsp;its&nbsp;own&nbsp;submobjects<br>
+list.</tt></dd></dl>
+
+<dl><dt><a name="Cube-pose_at_angle"><strong>pose_at_angle</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-push_self_into_submobjects"><strong>push_self_into_submobjects</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-put_start_and_end_on"><strong>put_start_and_end_on</strong></a>(self, start, end)</dt></dl>
+
+<dl><dt><a name="Cube-reduce_across_dimension"><strong>reduce_across_dimension</strong></a>(self, points_func, reduce_func, dim)</dt></dl>
+
+<dl><dt><a name="Cube-remove"><strong>remove</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="Cube-remove_updater"><strong>remove_updater</strong></a>(self, update_function)</dt></dl>
+
+<dl><dt><a name="Cube-repeat"><strong>repeat</strong></a>(self, count)</dt><dd><tt>This&nbsp;can&nbsp;make&nbsp;transition&nbsp;animations&nbsp;nicer</tt></dd></dl>
+
+<dl><dt><a name="Cube-repeat_submobject"><strong>repeat_submobject</strong></a>(self, submob)</dt></dl>
+
+<dl><dt><a name="Cube-replace"><strong>replace</strong></a>(self, mobject, dim_to_match=0, stretch=False)</dt></dl>
+
+<dl><dt><a name="Cube-rescale_to_fit"><strong>rescale_to_fit</strong></a>(self, length, dim, stretch=False, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-reset_points"><strong>reset_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-restore"><strong>restore</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-resume_updating"><strong>resume_updating</strong></a>(self, recursive=True)</dt></dl>
+
+<dl><dt><a name="Cube-reverse_points"><strong>reverse_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-rotate"><strong>rotate</strong></a>(self, angle, axis=array([0., 0., 1.]), **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-rotate_about_origin"><strong>rotate_about_origin</strong></a>(self, angle, axis=array([0., 0., 1.]), axes=[])</dt></dl>
+
+<dl><dt><a name="Cube-rotate_in_place"><strong>rotate_in_place</strong></a>(self, angle, axis=array([0., 0., 1.]))</dt></dl>
+
+<dl><dt><a name="Cube-save_image"><strong>save_image</strong></a>(self, name=None)</dt></dl>
+
+<dl><dt><a name="Cube-save_state"><strong>save_state</strong></a>(self, use_deepcopy=False)</dt></dl>
+
+<dl><dt><a name="Cube-scale"><strong>scale</strong></a>(self, scale_factor, **kwargs)</dt><dd><tt>Default&nbsp;behavior&nbsp;is&nbsp;to&nbsp;scale&nbsp;about&nbsp;the&nbsp;center&nbsp;of&nbsp;the&nbsp;mobject.<br>
+The&nbsp;argument&nbsp;about_edge&nbsp;can&nbsp;be&nbsp;a&nbsp;vector,&nbsp;indicating&nbsp;which&nbsp;side&nbsp;of<br>
+the&nbsp;mobject&nbsp;to&nbsp;scale&nbsp;about,&nbsp;e.g.,&nbsp;mob.<a href="">scale</a>(about_edge&nbsp;=&nbsp;RIGHT)<br>
+scales&nbsp;about&nbsp;mob.<a href="">get_right</a>().<br>
+&nbsp;<br>
+Otherwise,&nbsp;if&nbsp;about_point&nbsp;is&nbsp;given&nbsp;a&nbsp;value,&nbsp;scaling&nbsp;is&nbsp;done&nbsp;with<br>
+respect&nbsp;to&nbsp;that&nbsp;point.</tt></dd></dl>
+
+<dl><dt><a name="Cube-scale_about_point"><strong>scale_about_point</strong></a>(self, scale_factor, point)</dt></dl>
+
+<dl><dt><a name="Cube-scale_in_place"><strong>scale_in_place</strong></a>(self, scale_factor, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-set_color_by_gradient"><strong>set_color_by_gradient</strong></a>(self, *colors)</dt></dl>
+
+<dl><dt><a name="Cube-set_colors_by_radial_gradient"><strong>set_colors_by_radial_gradient</strong></a>(self, center=None, radius=1, inner_color='#FFFFFF', outer_color='#000000')</dt></dl>
+
+<dl><dt><a name="Cube-set_coord"><strong>set_coord</strong></a>(self, value, dim, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Cube-set_depth"><strong>set_depth</strong></a>(self, depth, stretch=False, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-set_height"><strong>set_height</strong></a>(self, height, stretch=False, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-set_submobject_colors_by_gradient"><strong>set_submobject_colors_by_gradient</strong></a>(self, *colors)</dt></dl>
+
+<dl><dt><a name="Cube-set_submobject_colors_by_radial_gradient"><strong>set_submobject_colors_by_radial_gradient</strong></a>(self, center=None, radius=1, inner_color='#FFFFFF', outer_color='#000000')</dt></dl>
+
+<dl><dt><a name="Cube-set_width"><strong>set_width</strong></a>(self, width, stretch=False, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-set_x"><strong>set_x</strong></a>(self, x, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Cube-set_y"><strong>set_y</strong></a>(self, y, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Cube-set_z"><strong>set_z</strong></a>(self, z, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Cube-shift"><strong>shift</strong></a>(self, *vectors)</dt></dl>
+
+<dl><dt><a name="Cube-shift_onto_screen"><strong>shift_onto_screen</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-show"><strong>show</strong></a>(self, camera=None)</dt></dl>
+
+<dl><dt><a name="Cube-shuffle"><strong>shuffle</strong></a>(self, recursive=False)</dt></dl>
+
+<dl><dt><a name="Cube-shuffle_submobjects"><strong>shuffle_submobjects</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-sort"><strong>sort</strong></a>(self, point_to_num_func=&lt;function Mobject.&lt;lambda&gt; at 0x00000207893B08B8&gt;, submob_func=None)</dt></dl>
+
+<dl><dt><a name="Cube-sort_submobjects"><strong>sort_submobjects</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-space_out_submobjects"><strong>space_out_submobjects</strong></a>(self, factor=1.5, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-split"><strong>split</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-stretch"><strong>stretch</strong></a>(self, factor, dim, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-stretch_about_point"><strong>stretch_about_point</strong></a>(self, factor, dim, point)</dt></dl>
+
+<dl><dt><a name="Cube-stretch_in_place"><strong>stretch_in_place</strong></a>(self, factor, dim)</dt></dl>
+
+<dl><dt><a name="Cube-stretch_to_fit_depth"><strong>stretch_to_fit_depth</strong></a>(self, depth, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-stretch_to_fit_height"><strong>stretch_to_fit_height</strong></a>(self, height, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-stretch_to_fit_width"><strong>stretch_to_fit_width</strong></a>(self, width, **kwargs)</dt></dl>
+
+<dl><dt><a name="Cube-surround"><strong>surround</strong></a>(self, mobject, dim_to_match=0, stretch=False, buff=0.25)</dt></dl>
+
+<dl><dt><a name="Cube-suspend_updating"><strong>suspend_updating</strong></a>(self, recursive=True)</dt></dl>
+
+<dl><dt><a name="Cube-throw_error_if_no_points"><strong>throw_error_if_no_points</strong></a>(self)</dt><dd><tt>#&nbsp;Errors</tt></dd></dl>
+
+<dl><dt><a name="Cube-to_corner"><strong>to_corner</strong></a>(self, corner=array([-1., -1.,  0.]), buff=0.5)</dt></dl>
+
+<dl><dt><a name="Cube-to_edge"><strong>to_edge</strong></a>(self, edge=array([-1.,  0.,  0.]), buff=0.5)</dt></dl>
+
+<dl><dt><a name="Cube-to_original_color"><strong>to_original_color</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Cube-update"><strong>update</strong></a>(self, dt=0, recursive=True)</dt></dl>
+
+<dl><dt><a name="Cube-wag"><strong>wag</strong></a>(self, direction=array([1., 0., 0.]), axis=array([ 0., -1.,  0.]), wag_factor=1.0)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.container.container.Container</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ParametricSurface">class <strong>ParametricSurface</strong></a>(<a href="">manimlib.mobject.types.vectorized_mobject.VGroup</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">ParametricSurface</a>(func,&nbsp;**kwargs)<br>
+&nbsp;<br>
+Mathematical&nbsp;Object<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">ParametricSurface</a></dd>
+<dd><a href="">manimlib.mobject.types.vectorized_mobject.VGroup</a></dd>
+<dd><a href="">manimlib.mobject.types.vectorized_mobject.VMobject</a></dd>
+<dd><a href="">manimlib.mobject.mobject.Mobject</a></dd>
+<dd><a href="">manimlib.container.container.Container</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ParametricSurface-__init__"><strong>__init__</strong></a>(self, func, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-get_u_values_and_v_values"><strong>get_u_values_and_v_values</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-set_fill_by_checkerboard"><strong>set_fill_by_checkerboard</strong></a>(self, *colors, opacity=None)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-setup_in_uv_space"><strong>setup_in_uv_space</strong></a>(self)</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>CONFIG</strong> = {'checkerboard_colors': ['#29ABCA', '#1C758A'], 'fill_color': '#29ABCA', 'fill_opacity': 1.0, 'pre_function_handle_to_anchor_scale_factor': 1e-05, 'resolution': 32, 'should_make_jagged': False, 'stroke_color': '#BBBBBB', 'stroke_width': 0.5, 'surface_piece_config': {}, 'u_max': 1, ...}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.mobject.types.vectorized_mobject.VMobject</a>:<br>
+<dl><dt><a name="ParametricSurface-add_cubic_bezier_curve"><strong>add_cubic_bezier_curve</strong></a>(self, anchor1, handle1, handle2, anchor2)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-add_cubic_bezier_curve_to"><strong>add_cubic_bezier_curve_to</strong></a>(self, handle1, handle2, anchor)</dt><dd><tt>Add&nbsp;cubic&nbsp;bezier&nbsp;curve&nbsp;to&nbsp;the&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-add_line_to"><strong>add_line_to</strong></a>(self, point)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-add_points_as_corners"><strong>add_points_as_corners</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-add_smooth_curve_to"><strong>add_smooth_curve_to</strong></a>(self, *points)</dt><dd><tt>If&nbsp;two&nbsp;points&nbsp;are&nbsp;passed&nbsp;in,&nbsp;the&nbsp;first&nbsp;is&nbsp;intepretted<br>
+as&nbsp;a&nbsp;handle,&nbsp;the&nbsp;second&nbsp;as&nbsp;an&nbsp;anchor</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-add_subpath"><strong>add_subpath</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-align_points"><strong>align_points</strong></a>(self, vmobject)</dt><dd><tt>#&nbsp;Alignment</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-align_rgbas"><strong>align_rgbas</strong></a>(self, vmobject)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-append_points"><strong>append_points</strong></a>(self, new_points)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-append_vectorized_mobject"><strong>append_vectorized_mobject</strong></a>(self, vectorized_mobject)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-apply_function"><strong>apply_function</strong></a>(self, function)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-change_anchor_mode"><strong>change_anchor_mode</strong></a>(self, mode)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-clear_points"><strong>clear_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-color_using_background_image"><strong>color_using_background_image</strong></a>(self, background_image_file)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-consider_points_equals"><strong>consider_points_equals</strong></a>(self, p0, p1)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-fade"><strong>fade</strong></a>(self, darkness=0.5, family=True)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-generate_rgbas_array"><strong>generate_rgbas_array</strong></a>(self, color, opacity)</dt><dd><tt>First&nbsp;arg&nbsp;can&nbsp;be&nbsp;either&nbsp;a&nbsp;color,&nbsp;or&nbsp;a&nbsp;tuple/list&nbsp;of&nbsp;colors.<br>
+Likewise,&nbsp;opacity&nbsp;can&nbsp;either&nbsp;be&nbsp;a&nbsp;float,&nbsp;or&nbsp;a&nbsp;tuple&nbsp;of&nbsp;floats.<br>
+If&nbsp;self.<strong>sheen_factor</strong>&nbsp;is&nbsp;not&nbsp;zero,&nbsp;and&nbsp;only<br>
+one&nbsp;color&nbsp;was&nbsp;passed&nbsp;in,&nbsp;a&nbsp;second&nbsp;slightly&nbsp;light&nbsp;color<br>
+will&nbsp;automatically&nbsp;be&nbsp;added&nbsp;for&nbsp;the&nbsp;gradient</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-get_anchors"><strong>get_anchors</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_anchors_and_handles"><strong>get_anchors_and_handles</strong></a>(self)</dt><dd><tt>returns&nbsp;anchors1,&nbsp;handles1,&nbsp;handles2,&nbsp;anchors2,<br>
+where&nbsp;(anchors1[i],&nbsp;handles1[i],&nbsp;handles2[i],&nbsp;anchors2[i])<br>
+will&nbsp;be&nbsp;four&nbsp;points&nbsp;defining&nbsp;a&nbsp;cubic&nbsp;bezier&nbsp;curve<br>
+for&nbsp;any&nbsp;i&nbsp;in&nbsp;range(0,&nbsp;len(anchors1))</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-get_arc_length"><strong>get_arc_length</strong></a>(self, n_sample_points=None)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_background_image_file"><strong>get_background_image_file</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_color"><strong>get_color</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_cubic_bezier_tuples"><strong>get_cubic_bezier_tuples</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_cubic_bezier_tuples_from_points"><strong>get_cubic_bezier_tuples_from_points</strong></a>(self, points)</dt><dd><tt>#&nbsp;Information&nbsp;about&nbsp;line</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-get_end_anchors"><strong>get_end_anchors</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_fill_color"><strong>get_fill_color</strong></a>(self)</dt><dd><tt>If&nbsp;there&nbsp;are&nbsp;multiple&nbsp;colors&nbsp;(for&nbsp;gradient)<br>
+this&nbsp;returns&nbsp;the&nbsp;first&nbsp;one</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-get_fill_colors"><strong>get_fill_colors</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_fill_opacities"><strong>get_fill_opacities</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_fill_opacity"><strong>get_fill_opacity</strong></a>(self)</dt><dd><tt>If&nbsp;there&nbsp;are&nbsp;multiple&nbsp;opacities,&nbsp;this&nbsp;returns&nbsp;the<br>
+first</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-get_fill_rgbas"><strong>get_fill_rgbas</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_gradient_start_and_end_points"><strong>get_gradient_start_and_end_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_group_class"><strong>get_group_class</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_last_point"><strong>get_last_point</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_nth_curve_function"><strong>get_nth_curve_function</strong></a>(self, n)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_nth_curve_points"><strong>get_nth_curve_points</strong></a>(self, n)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_num_curves"><strong>get_num_curves</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_point_mobject"><strong>get_point_mobject</strong></a>(self, center=None)</dt><dd><tt>The&nbsp;simplest&nbsp;mobject&nbsp;to&nbsp;be&nbsp;transformed&nbsp;to&nbsp;or&nbsp;from&nbsp;self.<br>
+Should&nbsp;by&nbsp;a&nbsp;point&nbsp;of&nbsp;the&nbsp;appropriate&nbsp;type</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-get_points"><strong>get_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_points_defining_boundary"><strong>get_points_defining_boundary</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_sheen_direction"><strong>get_sheen_direction</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_sheen_factor"><strong>get_sheen_factor</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_start_anchors"><strong>get_start_anchors</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_stroke_color"><strong>get_stroke_color</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_stroke_colors"><strong>get_stroke_colors</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_stroke_opacities"><strong>get_stroke_opacities</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_stroke_opacity"><strong>get_stroke_opacity</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_stroke_rgbas"><strong>get_stroke_rgbas</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_stroke_width"><strong>get_stroke_width</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_style"><strong>get_style</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_subcurve"><strong>get_subcurve</strong></a>(self, a, b)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_subpaths"><strong>get_subpaths</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_subpaths_from_points"><strong>get_subpaths_from_points</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-has_new_path_started"><strong>has_new_path_started</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-init_colors"><strong>init_colors</strong></a>(self)</dt><dd><tt>#&nbsp;Colors</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-insert_n_curves"><strong>insert_n_curves</strong></a>(self, n)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-insert_n_curves_to_point_list"><strong>insert_n_curves_to_point_list</strong></a>(self, n, points)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-interpolate_color"><strong>interpolate_color</strong></a>(self, mobject1, mobject2, alpha)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-is_closed"><strong>is_closed</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-make_jagged"><strong>make_jagged</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-make_smooth"><strong>make_smooth</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-match_background_image_file"><strong>match_background_image_file</strong></a>(self, vmobject)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-match_style"><strong>match_style</strong></a>(self, vmobject, family=True)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-point_from_proportion"><strong>point_from_proportion</strong></a>(self, alpha)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-pointwise_become_partial"><strong>pointwise_become_partial</strong></a>(self, vmobject, a, b)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-scale_handle_to_anchor_distances"><strong>scale_handle_to_anchor_distances</strong></a>(self, factor)</dt><dd><tt>If&nbsp;the&nbsp;distance&nbsp;between&nbsp;a&nbsp;given&nbsp;handle&nbsp;point&nbsp;H&nbsp;and&nbsp;its&nbsp;associated<br>
+anchor&nbsp;point&nbsp;A&nbsp;is&nbsp;d,&nbsp;then&nbsp;it&nbsp;changes&nbsp;H&nbsp;to&nbsp;be&nbsp;a&nbsp;distances&nbsp;factor*d<br>
+away&nbsp;from&nbsp;A,&nbsp;but&nbsp;so&nbsp;that&nbsp;the&nbsp;line&nbsp;from&nbsp;A&nbsp;to&nbsp;H&nbsp;doesn't&nbsp;change.<br>
+This&nbsp;is&nbsp;mostly&nbsp;useful&nbsp;in&nbsp;the&nbsp;context&nbsp;of&nbsp;applying&nbsp;a&nbsp;(differentiable)<br>
+function,&nbsp;to&nbsp;preserve&nbsp;tangency&nbsp;properties.&nbsp;&nbsp;One&nbsp;would&nbsp;pull&nbsp;all&nbsp;the<br>
+handles&nbsp;closer&nbsp;to&nbsp;their&nbsp;anchors,&nbsp;apply&nbsp;the&nbsp;function&nbsp;then&nbsp;push&nbsp;them&nbsp;out<br>
+again.</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-set_anchors_and_handles"><strong>set_anchors_and_handles</strong></a>(self, anchors1, handles1, handles2, anchors2)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-set_background_stroke"><strong>set_background_stroke</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-set_color"><strong>set_color</strong></a>(self, color, family=True)</dt><dd><tt>Condition&nbsp;is&nbsp;function&nbsp;which&nbsp;takes&nbsp;in&nbsp;one&nbsp;arguments,&nbsp;(x,&nbsp;y,&nbsp;z).<br>
+Here&nbsp;it&nbsp;just&nbsp;recurses&nbsp;to&nbsp;submobjects,&nbsp;but&nbsp;in&nbsp;subclasses&nbsp;this<br>
+should&nbsp;be&nbsp;further&nbsp;implemented&nbsp;based&nbsp;on&nbsp;the&nbsp;the&nbsp;inner&nbsp;workings<br>
+of&nbsp;color</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-set_fill"><strong>set_fill</strong></a>(self, color=None, opacity=None, family=True)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-set_opacity"><strong>set_opacity</strong></a>(self, opacity, family=True)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-set_points"><strong>set_points</strong></a>(self, points)</dt><dd><tt>#&nbsp;Points</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-set_points_as_corners"><strong>set_points_as_corners</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-set_points_smoothly"><strong>set_points_smoothly</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-set_shade_in_3d"><strong>set_shade_in_3d</strong></a>(self, value=True, z_index_as_group=False)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-set_sheen"><strong>set_sheen</strong></a>(self, factor, direction=None, family=True)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-set_sheen_direction"><strong>set_sheen_direction</strong></a>(self, direction, family=True)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-set_stroke"><strong>set_stroke</strong></a>(self, color=None, width=None, opacity=None, background=False, family=True)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-set_style"><strong>set_style</strong></a>(self, fill_color=None, fill_opacity=None, stroke_color=None, stroke_width=None, stroke_opacity=None, background_stroke_color=None, background_stroke_width=None, background_stroke_opacity=None, sheen_factor=None, sheen_direction=None, background_image_file=None, family=True)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-start_new_path"><strong>start_new_path</strong></a>(self, point)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-update_rgbas_array"><strong>update_rgbas_array</strong></a>(self, array_name, color=None, opacity=None)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.mobject.mobject.Mobject</a>:<br>
+<dl><dt><a name="ParametricSurface-__getitem__"><strong>__getitem__</strong></a>(self, value)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-__iter__"><strong>__iter__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-__len__"><strong>__len__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-add"><strong>add</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-add_background_rectangle"><strong>add_background_rectangle</strong></a>(self, color='#000000', opacity=0.75, **kwargs)</dt><dd><tt>#&nbsp;Background&nbsp;rectangle</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-add_background_rectangle_to_family_members_with_points"><strong>add_background_rectangle_to_family_members_with_points</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-add_background_rectangle_to_submobjects"><strong>add_background_rectangle_to_submobjects</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-add_n_more_submobjects"><strong>add_n_more_submobjects</strong></a>(self, n)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-add_to_back"><strong>add_to_back</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-add_updater"><strong>add_updater</strong></a>(self, update_function, index=None, call_updater=True)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-align_data"><strong>align_data</strong></a>(self, mobject)</dt><dd><tt>#&nbsp;Alignment</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-align_on_border"><strong>align_on_border</strong></a>(self, direction, buff=0.5)</dt><dd><tt>Direction&nbsp;just&nbsp;needs&nbsp;to&nbsp;be&nbsp;a&nbsp;vector&nbsp;pointing&nbsp;towards&nbsp;side&nbsp;or<br>
+corner&nbsp;in&nbsp;the&nbsp;2d&nbsp;plane.</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-align_points_with_larger"><strong>align_points_with_larger</strong></a>(self, larger_mobject)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-align_submobjects"><strong>align_submobjects</strong></a>(self, mobject)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-align_to"><strong>align_to</strong></a>(self, mobject_or_point, direction=array([0., 0., 0.]), alignment_vect=array([0., 1., 0.]))</dt><dd><tt>Examples:<br>
+mob1.<a href="">align_to</a>(mob2,&nbsp;UP)&nbsp;moves&nbsp;mob1&nbsp;vertically&nbsp;so&nbsp;that&nbsp;its<br>
+top&nbsp;edge&nbsp;lines&nbsp;ups&nbsp;with&nbsp;mob2's&nbsp;top&nbsp;edge.<br>
+&nbsp;<br>
+mob1.<a href="">align_to</a>(mob2,&nbsp;alignment_vect&nbsp;=&nbsp;RIGHT)&nbsp;moves&nbsp;mob1<br>
+horizontally&nbsp;so&nbsp;that&nbsp;it's&nbsp;center&nbsp;is&nbsp;directly&nbsp;above/below<br>
+the&nbsp;center&nbsp;of&nbsp;mob2</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-apply_complex_function"><strong>apply_complex_function</strong></a>(self, function, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-apply_function_to_position"><strong>apply_function_to_position</strong></a>(self, function)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-apply_function_to_submobject_positions"><strong>apply_function_to_submobject_positions</strong></a>(self, function)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-apply_matrix"><strong>apply_matrix</strong></a>(self, matrix, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-apply_over_attr_arrays"><strong>apply_over_attr_arrays</strong></a>(self, func)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-apply_points_function_about_point"><strong>apply_points_function_about_point</strong></a>(self, func, about_point=None, about_edge=None)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-apply_to_family"><strong>apply_to_family</strong></a>(self, func)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-arrange"><strong>arrange</strong></a>(self, direction=array([1., 0., 0.]), center=True, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-arrange_in_grid"><strong>arrange_in_grid</strong></a>(self, n_rows=None, n_cols=None, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-arrange_submobjects"><strong>arrange_submobjects</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;Just&nbsp;here&nbsp;to&nbsp;keep&nbsp;from&nbsp;breaking&nbsp;old&nbsp;scenes.</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-become"><strong>become</strong></a>(self, mobject, copy_submobjects=True)</dt><dd><tt>Edit&nbsp;points,&nbsp;colors&nbsp;and&nbsp;submobjects&nbsp;to&nbsp;be&nbsp;idential<br>
+to&nbsp;another&nbsp;mobject</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-become_partial"><strong>become_partial</strong></a>(self, mobject, a, b)</dt><dd><tt>Set&nbsp;points&nbsp;in&nbsp;such&nbsp;a&nbsp;way&nbsp;as&nbsp;to&nbsp;become&nbsp;only<br>
+part&nbsp;of&nbsp;mobject.<br>
+Inputs&nbsp;0&nbsp;&lt;=&nbsp;a&nbsp;&lt;&nbsp;b&nbsp;&lt;=&nbsp;1&nbsp;determine&nbsp;what&nbsp;portion<br>
+of&nbsp;mobject&nbsp;to&nbsp;become.</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-center"><strong>center</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-clear_updaters"><strong>clear_updaters</strong></a>(self, recursive=True)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-copy"><strong>copy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-deepcopy"><strong>deepcopy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-digest_mobject_attrs"><strong>digest_mobject_attrs</strong></a>(self)</dt><dd><tt>Ensures&nbsp;all&nbsp;attributes&nbsp;which&nbsp;are&nbsp;mobjects&nbsp;are&nbsp;included<br>
+in&nbsp;the&nbsp;submobjects&nbsp;list.</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-fade_to"><strong>fade_to</strong></a>(self, color, alpha, family=True)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-family_members_with_points"><strong>family_members_with_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-flip"><strong>flip</strong></a>(self, axis=array([0., 1., 0.]), **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-generate_points"><strong>generate_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-generate_target"><strong>generate_target</strong></a>(self, use_deepcopy=False)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_all_points"><strong>get_all_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_array_attrs"><strong>get_array_attrs</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_bottom"><strong>get_bottom</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_boundary_point"><strong>get_boundary_point</strong></a>(self, direction)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_center"><strong>get_center</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_center_of_mass"><strong>get_center_of_mass</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_coord"><strong>get_coord</strong></a>(self, dim, direction=array([0., 0., 0.]))</dt><dd><tt>Meant&nbsp;to&nbsp;generalize&nbsp;get_x,&nbsp;get_y,&nbsp;get_z</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-get_corner"><strong>get_corner</strong></a>(self, direction)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_critical_point"><strong>get_critical_point</strong></a>(self, direction)</dt><dd><tt>Picture&nbsp;a&nbsp;box&nbsp;bounding&nbsp;the&nbsp;mobject.&nbsp;&nbsp;Such&nbsp;a&nbsp;box&nbsp;has<br>
+9&nbsp;'critical&nbsp;points':&nbsp;4&nbsp;corners,&nbsp;4&nbsp;edge&nbsp;center,&nbsp;the<br>
+center.&nbsp;&nbsp;This&nbsp;returns&nbsp;one&nbsp;of&nbsp;them.</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-get_depth"><strong>get_depth</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_edge_center"><strong>get_edge_center</strong></a>(self, direction)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_end"><strong>get_end</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_extremum_along_dim"><strong>get_extremum_along_dim</strong></a>(self, points=None, dim=0, key=0)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_family"><strong>get_family</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_family_updaters"><strong>get_family_updaters</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_height"><strong>get_height</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_image"><strong>get_image</strong></a>(self, camera=None)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_left"><strong>get_left</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_merged_array"><strong>get_merged_array</strong></a>(self, array_attr)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_nadir"><strong>get_nadir</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_num_points"><strong>get_num_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_pieces"><strong>get_pieces</strong></a>(self, n_pieces)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_right"><strong>get_right</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_start"><strong>get_start</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_start_and_end"><strong>get_start_and_end</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_time_based_updaters"><strong>get_time_based_updaters</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_top"><strong>get_top</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_updaters"><strong>get_updaters</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_width"><strong>get_width</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_x"><strong>get_x</strong></a>(self, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_y"><strong>get_y</strong></a>(self, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_z"><strong>get_z</strong></a>(self, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_z_index_reference_point"><strong>get_z_index_reference_point</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-get_zenith"><strong>get_zenith</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-has_no_points"><strong>has_no_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-has_points"><strong>has_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-has_time_based_updater"><strong>has_time_based_updater</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-interpolate"><strong>interpolate</strong></a>(self, mobject1, mobject2, alpha, path_func=&lt;function straight_path at 0x0000020789397A68&gt;)</dt><dd><tt>Turns&nbsp;self&nbsp;into&nbsp;an&nbsp;interpolation&nbsp;between&nbsp;mobject1<br>
+and&nbsp;mobject2.</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-is_off_screen"><strong>is_off_screen</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-length_over_dim"><strong>length_over_dim</strong></a>(self, dim)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-match_color"><strong>match_color</strong></a>(self, mobject)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-match_coord"><strong>match_coord</strong></a>(self, mobject, dim, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="ParametricSurface-match_depth"><strong>match_depth</strong></a>(self, mobject, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-match_dim_size"><strong>match_dim_size</strong></a>(self, mobject, dim, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-match_height"><strong>match_height</strong></a>(self, mobject, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-match_updaters"><strong>match_updaters</strong></a>(self, mobject)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-match_width"><strong>match_width</strong></a>(self, mobject, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-match_x"><strong>match_x</strong></a>(self, mobject, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="ParametricSurface-match_y"><strong>match_y</strong></a>(self, mobject, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="ParametricSurface-match_z"><strong>match_z</strong></a>(self, mobject, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="ParametricSurface-move_to"><strong>move_to</strong></a>(self, point_or_mobject, aligned_edge=array([0., 0., 0.]), coor_mask=array([1, 1, 1]))</dt></dl>
+
+<dl><dt><a name="ParametricSurface-next_to"><strong>next_to</strong></a>(self, mobject_or_point, direction=array([1., 0., 0.]), buff=0.25, aligned_edge=array([0., 0., 0.]), submobject_to_align=None, index_of_submobject_to_align=None, coor_mask=array([1, 1, 1]))</dt></dl>
+
+<dl><dt><a name="ParametricSurface-nonempty_submobjects"><strong>nonempty_submobjects</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-null_point_align"><strong>null_point_align</strong></a>(self, mobject)</dt><dd><tt>If&nbsp;a&nbsp;mobject&nbsp;with&nbsp;points&nbsp;is&nbsp;being&nbsp;aligned&nbsp;to<br>
+one&nbsp;without,&nbsp;treat&nbsp;both&nbsp;as&nbsp;groups,&nbsp;and&nbsp;push<br>
+the&nbsp;one&nbsp;with&nbsp;points&nbsp;into&nbsp;its&nbsp;own&nbsp;submobjects<br>
+list.</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-pose_at_angle"><strong>pose_at_angle</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-push_self_into_submobjects"><strong>push_self_into_submobjects</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-put_start_and_end_on"><strong>put_start_and_end_on</strong></a>(self, start, end)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-reduce_across_dimension"><strong>reduce_across_dimension</strong></a>(self, points_func, reduce_func, dim)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-remove"><strong>remove</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-remove_updater"><strong>remove_updater</strong></a>(self, update_function)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-repeat"><strong>repeat</strong></a>(self, count)</dt><dd><tt>This&nbsp;can&nbsp;make&nbsp;transition&nbsp;animations&nbsp;nicer</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-repeat_submobject"><strong>repeat_submobject</strong></a>(self, submob)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-replace"><strong>replace</strong></a>(self, mobject, dim_to_match=0, stretch=False)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-rescale_to_fit"><strong>rescale_to_fit</strong></a>(self, length, dim, stretch=False, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-reset_points"><strong>reset_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-restore"><strong>restore</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-resume_updating"><strong>resume_updating</strong></a>(self, recursive=True)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-reverse_points"><strong>reverse_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-rotate"><strong>rotate</strong></a>(self, angle, axis=array([0., 0., 1.]), **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-rotate_about_origin"><strong>rotate_about_origin</strong></a>(self, angle, axis=array([0., 0., 1.]), axes=[])</dt></dl>
+
+<dl><dt><a name="ParametricSurface-rotate_in_place"><strong>rotate_in_place</strong></a>(self, angle, axis=array([0., 0., 1.]))</dt></dl>
+
+<dl><dt><a name="ParametricSurface-save_image"><strong>save_image</strong></a>(self, name=None)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-save_state"><strong>save_state</strong></a>(self, use_deepcopy=False)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-scale"><strong>scale</strong></a>(self, scale_factor, **kwargs)</dt><dd><tt>Default&nbsp;behavior&nbsp;is&nbsp;to&nbsp;scale&nbsp;about&nbsp;the&nbsp;center&nbsp;of&nbsp;the&nbsp;mobject.<br>
+The&nbsp;argument&nbsp;about_edge&nbsp;can&nbsp;be&nbsp;a&nbsp;vector,&nbsp;indicating&nbsp;which&nbsp;side&nbsp;of<br>
+the&nbsp;mobject&nbsp;to&nbsp;scale&nbsp;about,&nbsp;e.g.,&nbsp;mob.<a href="">scale</a>(about_edge&nbsp;=&nbsp;RIGHT)<br>
+scales&nbsp;about&nbsp;mob.<a href="">get_right</a>().<br>
+&nbsp;<br>
+Otherwise,&nbsp;if&nbsp;about_point&nbsp;is&nbsp;given&nbsp;a&nbsp;value,&nbsp;scaling&nbsp;is&nbsp;done&nbsp;with<br>
+respect&nbsp;to&nbsp;that&nbsp;point.</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-scale_about_point"><strong>scale_about_point</strong></a>(self, scale_factor, point)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-scale_in_place"><strong>scale_in_place</strong></a>(self, scale_factor, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-set_color_by_gradient"><strong>set_color_by_gradient</strong></a>(self, *colors)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-set_colors_by_radial_gradient"><strong>set_colors_by_radial_gradient</strong></a>(self, center=None, radius=1, inner_color='#FFFFFF', outer_color='#000000')</dt></dl>
+
+<dl><dt><a name="ParametricSurface-set_coord"><strong>set_coord</strong></a>(self, value, dim, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="ParametricSurface-set_depth"><strong>set_depth</strong></a>(self, depth, stretch=False, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-set_height"><strong>set_height</strong></a>(self, height, stretch=False, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-set_submobject_colors_by_gradient"><strong>set_submobject_colors_by_gradient</strong></a>(self, *colors)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-set_submobject_colors_by_radial_gradient"><strong>set_submobject_colors_by_radial_gradient</strong></a>(self, center=None, radius=1, inner_color='#FFFFFF', outer_color='#000000')</dt></dl>
+
+<dl><dt><a name="ParametricSurface-set_width"><strong>set_width</strong></a>(self, width, stretch=False, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-set_x"><strong>set_x</strong></a>(self, x, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="ParametricSurface-set_y"><strong>set_y</strong></a>(self, y, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="ParametricSurface-set_z"><strong>set_z</strong></a>(self, z, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="ParametricSurface-shift"><strong>shift</strong></a>(self, *vectors)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-shift_onto_screen"><strong>shift_onto_screen</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-show"><strong>show</strong></a>(self, camera=None)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-shuffle"><strong>shuffle</strong></a>(self, recursive=False)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-shuffle_submobjects"><strong>shuffle_submobjects</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-sort"><strong>sort</strong></a>(self, point_to_num_func=&lt;function Mobject.&lt;lambda&gt; at 0x00000207893B08B8&gt;, submob_func=None)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-sort_submobjects"><strong>sort_submobjects</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-space_out_submobjects"><strong>space_out_submobjects</strong></a>(self, factor=1.5, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-split"><strong>split</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-stretch"><strong>stretch</strong></a>(self, factor, dim, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-stretch_about_point"><strong>stretch_about_point</strong></a>(self, factor, dim, point)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-stretch_in_place"><strong>stretch_in_place</strong></a>(self, factor, dim)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-stretch_to_fit_depth"><strong>stretch_to_fit_depth</strong></a>(self, depth, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-stretch_to_fit_height"><strong>stretch_to_fit_height</strong></a>(self, height, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-stretch_to_fit_width"><strong>stretch_to_fit_width</strong></a>(self, width, **kwargs)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-surround"><strong>surround</strong></a>(self, mobject, dim_to_match=0, stretch=False, buff=0.25)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-suspend_updating"><strong>suspend_updating</strong></a>(self, recursive=True)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-throw_error_if_no_points"><strong>throw_error_if_no_points</strong></a>(self)</dt><dd><tt>#&nbsp;Errors</tt></dd></dl>
+
+<dl><dt><a name="ParametricSurface-to_corner"><strong>to_corner</strong></a>(self, corner=array([-1., -1.,  0.]), buff=0.5)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-to_edge"><strong>to_edge</strong></a>(self, edge=array([-1.,  0.,  0.]), buff=0.5)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-to_original_color"><strong>to_original_color</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-update"><strong>update</strong></a>(self, dt=0, recursive=True)</dt></dl>
+
+<dl><dt><a name="ParametricSurface-wag"><strong>wag</strong></a>(self, direction=array([1., 0., 0.]), axis=array([ 0., -1.,  0.]), wag_factor=1.0)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.container.container.Container</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Prism">class <strong>Prism</strong></a>(<a href="">Cube</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">Prism</a>(*vmobjects,&nbsp;**kwargs)<br>
+&nbsp;<br>
+Mathematical&nbsp;Object<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">Prism</a></dd>
+<dd><a href="">Cube</a></dd>
+<dd><a href="">manimlib.mobject.types.vectorized_mobject.VGroup</a></dd>
+<dd><a href="">manimlib.mobject.types.vectorized_mobject.VMobject</a></dd>
+<dd><a href="">manimlib.mobject.mobject.Mobject</a></dd>
+<dd><a href="">manimlib.container.container.Container</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Prism-generate_points"><strong>generate_points</strong></a>(self)</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>CONFIG</strong> = {'dimensions': [3, 2, 1]}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.mobject.types.vectorized_mobject.VGroup</a>:<br>
+<dl><dt><a name="Prism-__init__"><strong>__init__</strong></a>(self, *vmobjects, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.mobject.types.vectorized_mobject.VMobject</a>:<br>
+<dl><dt><a name="Prism-add_cubic_bezier_curve"><strong>add_cubic_bezier_curve</strong></a>(self, anchor1, handle1, handle2, anchor2)</dt></dl>
+
+<dl><dt><a name="Prism-add_cubic_bezier_curve_to"><strong>add_cubic_bezier_curve_to</strong></a>(self, handle1, handle2, anchor)</dt><dd><tt>Add&nbsp;cubic&nbsp;bezier&nbsp;curve&nbsp;to&nbsp;the&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="Prism-add_line_to"><strong>add_line_to</strong></a>(self, point)</dt></dl>
+
+<dl><dt><a name="Prism-add_points_as_corners"><strong>add_points_as_corners</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="Prism-add_smooth_curve_to"><strong>add_smooth_curve_to</strong></a>(self, *points)</dt><dd><tt>If&nbsp;two&nbsp;points&nbsp;are&nbsp;passed&nbsp;in,&nbsp;the&nbsp;first&nbsp;is&nbsp;intepretted<br>
+as&nbsp;a&nbsp;handle,&nbsp;the&nbsp;second&nbsp;as&nbsp;an&nbsp;anchor</tt></dd></dl>
+
+<dl><dt><a name="Prism-add_subpath"><strong>add_subpath</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="Prism-align_points"><strong>align_points</strong></a>(self, vmobject)</dt><dd><tt>#&nbsp;Alignment</tt></dd></dl>
+
+<dl><dt><a name="Prism-align_rgbas"><strong>align_rgbas</strong></a>(self, vmobject)</dt></dl>
+
+<dl><dt><a name="Prism-append_points"><strong>append_points</strong></a>(self, new_points)</dt></dl>
+
+<dl><dt><a name="Prism-append_vectorized_mobject"><strong>append_vectorized_mobject</strong></a>(self, vectorized_mobject)</dt></dl>
+
+<dl><dt><a name="Prism-apply_function"><strong>apply_function</strong></a>(self, function)</dt></dl>
+
+<dl><dt><a name="Prism-change_anchor_mode"><strong>change_anchor_mode</strong></a>(self, mode)</dt></dl>
+
+<dl><dt><a name="Prism-clear_points"><strong>clear_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-color_using_background_image"><strong>color_using_background_image</strong></a>(self, background_image_file)</dt></dl>
+
+<dl><dt><a name="Prism-consider_points_equals"><strong>consider_points_equals</strong></a>(self, p0, p1)</dt></dl>
+
+<dl><dt><a name="Prism-fade"><strong>fade</strong></a>(self, darkness=0.5, family=True)</dt></dl>
+
+<dl><dt><a name="Prism-generate_rgbas_array"><strong>generate_rgbas_array</strong></a>(self, color, opacity)</dt><dd><tt>First&nbsp;arg&nbsp;can&nbsp;be&nbsp;either&nbsp;a&nbsp;color,&nbsp;or&nbsp;a&nbsp;tuple/list&nbsp;of&nbsp;colors.<br>
+Likewise,&nbsp;opacity&nbsp;can&nbsp;either&nbsp;be&nbsp;a&nbsp;float,&nbsp;or&nbsp;a&nbsp;tuple&nbsp;of&nbsp;floats.<br>
+If&nbsp;self.<strong>sheen_factor</strong>&nbsp;is&nbsp;not&nbsp;zero,&nbsp;and&nbsp;only<br>
+one&nbsp;color&nbsp;was&nbsp;passed&nbsp;in,&nbsp;a&nbsp;second&nbsp;slightly&nbsp;light&nbsp;color<br>
+will&nbsp;automatically&nbsp;be&nbsp;added&nbsp;for&nbsp;the&nbsp;gradient</tt></dd></dl>
+
+<dl><dt><a name="Prism-get_anchors"><strong>get_anchors</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_anchors_and_handles"><strong>get_anchors_and_handles</strong></a>(self)</dt><dd><tt>returns&nbsp;anchors1,&nbsp;handles1,&nbsp;handles2,&nbsp;anchors2,<br>
+where&nbsp;(anchors1[i],&nbsp;handles1[i],&nbsp;handles2[i],&nbsp;anchors2[i])<br>
+will&nbsp;be&nbsp;four&nbsp;points&nbsp;defining&nbsp;a&nbsp;cubic&nbsp;bezier&nbsp;curve<br>
+for&nbsp;any&nbsp;i&nbsp;in&nbsp;range(0,&nbsp;len(anchors1))</tt></dd></dl>
+
+<dl><dt><a name="Prism-get_arc_length"><strong>get_arc_length</strong></a>(self, n_sample_points=None)</dt></dl>
+
+<dl><dt><a name="Prism-get_background_image_file"><strong>get_background_image_file</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_color"><strong>get_color</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_cubic_bezier_tuples"><strong>get_cubic_bezier_tuples</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_cubic_bezier_tuples_from_points"><strong>get_cubic_bezier_tuples_from_points</strong></a>(self, points)</dt><dd><tt>#&nbsp;Information&nbsp;about&nbsp;line</tt></dd></dl>
+
+<dl><dt><a name="Prism-get_end_anchors"><strong>get_end_anchors</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_fill_color"><strong>get_fill_color</strong></a>(self)</dt><dd><tt>If&nbsp;there&nbsp;are&nbsp;multiple&nbsp;colors&nbsp;(for&nbsp;gradient)<br>
+this&nbsp;returns&nbsp;the&nbsp;first&nbsp;one</tt></dd></dl>
+
+<dl><dt><a name="Prism-get_fill_colors"><strong>get_fill_colors</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_fill_opacities"><strong>get_fill_opacities</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_fill_opacity"><strong>get_fill_opacity</strong></a>(self)</dt><dd><tt>If&nbsp;there&nbsp;are&nbsp;multiple&nbsp;opacities,&nbsp;this&nbsp;returns&nbsp;the<br>
+first</tt></dd></dl>
+
+<dl><dt><a name="Prism-get_fill_rgbas"><strong>get_fill_rgbas</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_gradient_start_and_end_points"><strong>get_gradient_start_and_end_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_group_class"><strong>get_group_class</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_last_point"><strong>get_last_point</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_nth_curve_function"><strong>get_nth_curve_function</strong></a>(self, n)</dt></dl>
+
+<dl><dt><a name="Prism-get_nth_curve_points"><strong>get_nth_curve_points</strong></a>(self, n)</dt></dl>
+
+<dl><dt><a name="Prism-get_num_curves"><strong>get_num_curves</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_point_mobject"><strong>get_point_mobject</strong></a>(self, center=None)</dt><dd><tt>The&nbsp;simplest&nbsp;mobject&nbsp;to&nbsp;be&nbsp;transformed&nbsp;to&nbsp;or&nbsp;from&nbsp;self.<br>
+Should&nbsp;by&nbsp;a&nbsp;point&nbsp;of&nbsp;the&nbsp;appropriate&nbsp;type</tt></dd></dl>
+
+<dl><dt><a name="Prism-get_points"><strong>get_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_points_defining_boundary"><strong>get_points_defining_boundary</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_sheen_direction"><strong>get_sheen_direction</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_sheen_factor"><strong>get_sheen_factor</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_start_anchors"><strong>get_start_anchors</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_stroke_color"><strong>get_stroke_color</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="Prism-get_stroke_colors"><strong>get_stroke_colors</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="Prism-get_stroke_opacities"><strong>get_stroke_opacities</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="Prism-get_stroke_opacity"><strong>get_stroke_opacity</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="Prism-get_stroke_rgbas"><strong>get_stroke_rgbas</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="Prism-get_stroke_width"><strong>get_stroke_width</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="Prism-get_style"><strong>get_style</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_subcurve"><strong>get_subcurve</strong></a>(self, a, b)</dt></dl>
+
+<dl><dt><a name="Prism-get_subpaths"><strong>get_subpaths</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_subpaths_from_points"><strong>get_subpaths_from_points</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="Prism-has_new_path_started"><strong>has_new_path_started</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-init_colors"><strong>init_colors</strong></a>(self)</dt><dd><tt>#&nbsp;Colors</tt></dd></dl>
+
+<dl><dt><a name="Prism-insert_n_curves"><strong>insert_n_curves</strong></a>(self, n)</dt></dl>
+
+<dl><dt><a name="Prism-insert_n_curves_to_point_list"><strong>insert_n_curves_to_point_list</strong></a>(self, n, points)</dt></dl>
+
+<dl><dt><a name="Prism-interpolate_color"><strong>interpolate_color</strong></a>(self, mobject1, mobject2, alpha)</dt></dl>
+
+<dl><dt><a name="Prism-is_closed"><strong>is_closed</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-make_jagged"><strong>make_jagged</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-make_smooth"><strong>make_smooth</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-match_background_image_file"><strong>match_background_image_file</strong></a>(self, vmobject)</dt></dl>
+
+<dl><dt><a name="Prism-match_style"><strong>match_style</strong></a>(self, vmobject, family=True)</dt></dl>
+
+<dl><dt><a name="Prism-point_from_proportion"><strong>point_from_proportion</strong></a>(self, alpha)</dt></dl>
+
+<dl><dt><a name="Prism-pointwise_become_partial"><strong>pointwise_become_partial</strong></a>(self, vmobject, a, b)</dt></dl>
+
+<dl><dt><a name="Prism-scale_handle_to_anchor_distances"><strong>scale_handle_to_anchor_distances</strong></a>(self, factor)</dt><dd><tt>If&nbsp;the&nbsp;distance&nbsp;between&nbsp;a&nbsp;given&nbsp;handle&nbsp;point&nbsp;H&nbsp;and&nbsp;its&nbsp;associated<br>
+anchor&nbsp;point&nbsp;A&nbsp;is&nbsp;d,&nbsp;then&nbsp;it&nbsp;changes&nbsp;H&nbsp;to&nbsp;be&nbsp;a&nbsp;distances&nbsp;factor*d<br>
+away&nbsp;from&nbsp;A,&nbsp;but&nbsp;so&nbsp;that&nbsp;the&nbsp;line&nbsp;from&nbsp;A&nbsp;to&nbsp;H&nbsp;doesn't&nbsp;change.<br>
+This&nbsp;is&nbsp;mostly&nbsp;useful&nbsp;in&nbsp;the&nbsp;context&nbsp;of&nbsp;applying&nbsp;a&nbsp;(differentiable)<br>
+function,&nbsp;to&nbsp;preserve&nbsp;tangency&nbsp;properties.&nbsp;&nbsp;One&nbsp;would&nbsp;pull&nbsp;all&nbsp;the<br>
+handles&nbsp;closer&nbsp;to&nbsp;their&nbsp;anchors,&nbsp;apply&nbsp;the&nbsp;function&nbsp;then&nbsp;push&nbsp;them&nbsp;out<br>
+again.</tt></dd></dl>
+
+<dl><dt><a name="Prism-set_anchors_and_handles"><strong>set_anchors_and_handles</strong></a>(self, anchors1, handles1, handles2, anchors2)</dt></dl>
+
+<dl><dt><a name="Prism-set_background_stroke"><strong>set_background_stroke</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-set_color"><strong>set_color</strong></a>(self, color, family=True)</dt><dd><tt>Condition&nbsp;is&nbsp;function&nbsp;which&nbsp;takes&nbsp;in&nbsp;one&nbsp;arguments,&nbsp;(x,&nbsp;y,&nbsp;z).<br>
+Here&nbsp;it&nbsp;just&nbsp;recurses&nbsp;to&nbsp;submobjects,&nbsp;but&nbsp;in&nbsp;subclasses&nbsp;this<br>
+should&nbsp;be&nbsp;further&nbsp;implemented&nbsp;based&nbsp;on&nbsp;the&nbsp;the&nbsp;inner&nbsp;workings<br>
+of&nbsp;color</tt></dd></dl>
+
+<dl><dt><a name="Prism-set_fill"><strong>set_fill</strong></a>(self, color=None, opacity=None, family=True)</dt></dl>
+
+<dl><dt><a name="Prism-set_opacity"><strong>set_opacity</strong></a>(self, opacity, family=True)</dt></dl>
+
+<dl><dt><a name="Prism-set_points"><strong>set_points</strong></a>(self, points)</dt><dd><tt>#&nbsp;Points</tt></dd></dl>
+
+<dl><dt><a name="Prism-set_points_as_corners"><strong>set_points_as_corners</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="Prism-set_points_smoothly"><strong>set_points_smoothly</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="Prism-set_shade_in_3d"><strong>set_shade_in_3d</strong></a>(self, value=True, z_index_as_group=False)</dt></dl>
+
+<dl><dt><a name="Prism-set_sheen"><strong>set_sheen</strong></a>(self, factor, direction=None, family=True)</dt></dl>
+
+<dl><dt><a name="Prism-set_sheen_direction"><strong>set_sheen_direction</strong></a>(self, direction, family=True)</dt></dl>
+
+<dl><dt><a name="Prism-set_stroke"><strong>set_stroke</strong></a>(self, color=None, width=None, opacity=None, background=False, family=True)</dt></dl>
+
+<dl><dt><a name="Prism-set_style"><strong>set_style</strong></a>(self, fill_color=None, fill_opacity=None, stroke_color=None, stroke_width=None, stroke_opacity=None, background_stroke_color=None, background_stroke_width=None, background_stroke_opacity=None, sheen_factor=None, sheen_direction=None, background_image_file=None, family=True)</dt></dl>
+
+<dl><dt><a name="Prism-start_new_path"><strong>start_new_path</strong></a>(self, point)</dt></dl>
+
+<dl><dt><a name="Prism-update_rgbas_array"><strong>update_rgbas_array</strong></a>(self, array_name, color=None, opacity=None)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.mobject.mobject.Mobject</a>:<br>
+<dl><dt><a name="Prism-__getitem__"><strong>__getitem__</strong></a>(self, value)</dt></dl>
+
+<dl><dt><a name="Prism-__iter__"><strong>__iter__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-__len__"><strong>__len__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="Prism-add"><strong>add</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="Prism-add_background_rectangle"><strong>add_background_rectangle</strong></a>(self, color='#000000', opacity=0.75, **kwargs)</dt><dd><tt>#&nbsp;Background&nbsp;rectangle</tt></dd></dl>
+
+<dl><dt><a name="Prism-add_background_rectangle_to_family_members_with_points"><strong>add_background_rectangle_to_family_members_with_points</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-add_background_rectangle_to_submobjects"><strong>add_background_rectangle_to_submobjects</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-add_n_more_submobjects"><strong>add_n_more_submobjects</strong></a>(self, n)</dt></dl>
+
+<dl><dt><a name="Prism-add_to_back"><strong>add_to_back</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="Prism-add_updater"><strong>add_updater</strong></a>(self, update_function, index=None, call_updater=True)</dt></dl>
+
+<dl><dt><a name="Prism-align_data"><strong>align_data</strong></a>(self, mobject)</dt><dd><tt>#&nbsp;Alignment</tt></dd></dl>
+
+<dl><dt><a name="Prism-align_on_border"><strong>align_on_border</strong></a>(self, direction, buff=0.5)</dt><dd><tt>Direction&nbsp;just&nbsp;needs&nbsp;to&nbsp;be&nbsp;a&nbsp;vector&nbsp;pointing&nbsp;towards&nbsp;side&nbsp;or<br>
+corner&nbsp;in&nbsp;the&nbsp;2d&nbsp;plane.</tt></dd></dl>
+
+<dl><dt><a name="Prism-align_points_with_larger"><strong>align_points_with_larger</strong></a>(self, larger_mobject)</dt></dl>
+
+<dl><dt><a name="Prism-align_submobjects"><strong>align_submobjects</strong></a>(self, mobject)</dt></dl>
+
+<dl><dt><a name="Prism-align_to"><strong>align_to</strong></a>(self, mobject_or_point, direction=array([0., 0., 0.]), alignment_vect=array([0., 1., 0.]))</dt><dd><tt>Examples:<br>
+mob1.<a href="">align_to</a>(mob2,&nbsp;UP)&nbsp;moves&nbsp;mob1&nbsp;vertically&nbsp;so&nbsp;that&nbsp;its<br>
+top&nbsp;edge&nbsp;lines&nbsp;ups&nbsp;with&nbsp;mob2's&nbsp;top&nbsp;edge.<br>
+&nbsp;<br>
+mob1.<a href="">align_to</a>(mob2,&nbsp;alignment_vect&nbsp;=&nbsp;RIGHT)&nbsp;moves&nbsp;mob1<br>
+horizontally&nbsp;so&nbsp;that&nbsp;it's&nbsp;center&nbsp;is&nbsp;directly&nbsp;above/below<br>
+the&nbsp;center&nbsp;of&nbsp;mob2</tt></dd></dl>
+
+<dl><dt><a name="Prism-apply_complex_function"><strong>apply_complex_function</strong></a>(self, function, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-apply_function_to_position"><strong>apply_function_to_position</strong></a>(self, function)</dt></dl>
+
+<dl><dt><a name="Prism-apply_function_to_submobject_positions"><strong>apply_function_to_submobject_positions</strong></a>(self, function)</dt></dl>
+
+<dl><dt><a name="Prism-apply_matrix"><strong>apply_matrix</strong></a>(self, matrix, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-apply_over_attr_arrays"><strong>apply_over_attr_arrays</strong></a>(self, func)</dt></dl>
+
+<dl><dt><a name="Prism-apply_points_function_about_point"><strong>apply_points_function_about_point</strong></a>(self, func, about_point=None, about_edge=None)</dt></dl>
+
+<dl><dt><a name="Prism-apply_to_family"><strong>apply_to_family</strong></a>(self, func)</dt></dl>
+
+<dl><dt><a name="Prism-arrange"><strong>arrange</strong></a>(self, direction=array([1., 0., 0.]), center=True, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-arrange_in_grid"><strong>arrange_in_grid</strong></a>(self, n_rows=None, n_cols=None, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-arrange_submobjects"><strong>arrange_submobjects</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;Just&nbsp;here&nbsp;to&nbsp;keep&nbsp;from&nbsp;breaking&nbsp;old&nbsp;scenes.</tt></dd></dl>
+
+<dl><dt><a name="Prism-become"><strong>become</strong></a>(self, mobject, copy_submobjects=True)</dt><dd><tt>Edit&nbsp;points,&nbsp;colors&nbsp;and&nbsp;submobjects&nbsp;to&nbsp;be&nbsp;idential<br>
+to&nbsp;another&nbsp;mobject</tt></dd></dl>
+
+<dl><dt><a name="Prism-become_partial"><strong>become_partial</strong></a>(self, mobject, a, b)</dt><dd><tt>Set&nbsp;points&nbsp;in&nbsp;such&nbsp;a&nbsp;way&nbsp;as&nbsp;to&nbsp;become&nbsp;only<br>
+part&nbsp;of&nbsp;mobject.<br>
+Inputs&nbsp;0&nbsp;&lt;=&nbsp;a&nbsp;&lt;&nbsp;b&nbsp;&lt;=&nbsp;1&nbsp;determine&nbsp;what&nbsp;portion<br>
+of&nbsp;mobject&nbsp;to&nbsp;become.</tt></dd></dl>
+
+<dl><dt><a name="Prism-center"><strong>center</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-clear_updaters"><strong>clear_updaters</strong></a>(self, recursive=True)</dt></dl>
+
+<dl><dt><a name="Prism-copy"><strong>copy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-deepcopy"><strong>deepcopy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-digest_mobject_attrs"><strong>digest_mobject_attrs</strong></a>(self)</dt><dd><tt>Ensures&nbsp;all&nbsp;attributes&nbsp;which&nbsp;are&nbsp;mobjects&nbsp;are&nbsp;included<br>
+in&nbsp;the&nbsp;submobjects&nbsp;list.</tt></dd></dl>
+
+<dl><dt><a name="Prism-fade_to"><strong>fade_to</strong></a>(self, color, alpha, family=True)</dt></dl>
+
+<dl><dt><a name="Prism-family_members_with_points"><strong>family_members_with_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-flip"><strong>flip</strong></a>(self, axis=array([0., 1., 0.]), **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-generate_target"><strong>generate_target</strong></a>(self, use_deepcopy=False)</dt></dl>
+
+<dl><dt><a name="Prism-get_all_points"><strong>get_all_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_array_attrs"><strong>get_array_attrs</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_bottom"><strong>get_bottom</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_boundary_point"><strong>get_boundary_point</strong></a>(self, direction)</dt></dl>
+
+<dl><dt><a name="Prism-get_center"><strong>get_center</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_center_of_mass"><strong>get_center_of_mass</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_coord"><strong>get_coord</strong></a>(self, dim, direction=array([0., 0., 0.]))</dt><dd><tt>Meant&nbsp;to&nbsp;generalize&nbsp;get_x,&nbsp;get_y,&nbsp;get_z</tt></dd></dl>
+
+<dl><dt><a name="Prism-get_corner"><strong>get_corner</strong></a>(self, direction)</dt></dl>
+
+<dl><dt><a name="Prism-get_critical_point"><strong>get_critical_point</strong></a>(self, direction)</dt><dd><tt>Picture&nbsp;a&nbsp;box&nbsp;bounding&nbsp;the&nbsp;mobject.&nbsp;&nbsp;Such&nbsp;a&nbsp;box&nbsp;has<br>
+9&nbsp;'critical&nbsp;points':&nbsp;4&nbsp;corners,&nbsp;4&nbsp;edge&nbsp;center,&nbsp;the<br>
+center.&nbsp;&nbsp;This&nbsp;returns&nbsp;one&nbsp;of&nbsp;them.</tt></dd></dl>
+
+<dl><dt><a name="Prism-get_depth"><strong>get_depth</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_edge_center"><strong>get_edge_center</strong></a>(self, direction)</dt></dl>
+
+<dl><dt><a name="Prism-get_end"><strong>get_end</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_extremum_along_dim"><strong>get_extremum_along_dim</strong></a>(self, points=None, dim=0, key=0)</dt></dl>
+
+<dl><dt><a name="Prism-get_family"><strong>get_family</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_family_updaters"><strong>get_family_updaters</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_height"><strong>get_height</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_image"><strong>get_image</strong></a>(self, camera=None)</dt></dl>
+
+<dl><dt><a name="Prism-get_left"><strong>get_left</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_merged_array"><strong>get_merged_array</strong></a>(self, array_attr)</dt></dl>
+
+<dl><dt><a name="Prism-get_nadir"><strong>get_nadir</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_num_points"><strong>get_num_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_pieces"><strong>get_pieces</strong></a>(self, n_pieces)</dt></dl>
+
+<dl><dt><a name="Prism-get_right"><strong>get_right</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_start"><strong>get_start</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_start_and_end"><strong>get_start_and_end</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_time_based_updaters"><strong>get_time_based_updaters</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_top"><strong>get_top</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_updaters"><strong>get_updaters</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_width"><strong>get_width</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_x"><strong>get_x</strong></a>(self, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Prism-get_y"><strong>get_y</strong></a>(self, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Prism-get_z"><strong>get_z</strong></a>(self, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Prism-get_z_index_reference_point"><strong>get_z_index_reference_point</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-get_zenith"><strong>get_zenith</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-has_no_points"><strong>has_no_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-has_points"><strong>has_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-has_time_based_updater"><strong>has_time_based_updater</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-interpolate"><strong>interpolate</strong></a>(self, mobject1, mobject2, alpha, path_func=&lt;function straight_path at 0x0000020789397A68&gt;)</dt><dd><tt>Turns&nbsp;self&nbsp;into&nbsp;an&nbsp;interpolation&nbsp;between&nbsp;mobject1<br>
+and&nbsp;mobject2.</tt></dd></dl>
+
+<dl><dt><a name="Prism-is_off_screen"><strong>is_off_screen</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-length_over_dim"><strong>length_over_dim</strong></a>(self, dim)</dt></dl>
+
+<dl><dt><a name="Prism-match_color"><strong>match_color</strong></a>(self, mobject)</dt></dl>
+
+<dl><dt><a name="Prism-match_coord"><strong>match_coord</strong></a>(self, mobject, dim, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Prism-match_depth"><strong>match_depth</strong></a>(self, mobject, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-match_dim_size"><strong>match_dim_size</strong></a>(self, mobject, dim, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-match_height"><strong>match_height</strong></a>(self, mobject, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-match_updaters"><strong>match_updaters</strong></a>(self, mobject)</dt></dl>
+
+<dl><dt><a name="Prism-match_width"><strong>match_width</strong></a>(self, mobject, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-match_x"><strong>match_x</strong></a>(self, mobject, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Prism-match_y"><strong>match_y</strong></a>(self, mobject, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Prism-match_z"><strong>match_z</strong></a>(self, mobject, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Prism-move_to"><strong>move_to</strong></a>(self, point_or_mobject, aligned_edge=array([0., 0., 0.]), coor_mask=array([1, 1, 1]))</dt></dl>
+
+<dl><dt><a name="Prism-next_to"><strong>next_to</strong></a>(self, mobject_or_point, direction=array([1., 0., 0.]), buff=0.25, aligned_edge=array([0., 0., 0.]), submobject_to_align=None, index_of_submobject_to_align=None, coor_mask=array([1, 1, 1]))</dt></dl>
+
+<dl><dt><a name="Prism-nonempty_submobjects"><strong>nonempty_submobjects</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-null_point_align"><strong>null_point_align</strong></a>(self, mobject)</dt><dd><tt>If&nbsp;a&nbsp;mobject&nbsp;with&nbsp;points&nbsp;is&nbsp;being&nbsp;aligned&nbsp;to<br>
+one&nbsp;without,&nbsp;treat&nbsp;both&nbsp;as&nbsp;groups,&nbsp;and&nbsp;push<br>
+the&nbsp;one&nbsp;with&nbsp;points&nbsp;into&nbsp;its&nbsp;own&nbsp;submobjects<br>
+list.</tt></dd></dl>
+
+<dl><dt><a name="Prism-pose_at_angle"><strong>pose_at_angle</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-push_self_into_submobjects"><strong>push_self_into_submobjects</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-put_start_and_end_on"><strong>put_start_and_end_on</strong></a>(self, start, end)</dt></dl>
+
+<dl><dt><a name="Prism-reduce_across_dimension"><strong>reduce_across_dimension</strong></a>(self, points_func, reduce_func, dim)</dt></dl>
+
+<dl><dt><a name="Prism-remove"><strong>remove</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="Prism-remove_updater"><strong>remove_updater</strong></a>(self, update_function)</dt></dl>
+
+<dl><dt><a name="Prism-repeat"><strong>repeat</strong></a>(self, count)</dt><dd><tt>This&nbsp;can&nbsp;make&nbsp;transition&nbsp;animations&nbsp;nicer</tt></dd></dl>
+
+<dl><dt><a name="Prism-repeat_submobject"><strong>repeat_submobject</strong></a>(self, submob)</dt></dl>
+
+<dl><dt><a name="Prism-replace"><strong>replace</strong></a>(self, mobject, dim_to_match=0, stretch=False)</dt></dl>
+
+<dl><dt><a name="Prism-rescale_to_fit"><strong>rescale_to_fit</strong></a>(self, length, dim, stretch=False, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-reset_points"><strong>reset_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-restore"><strong>restore</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-resume_updating"><strong>resume_updating</strong></a>(self, recursive=True)</dt></dl>
+
+<dl><dt><a name="Prism-reverse_points"><strong>reverse_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-rotate"><strong>rotate</strong></a>(self, angle, axis=array([0., 0., 1.]), **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-rotate_about_origin"><strong>rotate_about_origin</strong></a>(self, angle, axis=array([0., 0., 1.]), axes=[])</dt></dl>
+
+<dl><dt><a name="Prism-rotate_in_place"><strong>rotate_in_place</strong></a>(self, angle, axis=array([0., 0., 1.]))</dt></dl>
+
+<dl><dt><a name="Prism-save_image"><strong>save_image</strong></a>(self, name=None)</dt></dl>
+
+<dl><dt><a name="Prism-save_state"><strong>save_state</strong></a>(self, use_deepcopy=False)</dt></dl>
+
+<dl><dt><a name="Prism-scale"><strong>scale</strong></a>(self, scale_factor, **kwargs)</dt><dd><tt>Default&nbsp;behavior&nbsp;is&nbsp;to&nbsp;scale&nbsp;about&nbsp;the&nbsp;center&nbsp;of&nbsp;the&nbsp;mobject.<br>
+The&nbsp;argument&nbsp;about_edge&nbsp;can&nbsp;be&nbsp;a&nbsp;vector,&nbsp;indicating&nbsp;which&nbsp;side&nbsp;of<br>
+the&nbsp;mobject&nbsp;to&nbsp;scale&nbsp;about,&nbsp;e.g.,&nbsp;mob.<a href="">scale</a>(about_edge&nbsp;=&nbsp;RIGHT)<br>
+scales&nbsp;about&nbsp;mob.<a href="">get_right</a>().<br>
+&nbsp;<br>
+Otherwise,&nbsp;if&nbsp;about_point&nbsp;is&nbsp;given&nbsp;a&nbsp;value,&nbsp;scaling&nbsp;is&nbsp;done&nbsp;with<br>
+respect&nbsp;to&nbsp;that&nbsp;point.</tt></dd></dl>
+
+<dl><dt><a name="Prism-scale_about_point"><strong>scale_about_point</strong></a>(self, scale_factor, point)</dt></dl>
+
+<dl><dt><a name="Prism-scale_in_place"><strong>scale_in_place</strong></a>(self, scale_factor, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-set_color_by_gradient"><strong>set_color_by_gradient</strong></a>(self, *colors)</dt></dl>
+
+<dl><dt><a name="Prism-set_colors_by_radial_gradient"><strong>set_colors_by_radial_gradient</strong></a>(self, center=None, radius=1, inner_color='#FFFFFF', outer_color='#000000')</dt></dl>
+
+<dl><dt><a name="Prism-set_coord"><strong>set_coord</strong></a>(self, value, dim, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Prism-set_depth"><strong>set_depth</strong></a>(self, depth, stretch=False, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-set_height"><strong>set_height</strong></a>(self, height, stretch=False, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-set_submobject_colors_by_gradient"><strong>set_submobject_colors_by_gradient</strong></a>(self, *colors)</dt></dl>
+
+<dl><dt><a name="Prism-set_submobject_colors_by_radial_gradient"><strong>set_submobject_colors_by_radial_gradient</strong></a>(self, center=None, radius=1, inner_color='#FFFFFF', outer_color='#000000')</dt></dl>
+
+<dl><dt><a name="Prism-set_width"><strong>set_width</strong></a>(self, width, stretch=False, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-set_x"><strong>set_x</strong></a>(self, x, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Prism-set_y"><strong>set_y</strong></a>(self, y, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Prism-set_z"><strong>set_z</strong></a>(self, z, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Prism-shift"><strong>shift</strong></a>(self, *vectors)</dt></dl>
+
+<dl><dt><a name="Prism-shift_onto_screen"><strong>shift_onto_screen</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-show"><strong>show</strong></a>(self, camera=None)</dt></dl>
+
+<dl><dt><a name="Prism-shuffle"><strong>shuffle</strong></a>(self, recursive=False)</dt></dl>
+
+<dl><dt><a name="Prism-shuffle_submobjects"><strong>shuffle_submobjects</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-sort"><strong>sort</strong></a>(self, point_to_num_func=&lt;function Mobject.&lt;lambda&gt; at 0x00000207893B08B8&gt;, submob_func=None)</dt></dl>
+
+<dl><dt><a name="Prism-sort_submobjects"><strong>sort_submobjects</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-space_out_submobjects"><strong>space_out_submobjects</strong></a>(self, factor=1.5, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-split"><strong>split</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-stretch"><strong>stretch</strong></a>(self, factor, dim, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-stretch_about_point"><strong>stretch_about_point</strong></a>(self, factor, dim, point)</dt></dl>
+
+<dl><dt><a name="Prism-stretch_in_place"><strong>stretch_in_place</strong></a>(self, factor, dim)</dt></dl>
+
+<dl><dt><a name="Prism-stretch_to_fit_depth"><strong>stretch_to_fit_depth</strong></a>(self, depth, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-stretch_to_fit_height"><strong>stretch_to_fit_height</strong></a>(self, height, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-stretch_to_fit_width"><strong>stretch_to_fit_width</strong></a>(self, width, **kwargs)</dt></dl>
+
+<dl><dt><a name="Prism-surround"><strong>surround</strong></a>(self, mobject, dim_to_match=0, stretch=False, buff=0.25)</dt></dl>
+
+<dl><dt><a name="Prism-suspend_updating"><strong>suspend_updating</strong></a>(self, recursive=True)</dt></dl>
+
+<dl><dt><a name="Prism-throw_error_if_no_points"><strong>throw_error_if_no_points</strong></a>(self)</dt><dd><tt>#&nbsp;Errors</tt></dd></dl>
+
+<dl><dt><a name="Prism-to_corner"><strong>to_corner</strong></a>(self, corner=array([-1., -1.,  0.]), buff=0.5)</dt></dl>
+
+<dl><dt><a name="Prism-to_edge"><strong>to_edge</strong></a>(self, edge=array([-1.,  0.,  0.]), buff=0.5)</dt></dl>
+
+<dl><dt><a name="Prism-to_original_color"><strong>to_original_color</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Prism-update"><strong>update</strong></a>(self, dt=0, recursive=True)</dt></dl>
+
+<dl><dt><a name="Prism-wag"><strong>wag</strong></a>(self, direction=array([1., 0., 0.]), axis=array([ 0., -1.,  0.]), wag_factor=1.0)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.container.container.Container</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Sphere">class <strong>Sphere</strong></a>(<a href="">ParametricSurface</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">Sphere</a>(**kwargs)<br>
+&nbsp;<br>
+Mathematical&nbsp;Object<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">Sphere</a></dd>
+<dd><a href="">ParametricSurface</a></dd>
+<dd><a href="">manimlib.mobject.types.vectorized_mobject.VGroup</a></dd>
+<dd><a href="">manimlib.mobject.types.vectorized_mobject.VMobject</a></dd>
+<dd><a href="">manimlib.mobject.mobject.Mobject</a></dd>
+<dd><a href="">manimlib.container.container.Container</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Sphere-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Sphere-func"><strong>func</strong></a>(self, u, v)</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>CONFIG</strong> = {'radius': 1, 'resolution': (12, 24), 'u_max': 3.1405926535897932, 'u_min': 0.001, 'v_max': 6.283185307179586, 'v_min': 0}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">ParametricSurface</a>:<br>
+<dl><dt><a name="Sphere-get_u_values_and_v_values"><strong>get_u_values_and_v_values</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-set_fill_by_checkerboard"><strong>set_fill_by_checkerboard</strong></a>(self, *colors, opacity=None)</dt></dl>
+
+<dl><dt><a name="Sphere-setup_in_uv_space"><strong>setup_in_uv_space</strong></a>(self)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.mobject.types.vectorized_mobject.VMobject</a>:<br>
+<dl><dt><a name="Sphere-add_cubic_bezier_curve"><strong>add_cubic_bezier_curve</strong></a>(self, anchor1, handle1, handle2, anchor2)</dt></dl>
+
+<dl><dt><a name="Sphere-add_cubic_bezier_curve_to"><strong>add_cubic_bezier_curve_to</strong></a>(self, handle1, handle2, anchor)</dt><dd><tt>Add&nbsp;cubic&nbsp;bezier&nbsp;curve&nbsp;to&nbsp;the&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="Sphere-add_line_to"><strong>add_line_to</strong></a>(self, point)</dt></dl>
+
+<dl><dt><a name="Sphere-add_points_as_corners"><strong>add_points_as_corners</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="Sphere-add_smooth_curve_to"><strong>add_smooth_curve_to</strong></a>(self, *points)</dt><dd><tt>If&nbsp;two&nbsp;points&nbsp;are&nbsp;passed&nbsp;in,&nbsp;the&nbsp;first&nbsp;is&nbsp;intepretted<br>
+as&nbsp;a&nbsp;handle,&nbsp;the&nbsp;second&nbsp;as&nbsp;an&nbsp;anchor</tt></dd></dl>
+
+<dl><dt><a name="Sphere-add_subpath"><strong>add_subpath</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="Sphere-align_points"><strong>align_points</strong></a>(self, vmobject)</dt><dd><tt>#&nbsp;Alignment</tt></dd></dl>
+
+<dl><dt><a name="Sphere-align_rgbas"><strong>align_rgbas</strong></a>(self, vmobject)</dt></dl>
+
+<dl><dt><a name="Sphere-append_points"><strong>append_points</strong></a>(self, new_points)</dt></dl>
+
+<dl><dt><a name="Sphere-append_vectorized_mobject"><strong>append_vectorized_mobject</strong></a>(self, vectorized_mobject)</dt></dl>
+
+<dl><dt><a name="Sphere-apply_function"><strong>apply_function</strong></a>(self, function)</dt></dl>
+
+<dl><dt><a name="Sphere-change_anchor_mode"><strong>change_anchor_mode</strong></a>(self, mode)</dt></dl>
+
+<dl><dt><a name="Sphere-clear_points"><strong>clear_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-color_using_background_image"><strong>color_using_background_image</strong></a>(self, background_image_file)</dt></dl>
+
+<dl><dt><a name="Sphere-consider_points_equals"><strong>consider_points_equals</strong></a>(self, p0, p1)</dt></dl>
+
+<dl><dt><a name="Sphere-fade"><strong>fade</strong></a>(self, darkness=0.5, family=True)</dt></dl>
+
+<dl><dt><a name="Sphere-generate_rgbas_array"><strong>generate_rgbas_array</strong></a>(self, color, opacity)</dt><dd><tt>First&nbsp;arg&nbsp;can&nbsp;be&nbsp;either&nbsp;a&nbsp;color,&nbsp;or&nbsp;a&nbsp;tuple/list&nbsp;of&nbsp;colors.<br>
+Likewise,&nbsp;opacity&nbsp;can&nbsp;either&nbsp;be&nbsp;a&nbsp;float,&nbsp;or&nbsp;a&nbsp;tuple&nbsp;of&nbsp;floats.<br>
+If&nbsp;self.<strong>sheen_factor</strong>&nbsp;is&nbsp;not&nbsp;zero,&nbsp;and&nbsp;only<br>
+one&nbsp;color&nbsp;was&nbsp;passed&nbsp;in,&nbsp;a&nbsp;second&nbsp;slightly&nbsp;light&nbsp;color<br>
+will&nbsp;automatically&nbsp;be&nbsp;added&nbsp;for&nbsp;the&nbsp;gradient</tt></dd></dl>
+
+<dl><dt><a name="Sphere-get_anchors"><strong>get_anchors</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_anchors_and_handles"><strong>get_anchors_and_handles</strong></a>(self)</dt><dd><tt>returns&nbsp;anchors1,&nbsp;handles1,&nbsp;handles2,&nbsp;anchors2,<br>
+where&nbsp;(anchors1[i],&nbsp;handles1[i],&nbsp;handles2[i],&nbsp;anchors2[i])<br>
+will&nbsp;be&nbsp;four&nbsp;points&nbsp;defining&nbsp;a&nbsp;cubic&nbsp;bezier&nbsp;curve<br>
+for&nbsp;any&nbsp;i&nbsp;in&nbsp;range(0,&nbsp;len(anchors1))</tt></dd></dl>
+
+<dl><dt><a name="Sphere-get_arc_length"><strong>get_arc_length</strong></a>(self, n_sample_points=None)</dt></dl>
+
+<dl><dt><a name="Sphere-get_background_image_file"><strong>get_background_image_file</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_color"><strong>get_color</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_cubic_bezier_tuples"><strong>get_cubic_bezier_tuples</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_cubic_bezier_tuples_from_points"><strong>get_cubic_bezier_tuples_from_points</strong></a>(self, points)</dt><dd><tt>#&nbsp;Information&nbsp;about&nbsp;line</tt></dd></dl>
+
+<dl><dt><a name="Sphere-get_end_anchors"><strong>get_end_anchors</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_fill_color"><strong>get_fill_color</strong></a>(self)</dt><dd><tt>If&nbsp;there&nbsp;are&nbsp;multiple&nbsp;colors&nbsp;(for&nbsp;gradient)<br>
+this&nbsp;returns&nbsp;the&nbsp;first&nbsp;one</tt></dd></dl>
+
+<dl><dt><a name="Sphere-get_fill_colors"><strong>get_fill_colors</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_fill_opacities"><strong>get_fill_opacities</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_fill_opacity"><strong>get_fill_opacity</strong></a>(self)</dt><dd><tt>If&nbsp;there&nbsp;are&nbsp;multiple&nbsp;opacities,&nbsp;this&nbsp;returns&nbsp;the<br>
+first</tt></dd></dl>
+
+<dl><dt><a name="Sphere-get_fill_rgbas"><strong>get_fill_rgbas</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_gradient_start_and_end_points"><strong>get_gradient_start_and_end_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_group_class"><strong>get_group_class</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_last_point"><strong>get_last_point</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_nth_curve_function"><strong>get_nth_curve_function</strong></a>(self, n)</dt></dl>
+
+<dl><dt><a name="Sphere-get_nth_curve_points"><strong>get_nth_curve_points</strong></a>(self, n)</dt></dl>
+
+<dl><dt><a name="Sphere-get_num_curves"><strong>get_num_curves</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_point_mobject"><strong>get_point_mobject</strong></a>(self, center=None)</dt><dd><tt>The&nbsp;simplest&nbsp;mobject&nbsp;to&nbsp;be&nbsp;transformed&nbsp;to&nbsp;or&nbsp;from&nbsp;self.<br>
+Should&nbsp;by&nbsp;a&nbsp;point&nbsp;of&nbsp;the&nbsp;appropriate&nbsp;type</tt></dd></dl>
+
+<dl><dt><a name="Sphere-get_points"><strong>get_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_points_defining_boundary"><strong>get_points_defining_boundary</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_sheen_direction"><strong>get_sheen_direction</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_sheen_factor"><strong>get_sheen_factor</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_start_anchors"><strong>get_start_anchors</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_stroke_color"><strong>get_stroke_color</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="Sphere-get_stroke_colors"><strong>get_stroke_colors</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="Sphere-get_stroke_opacities"><strong>get_stroke_opacities</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="Sphere-get_stroke_opacity"><strong>get_stroke_opacity</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="Sphere-get_stroke_rgbas"><strong>get_stroke_rgbas</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="Sphere-get_stroke_width"><strong>get_stroke_width</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="Sphere-get_style"><strong>get_style</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_subcurve"><strong>get_subcurve</strong></a>(self, a, b)</dt></dl>
+
+<dl><dt><a name="Sphere-get_subpaths"><strong>get_subpaths</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_subpaths_from_points"><strong>get_subpaths_from_points</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="Sphere-has_new_path_started"><strong>has_new_path_started</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-init_colors"><strong>init_colors</strong></a>(self)</dt><dd><tt>#&nbsp;Colors</tt></dd></dl>
+
+<dl><dt><a name="Sphere-insert_n_curves"><strong>insert_n_curves</strong></a>(self, n)</dt></dl>
+
+<dl><dt><a name="Sphere-insert_n_curves_to_point_list"><strong>insert_n_curves_to_point_list</strong></a>(self, n, points)</dt></dl>
+
+<dl><dt><a name="Sphere-interpolate_color"><strong>interpolate_color</strong></a>(self, mobject1, mobject2, alpha)</dt></dl>
+
+<dl><dt><a name="Sphere-is_closed"><strong>is_closed</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-make_jagged"><strong>make_jagged</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-make_smooth"><strong>make_smooth</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-match_background_image_file"><strong>match_background_image_file</strong></a>(self, vmobject)</dt></dl>
+
+<dl><dt><a name="Sphere-match_style"><strong>match_style</strong></a>(self, vmobject, family=True)</dt></dl>
+
+<dl><dt><a name="Sphere-point_from_proportion"><strong>point_from_proportion</strong></a>(self, alpha)</dt></dl>
+
+<dl><dt><a name="Sphere-pointwise_become_partial"><strong>pointwise_become_partial</strong></a>(self, vmobject, a, b)</dt></dl>
+
+<dl><dt><a name="Sphere-scale_handle_to_anchor_distances"><strong>scale_handle_to_anchor_distances</strong></a>(self, factor)</dt><dd><tt>If&nbsp;the&nbsp;distance&nbsp;between&nbsp;a&nbsp;given&nbsp;handle&nbsp;point&nbsp;H&nbsp;and&nbsp;its&nbsp;associated<br>
+anchor&nbsp;point&nbsp;A&nbsp;is&nbsp;d,&nbsp;then&nbsp;it&nbsp;changes&nbsp;H&nbsp;to&nbsp;be&nbsp;a&nbsp;distances&nbsp;factor*d<br>
+away&nbsp;from&nbsp;A,&nbsp;but&nbsp;so&nbsp;that&nbsp;the&nbsp;line&nbsp;from&nbsp;A&nbsp;to&nbsp;H&nbsp;doesn't&nbsp;change.<br>
+This&nbsp;is&nbsp;mostly&nbsp;useful&nbsp;in&nbsp;the&nbsp;context&nbsp;of&nbsp;applying&nbsp;a&nbsp;(differentiable)<br>
+function,&nbsp;to&nbsp;preserve&nbsp;tangency&nbsp;properties.&nbsp;&nbsp;One&nbsp;would&nbsp;pull&nbsp;all&nbsp;the<br>
+handles&nbsp;closer&nbsp;to&nbsp;their&nbsp;anchors,&nbsp;apply&nbsp;the&nbsp;function&nbsp;then&nbsp;push&nbsp;them&nbsp;out<br>
+again.</tt></dd></dl>
+
+<dl><dt><a name="Sphere-set_anchors_and_handles"><strong>set_anchors_and_handles</strong></a>(self, anchors1, handles1, handles2, anchors2)</dt></dl>
+
+<dl><dt><a name="Sphere-set_background_stroke"><strong>set_background_stroke</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-set_color"><strong>set_color</strong></a>(self, color, family=True)</dt><dd><tt>Condition&nbsp;is&nbsp;function&nbsp;which&nbsp;takes&nbsp;in&nbsp;one&nbsp;arguments,&nbsp;(x,&nbsp;y,&nbsp;z).<br>
+Here&nbsp;it&nbsp;just&nbsp;recurses&nbsp;to&nbsp;submobjects,&nbsp;but&nbsp;in&nbsp;subclasses&nbsp;this<br>
+should&nbsp;be&nbsp;further&nbsp;implemented&nbsp;based&nbsp;on&nbsp;the&nbsp;the&nbsp;inner&nbsp;workings<br>
+of&nbsp;color</tt></dd></dl>
+
+<dl><dt><a name="Sphere-set_fill"><strong>set_fill</strong></a>(self, color=None, opacity=None, family=True)</dt></dl>
+
+<dl><dt><a name="Sphere-set_opacity"><strong>set_opacity</strong></a>(self, opacity, family=True)</dt></dl>
+
+<dl><dt><a name="Sphere-set_points"><strong>set_points</strong></a>(self, points)</dt><dd><tt>#&nbsp;Points</tt></dd></dl>
+
+<dl><dt><a name="Sphere-set_points_as_corners"><strong>set_points_as_corners</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="Sphere-set_points_smoothly"><strong>set_points_smoothly</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="Sphere-set_shade_in_3d"><strong>set_shade_in_3d</strong></a>(self, value=True, z_index_as_group=False)</dt></dl>
+
+<dl><dt><a name="Sphere-set_sheen"><strong>set_sheen</strong></a>(self, factor, direction=None, family=True)</dt></dl>
+
+<dl><dt><a name="Sphere-set_sheen_direction"><strong>set_sheen_direction</strong></a>(self, direction, family=True)</dt></dl>
+
+<dl><dt><a name="Sphere-set_stroke"><strong>set_stroke</strong></a>(self, color=None, width=None, opacity=None, background=False, family=True)</dt></dl>
+
+<dl><dt><a name="Sphere-set_style"><strong>set_style</strong></a>(self, fill_color=None, fill_opacity=None, stroke_color=None, stroke_width=None, stroke_opacity=None, background_stroke_color=None, background_stroke_width=None, background_stroke_opacity=None, sheen_factor=None, sheen_direction=None, background_image_file=None, family=True)</dt></dl>
+
+<dl><dt><a name="Sphere-start_new_path"><strong>start_new_path</strong></a>(self, point)</dt></dl>
+
+<dl><dt><a name="Sphere-update_rgbas_array"><strong>update_rgbas_array</strong></a>(self, array_name, color=None, opacity=None)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.mobject.mobject.Mobject</a>:<br>
+<dl><dt><a name="Sphere-__getitem__"><strong>__getitem__</strong></a>(self, value)</dt></dl>
+
+<dl><dt><a name="Sphere-__iter__"><strong>__iter__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-__len__"><strong>__len__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="Sphere-add"><strong>add</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="Sphere-add_background_rectangle"><strong>add_background_rectangle</strong></a>(self, color='#000000', opacity=0.75, **kwargs)</dt><dd><tt>#&nbsp;Background&nbsp;rectangle</tt></dd></dl>
+
+<dl><dt><a name="Sphere-add_background_rectangle_to_family_members_with_points"><strong>add_background_rectangle_to_family_members_with_points</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-add_background_rectangle_to_submobjects"><strong>add_background_rectangle_to_submobjects</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-add_n_more_submobjects"><strong>add_n_more_submobjects</strong></a>(self, n)</dt></dl>
+
+<dl><dt><a name="Sphere-add_to_back"><strong>add_to_back</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="Sphere-add_updater"><strong>add_updater</strong></a>(self, update_function, index=None, call_updater=True)</dt></dl>
+
+<dl><dt><a name="Sphere-align_data"><strong>align_data</strong></a>(self, mobject)</dt><dd><tt>#&nbsp;Alignment</tt></dd></dl>
+
+<dl><dt><a name="Sphere-align_on_border"><strong>align_on_border</strong></a>(self, direction, buff=0.5)</dt><dd><tt>Direction&nbsp;just&nbsp;needs&nbsp;to&nbsp;be&nbsp;a&nbsp;vector&nbsp;pointing&nbsp;towards&nbsp;side&nbsp;or<br>
+corner&nbsp;in&nbsp;the&nbsp;2d&nbsp;plane.</tt></dd></dl>
+
+<dl><dt><a name="Sphere-align_points_with_larger"><strong>align_points_with_larger</strong></a>(self, larger_mobject)</dt></dl>
+
+<dl><dt><a name="Sphere-align_submobjects"><strong>align_submobjects</strong></a>(self, mobject)</dt></dl>
+
+<dl><dt><a name="Sphere-align_to"><strong>align_to</strong></a>(self, mobject_or_point, direction=array([0., 0., 0.]), alignment_vect=array([0., 1., 0.]))</dt><dd><tt>Examples:<br>
+mob1.<a href="">align_to</a>(mob2,&nbsp;UP)&nbsp;moves&nbsp;mob1&nbsp;vertically&nbsp;so&nbsp;that&nbsp;its<br>
+top&nbsp;edge&nbsp;lines&nbsp;ups&nbsp;with&nbsp;mob2's&nbsp;top&nbsp;edge.<br>
+&nbsp;<br>
+mob1.<a href="">align_to</a>(mob2,&nbsp;alignment_vect&nbsp;=&nbsp;RIGHT)&nbsp;moves&nbsp;mob1<br>
+horizontally&nbsp;so&nbsp;that&nbsp;it's&nbsp;center&nbsp;is&nbsp;directly&nbsp;above/below<br>
+the&nbsp;center&nbsp;of&nbsp;mob2</tt></dd></dl>
+
+<dl><dt><a name="Sphere-apply_complex_function"><strong>apply_complex_function</strong></a>(self, function, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-apply_function_to_position"><strong>apply_function_to_position</strong></a>(self, function)</dt></dl>
+
+<dl><dt><a name="Sphere-apply_function_to_submobject_positions"><strong>apply_function_to_submobject_positions</strong></a>(self, function)</dt></dl>
+
+<dl><dt><a name="Sphere-apply_matrix"><strong>apply_matrix</strong></a>(self, matrix, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-apply_over_attr_arrays"><strong>apply_over_attr_arrays</strong></a>(self, func)</dt></dl>
+
+<dl><dt><a name="Sphere-apply_points_function_about_point"><strong>apply_points_function_about_point</strong></a>(self, func, about_point=None, about_edge=None)</dt></dl>
+
+<dl><dt><a name="Sphere-apply_to_family"><strong>apply_to_family</strong></a>(self, func)</dt></dl>
+
+<dl><dt><a name="Sphere-arrange"><strong>arrange</strong></a>(self, direction=array([1., 0., 0.]), center=True, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-arrange_in_grid"><strong>arrange_in_grid</strong></a>(self, n_rows=None, n_cols=None, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-arrange_submobjects"><strong>arrange_submobjects</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;Just&nbsp;here&nbsp;to&nbsp;keep&nbsp;from&nbsp;breaking&nbsp;old&nbsp;scenes.</tt></dd></dl>
+
+<dl><dt><a name="Sphere-become"><strong>become</strong></a>(self, mobject, copy_submobjects=True)</dt><dd><tt>Edit&nbsp;points,&nbsp;colors&nbsp;and&nbsp;submobjects&nbsp;to&nbsp;be&nbsp;idential<br>
+to&nbsp;another&nbsp;mobject</tt></dd></dl>
+
+<dl><dt><a name="Sphere-become_partial"><strong>become_partial</strong></a>(self, mobject, a, b)</dt><dd><tt>Set&nbsp;points&nbsp;in&nbsp;such&nbsp;a&nbsp;way&nbsp;as&nbsp;to&nbsp;become&nbsp;only<br>
+part&nbsp;of&nbsp;mobject.<br>
+Inputs&nbsp;0&nbsp;&lt;=&nbsp;a&nbsp;&lt;&nbsp;b&nbsp;&lt;=&nbsp;1&nbsp;determine&nbsp;what&nbsp;portion<br>
+of&nbsp;mobject&nbsp;to&nbsp;become.</tt></dd></dl>
+
+<dl><dt><a name="Sphere-center"><strong>center</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-clear_updaters"><strong>clear_updaters</strong></a>(self, recursive=True)</dt></dl>
+
+<dl><dt><a name="Sphere-copy"><strong>copy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-deepcopy"><strong>deepcopy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-digest_mobject_attrs"><strong>digest_mobject_attrs</strong></a>(self)</dt><dd><tt>Ensures&nbsp;all&nbsp;attributes&nbsp;which&nbsp;are&nbsp;mobjects&nbsp;are&nbsp;included<br>
+in&nbsp;the&nbsp;submobjects&nbsp;list.</tt></dd></dl>
+
+<dl><dt><a name="Sphere-fade_to"><strong>fade_to</strong></a>(self, color, alpha, family=True)</dt></dl>
+
+<dl><dt><a name="Sphere-family_members_with_points"><strong>family_members_with_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-flip"><strong>flip</strong></a>(self, axis=array([0., 1., 0.]), **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-generate_points"><strong>generate_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-generate_target"><strong>generate_target</strong></a>(self, use_deepcopy=False)</dt></dl>
+
+<dl><dt><a name="Sphere-get_all_points"><strong>get_all_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_array_attrs"><strong>get_array_attrs</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_bottom"><strong>get_bottom</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_boundary_point"><strong>get_boundary_point</strong></a>(self, direction)</dt></dl>
+
+<dl><dt><a name="Sphere-get_center"><strong>get_center</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_center_of_mass"><strong>get_center_of_mass</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_coord"><strong>get_coord</strong></a>(self, dim, direction=array([0., 0., 0.]))</dt><dd><tt>Meant&nbsp;to&nbsp;generalize&nbsp;get_x,&nbsp;get_y,&nbsp;get_z</tt></dd></dl>
+
+<dl><dt><a name="Sphere-get_corner"><strong>get_corner</strong></a>(self, direction)</dt></dl>
+
+<dl><dt><a name="Sphere-get_critical_point"><strong>get_critical_point</strong></a>(self, direction)</dt><dd><tt>Picture&nbsp;a&nbsp;box&nbsp;bounding&nbsp;the&nbsp;mobject.&nbsp;&nbsp;Such&nbsp;a&nbsp;box&nbsp;has<br>
+9&nbsp;'critical&nbsp;points':&nbsp;4&nbsp;corners,&nbsp;4&nbsp;edge&nbsp;center,&nbsp;the<br>
+center.&nbsp;&nbsp;This&nbsp;returns&nbsp;one&nbsp;of&nbsp;them.</tt></dd></dl>
+
+<dl><dt><a name="Sphere-get_depth"><strong>get_depth</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_edge_center"><strong>get_edge_center</strong></a>(self, direction)</dt></dl>
+
+<dl><dt><a name="Sphere-get_end"><strong>get_end</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_extremum_along_dim"><strong>get_extremum_along_dim</strong></a>(self, points=None, dim=0, key=0)</dt></dl>
+
+<dl><dt><a name="Sphere-get_family"><strong>get_family</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_family_updaters"><strong>get_family_updaters</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_height"><strong>get_height</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_image"><strong>get_image</strong></a>(self, camera=None)</dt></dl>
+
+<dl><dt><a name="Sphere-get_left"><strong>get_left</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_merged_array"><strong>get_merged_array</strong></a>(self, array_attr)</dt></dl>
+
+<dl><dt><a name="Sphere-get_nadir"><strong>get_nadir</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_num_points"><strong>get_num_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_pieces"><strong>get_pieces</strong></a>(self, n_pieces)</dt></dl>
+
+<dl><dt><a name="Sphere-get_right"><strong>get_right</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_start"><strong>get_start</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_start_and_end"><strong>get_start_and_end</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_time_based_updaters"><strong>get_time_based_updaters</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_top"><strong>get_top</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_updaters"><strong>get_updaters</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_width"><strong>get_width</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_x"><strong>get_x</strong></a>(self, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Sphere-get_y"><strong>get_y</strong></a>(self, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Sphere-get_z"><strong>get_z</strong></a>(self, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Sphere-get_z_index_reference_point"><strong>get_z_index_reference_point</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-get_zenith"><strong>get_zenith</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-has_no_points"><strong>has_no_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-has_points"><strong>has_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-has_time_based_updater"><strong>has_time_based_updater</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-interpolate"><strong>interpolate</strong></a>(self, mobject1, mobject2, alpha, path_func=&lt;function straight_path at 0x0000020789397A68&gt;)</dt><dd><tt>Turns&nbsp;self&nbsp;into&nbsp;an&nbsp;interpolation&nbsp;between&nbsp;mobject1<br>
+and&nbsp;mobject2.</tt></dd></dl>
+
+<dl><dt><a name="Sphere-is_off_screen"><strong>is_off_screen</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-length_over_dim"><strong>length_over_dim</strong></a>(self, dim)</dt></dl>
+
+<dl><dt><a name="Sphere-match_color"><strong>match_color</strong></a>(self, mobject)</dt></dl>
+
+<dl><dt><a name="Sphere-match_coord"><strong>match_coord</strong></a>(self, mobject, dim, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Sphere-match_depth"><strong>match_depth</strong></a>(self, mobject, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-match_dim_size"><strong>match_dim_size</strong></a>(self, mobject, dim, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-match_height"><strong>match_height</strong></a>(self, mobject, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-match_updaters"><strong>match_updaters</strong></a>(self, mobject)</dt></dl>
+
+<dl><dt><a name="Sphere-match_width"><strong>match_width</strong></a>(self, mobject, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-match_x"><strong>match_x</strong></a>(self, mobject, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Sphere-match_y"><strong>match_y</strong></a>(self, mobject, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Sphere-match_z"><strong>match_z</strong></a>(self, mobject, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Sphere-move_to"><strong>move_to</strong></a>(self, point_or_mobject, aligned_edge=array([0., 0., 0.]), coor_mask=array([1, 1, 1]))</dt></dl>
+
+<dl><dt><a name="Sphere-next_to"><strong>next_to</strong></a>(self, mobject_or_point, direction=array([1., 0., 0.]), buff=0.25, aligned_edge=array([0., 0., 0.]), submobject_to_align=None, index_of_submobject_to_align=None, coor_mask=array([1, 1, 1]))</dt></dl>
+
+<dl><dt><a name="Sphere-nonempty_submobjects"><strong>nonempty_submobjects</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-null_point_align"><strong>null_point_align</strong></a>(self, mobject)</dt><dd><tt>If&nbsp;a&nbsp;mobject&nbsp;with&nbsp;points&nbsp;is&nbsp;being&nbsp;aligned&nbsp;to<br>
+one&nbsp;without,&nbsp;treat&nbsp;both&nbsp;as&nbsp;groups,&nbsp;and&nbsp;push<br>
+the&nbsp;one&nbsp;with&nbsp;points&nbsp;into&nbsp;its&nbsp;own&nbsp;submobjects<br>
+list.</tt></dd></dl>
+
+<dl><dt><a name="Sphere-pose_at_angle"><strong>pose_at_angle</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-push_self_into_submobjects"><strong>push_self_into_submobjects</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-put_start_and_end_on"><strong>put_start_and_end_on</strong></a>(self, start, end)</dt></dl>
+
+<dl><dt><a name="Sphere-reduce_across_dimension"><strong>reduce_across_dimension</strong></a>(self, points_func, reduce_func, dim)</dt></dl>
+
+<dl><dt><a name="Sphere-remove"><strong>remove</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="Sphere-remove_updater"><strong>remove_updater</strong></a>(self, update_function)</dt></dl>
+
+<dl><dt><a name="Sphere-repeat"><strong>repeat</strong></a>(self, count)</dt><dd><tt>This&nbsp;can&nbsp;make&nbsp;transition&nbsp;animations&nbsp;nicer</tt></dd></dl>
+
+<dl><dt><a name="Sphere-repeat_submobject"><strong>repeat_submobject</strong></a>(self, submob)</dt></dl>
+
+<dl><dt><a name="Sphere-replace"><strong>replace</strong></a>(self, mobject, dim_to_match=0, stretch=False)</dt></dl>
+
+<dl><dt><a name="Sphere-rescale_to_fit"><strong>rescale_to_fit</strong></a>(self, length, dim, stretch=False, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-reset_points"><strong>reset_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-restore"><strong>restore</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-resume_updating"><strong>resume_updating</strong></a>(self, recursive=True)</dt></dl>
+
+<dl><dt><a name="Sphere-reverse_points"><strong>reverse_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-rotate"><strong>rotate</strong></a>(self, angle, axis=array([0., 0., 1.]), **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-rotate_about_origin"><strong>rotate_about_origin</strong></a>(self, angle, axis=array([0., 0., 1.]), axes=[])</dt></dl>
+
+<dl><dt><a name="Sphere-rotate_in_place"><strong>rotate_in_place</strong></a>(self, angle, axis=array([0., 0., 1.]))</dt></dl>
+
+<dl><dt><a name="Sphere-save_image"><strong>save_image</strong></a>(self, name=None)</dt></dl>
+
+<dl><dt><a name="Sphere-save_state"><strong>save_state</strong></a>(self, use_deepcopy=False)</dt></dl>
+
+<dl><dt><a name="Sphere-scale"><strong>scale</strong></a>(self, scale_factor, **kwargs)</dt><dd><tt>Default&nbsp;behavior&nbsp;is&nbsp;to&nbsp;scale&nbsp;about&nbsp;the&nbsp;center&nbsp;of&nbsp;the&nbsp;mobject.<br>
+The&nbsp;argument&nbsp;about_edge&nbsp;can&nbsp;be&nbsp;a&nbsp;vector,&nbsp;indicating&nbsp;which&nbsp;side&nbsp;of<br>
+the&nbsp;mobject&nbsp;to&nbsp;scale&nbsp;about,&nbsp;e.g.,&nbsp;mob.<a href="">scale</a>(about_edge&nbsp;=&nbsp;RIGHT)<br>
+scales&nbsp;about&nbsp;mob.<a href="">get_right</a>().<br>
+&nbsp;<br>
+Otherwise,&nbsp;if&nbsp;about_point&nbsp;is&nbsp;given&nbsp;a&nbsp;value,&nbsp;scaling&nbsp;is&nbsp;done&nbsp;with<br>
+respect&nbsp;to&nbsp;that&nbsp;point.</tt></dd></dl>
+
+<dl><dt><a name="Sphere-scale_about_point"><strong>scale_about_point</strong></a>(self, scale_factor, point)</dt></dl>
+
+<dl><dt><a name="Sphere-scale_in_place"><strong>scale_in_place</strong></a>(self, scale_factor, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-set_color_by_gradient"><strong>set_color_by_gradient</strong></a>(self, *colors)</dt></dl>
+
+<dl><dt><a name="Sphere-set_colors_by_radial_gradient"><strong>set_colors_by_radial_gradient</strong></a>(self, center=None, radius=1, inner_color='#FFFFFF', outer_color='#000000')</dt></dl>
+
+<dl><dt><a name="Sphere-set_coord"><strong>set_coord</strong></a>(self, value, dim, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Sphere-set_depth"><strong>set_depth</strong></a>(self, depth, stretch=False, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-set_height"><strong>set_height</strong></a>(self, height, stretch=False, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-set_submobject_colors_by_gradient"><strong>set_submobject_colors_by_gradient</strong></a>(self, *colors)</dt></dl>
+
+<dl><dt><a name="Sphere-set_submobject_colors_by_radial_gradient"><strong>set_submobject_colors_by_radial_gradient</strong></a>(self, center=None, radius=1, inner_color='#FFFFFF', outer_color='#000000')</dt></dl>
+
+<dl><dt><a name="Sphere-set_width"><strong>set_width</strong></a>(self, width, stretch=False, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-set_x"><strong>set_x</strong></a>(self, x, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Sphere-set_y"><strong>set_y</strong></a>(self, y, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Sphere-set_z"><strong>set_z</strong></a>(self, z, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="Sphere-shift"><strong>shift</strong></a>(self, *vectors)</dt></dl>
+
+<dl><dt><a name="Sphere-shift_onto_screen"><strong>shift_onto_screen</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-show"><strong>show</strong></a>(self, camera=None)</dt></dl>
+
+<dl><dt><a name="Sphere-shuffle"><strong>shuffle</strong></a>(self, recursive=False)</dt></dl>
+
+<dl><dt><a name="Sphere-shuffle_submobjects"><strong>shuffle_submobjects</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-sort"><strong>sort</strong></a>(self, point_to_num_func=&lt;function Mobject.&lt;lambda&gt; at 0x00000207893B08B8&gt;, submob_func=None)</dt></dl>
+
+<dl><dt><a name="Sphere-sort_submobjects"><strong>sort_submobjects</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-space_out_submobjects"><strong>space_out_submobjects</strong></a>(self, factor=1.5, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-split"><strong>split</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-stretch"><strong>stretch</strong></a>(self, factor, dim, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-stretch_about_point"><strong>stretch_about_point</strong></a>(self, factor, dim, point)</dt></dl>
+
+<dl><dt><a name="Sphere-stretch_in_place"><strong>stretch_in_place</strong></a>(self, factor, dim)</dt></dl>
+
+<dl><dt><a name="Sphere-stretch_to_fit_depth"><strong>stretch_to_fit_depth</strong></a>(self, depth, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-stretch_to_fit_height"><strong>stretch_to_fit_height</strong></a>(self, height, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-stretch_to_fit_width"><strong>stretch_to_fit_width</strong></a>(self, width, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sphere-surround"><strong>surround</strong></a>(self, mobject, dim_to_match=0, stretch=False, buff=0.25)</dt></dl>
+
+<dl><dt><a name="Sphere-suspend_updating"><strong>suspend_updating</strong></a>(self, recursive=True)</dt></dl>
+
+<dl><dt><a name="Sphere-throw_error_if_no_points"><strong>throw_error_if_no_points</strong></a>(self)</dt><dd><tt>#&nbsp;Errors</tt></dd></dl>
+
+<dl><dt><a name="Sphere-to_corner"><strong>to_corner</strong></a>(self, corner=array([-1., -1.,  0.]), buff=0.5)</dt></dl>
+
+<dl><dt><a name="Sphere-to_edge"><strong>to_edge</strong></a>(self, edge=array([-1.,  0.,  0.]), buff=0.5)</dt></dl>
+
+<dl><dt><a name="Sphere-to_original_color"><strong>to_original_color</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Sphere-update"><strong>update</strong></a>(self, dt=0, recursive=True)</dt></dl>
+
+<dl><dt><a name="Sphere-wag"><strong>wag</strong></a>(self, direction=array([1., 0., 0.]), axis=array([ 0., -1.,  0.]), wag_factor=1.0)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.container.container.Container</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ThreeDVMobject">class <strong>ThreeDVMobject</strong></a>(<a href="">manimlib.mobject.types.vectorized_mobject.VMobject</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">ThreeDVMobject</a>(**kwargs)<br>
+&nbsp;<br>
+Mathematical&nbsp;Object<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">ThreeDVMobject</a></dd>
+<dd><a href="">manimlib.mobject.types.vectorized_mobject.VMobject</a></dd>
+<dd><a href="">manimlib.mobject.mobject.Mobject</a></dd>
+<dd><a href="">manimlib.container.container.Container</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>CONFIG</strong> = {'shade_in_3d': True}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.mobject.types.vectorized_mobject.VMobject</a>:<br>
+<dl><dt><a name="ThreeDVMobject-add_cubic_bezier_curve"><strong>add_cubic_bezier_curve</strong></a>(self, anchor1, handle1, handle2, anchor2)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-add_cubic_bezier_curve_to"><strong>add_cubic_bezier_curve_to</strong></a>(self, handle1, handle2, anchor)</dt><dd><tt>Add&nbsp;cubic&nbsp;bezier&nbsp;curve&nbsp;to&nbsp;the&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-add_line_to"><strong>add_line_to</strong></a>(self, point)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-add_points_as_corners"><strong>add_points_as_corners</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-add_smooth_curve_to"><strong>add_smooth_curve_to</strong></a>(self, *points)</dt><dd><tt>If&nbsp;two&nbsp;points&nbsp;are&nbsp;passed&nbsp;in,&nbsp;the&nbsp;first&nbsp;is&nbsp;intepretted<br>
+as&nbsp;a&nbsp;handle,&nbsp;the&nbsp;second&nbsp;as&nbsp;an&nbsp;anchor</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-add_subpath"><strong>add_subpath</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-align_points"><strong>align_points</strong></a>(self, vmobject)</dt><dd><tt>#&nbsp;Alignment</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-align_rgbas"><strong>align_rgbas</strong></a>(self, vmobject)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-append_points"><strong>append_points</strong></a>(self, new_points)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-append_vectorized_mobject"><strong>append_vectorized_mobject</strong></a>(self, vectorized_mobject)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-apply_function"><strong>apply_function</strong></a>(self, function)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-change_anchor_mode"><strong>change_anchor_mode</strong></a>(self, mode)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-clear_points"><strong>clear_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-color_using_background_image"><strong>color_using_background_image</strong></a>(self, background_image_file)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-consider_points_equals"><strong>consider_points_equals</strong></a>(self, p0, p1)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-fade"><strong>fade</strong></a>(self, darkness=0.5, family=True)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-generate_rgbas_array"><strong>generate_rgbas_array</strong></a>(self, color, opacity)</dt><dd><tt>First&nbsp;arg&nbsp;can&nbsp;be&nbsp;either&nbsp;a&nbsp;color,&nbsp;or&nbsp;a&nbsp;tuple/list&nbsp;of&nbsp;colors.<br>
+Likewise,&nbsp;opacity&nbsp;can&nbsp;either&nbsp;be&nbsp;a&nbsp;float,&nbsp;or&nbsp;a&nbsp;tuple&nbsp;of&nbsp;floats.<br>
+If&nbsp;self.<strong>sheen_factor</strong>&nbsp;is&nbsp;not&nbsp;zero,&nbsp;and&nbsp;only<br>
+one&nbsp;color&nbsp;was&nbsp;passed&nbsp;in,&nbsp;a&nbsp;second&nbsp;slightly&nbsp;light&nbsp;color<br>
+will&nbsp;automatically&nbsp;be&nbsp;added&nbsp;for&nbsp;the&nbsp;gradient</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_anchors"><strong>get_anchors</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_anchors_and_handles"><strong>get_anchors_and_handles</strong></a>(self)</dt><dd><tt>returns&nbsp;anchors1,&nbsp;handles1,&nbsp;handles2,&nbsp;anchors2,<br>
+where&nbsp;(anchors1[i],&nbsp;handles1[i],&nbsp;handles2[i],&nbsp;anchors2[i])<br>
+will&nbsp;be&nbsp;four&nbsp;points&nbsp;defining&nbsp;a&nbsp;cubic&nbsp;bezier&nbsp;curve<br>
+for&nbsp;any&nbsp;i&nbsp;in&nbsp;range(0,&nbsp;len(anchors1))</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_arc_length"><strong>get_arc_length</strong></a>(self, n_sample_points=None)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_background_image_file"><strong>get_background_image_file</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_color"><strong>get_color</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_cubic_bezier_tuples"><strong>get_cubic_bezier_tuples</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_cubic_bezier_tuples_from_points"><strong>get_cubic_bezier_tuples_from_points</strong></a>(self, points)</dt><dd><tt>#&nbsp;Information&nbsp;about&nbsp;line</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_end_anchors"><strong>get_end_anchors</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_fill_color"><strong>get_fill_color</strong></a>(self)</dt><dd><tt>If&nbsp;there&nbsp;are&nbsp;multiple&nbsp;colors&nbsp;(for&nbsp;gradient)<br>
+this&nbsp;returns&nbsp;the&nbsp;first&nbsp;one</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_fill_colors"><strong>get_fill_colors</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_fill_opacities"><strong>get_fill_opacities</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_fill_opacity"><strong>get_fill_opacity</strong></a>(self)</dt><dd><tt>If&nbsp;there&nbsp;are&nbsp;multiple&nbsp;opacities,&nbsp;this&nbsp;returns&nbsp;the<br>
+first</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_fill_rgbas"><strong>get_fill_rgbas</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_gradient_start_and_end_points"><strong>get_gradient_start_and_end_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_group_class"><strong>get_group_class</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_last_point"><strong>get_last_point</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_nth_curve_function"><strong>get_nth_curve_function</strong></a>(self, n)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_nth_curve_points"><strong>get_nth_curve_points</strong></a>(self, n)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_num_curves"><strong>get_num_curves</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_point_mobject"><strong>get_point_mobject</strong></a>(self, center=None)</dt><dd><tt>The&nbsp;simplest&nbsp;mobject&nbsp;to&nbsp;be&nbsp;transformed&nbsp;to&nbsp;or&nbsp;from&nbsp;self.<br>
+Should&nbsp;by&nbsp;a&nbsp;point&nbsp;of&nbsp;the&nbsp;appropriate&nbsp;type</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_points"><strong>get_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_points_defining_boundary"><strong>get_points_defining_boundary</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_sheen_direction"><strong>get_sheen_direction</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_sheen_factor"><strong>get_sheen_factor</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_start_anchors"><strong>get_start_anchors</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_stroke_color"><strong>get_stroke_color</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_stroke_colors"><strong>get_stroke_colors</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_stroke_opacities"><strong>get_stroke_opacities</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_stroke_opacity"><strong>get_stroke_opacity</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_stroke_rgbas"><strong>get_stroke_rgbas</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_stroke_width"><strong>get_stroke_width</strong></a>(self, background=False)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_style"><strong>get_style</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_subcurve"><strong>get_subcurve</strong></a>(self, a, b)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_subpaths"><strong>get_subpaths</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_subpaths_from_points"><strong>get_subpaths_from_points</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-has_new_path_started"><strong>has_new_path_started</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-init_colors"><strong>init_colors</strong></a>(self)</dt><dd><tt>#&nbsp;Colors</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-insert_n_curves"><strong>insert_n_curves</strong></a>(self, n)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-insert_n_curves_to_point_list"><strong>insert_n_curves_to_point_list</strong></a>(self, n, points)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-interpolate_color"><strong>interpolate_color</strong></a>(self, mobject1, mobject2, alpha)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-is_closed"><strong>is_closed</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-make_jagged"><strong>make_jagged</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-make_smooth"><strong>make_smooth</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-match_background_image_file"><strong>match_background_image_file</strong></a>(self, vmobject)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-match_style"><strong>match_style</strong></a>(self, vmobject, family=True)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-point_from_proportion"><strong>point_from_proportion</strong></a>(self, alpha)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-pointwise_become_partial"><strong>pointwise_become_partial</strong></a>(self, vmobject, a, b)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-scale_handle_to_anchor_distances"><strong>scale_handle_to_anchor_distances</strong></a>(self, factor)</dt><dd><tt>If&nbsp;the&nbsp;distance&nbsp;between&nbsp;a&nbsp;given&nbsp;handle&nbsp;point&nbsp;H&nbsp;and&nbsp;its&nbsp;associated<br>
+anchor&nbsp;point&nbsp;A&nbsp;is&nbsp;d,&nbsp;then&nbsp;it&nbsp;changes&nbsp;H&nbsp;to&nbsp;be&nbsp;a&nbsp;distances&nbsp;factor*d<br>
+away&nbsp;from&nbsp;A,&nbsp;but&nbsp;so&nbsp;that&nbsp;the&nbsp;line&nbsp;from&nbsp;A&nbsp;to&nbsp;H&nbsp;doesn't&nbsp;change.<br>
+This&nbsp;is&nbsp;mostly&nbsp;useful&nbsp;in&nbsp;the&nbsp;context&nbsp;of&nbsp;applying&nbsp;a&nbsp;(differentiable)<br>
+function,&nbsp;to&nbsp;preserve&nbsp;tangency&nbsp;properties.&nbsp;&nbsp;One&nbsp;would&nbsp;pull&nbsp;all&nbsp;the<br>
+handles&nbsp;closer&nbsp;to&nbsp;their&nbsp;anchors,&nbsp;apply&nbsp;the&nbsp;function&nbsp;then&nbsp;push&nbsp;them&nbsp;out<br>
+again.</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-set_anchors_and_handles"><strong>set_anchors_and_handles</strong></a>(self, anchors1, handles1, handles2, anchors2)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-set_background_stroke"><strong>set_background_stroke</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-set_color"><strong>set_color</strong></a>(self, color, family=True)</dt><dd><tt>Condition&nbsp;is&nbsp;function&nbsp;which&nbsp;takes&nbsp;in&nbsp;one&nbsp;arguments,&nbsp;(x,&nbsp;y,&nbsp;z).<br>
+Here&nbsp;it&nbsp;just&nbsp;recurses&nbsp;to&nbsp;submobjects,&nbsp;but&nbsp;in&nbsp;subclasses&nbsp;this<br>
+should&nbsp;be&nbsp;further&nbsp;implemented&nbsp;based&nbsp;on&nbsp;the&nbsp;the&nbsp;inner&nbsp;workings<br>
+of&nbsp;color</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-set_fill"><strong>set_fill</strong></a>(self, color=None, opacity=None, family=True)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-set_opacity"><strong>set_opacity</strong></a>(self, opacity, family=True)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-set_points"><strong>set_points</strong></a>(self, points)</dt><dd><tt>#&nbsp;Points</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-set_points_as_corners"><strong>set_points_as_corners</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-set_points_smoothly"><strong>set_points_smoothly</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-set_shade_in_3d"><strong>set_shade_in_3d</strong></a>(self, value=True, z_index_as_group=False)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-set_sheen"><strong>set_sheen</strong></a>(self, factor, direction=None, family=True)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-set_sheen_direction"><strong>set_sheen_direction</strong></a>(self, direction, family=True)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-set_stroke"><strong>set_stroke</strong></a>(self, color=None, width=None, opacity=None, background=False, family=True)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-set_style"><strong>set_style</strong></a>(self, fill_color=None, fill_opacity=None, stroke_color=None, stroke_width=None, stroke_opacity=None, background_stroke_color=None, background_stroke_width=None, background_stroke_opacity=None, sheen_factor=None, sheen_direction=None, background_image_file=None, family=True)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-start_new_path"><strong>start_new_path</strong></a>(self, point)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-update_rgbas_array"><strong>update_rgbas_array</strong></a>(self, array_name, color=None, opacity=None)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.mobject.mobject.Mobject</a>:<br>
+<dl><dt><a name="ThreeDVMobject-__getitem__"><strong>__getitem__</strong></a>(self, value)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-__iter__"><strong>__iter__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-__len__"><strong>__len__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-add"><strong>add</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-add_background_rectangle"><strong>add_background_rectangle</strong></a>(self, color='#000000', opacity=0.75, **kwargs)</dt><dd><tt>#&nbsp;Background&nbsp;rectangle</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-add_background_rectangle_to_family_members_with_points"><strong>add_background_rectangle_to_family_members_with_points</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-add_background_rectangle_to_submobjects"><strong>add_background_rectangle_to_submobjects</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-add_n_more_submobjects"><strong>add_n_more_submobjects</strong></a>(self, n)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-add_to_back"><strong>add_to_back</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-add_updater"><strong>add_updater</strong></a>(self, update_function, index=None, call_updater=True)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-align_data"><strong>align_data</strong></a>(self, mobject)</dt><dd><tt>#&nbsp;Alignment</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-align_on_border"><strong>align_on_border</strong></a>(self, direction, buff=0.5)</dt><dd><tt>Direction&nbsp;just&nbsp;needs&nbsp;to&nbsp;be&nbsp;a&nbsp;vector&nbsp;pointing&nbsp;towards&nbsp;side&nbsp;or<br>
+corner&nbsp;in&nbsp;the&nbsp;2d&nbsp;plane.</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-align_points_with_larger"><strong>align_points_with_larger</strong></a>(self, larger_mobject)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-align_submobjects"><strong>align_submobjects</strong></a>(self, mobject)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-align_to"><strong>align_to</strong></a>(self, mobject_or_point, direction=array([0., 0., 0.]), alignment_vect=array([0., 1., 0.]))</dt><dd><tt>Examples:<br>
+mob1.<a href="">align_to</a>(mob2,&nbsp;UP)&nbsp;moves&nbsp;mob1&nbsp;vertically&nbsp;so&nbsp;that&nbsp;its<br>
+top&nbsp;edge&nbsp;lines&nbsp;ups&nbsp;with&nbsp;mob2's&nbsp;top&nbsp;edge.<br>
+&nbsp;<br>
+mob1.<a href="">align_to</a>(mob2,&nbsp;alignment_vect&nbsp;=&nbsp;RIGHT)&nbsp;moves&nbsp;mob1<br>
+horizontally&nbsp;so&nbsp;that&nbsp;it's&nbsp;center&nbsp;is&nbsp;directly&nbsp;above/below<br>
+the&nbsp;center&nbsp;of&nbsp;mob2</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-apply_complex_function"><strong>apply_complex_function</strong></a>(self, function, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-apply_function_to_position"><strong>apply_function_to_position</strong></a>(self, function)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-apply_function_to_submobject_positions"><strong>apply_function_to_submobject_positions</strong></a>(self, function)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-apply_matrix"><strong>apply_matrix</strong></a>(self, matrix, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-apply_over_attr_arrays"><strong>apply_over_attr_arrays</strong></a>(self, func)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-apply_points_function_about_point"><strong>apply_points_function_about_point</strong></a>(self, func, about_point=None, about_edge=None)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-apply_to_family"><strong>apply_to_family</strong></a>(self, func)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-arrange"><strong>arrange</strong></a>(self, direction=array([1., 0., 0.]), center=True, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-arrange_in_grid"><strong>arrange_in_grid</strong></a>(self, n_rows=None, n_cols=None, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-arrange_submobjects"><strong>arrange_submobjects</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;Just&nbsp;here&nbsp;to&nbsp;keep&nbsp;from&nbsp;breaking&nbsp;old&nbsp;scenes.</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-become"><strong>become</strong></a>(self, mobject, copy_submobjects=True)</dt><dd><tt>Edit&nbsp;points,&nbsp;colors&nbsp;and&nbsp;submobjects&nbsp;to&nbsp;be&nbsp;idential<br>
+to&nbsp;another&nbsp;mobject</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-become_partial"><strong>become_partial</strong></a>(self, mobject, a, b)</dt><dd><tt>Set&nbsp;points&nbsp;in&nbsp;such&nbsp;a&nbsp;way&nbsp;as&nbsp;to&nbsp;become&nbsp;only<br>
+part&nbsp;of&nbsp;mobject.<br>
+Inputs&nbsp;0&nbsp;&lt;=&nbsp;a&nbsp;&lt;&nbsp;b&nbsp;&lt;=&nbsp;1&nbsp;determine&nbsp;what&nbsp;portion<br>
+of&nbsp;mobject&nbsp;to&nbsp;become.</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-center"><strong>center</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-clear_updaters"><strong>clear_updaters</strong></a>(self, recursive=True)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-copy"><strong>copy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-deepcopy"><strong>deepcopy</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-digest_mobject_attrs"><strong>digest_mobject_attrs</strong></a>(self)</dt><dd><tt>Ensures&nbsp;all&nbsp;attributes&nbsp;which&nbsp;are&nbsp;mobjects&nbsp;are&nbsp;included<br>
+in&nbsp;the&nbsp;submobjects&nbsp;list.</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-fade_to"><strong>fade_to</strong></a>(self, color, alpha, family=True)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-family_members_with_points"><strong>family_members_with_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-flip"><strong>flip</strong></a>(self, axis=array([0., 1., 0.]), **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-generate_points"><strong>generate_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-generate_target"><strong>generate_target</strong></a>(self, use_deepcopy=False)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_all_points"><strong>get_all_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_array_attrs"><strong>get_array_attrs</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_bottom"><strong>get_bottom</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_boundary_point"><strong>get_boundary_point</strong></a>(self, direction)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_center"><strong>get_center</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_center_of_mass"><strong>get_center_of_mass</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_coord"><strong>get_coord</strong></a>(self, dim, direction=array([0., 0., 0.]))</dt><dd><tt>Meant&nbsp;to&nbsp;generalize&nbsp;get_x,&nbsp;get_y,&nbsp;get_z</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_corner"><strong>get_corner</strong></a>(self, direction)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_critical_point"><strong>get_critical_point</strong></a>(self, direction)</dt><dd><tt>Picture&nbsp;a&nbsp;box&nbsp;bounding&nbsp;the&nbsp;mobject.&nbsp;&nbsp;Such&nbsp;a&nbsp;box&nbsp;has<br>
+9&nbsp;'critical&nbsp;points':&nbsp;4&nbsp;corners,&nbsp;4&nbsp;edge&nbsp;center,&nbsp;the<br>
+center.&nbsp;&nbsp;This&nbsp;returns&nbsp;one&nbsp;of&nbsp;them.</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_depth"><strong>get_depth</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_edge_center"><strong>get_edge_center</strong></a>(self, direction)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_end"><strong>get_end</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_extremum_along_dim"><strong>get_extremum_along_dim</strong></a>(self, points=None, dim=0, key=0)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_family"><strong>get_family</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_family_updaters"><strong>get_family_updaters</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_height"><strong>get_height</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_image"><strong>get_image</strong></a>(self, camera=None)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_left"><strong>get_left</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_merged_array"><strong>get_merged_array</strong></a>(self, array_attr)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_nadir"><strong>get_nadir</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_num_points"><strong>get_num_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_pieces"><strong>get_pieces</strong></a>(self, n_pieces)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_right"><strong>get_right</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_start"><strong>get_start</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_start_and_end"><strong>get_start_and_end</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_time_based_updaters"><strong>get_time_based_updaters</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_top"><strong>get_top</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_updaters"><strong>get_updaters</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_width"><strong>get_width</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_x"><strong>get_x</strong></a>(self, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_y"><strong>get_y</strong></a>(self, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_z"><strong>get_z</strong></a>(self, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_z_index_reference_point"><strong>get_z_index_reference_point</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-get_zenith"><strong>get_zenith</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-has_no_points"><strong>has_no_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-has_points"><strong>has_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-has_time_based_updater"><strong>has_time_based_updater</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-interpolate"><strong>interpolate</strong></a>(self, mobject1, mobject2, alpha, path_func=&lt;function straight_path at 0x0000020789397A68&gt;)</dt><dd><tt>Turns&nbsp;self&nbsp;into&nbsp;an&nbsp;interpolation&nbsp;between&nbsp;mobject1<br>
+and&nbsp;mobject2.</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-is_off_screen"><strong>is_off_screen</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-length_over_dim"><strong>length_over_dim</strong></a>(self, dim)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-match_color"><strong>match_color</strong></a>(self, mobject)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-match_coord"><strong>match_coord</strong></a>(self, mobject, dim, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-match_depth"><strong>match_depth</strong></a>(self, mobject, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-match_dim_size"><strong>match_dim_size</strong></a>(self, mobject, dim, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-match_height"><strong>match_height</strong></a>(self, mobject, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-match_updaters"><strong>match_updaters</strong></a>(self, mobject)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-match_width"><strong>match_width</strong></a>(self, mobject, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-match_x"><strong>match_x</strong></a>(self, mobject, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-match_y"><strong>match_y</strong></a>(self, mobject, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-match_z"><strong>match_z</strong></a>(self, mobject, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-move_to"><strong>move_to</strong></a>(self, point_or_mobject, aligned_edge=array([0., 0., 0.]), coor_mask=array([1, 1, 1]))</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-next_to"><strong>next_to</strong></a>(self, mobject_or_point, direction=array([1., 0., 0.]), buff=0.25, aligned_edge=array([0., 0., 0.]), submobject_to_align=None, index_of_submobject_to_align=None, coor_mask=array([1, 1, 1]))</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-nonempty_submobjects"><strong>nonempty_submobjects</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-null_point_align"><strong>null_point_align</strong></a>(self, mobject)</dt><dd><tt>If&nbsp;a&nbsp;mobject&nbsp;with&nbsp;points&nbsp;is&nbsp;being&nbsp;aligned&nbsp;to<br>
+one&nbsp;without,&nbsp;treat&nbsp;both&nbsp;as&nbsp;groups,&nbsp;and&nbsp;push<br>
+the&nbsp;one&nbsp;with&nbsp;points&nbsp;into&nbsp;its&nbsp;own&nbsp;submobjects<br>
+list.</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-pose_at_angle"><strong>pose_at_angle</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-push_self_into_submobjects"><strong>push_self_into_submobjects</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-put_start_and_end_on"><strong>put_start_and_end_on</strong></a>(self, start, end)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-reduce_across_dimension"><strong>reduce_across_dimension</strong></a>(self, points_func, reduce_func, dim)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-remove"><strong>remove</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-remove_updater"><strong>remove_updater</strong></a>(self, update_function)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-repeat"><strong>repeat</strong></a>(self, count)</dt><dd><tt>This&nbsp;can&nbsp;make&nbsp;transition&nbsp;animations&nbsp;nicer</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-repeat_submobject"><strong>repeat_submobject</strong></a>(self, submob)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-replace"><strong>replace</strong></a>(self, mobject, dim_to_match=0, stretch=False)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-rescale_to_fit"><strong>rescale_to_fit</strong></a>(self, length, dim, stretch=False, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-reset_points"><strong>reset_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-restore"><strong>restore</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-resume_updating"><strong>resume_updating</strong></a>(self, recursive=True)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-reverse_points"><strong>reverse_points</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-rotate"><strong>rotate</strong></a>(self, angle, axis=array([0., 0., 1.]), **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-rotate_about_origin"><strong>rotate_about_origin</strong></a>(self, angle, axis=array([0., 0., 1.]), axes=[])</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-rotate_in_place"><strong>rotate_in_place</strong></a>(self, angle, axis=array([0., 0., 1.]))</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-save_image"><strong>save_image</strong></a>(self, name=None)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-save_state"><strong>save_state</strong></a>(self, use_deepcopy=False)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-scale"><strong>scale</strong></a>(self, scale_factor, **kwargs)</dt><dd><tt>Default&nbsp;behavior&nbsp;is&nbsp;to&nbsp;scale&nbsp;about&nbsp;the&nbsp;center&nbsp;of&nbsp;the&nbsp;mobject.<br>
+The&nbsp;argument&nbsp;about_edge&nbsp;can&nbsp;be&nbsp;a&nbsp;vector,&nbsp;indicating&nbsp;which&nbsp;side&nbsp;of<br>
+the&nbsp;mobject&nbsp;to&nbsp;scale&nbsp;about,&nbsp;e.g.,&nbsp;mob.<a href="">scale</a>(about_edge&nbsp;=&nbsp;RIGHT)<br>
+scales&nbsp;about&nbsp;mob.<a href="">get_right</a>().<br>
+&nbsp;<br>
+Otherwise,&nbsp;if&nbsp;about_point&nbsp;is&nbsp;given&nbsp;a&nbsp;value,&nbsp;scaling&nbsp;is&nbsp;done&nbsp;with<br>
+respect&nbsp;to&nbsp;that&nbsp;point.</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-scale_about_point"><strong>scale_about_point</strong></a>(self, scale_factor, point)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-scale_in_place"><strong>scale_in_place</strong></a>(self, scale_factor, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-set_color_by_gradient"><strong>set_color_by_gradient</strong></a>(self, *colors)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-set_colors_by_radial_gradient"><strong>set_colors_by_radial_gradient</strong></a>(self, center=None, radius=1, inner_color='#FFFFFF', outer_color='#000000')</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-set_coord"><strong>set_coord</strong></a>(self, value, dim, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-set_depth"><strong>set_depth</strong></a>(self, depth, stretch=False, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-set_height"><strong>set_height</strong></a>(self, height, stretch=False, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-set_submobject_colors_by_gradient"><strong>set_submobject_colors_by_gradient</strong></a>(self, *colors)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-set_submobject_colors_by_radial_gradient"><strong>set_submobject_colors_by_radial_gradient</strong></a>(self, center=None, radius=1, inner_color='#FFFFFF', outer_color='#000000')</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-set_width"><strong>set_width</strong></a>(self, width, stretch=False, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-set_x"><strong>set_x</strong></a>(self, x, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-set_y"><strong>set_y</strong></a>(self, y, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-set_z"><strong>set_z</strong></a>(self, z, direction=array([0., 0., 0.]))</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-shift"><strong>shift</strong></a>(self, *vectors)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-shift_onto_screen"><strong>shift_onto_screen</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-show"><strong>show</strong></a>(self, camera=None)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-shuffle"><strong>shuffle</strong></a>(self, recursive=False)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-shuffle_submobjects"><strong>shuffle_submobjects</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-sort"><strong>sort</strong></a>(self, point_to_num_func=&lt;function Mobject.&lt;lambda&gt; at 0x00000207893B08B8&gt;, submob_func=None)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-sort_submobjects"><strong>sort_submobjects</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-space_out_submobjects"><strong>space_out_submobjects</strong></a>(self, factor=1.5, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-split"><strong>split</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-stretch"><strong>stretch</strong></a>(self, factor, dim, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-stretch_about_point"><strong>stretch_about_point</strong></a>(self, factor, dim, point)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-stretch_in_place"><strong>stretch_in_place</strong></a>(self, factor, dim)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-stretch_to_fit_depth"><strong>stretch_to_fit_depth</strong></a>(self, depth, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-stretch_to_fit_height"><strong>stretch_to_fit_height</strong></a>(self, height, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-stretch_to_fit_width"><strong>stretch_to_fit_width</strong></a>(self, width, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-surround"><strong>surround</strong></a>(self, mobject, dim_to_match=0, stretch=False, buff=0.25)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-suspend_updating"><strong>suspend_updating</strong></a>(self, recursive=True)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-throw_error_if_no_points"><strong>throw_error_if_no_points</strong></a>(self)</dt><dd><tt>#&nbsp;Errors</tt></dd></dl>
+
+<dl><dt><a name="ThreeDVMobject-to_corner"><strong>to_corner</strong></a>(self, corner=array([-1., -1.,  0.]), buff=0.5)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-to_edge"><strong>to_edge</strong></a>(self, edge=array([-1.,  0.,  0.]), buff=0.5)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-to_original_color"><strong>to_original_color</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-update"><strong>update</strong></a>(self, dt=0, recursive=True)</dt></dl>
+
+<dl><dt><a name="ThreeDVMobject-wag"><strong>wag</strong></a>(self, direction=array([1., 0., 0.]), axis=array([ 0., -1.,  0.]), wag_factor=1.0)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.container.container.Container</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table></p></td></tr></tbody></table></p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#55aa55">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>BLACK</strong> = '#000000'<br>
+<strong>BLUE</strong> = '#58C4DD'<br>
+<strong>BLUE_A</strong> = '#C7E9F1'<br>
+<strong>BLUE_B</strong> = '#9CDCEB'<br>
+<strong>BLUE_C</strong> = '#58C4DD'<br>
+<strong>BLUE_D</strong> = '#29ABCA'<br>
+<strong>BLUE_E</strong> = '#1C758A'<br>
+<strong>BOLD</strong> = 'BOLD'<br>
+<strong>BOTTOM</strong> = array([ 0., -4.,  0.])<br>
+<strong>CHOOSE_NUMBER_MESSAGE</strong> = '<font color="#c040c0">\n</font>Choose number corresponding to desired scene/ar... separated list for multiple entries)<font color="#c040c0">\n</font>Choice(s): '<br>
+<strong>COLOR_MAP</strong> = {'BLACK': '#000000', 'BLUE_A': '#C7E9F1', 'BLUE_B': '#9CDCEB', 'BLUE_C': '#58C4DD', 'BLUE_D': '#29ABCA', 'BLUE_E': '#1C758A', 'DARKER_GRAY': '#222222', 'DARKER_GREY': '#222222', 'DARK_BLUE': '#236B8E', 'DARK_BROWN': '#8B4513', ...}<br>
+<strong>DARKER_GRAY</strong> = '#222222'<br>
+<strong>DARKER_GREY</strong> = '#222222'<br>
+<strong>DARK_BLUE</strong> = '#236B8E'<br>
+<strong>DARK_BROWN</strong> = '#8B4513'<br>
+<strong>DARK_GRAY</strong> = '#444444'<br>
+<strong>DARK_GREY</strong> = '#444444'<br>
+<strong>DEFAULT_FRAME_RATE</strong> = 60<br>
+<strong>DEFAULT_MOBJECT_TO_EDGE_BUFFER</strong> = 0.5<br>
+<strong>DEFAULT_MOBJECT_TO_MOBJECT_BUFFER</strong> = 0.25<br>
+<strong>DEFAULT_PIXEL_HEIGHT</strong> = 1440<br>
+<strong>DEFAULT_PIXEL_WIDTH</strong> = 2560<br>
+<strong>DEFAULT_POINTWISE_FUNCTION_RUN_TIME</strong> = 3.0<br>
+<strong>DEFAULT_POINT_DENSITY_1D</strong> = 250<br>
+<strong>DEFAULT_POINT_DENSITY_2D</strong> = 25<br>
+<strong>DEFAULT_STROKE_WIDTH</strong> = 4<br>
+<strong>DEFAULT_WAIT_TIME</strong> = 1.0<br>
+<strong>DEGREES</strong> = 0.017453292519943295<br>
+<strong>DL</strong> = array([-1., -1.,  0.])<br>
+<strong>DOWN</strong> = array([ 0., -1.,  0.])<br>
+<strong>DR</strong> = array([ 1., -1.,  0.])<br>
+<strong>FFMPEG_BIN</strong> = 'ffmpeg'<br>
+<strong>FRAME_HEIGHT</strong> = 8.0<br>
+<strong>FRAME_WIDTH</strong> = 14.222222222222221<br>
+<strong>FRAME_X_RADIUS</strong> = 7.111111111111111<br>
+<strong>FRAME_Y_RADIUS</strong> = 4.0<br>
+<strong>GOLD</strong> = '#F0AC5F'<br>
+<strong>GOLD_A</strong> = '#F7C797'<br>
+<strong>GOLD_B</strong> = '#F9B775'<br>
+<strong>GOLD_C</strong> = '#F0AC5F'<br>
+<strong>GOLD_D</strong> = '#E1A158'<br>
+<strong>GOLD_E</strong> = '#C78D46'<br>
+<strong>GRAY</strong> = '#888888'<br>
+<strong>GREEN</strong> = '#83C167'<br>
+<strong>GREEN_A</strong> = '#C9E2AE'<br>
+<strong>GREEN_B</strong> = '#A6CF8C'<br>
+<strong>GREEN_C</strong> = '#83C167'<br>
+<strong>GREEN_D</strong> = '#77B05D'<br>
+<strong>GREEN_E</strong> = '#699C52'<br>
+<strong>GREEN_SCREEN</strong> = '#00FF00'<br>
+<strong>GREY</strong> = '#888888'<br>
+<strong>GREY_BROWN</strong> = '#736357'<br>
+<strong>HELP_MESSAGE</strong> = '<font color="#c040c0">\n</font>   Usage:<font color="#c040c0">\n</font>   python extract_scene.py &lt;module&gt; [...fy a resolution<font color="#c040c0">\n</font>   -c specify a background color<font color="#c040c0">\n</font>'<br>
+<strong>HIGH_QUALITY_CAMERA_CONFIG</strong> = {'frame_rate': 60, 'pixel_height': 1080, 'pixel_width': 1920}<br>
+<strong>IN</strong> = array([ 0.,  0., -1.])<br>
+<strong>INVALID_NUMBER_MESSAGE</strong> = "Fine then, if you don't want to give a valid number I'll just quit"<br>
+<strong>ITALIC</strong> = 'ITALIC'<br>
+<strong>LARGE_BUFF</strong> = 1<br>
+<strong>LEFT</strong> = array([-1.,  0.,  0.])<br>
+<strong>LEFT_SIDE</strong> = array([-7.11111111,  0.        ,  0.        ])<br>
+<strong>LIGHT_BROWN</strong> = '#CD853F'<br>
+<strong>LIGHT_GRAY</strong> = '#BBBBBB'<br>
+<strong>LIGHT_GREY</strong> = '#BBBBBB'<br>
+<strong>LIGHT_PINK</strong> = '#DC75CD'<br>
+<strong>LIVE_STREAM_NAME</strong> = 'LiveStream'<br>
+<strong>LOW_QUALITY_CAMERA_CONFIG</strong> = {'frame_rate': 15, 'pixel_height': 480, 'pixel_width': 854}<br>
+<strong>MAROON</strong> = '#C55F73'<br>
+<strong>MAROON_A</strong> = '#ECABC1'<br>
+<strong>MAROON_B</strong> = '#EC92AB'<br>
+<strong>MAROON_C</strong> = '#C55F73'<br>
+<strong>MAROON_D</strong> = '#A24D61'<br>
+<strong>MAROON_E</strong> = '#94424F'<br>
+<strong>MEDIA_DIR</strong> = ''<br>
+<strong>MEDIUM_QUALITY_CAMERA_CONFIG</strong> = {'frame_rate': 30, 'pixel_height': 720, 'pixel_width': 1280}<br>
+<strong>MED_LARGE_BUFF</strong> = 0.5<br>
+<strong>MED_SMALL_BUFF</strong> = 0.25<br>
+<strong>NORMAL</strong> = 'NORMAL'<br>
+<strong>NOT_SETTING_FONT_MSG</strong> = "<font color="#c040c0">\n</font>Warning:<font color="#c040c0">\n</font>You haven't set font.<font color="#c040c0">\n</font>If you are not u...:<font color="#c040c0">\n</font>    CONFIG = {<font color="#c040c0">\n</font>        'font': 'My Font'<font color="#c040c0">\n</font>    }<font color="#c040c0">\n</font>"<br>
+<strong>NO_SCENE_MESSAGE</strong> = '<font color="#c040c0">\n</font>   There are no scenes inside that module<font color="#c040c0">\n</font>'<br>
+<strong>OBLIQUE</strong> = 'OBLIQUE'<br>
+<strong>ORANGE</strong> = '#FF862F'<br>
+<strong>ORIGIN</strong> = array([0., 0., 0.])<br>
+<strong>OUT</strong> = array([0., 0., 1.])<br>
+<strong>PALETTE</strong> = ['#236B8E', '#8B4513', '#CD853F', '#1C758A', '#29ABCA', '#58C4DD', '#9CDCEB', '#C7E9F1', '#49A88F', '#55C1A7', '#5CD0B3', '#76DDC0', '#ACEAD7', '#699C52', '#77B05D', '#83C167', '#A6CF8C', '#C9E2AE', '#E8C11C', '#F4D345', ...]<br>
+<strong>PI</strong> = 3.141592653589793<br>
+<strong>PINK</strong> = '#D147BD'<br>
+<strong>PRODUCTION_QUALITY_CAMERA_CONFIG</strong> = {'frame_rate': 60, 'pixel_height': 1440, 'pixel_width': 2560}<br>
+<strong>PURPLE</strong> = '#9A72AC'<br>
+<strong>PURPLE_A</strong> = '#CAA3E8'<br>
+<strong>PURPLE_B</strong> = '#B189C6'<br>
+<strong>PURPLE_C</strong> = '#9A72AC'<br>
+<strong>PURPLE_D</strong> = '#715582'<br>
+<strong>PURPLE_E</strong> = '#644172'<br>
+<strong>RED</strong> = '#FC6255'<br>
+<strong>RED_A</strong> = '#F7A1A3'<br>
+<strong>RED_B</strong> = '#FF8080'<br>
+<strong>RED_C</strong> = '#FC6255'<br>
+<strong>RED_D</strong> = '#E65A4C'<br>
+<strong>RED_E</strong> = '#CF5044'<br>
+<strong>RIGHT</strong> = array([1., 0., 0.])<br>
+<strong>RIGHT_SIDE</strong> = array([7.11111111, 0.        , 0.        ])<br>
+<strong>SCENE_NOT_FOUND_MESSAGE</strong> = '<font color="#c040c0">\n</font>   {} is not in the script<font color="#c040c0">\n</font>'<br>
+<strong>SMALL_BUFF</strong> = 0.1<br>
+<strong>START_X</strong> = 30<br>
+<strong>START_Y</strong> = 20<br>
+<strong>STREAMING_CLIENT</strong> = 'ffplay'<br>
+<strong>STREAMING_CONSOLE_BANNER</strong> = '<font color="#c040c0">\n</font>Manim is now running in streaming mode. Stream ...&gt;&gt;&gt; c = Circle()<font color="#c040c0">\n</font>&gt;&gt;&gt; manim.play(ShowCreation(c))<font color="#c040c0">\n</font>'<br>
+<strong>STREAMING_IP</strong> = '127.0.0.1'<br>
+<strong>STREAMING_PORT</strong> = '2000'<br>
+<strong>STREAMING_PROTOCOL</strong> = 'tcp'<br>
+<strong>STREAMING_URL</strong> = 'tcp://127.0.0.1:2000?listen'<br>
+<strong>TAU</strong> = 6.283185307179586<br>
+<strong>TEAL</strong> = '#5CD0B3'<br>
+<strong>TEAL_A</strong> = '#ACEAD7'<br>
+<strong>TEAL_B</strong> = '#76DDC0'<br>
+<strong>TEAL_C</strong> = '#5CD0B3'<br>
+<strong>TEAL_D</strong> = '#55C1A7'<br>
+<strong>TEAL_E</strong> = '#49A88F'<br>
+<strong>TEMPLATE_TEXT_FILE_BODY</strong> = '<font color="#c040c0">\\</font>documentclass[preview]{standalone}<font color="#c040c0">\n\n\\</font>usepackage...<font color="#c040c0">\n\n\\</font>begin{document}<font color="#c040c0">\n\n</font>YourTextHere<font color="#c040c0">\n\n\\</font>end{document}<font color="#c040c0">\n</font>'<br>
+<strong>TEMPLATE_TEX_FILE</strong> = r'manim\tex_template.tex'<br>
+<strong>TEMPLATE_TEX_FILE_BODY</strong> = '<font color="#c040c0">\\</font>documentclass[preview]{standalone}<font color="#c040c0">\n\n\\</font>usepackage...lign*}<font color="#c040c0">\n</font>YourTextHere<font color="#c040c0">\n\\</font>end{align*}<font color="#c040c0">\n\n\\</font>end{document}<font color="#c040c0">\n</font>'<br>
+<strong>TEXT_DIR</strong> = ''<br>
+<strong>TEX_DIR</strong> = ''<br>
+<strong>TEX_TEXT_TO_REPLACE</strong> = 'YourTextHere'<br>
+<strong>TEX_USE_CTEX</strong> = False<br>
+<strong>TOP</strong> = array([0., 4., 0.])<br>
+<strong>TWITCH_STREAM_KEY</strong> = 'YOUR_STREAM_KEY'<br>
+<strong>UL</strong> = array([-1.,  1.,  0.])<br>
+<strong>UP</strong> = array([0., 1., 0.])<br>
+<strong>UR</strong> = array([1., 1., 0.])<br>
+<strong>VIDEO_DIR</strong> = ''<br>
+<strong>VIDEO_OUTPUT_DIR</strong> = ''<br>
+<strong>WHITE</strong> = '#FFFFFF'<br>
+<strong>X_AXIS</strong> = array([1., 0., 0.])<br>
+<strong>YELLOW</strong> = '#FFFF00'<br>
+<strong>YELLOW_A</strong> = '#FFF1B6'<br>
+<strong>YELLOW_B</strong> = '#FFEA94'<br>
+<strong>YELLOW_C</strong> = '#FFFF00'<br>
+<strong>YELLOW_D</strong> = '#F4D345'<br>
+<strong>YELLOW_E</strong> = '#E8C11C'<br>
+<strong>Y_AXIS</strong> = array([0., 1., 0.])<br>
+<strong>Z_AXIS</strong> = array([0., 0., 1.])<br>
+<strong>infile</strong> = &lt;_io.TextIOWrapper name='\manim\\\tex_template.tex' mode='r' encoding='cp936'&gt;<br>
+<strong>name</strong> = 'PURPLE_C'</td></tr></tbody></table></p></div>
+</body></html>

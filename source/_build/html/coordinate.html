@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Coordinate &#8212; Manim  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Animation" href="animation.html" />
+    <link rel="prev" title="Making a Scene" href="getting_started/making_a_scene.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="coordinate">
+<h1>Coordinate<a class="headerlink" href="#coordinate" title="Permalink to this headline">¶</a></h1>
+<p>By default, the scene in manim is made up by 8 x 14 grid. The grid is addressed using a numpy
+array in the form of [x, y, z]. For 2D animations only the x and y axes are used.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">DotMap</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">dots</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+        <span class="n">annos</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+        <span class="n">var_index</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">):</span>
+                <span class="n">annos</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{x}{y}</span><span class="s2">&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">TexMobject</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;(</span><span class="si">{x}</span><span class="s2">, </span><span class="si">{y}</span><span class="s2">)&quot;</span><span class="p">)</span>
+                <span class="n">dots</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{var_index}</span><span class="s2">&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">0</span><span class="p">]))</span>
+                <span class="n">var_index</span> <span class="o">=</span> <span class="n">var_index</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="k">for</span> <span class="n">anno</span><span class="p">,</span> <span class="n">dot</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">annos</span><span class="o">.</span><span class="n">values</span><span class="p">(),</span> <span class="n">dots</span><span class="o">.</span><span class="n">values</span><span class="p">()):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">anno</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">dot</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">anno</span><span class="p">)</span>
+</pre></div>
+</div>
+<video width="700" height="394" controls>
+    <source src="_static/coordinate/DotMap.mp4" type="video/mp4">
+</video><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can place objects outside this boundary, but it won’t show up in the render.</p>
+</div>
+<div class="section" id="using-coordinates">
+<h2>Using Coordinates<a class="headerlink" href="#using-coordinates" title="Permalink to this headline">¶</a></h2>
+<p>Coordinates are used for creating geometries (<cite>VMobject</cite> in manim) and animations.</p>
+<p>Here coordinates are used to create this Polygon</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CoorPolygon</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">0</span><span class="p">]),</span> <span class="n">color</span><span class="o">=</span><span class="n">DARK_GREY</span><span class="p">))</span>
+        <span class="n">polygon</span> <span class="o">=</span> <span class="n">Polygon</span><span class="p">(</span>
+            <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">]),</span>
+            <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]),</span>
+            <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">]),</span>
+            <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">]))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">polygon</span><span class="p">)</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="_images/CoorPolygon.png"><img alt="_images/CoorPolygon.png" src="_images/CoorPolygon.png" style="width: 700px;" /></a>
+</div>
+<div class="section" id="coordinate-aliasing">
+<h2>Coordinate Aliasing<a class="headerlink" href="#coordinate-aliasing" title="Permalink to this headline">¶</a></h2>
+<p>From some animations typing a <code class="docutils literal notranslate"><span class="pre">np.array</span></code> everytime you need a coordinate can be tedious.
+Manim provides aliases to the most common coordinates:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">UP</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="n">DOWN</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="n">LEFT</span> <span class="o">==</span>  <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="n">RIGHT</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="n">UL</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="n">DL</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="n">UR</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="n">DR</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>Here coordinates are used for animations</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CoorAlias</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">0</span><span class="p">]),</span> <span class="n">color</span><span class="o">=</span><span class="n">DARK_GREY</span><span class="p">))</span>
+
+        <span class="n">aliases</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;UP&quot;</span><span class="p">:</span> <span class="n">UP</span><span class="p">,</span>
+            <span class="s2">&quot;np.array([0,1,0])&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]),</span>
+            <span class="s2">&quot;DOWN&quot;</span><span class="p">:</span> <span class="n">DOWN</span><span class="p">,</span>
+            <span class="s2">&quot;np.array([0,-1,0])&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]),</span>
+            <span class="s2">&quot;LEFT&quot;</span><span class="p">:</span> <span class="n">LEFT</span><span class="p">,</span>
+            <span class="s2">&quot;np.array([-1,0,0])&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]),</span>
+            <span class="s2">&quot;RIGHT&quot;</span><span class="p">:</span> <span class="n">RIGHT</span><span class="p">,</span>
+            <span class="s2">&quot;np.array([1,0,0])&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]),</span>
+            <span class="s2">&quot;UL&quot;</span><span class="p">:</span> <span class="n">UL</span><span class="p">,</span>
+            <span class="s2">&quot;np.array([-1,1,0])&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]),</span>
+            <span class="s2">&quot;DL&quot;</span><span class="p">:</span> <span class="n">DL</span><span class="p">,</span>
+            <span class="s2">&quot;np.array([-1,-1,0])&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]),</span>
+            <span class="s2">&quot;UR&quot;</span><span class="p">:</span> <span class="n">UR</span><span class="p">,</span>
+            <span class="s2">&quot;np.array([1,1,0])&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]),</span>
+            <span class="s2">&quot;DR&quot;</span><span class="p">:</span> <span class="n">DR</span><span class="p">,</span>
+            <span class="s2">&quot;np.array([1,-1,0])&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])}</span>
+        <span class="n">circle</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">RED</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">circle</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">text</span><span class="p">,</span> <span class="n">aliase</span> <span class="ow">in</span> <span class="n">aliases</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">anno</span> <span class="o">=</span> <span class="n">TexMobject</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">texttt{{</span><span class="si">{text}</span><span class="s2">}}&quot;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Write</span><span class="p">(</span><span class="n">anno</span><span class="p">,</span> <span class="n">run_time</span><span class="o">=</span><span class="mf">0.2</span><span class="p">))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ApplyMethod</span><span class="p">(</span><span class="n">circle</span><span class="o">.</span><span class="n">shift</span><span class="p">,</span> <span class="n">aliase</span><span class="p">))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">FadeOut</span><span class="p">(</span><span class="n">anno</span><span class="p">,</span> <span class="n">run_time</span><span class="o">=</span><span class="mf">0.2</span><span class="p">))</span>
+</pre></div>
+</div>
+<video width="700" height="394" controls>
+    <source src="_static/coordinate/CoorAlias.mp4" type="video/mp4">
+</video></div>
+<div class="section" id="coordinate-arithmetic">
+<h2>Coordinate Arithmetic<a class="headerlink" href="#coordinate-arithmetic" title="Permalink to this headline">¶</a></h2>
+<p>Numpy array allows arithmetic operations:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="mi">4</span>
+<span class="go">array([6, 6, 4])</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="go">array([-3, -1,  0])</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="go">array([-1, -4,  0])</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span> <span class="o">-</span> <span class="mi">3</span>
+<span class="go">array([-1, -1, -3])</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span> <span class="o">*</span> <span class="mi">3</span>
+<span class="go">array([ 3, -9,  0])</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span> <span class="o">/</span> <span class="mi">2</span>
+<span class="go">array([1., 1., 0.])</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span> <span class="o">/</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="go">__main__:1: RuntimeWarning: invalid value encountered in true_divide</span>
+<span class="go">array([2. , 0.5, nan])</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CoorArithmetic</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">0</span><span class="p">]),</span> <span class="n">color</span><span class="o">=</span><span class="n">DARK_GREY</span><span class="p">))</span>
+
+        <span class="n">circle</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">RED</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">circle</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+
+        <span class="n">aliases</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;LEFT * 3&quot;</span><span class="p">:</span> <span class="n">LEFT</span> <span class="o">*</span> <span class="mi">3</span><span class="p">,</span>
+            <span class="s2">&quot;UP + RIGHT / 2&quot;</span><span class="p">:</span> <span class="n">UP</span> <span class="o">+</span> <span class="n">RIGHT</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="s2">&quot;DOWN + LEFT * 2&quot;</span><span class="p">:</span> <span class="n">DOWN</span> <span class="o">+</span> <span class="n">LEFT</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="s2">&quot;RIGHT * 3.75 * DOWN&quot;</span><span class="p">:</span> <span class="n">RIGHT</span> <span class="o">*</span> <span class="mf">3.75</span> <span class="o">*</span> <span class="n">DOWN</span><span class="p">,</span>
+            <span class="c1"># certain arithmetic won&#39;t work as you expected</span>
+            <span class="c1"># In [4]: RIGHT * 3.75 * DOWN</span>
+            <span class="c1"># Out[4]: array([ 0., -0.,  0.])</span>
+            <span class="s2">&quot;RIGHT * 3.75 + DOWN&quot;</span><span class="p">:</span> <span class="n">RIGHT</span> <span class="o">*</span> <span class="mf">3.75</span> <span class="o">+</span> <span class="n">DOWN</span><span class="p">}</span>
+
+        <span class="k">for</span> <span class="n">text</span><span class="p">,</span> <span class="n">aliase</span> <span class="ow">in</span> <span class="n">aliases</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">anno</span> <span class="o">=</span> <span class="n">TexMobject</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">texttt{{</span><span class="si">{text}</span><span class="s2">}}&quot;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Write</span><span class="p">(</span><span class="n">anno</span><span class="p">,</span> <span class="n">run_time</span><span class="o">=</span><span class="mf">0.2</span><span class="p">))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ApplyMethod</span><span class="p">(</span><span class="n">circle</span><span class="o">.</span><span class="n">shift</span><span class="p">,</span> <span class="n">aliase</span><span class="p">))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">FadeOut</span><span class="p">(</span><span class="n">anno</span><span class="p">,</span> <span class="n">run_time</span><span class="o">=</span><span class="mf">0.2</span><span class="p">))</span>
+</pre></div>
+</div>
+<video width="700" height="394" controls>
+    <source src="_static/coordinate/CoorArithmetic.mp4" type="video/mp4">
+</video></div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Manim</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started/index.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Coordinate</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#using-coordinates">Using Coordinates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#coordinate-aliasing">Coordinate Aliasing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#coordinate-arithmetic">Coordinate Arithmetic</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="animation.html">Animation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constants.html">Manim Constants</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="getting_started/making_a_scene.html" title="previous chapter">Making a Scene</a></li>
+      <li>Next: <a href="animation.html" title="next chapter">Animation</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, EulerTour.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/coordinate.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

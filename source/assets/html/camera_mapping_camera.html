@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0041)http://localhost:8080/mapping_camera.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style><title>Pydoc: module mapping_camera</title>
+
+<link rel="stylesheet" type="text/css" href="./camera_mapping_camera_files/_pydoc.css"></head><body bgcolor="#f0f0f8">
+            <div style="float:left">
+                Python 3.7.6 [default, MSC v.1916 64 bit (AMD64)]<br>Windows-10
+            </div>
+            <div style="float:right">
+                <div style="text-align:center">
+                  <a href="">Module Index</a>
+                  : <a href="">Topics</a>
+                  : <a href="">Keywords</a>
+                </div>
+                <div>
+                    <form action="" style="display:inline;">
+                      <input type="text" name="q" size="15">
+                      <input type="submit" value="Get">
+                    </form>&nbsp;
+                    <form action="../../search.html" style="display:inline;">
+                      <input type="text" name="q" size="15">
+                      <input type="submit" value="Search">
+                    </form>
+                </div>
+            </div>
+            <div style="clear:both;padding-top:.5em;">
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="heading">
+<tbody><tr bgcolor="#7799ee">
+<td valign="bottom">&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>mapping_camera</strong></big></big></font></td><td align="right" valign="bottom"><font color="#ffffff" face="helvetica, arial"><a href="">index</a><br><a href="">mapping_camera.py</a></font></td></tr></tbody></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#aa55cc">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tbody><tr><td width="25%" valign="top"><a href="">numpy</a><br>
+</td><td width="25%" valign="top"></td><td width="25%" valign="top"></td><td width="25%" valign="top"></td></tr></tbody></table></td></tr></tbody></table></p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ee77aa">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="">manimlib.camera.camera.Camera</a>(<a href="">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="">MappingCamera</a>
+</font></dt><dt><font face="helvetica, arial"><a href="">OldMultiCamera</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="">SplitScreenCamera</a>
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="MappingCamera">class <strong>MappingCamera</strong></a>(<a href="">manimlib.camera.camera.Camera</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">MappingCamera</a>(background=None,&nbsp;**kwargs)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">MappingCamera</a></dd>
+<dd><a href="">manimlib.camera.camera.Camera</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="MappingCamera-capture_mobjects"><strong>capture_mobjects</strong></a>(self, mobjects, **kwargs)</dt></dl>
+
+<dl><dt><a name="MappingCamera-points_to_pixel_coords"><strong>points_to_pixel_coords</strong></a>(self, points)</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>CONFIG</strong> = {'allow_object_intrusion': False, 'mapping_func': &lt;function MappingCamera.&lt;lambda&gt;&gt;, 'min_num_curves': 50}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.camera.camera.Camera</a>:<br>
+<dl><dt><a name="MappingCamera-__deepcopy__"><strong>__deepcopy__</strong></a>(self, memo)</dt></dl>
+
+<dl><dt><a name="MappingCamera-__init__"><strong>__init__</strong></a>(self, background=None, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="MappingCamera-adjust_out_of_range_points"><strong>adjust_out_of_range_points</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="MappingCamera-adjusted_thickness"><strong>adjusted_thickness</strong></a>(self, thickness)</dt></dl>
+
+<dl><dt><a name="MappingCamera-apply_fill"><strong>apply_fill</strong></a>(self, ctx, vmobject)</dt></dl>
+
+<dl><dt><a name="MappingCamera-apply_stroke"><strong>apply_stroke</strong></a>(self, ctx, vmobject, background=False)</dt></dl>
+
+<dl><dt><a name="MappingCamera-cache_cairo_context"><strong>cache_cairo_context</strong></a>(self, pixel_array, ctx)</dt></dl>
+
+<dl><dt><a name="MappingCamera-capture_mobject"><strong>capture_mobject</strong></a>(self, mobject, **kwargs)</dt></dl>
+
+<dl><dt><a name="MappingCamera-convert_pixel_array"><strong>convert_pixel_array</strong></a>(self, pixel_array, convert_from_floats=False)</dt></dl>
+
+<dl><dt><a name="MappingCamera-display_image_mobject"><strong>display_image_mobject</strong></a>(self, image_mobject, pixel_array)</dt></dl>
+
+<dl><dt><a name="MappingCamera-display_multiple_background_colored_vmobject"><strong>display_multiple_background_colored_vmobject</strong></a>(self, cvmobjects, pixel_array)</dt></dl>
+
+<dl><dt><a name="MappingCamera-display_multiple_image_mobjects"><strong>display_multiple_image_mobjects</strong></a>(self, image_mobjects, pixel_array)</dt></dl>
+
+<dl><dt><a name="MappingCamera-display_multiple_non_background_colored_vmobjects"><strong>display_multiple_non_background_colored_vmobjects</strong></a>(self, vmobjects, pixel_array)</dt></dl>
+
+<dl><dt><a name="MappingCamera-display_multiple_point_cloud_mobjects"><strong>display_multiple_point_cloud_mobjects</strong></a>(self, pmobjects, pixel_array)</dt></dl>
+
+<dl><dt><a name="MappingCamera-display_multiple_vectorized_mobjects"><strong>display_multiple_vectorized_mobjects</strong></a>(self, vmobjects, pixel_array)</dt></dl>
+
+<dl><dt><a name="MappingCamera-display_point_cloud"><strong>display_point_cloud</strong></a>(self, pmobject, points, rgbas, thickness, pixel_array)</dt></dl>
+
+<dl><dt><a name="MappingCamera-display_vectorized"><strong>display_vectorized</strong></a>(self, vmobject, ctx)</dt></dl>
+
+<dl><dt><a name="MappingCamera-extract_mobject_family_members"><strong>extract_mobject_family_members</strong></a>(self, mobjects, only_those_with_points=False)</dt><dd><tt>#&nbsp;TODO,&nbsp;it's&nbsp;weird&nbsp;that&nbsp;this&nbsp;is&nbsp;part&nbsp;of&nbsp;camera.<br>
+#&nbsp;Clearly&nbsp;it&nbsp;should&nbsp;live&nbsp;elsewhere.</tt></dd></dl>
+
+<dl><dt><a name="MappingCamera-get_background_colored_vmobject_displayer"><strong>get_background_colored_vmobject_displayer</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MappingCamera-get_cached_cairo_context"><strong>get_cached_cairo_context</strong></a>(self, pixel_array)</dt></dl>
+
+<dl><dt><a name="MappingCamera-get_cairo_context"><strong>get_cairo_context</strong></a>(self, pixel_array)</dt></dl>
+
+<dl><dt><a name="MappingCamera-get_coords_of_all_pixels"><strong>get_coords_of_all_pixels</strong></a>(self)</dt><dd><tt>#&nbsp;TODO,&nbsp;reimplement&nbsp;using&nbsp;cairo&nbsp;matrix</tt></dd></dl>
+
+<dl><dt><a name="MappingCamera-get_fill_rgbas"><strong>get_fill_rgbas</strong></a>(self, vmobject)</dt></dl>
+
+<dl><dt><a name="MappingCamera-get_frame_center"><strong>get_frame_center</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MappingCamera-get_frame_height"><strong>get_frame_height</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MappingCamera-get_frame_width"><strong>get_frame_width</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MappingCamera-get_image"><strong>get_image</strong></a>(self, pixel_array=None)</dt></dl>
+
+<dl><dt><a name="MappingCamera-get_mobjects_to_display"><strong>get_mobjects_to_display</strong></a>(self, mobjects, include_submobjects=True, excluded_mobjects=None)</dt></dl>
+
+<dl><dt><a name="MappingCamera-get_pixel_array"><strong>get_pixel_array</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MappingCamera-get_pixel_height"><strong>get_pixel_height</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MappingCamera-get_pixel_width"><strong>get_pixel_width</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MappingCamera-get_stroke_rgbas"><strong>get_stroke_rgbas</strong></a>(self, vmobject, background=False)</dt></dl>
+
+<dl><dt><a name="MappingCamera-get_thickening_nudges"><strong>get_thickening_nudges</strong></a>(self, thickness)</dt></dl>
+
+<dl><dt><a name="MappingCamera-init_background"><strong>init_background</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MappingCamera-is_in_frame"><strong>is_in_frame</strong></a>(self, mobject)</dt></dl>
+
+<dl><dt><a name="MappingCamera-make_background_from_func"><strong>make_background_from_func</strong></a>(self, coords_to_colors_func)</dt><dd><tt>Sets&nbsp;background&nbsp;by&nbsp;using&nbsp;coords_to_colors_func&nbsp;to&nbsp;determine&nbsp;each&nbsp;pixel's&nbsp;color.&nbsp;Each&nbsp;input<br>
+to&nbsp;coords_to_colors_func&nbsp;is&nbsp;an&nbsp;(x,&nbsp;y)&nbsp;pair&nbsp;in&nbsp;space&nbsp;(in&nbsp;ordinary&nbsp;space&nbsp;coordinates;&nbsp;not<br>
+pixel&nbsp;coordinates),&nbsp;and&nbsp;each&nbsp;output&nbsp;is&nbsp;expected&nbsp;to&nbsp;be&nbsp;an&nbsp;RGBA&nbsp;array&nbsp;of&nbsp;4&nbsp;floats.</tt></dd></dl>
+
+<dl><dt><a name="MappingCamera-on_screen_pixels"><strong>on_screen_pixels</strong></a>(self, pixel_coords)</dt></dl>
+
+<dl><dt><a name="MappingCamera-overlay_PIL_image"><strong>overlay_PIL_image</strong></a>(self, pixel_array, image)</dt></dl>
+
+<dl><dt><a name="MappingCamera-overlay_rgba_array"><strong>overlay_rgba_array</strong></a>(self, pixel_array, new_array)</dt></dl>
+
+<dl><dt><a name="MappingCamera-reset"><strong>reset</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MappingCamera-reset_pixel_shape"><strong>reset_pixel_shape</strong></a>(self, new_height, new_width)</dt></dl>
+
+<dl><dt><a name="MappingCamera-resize_frame_shape"><strong>resize_frame_shape</strong></a>(self, fixed_dimension=0)</dt><dd><tt>Changes&nbsp;frame_shape&nbsp;to&nbsp;match&nbsp;the&nbsp;aspect&nbsp;ratio<br>
+of&nbsp;the&nbsp;pixels,&nbsp;where&nbsp;fixed_dimension&nbsp;determines<br>
+whether&nbsp;frame_height&nbsp;or&nbsp;frame_width<br>
+remains&nbsp;fixed&nbsp;while&nbsp;the&nbsp;other&nbsp;changes&nbsp;accordingly.</tt></dd></dl>
+
+<dl><dt><a name="MappingCamera-set_background"><strong>set_background</strong></a>(self, pixel_array, convert_from_floats=False)</dt></dl>
+
+<dl><dt><a name="MappingCamera-set_background_from_func"><strong>set_background_from_func</strong></a>(self, coords_to_colors_func)</dt></dl>
+
+<dl><dt><a name="MappingCamera-set_cairo_context_color"><strong>set_cairo_context_color</strong></a>(self, ctx, rgbas, vmobject)</dt></dl>
+
+<dl><dt><a name="MappingCamera-set_cairo_context_path"><strong>set_cairo_context_path</strong></a>(self, ctx, vmobject)</dt></dl>
+
+<dl><dt><a name="MappingCamera-set_frame_center"><strong>set_frame_center</strong></a>(self, frame_center)</dt></dl>
+
+<dl><dt><a name="MappingCamera-set_frame_height"><strong>set_frame_height</strong></a>(self, frame_height)</dt></dl>
+
+<dl><dt><a name="MappingCamera-set_frame_width"><strong>set_frame_width</strong></a>(self, frame_width)</dt></dl>
+
+<dl><dt><a name="MappingCamera-set_pixel_array"><strong>set_pixel_array</strong></a>(self, pixel_array, convert_from_floats=False)</dt></dl>
+
+<dl><dt><a name="MappingCamera-thickened_coordinates"><strong>thickened_coordinates</strong></a>(self, pixel_coords, thickness)</dt></dl>
+
+<dl><dt><a name="MappingCamera-transform_points_pre_display"><strong>transform_points_pre_display</strong></a>(self, mobject, points)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.camera.camera.Camera</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="OldMultiCamera">class <strong>OldMultiCamera</strong></a>(<a href="">manimlib.camera.camera.Camera</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">OldMultiCamera</a>(*cameras_with_start_positions,&nbsp;**kwargs)<br>
+&nbsp;<br>
+#&nbsp;TODO,&nbsp;the&nbsp;classes&nbsp;below&nbsp;should&nbsp;likely&nbsp;be&nbsp;deleted<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">OldMultiCamera</a></dd>
+<dd><a href="">manimlib.camera.camera.Camera</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="OldMultiCamera-__init__"><strong>__init__</strong></a>(self, *cameras_with_start_positions, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="OldMultiCamera-capture_mobjects"><strong>capture_mobjects</strong></a>(self, mobjects, **kwargs)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-init_background"><strong>init_background</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-set_background"><strong>set_background</strong></a>(self, pixel_array, **kwargs)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-set_pixel_array"><strong>set_pixel_array</strong></a>(self, pixel_array, **kwargs)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.camera.camera.Camera</a>:<br>
+<dl><dt><a name="OldMultiCamera-__deepcopy__"><strong>__deepcopy__</strong></a>(self, memo)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-adjust_out_of_range_points"><strong>adjust_out_of_range_points</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-adjusted_thickness"><strong>adjusted_thickness</strong></a>(self, thickness)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-apply_fill"><strong>apply_fill</strong></a>(self, ctx, vmobject)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-apply_stroke"><strong>apply_stroke</strong></a>(self, ctx, vmobject, background=False)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-cache_cairo_context"><strong>cache_cairo_context</strong></a>(self, pixel_array, ctx)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-capture_mobject"><strong>capture_mobject</strong></a>(self, mobject, **kwargs)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-convert_pixel_array"><strong>convert_pixel_array</strong></a>(self, pixel_array, convert_from_floats=False)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-display_image_mobject"><strong>display_image_mobject</strong></a>(self, image_mobject, pixel_array)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-display_multiple_background_colored_vmobject"><strong>display_multiple_background_colored_vmobject</strong></a>(self, cvmobjects, pixel_array)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-display_multiple_image_mobjects"><strong>display_multiple_image_mobjects</strong></a>(self, image_mobjects, pixel_array)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-display_multiple_non_background_colored_vmobjects"><strong>display_multiple_non_background_colored_vmobjects</strong></a>(self, vmobjects, pixel_array)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-display_multiple_point_cloud_mobjects"><strong>display_multiple_point_cloud_mobjects</strong></a>(self, pmobjects, pixel_array)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-display_multiple_vectorized_mobjects"><strong>display_multiple_vectorized_mobjects</strong></a>(self, vmobjects, pixel_array)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-display_point_cloud"><strong>display_point_cloud</strong></a>(self, pmobject, points, rgbas, thickness, pixel_array)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-display_vectorized"><strong>display_vectorized</strong></a>(self, vmobject, ctx)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-extract_mobject_family_members"><strong>extract_mobject_family_members</strong></a>(self, mobjects, only_those_with_points=False)</dt><dd><tt>#&nbsp;TODO,&nbsp;it's&nbsp;weird&nbsp;that&nbsp;this&nbsp;is&nbsp;part&nbsp;of&nbsp;camera.<br>
+#&nbsp;Clearly&nbsp;it&nbsp;should&nbsp;live&nbsp;elsewhere.</tt></dd></dl>
+
+<dl><dt><a name="OldMultiCamera-get_background_colored_vmobject_displayer"><strong>get_background_colored_vmobject_displayer</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-get_cached_cairo_context"><strong>get_cached_cairo_context</strong></a>(self, pixel_array)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-get_cairo_context"><strong>get_cairo_context</strong></a>(self, pixel_array)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-get_coords_of_all_pixels"><strong>get_coords_of_all_pixels</strong></a>(self)</dt><dd><tt>#&nbsp;TODO,&nbsp;reimplement&nbsp;using&nbsp;cairo&nbsp;matrix</tt></dd></dl>
+
+<dl><dt><a name="OldMultiCamera-get_fill_rgbas"><strong>get_fill_rgbas</strong></a>(self, vmobject)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-get_frame_center"><strong>get_frame_center</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-get_frame_height"><strong>get_frame_height</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-get_frame_width"><strong>get_frame_width</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-get_image"><strong>get_image</strong></a>(self, pixel_array=None)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-get_mobjects_to_display"><strong>get_mobjects_to_display</strong></a>(self, mobjects, include_submobjects=True, excluded_mobjects=None)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-get_pixel_array"><strong>get_pixel_array</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-get_pixel_height"><strong>get_pixel_height</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-get_pixel_width"><strong>get_pixel_width</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-get_stroke_rgbas"><strong>get_stroke_rgbas</strong></a>(self, vmobject, background=False)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-get_thickening_nudges"><strong>get_thickening_nudges</strong></a>(self, thickness)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-is_in_frame"><strong>is_in_frame</strong></a>(self, mobject)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-make_background_from_func"><strong>make_background_from_func</strong></a>(self, coords_to_colors_func)</dt><dd><tt>Sets&nbsp;background&nbsp;by&nbsp;using&nbsp;coords_to_colors_func&nbsp;to&nbsp;determine&nbsp;each&nbsp;pixel's&nbsp;color.&nbsp;Each&nbsp;input<br>
+to&nbsp;coords_to_colors_func&nbsp;is&nbsp;an&nbsp;(x,&nbsp;y)&nbsp;pair&nbsp;in&nbsp;space&nbsp;(in&nbsp;ordinary&nbsp;space&nbsp;coordinates;&nbsp;not<br>
+pixel&nbsp;coordinates),&nbsp;and&nbsp;each&nbsp;output&nbsp;is&nbsp;expected&nbsp;to&nbsp;be&nbsp;an&nbsp;RGBA&nbsp;array&nbsp;of&nbsp;4&nbsp;floats.</tt></dd></dl>
+
+<dl><dt><a name="OldMultiCamera-on_screen_pixels"><strong>on_screen_pixels</strong></a>(self, pixel_coords)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-overlay_PIL_image"><strong>overlay_PIL_image</strong></a>(self, pixel_array, image)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-overlay_rgba_array"><strong>overlay_rgba_array</strong></a>(self, pixel_array, new_array)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-points_to_pixel_coords"><strong>points_to_pixel_coords</strong></a>(self, mobject, points)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-reset"><strong>reset</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-reset_pixel_shape"><strong>reset_pixel_shape</strong></a>(self, new_height, new_width)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-resize_frame_shape"><strong>resize_frame_shape</strong></a>(self, fixed_dimension=0)</dt><dd><tt>Changes&nbsp;frame_shape&nbsp;to&nbsp;match&nbsp;the&nbsp;aspect&nbsp;ratio<br>
+of&nbsp;the&nbsp;pixels,&nbsp;where&nbsp;fixed_dimension&nbsp;determines<br>
+whether&nbsp;frame_height&nbsp;or&nbsp;frame_width<br>
+remains&nbsp;fixed&nbsp;while&nbsp;the&nbsp;other&nbsp;changes&nbsp;accordingly.</tt></dd></dl>
+
+<dl><dt><a name="OldMultiCamera-set_background_from_func"><strong>set_background_from_func</strong></a>(self, coords_to_colors_func)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-set_cairo_context_color"><strong>set_cairo_context_color</strong></a>(self, ctx, rgbas, vmobject)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-set_cairo_context_path"><strong>set_cairo_context_path</strong></a>(self, ctx, vmobject)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-set_frame_center"><strong>set_frame_center</strong></a>(self, frame_center)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-set_frame_height"><strong>set_frame_height</strong></a>(self, frame_height)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-set_frame_width"><strong>set_frame_width</strong></a>(self, frame_width)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-thickened_coordinates"><strong>thickened_coordinates</strong></a>(self, pixel_coords, thickness)</dt></dl>
+
+<dl><dt><a name="OldMultiCamera-transform_points_pre_display"><strong>transform_points_pre_display</strong></a>(self, mobject, points)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.camera.camera.Camera</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="">manimlib.camera.camera.Camera</a>:<br>
+<dl><dt><strong>CONFIG</strong> = {'background_color': '#000000', 'background_image': None, 'background_opacity': 1, 'cairo_line_width_multiple': 0.01, 'frame_center': array([0., 0., 0.]), 'frame_height': 8.0, 'frame_rate': 60, 'frame_width': 14.222222222222221, 'image_mode': 'RGBA', 'max_allowable_norm': 14.222222222222221, ...}</dt></dl>
+
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="SplitScreenCamera">class <strong>SplitScreenCamera</strong></a>(<a href="">OldMultiCamera</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">SplitScreenCamera</a>(left_camera,&nbsp;right_camera,&nbsp;**kwargs)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">SplitScreenCamera</a></dd>
+<dd><a href="">OldMultiCamera</a></dd>
+<dd><a href="">manimlib.camera.camera.Camera</a></dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="SplitScreenCamera-__init__"><strong>__init__</strong></a>(self, left_camera, right_camera, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="">OldMultiCamera</a>:<br>
+<dl><dt><a name="SplitScreenCamera-capture_mobjects"><strong>capture_mobjects</strong></a>(self, mobjects, **kwargs)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-init_background"><strong>init_background</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-set_background"><strong>set_background</strong></a>(self, pixel_array, **kwargs)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-set_pixel_array"><strong>set_pixel_array</strong></a>(self, pixel_array, **kwargs)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.camera.camera.Camera</a>:<br>
+<dl><dt><a name="SplitScreenCamera-__deepcopy__"><strong>__deepcopy__</strong></a>(self, memo)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-adjust_out_of_range_points"><strong>adjust_out_of_range_points</strong></a>(self, points)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-adjusted_thickness"><strong>adjusted_thickness</strong></a>(self, thickness)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-apply_fill"><strong>apply_fill</strong></a>(self, ctx, vmobject)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-apply_stroke"><strong>apply_stroke</strong></a>(self, ctx, vmobject, background=False)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-cache_cairo_context"><strong>cache_cairo_context</strong></a>(self, pixel_array, ctx)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-capture_mobject"><strong>capture_mobject</strong></a>(self, mobject, **kwargs)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-convert_pixel_array"><strong>convert_pixel_array</strong></a>(self, pixel_array, convert_from_floats=False)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-display_image_mobject"><strong>display_image_mobject</strong></a>(self, image_mobject, pixel_array)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-display_multiple_background_colored_vmobject"><strong>display_multiple_background_colored_vmobject</strong></a>(self, cvmobjects, pixel_array)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-display_multiple_image_mobjects"><strong>display_multiple_image_mobjects</strong></a>(self, image_mobjects, pixel_array)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-display_multiple_non_background_colored_vmobjects"><strong>display_multiple_non_background_colored_vmobjects</strong></a>(self, vmobjects, pixel_array)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-display_multiple_point_cloud_mobjects"><strong>display_multiple_point_cloud_mobjects</strong></a>(self, pmobjects, pixel_array)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-display_multiple_vectorized_mobjects"><strong>display_multiple_vectorized_mobjects</strong></a>(self, vmobjects, pixel_array)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-display_point_cloud"><strong>display_point_cloud</strong></a>(self, pmobject, points, rgbas, thickness, pixel_array)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-display_vectorized"><strong>display_vectorized</strong></a>(self, vmobject, ctx)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-extract_mobject_family_members"><strong>extract_mobject_family_members</strong></a>(self, mobjects, only_those_with_points=False)</dt><dd><tt>#&nbsp;TODO,&nbsp;it's&nbsp;weird&nbsp;that&nbsp;this&nbsp;is&nbsp;part&nbsp;of&nbsp;camera.<br>
+#&nbsp;Clearly&nbsp;it&nbsp;should&nbsp;live&nbsp;elsewhere.</tt></dd></dl>
+
+<dl><dt><a name="SplitScreenCamera-get_background_colored_vmobject_displayer"><strong>get_background_colored_vmobject_displayer</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-get_cached_cairo_context"><strong>get_cached_cairo_context</strong></a>(self, pixel_array)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-get_cairo_context"><strong>get_cairo_context</strong></a>(self, pixel_array)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-get_coords_of_all_pixels"><strong>get_coords_of_all_pixels</strong></a>(self)</dt><dd><tt>#&nbsp;TODO,&nbsp;reimplement&nbsp;using&nbsp;cairo&nbsp;matrix</tt></dd></dl>
+
+<dl><dt><a name="SplitScreenCamera-get_fill_rgbas"><strong>get_fill_rgbas</strong></a>(self, vmobject)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-get_frame_center"><strong>get_frame_center</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-get_frame_height"><strong>get_frame_height</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-get_frame_width"><strong>get_frame_width</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-get_image"><strong>get_image</strong></a>(self, pixel_array=None)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-get_mobjects_to_display"><strong>get_mobjects_to_display</strong></a>(self, mobjects, include_submobjects=True, excluded_mobjects=None)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-get_pixel_array"><strong>get_pixel_array</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-get_pixel_height"><strong>get_pixel_height</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-get_pixel_width"><strong>get_pixel_width</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-get_stroke_rgbas"><strong>get_stroke_rgbas</strong></a>(self, vmobject, background=False)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-get_thickening_nudges"><strong>get_thickening_nudges</strong></a>(self, thickness)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-is_in_frame"><strong>is_in_frame</strong></a>(self, mobject)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-make_background_from_func"><strong>make_background_from_func</strong></a>(self, coords_to_colors_func)</dt><dd><tt>Sets&nbsp;background&nbsp;by&nbsp;using&nbsp;coords_to_colors_func&nbsp;to&nbsp;determine&nbsp;each&nbsp;pixel's&nbsp;color.&nbsp;Each&nbsp;input<br>
+to&nbsp;coords_to_colors_func&nbsp;is&nbsp;an&nbsp;(x,&nbsp;y)&nbsp;pair&nbsp;in&nbsp;space&nbsp;(in&nbsp;ordinary&nbsp;space&nbsp;coordinates;&nbsp;not<br>
+pixel&nbsp;coordinates),&nbsp;and&nbsp;each&nbsp;output&nbsp;is&nbsp;expected&nbsp;to&nbsp;be&nbsp;an&nbsp;RGBA&nbsp;array&nbsp;of&nbsp;4&nbsp;floats.</tt></dd></dl>
+
+<dl><dt><a name="SplitScreenCamera-on_screen_pixels"><strong>on_screen_pixels</strong></a>(self, pixel_coords)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-overlay_PIL_image"><strong>overlay_PIL_image</strong></a>(self, pixel_array, image)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-overlay_rgba_array"><strong>overlay_rgba_array</strong></a>(self, pixel_array, new_array)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-points_to_pixel_coords"><strong>points_to_pixel_coords</strong></a>(self, mobject, points)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-reset"><strong>reset</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-reset_pixel_shape"><strong>reset_pixel_shape</strong></a>(self, new_height, new_width)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-resize_frame_shape"><strong>resize_frame_shape</strong></a>(self, fixed_dimension=0)</dt><dd><tt>Changes&nbsp;frame_shape&nbsp;to&nbsp;match&nbsp;the&nbsp;aspect&nbsp;ratio<br>
+of&nbsp;the&nbsp;pixels,&nbsp;where&nbsp;fixed_dimension&nbsp;determines<br>
+whether&nbsp;frame_height&nbsp;or&nbsp;frame_width<br>
+remains&nbsp;fixed&nbsp;while&nbsp;the&nbsp;other&nbsp;changes&nbsp;accordingly.</tt></dd></dl>
+
+<dl><dt><a name="SplitScreenCamera-set_background_from_func"><strong>set_background_from_func</strong></a>(self, coords_to_colors_func)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-set_cairo_context_color"><strong>set_cairo_context_color</strong></a>(self, ctx, rgbas, vmobject)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-set_cairo_context_path"><strong>set_cairo_context_path</strong></a>(self, ctx, vmobject)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-set_frame_center"><strong>set_frame_center</strong></a>(self, frame_center)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-set_frame_height"><strong>set_frame_height</strong></a>(self, frame_height)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-set_frame_width"><strong>set_frame_width</strong></a>(self, frame_width)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-thickened_coordinates"><strong>thickened_coordinates</strong></a>(self, pixel_coords, thickness)</dt></dl>
+
+<dl><dt><a name="SplitScreenCamera-transform_points_pre_display"><strong>transform_points_pre_display</strong></a>(self, mobject, points)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="">manimlib.camera.camera.Camera</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="">manimlib.camera.camera.Camera</a>:<br>
+<dl><dt><strong>CONFIG</strong> = {'background_color': '#000000', 'background_image': None, 'background_opacity': 1, 'cairo_line_width_multiple': 0.01, 'frame_center': array([0., 0., 0.]), 'frame_height': 8.0, 'frame_rate': 60, 'frame_width': 14.222222222222221, 'image_mode': 'RGBA', 'max_allowable_norm': 14.222222222222221, ...}</dt></dl>
+
+</td></tr></tbody></table></p></td></tr></tbody></table></p></div>
+</body></html>

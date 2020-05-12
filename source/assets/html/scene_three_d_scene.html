@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0040)http://localhost:8080/three_d_scene.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style><title>Pydoc: module three_d_scene</title>
+
+<link rel="stylesheet" type="text/css" href="./scene_three_d_scene_files/_pydoc.css"></head><body bgcolor="#f0f0f8">
+            <div style="float:left">
+                Python 3.7.6 [default, MSC v.1916 64 bit (AMD64)]<br>Windows-10
+            </div>
+            <div style="float:right">
+                <div style="text-align:center">
+                  <a href="">Module Index</a>
+                  : <a href="">Topics</a>
+                  : <a href="">Keywords</a>
+                </div>
+                <div>
+                    <form action="" style="display:inline;">
+                      <input type="text" name="q" size="15">
+                      <input type="submit" value="Get">
+                    </form>&nbsp;
+                    <form action="../../search.html" style="display:inline;">
+                      <input type="text" name="q" size="15">
+                      <input type="submit" value="Search">
+                    </form>
+                </div>
+            </div>
+            <div style="clear:both;padding-top:.5em;">
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="heading">
+<tbody><tr bgcolor="#7799ee">
+<td valign="bottom">&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>three_d_scene</strong></big></big></font></td><td align="right" valign="bottom"><font color="#ffffff" face="helvetica, arial"><a href="">index</a><br><a href="">three_d_scene.py</a></font></td></tr></tbody></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ee77aa">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="">manimlib.scene.scene.Scene</a>(manimlib.container.container.Container)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="">ThreeDScene</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="">SpecialThreeDScene</a>
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="SpecialThreeDScene">class <strong>SpecialThreeDScene</strong></a>(<a href="">ThreeDScene</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">SpecialThreeDScene</a>(**kwargs)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">SpecialThreeDScene</a></dd>
+<dd><a href="">ThreeDScene</a></dd>
+<dd><a href="">manimlib.scene.scene.Scene</a></dd>
+<dd>manimlib.container.container.Container</dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="SpecialThreeDScene-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="SpecialThreeDScene-get_axes"><strong>get_axes</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-get_default_camera_position"><strong>get_default_camera_position</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-get_sphere"><strong>get_sphere</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-set_camera_to_default_position"><strong>set_camera_to_default_position</strong></a>(self)</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>CONFIG</strong> = {'camera_config': {'exponential_projection': True, 'should_apply_shading': True}, 'cut_axes_at_radius': True, 'default_angled_camera_position': {'phi': 1.2217304763960306, 'theta': -1.9198621771937625}, 'low_quality_config': {'camera_config': {'should_apply_shading': False}, 'sphere_config': {'resolution': (12, 24)}, 'three_d_axes_config': {'num_axis_pieces': 1}}, 'sphere_config': {'radius': 2, 'resolution': (24, 48)}, 'three_d_axes_config': {'axis_config': {'numbers_with_elongated_ticks': [0, 1, 2], 'stroke_width': 2, 'tick_frequency': 1, 'unit_size': 2}, 'num_axis_pieces': 1}}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">ThreeDScene</a>:<br>
+<dl><dt><a name="SpecialThreeDScene-add_fixed_in_frame_mobjects"><strong>add_fixed_in_frame_mobjects</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-add_fixed_orientation_mobjects"><strong>add_fixed_orientation_mobjects</strong></a>(self, *mobjects, **kwargs)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-begin_ambient_camera_rotation"><strong>begin_ambient_camera_rotation</strong></a>(self, rate=0.02)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-get_moving_mobjects"><strong>get_moving_mobjects</strong></a>(self, *animations)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-move_camera"><strong>move_camera</strong></a>(self, phi=None, theta=None, distance=None, gamma=None, frame_center=None, added_anims=[], **kwargs)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-remove_fixed_in_frame_mobjects"><strong>remove_fixed_in_frame_mobjects</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-remove_fixed_orientation_mobjects"><strong>remove_fixed_orientation_mobjects</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-set_camera_orientation"><strong>set_camera_orientation</strong></a>(self, phi=None, theta=None, distance=None, gamma=None)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-set_to_default_angled_camera_orientation"><strong>set_to_default_angled_camera_orientation</strong></a>(self, **kwargs)</dt><dd><tt>##</tt></dd></dl>
+
+<dl><dt><a name="SpecialThreeDScene-stop_ambient_camera_rotation"><strong>stop_ambient_camera_rotation</strong></a>(self)</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.scene.scene.Scene</a>:<br>
+<dl><dt><a name="SpecialThreeDScene-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="SpecialThreeDScene-add"><strong>add</strong></a>(self, *mobjects)</dt><dd><tt>Mobjects&nbsp;will&nbsp;be&nbsp;displayed,&nbsp;from&nbsp;background&nbsp;to<br>
+foreground&nbsp;in&nbsp;the&nbsp;order&nbsp;with&nbsp;which&nbsp;they&nbsp;are&nbsp;added.</tt></dd></dl>
+
+<dl><dt><a name="SpecialThreeDScene-add_foreground_mobject"><strong>add_foreground_mobject</strong></a>(self, mobject)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-add_foreground_mobjects"><strong>add_foreground_mobjects</strong></a>(self, *mobjects)</dt><dd><tt>#&nbsp;TODO,&nbsp;remove&nbsp;this,&nbsp;and&nbsp;calls&nbsp;to&nbsp;this</tt></dd></dl>
+
+<dl><dt><a name="SpecialThreeDScene-add_frames"><strong>add_frames</strong></a>(self, *frames)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-add_mobjects_among"><strong>add_mobjects_among</strong></a>(self, values)</dt><dd><tt>This&nbsp;is&nbsp;meant&nbsp;mostly&nbsp;for&nbsp;quick&nbsp;prototyping,<br>
+e.g.&nbsp;to&nbsp;add&nbsp;all&nbsp;mobjects&nbsp;defined&nbsp;up&nbsp;to&nbsp;a&nbsp;point,<br>
+call&nbsp;self.<a href="">add_mobjects_among</a>(locals().values())</tt></dd></dl>
+
+<dl><dt><a name="SpecialThreeDScene-add_sound"><strong>add_sound</strong></a>(self, sound_file, time_offset=0, gain=None, **kwargs)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-begin_animations"><strong>begin_animations</strong></a>(self, animations)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-bring_to_back"><strong>bring_to_back</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-bring_to_front"><strong>bring_to_front</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-capture_mobjects_in_camera"><strong>capture_mobjects_in_camera</strong></a>(self, mobjects, **kwargs)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-clean_up_animations"><strong>clean_up_animations</strong></a>(self, *animations)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-clear"><strong>clear</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-compile_play_args_to_animation_list"><strong>compile_play_args_to_animation_list</strong></a>(self, *args, **kwargs)</dt><dd><tt>Each&nbsp;arg&nbsp;can&nbsp;either&nbsp;be&nbsp;an&nbsp;animation,&nbsp;or&nbsp;a&nbsp;mobject&nbsp;method<br>
+followed&nbsp;by&nbsp;that&nbsp;methods&nbsp;arguments&nbsp;(and&nbsp;potentially&nbsp;follow<br>
+by&nbsp;a&nbsp;dict&nbsp;of&nbsp;kwargs&nbsp;for&nbsp;that&nbsp;method).<br>
+This&nbsp;animation&nbsp;list&nbsp;is&nbsp;built&nbsp;by&nbsp;going&nbsp;through&nbsp;the&nbsp;args&nbsp;list,<br>
+and&nbsp;each&nbsp;animation&nbsp;is&nbsp;simply&nbsp;added,&nbsp;but&nbsp;when&nbsp;a&nbsp;mobject&nbsp;method<br>
+s&nbsp;hit,&nbsp;a&nbsp;MoveToTarget&nbsp;animation&nbsp;is&nbsp;built&nbsp;using&nbsp;the&nbsp;args&nbsp;that<br>
+follow&nbsp;up&nbsp;until&nbsp;either&nbsp;another&nbsp;animation&nbsp;is&nbsp;hit,&nbsp;another&nbsp;method<br>
+is&nbsp;hit,&nbsp;or&nbsp;the&nbsp;args&nbsp;list&nbsp;runs&nbsp;out.</tt></dd></dl>
+
+<dl><dt><a name="SpecialThreeDScene-construct"><strong>construct</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-finish_animations"><strong>finish_animations</strong></a>(self, animations)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-force_skipping"><strong>force_skipping</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-freeze_background"><strong>freeze_background</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-get_animation_time_progression"><strong>get_animation_time_progression</strong></a>(self, animations)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-get_attrs"><strong>get_attrs</strong></a>(self, *keys)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-get_frame"><strong>get_frame</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-get_image"><strong>get_image</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-get_mobject_copies"><strong>get_mobject_copies</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-get_mobject_family_members"><strong>get_mobject_family_members</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-get_mobjects"><strong>get_mobjects</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-get_mobjects_from_last_animation"><strong>get_mobjects_from_last_animation</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-get_restructured_mobject_list"><strong>get_restructured_mobject_list</strong></a>(self, mobjects, to_remove)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-get_run_time"><strong>get_run_time</strong></a>(self, animations)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-get_time"><strong>get_time</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-get_time_progression"><strong>get_time_progression</strong></a>(self, run_time, n_iterations=None, override_skip_animations=False)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-get_top_level_mobjects"><strong>get_top_level_mobjects</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-get_wait_time_progression"><strong>get_wait_time_progression</strong></a>(self, duration, stop_condition)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-handle_play_like_call"><strong>handle_play_like_call</strong></a>(func)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-idle_stream"><strong>idle_stream</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-increment_time"><strong>increment_time</strong></a>(self, d_time)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-play"><strong>play</strong></a> = wrapper(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-print_end_message"><strong>print_end_message</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-progress_through_animations"><strong>progress_through_animations</strong></a>(self, animations)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-remove"><strong>remove</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-remove_foreground_mobject"><strong>remove_foreground_mobject</strong></a>(self, mobject)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-remove_foreground_mobjects"><strong>remove_foreground_mobjects</strong></a>(self, *to_remove)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-reset_camera"><strong>reset_camera</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-restructure_mobjects"><strong>restructure_mobjects</strong></a>(self, to_remove, mobject_list_name='mobjects', extract_families=True)</dt><dd><tt>In&nbsp;cases&nbsp;where&nbsp;the&nbsp;scene&nbsp;contains&nbsp;a&nbsp;group,&nbsp;e.g.&nbsp;Group(m1,&nbsp;m2,&nbsp;m3),&nbsp;but&nbsp;one<br>
+of&nbsp;its&nbsp;submobjects&nbsp;is&nbsp;removed,&nbsp;e.g.&nbsp;scene.<a href="">remove</a>(m1),&nbsp;the&nbsp;list&nbsp;of&nbsp;mobjects<br>
+will&nbsp;be&nbsp;editing&nbsp;to&nbsp;contain&nbsp;other&nbsp;submobjects,&nbsp;but&nbsp;not&nbsp;m1,&nbsp;e.g.&nbsp;it&nbsp;will&nbsp;now<br>
+insert&nbsp;m2&nbsp;and&nbsp;m3&nbsp;to&nbsp;where&nbsp;the&nbsp;group&nbsp;once&nbsp;was.</tt></dd></dl>
+
+<dl><dt><a name="SpecialThreeDScene-revert_to_original_skipping_status"><strong>revert_to_original_skipping_status</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-set_camera"><strong>set_camera</strong></a>(self, camera)</dt><dd><tt>#&nbsp;Only&nbsp;these&nbsp;methods&nbsp;should&nbsp;touch&nbsp;the&nbsp;camera</tt></dd></dl>
+
+<dl><dt><a name="SpecialThreeDScene-set_camera_background"><strong>set_camera_background</strong></a>(self, background)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-set_camera_pixel_array"><strong>set_camera_pixel_array</strong></a>(self, pixel_array)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-set_variables_as_attrs"><strong>set_variables_as_attrs</strong></a>(self, *objects, **newly_named_objects)</dt><dd><tt>This&nbsp;method&nbsp;is&nbsp;slightly&nbsp;hacky,&nbsp;making&nbsp;it&nbsp;a&nbsp;little&nbsp;easier<br>
+for&nbsp;certain&nbsp;methods&nbsp;(typically&nbsp;subroutines&nbsp;of&nbsp;construct)<br>
+to&nbsp;share&nbsp;local&nbsp;variables.</tt></dd></dl>
+
+<dl><dt><a name="SpecialThreeDScene-setup"><strong>setup</strong></a>(self)</dt><dd><tt>This&nbsp;is&nbsp;meant&nbsp;to&nbsp;be&nbsp;implement&nbsp;by&nbsp;any&nbsp;scenes&nbsp;which<br>
+are&nbsp;comonly&nbsp;subclassed,&nbsp;and&nbsp;have&nbsp;some&nbsp;common&nbsp;setup<br>
+involved&nbsp;before&nbsp;the&nbsp;construct&nbsp;method&nbsp;is&nbsp;called.</tt></dd></dl>
+
+<dl><dt><a name="SpecialThreeDScene-should_update_mobjects"><strong>should_update_mobjects</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-show_frame"><strong>show_frame</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-tear_down"><strong>tear_down</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-tex"><strong>tex</strong></a>(self, latex)</dt><dd><tt>#&nbsp;TODO,&nbsp;this&nbsp;doesn't&nbsp;belong&nbsp;in&nbsp;<a href="">Scene</a>,&nbsp;but&nbsp;should&nbsp;be<br>
+#&nbsp;part&nbsp;of&nbsp;some&nbsp;more&nbsp;specialized&nbsp;subclass&nbsp;optimized<br>
+#&nbsp;for&nbsp;livestreaming</tt></dd></dl>
+
+<dl><dt><a name="SpecialThreeDScene-update_frame"><strong>update_frame</strong></a>(self, mobjects=None, background=None, include_submobjects=True, ignore_skipping=True, **kwargs)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-update_mobjects"><strong>update_mobjects</strong></a>(self, dt)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-update_skipping_status"><strong>update_skipping_status</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-wait"><strong>wait</strong></a> = wrapper(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="SpecialThreeDScene-wait_until"><strong>wait_until</strong></a>(self, stop_condition, max_time=60)</dt></dl>
+
+<hr>
+Data descriptors inherited from manimlib.container.container.Container:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table> </p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#ffc8d8">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ThreeDScene">class <strong>ThreeDScene</strong></a>(<a href="">manimlib.scene.scene.Scene</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan="2"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan="2"><tt><a href="">ThreeDScene</a>(**kwargs)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="">ThreeDScene</a></dd>
+<dd><a href="">manimlib.scene.scene.Scene</a></dd>
+<dd>manimlib.container.container.Container</dd>
+<dd><a href="">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ThreeDScene-add_fixed_in_frame_mobjects"><strong>add_fixed_in_frame_mobjects</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-add_fixed_orientation_mobjects"><strong>add_fixed_orientation_mobjects</strong></a>(self, *mobjects, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-begin_ambient_camera_rotation"><strong>begin_ambient_camera_rotation</strong></a>(self, rate=0.02)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-get_moving_mobjects"><strong>get_moving_mobjects</strong></a>(self, *animations)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-move_camera"><strong>move_camera</strong></a>(self, phi=None, theta=None, distance=None, gamma=None, frame_center=None, added_anims=[], **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-remove_fixed_in_frame_mobjects"><strong>remove_fixed_in_frame_mobjects</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-remove_fixed_orientation_mobjects"><strong>remove_fixed_orientation_mobjects</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-set_camera_orientation"><strong>set_camera_orientation</strong></a>(self, phi=None, theta=None, distance=None, gamma=None)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-set_to_default_angled_camera_orientation"><strong>set_to_default_angled_camera_orientation</strong></a>(self, **kwargs)</dt><dd><tt>##</tt></dd></dl>
+
+<dl><dt><a name="ThreeDScene-stop_ambient_camera_rotation"><strong>stop_ambient_camera_rotation</strong></a>(self)</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>CONFIG</strong> = {'ambient_camera_rotation': None, 'camera_class': &lt;class 'manimlib.camera.three_d_camera.ThreeDCamera'&gt;, 'default_angled_camera_orientation_kwargs': {'phi': 1.2217304763960306, 'theta': -2.356194490192345}}</dt></dl>
+
+<hr>
+Methods inherited from <a href="">manimlib.scene.scene.Scene</a>:<br>
+<dl><dt><a name="ThreeDScene-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="ThreeDScene-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="ThreeDScene-add"><strong>add</strong></a>(self, *mobjects)</dt><dd><tt>Mobjects&nbsp;will&nbsp;be&nbsp;displayed,&nbsp;from&nbsp;background&nbsp;to<br>
+foreground&nbsp;in&nbsp;the&nbsp;order&nbsp;with&nbsp;which&nbsp;they&nbsp;are&nbsp;added.</tt></dd></dl>
+
+<dl><dt><a name="ThreeDScene-add_foreground_mobject"><strong>add_foreground_mobject</strong></a>(self, mobject)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-add_foreground_mobjects"><strong>add_foreground_mobjects</strong></a>(self, *mobjects)</dt><dd><tt>#&nbsp;TODO,&nbsp;remove&nbsp;this,&nbsp;and&nbsp;calls&nbsp;to&nbsp;this</tt></dd></dl>
+
+<dl><dt><a name="ThreeDScene-add_frames"><strong>add_frames</strong></a>(self, *frames)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-add_mobjects_among"><strong>add_mobjects_among</strong></a>(self, values)</dt><dd><tt>This&nbsp;is&nbsp;meant&nbsp;mostly&nbsp;for&nbsp;quick&nbsp;prototyping,<br>
+e.g.&nbsp;to&nbsp;add&nbsp;all&nbsp;mobjects&nbsp;defined&nbsp;up&nbsp;to&nbsp;a&nbsp;point,<br>
+call&nbsp;self.<a href="">add_mobjects_among</a>(locals().values())</tt></dd></dl>
+
+<dl><dt><a name="ThreeDScene-add_sound"><strong>add_sound</strong></a>(self, sound_file, time_offset=0, gain=None, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-begin_animations"><strong>begin_animations</strong></a>(self, animations)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-bring_to_back"><strong>bring_to_back</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-bring_to_front"><strong>bring_to_front</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-capture_mobjects_in_camera"><strong>capture_mobjects_in_camera</strong></a>(self, mobjects, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-clean_up_animations"><strong>clean_up_animations</strong></a>(self, *animations)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-clear"><strong>clear</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-compile_play_args_to_animation_list"><strong>compile_play_args_to_animation_list</strong></a>(self, *args, **kwargs)</dt><dd><tt>Each&nbsp;arg&nbsp;can&nbsp;either&nbsp;be&nbsp;an&nbsp;animation,&nbsp;or&nbsp;a&nbsp;mobject&nbsp;method<br>
+followed&nbsp;by&nbsp;that&nbsp;methods&nbsp;arguments&nbsp;(and&nbsp;potentially&nbsp;follow<br>
+by&nbsp;a&nbsp;dict&nbsp;of&nbsp;kwargs&nbsp;for&nbsp;that&nbsp;method).<br>
+This&nbsp;animation&nbsp;list&nbsp;is&nbsp;built&nbsp;by&nbsp;going&nbsp;through&nbsp;the&nbsp;args&nbsp;list,<br>
+and&nbsp;each&nbsp;animation&nbsp;is&nbsp;simply&nbsp;added,&nbsp;but&nbsp;when&nbsp;a&nbsp;mobject&nbsp;method<br>
+s&nbsp;hit,&nbsp;a&nbsp;MoveToTarget&nbsp;animation&nbsp;is&nbsp;built&nbsp;using&nbsp;the&nbsp;args&nbsp;that<br>
+follow&nbsp;up&nbsp;until&nbsp;either&nbsp;another&nbsp;animation&nbsp;is&nbsp;hit,&nbsp;another&nbsp;method<br>
+is&nbsp;hit,&nbsp;or&nbsp;the&nbsp;args&nbsp;list&nbsp;runs&nbsp;out.</tt></dd></dl>
+
+<dl><dt><a name="ThreeDScene-construct"><strong>construct</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-finish_animations"><strong>finish_animations</strong></a>(self, animations)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-force_skipping"><strong>force_skipping</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-freeze_background"><strong>freeze_background</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-get_animation_time_progression"><strong>get_animation_time_progression</strong></a>(self, animations)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-get_attrs"><strong>get_attrs</strong></a>(self, *keys)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-get_frame"><strong>get_frame</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-get_image"><strong>get_image</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-get_mobject_copies"><strong>get_mobject_copies</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-get_mobject_family_members"><strong>get_mobject_family_members</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-get_mobjects"><strong>get_mobjects</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-get_mobjects_from_last_animation"><strong>get_mobjects_from_last_animation</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-get_restructured_mobject_list"><strong>get_restructured_mobject_list</strong></a>(self, mobjects, to_remove)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-get_run_time"><strong>get_run_time</strong></a>(self, animations)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-get_time"><strong>get_time</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-get_time_progression"><strong>get_time_progression</strong></a>(self, run_time, n_iterations=None, override_skip_animations=False)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-get_top_level_mobjects"><strong>get_top_level_mobjects</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-get_wait_time_progression"><strong>get_wait_time_progression</strong></a>(self, duration, stop_condition)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-handle_play_like_call"><strong>handle_play_like_call</strong></a>(func)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-idle_stream"><strong>idle_stream</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-increment_time"><strong>increment_time</strong></a>(self, d_time)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-play"><strong>play</strong></a> = wrapper(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-print_end_message"><strong>print_end_message</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-progress_through_animations"><strong>progress_through_animations</strong></a>(self, animations)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-remove"><strong>remove</strong></a>(self, *mobjects)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-remove_foreground_mobject"><strong>remove_foreground_mobject</strong></a>(self, mobject)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-remove_foreground_mobjects"><strong>remove_foreground_mobjects</strong></a>(self, *to_remove)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-reset_camera"><strong>reset_camera</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-restructure_mobjects"><strong>restructure_mobjects</strong></a>(self, to_remove, mobject_list_name='mobjects', extract_families=True)</dt><dd><tt>In&nbsp;cases&nbsp;where&nbsp;the&nbsp;scene&nbsp;contains&nbsp;a&nbsp;group,&nbsp;e.g.&nbsp;Group(m1,&nbsp;m2,&nbsp;m3),&nbsp;but&nbsp;one<br>
+of&nbsp;its&nbsp;submobjects&nbsp;is&nbsp;removed,&nbsp;e.g.&nbsp;scene.<a href="">remove</a>(m1),&nbsp;the&nbsp;list&nbsp;of&nbsp;mobjects<br>
+will&nbsp;be&nbsp;editing&nbsp;to&nbsp;contain&nbsp;other&nbsp;submobjects,&nbsp;but&nbsp;not&nbsp;m1,&nbsp;e.g.&nbsp;it&nbsp;will&nbsp;now<br>
+insert&nbsp;m2&nbsp;and&nbsp;m3&nbsp;to&nbsp;where&nbsp;the&nbsp;group&nbsp;once&nbsp;was.</tt></dd></dl>
+
+<dl><dt><a name="ThreeDScene-revert_to_original_skipping_status"><strong>revert_to_original_skipping_status</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-set_camera"><strong>set_camera</strong></a>(self, camera)</dt><dd><tt>#&nbsp;Only&nbsp;these&nbsp;methods&nbsp;should&nbsp;touch&nbsp;the&nbsp;camera</tt></dd></dl>
+
+<dl><dt><a name="ThreeDScene-set_camera_background"><strong>set_camera_background</strong></a>(self, background)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-set_camera_pixel_array"><strong>set_camera_pixel_array</strong></a>(self, pixel_array)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-set_variables_as_attrs"><strong>set_variables_as_attrs</strong></a>(self, *objects, **newly_named_objects)</dt><dd><tt>This&nbsp;method&nbsp;is&nbsp;slightly&nbsp;hacky,&nbsp;making&nbsp;it&nbsp;a&nbsp;little&nbsp;easier<br>
+for&nbsp;certain&nbsp;methods&nbsp;(typically&nbsp;subroutines&nbsp;of&nbsp;construct)<br>
+to&nbsp;share&nbsp;local&nbsp;variables.</tt></dd></dl>
+
+<dl><dt><a name="ThreeDScene-setup"><strong>setup</strong></a>(self)</dt><dd><tt>This&nbsp;is&nbsp;meant&nbsp;to&nbsp;be&nbsp;implement&nbsp;by&nbsp;any&nbsp;scenes&nbsp;which<br>
+are&nbsp;comonly&nbsp;subclassed,&nbsp;and&nbsp;have&nbsp;some&nbsp;common&nbsp;setup<br>
+involved&nbsp;before&nbsp;the&nbsp;construct&nbsp;method&nbsp;is&nbsp;called.</tt></dd></dl>
+
+<dl><dt><a name="ThreeDScene-should_update_mobjects"><strong>should_update_mobjects</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-show_frame"><strong>show_frame</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-tear_down"><strong>tear_down</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-tex"><strong>tex</strong></a>(self, latex)</dt><dd><tt>#&nbsp;TODO,&nbsp;this&nbsp;doesn't&nbsp;belong&nbsp;in&nbsp;<a href="">Scene</a>,&nbsp;but&nbsp;should&nbsp;be<br>
+#&nbsp;part&nbsp;of&nbsp;some&nbsp;more&nbsp;specialized&nbsp;subclass&nbsp;optimized<br>
+#&nbsp;for&nbsp;livestreaming</tt></dd></dl>
+
+<dl><dt><a name="ThreeDScene-update_frame"><strong>update_frame</strong></a>(self, mobjects=None, background=None, include_submobjects=True, ignore_skipping=True, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-update_mobjects"><strong>update_mobjects</strong></a>(self, dt)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-update_skipping_status"><strong>update_skipping_status</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-wait"><strong>wait</strong></a> = wrapper(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ThreeDScene-wait_until"><strong>wait_until</strong></a>(self, stop_condition, max_time=60)</dt></dl>
+
+<hr>
+Data descriptors inherited from manimlib.container.container.Container:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></tbody></table></p></td></tr></tbody></table></p><p>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" summary="section">
+<tbody><tr bgcolor="#55aa55">
+<td colspan="3" valign="bottom">&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>DEGREES</strong> = 0.017453292519943295<br>
+<strong>PRODUCTION_QUALITY_CAMERA_CONFIG</strong> = {'frame_rate': 60, 'pixel_height': 1440, 'pixel_width': 2560}</td></tr></tbody></table></p></div>
+</body></html>
