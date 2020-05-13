@@ -6,11 +6,11 @@
 目录
 
 
-`1\ 安装问题 <installationProblem>`_
+1\  :ref:`安装问题 <installationProblem>` 
 
 **Q**\ 1. **Python** 问题 
 
-`2\ 运行时问题 4 <runtimeProblem>`_
+2\  :ref:`运行时问题 <runtimeProblem>` 
 
 **Q**\ 1. **import** 问题 
 
@@ -22,7 +22,7 @@
 
 **Q**\ 5. 素材引用问题 
 
-`3\ 其它问题  <Others>`_
+3\   :ref:`其它问题 <Others>` 
 
 **Q**\ 1:有什么\ **manim**\ 教程 
 
@@ -58,7 +58,7 @@
 
 **Q**\ 17:有没有什么好的场景例子供学习 
 
-`4\ 注意 <Notice>`_
+4\  :ref:`注意 <Notice>` 
 
 
 .. toctree::
