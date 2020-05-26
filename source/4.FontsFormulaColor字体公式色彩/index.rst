@@ -65,7 +65,7 @@ Notation符号:为了数学编辑方便复制粘贴，拉丁符号，包括常�
 
 https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn
 
-
+妈咪叔整的https://www.latexlive.com/ 在线LaTeX公式编辑器
 
 .. toctree::
     :caption: Contents

@@ -1,8 +1,3 @@
-
-# 点网---画出格子网络，默认的网络
-# (-7,7)宽
-# (-4,4)高
-
 class DotMap(Scene):
     def construct(self):
         dots = dict()
@@ -18,3 +13,6 @@ class DotMap(Scene):
             self.add(dot)
             self.wait(0.2)
             self.remove(anno)
+# 点网---画出格子网络，默认的网络
+# (-7,7)宽
+# (-4,4)高

@@ -1,9 +1,11 @@
 Coordinate坐标系基础
 ====================
 
-这一页是EulerTour写的教程,我只是翻译+学习笔记，github早就有很多教程，但是为了方便查询使用，我才整合这么一份文档。
+.. admonition:: 声明
 
-By default, the scene in manim is made up by 8 x 14 grid. （manimlib/constants.py中定义，可修改
+    这一页是EulerTour写的教程,我只是翻译+学习笔记，github早就有很多教程，但是为了方便查询使用，我才整合这么一份文档。
+
+By default, the scene in manim is made up by 8 x 14 grid. 在manimlib/constants.py中定义，可修改
 
 高度FRAME_HEIGHT = 8.0，
 
@@ -14,7 +16,7 @@ The grid is addressed using a numpy
 array in the form of [x, y, z]. For 2D animations only the x and y axes are used.
 
 .. literalinclude:: ../assets/code/Coordinate/DotMap.py
-    :lines: 1
+    :linenos:
 
 .. raw:: html
 

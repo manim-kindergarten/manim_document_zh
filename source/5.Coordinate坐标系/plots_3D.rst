@@ -502,7 +502,7 @@ This text appears in XY plane, to rotate:
                 ]),v_min=0,v_max=TAU,u_min=-PI/2,u_max=PI/2,checkerboard_colors=[RED_D, RED_E],
                 resolution=(15, 32)).scale(2)
             #self.play(LaggedStart(ShowCreation,sphere))#鹏翔万里说新版本已经改动了，群友引力子说：lagged start应该是让动画依次显示，而不是同时播放
-            self.play(ShowCreation(sphere, lag_ratio=0.5))#群友鹤翔万里说现在的LaggedStart是AnimationGroup的子类，传入的是一系列动画实例
+            self.play(ShowCreation(sphere, lag_ratio=0.5))#群友鹤翔万里说：现在的LaggedStart是AnimationGroup的子类，传入的是一系列动画实例。LaggedStart换成新的了，以前的LaggedStart改成了LaggedStartMap
             #那要怎么知道ShowCreation的用法呢？
             #使用官网仓库的github搜索，比如搜索ShowCreation，能看到例子ShowCreation(arrows, lag_ratio = 0.5)，看例子就是最好的教程，ShowCreation(dot, run_time = 1.0)，，https://github.com/3b1b/manim/search?q=ShowCreation&unscoped_q=ShowCreation
             # 在ctrl点击找到的manimlib/animation/creation.py中ShowCreation定义代码CONFIG没有看到runtime属性，是因为它的父类的父类设置这runtime的值。
