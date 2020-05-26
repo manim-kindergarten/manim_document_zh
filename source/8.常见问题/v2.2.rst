@@ -222,9 +222,8 @@ II.  两个\ ``mobject``\ 对齐，使用\ ``obj2.next_to(obj1, DOWN, aligned_ed
 
 III. ``VGroup``\ 内对齐，使用\ ``group.arrange(DOWN, aligned_edge=LEFT)``\ 使\ ``VGroup``\ 中的子元素依次向下排开，并左对齐
 
-写公式的示例：
+`写公式的示例 <https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/3_text_like_arrays/scenes.md>`_ 
 
-https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/3_text_like_arrays/scenes.md
 
 Q7: ``TexMobject``\ 上色问题的处理办法
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -263,10 +262,9 @@ Q9: ``TexMobject``\ 使用 ``\frac`` 拆分时出错
 Q10: 括号匹配不全
 ~~~~~~~~~~~~~~~~~
 
-显示不全的例子：
+显示不全的例子
 
-在线公式：妈咪出品 https://www.latexlive.com/
-
+补充一个网站  `在线公式：妈咪出品 <https://www.latexlive.com/>`_ 
 
 .. math::
    \begin{cases}
