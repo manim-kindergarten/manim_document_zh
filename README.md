@@ -36,7 +36,7 @@ import pypandoc
 output = pypandoc.convert('somefile.md', 'rst')
 ```
 
-- 别```make clean```会删除build文件夹从而清除build/html/.git的gh-pages
+- 别直接```make clean```，会清空build文件夹进而清除build/html/.git的gh-pages
 
 尚有疑问：build\html\.git保存gh-pages分支，但是如果每次我使用make clean会删除build目录下所有文件，make再生成build目录下的html网页文档。
 那我现在岂不是不能用make clean?
