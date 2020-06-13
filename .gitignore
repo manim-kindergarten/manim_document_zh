@@ -2,3 +2,5 @@ build/
 
 _build/
 .vscode/
+
+tools/
