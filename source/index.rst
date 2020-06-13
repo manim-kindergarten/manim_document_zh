@@ -37,7 +37,7 @@ manim教程文档
     7.1Animations类的属性和方法/index
     7.2Mobjects类的属性和方法/index
     7.3Scenes类的属性和方法/index
-    8.常见问题/index
+    CommonProblems/index
     manim_sandbox/index.rst
     about
 
