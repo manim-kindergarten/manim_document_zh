@@ -31,8 +31,8 @@ Todd Zimmerman整理了 `一个非常好的教程`_ ，介绍了 ``manim`` 的�
     :caption: Contents
     :maxdepth: 2
 
-    learning_by_example案例学习
-    mathematical_objects数学对象
+    learning_by_example
+    mathematical_objects
     animating_mobjects
     making_a_scene
 

@@ -26,9 +26,9 @@ manim教程文档
     :maxdepth: 3
     :caption: Contents
 
-    1.installation安装/index
-    constants常量
-    2.getting_started新手上路/index
+    installation/index
+    constants
+    getting_started/index
     3.ShapesAnimation图形动画/index
     4.FontsFormulaColor字体公式色彩/index
     5.Coordinate坐标系/index
