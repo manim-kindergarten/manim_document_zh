@@ -1,5 +1,5 @@
 关于
-===============
+====
 
 
 关于manim_document_zh
@@ -9,9 +9,9 @@ manim_document_zh这个项目是由 `manim-kindergarten <https://github.com/mani
 成员 `Tridu <https://github.com/Tridu33>`_ 发起的，并由 `鹤翔万里 <https://github.com/Tony031218>`_ 
 完善得到的中文教程文档
 
-这个文档主要是东拼西凑来的，有些翻译自eulertour的 `文档 <https://eulertour.com/docs>`_ ，有些翻译自
-Elteoremadebeethoven的 `文档 <https://elteoremadebeethoven.github.io/manim_3feb_docs.github.io/html/index.html>`_ ，
-有些来自cai-hust的 `教程 <https://github.com/cai-hust/manim-tutorial-CN>`_ ，当然还有很多是
+这个文档主要是东拼西凑来的，有些翻译自 `eulertour的文档 <https://eulertour.com/docs>`_ ，有些翻译自
+`Elteoremadebeethoven的文档 <https://elteoremadebeethoven.github.io/manim_3feb_docs.github.io/html/index.html>`_ ，
+有些来自 `cai-hust的教程 <https://github.com/cai-hust/manim-tutorial-CN>`_ ，当然还有很多是
 创建了这个项目之后MK成员添加的
 
 这个项目目前在完善中，也会一直根据源码来维护

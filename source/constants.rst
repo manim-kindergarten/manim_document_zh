@@ -1,4 +1,4 @@
-manim常量-Constants
+constants常量
 =====================
 
 .. admonition:: 声明

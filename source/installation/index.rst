@@ -1,4 +1,4 @@
-安装-Installation
+安装指南
 ========================
 
 关于manim的安装教程，其实B站和知乎上已经有很多安装教程写很好的。
@@ -18,7 +18,7 @@
 
 .. toctree::
     :maxdepth: 2
-    :caption: Contents
+    :caption: 目录
 
     linux
     mac

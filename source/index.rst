@@ -24,16 +24,16 @@ manim教程文档
 
 .. toctree::
     :maxdepth: 3
-    :caption: Contents
+    :caption: 目录
 
     installation/index
     constants
     getting_started/index
+    Animations/index
     3.ShapesAnimation图形动画/index
     4.FontsFormulaColor字体公式色彩/index
     5.Coordinate坐标系/index
     6.camera相机类/index
-    7.ManimLibrary库/index
     7.1Animations类的属性和方法/index
     7.2Mobjects类的属性和方法/index
     7.3Scenes类的属性和方法/index

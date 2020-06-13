@@ -1,4 +1,4 @@
-入门教程-Getting Started
+入门教程
 ===============================
 
 .. admonition:: 声明
@@ -28,7 +28,7 @@ Todd Zimmerman整理了 `一个非常好的教程`_ ，介绍了 ``manim`` 的�
 
 
 .. toctree::
-    :caption: Contents
+    :caption: 目录
     :maxdepth: 2
 
     learning_by_example
