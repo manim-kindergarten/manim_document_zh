@@ -1,41 +1,35 @@
-Learning by Example案例学习
+案例学习-Learning by Example
 =============================
-
-
-写视频之前必须学会制作图片，因为视频就是根据帧率连续播放图片的过程。
 
 
 .. admonition:: 声明
 
-      此例子，来自 `这一集 <https://www.bilibili.com/video/BV1W4411Z7Zt?p=5>`_    。
+      此例子，来自 `这一集 <https://www.bilibili.com/video/BV1W4411Z7Zt?p=5>`_ 
 
+写视频之前必须学会制作图片，因为视频就是根据帧率连续播放图片的过程。
 
-example_scenes.py中自定义一个类。
+在example_scenes.py中自定义一个类：
 
 .. code::
 
    class FirstScene(Scene): 
       def construct(self): 
-         text=TextMobject("text")
+         text = TextMobject("text")
          self.add(text)
 
-
-
-
-命令行
+命令行执行
 
 .. code::
 
-    python -m manim  example_scenes.py FirstScene -ps
+    python -m manim example_scenes.py FirstScene -ps
 
-新版本中，任何py文件只要不选定里面的类（比如FirstScene）
+新版本中，如果你不选定里面的类（比如FirstScene）：
 
 .. code::
 
-   python -m manim  example_scenes.py -ps
+   python -m manim example_scenes.py -ps
 
-就会让你选：
-
+就会让你选择渲染那个场景（只含有一个场景的除外）：
 
 .. code::
 
@@ -52,22 +46,21 @@ example_scenes.py中自定义一个类。
 
 
 
-
 .. figure:: ../assets/image/FirstScene.png
     :width: 100%
     :align: center
 
     FirstScene
 
-画点
+画一个点
 
 .. code::
 
-   Class Positions(Scene):
+   class Positions(Scene):
       def construct(self):
-         object=Dot()
-         #用object.to_edge(UP)传参为常量中的向量UP可以向量指定位置np.array((0., 1., 0.))
-         #用object.to_corner(UR)传参为常量中的向量UR可以移动到向量指定位置np.array((右1., 上1., 0.))
+         object = Dot()
+         # 用object.to_edge(UP)传参为常量中的向量UP可以向量指定位置np.array((0., 1., 0.))
+         # 用object.to_corner(UR)传参为常量中的向量UR可以移动到向量指定位置np.array((右1., 上1., 0.))
          self.add(object)
          self.wait()
 
@@ -76,36 +69,29 @@ example_scenes.py中自定义一个类。
 
 绝对定位
 
-.to_edge()和.to_corner()方法
-
-.to_edge(DIRECTION,buff=NUMBER)，可以设置边距buff
+``.to_edge()`` 和 ``.to_corner()`` 方法
+``.to_edge(DIRECTION,buff=NUMBER)`` 可以设置边距buff
 
 相对定位
 
-.move_to()
+``.move_to()``
+``.next_to()``
+``.shift()``
 
-.next_to()
-
-.shift()
-
-
+详细教程可以看 `〔manim教程〕第一讲 物体的位置与坐标变换  <https://www.bilibili.com/video/BV1p54y197cC>`_
 
 
-
-
-
-
-SquareToCircle成方圆
+方变圆-SquareToCircle
 -----------------------
 
 .. admonition:: 声明
 
-   这部分是EulerTour写的教程,我只是翻译+学习笔记，github早就有很多教程，但是为了方便查询使用，我才整合这么一份文档。他还整了个在线manim网站 `www.eulertour.com <https://www.eulertour.com/>`_
+   这部分是EulerTour写的教程,我只是翻译+学习笔记
 
-样例 ``example_scenes.py`` contains simple examples that we can use to learn about manim.
+样例 ``example_scenes.py`` 包含了一些学习manim的示例场景
 
-Go ahead and try out the ``SquareToCircle`` scene by running it with 命令 ``$ manim example_scenes.py SquareToCircle -p``
-in manim directory.
+在manim文件夹中尝试执行运行命令 ``$ python -m manim example_scenes.py SquareToCircle -p`` (通过clone存储库安装)，或
+``$ manim example_scenes.py SquareToCircle -p`` (通过pypi安装)
 
 .. code-block:: python
    :linenos:
@@ -134,49 +120,36 @@ in manim directory.
 
 .. note::
 
-  The flag ``-p`` plays the rendered video with default video player.预览
+  选项 ``-p`` 使用系统默认播放器播放渲染出的视频文件，没有指定质量，则默认使用 ``-w`` 选项最高画质（1440p60）
 
-  Other frequently used flags are:
+  其他常用选项:
 
-    * ``-l`` for rendering video in lower resolution低分辨率 (which renders faster)渲染更快
-    * ``-s`` to show the last frame of the video.显示最后一帧
+    * ``-l`` 低分辨率480p15渲染更快
+    * ``-m`` 中等分辨率720p30
+    * ``-s`` 只导出最后一帧
 
-  Run ``manim -h`` all the available flags (``python -m manim -h`` if you installed it to a venv)
+  运行 ``python -m manim -h`` 或 ``manim -h`` 查看所有可用选项
 
 
-Let's step through each line of ``SquareToCircle``，一行行看
+让我们一行一行解析 ``SquareToCircle`` 的代码
 
 .. code-block:: python
    :lineno-start: 3
 
    class SquareToCircle(Scene):
 
-You create videos in manim by writing :class:`~scene.scene.Scene` classes.
+你通过构建 :class:`~scene.scene.Scene` 的子类来创建视频
 
-.. figure:: ../assets/image/Scene.JPG
-    :width: 100%
-    :align: center
+manim中的所有 :class:`~scene.scene.Scene` 只包含类定义本身，意思是类之间互不干涉，也不会执行类之外的内容
 
-    VisualStudioCode ctrl+点击查看类定义
-
-Each :class:`~scene.scene.Scene` in manim is self-contained配套齐全的/自给自足的. That means everything
-you created under this scene does not exist outside the class.意思是：
-
-.. figure:: ../assets/image/self-contained.JPG
-    :width: 100%
-    :align: center
-
-    如图几个Scene类互不影响
-
-比如 ``$ manim example_scenes.py OpeningManimExample -pl`` 和 SquareToCircle 的代码,不相干。
+比如 ``$ python -m manim example_scenes.py OpeningManimExample -pl`` 和 ``SquareToCircle`` 的代码不相干
 
 .. code-block:: python
    :lineno-start: 4
 
    def construct(self):
 
-:meth:`~scene.scene.Scene.construct` specifies what is displayed on the screen
-when the :class:`~scene.scene.Scene` is rendered to video.Scene类渲染时指定屏幕中要罗列的什么。
+在 :meth:`~scene.scene.Scene.construct` 方法中说明当 :class:`~scene.scene.Scene` 渲染时要进行什么操作
 
 .. code-block:: python
    :lineno-start: 5
@@ -184,12 +157,10 @@ when the :class:`~scene.scene.Scene` is rendered to video.Scene类渲染时指�
    circle = Circle()
    square = Square()
 
-``Circle()`` and ``Square()`` create :class:`~mobject.geometry.Circle` and :class:`~mobject.geometry.Square`.
+``Circle()`` 和 ``Square()`` 创建了 :class:`~mobject.geometry.Circle` 和 :class:`~mobject.geometry.Square` 的实例，即一个圆一个方
 
-Both of these are instances of :class:`~mobject.mobject.Mobject` subclasses子类Moject实例, the base class for objects对象的基类 in manim. Note
-that instantiating a :class:`~mobject.mobject.Mobject` does not add it to the
-:class:`~scene.scene.Scene`, so you wouldn't see anything if you were to render
-the :class:`~scene.scene.Scene` at this point.实例化方圆对象，还没添加到Scene类中，没渲染对应的Scene之前不能看见。
+它们都是 :class:`~mobject.mobject.Mobject` 的子类，注意如果一个 :class:`~mobject.mobject.Mobject` 实例
+没有添加到 :class:`~scene.scene.Scene` 中, 渲染之后就不会看到任何东西
 
 .. code-block:: python
    :lineno-start: 7
@@ -198,16 +169,13 @@ the :class:`~scene.scene.Scene` at this point.实例化方圆对象，还没添�
    square.rotate(-3 * TAU / 8)
    circle.set_fill(PINK, opacity=0.5)
 
-``flip()`` ``rotate()`` ``set_fill()`` （方法依然可以在VisualStudioCode用ctrl+点击查看定义） apply various modifications应用各种mobjects的变更 to the mobjects before animating
-them.  The call to :meth:`~mobject.mobject.Mobject.flip` flips the
-:class:`~mobject.geometry.Square` across the RIGHT vector.  This is equivalent
-to a refection across the x-axis.默认方形是从左上角点顺时针，关于x轴对称翻折=关于RIGHT（定义在manimlib/constants.py）常量向量np.array((1., 0., 0.))对称镜像，结果是从左下角点逆时针。
+``flip()`` ``rotate()`` ``set_fill()`` 在执行动画之前应用了一些mobjects的变换
 
-The call to :meth:`~mobject.mobject.Mobject.rotate` rotates the
-:class:`~mobject.geometry.Square` 3/8ths of a full rotation counterclockwise逆时针旋转3/8圆.
+调用 :meth:`~mobject.mobject.Mobject.flip` 以水平为轴翻转了 :class:`~mobject.geometry.Square`，相当于x轴上的反射
 
-The call to :meth:`~mobject.mobject.Mobject.set_fill` sets
-the fill color for the :class:`~mobject.geometry.Circle` to pink粉色填充, and its opacity不透明度 to 0.5.
+调用 :meth:`~mobject.mobject.Mobject.rotate` 逆时针旋转了 :class:`~mobject.geometry.Square` 3/8圆.
+
+调用 :meth:`~mobject.mobject.Mobject.set_fill` 设置了 :class:`~mobject.geometry.Circle` 填充颜色为粉色(PINK), 不透明度(opacity)为0.5.
 
 .. code-block:: python
    :lineno-start: 11
@@ -216,31 +184,27 @@ the fill color for the :class:`~mobject.geometry.Circle` to pink粉色填充, an
    self.play(Transform(square, circle))
    self.play(FadeOut(square))
 
-To generated animation, :class:`~animation.animation.Animation` classes动画类 are used.
+实例化 :class:`~animation.animation.Animation` 构建动画
 
-每个动画类传入1或多个Mobject对象参数Each :class:`~animation.animation.Animation` takes one or more :class:`~mobject.mobject.Mobject` instances as arguments, which it animates
-when passed to :meth:`~scene.scene.Scene.play` 应用play()方法. This is how video is typically
-created in manim.
+每个 :class:`~animation.animation.Animation` 传入一个或多个 :class:`~mobject.mobject.Mobject` 对象参数
+传递给 :meth:`~scene.scene.Scene.play` 呈现出动画，构建视频。
 
-:class:`~mobject.mobject.Mobject` instances are automatically added to the :class:`~scene.scene.Scene` when they are animated 动画化Mobject对象时自动添加到场景. 
-You can add a :class:`~mobject.mobject.Mobject` to the :class:`~scene.scene.Scene` manually by passing it as an argument to  :meth:`~scene.scene.Scene.add` 用此方法手动添加mobject到scene场景.
+:class:`~mobject.mobject.Mobject` 实例会自动添加到 :class:`~scene.scene.Scene` 中，当使用动画时
+你可以把 :class:`~mobject.mobject.Mobject` 手动添加到 :class:`~scene.scene.Scene` 中通过使用 :meth:`~scene.scene.Scene.add` 方法
 
 
-:class:`~animation.creation.ShowCreation` draws a :class:`~mobject.mobject.Mobject` to the screen显示在屏幕上.
+:class:`~animation.creation.ShowCreation` 在屏幕上绘制出一个 :class:`~mobject.mobject.Mobject` 
 
-:class:`~animation.transform.Transform` morphs one :class:`~mobject.mobject.Mobject` into another变换为另一个图形.
+:class:`~animation.transform.Transform` 把一个 :class:`~mobject.mobject.Mobject` 变成另一个图像
 
-:class:`~animation.creation.FadeOut` fades a :class:`~mobject.mobject.Mobject` out of the :class:`~scene.scene.Scene`.淡出
+:class:`~animation.creation.FadeOut` 使一个 :class:`~mobject.mobject.Mobject` 淡出
 
 .. note::
 
-  第一个Mobject对象会被 :class:`~animation.transform.Transform`  方法修改，第二个对象不会被添加到Scene类中。
-  Only the first argument to :class:`~animation.transform.Transform` is modified,
-  the second is not added to the :class:`~scene.scene.Scene`. :class:`~animation.tranform.Transform`
-  only changes the appearance外形 but not the underlying根本/基础的 properties属性.
+  第一个Mobject对象会被 :class:`~animation.transform.Transform` 方法修改，第二个对象不会被添加到Scene类中。
+  仅仅更改了外形但是没有更改根本/基础的属性
 
-  After the call to   ``transform()`` , ``square`` is still a   :class:`~mobject.geometry.Square`  instance but with the shape of :class:`~mobject.geometry.Circle` .
-  例子中， ``transform()``  变换后  ``square``  还是  :class:`~mobject.geometry.Square` 的实例，仅仅是渲染出来圆形外表，还要调用 :class:`~mobject.geometry.Square` 的属性和方法。`03:40动画很清晰 <https://www.bilibili.com/video/BV1W4411Z7Zt?p=11>`_ 。
+  例子中，``transform()`` 变换后 ``square`` 还是 :class:`~mobject.geometry.Square` 的实例，仅仅是渲染出来圆形外表，还要调用 :class:`~mobject.geometry.Square` 的属性和方法。`03:40动画很清晰 <https://www.bilibili.com/video/BV1W4411Z7Zt?p=11>`_ 。
    
 
 补充一个类似的案例：from `manim-tutorial <https://github.com/malhotra5/Manim-Tutorial>`_ 。
@@ -256,7 +220,7 @@ You can add a :class:`~mobject.mobject.Mobject` to the :class:`~scene.scene.Scen
     </video>
 
 
-manim help帮助 
+帮助-manim help
 -----------------------
 
 
@@ -318,160 +282,77 @@ manim help帮助
                          Stream key for twitch
 
 
-举几个例子，有些选项被禁用了，但是可以曲线救国，比如MP4用ffmpeg可以分出每帧的图片做成gif,格式转换在线工具也不少。
-
-.. code-block:: bash
-
-   manim example_scenes.py SquareToCircle -pl
-
-默认 ``-preview`` 分辨率2560x1440 @ 60fps，在manimlib/contants.py有需要可以自行修改， ``-l`` 低分辨率480p15,小项目查阅的时候，快很多。
+默认 ``--preview`` 分辨率1440p60，在manimlib/contants.py有需要可以自行修改， ``-l`` 低分辨率480p15,小项目查阅的时候，快很多。
 
 .. code-block::
 
-  manim example_scenes.py SquareToCircle -ps
+  python -m manim example_scenes.py SquareToCircle -ps
 
-``-s`` 可以在images文件夹下看到保存的最后一张图片，比如在一个比较大的项目中，想看自己的某一张图画出来效果，可以最后一帧 ``self.play(ShowCreation(***))`` 然后 ``-s`` 看图。
+``-s`` 可以在images文件夹下看到保存的最后一张图片，比如在一个比较大的项目中，想看自己的某一张图画出来效果，可以使用 ``-s`` 导出最后一帧
 
 .. code-block:: bash
 
-   manim example_scenes.py SquareToCircle --write_all -l
+   python -m manim example_scenes.py SquareToCircle -al
 
 ``-a`` 把文件中所有scene写成视频。
 
 .. code-block:: bash
 
-  manim example_scenes.py SquareToCircle -o 指定文件名 
+  python -m manim example_scenes.py SquareToCircle -o <file_name>
 
-输出 指定文件名.mp4。
-
-.. code-block:: bash
-
-  manim example_scenes.py SquareToCircle -pl -c WHITE
-
-在manimlib/constants.py中查看颜色映射，等于16进制#FFFFFF,也就是说可以直接在线取色器工具获得数值，传入想要的背景颜色。
+输出 <file_name>.mp4
 
 .. code-block:: bash
 
-  manim example_scenes.py SquareToCircle -pl -c '#FFFFFF' 
-
+  python -m manim example_scenes.py SquareToCircle -pl -c WHITE
 
 .. code-block:: bash
 
   manim example_scenes.py SquareToCircle -pl -c '#FFFFFF' 
+
+.. code-block:: bash
+
+  manim example_scenes.py SquareToCircle -pl -c '#FFFFFF' 
+  
+白色背景
+
 
 .. code-block:: bash
    
-   self.play(ShowCreation(square))#0
-   self.play(Transform(square, circle))#1
-   self.play(FadeOut(square))#2
+   self.play(ShowCreation(square))         #0
+   self.play(Transform(square, circle))    #1
+   self.play(FadeOut(square))              #2
 
 
-example_scenes.py SquareToCircle有3个animations渲染任务，当你在编辑一个很复杂有很多 animations 的Scene时，可以：
+SquareToCircle有3个animations渲染任务，可以：
 
 .. code-block:: bash
 
-  manim example_scenes.py SquareToCircle -pl -n 2 
+  python -m manim example_scenes.py SquareToCircle -pl -n 2 
 
 这就能直接从第3个（0开始）animations渲染到最后。
 
 .. code-block:: bash
 
-  manim example_scenes.py SquareToCircle -r 1080
+  python -m manim example_scenes.py SquareToCircle -r 1080
 
-获得 1920x1080 分辨率的video，命令可以自己摸索着组合，常用几个会用就行。
-
-
-
-早期Elteoremadebeethoven有个仓库和youtude教学视频， `Animation course with Manim <https://github.com/Elteoremadebeethoven/AnimationsWithManim>`_ ，小破站有搬运 `BV1W4411Z7Zt <https://www.bilibili.com/video/BV1W4411Z7Zt>`_ ，然后cai-hust学习并且做了相关的教程MarkDown笔记 `manim-tutorial-CN <https://github.com/cai-hust/manim-tutorial-CN>`_ ，引用标明下，下面内容是他们在社区分享的，我只是想整合，方便查阅使用Manim。
-
-
-
-
-**默认显示进度条**
-
-
-默认设置在manimlib/config.py，manimlib/extract_secne.py与manimlib/scene.py里进行定义，可以修改该文件进行修改默认配置,注意因为修改源码所以要小心
-
-例如：在上面的三个文件里：
-
-将里面所有的“--leave\ *progress*\ bars”和“leave\ *progress*\ bars”修改为“--remove\ *progress*\ bars”与“remove\ *\_progress*\ bars”,同时将
-
-.. figure:: ../assets/image/1567668580431.png
-   :alt: 
-
-此处的action改成不显示
-
-这样如果加上--remove\ *progress*\ bars就不会显示进度条了，而默认是显示进度条的
-
-
-
-**改变视频存放位置**
-
-
-改变\ *manimlib/constants.py*\ 中的：
-
-.. code:: python
-
-   if not os.path.isdir(MEDIA_DIR):
-       MEDIA_DIR = "./media" 
-
-改\ ``./media``\ 为你想要存放的位置
-
+获得 1920x1080 分辨率的视频。
 
 
 **存为gif**
 
 
-   You can use ``python -m manim animation.py name_scene -im`` to render
-   gif medium quality, or
-   ``python -m manim animation.py name_scene -gm`` to render all frames
-   as images, the images are saved in a folder
+   你可以使用 ``python -m manim animation.py name_scene -im`` 渲染中等质量的gif文件
+   ``python -m manim animation.py name_scene -gm`` 获取每帧的图片
 
 
-ps: 选项 ``-i`` 被禁用了，依旧会生成mp4文件，加入QQ群下载群文件“常见问题.pdf”可以解决。
-如果想获得GIF,也可以曲线救国，在mp4文件浏览器地址栏输入cmd，然后命令行输入：
+ps: 选项 ``-i`` 目前被取消了，依旧会生成mp4文件，可以按照常见问题中更改，或者
+使用 `MK版本的manim <https://github.com/manim-kindergarten/manim>`_
+
+也可以使用ffmpeg手动转换
 
 .. code-block:: bash
 
-   ffmpeg   -i SquareToCircle.mp4 -b:v 2048k SquareToCircle.gif
+   ffmpeg -i SquareToCircle.mp4 -b:v 2048k SquareToCircle.gif
 
-就能得到GIF,github有个  `issues <https://github.com/3b1b/manim/issues/699>`_  提供更高质量的GIF方案，我暂时没相关的需求，没折腾过。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-通过例子学习是最快的,看已有的项目模仿也很快，但是系统学习+定制还是要看源码manimlib。详情可以看这里PyDoc生成的结果 :ref:`manim类属性方法 <manimlibClassesPropertiesMethods>`  。
+通过例子学习是最快的,看已有的项目模仿也很快，但是系统学习+定制还是要看manimlib源码
