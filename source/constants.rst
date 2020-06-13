@@ -128,6 +128,8 @@ buff
    DEFAULT_POINTWISE_FUNCTION_RUN_TIME = 3.0
    DEFAULT_WAIT_TIME = 1.0
 
+.. _ref-directions:
+
 位置坐标
 ---------
 
