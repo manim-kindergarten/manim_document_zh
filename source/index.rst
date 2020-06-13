@@ -38,8 +38,8 @@ manim教程文档
     7.2Mobjects类的属性和方法/index
     7.3Scenes类的属性和方法/index
     8.常见问题/index
-    about关于
     manim_sandbox/index.rst
+    about
 
 
 索引和表格
