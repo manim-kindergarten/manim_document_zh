@@ -1,71 +1,20 @@
-Windows安装Manim
+Windows
 ======================
 
-Install System Libraries
----------------------------------------
 
 .. admonition:: 声明
 
-  这一页是EulerTour写的教程,我只是翻译+学习笔记，github早就有很多教程，但是为了方便查询使用，我才整合这么一份文档。
+  这一页是一些中文manim安装教程的推荐
 
-下面是一些需要安装的软件，知乎用户李狗嗨的安装教程 manimInstallation_ 已经写很明白,Q群友推荐一视数学卷毛杨的两个教程https://www.bilibili.com/video/av38126904 https://www.bilibili.com/read/cv4139851
+安装教程推荐（中文）
+--------------------
 
+知乎用户李狗嗨的安装教程 manimInstallation_ 写的很明白
 
-Make sure you have *Python 3* for Windows installed first:
+同时推荐一视数学卷毛杨的两个教程 https://www.bilibili.com/video/av38126904 https://www.bilibili.com/read/cv4139851
 
-https://www.python.org/downloads/windows/
+有什么安装上的问题可以在 `manim-kindergarten的任意repo <https://github.com/manim-kindergarten>`_ 中提出issue，或者B站私信manim相关up主，或者加入QQ群
 
-Install ffmpeg:
-
-https://ffmpeg.org/download.html#build-windows
-
-Install sox:
-
-http://sox.sourceforge.net/Main/HomePage
-
-Install a latex distribution. On Windows MikTex is commonly used:
-
-https://miktex.org/howto/install-miktex
-
-Path configuration
-------------------
-
-建议看知乎相关安装教程，B站专栏也有很多，新版本坑越来越少，nice!
-To invoke commandline without supplying path to the binary
-the PATH environment配置环境变量 needs to be configured. Below are template examples, please change
-the path according to your username and specific python version. Assuming all the
-softwares are installed with no alteration to the installation paths::
-
-  C:\Users\$username\AppData\local\Programs\Python\Python$version\
-  C:\Users\$username\AppData\local\Programs\Python\Python$version\Scripts\
-  C:\MikTex\miktex\bin\x64\
-  C:\ffmpeg\bin\
-
-The path entries should be separated by semicolon.
-
-Installing python packages and manim需要的库
--------------------------------------------------------------------------
-
-Make sure you can start pip using ``pip`` in your commandline. Then do
-``pip install pyreadline`` for the ``readline`` package.
-
-Grab the pycairo wheel binary ``pycairo‑1.18.0‑cp37‑cp37m‑win32.whl`` from https://www.lfd.uci.edu/~gohlke/pythonlibs/#pycairo
-and install it via ``python -m pip install C:\absolute\path\to\the\whl\file``
-
-clone the manim repository if you have git ``git clone https://github.com/3b1b/manim`` or download the zip file from
-the repository page with ``Clone or download`` button and unzip it.
-
-Open the commandline within the manim directory with ``Shift + Right click`` on an empty space in the folder and select ``open command window here``
-
-Install manim python dependencies with ``pip install -r requirements.txt``
-
-Test the installation测试安装
-------------------------------------
-
-Type in ``python -m manim -h`` and if nothing went wrong during the installation process you should see the help text.
-
-Use ``python -m manim example_scenes.py SquareToCircle -pl`` to render the example scene and the file should play after rendering. The movie file should be
-in ``media/videos/example_scenes/480p15``
 
 By the way总想对Win用户说点啥
 ------------------------------
