@@ -1,4 +1,4 @@
-新手上路-Getting Started
+入门教程-Getting Started
 ===============================
 
 .. admonition:: 声明
@@ -33,7 +33,7 @@ Todd Zimmerman整理了 `一个非常好的教程`_ ，介绍了 ``manim`` 的�
 
     learning_by_example
     mathematical_objects
-    animating_mobjects
     making_a_scene
+    config
 
 
