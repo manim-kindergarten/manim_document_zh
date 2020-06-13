@@ -3,25 +3,24 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Manim's 文档documentation!
+manim教程文档
 ==================================================
 
-These docs are generated from the master branch of the
-`Manim repo <https://github.com/3b1b/manim>`_. You can contribute by submitting
-a pull request there.
+这些文档基于 `3b1b/manim存储库 <https://github.com/3b1b/manim>`_ 的master分支，你可以通过提交pr来为文档做出贡献
 
 .. admonition:: 声明
 
-    这是我看官网链接的EulerTour写的 `eulertour-docs <https://www.eulertour.com/docs/>`_,中文翻译+ 很多 ``Manim`` 教程的学习笔记,
-    方便自己查询的笔记，虽然github早就有很多教程，但是为了方便查询使用，我才整合这么一份文档，一开始是为了方便自己使用.
-    我觉得，一款成熟的软件都必须有配套成熟的文档系统。文档需要的是简单基础元认知的示例.
-    工程样例已经很多了，比如3b1b的旧项目，或者 `Elteoremadebeethoven的项目 <https://github.com/Elteoremadebeethoven/MyAnimations>`_ 
+    这是MK成员根据EulerTour写的 `eulertour-docs <https://www.eulertour.com/docs/>`_ 中文翻译和很多manim教程的学习笔记（教程文档）
+
+    manim的工程样例已经很多了，比如3b1b的旧项目，或者 `Elteoremadebeethoven的项目 <https://github.com/Elteoremadebeethoven/MyAnimations>`_ 
     `elteoremadebeethoven-manim_3feb_docs <https://github.com/Elteoremadebeethoven/manim_3feb_docs.github.io/tree/master/source>`_ 
-    Elteoremadebeethoven大神 还有个仓库和配套的youtude教学视频，
-    `Animation-course-with-Manim <https://github.com/Elteoremadebeethoven/AnimationsWithManim>`_ 
-    小破站有搬运 `BV1W4411Z7Zt <https://www.bilibili.com/video/BV1W4411Z7Zt>`_ ，
-    然后cai-hust学习并且做了相关的教程MarkDown笔记   `cai-hust_manim-tutorial-CN <https://github.com/cai-hust/manim-tutorial-CN>`_ ，
-    不是我写的部分我都会标注清晰来源，我只是想把Markdown、pdf等相关资料整合编辑成方便的文档格式，顺便学习笔记心得和一些技巧，以方便查阅使用Manim，用到的我都会标明来源。虽然我已经很注意每个记笔记来源都保持原有链接，但是可莪能有疏漏，如果你看到我学习的来源而我忘记标明出处的，请标注一下，谢谢。水平有限，抛砖引玉。
+    Elteoremadebeethoven的代码仓库和配套的YouTube教学视频 `Animation-course-with-Manim <https://github.com/Elteoremadebeethoven/AnimationsWithManim>`_ 
+    B站上有搬运 `BV1W4411Z7Zt <https://www.bilibili.com/video/BV1W4411Z7Zt>`_ 
+
+    然后cai-hust学习并且做了相关的教程笔记，放在了GitHub上 `cai-hust_manim-tutorial-CN <https://github.com/cai-hust/manim-tutorial-CN>`_ 
+
+    不是原创部分都会标注清晰来源，只是想把相关资料整合编辑成方便的文档格式，顺便学习笔记心得和一些技巧，以方便查阅使用manim
+    用到的都会标明来源。虽然已经很注意每个记笔记来源都保持原有链接，但是可能有疏漏，如果你看到忘记标明出处的，请帮忙标注一下，谢谢
 
 .. toctree::
     :maxdepth: 3
@@ -43,9 +42,8 @@ a pull request there.
     manim_sandbox/index.rst
 
 
-Indices and tables
+索引和表格
 ===========================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
