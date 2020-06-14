@@ -1,4 +1,4 @@
-[![manim_document_zh](source/assets/image/DocumentHeader)](https://github.com/manim-kindergarten/manim_document_zh)
+[![manim_document_zh](source/assets/image/DocumentHeader.png)](https://github.com/manim-kindergarten/manim_document_zh)
 
 [![GPL License](https://img.shields.io/github/license/manim-kindergarten/manim_document_zh)](https://choosealicense.com/licenses/gpl-3.0/)
 ![QQ](https://img.shields.io/badge/QQ-862671480-red.svg?style=flat)
