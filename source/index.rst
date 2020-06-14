@@ -29,7 +29,8 @@ manim教程文档
     installation/index
     constants
     getting_started/index
-    Animations/index
+    container/index
+    animation/index
     utils/index
     3.ShapesAnimation图形动画/index
     4.FontsFormulaColor字体公式色彩/index

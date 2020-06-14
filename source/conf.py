@@ -15,7 +15,7 @@ copyright = '- This document has been placed in the public domain.'
 author = '2020Tridu33'  # 这个整合版本借鉴了很多已有的网友/群友资料，具体链接文中都已经标识引用。
 
 
-version = '0.2.0'
+version = '0.2.2'
 release = 'v0.2' #我想把这里标识为文档
 
 # -- General configuration --
@@ -100,7 +100,7 @@ html_static_path = ['assets']
 
 
 html_theme = 'sphinx_rtd_theme'  # 需要pip install sphinx_rtd_theme
-html_favicon = 'mk.svg'
+html_favicon = 'mk.png'
 # html_theme = 'traditional'
 # html_theme = 'alabaster'
 # https://documentation.help/Sphinx/theming.html
