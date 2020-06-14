@@ -40,7 +40,7 @@ rate_func
 
 一个动画运行的速率参数，是一个定义域为[0,1]的函数，自带的如下
 
-.. image:: https://github.com/manim-kindergarten/manim_sandbox/raw/master/assets/wiki/rate_functions.png
+.. image:: ../assets/image/rate_functions.png
 
 效果如下：
 

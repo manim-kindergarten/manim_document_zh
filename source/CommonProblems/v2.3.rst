@@ -407,29 +407,7 @@ Q9: 怎么控制物体移动或者\ ``Transform``\ 的速率
 
 使用\ ``rate_func``\ ，一些\ ``manim``\ 中已经定义的在群文件中有视频
 
-|linear|
-
-|lingering|
-
-|running_start|
-
-|rush_from|
-
-|rush_into|
-
-|slow_into|
-
-|smooth|
-
-|wiggle|
-
-|there_and_back|
-
-|double_smooth|
-
-|exponential_decay|
-
-|there_and_back_with_pause|
+.. image:: ../assets/image/rate_functions.png
 
 Q10: 数学符号/公式 用LaTeX怎么打
 --------------------------------
@@ -643,30 +621,6 @@ Q19: 有没有什么好的场景例子供学习
 .. [18]
    ``from_3b1b``\ \ 文件夹中
 
-.. |linear| image:: ../assets/image/CommonProblems/linear.png
-   :width: 1in
-.. |lingering| image:: ../assets/image/CommonProblems/lingering.png
-   :width: 1in
-.. |running_start| image:: ../assets/image/CommonProblems/running_start.png
-   :width: 1in
-.. |rush_from| image:: ../assets/image/CommonProblems/rush_from.png
-   :width: 1in
-.. |rush_into| image:: ../assets/image/CommonProblems/rush_into.png
-   :width: 1in
-.. |slow_into| image:: ../assets/image/CommonProblems/slow_into.png
-   :width: 1in
-.. |smooth| image:: ../assets/image/CommonProblems/smooth.png
-   :width: 1in
-.. |wiggle| image:: ../assets/image/CommonProblems/wiggle.png
-   :width: 1in
-.. |there_and_back| image:: ../assets/image/CommonProblems/there_and_back.png
-   :width: 1in
-.. |double_smooth| image:: ../assets/image/CommonProblems/double_smooth.png
-   :width: 1in
-.. |exponential_decay| image:: ../assets/image/CommonProblems/exponential_decay.png
-   :width: 1.2in
-.. |there_and_back_with_pause| image:: ../assets/image/CommonProblems/there_and_back_with_pause.png
-   :width: 1.8in
 .. |imagepd1| image:: ../assets/image/CommonProblems/pd1.png
 .. |imagepd2| image:: ../assets/image/CommonProblems/pd2.png
 .. |imagegif| image:: ../assets/image/CommonProblems/gif.png
