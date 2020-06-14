@@ -8,3 +8,5 @@ tools/
 manimlib/
 manim.py
 media/
+
+__pycache__/
