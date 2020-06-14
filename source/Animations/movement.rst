@@ -1,4 +1,4 @@
-Movement and Rotations
+Movement
 ======================
 
 .. admonition:: 声明
@@ -96,74 +96,6 @@ MoveAlongPath
           self.add(line,dot)
           self.play(
               MoveAlongPath(dot,line)
-          )
-          self.wait(0.3)
-
-Rotating
-***********************
-.. autoclass:: manimlib.animation.rotation.Rotating
-    :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/RotatingExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
-
-  class RotatingExample(Scene):
-      def construct(self):
-          square=Square().scale(2)
-          self.add(square)
-  
-          self.play(
-              Rotating(
-                  square,
-                  radians=PI/4,
-                  run_time=2
-              )
-          )
-          self.wait(0.3)
-          self.play(
-              Rotating(
-                  square,
-                  radians=PI,
-                  run_time=2,
-                  axis=RIGHT
-              )
-          )
-          self.wait(0.3)
-
-Rotate
-***********************
-.. autoclass:: manimlib.animation.rotation.Rotate
-    :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/RotateExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
-
-  class RotateExample(Scene):
-      def construct(self):
-          square=Square().scale(2)
-          self.add(square)
-  
-          self.play(
-              Rotate(
-                  square,
-                  PI/4,
-                  run_time=2
-              )
-          )
-          self.wait(0.3)
-          self.play(
-              Rotate(
-                  square,
-                  PI,
-                  run_time=2,
-                  axis=RIGHT
-              )
           )
           self.wait(0.3)
 

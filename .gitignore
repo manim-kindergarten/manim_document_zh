@@ -4,3 +4,7 @@ _build/
 .vscode/
 
 tools/
+
+manimlib/
+manim.py
+media/

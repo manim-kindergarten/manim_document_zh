@@ -5,7 +5,7 @@
 
    这一部分有些翻译自elteoremadebeethoven的 `manim_3feb_docs <https://elteoremadebeethoven.github.io/manim_3feb_docs.github.io/html/tree/animation.html>`_ 
 
-   还有一部分是鹤翔万里原创编写的
+   还有一部分是鹤翔万里原创编写的（这一部分未标明的页均为鹤翔万里编写）
 
 
 .. toctree::
@@ -17,8 +17,10 @@
    growing
    indication
    movement
+   numbers
    rotation
    transform
+   update
    composition
 
 动画基类Animation
