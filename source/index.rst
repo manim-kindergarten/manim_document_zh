@@ -33,11 +33,11 @@ manim教程文档
     getting_started/index
     container/index
     animation/index
+    camera/index
     utils/index
     3.ShapesAnimation图形动画/index
     4.FontsFormulaColor字体公式色彩/index
     5.Coordinate坐标系/index
-    6.camera相机类/index
     CommonProblems/index
     manim_sandbox/index.rst
     about

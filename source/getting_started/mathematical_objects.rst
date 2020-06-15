@@ -1,4 +1,4 @@
-数学对象-Mathematical Objects
+数学物体-Mathematical Objects
 ================================
 
 
