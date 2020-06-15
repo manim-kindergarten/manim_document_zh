@@ -7,7 +7,7 @@ sys.path.append(r"..\manim")
 
 
 # -- Project information --
-project = 'Manim'
+project = 'manim'
 copyright = '- This document has been placed in the public domain.'
 # Sphinx写的manim文档编辑者名单,每经过一波大更新，新修正的PR者直接注释掉上一个作者,如果变动比较大，简要声明改动新增内容告知用户即可。
 # author = '2019EulerTour'
@@ -15,7 +15,7 @@ copyright = '- This document has been placed in the public domain.'
 author = '2020Tridu33'  # 这个整合版本借鉴了很多已有的网友/群友资料，具体链接文中都已经标识引用。
 
 
-version = '0.2.2'
+version = '0.2.3'
 release = 'v0.2' #我想把这里标识为文档
 
 # -- General configuration --

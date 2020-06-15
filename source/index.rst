@@ -25,7 +25,7 @@ manim教程文档
     用到的都会标明来源。虽然已经很注意每个记笔记来源都保持原有链接，但是可能有疏漏，如果你看到忘记标明出处的，请帮忙标注一下，谢谢
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
     :caption: 目录
 
     installation/index
@@ -35,9 +35,6 @@ manim教程文档
     animation/index
     camera/index
     utils/index
-    3.ShapesAnimation图形动画/index
-    4.FontsFormulaColor字体公式色彩/index
-    5.Coordinate坐标系/index
     CommonProblems/index
     manim_sandbox/index.rst
     about
