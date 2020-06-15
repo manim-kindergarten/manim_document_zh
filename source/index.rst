@@ -34,6 +34,7 @@ manim教程文档
     container/index
     animation/index
     camera/index
+    mobject/index
     utils/index
     CommonProblems/index
     manim_sandbox/index.rst

@@ -1,4 +1,4 @@
-相机模块camera
+相机部分camera
 ================
 
 .. admonition:: 声明
