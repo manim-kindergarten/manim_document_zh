@@ -114,7 +114,7 @@
 .. raw:: html
 
    <video width="560" height="315" controls>
-       <source src="../_static/Animation/SquareToCircle.mp4" type="video/mp4">
+       <source src="../_static/SquareToCircle.mp4" type="video/mp4">
    </video>
 
 

@@ -14,13 +14,13 @@ sigmoid函数， ``1/(1+e^(-x))``
 
 .. autofunction:: manimlib.utils.simple_functions.choose_using_cache
 
-计算C^k_n，并使用缓存
+计算 :math:`C^k_n` ，并使用缓存
 
 -----
 
 .. autofunction:: manimlib.utils.simple_functions.choose
 
-计算C^k_n， 若 ``use_cache=True`` 则使用缓存，否则直接计算
+计算 :math:`C^k_n` ， 若 ``use_cache=True`` 则使用缓存，否则直接计算
 
 -----
 

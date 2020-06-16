@@ -6,5 +6,8 @@ ThreeDCamera
 在 :class:`~scene.three_d_scene.ThreeDScene` 和 
 :class:`~scene.three_d_scene.SpecialThreeDScene` 中被默认使用。
 
+ThreeDCamera
+************
+
 .. autoclass:: manimlib.camera.three_d_camera.ThreeDCamera
     :members:

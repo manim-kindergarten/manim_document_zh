@@ -7,6 +7,9 @@
 
 还规定了需要子类实现 ``add`` 方法和 ``remove`` 方法
 
+Container
+*********
+
 .. autoclass:: manimlib.container.container.Container
 
 .. automethod:: manimlib.container.container.Container.__init__

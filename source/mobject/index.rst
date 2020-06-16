@@ -21,3 +21,4 @@
 
    mobject
    types/index
+   svg/index

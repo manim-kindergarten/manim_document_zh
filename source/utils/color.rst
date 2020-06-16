@@ -3,6 +3,10 @@ Color
 
 ``manimlib/utils/color.py`` 这个文件中主要实现了和颜色处理有关的函数
 
+关于颜色，MK有一个视频教程：
+`〔manim教程〕第三讲 颜色的表示、运算与设置  <https://www.bilibili.com/video/BV1vZ4y1x7hT>`__
+
+
 -----
 
 .. autofunction:: manimlib.utils.color.color_to_rgb
