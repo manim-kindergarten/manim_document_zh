@@ -52,10 +52,18 @@ jobs:
         echo "finish installing manim env"
         pip3 list
     
+    - name: debug folder
+      run: |
+        sudo apt install -y tree
+        cd ..
+        tree
+    
     - name: build sphinx doc
       run: |
         export PATH="$PATH:/home/runner/.local/bin"
         make html
+        cd build/html
+        echo "manim.ml" > CNAME
         
     - name: Build up and deploy
       uses: JamesIves/github-pages-deploy-action@master
