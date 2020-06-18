@@ -20,18 +20,18 @@ jobs:
         git clone https://github.com/manim-kindergarten/manim_sandbox.git
         echo "finish cloning repos"
     
-    - name: test env
+    - name: install env
       run: |
-        python3 --version
-        pip3 --version
+        cd manim
+        pip3 install -r requirements.txt
+        pip3 install sphinx
+        pip3 install sphinx_rtd_theme
+        pip3 install jieba
+        cd ..
+        echo "finish installing manim env"
+        pip3 list
         
-    - name: Build up and deploy
-      uses: JamesIves/github-pages-deploy-action@master
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: build/html
-        BUILD_SCRIPT: make clean && make html
+    
     
     - name: clean
       run: rm -rf manim
