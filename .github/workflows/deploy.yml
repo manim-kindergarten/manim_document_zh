@@ -51,9 +51,8 @@ jobs:
         pip3 list
     
     - name: build sphinx doc
-      uses: ammaraskar/sphinx-action@0.4
-      with:
-        docs-folder: "./"
+      run: |
+        make html
         
     - name: Build up and deploy
       uses: JamesIves/github-pages-deploy-action@master
