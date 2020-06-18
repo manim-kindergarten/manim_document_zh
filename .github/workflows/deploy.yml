@@ -30,7 +30,8 @@ jobs:
         sudo python3 setup.py install
         echo "finish installing setuptools"
         pip3 list
-        PATH="$PATH:/home/runner/.local/bin"
+        export PATH="$PATH:/home/runner/.local/bin"
+        echo $PATH
     
     - name: install sphinx
       run: |
@@ -53,6 +54,7 @@ jobs:
     
     - name: build sphinx doc
       run: |
+        export PATH="$PATH:/home/runner/.local/bin"
         make html
         
     - name: Build up and deploy
