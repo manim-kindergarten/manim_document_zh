@@ -20,6 +20,17 @@ jobs:
         git clone https://github.com/manim-kindergarten/manim_sandbox.git
         echo "finish cloning repos"
     
+    - name: install setuptools
+      run: |
+        wget http://pypi.python.org/packages/source/s/setuptools/setuptools-0.6c11.tar.gz
+        tar -xvf setuptools-0.6c11.tar.gz
+        cd setuptools-0.6c11
+        python3 setup.py build
+        python3 setup.py install
+        cd ..
+        echo "finish installing setuptools"
+        pip3 list
+    
     - name: install env
       run: |
         cd manim
