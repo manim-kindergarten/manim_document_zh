@@ -42,7 +42,13 @@ jobs:
         echo "finish installing manim env"
         pip3 list
         
-    
+    - name: Build up and deploy
+      uses: JamesIves/github-pages-deploy-action@master
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: build/html
+        BUILD_SCRIPT: make clean && make html
     
     - name: clean
       run: rm -rf manim
