@@ -4,9 +4,9 @@
 # -- Path setup --
 import sys
 import os
-sys.path.insert(0, os.path.abspath("../manim/"))
-sys.path.insert(0, os.path.abspath("../manim/manimlib/"))
-sys.path.insert(0, os.path.abspath("../manim/manim_sandbox/"))
+sys.path.insert(0, os.path.abspath("../../manim/"))
+# sys.path.insert(0, os.path.abspath("../../manim/manimlib/"))
+# sys.path.insert(0, os.path.abspath("../../manim/manim_sandbox/"))
 print(sys.path)
 
 

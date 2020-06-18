@@ -55,6 +55,7 @@ jobs:
         sudo apt install tree -y
         cd ../../
         tree -L 4
+        cd manim_document_zh/manim_document_zh
         make html
         cd build/html
         echo "manim.ml" > CNAME
