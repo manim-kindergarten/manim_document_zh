@@ -15,10 +15,11 @@ jobs:
 
     - name: Clone pre repositories
       run: |
+        cd ..
         git clone https://github.com/manim-kindergarten/manim.git
         cd manim
         git clone https://github.com/manim-kindergarten/manim_sandbox.git
-        echo "finish cloning repos"
+        cd ../manim_document_zh
     
     - name: install setuptools
       run: |
@@ -31,7 +32,6 @@ jobs:
         echo "finish installing setuptools"
         pip3 list
         export PATH="$PATH:/home/runner/.local/bin"
-        echo $PATH
     
     - name: install sphinx
       run: |
@@ -41,16 +41,12 @@ jobs:
         pip3 install sphinx_rtd_theme
         pip3 install jieba
         cd ..
-        echo "finish installing sphinx"
-        pip3 list
     
     - name: install manim env
       run: |
         cd manim
         pip3 install -r requirements.txt
         cd ..
-        echo "finish installing manim env"
-        pip3 list
     
     - name: debug folder
       run: |
@@ -71,9 +67,3 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages
         FOLDER: build/html
-    
-    - name: clean
-      run: rm -rf manim
-
-
-
