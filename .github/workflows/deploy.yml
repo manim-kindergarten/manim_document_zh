@@ -18,6 +18,11 @@ jobs:
         git clone https://github.com/manim-kindergarten/manim.git
         cd manim
         git clone https://github.com/manim-kindergarten/manim_sandbox.git
+    
+    - name: install env
+      run: |
+        python --version
+        pip --version
         
     - name: Build up and deploy
       uses: JamesIves/github-pages-deploy-action@master
