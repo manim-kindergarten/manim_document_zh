@@ -10,29 +10,5 @@ jobs:
     name: build up document and deploy
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@master
-
-    - name: Clone pre repositories
-      run: |
-        echo "a"
-        git clone https://github.com/manim-kindergarten/manim.git
-        cd manim
-        git clone https://github.com/manim-kindergarten/manim_sandbox.git
-        echo "b"
-    
-    - name: install env
-      run: |
-        python --version
-        pip --version
-        
-    - name: Build up and deploy
-      uses: JamesIves/github-pages-deploy-action@master
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: build/html
-        BUILD_SCRIPT: make clean && make html
-    
-    - name: clean
-      run: rm -rf manim
+    - name: test
+      run: echo "hello?"
