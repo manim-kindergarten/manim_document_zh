@@ -20,10 +20,15 @@ jobs:
         git clone https://github.com/manim-kindergarten/manim_sandbox.git
         echo "finish cloning repos"
     
-    - name: upgrade pip
+    - name: install setuptools
       run: |
         pip3 install --upgrade pip
-        echo "finish upgrade pip"
+        wget --no-check-certificate  https://pypi.python.org/packages/source/s/setuptools/setuptools-19.6.tar.gz#md5=c607dd118eae682c44ed146367a17e26
+        tar -zxvf setuptools-19.6.tar.gz
+        cd setuptools-19.6
+        python3 setup.py build
+        python3 setup.py install
+        echo "finish installing setuptools"
         pip3 list
     
     - name: install env
