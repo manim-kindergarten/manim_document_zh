@@ -1,2 +1,0 @@
-Moving camera scene (TODO)
----------------------------
