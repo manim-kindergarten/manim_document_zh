@@ -3,7 +3,10 @@
 
 # -- Path setup --
 import sys
-sys.path.append(r"/home/runner/manim_document_zh/manim")
+import os
+sys.path.insert(0, os.path.abspath("../manim/"))
+sys.path.insert(0, os.path.abspath("../manim/manimlib/"))
+sys.path.insert(0, os.path.abspath("../manim/manim_sandbox/"))
 print(sys.path)
 
 
