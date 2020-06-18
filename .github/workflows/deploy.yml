@@ -30,6 +30,7 @@ jobs:
         sudo python3 setup.py install
         echo "finish installing setuptools"
         pip3 list
+        PATH="$PATH:/home/runner/.local/bin"
     
     - name: install sphinx
       run: |
@@ -42,7 +43,7 @@ jobs:
         echo "finish installing sphinx"
         pip3 list
     
-    - name: install env
+    - name: install manim env
       run: |
         cd manim
         pip3 install -r requirements.txt
