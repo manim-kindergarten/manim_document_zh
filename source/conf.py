@@ -4,6 +4,7 @@
 # -- Path setup --
 import sys
 sys.path.append(r"/home/runner/manim_document_zh/manim")
+print(sys.path)
 
 
 # -- Project information --
