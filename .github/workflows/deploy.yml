@@ -1,0 +1,64 @@
+name: Build up document
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build_docs_and_deploy:
+    runs-on: ubuntu-latest
+    name: build up document and deploy
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Clone pre repositories
+      run: |
+        cd ..
+        git clone https://github.com/manim-kindergarten/manim.git
+        cd manim
+        git clone https://github.com/manim-kindergarten/manim_sandbox.git
+    
+    - name: install setuptools
+      run: |
+        cd ..
+        pip3 install --upgrade pip
+        wget --no-check-certificate  https://pypi.python.org/packages/source/s/setuptools/setuptools-19.6.tar.gz#md5=c607dd118eae682c44ed146367a17e26
+        tar -zxvf setuptools-19.6.tar.gz
+        cd setuptools-19.6
+        sudo python3 setup.py build
+        sudo python3 setup.py install
+        echo "finish installing setuptools"
+        pip3 list
+        export PATH="$PATH:/home/runner/.local/bin"
+    
+    - name: install sphinx
+      run: |
+        cd ..
+        git clone https://github.com/sphinx-doc/sphinx
+        cd sphinx
+        pip3 install .
+        pip3 install sphinx_rtd_theme
+        pip3 install jieba
+    
+    - name: install manim env
+      run: |
+        cd ../manim
+        pip3 install -r requirements.txt
+        cd ..
+    
+    - name: build sphinx doc
+      run: |
+        export PATH="$PATH:/home/runner/.local/bin:/home/runner/manim_document_zh/manim"
+        export PYTHONPATH="$PYTHONPATH:/home/runner/manim_document_zh/manim"
+        make html
+        cd build/html
+        echo "manim.ml" > CNAME
+        
+    - name: Build up and deploy
+      uses: JamesIves/github-pages-deploy-action@master
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: build/html
