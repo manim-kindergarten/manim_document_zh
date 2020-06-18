@@ -53,7 +53,7 @@ jobs:
     - name: build sphinx doc
       uses: ammaraskar/sphinx-action@0.4
       with:
-        docs-folder:: "./"
+        docs-folder: "./"
         
     - name: Build up and deploy
       uses: JamesIves/github-pages-deploy-action@master
