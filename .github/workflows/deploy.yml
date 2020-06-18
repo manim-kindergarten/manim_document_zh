@@ -10,5 +10,7 @@ jobs:
     name: build up document and deploy
 
     steps:
-    - name: test
-      run: echo "hello?"
+    - name: Checkout
+      uses: actions/checkout@master
+
+
