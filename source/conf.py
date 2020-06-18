@@ -3,7 +3,7 @@
 
 # -- Path setup --
 import sys
-sys.path.append(r"..\manim")
+sys.path.append(r"/home/runner/manim_document_zh/manim")
 
 
 # -- Project information --
@@ -12,10 +12,10 @@ copyright = '- This document has been placed in the public domain.'
 # Sphinx写的manim文档编辑者名单,每经过一波大更新，新修正的PR者直接注释掉上一个作者,如果变动比较大，简要声明改动新增内容告知用户即可。
 # author = '2019EulerTour'
 # author = '2019elteoremadebeethoven'
-author = '2020Tridu33'  # 这个整合版本借鉴了很多已有的网友/群友资料，具体链接文中都已经标识引用。
+author = '鹤翔万里 & Tridu33'  # 这个整合版本借鉴了很多已有的网友/群友资料，具体链接文中都已经标识引用。
 
 
-version = '0.2.3'
+version = '0.2.5'
 release = 'v0.2' #我想把这里标识为文档
 
 # -- General configuration --
@@ -34,7 +34,8 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.autodoc', 
     'sphinx.ext.coverage',
-    'sphinx.ext.napoleon'
+    'sphinx.ext.napoleon',
+    'sphinx_rtd_theme'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -101,6 +102,10 @@ html_static_path = ['assets']
 
 html_theme = 'sphinx_rtd_theme'  # 需要pip install sphinx_rtd_theme
 html_favicon = 'mk.png'
+html_logo = 'assets/image/Logo_black.png'
+html_theme_options = {
+    'logo_only': True,
+}
 # html_theme = 'traditional'
 # html_theme = 'alabaster'
 # https://documentation.help/Sphinx/theming.html

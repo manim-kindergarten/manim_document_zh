@@ -20,7 +20,7 @@ https://manim.ml/
 - [x] animation
 - [ ] mobject
 - [ ] scene
-- [ ] camera
+- [x] camera
 - [x] utils
 
 ### 关于构建文档
@@ -51,3 +51,22 @@ with open("outputfile.rst", "w", encoding="utf8") as f:
     f.write(output)
 ```
 
+### 关于目录结构
+
+由于很多地方根据[manim](https://github.com/3b1b/manim/)源码和[manim_sandbox](https://github.com/manim-kindergarten/manim_sandbox/)源码自动构建，推荐的目录结构如下：
+
+```text
+.
+├── manim/
+│   ├── manimlib/
+│   ├── manim_sandbox/
+│   ├── ...
+│   └── manim.py
+└── manim_document_zh/
+    ├── source/
+    │   ├── ...
+    │   └──conf.py
+    ├── ...
+    ├── make.bat
+    └── Makefile 
+```

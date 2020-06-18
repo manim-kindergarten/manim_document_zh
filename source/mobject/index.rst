@@ -22,3 +22,19 @@
    mobject
    types/index
    svg/index
+   changing
+   coordinate_systems
+   frame
+   functions
+   geometry
+   matrix
+   mobject_update_utils
+   number_line
+   numbers
+   probability
+   shape_matchers
+   three_d_shading_utils
+   three_d_utils
+   three_dimensions
+   value_tracker
+   vector_field
