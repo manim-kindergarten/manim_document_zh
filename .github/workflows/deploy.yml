@@ -15,9 +15,11 @@ jobs:
 
     - name: Clone pre repositories
       run: |
+        echo "a"
         git clone https://github.com/manim-kindergarten/manim.git
         cd manim
         git clone https://github.com/manim-kindergarten/manim_sandbox.git
+        echo "b"
     
     - name: install env
       run: |
