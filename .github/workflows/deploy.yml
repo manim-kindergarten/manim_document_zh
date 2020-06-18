@@ -52,6 +52,9 @@ jobs:
       run: |
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/manim_document_zh/manim"
         export PYTHONPATH="$PYTHONPATH:/home/runner/manim_document_zh/manim"
+        sudo apt install tree -y
+        cd ../../
+        tree -L 4
         make html
         cd build/html
         echo "manim.ml" > CNAME
