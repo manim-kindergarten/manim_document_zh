@@ -13,4 +13,28 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
 
+    - name: Clone pre repositories
+      run: |
+        git clone https://github.com/manim-kindergarten/manim.git
+        cd manim
+        git clone https://github.com/manim-kindergarten/manim_sandbox.git
+        echo "finish cloning repos"
+    
+    - name: test env
+      run: |
+        python3 --version
+        pip3 --version
+        
+    - name: Build up and deploy
+      uses: JamesIves/github-pages-deploy-action@master
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: build/html
+        BUILD_SCRIPT: make clean && make html
+    
+    - name: clean
+      run: rm -rf manim
+
+
 
