@@ -8,7 +8,7 @@
 [![tutorial](https://img.shields.io/badge/tutorial-on_bilibili-ff69b4.svg)](https://space.bilibili.com/171431343/favlist?fid=947158443)
 
 [manim-kindergarten](https://github.com/manim-kindergarten/)成员整理的一份manim中文文档教程，目前还在完善当中。如果关于文档内容有问题，可以在这个repo中提出issue。
-如果你想要为这个文档做出贡献，可以提交pr。
+如果你想要为这个文档做出贡献，可以提交pr。详细内容见[贡献规则及编写指南](https://manim.ml/contribution.html)页面。
 
 [`manim`](https://github.com/manim-kindergarten/manim_document_zh/tree/manim)分支中为带有文档字符串的manim源码，用于文档中自动构建文档字符串。
 
