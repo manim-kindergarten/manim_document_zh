@@ -63,6 +63,8 @@ jobs:
       uses: nwtgck/actions-netlify@v1.1.4
       with:
         publish-dir: "build/html"
+        production-branch: master
+        github-token: ${{ secrets.ACCESS_TOKEN }}
         enable-pull-request-comment: true
         enable-commit-comment: true
         overwrites-pull-request-comment: true
