@@ -61,7 +61,9 @@ jobs:
         FOLDER: build/html
     
     - name: Remove CNAME
-      run: rm CNAME
+      run: |
+        cd build/html
+        rm CNAME
 
     - name: Deploy to Netlify
       uses: netlify/actions/cli@master
