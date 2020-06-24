@@ -29,15 +29,16 @@ manim教程文档
     :caption: 目录
 
     installation/index
-    constants
     getting_started/index
+    constants
     container/index
     animation/index
     camera/index
     mobject/index
     utils/index
     CommonProblems/index
-    manim_sandbox/index.rst
+    manim_sandbox/index
+    contribution
     about
 
 
