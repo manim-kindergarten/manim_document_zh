@@ -1,4 +1,4 @@
-name: Check Pull Request
+name: Build Document From Pull Request
 
 on:
   pull_request:
@@ -8,7 +8,7 @@ on:
 jobs:
   build_docs_without_deploy:
     runs-on: ubuntu-latest
-    name: check document
+    name: build up document and deploy to netlify
 
     steps:
     - name: Checkout
@@ -50,3 +50,11 @@ jobs:
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/manim_document_zh/manim"
         export PYTHONPATH="$PYTHONPATH:/home/runner/manim_document_zh/manim"
         make html
+    
+    - name: Deploy to netlify
+      uses: netlify/actions/cli@master
+      with:
+        args: deploy --dir=build/html
+      env:
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
