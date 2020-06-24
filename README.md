@@ -27,9 +27,9 @@ https://manim.ml/
 - [x] utils
 
 ## 关于文档构建
-当前这个repo使用了[GitHub Actions](https://github.com/features/actions)自动构建文档。当向`master`或`manim`分支`push`后，会自动触发。
-
-使用`Sphinx`构建文档，并部署在[GitHub Pages](https://manim.ml/)上
+当前这个repo使用了[GitHub Actions](https://github.com/features/actions)和`Sphinx`自动构建文档。当向`master`分支`push`后，会自动触发构建部署在
+[GitHub Pages](https://manim.ml/)和[Netlify](https://app.netlify.com/sites/manim-doc/overview)上，向`master`分支提出pr后，会触发构建，临时
+部署在[Netlify](https://app.netlify.com/sites/manim-doc/overview)上方便查看更改。
 
 ### 手动构建文档
 
