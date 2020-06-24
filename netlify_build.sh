@@ -3,11 +3,12 @@ cd ..
 git clone -b manim https://github.com/manim-kindergarten/manim_document_zh.git manim
 cd manim
 git clone https://github.com/manim-kindergarten/manim_sandbox.git
+cd ..
 ls
 python --version
 pip --version
 python3 --version
-pip3 --version
+python3 -m pip --version
 
 # Install sphinx
 git clone https://github.com/sphinx-doc/sphinx
