@@ -51,10 +51,21 @@ jobs:
         export PYTHONPATH="$PYTHONPATH:/home/runner/manim_document_zh/manim"
         make html
     
-    - name: Deploy to netlify
-      uses: netlify/actions/cli@master
+    # - name: Deploy to netlify
+    #   uses: netlify/actions/cli@master
+    #   with:
+    #     args: deploy --dir=build/html
+    #   env:
+    #     NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+    #     NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+    
+    - name: Netlify Actions
+      uses: nwtgck/actions-netlify@v1.1.4
       with:
-        args: deploy --dir=build/html
+        publish-dir: "build/html"
+        enable-pull-request-comment: true
+        enable-commit-comment: true
+        overwrites-pull-request-comment: true
       env:
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
