@@ -4,10 +4,8 @@ git clone -b manim https://github.com/manim-kindergarten/manim_document_zh.git m
 cd manim
 git clone https://github.com/manim-kindergarten/manim_sandbox.git
 cd ../repo
-python --version
-pip --version
 python3 --version
-sudo apt install pip3
+apt install pip3
 pip3 --version
 
 # Install sphinx
@@ -21,7 +19,7 @@ cd ..
 # Install manim env
 cd ../manim
 pip3 install -r requirements.txt
-cd ../manim_document_zh
+cd ../repo
 
 # Build document with Sphinx
 make html
