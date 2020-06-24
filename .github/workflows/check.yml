@@ -1,14 +1,14 @@
-name: Build up document
+name: Check Pull Request
 
 on:
-  push:
+  pull_request:
     branches:
       - master
 
 jobs:
-  build_docs_and_deploy:
+  build_docs_without_deploy:
     runs-on: ubuntu-latest
-    name: build up document and deploy
+    name: check document
 
     steps:
     - name: Checkout
@@ -50,12 +50,3 @@ jobs:
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/manim_document_zh/manim"
         export PYTHONPATH="$PYTHONPATH:/home/runner/manim_document_zh/manim"
         make html
-        cd build/html
-        echo "manim.ml" > CNAME
-        
-    - name: Deploy to GitHub pages
-      uses: JamesIves/github-pages-deploy-action@master
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: build/html
