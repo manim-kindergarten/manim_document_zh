@@ -1,5 +1,5 @@
-Manim Homework
-==============
+练习部分homework
+=================
 
 .. admonition:: 声明
 
