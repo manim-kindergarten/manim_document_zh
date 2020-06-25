@@ -38,6 +38,7 @@ manim教程文档
     utils/index
     CommonProblems/index
     manim_sandbox/index
+    homework/index
     contribution
     about
 
