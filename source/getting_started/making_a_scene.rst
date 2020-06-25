@@ -86,15 +86,15 @@
 
 .. code:: python
 
-    class BackGround(Scene):
-   	    CONFIG = {
-   	        "camera_config": {
-   	            "background_image": "path/to/background.png",
-   	        },
-   	    }
-   	    def construct(self):
-   	        self.add(TextMobject("Text").set_color(RED))
-   	        self.wait()
+   class BackGround(Scene):
+       CONFIG = {
+           "camera_config": {
+               "background_image": "path/to/background.png",
+           },
+       }
+       def construct(self):
+           self.add(TextMobject("Text").set_color(RED))
+           self.wait()
 
 .. figure:: ../assets/image/1565833717545.png
    :alt: 

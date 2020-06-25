@@ -1,14 +1,14 @@
-name: Build up document
+name: Build Document From Pull Request
 
 on:
-  push:
+  pull_request:
     branches:
       - master
 
 jobs:
-  build_docs_and_deploy:
+  build_docs_without_deploy:
     runs-on: ubuntu-latest
-    name: build up document and deploy
+    name: build up document and deploy to netlify
 
     steps:
     - name: Checkout
@@ -50,25 +50,24 @@ jobs:
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/manim_document_zh/manim"
         export PYTHONPATH="$PYTHONPATH:/home/runner/manim_document_zh/manim"
         make html
-        cd build/html
-        echo "manim.ml" > CNAME
-        
-    - name: Deploy to GitHub pages
-      uses: JamesIves/github-pages-deploy-action@master
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: build/html
     
-    - name: Remove CNAME
-      run: |
-        cd build/html
-        rm CNAME
-
-    - name: Deploy to Netlify
-      uses: netlify/actions/cli@master
+    # - name: Deploy to netlify
+    #   uses: netlify/actions/cli@master
+    #   with:
+    #     args: deploy --dir=build/html
+    #   env:
+    #     NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+    #     NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+    
+    - name: Netlify Actions
+      uses: nwtgck/actions-netlify@v1.1.4
       with:
-        args: deploy --dir=build/html --prod
+        publish-dir: "build/html"
+        production-branch: master
+        github-token: ${{ secrets.GitHub_TOKEN }}
+        enable-pull-request-comment: true
+        enable-commit-comment: true
+        overwrites-pull-request-comment: true
       env:
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
