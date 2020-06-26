@@ -3,17 +3,20 @@ Matrix(TODO)
 
 Matrix
 ******************
-.. autoclass:: manimlib.mobject.mobject.Matrix
+.. autoclass:: manimlib.mobject.matrix.Matrix
     :members:
 
 DecimalMatrix
-.. autoclass:: manimlib.mobject.mobject.DecimalMatrix
+******************
+.. autoclass:: manimlib.mobject.matrix.DecimalMatrix
     :members:
 
 IntegerMatrix
-.. autoclass:: manimlib.mobject.mobject.IntegerMatrix
+******************
+.. autoclass:: manimlib.mobject.matrix.IntegerMatrix
     :members:
 
 MobjectMatrix
-.. autoclass:: manimlib.mobject.mobject.MobjectMatrix
+******************
+.. autoclass:: manimlib.mobject.matrix.MobjectMatrix
     :members:

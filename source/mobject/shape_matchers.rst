@@ -3,20 +3,20 @@ ShapeMatchers(TODO)
 
 SurroundingRectangle
 *****************
-.. autoclass:: manimlib.mobject.shape_matcher.SurroundingRectangle
+.. autoclass:: manimlib.mobject.shape_matchers.SurroundingRectangle
     :members:
 
 BackgroundRectangle
 *****************
-.. autoclass:: manimlib.mobject.shape_matcher.ackgroundRectangle
+.. autoclass:: manimlib.mobject.shape_matchers.ackgroundRectangle
     :members:
 
 Cross
 *****************
-.. autoclass:: manimlib.mobject.shape_matcher.Cross
+.. autoclass:: manimlib.mobject.shape_matchers.Cross
     :members:
 
 Underline
 *****************
-.. autoclass:: manimlib.mobject.shape_matcher.Underline
+.. autoclass:: manimlib.mobject.shape_matchers.Underline
     :members:

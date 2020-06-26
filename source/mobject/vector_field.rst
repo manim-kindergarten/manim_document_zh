@@ -16,7 +16,7 @@ ShowPassingFlashWithThinningStrokeWidth
 .. autoclass:: manimlib.mobject.vector_field.ShowPassingFlashWithThinningStrokeWidth
     :members:
 
-AnimatedStreamLine
+AnimatedStreamLines
 ******************
-.. autoclass:: manimlib.mobject.vector_field.AnimatedStreamLine
+.. autoclass:: manimlib.mobject.vector_field.AnimatedStreamLines
     :members:
