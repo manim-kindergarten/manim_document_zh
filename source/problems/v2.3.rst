@@ -417,7 +417,7 @@ https://www.luogu.com.cn/blog/IowaBattleship/latex-gong-shi-tai-quan
 Q11: 一些特殊LaTeX的外部包
 --------------------------
 
-**如何使用\ ``manim``\ 画出上面的音符，或怎么使用这些包？**
+**如何使用manim画出上面的音符，或怎么使用这些包？**
 
 在\ ``manimlib``\ 目录下的\ ``ctex_template.tex``\ 或者\ ``tex_template.tex``\ 文件中
 添加外部包的名称 [10]_

@@ -40,8 +40,9 @@ manim教程文档
     constants
     container/index
     animation/index
-    camera/index
     mobject/index
+    camera/index
+    scene/index
     utils/index
 
 .. toctree::
