@@ -34,7 +34,7 @@ release = 'v0.2' #我想把这里标识为文档
 extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.githubpages',
-    'sphinx.ext.imgmath',
+    'sphinx.ext.mathjax',
     'sphinx.ext.intersphinx',
     'sphinx.ext.autodoc', 
     'sphinx.ext.coverage',
