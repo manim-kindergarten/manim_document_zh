@@ -8,7 +8,7 @@ SurroundingRectangle
 
 BackgroundRectangle
 *****************
-.. autoclass:: manimlib.mobject.shape_matchers.ackgroundRectangle
+.. autoclass:: manimlib.mobject.shape_matchers.BackgroundRectangle
     :members:
 
 Cross
