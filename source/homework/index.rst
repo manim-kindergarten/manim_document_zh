@@ -1,4 +1,4 @@
-练习部分homework
+练习部分(TODO)
 =================
 
 .. admonition:: 声明
@@ -7,8 +7,8 @@
 
 正所谓熟能生巧，希望大家能通过练习进一步熟练运用自己学到的知识
 
-.. toctree::
-   :maxdepth: 2
-   :caption: 目录
+.. .. toctree::
+..    :maxdepth: 2
+..    :caption: 目录
 
-   TODO
+..    TODO
