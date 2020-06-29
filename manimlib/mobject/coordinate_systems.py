@@ -17,8 +17,11 @@ from manimlib.utils.space_ops import angle_of_vector
 
 
 class CoordinateSystem():
-    """
-    Abstract class for Axes and NumberPlane
+    """坐标系统(Axes, NumberPlane)的抽象基类
+    
+    - ``dimension`` : 坐标系统维度
+    - ``x_min, x_max`` : x轴范围(默认全屏)
+    - ``y_min, y_max`` : y轴范围(默认全屏)
     """
     CONFIG = {
         "dimension": 2,
@@ -58,12 +61,14 @@ class CoordinateSystem():
         return self.get_axis(2)
 
     def get_x_axis_label(self, label_tex, edge=RIGHT, direction=DL, **kwargs):
+        """获取x轴上的标志"""
         return self.get_axis_label(
             label_tex, self.get_x_axis(),
             edge, direction, **kwargs
         )
 
     def get_y_axis_label(self, label_tex, edge=UP, direction=DR, **kwargs):
+        """获取y轴上的标志"""
         return self.get_axis_label(
             label_tex, self.get_y_axis(),
             edge, direction, **kwargs
@@ -79,6 +84,7 @@ class CoordinateSystem():
         return label
 
     def get_axis_labels(self, x_label_tex="x", y_label_tex="y"):
+        """获取x轴和y轴上的标志（一个VGroup）"""
         self.axis_labels = VGroup(
             self.get_x_axis_label(x_label_tex),
             self.get_y_axis_label(y_label_tex),
@@ -86,6 +92,7 @@ class CoordinateSystem():
         return self.axis_labels
 
     def get_graph(self, function, **kwargs):
+        """获取函数图像（使用 ``ParametricFunction`` ）"""
         x_min = kwargs.pop("x_min", self.x_min)
         x_max = kwargs.pop("x_max", self.x_max)
         graph = ParametricFunction(
@@ -98,6 +105,7 @@ class CoordinateSystem():
         return graph
 
     def get_parametric_curve(self, function, **kwargs):
+        """获取参数方程图像（使用 ``ParametricFunction`` ）"""
         dim = self.dimension
         graph = ParametricFunction(
             lambda t: self.coords_to_point(
@@ -109,6 +117,7 @@ class CoordinateSystem():
         return graph
 
     def input_to_graph_point(self, x, graph):
+        """返回图像 ``graph`` 上横坐标为 ``x`` 的点"""
         if hasattr(graph, "underlying_function"):
             return self.coords_to_point(x, graph.underlying_function(x))
         else:
@@ -127,6 +136,7 @@ class CoordinateSystem():
 
 
 class Axes(VGroup, CoordinateSystem):
+    """直角坐标系"""
     CONFIG = {
         "number_line_config": {
             "color": LIGHT_GREY,
@@ -141,6 +151,13 @@ class Axes(VGroup, CoordinateSystem):
     }
 
     def __init__(self, **kwargs):
+        """由两个 ``NumberLine`` 构成 ( ``Axes.axes=VGroup(Axes.x_axis, Axes.y_axis`` ))
+        
+        - ``number_line_config`` : x/y轴共有的属性
+        - ``x_axis_config`` : x轴特有的属性
+        - ``y_axis_config`` : y轴特有的属性
+        - ``center_point`` : 原点的位置
+        """
         VGroup.__init__(self, **kwargs)
         self.x_axis = self.create_axis(
             self.x_min, self.x_max, self.x_axis_config
@@ -165,6 +182,7 @@ class Axes(VGroup, CoordinateSystem):
         return NumberLine(**new_config)
 
     def coords_to_point(self, *coords):
+        """在该坐标系里的坐标转化为在画面上的点"""
         origin = self.x_axis.number_to_point(0)
         result = np.array(origin)
         for axis, coord in zip(self.get_axes(), coords):
@@ -172,21 +190,29 @@ class Axes(VGroup, CoordinateSystem):
         return result
 
     def c2p(self, *coords):
+        """``coords_to_point`` 的缩写"""
         return self.coords_to_point(*coords)
 
     def point_to_coords(self, point):
+        """在画面上的点转化为在在该坐标系里的坐标"""
         return tuple([
             axis.point_to_number(point)
             for axis in self.get_axes()
         ])
 
     def p2c(self, point):
+        """``point_to_coords`` 的缩写"""
         return self.point_to_coords(point)
 
     def get_axes(self):
         return self.axes
 
     def get_coordinate_labels(self, x_vals=None, y_vals=None, **kwargs):
+        """获取坐标轴上的数字
+
+        - ``x_vals`` : x轴上需要的数字（默认为空，即全需要）
+        - ``y_vals`` : y轴上需要的数字（默认为空，即全需要）
+        """
         if x_vals is None:
             x_vals = []
         if y_vals is None:
@@ -198,11 +224,13 @@ class Axes(VGroup, CoordinateSystem):
         return self.coordinate_labels
 
     def add_coordinates(self, x_vals=None, y_vals=None, **kwargs):
+        """添加坐标轴上的数字（将 ``get_coordinate_labels`` 返回的添加到场景中）"""
         self.add(self.get_coordinate_labels(x_vals, y_vals, **kwargs))
         return self
 
 
 class ThreeDAxes(Axes):
+    """空间直角坐标系"""
     CONFIG = {
         "dimension": 3,
         "x_min": -5.5,
@@ -218,6 +246,13 @@ class ThreeDAxes(Axes):
     }
 
     def __init__(self, **kwargs):
+        """在 ``Axes`` 基础上加了一个轴
+        
+        - ``z_axis_config`` : z轴特有的属性
+        - ``num_axis_piece`` : 每个轴需要拆成的部分，默认20（简单解决3D中遮盖问题）
+        - ``light_source`` : 虚拟光源的位置
+        - 其余同 ``Axes``
+        """
         Axes.__init__(self, **kwargs)
         z_axis = self.z_axis = self.create_axis(
             self.z_min, self.z_max, self.z_axis_config
@@ -257,6 +292,7 @@ class ThreeDAxes(Axes):
 
 
 class NumberPlane(Axes):
+    """坐标平面"""
     CONFIG = {
         "axis_config": {
             "stroke_color": WHITE,
@@ -284,6 +320,16 @@ class NumberPlane(Axes):
     }
 
     def __init__(self, **kwargs):
+        """与 ``Axes`` 类似
+        
+        - ``axis_config`` : 坐标轴的共有属性（也可写为 ``number_line_config`` ）
+        - ``x_axis_config, y_axis_config`` : x/y轴的特有属性
+        - ``background_line_style`` : 背景直线的样式
+        - ``fade_line_style`` : 背景中较暗直线的样式，默认为None
+        - ``x_line_frequency, y_line_frequency`` : 背景直线的频率
+        - ``faded_line_ratio`` : 背景中较暗直线的所占比例
+        - 其余同 ``Axes``
+        """
         digest_config(self, kwargs)
         kwargs["number_line_config"] = self.axis_config
         Axes.__init__(self, **kwargs)
@@ -363,6 +409,7 @@ class NumberPlane(Axes):
         return self.axes
 
     def get_vector(self, coords, **kwargs):
+        """获取一个从原点到 ``coords`` 的向量( ``Arrow`` )"""
         kwargs["buff"] = 0
         return Arrow(
             self.coords_to_point(0, 0),
@@ -371,6 +418,7 @@ class NumberPlane(Axes):
         )
 
     def prepare_for_nonlinear_transform(self, num_inserted_curves=50):
+        """将所有线拆成 ``num_inserted_curves`` 段，以执行非线性变换"""
         for mob in self.family_members_with_points():
             num_curves = mob.get_num_curves()
             if num_inserted_curves > num_curves:
@@ -381,23 +429,28 @@ class NumberPlane(Axes):
 
 
 class ComplexPlane(NumberPlane):
+    """复平面"""
     CONFIG = {
         "color": BLUE,
         "line_frequency": 1,
     }
 
     def number_to_point(self, number):
+        """复平面中一个复数转化为画面中的点"""
         number = complex(number)
         return self.coords_to_point(number.real, number.imag)
 
     def n2p(self, number):
+        """``number_to_point`` 的简写"""
         return self.number_to_point(number)
 
     def point_to_number(self, point):
+        """画面中的点转化为复平面中一个复数"""
         x, y = self.point_to_coords(point)
         return complex(x, y)
 
     def p2n(self, point):
+        """``point_to_number`` 的简写"""
         return self.point_to_number(point)
 
     def get_default_coordinate_values(self):
@@ -409,6 +462,7 @@ class ComplexPlane(NumberPlane):
         return [*x_numbers, *y_numbers]
 
     def get_coordinate_labels(self, *numbers, **kwargs):
+        """获取坐标轴上数字物体，传入多个实数或纯虚数 ``numbers``"""
         if len(numbers) == 0:
             numbers = self.get_default_coordinate_values()
 
@@ -430,5 +484,6 @@ class ComplexPlane(NumberPlane):
         return self.coordinate_labels
 
     def add_coordinates(self, *numbers):
+        """将坐标轴上数字添加到场景中（传入多个实数或纯虚数 ``numbers`` ）"""
         self.add(self.get_coordinate_labels(*numbers))
         return self

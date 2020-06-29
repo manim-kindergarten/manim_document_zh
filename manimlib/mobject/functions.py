@@ -5,6 +5,7 @@ import math
 
 
 class ParametricFunction(VMobject):
+    """参数方程"""
     CONFIG = {
         "t_min": 0,
         "t_max": 1,
@@ -15,6 +16,10 @@ class ParametricFunction(VMobject):
     }
 
     def __init__(self, function=None, **kwargs):
+        """传入 ``function`` 为自变量为参数 ``t`` ，返回值为一个点的函数
+        
+        - ``t_min, t_max`` : 参数范围
+        """
         # either get a function from __init__ or from CONFIG
         self.function = function or self.function
         VMobject.__init__(self, **kwargs)
@@ -78,6 +83,7 @@ class ParametricFunction(VMobject):
 
 
 class FunctionGraph(ParametricFunction):
+    """函数图像"""
     CONFIG = {
         "color": YELLOW,
         "x_min": -FRAME_X_RADIUS,
@@ -85,6 +91,10 @@ class FunctionGraph(ParametricFunction):
     }
 
     def __init__(self, function, **kwargs):
+        """传入的 ``function`` 为自变量为 ``x`` ，返回值为 ``y`` 的函数
+        
+        - ``x_min, x_max`` : 自变量 ``x`` 范围
+        """
         digest_config(self, kwargs)
         self.parametric_function = \
             lambda t: np.array([t, function(t), 0])
@@ -101,4 +111,5 @@ class FunctionGraph(ParametricFunction):
         return self.function
 
     def get_point_from_function(self, x):
+        """给出一个横坐标 ``x`` ，返回图像上横坐标为 ``x`` 的点坐标"""
         return self.parametric_function(x)

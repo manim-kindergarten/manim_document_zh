@@ -6,6 +6,7 @@ from manimlib.utils.space_ops import get_norm
 
 
 class AnimatedBoundary(VGroup):
+    """动态变化的边界"""
     CONFIG = {
         "colors": [BLUE_D, BLUE_B, BLUE_E, GREY_BROWN],
         "max_stroke_width": 3,
@@ -16,6 +17,12 @@ class AnimatedBoundary(VGroup):
     }
 
     def __init__(self, vmobject, **kwargs):
+        """传入需要显示动态边界的物体 ``vmobject``
+
+        - ``colors`` 表示变化中出现的颜色
+        - ``max_stroke_width`` 表示边界最大的粗细
+        - ``cycle_rate`` 表示循环率
+        """
         super().__init__(**kwargs)
         self.vmobject = vmobject
         self.boundary_copies = [
@@ -71,6 +78,7 @@ class AnimatedBoundary(VGroup):
 
 
 class TracedPath(VMobject):
+    """记录路径的VMobject"""
     CONFIG = {
         "stroke_width": 2,
         "stroke_color": WHITE,
@@ -78,6 +86,10 @@ class TracedPath(VMobject):
     }
 
     def __init__(self, traced_point_func, **kwargs):
+        """传入一个可调用的对象 ``traced_point_func`` (一般为 ``mob.get_center()`` )
+
+        - ``min_distance_to_new_point`` : 两点之间的最小距离，若小于此距离则不增加点
+        """
         super().__init__(**kwargs)
         self.traced_point_func = traced_point_func
         self.add_updater(lambda m: m.update_path())
