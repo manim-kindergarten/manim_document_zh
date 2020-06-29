@@ -16,7 +16,7 @@ copyright = '- This document has been placed in the public domain.'
 author = '鹤翔万里 & Tridu33'  # 这个整合版本借鉴了很多已有的网友/群友资料，具体链接文中都已经标识引用。
 
 
-version = '0.2.6'
+version = '0.3.0'
 release = 'v0.2' #我想把这里标识为文档
 
 # -- General configuration --
