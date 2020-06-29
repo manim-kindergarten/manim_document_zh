@@ -151,7 +151,7 @@ class Axes(VGroup, CoordinateSystem):
     }
 
     def __init__(self, **kwargs):
-        """由两个 ``NumberLine`` 构成 ( ``Axes.axes=VGroup(Axes.x_axis, Axes.y_axis`` ))
+        """由两个 ``NumberLine`` 构成 ( ``Axes.axes=VGroup(Axes.x_axis, Axes.y_axis)`` )
         
         - ``number_line_config`` : x/y轴共有的属性
         - ``x_axis_config`` : x轴特有的属性
