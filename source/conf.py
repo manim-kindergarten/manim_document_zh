@@ -37,7 +37,7 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx_rtd_theme'
 ]
-mathjax_path = "http://cdn.mathjax.org/mathjax/latest/MathJax.js"
+mathjax_path = "https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML"
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
