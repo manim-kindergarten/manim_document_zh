@@ -9,12 +9,14 @@ from manimlib.utils.space_ops import z_to_vector
 
 
 class ThreeDVMobject(VMobject):
+    """设置了 ``shade_in_3d=True`` 的VMobject"""
     CONFIG = {
         "shade_in_3d": True,
     }
 
 
 class ParametricSurface(VGroup):
+    """参数曲面"""
     CONFIG = {
         "u_min": 0,
         "u_max": 1,
@@ -32,6 +34,13 @@ class ParametricSurface(VGroup):
     }
 
     def __init__(self, func, **kwargs):
+        """传入 ``func`` 为自变量为参数 ``u,v`` ，返回值为一个点的函数
+        
+        - ``u_min, u_max, v_min, v_max`` : 参数范围
+        - ``resolution`` : ``u,v`` 范围分为多少段（为一个数时uv均为此值，为元组时u为第一个v为第二个）
+        - ``surface_piece_config`` : 面上每一片的属性设置
+        - ``checkerboard_colors`` : 棋盘格颜色（None或数组）为None时无棋盘格，使用 ``fill_color`` 填充颜色
+        """
         VGroup.__init__(self, **kwargs)
         self.func = func
         self.setup_in_uv_space()
@@ -101,6 +110,7 @@ class ParametricSurface(VGroup):
 
 
 class Sphere(ParametricSurface):
+    """利用 ``ParametricSurface`` 生成的球面"""
     CONFIG = {
         "resolution": (12, 24),
         "radius": 1,
@@ -111,6 +121,7 @@ class Sphere(ParametricSurface):
     }
 
     def __init__(self, **kwargs):
+        """半径为 ``radius``"""
         ParametricSurface.__init__(
             self, self.func, **kwargs
         )
@@ -125,6 +136,7 @@ class Sphere(ParametricSurface):
 
 
 class Cube(VGroup):
+    """立方体（6个 ``Square``）"""
     CONFIG = {
         "fill_opacity": 0.75,
         "fill_color": BLUE,
@@ -146,6 +158,7 @@ class Cube(VGroup):
 
 
 class Prism(Cube):
+    """四棱柱（数组 ``dimensions`` 为每维上的长度）"""
     CONFIG = {
         "dimensions": [3, 2, 1]
     }

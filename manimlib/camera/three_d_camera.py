@@ -62,6 +62,7 @@ class ThreeDCamera(Camera):
         ]
 
     def modified_rgbas(self, vmobject, rgbas):
+        """给 ``vmobject`` 的颜色数组 ``rgbas`` 加入光照处理"""
         if not self.should_apply_shading:
             return rgbas
         if vmobject.shade_in_3d and (vmobject.get_num_points() > 0):

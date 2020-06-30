@@ -4,6 +4,7 @@ from manimlib.mobject.types.vectorized_mobject import VMobject
 
 
 class DecimalNumber(VMobject):
+    """十进制数字（比直接使用TexMobject方便，支持复数）"""
     CONFIG = {
         "num_decimal_places": 2,
         "include_sign": False,
@@ -16,6 +17,16 @@ class DecimalNumber(VMobject):
     }
 
     def __init__(self, number=0, **kwargs):
+        """传入 ``number`` 表示初始的数值
+        
+        - ``num_decimal_places`` : 小数位数
+        - ``include_sign`` : 正数是否包含"+"标志（默认为False）
+        - ``digit_to_digit_buff`` : 两个字符之间的距离（默认为0.05）
+        - ``show_ellipsis`` : 是否显示省略号（默认为False）
+        - ``unit`` : 末尾的单位
+        - ``include_background_rectangle`` : 是否包含背景矩形（默认为False）
+        - ``edge_to_fix`` : 在变化时，以哪边对齐（默认LEFT）
+        """
         super().__init__(**kwargs)
         self.number = number
         self.initial_config = kwargs
@@ -73,15 +84,6 @@ class DecimalNumber(VMobject):
             self.add_background_rectangle()
 
     def get_formatter(self, **kwargs):
-        """
-        Configuration is based first off instance attributes,
-        but overwritten by any kew word argument.  Relevant
-        key words:
-        - include_sign
-        - group_with_commas
-        - num_decimal_places
-        - field_name (e.g. 0 or 0.real)
-        """
         config = dict([
             (attr, getattr(self, attr))
             for attr in [
@@ -109,6 +111,7 @@ class DecimalNumber(VMobject):
         ])
 
     def set_value(self, number, **config):
+        """设置新值（新建一个 ``DecimalNumber``）"""
         full_config = dict(self.CONFIG)
         full_config.update(self.initial_config)
         full_config.update(config)
@@ -130,16 +133,23 @@ class DecimalNumber(VMobject):
         return self
 
     def get_value(self):
+        """获取当前数值（``DecimalNumber.number``）"""
         return self.number
 
     def increment_value(self, delta_t=1):
+        """给值增加 ``delta_t``"""
         self.set_value(self.get_value() + delta_t)
 
 
 class Integer(DecimalNumber):
+    """整数（利用 ``DecimalNumber``）"""
     CONFIG = {
         "num_decimal_places": 0,
     }
+    def __init__(self, number=0, **kwargs):
+        """参数和 ``DecimalNumber`` 相同"""
+        super().__init__(number, **kwargs)
 
     def get_value(self):
+        """对值四舍五入后返回"""
         return int(np.round(super().get_value()))

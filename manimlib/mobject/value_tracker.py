@@ -4,35 +4,30 @@ from manimlib.mobject.mobject import Mobject
 
 
 class ValueTracker(Mobject):
-    """
-    Note meant to be displayed.  Instead the position encodes some
-    number, often one which another animation or continual_animation
-    uses for its update function, and by treating it as a mobject it can
-    still be animated and manipulated just like anything else.
-    """
+    """记录一个数值（不在画面中显示）"""
 
     def __init__(self, value=0, **kwargs):
+        """传入的 ``value`` 为初始数值"""
         Mobject.__init__(self, **kwargs)
         self.points = np.zeros((1, 3))
         self.set_value(value)
 
     def get_value(self):
+        """获取当前存的值"""
         return self.points[0, 0]
 
     def set_value(self, value):
+        """将值设为 ``value``"""
         self.points[0, 0] = value
         return self
 
     def increment_value(self, d_value):
+        """将存储的值增加 ``d_value``"""
         self.set_value(self.get_value() + d_value)
 
 
 class ExponentialValueTracker(ValueTracker):
-    """
-    Operates just like ValueTracker, except it encodes the value as the
-    exponential of a position coordinate, which changes how interpolation
-    behaves
-    """
+    """以指数形式变化的存值器"""
 
     def get_value(self):
         return np.exp(ValueTracker.get_value(self))
@@ -42,6 +37,7 @@ class ExponentialValueTracker(ValueTracker):
 
 
 class ComplexValueTracker(ValueTracker):
+    """记录一个复数数值"""
     def get_value(self):
         return complex(*self.points[0, :2])
 

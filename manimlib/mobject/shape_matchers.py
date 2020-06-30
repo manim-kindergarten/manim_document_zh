@@ -8,12 +8,14 @@ from manimlib.utils.config_ops import digest_config
 
 
 class SurroundingRectangle(Rectangle):
+    """环绕矩形"""
     CONFIG = {
         "color": YELLOW,
         "buff": SMALL_BUFF,
     }
 
     def __init__(self, mobject, **kwargs):
+        """传入 ``mobject`` 为环绕的物体"""
         digest_config(self, kwargs)
         kwargs["width"] = mobject.get_width() + 2 * self.buff
         kwargs["height"] = mobject.get_height() + 2 * self.buff
@@ -22,6 +24,7 @@ class SurroundingRectangle(Rectangle):
 
 
 class BackgroundRectangle(SurroundingRectangle):
+    """背景矩形"""
     CONFIG = {
         "color": BLACK,
         "stroke_width": 0,
@@ -31,6 +34,7 @@ class BackgroundRectangle(SurroundingRectangle):
     }
 
     def __init__(self, mobject, **kwargs):
+        """传入 ``mobject`` 为需要添加背景的物体"""
         SurroundingRectangle.__init__(self, mobject, **kwargs)
         self.original_fill_opacity = self.fill_opacity
 
@@ -45,7 +49,7 @@ class BackgroundRectangle(SurroundingRectangle):
                        fill_opacity=None,
                        family=True
                        ):
-        # Unchangable style, except for fill_opacity
+        """除了不透明度，其余不可以更改（初始化时除外）"""
         VMobject.set_style_data(
             self,
             stroke_color=BLACK,
@@ -60,12 +64,14 @@ class BackgroundRectangle(SurroundingRectangle):
 
 
 class Cross(VGroup):
+    """交叉错号"""
     CONFIG = {
         "stroke_color": RED,
         "stroke_width": 6,
     }
 
     def __init__(self, mobject, **kwargs):
+        """传入的 ``mobject`` 为要打错号的物体"""
         VGroup.__init__(self,
                         Line(UP + LEFT, DOWN + RIGHT),
                         Line(UP + RIGHT, DOWN + LEFT),
@@ -75,11 +81,13 @@ class Cross(VGroup):
 
 
 class Underline(Line):
+    """下划线"""
     CONFIG = {
         "buff": SMALL_BUFF,
     }
 
     def __init__(self, mobject, **kwargs):
+        """传入的 ``mobject`` 为需要下划线的物体"""
         super().__init__(LEFT, RIGHT)
         self.match_width(mobject)
         self.next_to(mobject, DOWN, buff=self.buff)
