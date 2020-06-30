@@ -8,21 +8,23 @@ manim教程文档
 
 .. image:: assets/image/DocumentHeader.png
 
-这些文档基于 `3b1b/manim存储库 <https://github.com/3b1b/manim>`_ 的master分支，你可以通过提交pr来为文档做出贡献
+这些文档基于 `3b1b/manim存储库 <https://github.com/3b1b/manim>`_ 的master分支，你可以通过提交pr来为文档做出贡献，详见 `贡献规则及编写指南页面 <https://manim.ml/contribution>`__
+
+目前包含两大部分， **入门教程** 和 **进阶文档** 。入门教程中还有很多需要完善，进阶文档还需要补充示例。后续可能还会添加 **进阶教程** 部分
 
 .. admonition:: 声明
 
-    这是MK成员根据EulerTour写的 `eulertour-docs <https://www.eulertour.com/docs/>`_ 中文翻译和很多manim教程的学习笔记（教程文档）
+    这是MK成员根据整合了很多零散教程文档和原创补充编写的manim教程，来源主要有以下：
+    
+    - EulerTour写的 `文档 <https://www.eulertour.com/docs/>`__
+    - Elteoremadebeethoven的 `manim 3feb 文档 <https://github.com/Elteoremadebeethoven/manim_3feb_docs.github.io/tree/master/source>`_ 
+    - Elteoremadebeethoven的 `代码仓库 <https://github.com/Elteoremadebeethoven/AnimationsWithManim>`__ 和配套的YouTube教学视频 (B站上有搬运 `BV1W4411Z7Zt <https://www.bilibili.com/video/BV1W4411Z7Zt>`_ )
+    - cai-hust的学习笔记 `cai-hust_manim-tutorial-CN <https://github.com/cai-hust/manim-tutorial-CN>`__
+    - mk成员原创编写补充
 
-    manim的工程样例已经很多了，比如3b1b的旧项目，或者 `Elteoremadebeethoven的项目 <https://github.com/Elteoremadebeethoven/MyAnimations>`_ 
-    `elteoremadebeethoven-manim_3feb_docs <https://github.com/Elteoremadebeethoven/manim_3feb_docs.github.io/tree/master/source>`_ 
-    Elteoremadebeethoven的代码仓库和配套的YouTube教学视频 `Animation-course-with-Manim <https://github.com/Elteoremadebeethoven/AnimationsWithManim>`_ 
-    B站上有搬运 `BV1W4411Z7Zt <https://www.bilibili.com/video/BV1W4411Z7Zt>`_ 
+    不是原创部分会标注来源，这里把相关资料翻译，分享学习笔记心得和一些技巧，以方便使用manim。如果来源有疏漏，欢迎提出issue指出
 
-    然后cai-hust学习并且做了相关的教程笔记，放在了GitHub上 `cai-hust_manim-tutorial-CN <https://github.com/cai-hust/manim-tutorial-CN>`_ 
-
-    不是原创部分都会标注清晰来源，只是想把相关资料整合编辑成方便的文档格式，顺便学习笔记心得和一些技巧，以方便查阅使用manim
-    用到的都会标明来源。虽然已经很注意每个记笔记来源都保持原有链接，但是可能有疏漏，如果你看到忘记标明出处的，请帮忙标注一下，谢谢
+    **那么，祝大家好运ღ( ´･ᴗ･` )**
 
 .. toctree::
     :maxdepth: 2
