@@ -1,6 +1,3 @@
-| ``manim`` 常见问题 *v2.3*
-| 鹤翔万里& catfish
-
 安装问题
 ========
 
@@ -113,7 +110,7 @@ Q2: 报错 ``xelatex error converting to xdv``
 
 再进行尝试
 
-I.   **若安装的\ ``TeX``\ 发行版为\ ``MiKTeX``**
+I.   **若安装的TeX发行版为MiKTeX**
 
      1. ``MiKTeX``\ 的有关路径是否添加到环境变量中
 
@@ -127,13 +124,13 @@ I.   **若安装的\ ``TeX``\ 发行版为\ ``MiKTeX``**
 
      对于没有\ ``1.``\ 和\ ``2.``\ 问题却依旧报错的，可以选择重新安装新版\ ``MiKTeX``\ 或者安装\ ``TeXLive-full``\ 版。
 
-II.  **若安装的\ ``TeX``\ 发行版为\ ``TeXLive``**
+II.  **若安装的TeX发行版为TeXLive**
 
      1. ``TeXLive``\ 有关路径是否添加到环境变量中
 
      2. 安装的是否为\ ``full``\ 版本
 
-III. **若安装的\ ``TeX``\ 发行版不为以上两款**
+III. **若安装的TeX发行版不为以上两款**
 
      建议换成\ ``TeXLive-full``\ 版或者\ ``MiKTeX``\ ，并且在重新安装前请删除旧版
 
@@ -420,7 +417,7 @@ https://www.luogu.com.cn/blog/IowaBattleship/latex-gong-shi-tai-quan
 Q11: 一些特殊LaTeX的外部包
 --------------------------
 
-**如何使用\ ``manim``\ 画出上面的音符，或怎么使用这些包？**
+**如何使用manim画出上面的音符，或怎么使用这些包？**
 
 在\ ``manimlib``\ 目录下的\ ``ctex_template.tex``\ 或者\ ``tex_template.tex``\ 文件中
 添加外部包的名称 [10]_

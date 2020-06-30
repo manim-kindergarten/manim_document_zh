@@ -5,21 +5,18 @@
 import sys
 import os
 sys.path.insert(0, os.path.abspath("../../manim/"))
-# sys.path.insert(0, os.path.abspath("../../manim/manimlib/"))
-# sys.path.insert(0, os.path.abspath("../../manim/manim_sandbox/"))
 print(sys.path)
 
 
 # -- Project information --
 project = 'manim'
 copyright = '- This document has been placed in the public domain.'
-# Sphinx写的manim文档编辑者名单,每经过一波大更新，新修正的PR者直接注释掉上一个作者,如果变动比较大，简要声明改动新增内容告知用户即可。
 # author = '2019EulerTour'
 # author = '2019elteoremadebeethoven'
 author = '鹤翔万里 & Tridu33'  # 这个整合版本借鉴了很多已有的网友/群友资料，具体链接文中都已经标识引用。
 
 
-version = '0.2.5'
+version = '0.3.0'
 release = 'v0.2' #我想把这里标识为文档
 
 # -- General configuration --
@@ -30,17 +27,17 @@ release = 'v0.2' #我想把这里标识为文档
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-# 后三个是为了ext.autodoc
 extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.githubpages',
-    'sphinx.ext.imgmath',
+    'sphinx.ext.mathjax',
     'sphinx.ext.intersphinx',
     'sphinx.ext.autodoc', 
     'sphinx.ext.coverage',
     'sphinx.ext.napoleon',
     'sphinx_rtd_theme'
 ]
+mathjax_path = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

@@ -1,4 +1,4 @@
-编写一个场景-Making a Scene
+编写场景-Making a Scene
 ===============================
 
 .. admonition:: 声明

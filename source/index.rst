@@ -26,19 +26,30 @@ manim教程文档
 
 .. toctree::
     :maxdepth: 2
-    :caption: 目录
+    :caption: 入门教程向
 
     installation/index
     getting_started/index
+    problems/index
+    homework/index
+
+.. toctree::
+    :maxdepth: 2
+    :caption: 进阶文档向
+
     constants
     container/index
     animation/index
-    camera/index
     mobject/index
+    camera/index
+    scene/index
     utils/index
-    CommonProblems/index
+
+.. toctree::
+    :maxdepth: 2
+    :caption: 杂项
+
     manim_sandbox/index
-    manim_homework/index
     contribution
     about
 
