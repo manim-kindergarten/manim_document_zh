@@ -1,4 +1,4 @@
-Functions(TODO)
+Functions
 ===============
 
 ParametricFunction

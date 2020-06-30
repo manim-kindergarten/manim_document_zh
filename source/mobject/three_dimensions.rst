@@ -1,4 +1,4 @@
-ThreeDimensions(TODO)
+ThreeDimensions
 =====================
 
 ThreeDVMobject

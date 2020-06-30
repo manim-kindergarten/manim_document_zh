@@ -1,4 +1,4 @@
-Probability(TODO)
+Probability
 =================
 
 SampleSpace

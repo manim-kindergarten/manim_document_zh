@@ -1,4 +1,4 @@
-Geometry(TODO)
+Geometry
 ===============
 
 TipableVMobject
