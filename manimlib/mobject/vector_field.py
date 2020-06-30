@@ -242,7 +242,7 @@ class StreamLines(VGroup):
         - ``delta_x, delta_y`` : 每两个流线起点x/y的变化量
         - ``n_repeats`` : 起点重复多少次
         - ``dt`` : 每次流动的时间（默认为0.05）
-        - ``virtual_time`` : 总共流动的时间（默认3）``virtual_time/dt`` 为流动的次数
+        - ``virtual_time`` : 总共流动的时间（默认3） ``virtual_time/dt`` 为流动的次数
         - ``color_by_arc_length`` : 根据弧长上色（默认为True）
 
             - ``min_arc_length, max_arc_length`` : 最小最大的弧长
