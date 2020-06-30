@@ -327,3 +327,13 @@ class CyclicReplaceExample(Scene):
         self.wait()
         self.play(CyclicReplace(A, B)) # 或Swap(A, B)
         self.wait()
+
+class ShowPassingFlashWithThinningStrokeWidthExample(Scene):
+    def construct(self):
+        sl = StreamLines(
+            lambda p: rotate_vector(p / 3, 90 * DEGREES)
+        )
+        self.add(sl)
+        self.wait()
+        self.play(ShowPassingFlashWithThinningStrokeWidth(sl))
+        self.wait()

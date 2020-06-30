@@ -1,9 +1,9 @@
-物体部分mobject(TODO)
+物体部分mobject
 ======================
 
 .. admonition:: 声明
 
-   这一部分全为鹤翔万里原创编写
+   这一部分全为鹤翔万里与數心原创编写，目前示例部分还没有完成
 
 :class:`~mobject.mobject.Mobject` 是屏幕中出现的所有物体的超类。
 
