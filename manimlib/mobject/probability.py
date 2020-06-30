@@ -13,6 +13,7 @@ EPSILON = 0.0001
 
 
 class SampleSpace(Rectangle):
+    """用于可视化概率的样本空间"""
     CONFIG = {
         "height": 3,
         "width": 3,
@@ -24,7 +25,12 @@ class SampleSpace(Rectangle):
         "default_label_scale_val": 1,
     }
 
+    def __init__(self, **kwargs):
+        """主体是一个3*3的矩形"""
+        super().__init__(**kwargs)
+
     def add_title(self, title="Sample space", buff=MED_SMALL_BUFF):
+        """添加标题 ``title``"""
         # TODO, should this really exist in SampleSpaceScene
         title_mob = TextMobject(title)
         if title_mob.get_width() > self.get_width():
@@ -37,6 +43,7 @@ class SampleSpace(Rectangle):
         self.label = label
 
     def complete_p_list(self, p_list):
+        """将概率列表 ``p_list`` 补齐（如果不足，则添加一个概率 ``1-sum(p_list)``），返回补齐后的列表"""
         new_p_list = list(tuplify(p_list))
         remainder = 1.0 - sum(new_p_list)
         if abs(remainder) > EPSILON:
@@ -74,10 +81,12 @@ class SampleSpace(Rectangle):
         return self.get_division_along_dimension(p_list, 0, colors, vect)
 
     def divide_horizontally(self, *args, **kwargs):
+        """根据概率列表 ``p_list`` 水平分割的VGroup，上色为 ``colors``"""
         self.horizontal_parts = self.get_horizontal_division(*args, **kwargs)
         self.add(self.horizontal_parts)
 
     def divide_vertically(self, *args, **kwargs):
+        """根据概率列表 ``p_list`` 竖直分割的VGroup，上色为 ``colors``"""
         self.vertical_parts = self.get_vertical_division(*args, **kwargs)
         self.add(self.vertical_parts)
 
@@ -113,21 +122,25 @@ class SampleSpace(Rectangle):
         return VGroup(parts.braces, parts.labels)
 
     def get_side_braces_and_labels(self, labels, direction=LEFT, **kwargs):
+        """获取侧边的大括号和标签（``VGroup(braces, labels)``），适用于调用 ``divide_horizontally`` 后的"""
         assert(hasattr(self, "horizontal_parts"))
         parts = self.horizontal_parts
         return self.get_subdivision_braces_and_labels(parts, labels, direction, **kwargs)
 
     def get_top_braces_and_labels(self, labels, **kwargs):
+        """获取上边的大括号和标签（``VGroup(braces, labels)``），适用于调用 ``divide_vertically`` 后的"""
         assert(hasattr(self, "vertical_parts"))
         parts = self.vertical_parts
         return self.get_subdivision_braces_and_labels(parts, labels, UP, **kwargs)
 
     def get_bottom_braces_and_labels(self, labels, **kwargs):
+        """获取底边的大括号和标签（``VGroup(braces, labels)``），适用于调用 ``divide_vertically`` 后的"""
         assert(hasattr(self, "vertical_parts"))
         parts = self.vertical_parts
         return self.get_subdivision_braces_and_labels(parts, labels, DOWN, **kwargs)
 
     def add_braces_and_labels(self):
+        """调用 ``get_..._braces_and_labels`` 后将其自动添加到场景中"""
         for attr in "horizontal_parts", "vertical_parts":
             if not hasattr(self, attr):
                 continue
@@ -145,6 +158,7 @@ class SampleSpace(Rectangle):
 
 
 class BarChart(VGroup):
+    """柱状图"""
     CONFIG = {
         "height": 4,
         "width": 6,
@@ -161,6 +175,17 @@ class BarChart(VGroup):
     }
 
     def __init__(self, values, **kwargs):
+        """传入 ``values`` 列表表示所有值
+        
+        - ``height`` : 总高度
+        - ``width`` : 总宽度
+        - ``n_ticks`` : y轴一共多少个刻度线
+        - ``tick_width`` : y轴上刻度线的宽度
+        - ``bar_colors`` : 颜色梯度范围
+        - ``bar_fill_opacity`` : 每条的填充不透明度
+        - ``bar_stroke_width`` : 每条的线宽
+        - ``bar_names`` : 每条下方的文字
+        """
         VGroup.__init__(self, **kwargs)
         if self.max_value is None:
             self.max_value = max(values)
@@ -221,6 +246,7 @@ class BarChart(VGroup):
         self.bar_labels = bar_labels
 
     def change_bar_values(self, values):
+        """更改所有数据，传入新的 ``values`` 列表"""
         for bar, value in zip(self.bars, values):
             bar_bottom = bar.get_bottom()
             bar.stretch_to_fit_height(

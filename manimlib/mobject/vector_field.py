@@ -128,6 +128,7 @@ def move_points_along_vector_field(mobject, func):
 # Mobjects
 
 class VectorField(VGroup):
+    """向量场"""
     CONFIG = {
         "delta_x": 0.5,
         "delta_y": 0.5,
@@ -145,6 +146,17 @@ class VectorField(VGroup):
     }
 
     def __init__(self, func, **kwargs):
+        """传入的 ``func`` 为自变量为一个点，返回值也为一个点的函数
+        
+        - ``delta_x, delta_y`` : 向量场每两个起点之间x/y轴的间隔（默认均为0.5）
+        - ``x_min, x_max, y_min, y_max`` : 向量场的范围（默认为全屏）
+        - ``min_magnitude, max_magnitude`` : 用于梯度颜色的最小和最大长度
+        - ``colors`` : 需要的颜色梯度范围，默认为 ``[BLUE_E, GREEN, YELLOW, RED]``
+        - ``length_func`` : 映射向量长度的函数，可改为 ``linear`` 表示原长
+        - ``vector_config`` : 每个向量的属性设置
+
+        初始化之后为一系列向量
+        """
         VGroup.__init__(self, **kwargs)
         self.func = func
         self.rgb_gradient_function = get_rgb_gradient_function(
@@ -187,6 +199,7 @@ class VectorField(VGroup):
 
 
 class StreamLines(VGroup):
+    """流线"""
     CONFIG = {
         # TODO, this is an awkward way to inherit
         # defaults to a method.
@@ -221,6 +234,26 @@ class StreamLines(VGroup):
     }
 
     def __init__(self, func, **kwargs):
+        """传入的 ``func`` 为自变量为一个点，返回值也为一个点的函数
+
+        随机生成一系列起点，并且根据func流动形成图形
+        
+        - ``x_min, x_max, y_min, y_max`` : 流线起点的范围
+        - ``delta_x, delta_y`` : 每两个流线起点x/y的变化量
+        - ``n_repeats`` : 起点重复多少次
+        - ``dt`` : 每次流动的时间（默认为0.05）
+        - ``virtual_time`` : 总共流动的时间（默认3）``virtual_time/dt`` 为流动的次数
+        - ``color_by_arc_length`` : 根据弧长上色（默认为True）
+
+            - ``min_arc_length, max_arc_length`` : 最小最大的弧长
+
+        - ``color_by_magnitude`` : 根据距离上色
+
+            - ``min_magnitude, max_magnitude`` : 最小最大距离
+        
+        - ``colors`` : 颜色梯度的范围，默认为 ``[BLUE_E, GREEN, YELLOW, RED]``
+        - ``cutoff_norm`` : 运行每条流线的最大长度
+        """
         VGroup.__init__(self, **kwargs)
         self.func = func
         dt = self.dt
@@ -286,6 +319,7 @@ class StreamLines(VGroup):
 # varying in response to a changing vector field, and still
 # animate the resulting flow
 class ShowPassingFlashWithThinningStrokeWidth(AnimationGroup):
+    """通过改变线条宽度来实现流动效果"""
     CONFIG = {
         "n_segments": 10,
         "time_width": 0.1,
@@ -293,6 +327,7 @@ class ShowPassingFlashWithThinningStrokeWidth(AnimationGroup):
     }
 
     def __init__(self, vmobject, **kwargs):
+        """传入的 ``vmobject`` 表示需要显示流动效果的物体（一般是 ``StreamLines``）"""
         digest_config(self, kwargs)
         max_stroke_width = vmobject.get_stroke_width()
         max_time_width = kwargs.pop("time_width", self.time_width)
@@ -312,6 +347,7 @@ class ShowPassingFlashWithThinningStrokeWidth(AnimationGroup):
 # TODO, this is untested after turning it from a
 # ContinualAnimation into a VGroup
 class AnimatedStreamLines(VGroup):
+    """自动实现流动效果的物体（利用 ``StreamLines`` 和转化为 ``updater`` 的动画）"""
     CONFIG = {
         "lag_range": 4,
         "line_anim_class": ShowPassingFlash,
@@ -323,6 +359,12 @@ class AnimatedStreamLines(VGroup):
     }
 
     def __init__(self, stream_lines, **kwargs):
+        """传入的 ``stream_lines`` 为一个 ``StreamLines`` 实例
+        
+        - ``lag_range`` : 延迟的范围
+        - ``line_anim_class`` : 对每条线执行的动画，默认为 ``ShowPassingFlash``
+        - ``line_anim_config`` : 对每条线执行动画的属性设置
+        """
         VGroup.__init__(self, **kwargs)
         self.stream_lines = stream_lines
         for line in stream_lines:
