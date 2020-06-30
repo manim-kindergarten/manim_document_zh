@@ -7,12 +7,14 @@ from manimlib.mobject.mobject import Mobject
 
 
 def assert_is_mobject_method(method):
+    """判断 ``method`` 是否是Mobject的方法"""
     assert(inspect.ismethod(method))
     mobject = method.__self__
     assert(isinstance(mobject, Mobject))
 
 
 def always(method, *args, **kwargs):
+    """一直调用 ``method``，传入 ``*args, **kwargs``"""
     assert_is_mobject_method(method)
     mobject = method.__self__
     func = method.__func__
@@ -21,11 +23,7 @@ def always(method, *args, **kwargs):
 
 
 def f_always(method, *arg_generators, **kwargs):
-    """
-    More functional version of always, where instead
-    of taking in args, it takes in functions which ouput
-    the relevant arguments.
-    """
+    """与 ``always`` 类似，但是传入的多个 ``arg_generators`` 是可调用对象，用于生成参数"""
     assert_is_mobject_method(method)
     mobject = method.__self__
     func = method.__func__
@@ -42,12 +40,14 @@ def f_always(method, *arg_generators, **kwargs):
 
 
 def always_redraw(func):
+    """始终重复调用 ``func`` 生成新物体"""
     mob = func()
     mob.add_updater(lambda m: mob.become(func()))
     return mob
 
 
 def always_shift(mobject, direction=RIGHT, rate=0.1):
+    """将 ``mobject`` 始终向 ``direction`` 方向移动，速度为 ``rate``"""
     mobject.add_updater(
         lambda m, dt: m.shift(dt * rate * direction)
     )
@@ -55,6 +55,7 @@ def always_shift(mobject, direction=RIGHT, rate=0.1):
 
 
 def always_rotate(mobject, rate=20 * DEGREES, **kwargs):
+    """将 ``mobject`` 始终旋转"""
     mobject.add_updater(
         lambda m, dt: m.rotate(dt * rate, **kwargs)
     )
@@ -62,12 +63,9 @@ def always_rotate(mobject, rate=20 * DEGREES, **kwargs):
 
 
 def turn_animation_into_updater(animation, cycle=False, **kwargs):
-    """
-    Add an updater to the animation's mobject which applies
-    the interpolation and update functions of the animation
-
-    If cycle is True, this repeats over and over.  Otherwise,
-    the updater will be popped uplon completion
+    """将 ``animation`` 转化为对执行动画对象的updater
+    
+    - ``cycle`` 为True时循环执行，否则只执行一次
     """
     mobject = animation.mobject
     animation.update_config(**kwargs)
@@ -95,6 +93,7 @@ def turn_animation_into_updater(animation, cycle=False, **kwargs):
 
 
 def cycle_animation(animation, **kwargs):
+    """循环执行 ``animation``"""
     return turn_animation_into_updater(
         animation, cycle=True, **kwargs
     )

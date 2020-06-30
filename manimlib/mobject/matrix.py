@@ -53,6 +53,7 @@ def vector_coordinate_label(vector_mob, integer_labels=True,
 
 
 class Matrix(VMobject):
+    """矩阵"""
     CONFIG = {
         "v_buff": 0.8,
         "h_buff": 1.3,
@@ -66,9 +67,25 @@ class Matrix(VMobject):
     }
 
     def __init__(self, matrix, **kwargs):
-        """
-        Matrix can either either include numbres, tex_strings,
-        or mobjects
+        """传入的 ``matrix`` 可以是二维数组，也可以是二维 ``ndarray``
+
+        数组中的元素可以是数字，也可以是公式（套用 ``TexMobject``）
+
+        - ``v_buff`` : 两元素竖直距离
+        - ``h_buff`` : 两元素水平距离
+        - ``bracket_h_buff`` : 左右括号与中间元素的距离
+        - ``bracket_v_buff`` : 左右括号高度超出中间元素的长度
+        - ``add_background_rectangles_to_entries`` : 给每个元素添加背景矩形（默认为False）
+        - ``include_background_rectangle`` : 给整个矩阵添加背景矩形（默认为False）
+        
+        **结构**:
+        
+        - ``Matrix[0]`` 为中间元素，从左到右从上到下依次编号（只有一维）
+
+            - ``Matrix.mob_matrix`` 为二维数组，包含所有中间元素（按照传入格式）
+
+        - ``Matrix[1]`` 为左括号（[）
+        - ``Matrix[2]`` 为右括号（]）
         """
         VMobject.__init__(self, **kwargs)
         matrix = np.array(matrix, ndmin=1)
@@ -114,27 +131,17 @@ class Matrix(VMobject):
         return self
 
     def get_columns(self):
+        """获取所有列（一个VGroup）"""
         return VGroup(*[
             VGroup(*self.mob_matrix[:, i])
             for i in range(self.mob_matrix.shape[1])
         ])
 
     def set_column_colors(self, *colors):
+        """设置每列的颜色，传入多个 ``colors`` 表示每列颜色"""
         columns = self.get_columns()
         for color, column in zip(colors, columns):
             column.set_color(color)
-        return self
-    
-    def get_rows(self):
-        return VGroup(*[
-            VGroup(*self.mob_matrix[i, :])
-            for i in range(self.mob_matrix.shape[0])
-        ])
-
-    def set_row_colors(self, *colors):
-        rows = self.get_rows()
-        for color, row in zip(colors, rows):
-            row.set_color(color)
         return self
 
     def add_background_to_entries(self):
@@ -146,6 +153,7 @@ class Matrix(VMobject):
         return self.mob_matrix
 
     def get_entries(self):
+        """获取所有元素（VGroup），同 ``Matrix.elements``"""
         return VGroup(*self.get_mob_matrix().flatten())
 
     def get_brackets(self):
@@ -153,6 +161,7 @@ class Matrix(VMobject):
 
 
 class DecimalMatrix(Matrix):
+    """数字矩阵（元素套用 ``DecimalNumber``）"""
     CONFIG = {
         "element_to_mobject": DecimalNumber,
         "element_to_mobject_config": {"num_decimal_places": 1}
@@ -160,18 +169,25 @@ class DecimalMatrix(Matrix):
 
 
 class IntegerMatrix(Matrix):
+    """整数矩阵（元素套用 ``Integer``）"""
     CONFIG = {
         "element_to_mobject": Integer,
     }
 
 
 class MobjectMatrix(Matrix):
+    """由物体构成的矩阵（直接由物体构成矩阵）"""
     CONFIG = {
         "element_to_mobject": lambda m: m,
     }
 
 
 def get_det_text(matrix, determinant=None, background_rect=False, initial_scale_factor=2):
+    """获取行列式的其余文字（det(matrix)=determinant）
+
+    - ``matrix`` : 为要求行列式的矩阵
+    - ``determinant`` : 行列式的值，如果传入了，则包含 ``=determinant``
+    """
     parens = TexMobject("(", ")")
     parens.scale(initial_scale_factor)
     parens.stretch_to_fit_height(matrix.get_height())

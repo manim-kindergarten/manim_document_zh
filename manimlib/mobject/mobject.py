@@ -26,9 +26,7 @@ from manimlib.utils.space_ops import rotation_matrix
 # TODO: Explain array_attrs
 
 class Mobject(Container):
-    """
-    数学物品（屏幕上的所有物体的超类）
-    """
+    """数学物品（屏幕上的所有物体的超类）"""
     CONFIG = {
         "color": WHITE,
         "name": None,
