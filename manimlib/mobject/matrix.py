@@ -53,7 +53,7 @@ def vector_coordinate_label(vector_mob, integer_labels=True,
 
 
 class Matrix(VMobject):
-    """矩阵"""
+    """矩阵（元素套用 ``TexMobject``）"""
     CONFIG = {
         "v_buff": 0.8,
         "h_buff": 1.3,
@@ -69,7 +69,7 @@ class Matrix(VMobject):
     def __init__(self, matrix, **kwargs):
         """传入的 ``matrix`` 可以是二维数组，也可以是二维 ``ndarray``
 
-        数组中的元素可以是数字，也可以是公式（套用 ``TexMobject``）
+        数组中的元素会套在 ``element_to_mobject`` 中
 
         - ``v_buff`` : 两元素竖直距离
         - ``h_buff`` : 两元素水平距离
