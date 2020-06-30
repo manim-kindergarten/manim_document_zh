@@ -42,6 +42,7 @@ class ComplexValueTracker(ValueTracker):
         return complex(*self.points[0, :2])
 
     def set_value(self, z):
+        """将值设为 ``z``"""
         z = complex(z)
         self.points[0, :2] = (z.real, z.imag)
         return self

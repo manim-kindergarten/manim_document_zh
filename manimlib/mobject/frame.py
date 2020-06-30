@@ -22,29 +22,35 @@ class ScreenRectangle(Rectangle):
 
 
 class FullScreenRectangle(ScreenRectangle):
-    """全屏幕大小的矩形"""
     CONFIG = {
         "height": FRAME_HEIGHT,
     }
 
+    def __init__(self, **kwargs):
+        """全屏幕大小的矩形"""
+        super().__init__(**kwargs)
+
 
 class FullScreenFadeRectangle(FullScreenRectangle):
-    """全屏幕大小的矩形（默认无线条，填充黑色，不透明度0.7）"""
     CONFIG = {
         "stroke_width": 0,
         "fill_color": BLACK,
         "fill_opacity": 0.7,
     }
 
+    def __init__(self, **kwargs):
+        """全屏幕大小的矩形（默认无线条，填充黑色，不透明度0.7）"""
+        super().__init__(**kwargs)
+
 
 class PictureInPictureFrame(Rectangle):
-    """和 ``ScreenRectangle`` 相同"""
     CONFIG = {
         "height": 3,
         "aspect_ratio": 16.0 / 9.0
     }
 
     def __init__(self, **kwargs):
+        """和 ``ScreenRectangle`` 类似"""
         digest_config(self, kwargs)
         Rectangle.__init__(
             self,

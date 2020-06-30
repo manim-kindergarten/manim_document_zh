@@ -69,7 +69,7 @@ class Matrix(VMobject):
     def __init__(self, matrix, **kwargs):
         """传入的 ``matrix`` 可以是二维数组，也可以是二维 ``ndarray``
 
-        数组中的元素会套在 ``element_to_mobject`` 中
+        数组中的元素会套在 ``TexMobject`` 中
 
         - ``v_buff`` : 两元素竖直距离
         - ``h_buff`` : 两元素水平距离
@@ -167,12 +167,20 @@ class DecimalMatrix(Matrix):
         "element_to_mobject_config": {"num_decimal_places": 1}
     }
 
+    def __init__(self, matrix, **kwargs):
+        """参数及用法和 ``Matrix`` 相同"""
+        super().__init__(matrix, **kwargs)
+
 
 class IntegerMatrix(Matrix):
     """整数矩阵（元素套用 ``Integer``）"""
     CONFIG = {
         "element_to_mobject": Integer,
     }
+
+    def __init__(self, matrix, **kwargs):
+        """参数及用法和 ``Matrix`` 相同"""
+        super().__init__(matrix, **kwargs)
 
 
 class MobjectMatrix(Matrix):
