@@ -4,6 +4,8 @@ cd manim
 git clone https://github.com/manim-kindergarten/manim_sandbox.git
 cd ../repo
 
+mkdir /usr/lib/python3.5/site-packages/
+
 wget --no-check-certificate  https://pypi.python.org/packages/source/s/setuptools/setuptools-19.6.tar.gz#md5=c607dd118eae682c44ed146367a17e26
 tar -zxvf setuptools-19.6.tar.gz
 cd setuptools-19.6
