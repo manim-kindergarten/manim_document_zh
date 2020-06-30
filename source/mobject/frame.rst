@@ -9,12 +9,12 @@ ScreenRectangle
 FullScreenRectangle
 ******************
 .. autoclass:: manimlib.mobject.frame.FullScreenRectangle
-    :members:
+    
 
 FullScreenFadeRectangle
 ******************
 .. autoclass:: manimlib.mobject.frame.FullScreenFadeRectangle
-    :members:
+    
 
 PictureInPictureFrame
 ******************
