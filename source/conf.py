@@ -42,5 +42,6 @@ html_logo = 'assets/image/Logo_black.png'
 html_theme_options = {
     'logo_only': True,
     'vcs_pageview_mode': 'edit',
-    'style_nav_header_background': "#000000"
+    'style_nav_header_background': '#000000',
+    'github_url': 'https://github.com/manim-kindergarten/manim_document_zh',
 }
