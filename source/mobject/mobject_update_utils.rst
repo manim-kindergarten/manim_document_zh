@@ -1,7 +1,6 @@
 MobjectUpdateUtils
 ========================
 
------
 
 .. autofunction:: manimlib.mobject.mobject_update_utils.assert_is_mobject_method
 
@@ -33,4 +32,3 @@ MobjectUpdateUtils
 
 .. autofunction:: manimlib.mobject.mobject_update_utils.cycle_animation
 
------

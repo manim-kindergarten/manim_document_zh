@@ -5,7 +5,6 @@ Graph Scene
    这一页是elteoremadebeethoven写的 `manim_3feb_docs <https://github.com/Elteoremadebeethoven/manim_3feb_docs.github.io/tree/master/source>`_  `online <https://elteoremadebeethoven.github.io/manim_3feb_docs.github.io/html/index.html>`_ 我翻译+做笔记，把资料整合编辑成方便的文档格式，以方便查阅使用Manim。
    为了更好地体验，建议看这里 `manim_3feb_docs-mobjects-geometric <https://elteoremadebeethoven.github.io/manim_3feb_docs.github.io/html/tree/mobjects/geometric.html>`_  ，Sphinx插件也没问题，不知为何，我的方法和属性没有自动生成^_^# 。
 
-详情可以看这里PyDoc生成的结果 :ref:`manim类属性方法 <manimlibClassesPropertiesMethods>`  。
 
 .. code-block::bash
 

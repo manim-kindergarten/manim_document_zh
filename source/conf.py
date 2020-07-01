@@ -5,7 +5,6 @@
 import sys
 import os
 sys.path.insert(0, os.path.abspath("../../manim/"))
-print(sys.path)
 
 
 # -- Project information --
@@ -13,11 +12,11 @@ project = 'manim'
 copyright = '- This document has been placed in the public domain.'
 # author = '2019EulerTour'
 # author = '2019elteoremadebeethoven'
-author = '鹤翔万里 & Tridu33'  # 这个整合版本借鉴了很多已有的网友/群友资料，具体链接文中都已经标识引用。
+author = 'manim-kindergarten'
 
 
 version = '0.4.0'
-release = 'v0.2' #我想把这里标识为文档
+release = ''
 
 # -- General configuration --
 
