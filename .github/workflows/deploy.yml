@@ -48,7 +48,6 @@ jobs:
     - name: Build document with Sphinx
       run: |
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/manim_document_zh/manim"
-        export PYTHONPATH="$PYTHONPATH:/home/runner/manim_document_zh/manim"
         make html
         cd build/html
         echo "manim.ml" > CNAME
@@ -59,16 +58,3 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages
         FOLDER: build/html
-    
-    - name: Remove CNAME
-      run: |
-        cd build/html
-        rm CNAME
-
-    - name: Deploy to Netlify
-      uses: netlify/actions/cli@master
-      with:
-        args: deploy --dir=build/html --prod
-      env:
-        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
