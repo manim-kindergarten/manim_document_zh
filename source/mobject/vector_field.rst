@@ -12,7 +12,7 @@ StreamLines
     :members:
 
 ShowPassingFlashWithThinningStrokeWidth
-******************
+****************************************
 .. autoclass:: manimlib.mobject.vector_field.ShowPassingFlashWithThinningStrokeWidth
     :members:
 .. raw:: html
@@ -34,6 +34,6 @@ ShowPassingFlashWithThinningStrokeWidth
 
 
 AnimatedStreamLines
-******************
+*******************
 .. autoclass:: manimlib.mobject.vector_field.AnimatedStreamLines
     :members:
