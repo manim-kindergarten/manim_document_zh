@@ -2,12 +2,12 @@ ShapeMatchers
 ===================
 
 SurroundingRectangle
-*****************
+********************
 .. autoclass:: manimlib.mobject.shape_matchers.SurroundingRectangle
     :members:
 
 BackgroundRectangle
-*****************
+*******************
 .. autoclass:: manimlib.mobject.shape_matchers.BackgroundRectangle
     :members:
 
