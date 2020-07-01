@@ -34,5 +34,6 @@ cd ../repo
 
 cd ../manim
 python -m pip install -r requirements.txt
+cd ../repo
 
 make html
