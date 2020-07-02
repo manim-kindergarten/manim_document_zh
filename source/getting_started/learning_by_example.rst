@@ -142,6 +142,7 @@
            self.wait()
 
 .. raw:: html
+
    <video width="560" height="315" controls>
        <source src="../_static/example/WarpSquare.mp4" type="video/mp4">
    </video>
@@ -198,6 +199,7 @@
            self.wait()
 
 .. raw:: html
+
    <video width="560" height="315" controls>
        <source src="../_static/example/WriteStuff.mp4" type="video/mp4">
    </video>
@@ -281,6 +283,7 @@
            self.wait()
 
 .. raw:: html
+
    <video width="560" height="315" controls>
        <source src="../_static/example/UpdatersExample.mp4" type="video/mp4">
    </video>
@@ -394,6 +397,7 @@
            self.wait()
 
 .. raw:: html
+
    <video width="560" height="315" controls>
        <source src="../_static/example/OpeningManimExample.mp4" type="video/mp4">
    </video>
