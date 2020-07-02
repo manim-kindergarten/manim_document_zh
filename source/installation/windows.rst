@@ -42,7 +42,7 @@ VSCode调试manim
 1. 安装好python的官方扩展
 2. 编辑lanuch.json为如下
 
-.. code-block:: json
+.. code-block:: javascript
 
    {
        // 使用 IntelliSense 了解相关属性。 

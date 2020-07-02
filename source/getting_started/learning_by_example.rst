@@ -150,7 +150,7 @@
 前四行和前面的一样，不重复了。第五行同样创建了一个默认的正方形
 
 .. code-block:: python
-   :line-start: 6
+   :lineno-start: 6
 
    self.play(ApplyPointwiseFunction(
        lambda point: complex_to_R3(np.exp(R3_to_complex(point))),
@@ -167,7 +167,7 @@
 会对square的点集施加这个函数的作用（将每个点设为将该点传入函数后的返回值），实现了复变换。
 
 .. code-block:: python
-   :line-start: 10
+   :lineno-start: 10
 
    self.wait()
 
@@ -205,7 +205,7 @@
    </video>
 
 .. code-block:: python
-   :line-start: 5
+   :lineno-start: 5
 
    example_text = TextMobject(
        "This is a some text",
@@ -217,7 +217,7 @@
 会自动识别拆分开字符串，将并将"text"部分设置为黄色。
 
 .. code-block:: python
-   :line-start: 9
+   :lineno-start: 9
 
    example_tex = TexMobject(
        "\\sum_{k=1}^\\infty {1 \\over k^2} = {\\pi^2 \\over 6}",
@@ -227,14 +227,14 @@
 并且在python中，需要将 ``\`` 转义写为 ``\\`` ，或者在字符串前加上 ``r`` ，例如这三行也可以写为：
 
 .. code-block:: python
-   :line-start: 9
+   :lineno-start: 9
 
    example_tex = TexMobject(
        r"\sum_{k=1}^\infty {1 \over k^2} = {\pi^2 \over 6}",
    )
 
 .. code-block:: python
-   :line-start: 12
+   :lineno-start: 12
 
    group = VGroup(example_text, example_tex)
    group.arrange(DOWN)
@@ -245,7 +245,7 @@
 | 第十四行将整个 ``group`` 缩放到宽度为画面宽度，并且距离两边为 ``LARGE_BUFF``
 
 .. code-block:: python
-   :line-start: 16
+   :lineno-start: 16
 
    self.play(Write(example_text))
    self.play(Write(example_tex))
@@ -289,7 +289,7 @@
    </video>
 
 .. code-block:: python
-   :line-start: 5
+   :lineno-start: 5
 
    decimal = DecimalNumber(
        0,
@@ -302,7 +302,7 @@
 | 从第七行起设置了其属性，即显示省略号 ``show_ellipsis=True`` ，小数保留3位 ``num_decimal_places=3`` ，正数包含正号 ``include_sign=True``
 
 .. code-block:: python
-   :line-start: 13
+   :lineno-start: 13
 
    decimal.add_updater(lambda d: d.next_to(square, RIGHT))
    decimal.add_updater(lambda d: d.set_value(square.get_center()[1]))
@@ -314,7 +314,7 @@
 设置了updater之后，每一帧在运行时都会调用传入的函数来更新当前物体，所以传入的函数的参数为一个物体，没有返回值，在函数内部调用这个物体的方法来维护属性
 
 .. code-block:: python
-   :line-start: 15
+   :lineno-start: 15
 
    self.add(square, decimal)
    self.play(
