@@ -51,7 +51,7 @@
 让我们一行一行解析 ``SquareToCircle`` 的代码
 
 .. code-block:: python
-   :lineno-start:
+   :lineno-start: 1
 
    from manimlib.imports import *
 
@@ -141,8 +141,7 @@
            ))
            self.wait()
 
-.. raw::
-
+.. raw:: html
    <video width="560" height="315" controls>
        <source src="../_static/example/WarpSquare.mp4" type="video/mp4">
    </video>
@@ -198,8 +197,7 @@
            self.play(Write(example_tex))
            self.wait()
 
-.. raw::
-
+.. raw:: html
    <video width="560" height="315" controls>
        <source src="../_static/example/WriteStuff.mp4" type="video/mp4">
    </video>
@@ -282,8 +280,7 @@
            )
            self.wait()
 
-.. raw::
-
+.. raw:: html
    <video width="560" height="315" controls>
        <source src="../_static/example/UpdatersExample.mp4" type="video/mp4">
    </video>
@@ -396,8 +393,7 @@
            )
            self.wait()
 
-.. raw::
-
+.. raw:: html
    <video width="560" height="315" controls>
        <source src="../_static/example/OpeningManimExample.mp4" type="video/mp4">
    </video>
