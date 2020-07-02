@@ -1,15 +1,10 @@
 Windows
 ======================
 
-
-.. admonition:: 声明
-
-  这一页是一些中文manim安装教程的推荐
-
 安装教程推荐
 --------------------
 
-知乎用户李狗嗨的安装教程 manimInstallation_ 写的很明白
+知乎李狗嗨的 `安装教程 <https://zhuanlan.zhihu.com/p/70243739>`__ 比较清楚
 
 同时推荐一视数学卷毛杨的两个教程 https://www.bilibili.com/video/av38126904 https://www.bilibili.com/read/cv4139851，
 pdcxs的安装实况 https://www.bilibili.com/video/BV14i4y1G7Yr
@@ -37,7 +32,7 @@ pdcxs的安装实况 https://www.bilibili.com/video/BV14i4y1G7Yr
 VSCode调试manim
 -----------------
 
-**假设你的VSCode打开的文件夹恰好是manim的官方库clone下来的根目录，即manim.py所在目录。**
+假设你的VSCode打开的文件夹恰好是manim的官方库clone下来的根目录，即manim.py所在目录。
 
 1. 安装好python的官方扩展
 2. 编辑lanuch.json为如下
@@ -82,5 +77,3 @@ VSCode调试manim
 
 3. 设置好之后就可以自由使用调试功能进行断点调试等操作了。
 
-
-.. _manimInstallation: https://zhuanlan.zhihu.com/p/70243739

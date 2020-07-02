@@ -1,7 +1,12 @@
 安装指南
 ========================
 
-关于manim的安装教程，其实B站和知乎上已经有很多安装教程写很好的。
+manim安装并不难，只需要解决相关依赖就好了：
+
+1. python及模块
+2. ffmpeg
+3. LaTeX发行版
+4. sox（可选）
 
 **一些推荐的中文安装类教程：**
 
@@ -10,10 +15,9 @@
 -  `pdcxs的专栏教程 <https://www.bilibili.com/read/cv3387999>`__
 -  `pdcxs关于vscode自动运行脚本的教程 <https://www.bilibili.com/read/cv4152112>`__
 
-关于安装后在IDE中颜色会提示错误，尝试按照\ `manim_sandbox的wiki中constants页面 <https://github.com/manim-kindergarten/manim_sandbox/wiki/constants%E5%B8%B8%E9%87%8F>`__\ 最下方所说处理
+关于安装后在IDE中颜色会提示错误，尝试按照 `constants页面最下方 <https://manim.ml/constants.html#id7>`__ 处理
 
-
-`elteoremadebeethoven-manim_3feb_docs <https://github.com/Elteoremadebeethoven/manim_3feb_docs.github.io/tree/master/source>`_ 作者Theorem of Beethoven 做过相关视频，B站搬运链接：`BV1W4411Z7Zt <https://www.bilibili.com/video/BV1W4411Z7Zt>`_ 。
+Theorem of Beethoven也做过相关视频，B站搬运链接：`BV1W4411Z7Zt <https://www.bilibili.com/video/BV1W4411Z7Zt>`__ 。
 
 
 .. toctree::
