@@ -127,11 +127,10 @@ manim类的继承结构
 manim运行顺序
 -------------
 
-|image0|
+.. image:: ../assets/image/manim_exe.png
 
 manim运行的主要顺序如上图所示
 
-.. |image0| image:: ../assets/image/manim_exe.png
 
 
 

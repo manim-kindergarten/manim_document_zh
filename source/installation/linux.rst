@@ -3,7 +3,7 @@ Linux
 
 .. admonition:: 声明
 
-    这一页是EulerTour写的教程,我只是翻译+学习笔记
+    这一页翻译自EulerTour写的教程
 
 Linux安装没太多坑，Windows也可以使用WSL,Docker等利用Linux环境
 

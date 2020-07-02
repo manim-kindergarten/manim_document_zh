@@ -3,7 +3,7 @@ Mac
 
 .. admonition:: 声明
 
-    这一页是EulerTour写的教程,我只是翻译+学习笔记
+    这一页翻译自EulerTour写的教程
 
 
 在Mac OS X上安装系统依赖项的最简单方法是使用 ``brew``

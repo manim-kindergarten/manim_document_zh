@@ -8,5 +8,6 @@ tools/
 manimlib/
 manim.py
 media/
+example_scenes.py
 
 __pycache__/

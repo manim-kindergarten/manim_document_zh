@@ -1,8 +1,3 @@
-.. Manim documentation master file, created by
-   sphinx-quickstart on Mon May 27 14:19:19 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 manim教程文档
 ==================================================
 
@@ -19,7 +14,7 @@ manim教程文档
     - EulerTour写的 `文档 <https://www.eulertour.com/docs/>`__
     - Elteoremadebeethoven的 `manim 3feb 文档 <https://github.com/Elteoremadebeethoven/manim_3feb_docs.github.io/tree/master/source>`_ 
     - Elteoremadebeethoven的 `代码仓库 <https://github.com/Elteoremadebeethoven/AnimationsWithManim>`__ 和配套的YouTube教学视频 (B站上有搬运 `BV1W4411Z7Zt <https://www.bilibili.com/video/BV1W4411Z7Zt>`_ )
-    - cai-hust的学习笔记 `cai-hust_manim-tutorial-CN <https://github.com/cai-hust/manim-tutorial-CN>`__
+    - cai-hust的学习笔记 `cai-hust/manim-tutorial-CN <https://github.com/cai-hust/manim-tutorial-CN>`__
     - mk成员原创编写补充
 
     不是原创部分会标注来源，这里把相关资料翻译，分享学习笔记心得和一些技巧，以方便使用manim。如果来源有疏漏，欢迎提出issue指出
