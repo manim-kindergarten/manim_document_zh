@@ -47,56 +47,72 @@
 ``--video_dir``                       存放视频的目录
 ``--video_output_dir``                保存视频的目录
 ``--tex_dir``                         放TeX文件的目录
-``--livestream``                      流模式
-``--to-twitch``                      
-``--with-key``                       
 ============================== ====== ===========================================================================================================================================================================
 
-使用VSCode的调试功能调试manim
----------------------------------
 
-**假设你的VSCode打开的文件夹恰好是manim的官方库clone下来的根目录，即manim.py所在目录。**
+**示例** ：
 
-1. 安装好python的官方扩展
-2. 编辑lanuch.json为如下
+.. code-block::
 
-.. code:: text
+  python -m manim example_scenes.py SquareToCircle -ps
 
-   {
-       // 使用 IntelliSense 了解相关属性。 
-       // 悬停以查看现有属性的描述。
-       // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
-       "version": "0.2.0",
-       "configurations": [
-           {
-               "name": "Run manim", //渲染manim的480p15预览
-               "type": "python",
-               "request": "launch",
-               "program": "${workspaceFolder}\\manim.py", //manim.py的路径
-               "console": "integratedTerminal",  //使用vscode的终端进行调试
-               "args": [
-                   "${file}",  //当前文件
-                   "-pl",  //480p15预览参数
-                   "--media_dir", //输出位置
-                   "${workspaceFolder}\\export" //这里定义输出位置
-               ]
-           },
-           {
-               "name": "Render manim",//渲染1080p60的manim动画
-               "type": "python",
-               "request": "launch",
-               "program": "${workspaceFolder}\\manim.py",//manim.py的路径
-               "console": "integratedTerminal",//使用vscode的终端进行调试
-               "args": [
-                   "${file}",//当前文件
-                   "--high_quality",//1080p60输出参数
-                   "-p",//预览参数
-                   "--media_dir",//输出位置
-                   "${workspaceFolder}\\export"//这里定义输出位置
-               ]
-           }
-       ]
-   }
+``-s`` 可以在images文件夹下看到保存的最后一张图片，比如在一个比较大的项目中，想看自己的某一张图画出来效果，可以使用 ``-s`` 导出最后一帧
 
-3. 设置好之后就可以自由使用调试功能进行断点调试等操作了。
+.. code-block:: bash
 
+   python -m manim example_scenes.py SquareToCircle -al
+
+``-a`` 把文件中所有scene写成视频。
+
+.. code-block:: bash
+
+  python -m manim example_scenes.py SquareToCircle -o <file_name>
+
+输出 <file_name>.mp4
+
+.. code-block:: bash
+
+  python -m manim example_scenes.py SquareToCircle -pl -c WHITE
+
+.. code-block:: bash
+
+  manim example_scenes.py SquareToCircle -pl -c '#FFFFFF' 
+
+.. code-block:: bash
+
+  manim example_scenes.py SquareToCircle -pl -c '#FFFFFF' 
+  
+白色背景
+
+
+.. code-block:: bash
+   
+   self.play(ShowCreation(square))         #0
+   self.play(Transform(square, circle))    #1
+   self.play(FadeOut(square))              #2
+
+
+SquareToCircle有3个animations渲染任务，可以：
+
+.. code-block:: bash
+
+  python -m manim example_scenes.py SquareToCircle -pl -n 2 
+
+这就能直接从第3个（0开始）animations渲染到最后。
+
+.. code-block:: bash
+
+  python -m manim example_scenes.py SquareToCircle -r 1080
+
+获得 1920x1080 分辨率的视频。
+
+
+**存为gif**
+
+使用 ``python -m manim animation.py name_scene -im`` 渲染中等质量的gif文件，但是选项 ``-i`` 目前被取消了，依旧会生成mp4文件，可以按照常见问题中更改，或者使用 `MK版本的manim <https://github.com/manim-kindergarten/manim>`_
+
+也可以使用ffmpeg手动转换
+
+.. code-block:: bash
+
+   ffmpeg -i SquareToCircle.mp4 SquareToCircle.gif

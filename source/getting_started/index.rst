@@ -32,7 +32,6 @@ Todd Zimmerman整理了 `一个非常好的教程`_ ，介绍了 ``manim`` 的�
     :maxdepth: 2
 
     learning_by_example
-    mathematical_objects
     making_a_scene
     command
     advanced
