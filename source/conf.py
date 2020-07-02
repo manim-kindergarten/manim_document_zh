@@ -32,7 +32,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 language = 'zh_CN'
 html_search_language = 'zh'
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'remain/']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'remain']
 pygments_style = 'default'
 
 html_static_path = ['assets']
