@@ -5,10 +5,18 @@
 .. code-block:: bash
    :lineno-start: 1
 
-   # 视频合并
+   # 视频合并 方法1（不推荐）
    ffmpeg -i scene1.mp4 -c copy scene1.ts
    ffmpeg -i scene2.mp4 -c copy scene2.ts
    ffmpeg -i "concat:scene1.ts|scene2.ts" -c copy merge.mp4
+
+   # 视频合并 方法2
+   # 新建一个文本文件FileList.txt，将要合并的视频按顺序写成类似如下格式。
+   # file 'VideoPath1'
+   # file 'VideoPath2'
+   # ...
+   # 然后使用如下命令合并。
+   ffmpeg -f concat -safe 0 -i "FileList.txt" -c copy -y "merged.mp4"
 
    # mp3合并
    ffmpeg -i "concat:bgm1.mp3|bgm2.mp3" -acodec copy merge.mp3
@@ -36,3 +44,4 @@ ffmpeg文档
 - 官方Wiki：http://trac.ffmpeg.org/wiki 
 - 官方文档：https://ffmpeg.org/documentation.html
 - 2018中文文档：http://itiit.cn/html/ffmpeg.html
+- 老刘常用的FFmpeg命令：http://www.bathome.net/thread-54211-1-1.html
