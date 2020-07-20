@@ -353,9 +353,9 @@ Q4: 如何使用傅里叶级数作图
 
 ::
 
-       active_projects/diffyq/part2/fourier_series.py
-       active_projects/diffyq/part4/fourier_series_scenes.py
-       active_projects/diffyq/part4/long_fourier_series.py
+       from_3b1b/active/diffyq/part2/fourier_series.py
+       from_3b1b/active/diffyq/part4/fourier_series_scenes.py
+       from_3b1b/active/diffyq/part4/long_fourier_series.py
 
 Q5: 傅里叶级数作图如何调整时长
 ------------------------------
