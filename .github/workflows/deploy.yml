@@ -31,6 +31,9 @@ jobs:
         cd setuptools-19.6
         sudo python3 setup.py build
         sudo python3 setup.py install
+        pip3 install --upgrade setuptools
+
+
     
     - name: Install sphinx
       run: |
