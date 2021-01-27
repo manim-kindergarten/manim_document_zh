@@ -43,18 +43,13 @@ rate_func
 .. image:: ../assets/image/rate_functions.png
 
 效果如下：
+.. raw:: html
+
+    <video class="manim-video" controls loop autoplay src="../_static/mk/RateFunctions.mp4"></video>
 
 .. raw:: html
 
-    <video width="560" height="315" controls>
-        <source src="../_static/mk/RateFunctions.mp4" type="video/mp4">
-    </video>
-
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/mk/RateFunctions2.mp4" type="video/mp4">
-    </video>
+    <video class="manim-video" controls loop autoplay src="../_static/mk/RateFunctions2.mp4"></video>
 
 
 lag_ratio

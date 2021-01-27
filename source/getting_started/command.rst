@@ -23,9 +23,9 @@
 
 **以下是所有manim的选项**：
 
-============================== ====== ===========================================================================================================================================================================
+============================== ====== ========================================
 选项                           简写   含义
-============================== ====== ===========================================================================================================================================================================
+============================== ====== ========================================
 ``--preview``                  ``-p`` 渲染之后打开预览
 ``--write_to_movie``           ``-w`` 使用最高质量渲染(默认1440P60)
 ``--save_last_frame``          ``-s`` 保存最后一帧图片
@@ -33,7 +33,7 @@
 ``--medium_quality``           ``-m`` 使用中等质量渲染(默认720P30)
 ``--high_quality``                    使用高质量渲染(默认1080P60)
 ``--save_pngs``                ``-g`` 导出每一帧
-``--save_as_gif``              ``-i`` 保存为gif(需要按照\ `常见问题 <https://github.com/manim-kindergarten/manim_sandbox/blob/master/documents/manim%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98v2.1.pdf>`__\ 中修改源码)
+``--save_as_gif``              ``-i`` 保存为gif(需要按照常见问题中修改源码)
 ``--show_file_in_finder``      ``-f`` 渲染完打开文件夹
 ``--transparent``              ``-t`` 渲染alpha通道，视频为mov格式
 ``--quiet``                    ``-q``
@@ -41,49 +41,44 @@
 ``--file_name``                ``-o`` 视频文件保存的名字，后面接文件名
 ``-start_at_animation_number`` ``-n`` 后面接两个数(逗号隔开)仅渲染一部分动画
 ``--resolution``               ``-r`` 渲染视频的画面大小，给出height,width
-``--color``                    ``-c`` 背景颜色，后面接颜色(constants中定义或字符串“#FFFFFF”这样)
+``--color``                    ``-c`` 背景颜色，后面接颜色
 ``--sound``                           运行结束后播放成功或者失败的声音
 ``--leave_progress_bars``             保持进度条留在终端中
 ``--video_dir``                       存放视频的目录
 ``--video_output_dir``                保存视频的目录
 ``--tex_dir``                         放TeX文件的目录
-============================== ====== ===========================================================================================================================================================================
+============================== ====== ========================================
 
 
 **示例** ：
+
+``-s`` 可以在images文件夹下看到保存的最后一张图片，比如在一个比较大的项目中，想看自己的某一张图画出来效果，可以使用 ``-s`` 导出最后一帧：
 
 .. code-block::
 
   python -m manim example_scenes.py SquareToCircle -ps
 
-``-s`` 可以在images文件夹下看到保存的最后一张图片，比如在一个比较大的项目中，想看自己的某一张图画出来效果，可以使用 ``-s`` 导出最后一帧
+``-a`` 把文件中所有scene写成视频：
 
 .. code-block:: bash
 
    python -m manim example_scenes.py SquareToCircle -al
 
-``-a`` 把文件中所有scene写成视频。
+输出 <file_name>.mp4：
 
 .. code-block:: bash
 
   python -m manim example_scenes.py SquareToCircle -o <file_name>
 
-输出 <file_name>.mp4
+白色背景：
 
 .. code-block:: bash
 
   python -m manim example_scenes.py SquareToCircle -pl -c WHITE
-
-.. code-block:: bash
-
-  manim example_scenes.py SquareToCircle -pl -c '#FFFFFF' 
-
-.. code-block:: bash
-
-  manim example_scenes.py SquareToCircle -pl -c '#FFFFFF' 
+  python -m manim example_scenes.py SquareToCircle -pl -c '#FFFFFF' 
   
-白色背景
 
+SquareToCircle有3个animations渲染任务：
 
 .. code-block:: bash
    
@@ -91,20 +86,18 @@
    self.play(Transform(square, circle))    #1
    self.play(FadeOut(square))              #2
 
-
-SquareToCircle有3个animations渲染任务，可以：
+这就能直接从第3个（0开始）animations渲染到最后:
 
 .. code-block:: bash
 
   python -m manim example_scenes.py SquareToCircle -pl -n 2 
 
-这就能直接从第3个（0开始）animations渲染到最后。
+
+获得 1920x1080 分辨率的视频:
 
 .. code-block:: bash
 
   python -m manim example_scenes.py SquareToCircle -r 1080
-
-获得 1920x1080 分辨率的视频。
 
 
 **存为gif**

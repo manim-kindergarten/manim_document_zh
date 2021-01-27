@@ -11,12 +11,9 @@ Homotopy
 ***********************
 .. autoclass:: manimlib.animation.movement.Homotopy
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/HomotopyExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: HomotopyExample
+  :media: ../_static/manim_3fed/HomotopyExample.mp4
 
   class HomotopyExample(Scene):
       def construct(self):
@@ -49,12 +46,9 @@ PhaseFlow
 ***********************
 .. autoclass:: manimlib.animation.movement.PhaseFlow
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/PhaseFlowExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: PhaseFlowExample
+  :media: ../_static/manim_3fed/PhaseFlowExample.mp4
 
   class PhaseFlowExample(Scene):
       def construct(self):
@@ -79,12 +73,9 @@ MoveAlongPath
 ***********************
 .. autoclass:: manimlib.animation.movement.MoveAlongPath
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/MoveAlongPathExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: MoveAlongPathExample
+  :media: ../_static/manim_3fed/MoveAlongPathExample.mp4
 
   class MoveAlongPathExample(Scene):
       def construct(self):

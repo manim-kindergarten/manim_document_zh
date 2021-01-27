@@ -17,12 +17,9 @@ ShowCreation
 ***************
 .. autoclass:: manimlib.animation.creation.ShowCreation
     :members:
-.. raw:: html
 
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/ShowCreationExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+.. manim-example:: ShowCreationExample
+  :media: ../_static/manim_3fed/ShowCreationExample.mp4
 
   class ShowCreationExample(Scene):
       def construct(self):
@@ -44,12 +41,9 @@ Uncreate
 *********
 .. autoclass:: manimlib.animation.creation.Uncreate
     :members:
-.. raw:: html
 
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/UncreateExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+.. manim-example:: UncreateExample
+  :media: ../_static/manim_3fed/UncreateExample.mp4
 
   class UncreateExample(Scene):
       def construct(self):
@@ -75,12 +69,8 @@ DrawBorderThenFill
 **********************
 .. autoclass:: manimlib.animation.creation.DrawBorderThenFill
     
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/DrawBorderThenFillExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+.. manim-example:: DrawBorderThenFillExample
+  :media: ../_static/manim_3fed/DrawBorderThenFillExample.mp4
 
   class DrawBorderThenFillExample(Scene):
       def construct(self):
@@ -102,12 +92,9 @@ Write
 *****************
 .. autoclass:: manimlib.animation.creation.Write
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/WriteExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: WriteExample
+  :media: ../_static/manim_3fed/WriteExample.mp4
 
   class WriteExample(Scene):
       def construct(self):
@@ -129,12 +116,9 @@ ShowIncreasingSubsets
 ***************************
 .. autoclass:: manimlib.animation.creation.ShowIncreasingSubsets
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/mk/ShowIncreasingSubsetsExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: ShowIncreasingSubsetsExample
+  :media: ../_static/mk/ShowIncreasingSubsetsExample.mp4
 
   class ShowIncreasingSubsetsExample(Scene):
       def construct(self):
@@ -148,12 +132,9 @@ ShowSubmobjectsOneByOne
 ***************************
 .. autoclass:: manimlib.animation.creation.ShowSubmobjectsOneByOne
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/mk/ShowSubmobjectsOneByOneExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: ShowSubmobjectsOneByOneExample
+  :media: ../_static/mk/ShowSubmobjectsOneByOneExample.mp4
 
   class ShowSubmobjectsOneByOneExample(Scene):
       def construct(self):

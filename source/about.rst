@@ -28,5 +28,4 @@ manim_document_zh这个项目是由 `manim-kindergarten <https://github.com/mani
 的 `README <https://github.com/manim-kindergarten/manim_sandbox/blob/master/README.md>`_ 中查看
 
 
-Copyright - This document has been placed in the public domain.
 

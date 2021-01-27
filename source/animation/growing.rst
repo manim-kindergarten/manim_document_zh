@@ -10,12 +10,9 @@ GrowFromPoint
 ********************
 .. autoclass:: manimlib.animation.growing.GrowFromPoint
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/GrowFromPointExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: GrowFromPointExample
+  :media: ../_static/manim_3fed/GrowFromPointExample.mp4
 
   class GrowFromPointExample(Scene):
       def construct(self):
@@ -39,12 +36,9 @@ GrowFromCenter
 *****************
 .. autoclass:: manimlib.animation.growing.GrowFromCenter
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/GrowFromCenterExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: GrowFromCenterExample
+  :media: ../_static/manim_3fed/GrowFromCenterExample.mp4
 
   class GrowFromCenterExample(Scene):
       def construct(self):
@@ -66,12 +60,9 @@ GrowFromEdge
 *****************
 .. autoclass:: manimlib.animation.growing.GrowFromEdge
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/GrowFromEdgeExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: GrowFromEdgeExample
+  :media: ../_static/manim_3fed/GrowFromEdgeExample.mp4
 
   class GrowFromEdgeExample(Scene):
       def construct(self):
@@ -95,12 +86,9 @@ GrowArrow
 ***************
 .. autoclass:: manimlib.animation.growing.GrowArrow
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/GrowArrowExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: GrowArrowExample
+  :media: ../_static/manim_3fed/GrowArrowExample.mp4
 
   class GrowArrowExample(Scene):
       def construct(self):
@@ -121,12 +109,9 @@ SpinInFromNothing
 ***********************
 .. autoclass:: manimlib.animation.growing.SpinInFromNothing
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/SpinInFromNothingExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: SpinInFromNothingExample
+  :media: ../_static/manim_3fed/SpinInFromNothingExample.mp4
 
   class SpinInFromNothingExample(Scene):
       def construct(self):

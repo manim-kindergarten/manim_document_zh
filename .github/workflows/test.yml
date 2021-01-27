@@ -1,16 +1,11 @@
-name: docs
+name: Test Pull Request
 
-on:
-  push:
-    branches:
-      - master
-      - manim
-      - theme
+on: pull_request
 
 jobs:
-  build_docs_and_deploy:
+  test:
     runs-on: ubuntu-latest
-    name: build up document and deploy
+    name: test pull request
 
     steps:
     - name: Checkout
@@ -36,11 +31,3 @@ jobs:
         export SPHINXBUILD="python3 -m sphinx"
         make html
         cd build/html
-        echo "manim.ml" > CNAME
-        
-    # - name: Deploy to GitHub pages
-    #   uses: JamesIves/github-pages-deploy-action@master
-    #   env:
-    #     ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-    #     BRANCH: gh-pages
-    #     FOLDER: build/html
