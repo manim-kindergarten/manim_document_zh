@@ -43,6 +43,7 @@ rate_func
 .. image:: ../assets/image/rate_functions.png
 
 效果如下：
+
 .. raw:: html
 
     <video class="manim-video" controls loop autoplay src="../_static/mk/RateFunctions.mp4"></video>
