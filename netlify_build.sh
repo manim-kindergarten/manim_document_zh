@@ -4,6 +4,7 @@ cd manim
 git clone https://github.com/manim-kindergarten/manim_sandbox.git
 
 cd ..
+/opt/buildhome/python3.7/bin/python3.7 -m pip install --upgrade pip
 python -m pip uninstall sphinx -y
 git clone https://github.com/sphinx-doc/sphinx
 cd sphinx
