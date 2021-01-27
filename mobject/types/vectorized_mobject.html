@@ -1,0 +1,596 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="../../about.html" /><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="PMobject" href="point_cloud_mobject.html" /><link rel="prev" title="三种物体基类types" href="index.html" />
+
+    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.4.3, furo 2020.10.05.beta9"/>
+        <title>VMobject - manim  文档</title>
+      <link rel="stylesheet" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" href="../../_static/custom.css" />
+    <link rel="stylesheet" href="../../_static/colors.css" />
+    <link rel="stylesheet" href="../../_static/styles/default.css?7920afa2769845a105ffb41f">
+    <link rel="stylesheet" href="../../_static/pygments.css?7920afa2769845a105ffb41f">
+    
+<style>
+  :root {
+    --color-code-background: #f8f8f8;
+    --color-code-foreground: #000000;
+  
+  }
+</style>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
+      <script src="../../_static/underscore.js"></script>
+      
+        <script src="../../_static/doctools.js" defer></script>
+      
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/translations.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?7920afa2769845a105ffb41f"></script></head>
+  <body dir="">
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke-width="1.5" stroke="#101010" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z"/>
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+
+<div class="page">
+  <header class="mobile-header">
+    <label class="header-left nav-overlay-icon" for="__navigation">
+      <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+    </label>
+    <div class="header-center"><div class="brand">manim  文档</div></div>
+    <div class="header-right"></div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand centered" href="../../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="../../_static/Logo_white.png" alt="Logo"/>
+  </div>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html">
+  <input class="sidebar-search" placeholder="Search" name="q">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form><div class="sidebar-tree sidebar-scroll">
+  <p class="caption"><span class="caption-text">入门教程向</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../installation/index.html">安装指南</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../installation/linux.html">Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../installation/mac.html">Mac</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../installation/windows.html">Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../installation/ffmpeg.html">附：ffmpeg相关用法</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../getting_started/index.html">快速入门</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label for="toctree-checkbox-2"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/examples.html">案例学习</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/command.html">运行命令</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/config.html">CONFIG字典用法</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/structure.html">manim结构</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../problems/index.html">常见问题</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../problems/v2.3.html">安装问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../problems/v2.3.html#id5">运行时问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../problems/v2.3.html#id14">其它问题</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../homework/index.html">练习部分(TODO)</a></li>
+</ul>
+<p class="caption"><span class="caption-text">进阶文档向</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../constants.html">常量部分constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../container/index.html">属性容器container</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../animation/index.html">动画部分animation</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label for="toctree-checkbox-4"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../animation/creation.html">Creation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../animation/fading.html">Fading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../animation/growing.html">Growing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../animation/indication.html">Indication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../animation/movement.html">Movement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../animation/numbers.html">Numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../animation/rotation.html">Rotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../animation/transform.html">Transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../animation/update.html">Update</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../animation/composition.html">Composition</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../index.html">物体部分mobject</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label for="toctree-checkbox-5"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../mobject.html">数学物品Mobject</a></li>
+<li class="toctree-l2 current has-children"><a class="reference internal" href="index.html">三种物体基类types</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label for="toctree-checkbox-6"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">VMobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="point_cloud_mobject.html">PMobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="image_mobject.html">ImageMobject</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../svg/index.html">SVG图像相关物体svg</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../svg/svg_mobject.html">SVGMobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../svg/tex_mobject.html">TexMobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../svg/text_mobject.html">Text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../svg/code_mobject.html">Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../svg/brace.html">Brace</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../changing.html">Changing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coordinate_systems.html">CoordinateSystems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../frame.html">Frame</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../geometry.html">Geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../matrix.html">Matrix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject_update_utils.html">MobjectUpdateUtils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../number_line.html">NumberLine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../numbers.html">Numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../probability.html">Probability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shape_matchers.html">ShapeMatchers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../three_d_shading_utils.html">ThreeDShadingUtils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../three_d_utils.html">ThreeDUtils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../three_dimensions.html">ThreeDimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../value_tracker.html">ValueTracker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vector_field.html">VectorField</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../camera/index.html">相机部分camera</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label for="toctree-checkbox-8"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../camera/camera.html">Camera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../camera/mapping_camera.html">MappingCamera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../camera/moving_camera.html">MovingCamera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../camera/multi_camera.html">MultiCamera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../camera/three_d_camera.html">ThreeDCamera</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../scene/index.html">场景部分scene(TODO)</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label for="toctree-checkbox-9"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../scene/scene.html">Scene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scene/scene_file_writer.html">SceneFileWriter(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scene/moving_camera_scene.html">MovingCameraScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scene/zoomed_scene.html">ZoomedScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scene/graph_scene.html">GraphScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scene/three_d_scene.html">ThreeDScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scene/reconfigurable_scene.html">ReconfigurableScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scene/vector_space_scene.html">VectorScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scene/sample_space_scene.html">SampleSpaceScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../scene/scene_from_video.html">SceneFromVideo(TODO)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../utils/index.html">工具函数utils</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label for="toctree-checkbox-10"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../utils/bezier.html">Bezier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../utils/color.html">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../utils/config_ops.html">CONFIG_ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../utils/file_ops.html">FILE_ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../utils/images.html">Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../utils/iterables.html">Iterables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../utils/paths.html">Paths</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../utils/rate_functions.html">Rate_functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../utils/simple_functions.html">Simple_functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../utils/sounds.html">Sounds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../utils/space_ops.html">Space_ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../utils/strings.html">Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../utils/tex_file_writing.html">Tex_file_writing</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">杂项</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../manim_sandbox/index.html">manim_sandbox中的自定义类</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label for="toctree-checkbox-11"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../manim_sandbox/functions.html">自定义工具函数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manim_sandbox/mobjects.html">自定义物体</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manim_sandbox/scenes.html">自定义场景</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../manim_sandbox/animations.html">自定义动画</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../contribution.html">贡献规则及编写指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about.html">关于</a></li>
+</ul>
+
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <main class="main">
+    <div class="content">
+      <article role="main">
+        <label class="toc-overlay-icon" for="__toc">
+          <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        </label>
+        <div class="section" id="vmobject">
+<h1>VMobject<a class="headerlink" href="#vmobject" title="永久链接至标题">¶</a></h1>
+<p><code class="xref py py-class docutils literal notranslate"><span class="pre">VMobject</span></code> 是
+<code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code> 的子类，使用贝塞尔曲线来表示物体</p>
+<div class="section" id="id1">
+<h2>VMobject<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.vectorized_mobject.</code><code class="sig-name descname">VMobject</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject" title="永久链接至目标">¶</a></dt>
+<dd><dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.add_cubic_bezier_curve">
+<code class="sig-name descname">add_cubic_bezier_curve</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">anchor1</span></em>, <em class="sig-param"><span class="n">handle1</span></em>, <em class="sig-param"><span class="n">handle2</span></em>, <em class="sig-param"><span class="n">anchor2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.add_cubic_bezier_curve" title="永久链接至目标">¶</a></dt>
+<dd><p>根据锚点和控制点添加一条贝塞尔曲线</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.add_cubic_bezier_curve_to">
+<code class="sig-name descname">add_cubic_bezier_curve_to</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">handle1</span></em>, <em class="sig-param"><span class="n">handle2</span></em>, <em class="sig-param"><span class="n">anchor</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.add_cubic_bezier_curve_to" title="永久链接至目标">¶</a></dt>
+<dd><p>添加一条贝塞尔曲线到</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.add_line_to">
+<code class="sig-name descname">add_line_to</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.add_line_to" title="永久链接至目标">¶</a></dt>
+<dd><p>添加一条直线到 <code class="docutils literal notranslate"><span class="pre">point</span></code></p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.add_points_as_corners">
+<code class="sig-name descname">add_points_as_corners</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">points</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.add_points_as_corners" title="永久链接至目标">¶</a></dt>
+<dd><p>添加一系列作为拐角的点</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.add_smooth_curve_to">
+<code class="sig-name descname">add_smooth_curve_to</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">points</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.add_smooth_curve_to" title="永久链接至目标">¶</a></dt>
+<dd><p>添加一条平滑曲线到</p>
+<p>如果输入了两个点，第一个点作为控制点，第二个点作为锚点</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.add_subpath">
+<code class="sig-name descname">add_subpath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">points</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.add_subpath" title="永久链接至目标">¶</a></dt>
+<dd><p>添加一条子路径</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.append_points">
+<code class="sig-name descname">append_points</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">new_points</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.append_points" title="永久链接至目标">¶</a></dt>
+<dd><p>添加新点集</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.append_vectorized_mobject">
+<code class="sig-name descname">append_vectorized_mobject</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vectorized_mobject</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.append_vectorized_mobject" title="永久链接至目标">¶</a></dt>
+<dd><p>把一个vmobject中的所有点添加到当前点中</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.apply_function">
+<code class="sig-name descname">apply_function</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.apply_function" title="永久链接至目标">¶</a></dt>
+<dd><p>施加function作用</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.change_anchor_mode">
+<code class="sig-name descname">change_anchor_mode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mode</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.change_anchor_mode" title="永久链接至目标">¶</a></dt>
+<dd><p>根据锚点设置为平滑(smooth)或不平滑(jagged)</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.fade">
+<code class="sig-name descname">fade</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">darkness</span><span class="o">=</span><span class="default_value">0.5</span></em>, <em class="sig-param"><span class="n">family</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.fade" title="永久链接至目标">¶</a></dt>
+<dd><p>变暗，程度为 <code class="docutils literal notranslate"><span class="pre">darkness</span></code> （相对值）</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.generate_rgbas_array">
+<code class="sig-name descname">generate_rgbas_array</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span></em>, <em class="sig-param"><span class="n">opacity</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.generate_rgbas_array" title="永久链接至目标">¶</a></dt>
+<dd><p>均可以是单个值或元组/列表，当有多个时，则沿 <code class="docutils literal notranslate"><span class="pre">sheen_direction</span></code> 方向简便</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.get_anchors_and_handles">
+<code class="sig-name descname">get_anchors_and_handles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_anchors_and_handles" title="永久链接至目标">¶</a></dt>
+<dd><p>returns anchors1, handles1, handles2, anchors2,
+where (anchors1[i], handles1[i], handles2[i], anchors2[i])
+will be four points defining a cubic bezier curve
+for any i in range(0, len(anchors1))</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.get_cubic_bezier_tuples">
+<code class="sig-name descname">get_cubic_bezier_tuples</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_cubic_bezier_tuples" title="永久链接至目标">¶</a></dt>
+<dd><p>获取每组贝塞尔曲线的点集</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.get_nth_curve_function">
+<code class="sig-name descname">get_nth_curve_function</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_nth_curve_function" title="永久链接至目标">¶</a></dt>
+<dd><p>获取第n条贝塞尔曲线的函数</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.get_nth_curve_points">
+<code class="sig-name descname">get_nth_curve_points</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_nth_curve_points" title="永久链接至目标">¶</a></dt>
+<dd><p>获取第n条贝塞尔曲线</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.get_num_curves">
+<code class="sig-name descname">get_num_curves</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_num_curves" title="永久链接至目标">¶</a></dt>
+<dd><p>获取供几条贝塞尔曲线</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.get_style">
+<code class="sig-name descname">get_style</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_style" title="永久链接至目标">¶</a></dt>
+<dd><p>获取全部样式</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.get_subcurve">
+<code class="sig-name descname">get_subcurve</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_subcurve" title="永久链接至目标">¶</a></dt>
+<dd><p>返回[a,b]之间的部分（曲线）</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.get_subpaths">
+<code class="sig-name descname">get_subpaths</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_subpaths" title="永久链接至目标">¶</a></dt>
+<dd><p>获取所有子路径</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.init_colors">
+<code class="sig-name descname">init_colors</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.init_colors" title="永久链接至目标">¶</a></dt>
+<dd><p>初始化样式，VMobject的样式有以下</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">fill</span></code> 填充样式</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>颜色: <code class="docutils literal notranslate"><span class="pre">fill_color</span></code> 或 <code class="docutils literal notranslate"><span class="pre">color</span></code></p></li>
+<li><p>不透明度: <code class="docutils literal notranslate"><span class="pre">fill_opacity</span></code></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stroke</span></code> 线条样式</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>颜色: <code class="docutils literal notranslate"><span class="pre">stroke_color</span></code> 或 <code class="docutils literal notranslate"><span class="pre">color</span></code></p></li>
+<li><p>宽度: <code class="docutils literal notranslate"><span class="pre">stroke_width</span></code></p></li>
+<li><p>不透明度: <code class="docutils literal notranslate"><span class="pre">stroke_opacity</span></code></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">background_stroke</span></code> 背景线条样式</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>颜色: <code class="docutils literal notranslate"><span class="pre">background_stroke_color</span></code> 或 <code class="docutils literal notranslate"><span class="pre">color</span></code></p></li>
+<li><p>宽度: <code class="docutils literal notranslate"><span class="pre">background_stroke_width</span></code></p></li>
+<li><p>不透明度: <code class="docutils literal notranslate"><span class="pre">background_stroke_opacity</span></code></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sheen</span></code> 光泽样式</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>光泽尺度: <code class="docutils literal notranslate"><span class="pre">sheen_factor</span></code></p></li>
+<li><p>光泽方向: <code class="docutils literal notranslate"><span class="pre">sheen_direction</span></code></p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.insert_n_curves">
+<code class="sig-name descname">insert_n_curves</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.insert_n_curves" title="永久链接至目标">¶</a></dt>
+<dd><p>插入n条曲线</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.interpolate_color">
+<code class="sig-name descname">interpolate_color</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject1</span></em>, <em class="sig-param"><span class="n">mobject2</span></em>, <em class="sig-param"><span class="n">alpha</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.interpolate_color" title="永久链接至目标">¶</a></dt>
+<dd><p>在mobject1和mobject2的样式之间插值</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.is_closed">
+<code class="sig-name descname">is_closed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.is_closed" title="永久链接至目标">¶</a></dt>
+<dd><p>判断是否闭合</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.match_style">
+<code class="sig-name descname">match_style</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vmobject</span></em>, <em class="sig-param"><span class="n">family</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.match_style" title="永久链接至目标">¶</a></dt>
+<dd><p>和 <code class="docutils literal notranslate"><span class="pre">vmobject</span></code> 匹配样式</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.point_from_proportion">
+<code class="sig-name descname">point_from_proportion</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">alpha</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.point_from_proportion" title="永久链接至目标">¶</a></dt>
+<dd><p>在整条路径上占比为alpha处的点</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.pointwise_become_partial">
+<code class="sig-name descname">pointwise_become_partial</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vmobject</span></em>, <em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.pointwise_become_partial" title="永久链接至目标">¶</a></dt>
+<dd><p>把vmobject的[a,b]部分作为自己的全部（ab为0~1之间的数）</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.scale_handle_to_anchor_distances">
+<code class="sig-name descname">scale_handle_to_anchor_distances</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">factor</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.scale_handle_to_anchor_distances" title="永久链接至目标">¶</a></dt>
+<dd><p>If the distance between a given handle point H and its associated
+anchor point A is d, then it changes H to be a distances factor*d
+away from A, but so that the line from A to H doesn’t change.
+This is mostly useful in the context of applying a (differentiable)
+function, to preserve tangency properties.  One would pull all the
+handles closer to their anchors, apply the function then push them out
+again.</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_anchors_and_handles">
+<code class="sig-name descname">set_anchors_and_handles</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">anchors1</span></em>, <em class="sig-param"><span class="n">handles1</span></em>, <em class="sig-param"><span class="n">handles2</span></em>, <em class="sig-param"><span class="n">anchors2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_anchors_and_handles" title="永久链接至目标">¶</a></dt>
+<dd><p>设置锚点和控制点</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_background_stroke">
+<code class="sig-name descname">set_background_stroke</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_background_stroke" title="永久链接至目标">¶</a></dt>
+<dd><p>设置 <code class="docutils literal notranslate"><span class="pre">background_stroke</span></code> 样式</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_color">
+<code class="sig-name descname">set_color</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span></em>, <em class="sig-param"><span class="n">family</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_color" title="永久链接至目标">¶</a></dt>
+<dd><p>设置 <code class="docutils literal notranslate"><span class="pre">fill</span></code> 和 <code class="docutils literal notranslate"><span class="pre">stroke</span></code> 的颜色</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_fill">
+<code class="sig-name descname">set_fill</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">opacity</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">family</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_fill" title="永久链接至目标">¶</a></dt>
+<dd><p>设置 <code class="docutils literal notranslate"><span class="pre">fill</span></code> 样式</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_opacity">
+<code class="sig-name descname">set_opacity</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">opacity</span></em>, <em class="sig-param"><span class="n">family</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_opacity" title="永久链接至目标">¶</a></dt>
+<dd><p>设置 <code class="docutils literal notranslate"><span class="pre">fill</span></code> 、 <code class="docutils literal notranslate"><span class="pre">stroke</span></code> 和 <code class="docutils literal notranslate"><span class="pre">background_stroke</span></code> 的不透明度</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_points_as_corners">
+<code class="sig-name descname">set_points_as_corners</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">points</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_points_as_corners" title="永久链接至目标">¶</a></dt>
+<dd><p>设置一系列点作为折线拐点</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_points_smoothly">
+<code class="sig-name descname">set_points_smoothly</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">points</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_points_smoothly" title="永久链接至目标">¶</a></dt>
+<dd><p>添加一系列点，并平滑处理</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_shade_in_3d">
+<code class="sig-name descname">set_shade_in_3d</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">z_index_as_group</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_shade_in_3d" title="永久链接至目标">¶</a></dt>
+<dd><p>设置在3D下的效果</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_sheen">
+<code class="sig-name descname">set_sheen</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">factor</span></em>, <em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">family</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_sheen" title="永久链接至目标">¶</a></dt>
+<dd><p>设置 <code class="docutils literal notranslate"><span class="pre">sheen</span></code> 样式</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_sheen_direction">
+<code class="sig-name descname">set_sheen_direction</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">direction</span></em>, <em class="sig-param"><span class="n">family</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_sheen_direction" title="永久链接至目标">¶</a></dt>
+<dd><p>设置光泽方向 <code class="docutils literal notranslate"><span class="pre">sheen_direction</span></code></p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_stroke">
+<code class="sig-name descname">set_stroke</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">width</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">opacity</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">background</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">family</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_stroke" title="永久链接至目标">¶</a></dt>
+<dd><p>设置 <code class="docutils literal notranslate"><span class="pre">stroke</span></code> 样式</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_style">
+<code class="sig-name descname">set_style</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fill_color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fill_opacity</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">stroke_color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">stroke_width</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">stroke_opacity</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">background_stroke_color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">background_stroke_width</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">background_stroke_opacity</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sheen_factor</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sheen_direction</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">background_image_file</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">family</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_style" title="永久链接至目标">¶</a></dt>
+<dd><p>允许设置全部样式</p>
+</dd></dl>
+</dd></dl>
+</div>
+<div class="section" id="vgroup">
+<h2>VGroup<a class="headerlink" href="#vgroup" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.types.vectorized_mobject.VGroup">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.vectorized_mobject.</code><code class="sig-name descname">VGroup</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">vmobjects</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VGroup" title="永久链接至目标">¶</a></dt>
+<dd><p>和 <code class="docutils literal notranslate"><span class="pre">VMobject</span></code> 相同，主要用作包含一些子物体（必须都是VMobject）</p>
+</dd></dl>
+</div>
+<div class="section" id="vectorizedpoint">
+<h2>VectorizedPoint<a class="headerlink" href="#vectorizedpoint" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.types.vectorized_mobject.VectorizedPoint">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.vectorized_mobject.</code><code class="sig-name descname">VectorizedPoint</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">location</span><span class="o">=</span><span class="default_value">array([0., 0., 0.])</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VectorizedPoint" title="永久链接至目标">¶</a></dt>
+<dd><p>以VMobject形式存在的单个点</p>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VectorizedPoint.get_height">
+<code class="sig-name descname">get_height</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VectorizedPoint.get_height" title="永久链接至目标">¶</a></dt>
+<dd><p>获取高度</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VectorizedPoint.get_width">
+<code class="sig-name descname">get_width</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VectorizedPoint.get_width" title="永久链接至目标">¶</a></dt>
+<dd><p>获取宽度</p>
+</dd></dl>
+</dd></dl>
+</div>
+<div class="section" id="curvesassubmobjects">
+<h2>CurvesAsSubmobjects<a class="headerlink" href="#curvesassubmobjects" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.types.vectorized_mobject.CurvesAsSubmobjects">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.vectorized_mobject.</code><code class="sig-name descname">CurvesAsSubmobjects</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vmobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.CurvesAsSubmobjects" title="永久链接至目标">¶</a></dt>
+<dd><p>传入一个VMobject实例（物体），将其所有段曲线作为子物体（一个字物体为一条曲线）</p>
+</dd></dl>
+</div>
+<div class="section" id="dashedvmobject">
+<h2>DashedVMobject<a class="headerlink" href="#dashedvmobject" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.types.vectorized_mobject.DashedVMobject">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.vectorized_mobject.</code><code class="sig-name descname">DashedVMobject</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vmobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.DashedVMobject" title="永久链接至目标">¶</a></dt>
+<dd><p>传入一个VMobject实例（物体），将其所有曲线全部设为虚线</p>
+<ul class="simple">
+<li><p>传入 <code class="docutils literal notranslate"><span class="pre">num_dashed</span></code> 表示分为多少段虚线</p></li>
+<li><p>传入 <code class="docutils literal notranslate"><span class="pre">positive_space_ratio</span></code> 表示虚实比例</p></li>
+</ul>
+</dd></dl>
+</div>
+</div>
+
+      </article>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="point_cloud_mobject.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">PMobject</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="index.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">三种物体基类types</div>
+                
+              </div>
+            </a>
+        </div>
+
+        <div class="related-information">
+          <span class="copyright">版权所有 &copy; 2020-2021 Manim Kindergarten Team</span> |
+          Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using
+          <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+          <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            目录
+          </span>
+        </div>
+        <div class="toc-tree">
+          <ul>
+<li><a class="reference internal" href="#">VMobject</a><ul>
+<li><a class="reference internal" href="#id1">VMobject</a></li>
+<li><a class="reference internal" href="#vgroup">VGroup</a></li>
+<li><a class="reference internal" href="#vectorizedpoint">VectorizedPoint</a></li>
+<li><a class="reference internal" href="#curvesassubmobjects">CurvesAsSubmobjects</a></li>
+<li><a class="reference internal" href="#dashedvmobject">DashedVMobject</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+      
+      
+    </aside>
+  </main>
+</div>
+  </body>
+</html>

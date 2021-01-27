@@ -1,0 +1,448 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="CONFIG字典用法" href="config.html" /><link rel="prev" title="案例学习" href="examples.html" />
+
+    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.4.3, furo 2020.10.05.beta9"/>
+        <title>运行命令 - manim  文档</title>
+      <link rel="stylesheet" href="../_static/copybutton.css" />
+    <link rel="stylesheet" href="../_static/custom.css" />
+    <link rel="stylesheet" href="../_static/colors.css" />
+    <link rel="stylesheet" href="../_static/styles/default.css?f1b9cd5451bf73e2ec51fa12">
+    <link rel="stylesheet" href="../_static/pygments.css?f1b9cd5451bf73e2ec51fa12">
+    
+<style>
+  :root {
+    --color-code-background: #f8f8f8;
+    --color-code-foreground: #000000;
+  
+  }
+</style>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script><script src="../_static/jquery.js"></script>
+      <script src="../_static/underscore.js"></script>
+      
+        <script src="../_static/doctools.js" defer></script>
+      
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?f1b9cd5451bf73e2ec51fa12"></script></head>
+  <body dir="">
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke-width="1.5" stroke="#101010" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z"/>
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+
+<div class="page">
+  <header class="mobile-header">
+    <label class="header-left nav-overlay-icon" for="__navigation">
+      <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+    </label>
+    <div class="header-center"><div class="brand">manim  文档</div></div>
+    <div class="header-right"></div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand centered" href="../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="../_static/Logo_white.png" alt="Logo"/>
+  </div>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html">
+  <input class="sidebar-search" placeholder="Search" name="q">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form><div class="sidebar-tree sidebar-scroll">
+  <p class="caption"><span class="caption-text">入门教程向</span></p>
+<ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../installation/index.html">安装指南</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../installation/linux.html">Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/mac.html">Mac</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/windows.html">Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/ffmpeg.html">附：ffmpeg相关用法</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">快速入门</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label for="toctree-checkbox-2"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="examples.html">案例学习</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">运行命令</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config.html">CONFIG字典用法</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structure.html">manim结构</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../problems/index.html">常见问题</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../problems/v2.3.html">安装问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../problems/v2.3.html#id5">运行时问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../problems/v2.3.html#id14">其它问题</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../homework/index.html">练习部分(TODO)</a></li>
+</ul>
+<p class="caption"><span class="caption-text">进阶文档向</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../container/index.html">属性容器container</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../animation/index.html">动画部分animation</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label for="toctree-checkbox-4"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../animation/creation.html">Creation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/fading.html">Fading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/growing.html">Growing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/indication.html">Indication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/movement.html">Movement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/numbers.html">Numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/rotation.html">Rotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/transform.html">Transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/update.html">Update</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/composition.html">Composition</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mobject/index.html">物体部分mobject</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label for="toctree-checkbox-5"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/mobject.html">数学物品Mobject</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../mobject/types/index.html">三种物体基类types</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label for="toctree-checkbox-6"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/types/vectorized_mobject.html">VMobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/types/point_cloud_mobject.html">PMobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/types/image_mobject.html">ImageMobject</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../mobject/svg/index.html">SVG图像相关物体svg</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/svg_mobject.html">SVGMobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/tex_mobject.html">TexMobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/text_mobject.html">Text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/code_mobject.html">Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/brace.html">Brace</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/changing.html">Changing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/coordinate_systems.html">CoordinateSystems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/frame.html">Frame</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/geometry.html">Geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/matrix.html">Matrix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/mobject_update_utils.html">MobjectUpdateUtils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/number_line.html">NumberLine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/numbers.html">Numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/probability.html">Probability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/shape_matchers.html">ShapeMatchers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/three_d_shading_utils.html">ThreeDShadingUtils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/three_d_utils.html">ThreeDUtils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/three_dimensions.html">ThreeDimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/value_tracker.html">ValueTracker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/vector_field.html">VectorField</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../camera/index.html">相机部分camera</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label for="toctree-checkbox-8"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../camera/camera.html">Camera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../camera/mapping_camera.html">MappingCamera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../camera/moving_camera.html">MovingCamera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../camera/multi_camera.html">MultiCamera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../camera/three_d_camera.html">ThreeDCamera</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../scene/index.html">场景部分scene(TODO)</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label for="toctree-checkbox-9"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scene/scene.html">Scene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/scene_file_writer.html">SceneFileWriter(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/moving_camera_scene.html">MovingCameraScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/zoomed_scene.html">ZoomedScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/graph_scene.html">GraphScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/three_d_scene.html">ThreeDScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/reconfigurable_scene.html">ReconfigurableScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/vector_space_scene.html">VectorScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/sample_space_scene.html">SampleSpaceScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/scene_from_video.html">SceneFromVideo(TODO)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../utils/index.html">工具函数utils</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label for="toctree-checkbox-10"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../utils/bezier.html">Bezier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/color.html">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/config_ops.html">CONFIG_ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/file_ops.html">FILE_ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/images.html">Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/iterables.html">Iterables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/paths.html">Paths</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/rate_functions.html">Rate_functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/simple_functions.html">Simple_functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/sounds.html">Sounds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/space_ops.html">Space_ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/strings.html">Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/tex_file_writing.html">Tex_file_writing</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">杂项</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../manim_sandbox/index.html">manim_sandbox中的自定义类</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label for="toctree-checkbox-11"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../manim_sandbox/functions.html">自定义工具函数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manim_sandbox/mobjects.html">自定义物体</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manim_sandbox/scenes.html">自定义场景</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manim_sandbox/animations.html">自定义动画</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../contribution.html">贡献规则及编写指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">关于</a></li>
+</ul>
+
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <main class="main">
+    <div class="content">
+      <article role="main">
+        <label class="toc-overlay-icon" for="__toc">
+          <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        </label>
+        <div class="section" id="id1">
+<h1>运行命令<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<div class="admonition-manim-sandboxwiki admonition">
+<p class="admonition-title">声明
+这一页来自鹤翔万里在manim_sandbox中的wiki页</p>
+<p>后部分为GZTime添加</p>
+</div>
+<div class="section" id="manim">
+<h2>在命令行运行manim<a class="headerlink" href="#manim" title="永久链接至标题">¶</a></h2>
+<p>使用manim运行一个动画，需要进入到与manim.py同级的目录中，并向cmd中输入如下格式的命令</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python manim.py &lt;code&gt;.py &lt;Scene<span class="o">(</span>s<span class="o">)</span>&gt; &lt;options&gt;
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;code&gt;.py</span></code>
+为你写的python文件，需要与manim.py同级，否则需要使用绝对路径，或写准相对路径</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;Scene(s)&gt;</span></code>
+这里填你想要渲染的场景，或者一些场景。如果没有写或者写错，若文件中只有一个Scene，会直接渲染这个类，否则会列出所有让你选择</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;options&gt;</span></code> 传入的选项</p></li>
+</ul>
+<p><strong>以下是所有manim的选项</strong>：</p>
+<div class="table-wrapper"><table class="docutils align-default">
+<colgroup>
+<col style="width: 39%"/>
+<col style="width: 8%"/>
+<col style="width: 53%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>选项</p></th>
+<th class="head"><p>简写</p></th>
+<th class="head"><p>含义</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--preview</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-p</span></code></p></td>
+<td><p>渲染之后打开预览</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--write_to_movie</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-w</span></code></p></td>
+<td><p>使用最高质量渲染(默认1440P60)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--save_last_frame</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-s</span></code></p></td>
+<td><p>保存最后一帧图片</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--low_quality</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-l</span></code></p></td>
+<td><p>使用低质量渲染(默认480P15)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--medium_quality</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-m</span></code></p></td>
+<td><p>使用中等质量渲染(默认720P30)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--high_quality</span></code></p></td>
+<td></td>
+<td><p>使用高质量渲染(默认1080P60)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--save_pngs</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-g</span></code></p></td>
+<td><p>导出每一帧</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--save_as_gif</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-i</span></code></p></td>
+<td><p>保存为gif(需要按照常见问题中修改源码)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--show_file_in_finder</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-f</span></code></p></td>
+<td><p>渲染完打开文件夹</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--transparent</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-t</span></code></p></td>
+<td><p>渲染alpha通道，视频为mov格式</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--quiet</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-q</span></code></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--write_all</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-a</span></code></p></td>
+<td><p>渲染文件中的所有场景</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--file_name</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-o</span></code></p></td>
+<td><p>视频文件保存的名字，后面接文件名</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">-start_at_animation_number</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-n</span></code></p></td>
+<td><p>后面接两个数(逗号隔开)仅渲染一部分动画</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--resolution</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-r</span></code></p></td>
+<td><p>渲染视频的画面大小，给出height,width</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--color</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-c</span></code></p></td>
+<td><p>背景颜色，后面接颜色</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--sound</span></code></p></td>
+<td></td>
+<td><p>运行结束后播放成功或者失败的声音</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--leave_progress_bars</span></code></p></td>
+<td></td>
+<td><p>保持进度条留在终端中</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--video_dir</span></code></p></td>
+<td></td>
+<td><p>存放视频的目录</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--video_output_dir</span></code></p></td>
+<td></td>
+<td><p>保存视频的目录</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--tex_dir</span></code></p></td>
+<td></td>
+<td><p>放TeX文件的目录</p></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>示例</strong> ：</p>
+<p><code class="docutils literal notranslate"><span class="pre">-s</span></code> 可以在images文件夹下看到保存的最后一张图片，比如在一个比较大的项目中，想看自己的某一张图画出来效果，可以使用 <code class="docutils literal notranslate"><span class="pre">-s</span></code> 导出最后一帧：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">manim</span> <span class="n">example_scenes</span><span class="o">.</span><span class="n">py</span> <span class="n">SquareToCircle</span> <span class="o">-</span><span class="n">ps</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">-a</span></code> 把文件中所有scene写成视频：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python -m manim example_scenes.py SquareToCircle -al
+</pre></div>
+</div>
+<p>输出 &lt;file_name&gt;.mp4：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python -m manim example_scenes.py SquareToCircle -o &lt;file_name&gt;
+</pre></div>
+</div>
+<p>白色背景：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python -m manim example_scenes.py SquareToCircle -pl -c WHITE
+python -m manim example_scenes.py SquareToCircle -pl -c <span class="s1">'#FFFFFF'</span>
+</pre></div>
+</div>
+<p>SquareToCircle有3个animations渲染任务：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>self.play<span class="o">(</span>ShowCreation<span class="o">(</span>square<span class="o">))</span>         <span class="c1">#0</span>
+self.play<span class="o">(</span>Transform<span class="o">(</span>square, circle<span class="o">))</span>    <span class="c1">#1</span>
+self.play<span class="o">(</span>FadeOut<span class="o">(</span>square<span class="o">))</span>              <span class="c1">#2</span>
+</pre></div>
+</div>
+<p>这就能直接从第3个（0开始）animations渲染到最后:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python -m manim example_scenes.py SquareToCircle -pl -n <span class="m">2</span>
+</pre></div>
+</div>
+<p>获得 1920x1080 分辨率的视频:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python -m manim example_scenes.py SquareToCircle -r <span class="m">1080</span>
+</pre></div>
+</div>
+<p><strong>存为gif</strong></p>
+<p>使用 <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">manim</span> <span class="pre">animation.py</span> <span class="pre">name_scene</span> <span class="pre">-im</span></code> 渲染中等质量的gif文件，但是选项 <code class="docutils literal notranslate"><span class="pre">-i</span></code> 目前被取消了，依旧会生成mp4文件，可以按照常见问题中更改，或者使用 <a class="reference external" href="https://github.com/manim-kindergarten/manim">MK版本的manim</a></p>
+<p>也可以使用ffmpeg手动转换</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ffmpeg -i SquareToCircle.mp4 SquareToCircle.gif
+</pre></div>
+</div>
+</div>
+</div>
+
+      </article>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="config.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">CONFIG字典用法</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="examples.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">案例学习</div>
+                
+              </div>
+            </a>
+        </div>
+
+        <div class="related-information">
+          <span class="copyright">版权所有 &copy; 2020-2021 Manim Kindergarten Team</span> |
+          Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using
+          <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+          <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            目录
+          </span>
+        </div>
+        <div class="toc-tree">
+          <ul>
+<li><a class="reference internal" href="#">运行命令</a><ul>
+<li><a class="reference internal" href="#manim">在命令行运行manim</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+      
+      
+    </aside>
+  </main>
+</div>
+  </body>
+</html>
