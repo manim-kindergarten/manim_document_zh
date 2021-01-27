@@ -38,9 +38,9 @@ jobs:
         cd build/html
         echo "manim.ml" > CNAME
         
-    # - name: Deploy to GitHub pages
-    #   uses: JamesIves/github-pages-deploy-action@master
-    #   env:
-    #     ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-    #     BRANCH: gh-pages
-    #     FOLDER: build/html
+    - name: Deploy to GitHub pages
+      uses: JamesIves/github-pages-deploy-action@master
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: build/html

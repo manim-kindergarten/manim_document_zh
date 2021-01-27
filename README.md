@@ -34,9 +34,7 @@ https://manim.ml/
 
 **Step 1.** 安装环境：
 - 确保安装了[manim](https://github.com/3b1b/manim/)环境
-- `pip install sphinx`安装Sphinx
-- `pip install sphinx_rtd_theme`安装rtd样式
-- `pip install jieba`使支持中文搜索
+- `pip install -r requirements.txt` 安装文档环境
 
 **Step 2.** 准备目录结构：
 ```text
