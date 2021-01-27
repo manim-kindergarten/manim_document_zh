@@ -6,7 +6,7 @@
 -----------------------
 
 manim_document_zh这个项目是由 `manim-kindergarten <https://github.com/manim-kindergarten>`_
-成员 `Tridu <https://github.com/Tridu33>`_ 发起的，并由 `鹤翔万里 <https://github.com/Tony031218>`_ 
+成员 `Tridu <https://github.com/Tridu33>`_ 发起的，并由 `鹤翔万里 <https://github.com/TonyCrane>`_ 
 完善得到的中文教程文档
 
 这个文档主要是东拼西凑来的，有些翻译自 `eulertour的文档 <https://eulertour.com/docs>`_ ，有些翻译自
