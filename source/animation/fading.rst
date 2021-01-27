@@ -12,12 +12,9 @@ FadeOut
 *****************
 .. autoclass:: manimlib.animation.fading.FadeOut
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/FadeOutExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: FadeOutExample
+  :media: ../_static/manim_3fed/FadeOutExample.mp4
 
   class FadeOutExample(Scene):
       def construct(self):
@@ -42,12 +39,9 @@ FadeIn
 *****************
 .. autoclass:: manimlib.animation.fading.FadeIn
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/FadeInExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: FadeInExample
+  :media: ../_static/manim_3fed/FadeInExample.mp4
 
   class FadeInExample(Scene):
       def construct(self):
@@ -69,12 +63,9 @@ FadeInFrom
 ***************************
 .. autoclass:: manimlib.animation.fading.FadeInFrom
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/FadeInFromExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: FadeInFromExample
+  :media: ../_static/manim_3fed/FadeInFromExample.mp4
 
   class FadeInFromExample(Scene):
       def construct(self):
@@ -99,12 +90,9 @@ FadeInFromDown
 *****************
 .. autoclass:: manimlib.animation.fading.FadeInFromDown
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/FadeInFromDownExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: FadeInFromDownExample
+  :media: ../_static/manim_3fed/FadeInFromDownExample.mp4
 
   class FadeInFromDownExample(Scene):
       def construct(self):
@@ -126,12 +114,9 @@ FadeOutAndShift
 **********************
 .. autoclass:: manimlib.animation.fading.FadeOutAndShift
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/FadeOutAndShiftExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: FadeOutAndShiftExample
+  :media: ../_static/manim_3fed/FadeOutAndShiftExample.mp4
 
   class FadeOutAndShiftExample(Scene):
       def construct(self):
@@ -159,12 +144,9 @@ FadeOutAndShiftDown
 ****************************
 .. autoclass:: manimlib.animation.fading.FadeOutAndShiftDown
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/FadeOutAndShiftDownExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: FadeOutAndShiftDownExample
+  :media: ../_static/manim_3fed/FadeOutAndShiftDownExample.mp4
 
   class FadeOutAndShiftDownExample(Scene):
       def construct(self):
@@ -186,12 +168,9 @@ FadeInFromPoint
 *********************
 .. autoclass:: manimlib.animation.fading.FadeInFromPoint
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/mk/FadeInFromPointExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: FadeInFromPointExample
+  :media: ../_static/mk/FadeInFromPointExample.mp4
 
   class FadeInFromPointExample(Scene):
       def construct(self):
@@ -214,12 +193,9 @@ FadeInFromLarge
 *********************
 .. autoclass:: manimlib.animation.fading.FadeInFromLarge
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/FadeInFromLargeExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: FadeInFromLargeExample
+  :media: ../_static/manim_3fed/FadeInFromLargeExample.mp4
 
   class FadeInFromLargeExample(Scene):
       def construct(self):
@@ -267,9 +243,7 @@ VFadeInThenOut
 
 .. raw:: html
 
-    <video width="560" height="315" controls>
-        <source src="../_static/mk/FadeAndVFade.mp4" type="video/mp4">
-    </video>
+    <video class="manim-video" controls loop autoplay src="../_static/mk/FadeAndVFade.mp4"></video>
 
 ``FadeIn`` 的边从细变粗，从暗变亮。 ``VFadeIn`` 的边始终是正常粗细，从暗变亮。
 

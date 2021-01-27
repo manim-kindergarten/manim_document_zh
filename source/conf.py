@@ -2,15 +2,14 @@
 
 import sys
 import os
+sys.path.insert(0, os.path.abspath("."))
 sys.path.insert(0, os.path.abspath("../../manim/"))
 
 project = 'manim'
-copyright = '- This document has been placed in the public domain.'
-# author = '2019EulerTour'
-# author = '2019elteoremadebeethoven'
+copyright = '2020-2021 Manim Kindergarten Team'
 author = 'manim-kindergarten'
 
-version = '0.4.0'
+version = '1.0.0'
 release = ''
 
 extensions = [
@@ -21,7 +20,8 @@ extensions = [
     'sphinx.ext.autodoc', 
     'sphinx.ext.coverage',
     'sphinx.ext.napoleon',
-    'sphinx_rtd_theme'
+    'sphinx_copybutton',
+    'manim_example_ext'
 ]
 
 autoclass_content = 'both'
@@ -36,10 +36,10 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'remain']
 pygments_style = 'default'
 
 html_static_path = ['assets']
-html_theme = 'sphinx_rtd_theme'
+html_css_files = ["custom.css", "colors.css"]
+html_theme = 'furo'  # pip install furo==2020.10.5b9
 html_favicon = 'mk.png'
-html_logo = 'assets/image/Logo_black.png'
+html_logo = 'assets/image/Logo_white.png'
 html_theme_options = {
-    'logo_only': True,
-    'style_nav_header_background': '#343131',
+    "sidebar_hide_name": True,
 }

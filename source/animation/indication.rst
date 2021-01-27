@@ -9,12 +9,9 @@ FocusOn
 ***********************
 .. autoclass:: manimlib.animation.indication.FocusOn
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/FocusOnExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: FocusOnExample
+  :media: ../_static/manim_3fed/FocusOnExample.mp4
 
   class FocusOnExample(Scene):
       def construct(self):
@@ -42,13 +39,9 @@ Indicate
 ***********************
 .. autoclass:: manimlib.animation.indication.Indicate
     :members:
-
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/IndicateExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: IndicateExample
+  :media: ../_static/manim_3fed/IndicateExample.mp4
 
   class IndicateExample(Scene):
       def construct(self):
@@ -71,12 +64,9 @@ Flash
 ***********************
 .. autoclass:: manimlib.animation.indication.Flash
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/FlashExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: FlashExample
+  :media: ../_static/manim_3fed/FlashExample.mp4
 
   class FlashExample(Scene):
       def construct(self):
@@ -104,12 +94,9 @@ CircleIndicate
 ***********************
 .. autoclass:: manimlib.animation.indication.CircleIndicate
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/CircleIndicateExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: CircleIndicateExample
+  :media: ../_static/manim_3fed/CircleIndicateExample.mp4
 
   class CircleIndicateExample(Scene):
       def construct(self):
@@ -134,12 +121,9 @@ ShowCreationThenDestruction
 ********************************
 .. autoclass:: manimlib.animation.indication.ShowCreationThenDestruction
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/ShowCreationThenDestructionExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: ShowCreationThenDestructionExample
+  :media: ../_static/manim_3fed/ShowCreationThenDestructionExample.mp4
 
   class ShowCreationThenDestructionExample(Scene):
       def construct(self):
@@ -163,12 +147,9 @@ ShowCreationThenFadeOut
 ****************************
 .. autoclass:: manimlib.animation.indication.ShowCreationThenFadeOut
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/ShowCreationThenFadeOutExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: ShowCreationThenFadeOutExample
+  :media: ../_static/manim_3fed/ShowCreationThenFadeOutExample.mp4
 
   class ShowCreationThenFadeOutExample(Scene):
       def construct(self):
@@ -197,12 +178,9 @@ ShowPassingFlashAround
 ******************************
 .. autoclass:: manimlib.animation.indication.ShowPassingFlashAround
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/ShowPassingFlashAroundExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: ShowPassingFlashAroundExample
+  :media: ../_static/manim_3fed/ShowPassingFlashAroundExample.mp4
 
   class ShowPassingFlashAroundExample(Scene):
       def construct(self):
@@ -226,12 +204,9 @@ ShowCreationThenDestructionAround
 ******************************************
 .. autoclass:: manimlib.animation.indication.ShowCreationThenDestructionAround
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/ShowCreationThenDestructionAroundExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: ShowCreationThenDestructionAroundExample
+  :media: ../_static/manim_3fed/ShowCreationThenDestructionAroundExample.mp4
 
   class ShowCreationThenDestructionAroundExample(Scene):
       def construct(self):
@@ -257,12 +232,9 @@ ShowCreationThenFadeAround
 **********************************
 .. autoclass:: manimlib.animation.indication.ShowCreationThenFadeAround
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/ShowCreationThenFadeAroundExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: ShowCreationThenFadeAroundExample
+  :media: ../_static/manim_3fed/ShowCreationThenFadeAroundExample.mp4
 
   class ShowCreationThenFadeAroundExample(Scene):
       def construct(self):
@@ -288,12 +260,9 @@ ApplyWave
 ***********************
 .. autoclass:: manimlib.animation.indication.ApplyWave
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/ApplyWaveExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: ApplyWaveExample
+  :media: ../_static/manim_3fed/ApplyWaveExample.mp4
 
   class ApplyWaveExample(Scene):
       def construct(self):
@@ -319,12 +288,9 @@ WiggleOutThenIn
 ***********************
 .. autoclass:: manimlib.animation.indication.WiggleOutThenIn
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/WiggleOutThenInExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: WiggleOutThenInExample
+  :media: ../_static/manim_3fed/WiggleOutThenInExample.mp4
 
   class WiggleOutThenInExample(Scene):
       def construct(self):
@@ -350,12 +316,9 @@ TurnInsideOut
 ***********************
 .. autoclass:: manimlib.animation.indication.TurnInsideOut
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/TurnInsideOutExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: TurnInsideOutExample
+  :media: ../_static/manim_3fed/TurnInsideOutExample.mp4
 
   class TurnInsideOutExample(Scene):
       def construct(self):

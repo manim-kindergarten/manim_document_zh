@@ -5,12 +5,9 @@ ChangingDecimal
 *****************
 .. autoclass:: manimlib.animation.numbers.ChangingDecimal
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/mk/ChangingDecimalExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: ChangingDecimalExample
+  :media: ../_static/mk/ChangingDecimalExample.mp4
 
   class ChangingDecimalExample(Scene):
       def construct(self):
@@ -27,12 +24,9 @@ ChangeDecimalToValue
 **********************
 .. autoclass:: manimlib.animation.numbers.ChangeDecimalToValue
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/mk/ChangeDecimalToValueExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: ChangeDecimalToValueExample
+  :media: ../_static/mk/ChangeDecimalToValueExample.mp4
 
   class ChangeDecimalToValueExample(Scene):
       def construct(self):

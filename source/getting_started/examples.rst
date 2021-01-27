@@ -10,11 +10,15 @@
 方变圆SquareToCircle
 ----------------------
 
-在manim文件夹中尝试执行运行命令 ``$ python -m manim example_scenes.py SquareToCircle -p`` (通过clone存储库安装)，或
-``$ manim example_scenes.py SquareToCircle -p`` (通过pypi安装)
+在manim文件夹中尝试执行运行命令 
 
-.. code-block:: python
-   :linenos:
+.. code-block:: sh
+
+    $ python -m manim example_scenes.py SquareToCircle -p #通过clone存储库安装
+    $ # manim example_scenes.py SquareToCircle -p # 通过pypi安装
+
+.. manim-example:: SquareToCircle
+   :media: ../_static/example/SquareToCircle.mp4
 
    from manimlib.imports import *
 
@@ -29,13 +33,6 @@
            self.play(ShowCreation(square))
            self.play(Transform(square, circle))
            self.play(FadeOut(square))
-   
-
-.. raw:: html
-
-   <video width="560" height="315" controls>
-       <source src="../_static/example/SquareToCircle.mp4" type="video/mp4">
-   </video>
 
 
 .. note::
@@ -127,8 +124,8 @@
 扭曲正方形WarpSquare
 ----------------------
 
-.. code-block:: python
-   :linenos:
+.. manim-example:: WarpSquare
+   :media: ../_static/example/WarpSquare.mp4
 
    from manimlib.imports import *
 
@@ -140,12 +137,6 @@
                square
            ))
            self.wait()
-
-.. raw:: html
-
-   <video width="560" height="315" controls>
-       <source src="../_static/example/WarpSquare.mp4" type="video/mp4">
-   </video>
 
 前四行和前面的一样，不重复了。第五行同样创建了一个默认的正方形
 
@@ -176,8 +167,8 @@
 书写文字WriteStuff
 -------------------
 
-.. code-block:: python
-   :linenos:
+.. manim-example:: WriteStuff
+   :media: ../_static/example/WriteStuff.mp4
 
    from manimlib.imports import *
 
@@ -197,12 +188,6 @@
            self.play(Write(example_text))
            self.play(Write(example_tex))
            self.wait()
-
-.. raw:: html
-
-   <video width="560" height="315" controls>
-       <source src="../_static/example/WriteStuff.mp4" type="video/mp4">
-   </video>
 
 .. code-block:: python
    :lineno-start: 5
@@ -257,8 +242,8 @@
 更新程序UpdatersExample
 ------------------------
 
-.. code-block:: python
-   :linenos:
+.. manim-example:: UpdatersExample
+   :media: ../_static/example/UpdatersExample.mp4
 
    from manimlib.imports import *
 
@@ -282,11 +267,6 @@
            )
            self.wait()
 
-.. raw:: html
-
-   <video width="560" height="315" controls>
-       <source src="../_static/example/UpdatersExample.mp4" type="video/mp4">
-   </video>
 
 .. code-block:: python
    :lineno-start: 5
@@ -335,8 +315,8 @@
 
 在看过了前面的例子之后，文件中的第一个视频就容易理解了
 
-.. code-block:: python
-   :linenos:
+.. manim-example:: OpeningManimExample
+   :media: ../_static/example/OpeningManimExample.mp4
 
    from manimlib.imports import *
 
@@ -395,9 +375,3 @@
                Transform(grid_title, grid_transform_title)
            )
            self.wait()
-
-.. raw:: html
-
-   <video width="560" height="315" controls>
-       <source src="../_static/example/OpeningManimExample.mp4" type="video/mp4">
-   </video>

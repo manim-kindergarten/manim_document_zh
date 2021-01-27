@@ -1,6 +1,6 @@
 [![manim_document_zh](source/assets/image/DocumentHeader.png)](https://github.com/manim-kindergarten/manim_document_zh)
 
-![Build up document](https://github.com/manim-kindergarten/manim_document_zh/workflows/Build%20up%20document/badge.svg)
+![docs](https://github.com/manim-kindergarten/manim_document_zh/workflows/docs/badge.svg)
 [![GPL License](https://img.shields.io/github/license/manim-kindergarten/manim_document_zh)](https://choosealicense.com/licenses/gpl-3.0/)
 ![QQ](https://img.shields.io/badge/QQ-862671480-red.svg?style=flat)
 [![manim_sandbox](https://img.shields.io/badge/mk-manim__sandbox-brightgreen.svg)](https://github.com/manim-kindergarten/manim_sandbox/)
@@ -34,9 +34,7 @@ https://manim.ml/
 
 **Step 1.** 安装环境：
 - 确保安装了[manim](https://github.com/3b1b/manim/)环境
-- `pip install sphinx`安装Sphinx
-- `pip install sphinx_rtd_theme`安装rtd样式
-- `pip install jieba`使支持中文搜索
+- `pip install -r requirements.txt` 安装文档环境
 
 **Step 2.** 准备目录结构：
 ```text

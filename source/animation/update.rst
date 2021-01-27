@@ -5,12 +5,9 @@ UpdateFromFunc
 *****************
 .. autoclass:: manimlib.animation.update.UpdateFromFunc
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/mk/UpdateFromFuncExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: UpdateFromFuncExample
+  :media: ../_static/mk/UpdateFromFuncExample.mp4
 
   class UpdateFromFuncExample(Scene):
       def construct(self):
@@ -32,12 +29,9 @@ UpdateFromAlphaFunc
 ********************
 .. autoclass:: manimlib.animation.update.UpdateFromAlphaFunc
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/mk/UpdateFromAlphaFuncExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: UpdateFromAlphaFuncExample
+  :media: ../_static/mk/UpdateFromAlphaFuncExample.mp4
 
   class UpdateFromAlphaFuncExample(Scene):
       def construct(self):
@@ -60,12 +54,9 @@ MaintainPositionRelativeTo
 **************************
 .. autoclass:: manimlib.animation.update.MaintainPositionRelativeTo
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/mk/MaintainPositionRelativeToExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: MaintainPositionRelativeToExample
+  :media: ../_static/mk/MaintainPositionRelativeToExample.mp4
 
   class MaintainPositionRelativeToExample(Scene):
       def construct(self):

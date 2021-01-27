@@ -50,9 +50,3 @@ manim教程文档
     contribution
     about
 
-
-索引和表格
-===========================
-
-* :ref:`genindex`
-* :ref:`search`

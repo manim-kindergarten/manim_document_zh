@@ -5,12 +5,9 @@ Transform
 *****************
 .. autoclass:: manimlib.animation.transform.Transform
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/mk/TransformExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: TransformExample
+  :media: ../_static/mk/TransformExample.mp4
 
   class TransformExample(Scene):
       def construct(self):
@@ -30,12 +27,9 @@ ReplacementTransform
 ********************
 .. autoclass:: manimlib.animation.transform.ReplacementTransform
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/mk/ReplacementTransformExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: ReplacementTransformExample
+  :media: ../_static/mk/ReplacementTransformExample.mp4
 
   class ReplacementTransformExample(Scene):
       def construct(self):
@@ -72,12 +66,9 @@ TransformFromCopy
 *****************
 .. autoclass:: manimlib.animation.transform.TransformFromCopy
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/mk/TransformFromCopyExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: TransformFromCopyExample
+  :media: ../_static/mk/TransformFromCopyExample.mp4
 
   class TransformFromCopyExample(Scene):
       def construct(self):
@@ -94,12 +85,9 @@ ClockwiseTransform
 ******************
 .. autoclass:: manimlib.animation.transform.ClockwiseTransform
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/mk/ClockwiseTransformExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: ClockwiseTransformExample
+  :media: ../_static/mk/ClockwiseTransformExample.mp4
 
   class ClockwiseTransformExample(Scene):
       def construct(self):
@@ -116,12 +104,9 @@ CounterclockwiseTransform
 *************************
 .. autoclass:: manimlib.animation.transform.CounterclockwiseTransform
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/mk/CounterclockwiseTransformExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: CounterclockwiseTransformExample
+  :media: ../_static/mk/CounterclockwiseTransformExample.mp4
 
   class CounterclockwiseTransformExample(Scene):
       def construct(self):
@@ -138,12 +123,9 @@ MoveToTarget
 *****************
 .. autoclass:: manimlib.animation.transform.MoveToTarget
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/mk/MoveToTargetExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: MoveToTargetExample
+  :media: ../_static/mk/MoveToTargetExample.mp4
 
   class MoveToTargetExample(Scene):
       def construct(self):
@@ -159,12 +141,8 @@ MoveToTarget
 另外，直接使用 ``self.play(mob.method, ...)`` 相当于给mob创建target，然后根据method
 操作target。并且这样能对同一个mobject多次操作（而 ``ApplyMethod`` 不可以，见下）
 
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/mk/SelfPlayExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+.. manim-example:: SelfPlayExample
+  :media: ../_static/mk/SelfPlayExample.mp4
 
   class SelfPlayExample(Scene):
       def construct(self):
@@ -183,12 +161,9 @@ ApplyMethod
 *****************
 .. autoclass:: manimlib.animation.transform.ApplyMethod
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/mk/ApplyMethodExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: ApplyMethodExample
+  :media: ../_static/mk/ApplyMethodExample.mp4
 
   class ApplyMethodExample(Scene):
       def construct(self):
@@ -233,12 +208,9 @@ ShrinkToCenter
 *****************
 .. autoclass:: manimlib.animation.transform.ShrinkToCenter
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/manim_3fed/ShrinkToCenterExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: ShrinkToCenterExample
+  :media: ../_static/manim_3fed/ShrinkToCenterExample.mp4
 
   class ShrinkToCenterExample(Scene):
       def construct(self):
@@ -261,12 +233,9 @@ Restore
 *****************
 .. autoclass:: manimlib.animation.transform.Restore
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/mk/RestoreExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: RestoreExample
+  :media: ../_static/mk/RestoreExample.mp4
 
   class RestoreExample(Scene):
       def construct(self):
@@ -284,12 +253,9 @@ ApplyFunction
 *****************
 .. autoclass:: manimlib.animation.transform.ApplyFunction
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/mk/ApplyFunctionExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: ApplyFunctionExample
+  :media: ../_static/mk/ApplyFunctionExample.mp4
 
   class ApplyFunctionExample(Scene):
       def construct(self):
@@ -308,12 +274,9 @@ ApplyMatrix
 *****************
 .. autoclass:: manimlib.animation.transform.ApplyMatrix
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/mk/ApplyMatrixExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: ApplyMatrixExample
+  :media: ../_static/mk/ApplyMatrixExample.mp4
 
   class ApplyMatrixExample(Scene):
       def construct(self):
@@ -340,12 +303,9 @@ CyclicReplace
 *****************
 .. autoclass:: manimlib.animation.transform.CyclicReplace
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/mk/CyclicReplaceExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: CyclicReplaceExample
+  :media: ../_static/mk/CyclicReplaceExample.mp4
 
   class CyclicReplaceExample(Scene):
       def construct(self):

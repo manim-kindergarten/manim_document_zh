@@ -1,15 +1,5 @@
-argparse
-colour
-numpy
-Pillow
-progressbar
-scipy
-tqdm
-opencv-python
-pycairo<1.20.0
-pydub
-pygments
-pyreadline; sys_platform == 'win32'
-sphinx
-sphinx_rtd_theme
+sphinx>=1.8
+sphinx-copybutton
+furo==2020.10.5b9
+jinja2
 jieba

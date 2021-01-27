@@ -15,12 +15,9 @@ ShowPassingFlashWithThinningStrokeWidth
 ****************************************
 .. autoclass:: manimlib.mobject.vector_field.ShowPassingFlashWithThinningStrokeWidth
     :members:
-.. raw:: html
-
-    <video width="560" height="315" controls>
-        <source src="../_static/mk/ShowPassingFlashWithThinningStrokeWidthExample.mp4" type="video/mp4">
-    </video>
-.. code-block:: python
+    
+.. manim-example:: ShowPassingFlashWithThinningStrokeWidthExample
+  :media: ../_static/mk/ShowPassingFlashWithThinningStrokeWidthExample.mp4
 
    class ShowPassingFlashWithThinningStrokeWidthExample(Scene):
        def construct(self):
