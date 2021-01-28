@@ -1,15 +1,15 @@
 ImageMobject
 ============
 
-:class:`~mobject.types.point_cloud_mobject.AbstractImageMobject` 是
-:class:`~mobject.mobject.Mobject` 的子类，可看作抽象类，用于存放 ``pixel_array``。
+:class:`~manimlib.mobject.types.point_cloud_mobject.AbstractImageMobject` 是
+:class:`~manimlib.mobject.mobject.Mobject` 的子类，可看作抽象类，用于存放 ``pixel_array``。
 
-它有两个子类：:class:`~mobject.types.point_cloud_mobject.ImageMobject`
-用于在场景中插入图片；:class:`~mobject.types.point_cloud_mobject.ImageMobjectFromCamera`
-用相机不断获取图片，主要用在 :class:`~camera.multi_camera.MultiCamera`
+它有两个子类：:class:`~manimlib.mobject.types.point_cloud_mobject.ImageMobject`
+用于在场景中插入图片；:class:`~manimlib.mobject.types.point_cloud_mobject.ImageMobjectFromCamera`
+用相机不断获取图片，主要用在 :class:`~manimlib.camera.multi_camera.MultiCamera`
 中作为子相机
 
-MK做了一个关于常用 :class:`~mobject.types.image_mobject.ImageMobject` 的的视频：
+MK做了一个关于常用 :class:`~manimlib.mobject.types.image_mobject.ImageMobject` 的的视频：
 `〔manim教程〕第四讲 SVG、图片与文字  <https://www.bilibili.com/video/BV1CC4y1H7kp>`__
 
 AbstractImageMobject

@@ -1,8 +1,8 @@
 属性容器container
 ==================
 
-目前 :class:`~container.Container` 只是 :class:`~scene.scene.Scene` 和
-:class:`~mobject.mobject.Mobject` 的抽象基类（父类），在 ``__init__``
+目前 :class:`~manimlib.container.Container` 只是 :class:`~manimlib.scene.scene.Scene` 和
+:class:`~manimlib.mobject.mobject.Mobject` 的抽象基类（父类），在 ``__init__``
 中实现了对CONFIG字典转化为属性的处理。
 
 还规定了需要子类实现 ``add`` 方法和 ``remove`` 方法

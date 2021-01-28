@@ -12,20 +12,19 @@
 ``manimlib`` 文件夹中的 ``constants.py`` 定义了在运行manim时需要的常量。
 一些常量在这里没有说明，因为他们只在manim内部使用
 
-配置目录-Directories
-----------------------
+配置目录
+---------
 
-    MEDIA_DIR
-              文件夹 ``VIDEO_DIR`` 和 ``TEX_DIR`` 创建的位置
-              （如果他们没有被选项更改的话）
-    VIDEO_DIR
-              存放manim渲染结果视频的文件夹，当一个场景渲染结束，它会存放在
-              ``VIDEO_DIR/<module_name>/<scene_name>/<quality>/<scene_name>.mp4``.
-              默认根据 ``MEDIA_DIR`` 创建
-    TEX_DIR
-              使用LaTeX创建的文件（tex/svg/log/xdv/aux），会作为缓存，来防止多次重写LaTeX
-    TEXT_DIR
-              使用 ``Text`` 类时，通过cairo创建的文字的svg，会作为缓存
+MEDIA_DIR
+   文件夹 ``VIDEO_DIR`` 和 ``TEX_DIR`` 创建的位置（如果他们没有被选项更改的话）
+VIDEO_DIR
+   存放manim渲染结果视频的文件夹，当一个场景渲染结束，它会存放在
+   ``VIDEO_DIR/<module_name>/<scene_name>/<quality>/<scene_name>.mp4``.
+   默认根据 ``MEDIA_DIR`` 创建
+TEX_DIR
+   使用LaTeX创建的文件（tex/svg/log/xdv/aux），会作为缓存，来防止多次重写LaTeX
+TEXT_DIR
+   使用 ``Text`` 类时，通过cairo创建的文字的svg，会作为缓存
 
 这些文件夹如果不存在会被创建
 

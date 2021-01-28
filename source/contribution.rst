@@ -35,14 +35,14 @@
 
 - 每个页面中每个类需要先使用二级标题，然后再使用 ``.. autoclass:: manimlib.<...>`` 自动生成类名和文档字符串
 
-    - 如果该类中的方法比较重要需要文档字符串，使用::
+  - 如果该类中的方法比较重要需要文档字符串，使用::
 
         .. autoclass:: manimlib.<...>
             :members:
 
 - 每个类需要包含明显示例和对应代码（视频或图片均可）
 
-    - 视频放在 ``source/assets/mk`` 中，使用下面代码引用（需要注意文件所处的层次）::
+  - 视频放在 ``source/assets/mk`` 中，使用下面代码引用（需要注意文件所处的层次）::
 
         .. raw:: html
 
@@ -50,11 +50,11 @@
                 <source src="../_static/mk/视频名.mp4" type="video/mp4">
             </video>
 
-    - 图片放在 ``source/assets/image`` 中，使用下面代码引用（需要注意文件所处的层次）::
+  - 图片放在 ``source/assets/image`` 中，使用下面代码引用（需要注意文件所处的层次）::
 
         .. image:: ../assets/image/Text/image1.png
 
-    - 代码使用（注意缩进使用4个空格，而不是Tab制表符）::
+  - 代码使用（注意缩进使用4个空格，而不是Tab制表符）::
     
         .. code:: python
 
@@ -62,7 +62,7 @@
                def construct(self):
                    ...
     
-    - 示例和代码的类名统一为 ``<当前要示例的类名>Example`` ，并且将代码放在 ``example.py`` 中
+  - 示例和代码的类名统一为 ``<当前要示例的类名>Example`` ，并且将代码放在 ``example.py`` 中
 
 以上均可以通过点击 ``animation`` 相关页面及 ``mobject`` 中完成的页面右上角查看源代码来了解
 
