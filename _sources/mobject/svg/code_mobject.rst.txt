@@ -1,25 +1,27 @@
 Code
 ====
 
-:class:`~mobject.svg.code_mobject.Code` 使用 ``pygments`` 给代码生成带语法高亮
+:class:`~manimlib.mobject.svg.code_mobject.Code` 使用 ``pygments`` 给代码生成带语法高亮
 的html文件，然后再转换为物体。
 
 Code
 ****
 .. autoclass:: manimlib.mobject.svg.code_mobject.Code
 
-:class:`~mobject.svg.code_mobject.Code` 的结构如下：
+:class:`~manimlib.mobject.svg.code_mobject.Code` 的结构如下：
 
 1. ``Code[0]`` 是代码的背景 ( ``Code.background_mobject`` )
 
-    1. 如果 ``background == "rectangle"`` 则是一个Rectangle
-    2. 如果 ``background == "window"`` 则是一个带有矩形和三个点的VGroup
+   1. 如果 ``background == "rectangle"`` 则是一个Rectangle
+
+   2. 如果 ``background == "window"`` 则是一个带有矩形和三个点的VGroup
 
 2. ``Code[1]`` 是行号 ( ``Code.line_numbers`` 一个Paragraph)，可以使用 ``Code.line_numbers[0]`` 或者 ``Code[1][0]`` 来访问行号中的第一个数字
 
 3. ``Code[2]`` 是代码 (``Code.code``)，一个带有颜色的Paragraph
 
-.. code:: python
+.. manim-example:: CodeExample
+  :media: ../../assets/image/Text/Code.gif
 
   class CodeExample(Scene):
       def construct(self):
@@ -57,5 +59,3 @@ Code
           self.play(Write(Code.line_numbers), run_time=0.3)
           self.play(*[Write(Code.code[i]) for i in range(Code.code.__len__())],
                     run_time=Code.run_time)
-
-.. image:: ../../assets/image/Text/Code.gif

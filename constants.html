@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="_static/copybutton.css" />
     <link rel="stylesheet" href="_static/custom.css" />
     <link rel="stylesheet" href="_static/colors.css" />
-    <link rel="stylesheet" href="_static/styles/default.css?179895e8a53ad3688372af73">
-    <link rel="stylesheet" href="_static/pygments.css?179895e8a53ad3688372af73">
+    <link rel="stylesheet" href="_static/styles/default.css?0e7b4af09c5e15d05caacc07">
+    <link rel="stylesheet" href="_static/pygments.css?0e7b4af09c5e15d05caacc07">
     
 <style>
   :root {
@@ -26,7 +26,7 @@
         <script src="_static/clipboard.min.js"></script>
         <script src="_static/copybutton.js"></script>
         <script src="_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="_static/scripts/main.js?179895e8a53ad3688372af73"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="_static/scripts/main.js?0e7b4af09c5e15d05caacc07"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -235,12 +235,10 @@
 <p>编辑manimlib/constants.py相关定义即可。
 <code class="docutils literal notranslate"><span class="pre">manimlib</span></code> 文件夹中的 <code class="docutils literal notranslate"><span class="pre">constants.py</span></code> 定义了在运行manim时需要的常量。
 一些常量在这里没有说明，因为他们只在manim内部使用</p>
-<div class="section" id="directories">
-<h2>配置目录-Directories<a class="headerlink" href="#directories" title="永久链接至标题">¶</a></h2>
-<blockquote>
-<div><dl class="simple">
-<dt>MEDIA_DIR</dt><dd><p>文件夹 <code class="docutils literal notranslate"><span class="pre">VIDEO_DIR</span></code> 和 <code class="docutils literal notranslate"><span class="pre">TEX_DIR</span></code> 创建的位置
-（如果他们没有被选项更改的话）</p>
+<div class="section" id="id1">
+<h2>配置目录<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<dl class="simple">
+<dt>MEDIA_DIR</dt><dd><p>文件夹 <code class="docutils literal notranslate"><span class="pre">VIDEO_DIR</span></code> 和 <code class="docutils literal notranslate"><span class="pre">TEX_DIR</span></code> 创建的位置（如果他们没有被选项更改的话）</p>
 </dd>
 <dt>VIDEO_DIR</dt><dd><p>存放manim渲染结果视频的文件夹，当一个场景渲染结束，它会存放在
 <code class="docutils literal notranslate"><span class="pre">VIDEO_DIR/&lt;module_name&gt;/&lt;scene_name&gt;/&lt;quality&gt;/&lt;scene_name&gt;.mp4</span></code>.
@@ -251,7 +249,6 @@
 <dt>TEXT_DIR</dt><dd><p>使用 <code class="docutils literal notranslate"><span class="pre">Text</span></code> 类时，通过cairo创建的文字的svg，会作为缓存</p>
 </dd>
 </dl>
-</div></blockquote>
 <p>这些文件夹如果不存在会被创建</p>
 <p>当你第一次运行一个动画时，你会看到下面的信息:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Media</span> <span class="n">will</span> <span class="n">be</span> <span class="n">stored</span> <span class="ow">in</span> <span class="n">media</span><span class="o">/.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">change</span> <span class="n">this</span> <span class="n">behavior</span> <span class="n">by</span> <span class="n">writing</span> <span class="n">a</span> <span class="n">different</span> <span class="n">directory</span> <span class="n">to</span> <span class="n">media_dir</span><span class="o">.</span><span class="n">txt</span><span class="o">.</span>
@@ -272,8 +269,8 @@
 也可以在 <code class="docutils literal notranslate"><span class="pre">constants.py</span></code> 文件中配置。</p>
 <p>在<code class="docutils literal notranslate"><span class="pre">manimlib/constants.py</span></code>中定义了一些常用的常量，如下</p>
 </div>
-<div class="section" id="id1">
-<h2>定义的渲染画质<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id2">
+<h2>定义的渲染画质<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PRODUCTION_QUALITY_CAMERA_CONFIG</span> <span class="o">=</span> <span class="p">{</span> <span class="c1"># -w的画质</span>
     <span class="s2">"pixel_height"</span><span class="p">:</span> <span class="mi">1440</span><span class="p">,</span>
     <span class="s2">"pixel_width"</span><span class="p">:</span> <span class="mi">2560</span><span class="p">,</span>
@@ -305,8 +302,8 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="id2">
-<h2>点密度，线宽度<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id3">
+<h2>点密度，线宽度<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">DEFAULT_POINT_DENSITY_2D</span> <span class="o">=</span> <span class="mi">25</span>
 <span class="n">DEFAULT_POINT_DENSITY_1D</span> <span class="o">=</span> <span class="mi">250</span>
 
@@ -314,8 +311,8 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="id3">
-<h2>画面上坐标的宽高<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id4">
+<h2>画面上坐标的宽高<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">FRAME_HEIGHT</span> <span class="o">=</span> <span class="mf">8.0</span>  <span class="c1"># 画面高默认8个单位</span>
 <span class="n">FRAME_WIDTH</span> <span class="o">=</span> <span class="n">FRAME_HEIGHT</span> <span class="o">*</span> <span class="n">DEFAULT_PIXEL_WIDTH</span> <span class="o">/</span> <span class="n">DEFAULT_PIXEL_HEIGHT</span>
 <span class="n">FRAME_Y_RADIUS</span> <span class="o">=</span> <span class="n">FRAME_HEIGHT</span> <span class="o">/</span> <span class="mi">2</span>
@@ -335,15 +332,15 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="id4">
-<h2>播放时间<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id5">
+<h2>播放时间<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">DEFAULT_POINTWISE_FUNCTION_RUN_TIME</span> <span class="o">=</span> <span class="mf">3.0</span>
 <span class="n">DEFAULT_WAIT_TIME</span> <span class="o">=</span> <span class="mf">1.0</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="ref-directions">
-<span id="id5"></span><h2>位置坐标<a class="headerlink" href="#ref-directions" title="永久链接至标题">¶</a></h2>
+<span id="id6"></span><h2>位置坐标<a class="headerlink" href="#ref-directions" title="永久链接至标题">¶</a></h2>
 <p>manim使用三维坐标，并且用 <code class="docutils literal notranslate"><span class="pre">ndarray</span></code> 的类型</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ORIGIN</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">))</span>
 <span class="n">UP</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">))</span>
@@ -369,16 +366,16 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="id6">
-<h2>数学常数<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id7">
+<h2>数学常数<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PI</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span>
 <span class="n">TAU</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">PI</span>
 <span class="n">DEGREES</span> <span class="o">=</span> <span class="n">TAU</span> <span class="o">/</span> <span class="mi">360</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id7">
-<h2>颜色<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id8">
+<h2>颜色<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
 <p>这里是manim中定义的颜色的预览：(修改自
 <a class="reference external" href="https://elteoremadebeethoven.github.io/manim_3feb_docs.github.io/html/_static/colors/colors.html">elteoremadebeethoven</a>)</p>
 <h3>BLUE</h3>
@@ -573,15 +570,15 @@
         <div class="toc-tree">
           <ul>
 <li><a class="reference internal" href="#">常量部分constants</a><ul>
-<li><a class="reference internal" href="#directories">配置目录-Directories</a></li>
-<li><a class="reference internal" href="#id1">定义的渲染画质</a></li>
-<li><a class="reference internal" href="#id2">点密度，线宽度</a></li>
-<li><a class="reference internal" href="#id3">画面上坐标的宽高</a></li>
+<li><a class="reference internal" href="#id1">配置目录</a></li>
+<li><a class="reference internal" href="#id2">定义的渲染画质</a></li>
+<li><a class="reference internal" href="#id3">点密度，线宽度</a></li>
+<li><a class="reference internal" href="#id4">画面上坐标的宽高</a></li>
 <li><a class="reference internal" href="#buff">buff</a></li>
-<li><a class="reference internal" href="#id4">播放时间</a></li>
+<li><a class="reference internal" href="#id5">播放时间</a></li>
 <li><a class="reference internal" href="#ref-directions">位置坐标</a></li>
-<li><a class="reference internal" href="#id6">数学常数</a></li>
-<li><a class="reference internal" href="#id7">颜色</a></li>
+<li><a class="reference internal" href="#id7">数学常数</a></li>
+<li><a class="reference internal" href="#id8">颜色</a></li>
 </ul>
 </li>
 </ul>

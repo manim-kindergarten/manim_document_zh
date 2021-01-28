@@ -1,8 +1,8 @@
 PMobject
 ========
 
-:class:`~mobject.types.point_cloud_mobject.PMobject` 是
-:class:`~mobject.mobject.Mobject` 的子类，使用点集来表示物体，目前不太常用
+:class:`~manimlib.mobject.types.point_cloud_mobject.PMobject` 是
+:class:`~manimlib.mobject.mobject.Mobject` 的子类，使用点集来表示物体，目前不太常用
 
 PMobject
 ********
@@ -38,9 +38,9 @@ Point
 
 .. TODO: 添加示例
 
-但是不推荐使用 :class:`~mobject.types.point_cloud_mobject.PointCloudDot`
-或 :class:`~mobject.types.point_cloud_mobject.Point` 来表示点，
-这样会因为属于 :class:`~mobject.types.point_cloud_mobject.PMobject`
-而非 :class:`~mobject.types.vectorized_mobject.VMobject` 而产生很多问题。
+但是不推荐使用 :class:`~manimlib.mobject.types.point_cloud_mobject.PointCloudDot`
+或 :class:`~manimlib.mobject.types.point_cloud_mobject.Point` 来表示点，
+这样会因为属于 :class:`~manimlib.mobject.types.point_cloud_mobject.PMobject`
+而非 :class:`~manimlib.mobject.types.vectorized_mobject.VMobject` 而产生很多问题。
 
-一般来表示点，通常使用 :class:`~mobject.geometry.Dot` 来完成
+一般来表示点，通常使用 :class:`~manimlib.mobject.geometry.Dot` 来完成

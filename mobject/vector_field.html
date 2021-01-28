@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?f9b3f0c44ace48e749f6d361">
-    <link rel="stylesheet" href="../_static/pygments.css?f9b3f0c44ace48e749f6d361">
+    <link rel="stylesheet" href="../_static/styles/default.css?7fa27bb106f5f63f7f7a64ff">
+    <link rel="stylesheet" href="../_static/pygments.css?7fa27bb106f5f63f7f7a64ff">
     
 <style>
   :root {
@@ -26,7 +26,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?f9b3f0c44ace48e749f6d361"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?7fa27bb106f5f63f7f7a64ff"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -252,25 +252,21 @@
 <dd><p>流线</p>
 <p>传入的 <code class="docutils literal notranslate"><span class="pre">func</span></code> 为自变量为一个点，返回值也为一个点的函数</p>
 <p>随机生成一系列起点，并且根据func流动形成图形</p>
-<ul>
+<ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">x_min,</span> <span class="pre">x_max,</span> <span class="pre">y_min,</span> <span class="pre">y_max</span></code> : 流线起点的范围</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">delta_x,</span> <span class="pre">delta_y</span></code> : 每两个流线起点x/y的变化量</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">n_repeats</span></code> : 起点重复多少次</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">dt</span></code> : 每次流动的时间（默认为0.05）</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">virtual_time</span></code> : 总共流动的时间（默认3） <code class="docutils literal notranslate"><span class="pre">virtual_time/dt</span></code> 为流动的次数</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">color_by_arc_length</span></code> : 根据弧长上色（默认为True）</p>
-<blockquote>
-<div><ul class="simple">
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">min_arc_length,</span> <span class="pre">max_arc_length</span></code> : 最小最大的弧长</p></li>
 </ul>
-</div></blockquote>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">color_by_magnitude</span></code> : 根据距离上色</p>
-<blockquote>
-<div><ul class="simple">
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">min_magnitude,</span> <span class="pre">max_magnitude</span></code> : 最小最大距离</p></li>
 </ul>
-</div></blockquote>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">colors</span></code> : 颜色梯度的范围，默认为 <code class="docutils literal notranslate"><span class="pre">[BLUE_E,</span> <span class="pre">GREEN,</span> <span class="pre">YELLOW,</span> <span class="pre">RED]</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">cutoff_norm</span></code> : 运行每条流线的最大长度</p></li>

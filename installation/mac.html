@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?786d6578645d14b70aa7fd6f">
-    <link rel="stylesheet" href="../_static/pygments.css?786d6578645d14b70aa7fd6f">
+    <link rel="stylesheet" href="../_static/styles/default.css?f93fdcdd0d12862c62182706">
+    <link rel="stylesheet" href="../_static/pygments.css?f93fdcdd0d12862c62182706">
     
 <style>
   :root {
@@ -26,7 +26,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?786d6578645d14b70aa7fd6f"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?f93fdcdd0d12862c62182706"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -221,25 +221,103 @@
   <main class="main">
     <div class="content">
       <article role="main">
-        <label class="toc-overlay-icon no-toc" for="__toc">
+        <label class="toc-overlay-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
         <div class="section" id="mac">
 <h1>Mac<a class="headerlink" href="#mac" title="永久链接至标题">¶</a></h1>
 <div class="admonition- admonition">
 <p class="admonition-title">声明</p>
-<p>这一页翻译自EulerTour写的教程</p>
+<p>这一页为Auxence原创编写</p>
 </div>
-<p>在Mac OS X上安装系统依赖项的最简单方法是使用 <code class="docutils literal notranslate"><span class="pre">brew</span></code></p>
-<p>Mac预装了python2，但要使用manim必须安装python3</p>
-<ol class="arabic simple">
-<li><p>安装python3 <a class="reference external" href="https://docs.python.org/3/using/mac.html">https://docs.python.org/3/using/mac.html</a></p></li>
-<li><p>安装cairo: <code class="docutils literal notranslate"><span class="pre">brew</span> <span class="pre">install</span> <span class="pre">cairo</span></code></p></li>
-<li><p>安装Sox: <code class="docutils literal notranslate"><span class="pre">brew</span> <span class="pre">install</span> <span class="pre">sox</span></code></p></li>
-<li><p>安装ffmpeg: <code class="docutils literal notranslate"><span class="pre">brew</span> <span class="pre">install</span> <span class="pre">ffmpeg</span></code></p></li>
-<li><p>安装LaTeX发行版 (MacTeX): <code class="docutils literal notranslate"><span class="pre">brew</span> <span class="pre">cask</span> <span class="pre">install</span> <span class="pre">mactex</span></code></p></li>
-<li><p>安装manimlib <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">manimlib</span></code> (或者 <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--user</span> <span class="pre">manimlib</span></code> 只为你自己安装)，或者clone下来GitHub上的存储库并安装requirements.txt中的依赖包</p></li>
+<div class="section" id="id1">
+<h2>安装教程推荐<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p>指南的实际操作展示可以见 <a class="reference external" href="https://www.bilibili.com/video/BV1W4411Z7Zt?p=2">视频</a>。</p>
+</div>
+<div class="section" id="id3">
+<h2>安装步骤指南<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<ol class="arabic">
+<li><p>安装Homebrew</p>
+<p>类似于Windows和Linux，macOS用来安装系统依赖项的方式就是Homebrew。
+Homebrew下载可以通过打开“终端”app，在终端中输入：</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>/bin/bash -c <span class="s2">"</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="k">)</span><span class="s2">"</span>
+</pre></div>
+</div>
+<p>按下回车，输入电脑的密码后再按一次回车即可。</p>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>如果因为网络原因下载不成功或者下载的速度太慢的话可以输入：</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> <span class="s2">"</span><span class="k">$(</span>brew --repo<span class="k">)</span><span class="s2">"</span>
+git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
+
+<span class="nb">cd</span> <span class="s2">"</span><span class="k">$(</span>brew --repo<span class="k">)</span><span class="s2">/Library/Taps/homebrew/homebrew-core"</span>
+git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+</pre></div>
+</div>
+<p>使用中科大的镜像替换brew.git和homebrew-core.git</p>
+</div>
+</li>
+<li><p>安装MacTeX</p>
+<p>MaxTeX是LaTeX的macOS版本，适用于macOS的文字排版等功能的使用。</p>
+<p>可以通过链接 <a class="reference external" href="https://mirrors.tuna.tsinghua.edu.cn/ctan/systems/mac/mactex/MacTeX.pkg">https://mirrors.tuna.tsinghua.edu.cn/ctan/systems/mac/mactex/MacTeX.pkg</a> 下载
+（推荐后台下载不浪费时间，下载完毕后双击安装即可）</p>
+</li>
+<li><p>安装Python3</p>
+<p>macOS的系统中自带Python2的环境，但是manim使用的环境为Python3，所以需要下载安装Python3（不同的处理器选择对应的安装包）</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.python.org/ftp/python/3.8.6/python-3.8.6-macosx10.9.pkg">Python3.8.6</a></p></li>
+<li><p><a class="reference external" href="https://www.python.org/ftp/python/3.8.7/python-3.8.7-macosx10.9.pkg">Python3.8.7</a></p></li>
+<li><p><a class="reference external" href="https://www.python.org/ftp/python/3.9.1/python-3.9.1-macosx10.9.pkg">Python3.9.1（Intel版本）</a></p></li>
+<li><p><a class="reference external" href="https://www.python.org/ftp/python/3.9.1/python-3.9.1-macos11.0.pkg">Python3.9.1（Apple Silicon M1版本）</a></p></li>
+</ul>
+</li>
+<li><p>安装pip</p>
+<p>同样打开终端应用，输入：</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>Brew install curl
+</pre></div>
+</div>
+<p>然后创建一个存放manim文件的文件夹并进入：</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>mkdir ManimInstall
+<span class="nb">cd</span> ManimInstall
+</pre></div>
+</div>
+<p>再下载并安装pip：</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python3 get-pip.py
+</pre></div>
+</div>
+</li>
+<li><p>下载系统依赖</p>
+<p>安装FFmpeg、sox、cairo、py2cairo、pkg-config，在终端分别输入：</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>brew install ffmpeg
+brew install sox
+brew install cairo
+brew install py2cairo
+brew install pkg-config
+</pre></div>
+</div>
+</li>
+<li><p>下载manim主文件</p>
+<p>Manim主文件夹是manim运行的基础，下载方式可以通过文件链接或者GitHub的manim主页下载
+<a class="reference external" href="https://github.com/3b1b/manim/archive/master.zip">https://github.com/3b1b/manim/archive/master.zip</a></p>
+<p>下载之后解压缩到刚才创建的位置（可以在文件夹中双指单击页面上方中间的图标，选择房子图标的用户文件夹，找到刚才的位置），
+并且找到 <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code>，删除最后的 <code class="docutils literal notranslate"><span class="pre">;</span> <span class="pre">sys_platform</span> <span class="pre">==</span> <span class="pre">'win32'</span></code></p>
+<p>然后继续在刚才的（位于新安装目录的）终端里分别运行：</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python3 -m pip install -r requirements.txt
+python3 -m pip install pyreadline
+python3 -m pip install pydub
+</pre></div>
+</div>
+</li>
+<li><p>安装完成</p>
+<p>至此我们已经全部安装了manim必需的部件，接下来可以在终端中输入如下命令测试结果：</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python3 -m manim example_scenes.py OpeningManimExample -pm
+</pre></div>
+</div>
+<p>其中，所有的输出文件，包括照片、视频等都会保存在manim文件夹下的media文件夹中。</p>
+</li>
 </ol>
+</div>
 </div>
 
       </article>
@@ -277,8 +355,26 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            目录
+          </span>
+        </div>
+        <div class="toc-tree">
+          <ul>
+<li><a class="reference internal" href="#">Mac</a><ul>
+<li><a class="reference internal" href="#id1">安装教程推荐</a></li>
+<li><a class="reference internal" href="#id3">安装步骤指南</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
       
       
     </aside>

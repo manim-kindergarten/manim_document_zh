@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="../../_static/custom.css" />
     <link rel="stylesheet" href="../../_static/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?70eb5c5119338af36fd881cc">
-    <link rel="stylesheet" href="../../_static/pygments.css?70eb5c5119338af36fd881cc">
+    <link rel="stylesheet" href="../../_static/styles/default.css?797a51fa243acbaaaff6c75f">
+    <link rel="stylesheet" href="../../_static/pygments.css?797a51fa243acbaaaff6c75f">
     
 <style>
   :root {
@@ -26,7 +26,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?70eb5c5119338af36fd881cc"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?797a51fa243acbaaaff6c75f"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -226,10 +226,10 @@
         </label>
         <div class="section" id="text">
 <h1>Text<a class="headerlink" href="#text" title="永久链接至标题">¶</a></h1>
-<p><code class="xref py py-class docutils literal notranslate"><span class="pre">Text</span></code> 使用 <code class="docutils literal notranslate"><span class="pre">cairo</span></code> 来生成文字的svg，
+<p><a class="reference internal" href="#manimlib.mobject.svg.text_mobject.Text" title="manimlib.mobject.svg.text_mobject.Text"><code class="xref py py-class docutils literal notranslate"><span class="pre">Text</span></code></a> 使用 <code class="docutils literal notranslate"><span class="pre">cairo</span></code> 来生成文字的svg，
 所以它不需要 <code class="docutils literal notranslate"><span class="pre">LaTeX</span></code> 环境，而且可以方便地更改字体，但是不能够书写公式。
 需要更改字体，而且要使用公式的，可以尝试cigar666编写的 <a class="reference external" href="https://github.com/manim-kindergarten/manim_sandbox/blob/master/utils/mobjects/MyText.py">MyText</a></p>
-<p>MK做了一个关于常用 <code class="xref py py-class docutils literal notranslate"><span class="pre">Text</span></code> 的视频：
+<p>MK做了一个关于常用 <a class="reference internal" href="#manimlib.mobject.svg.text_mobject.Text" title="manimlib.mobject.svg.text_mobject.Text"><code class="xref py py-class docutils literal notranslate"><span class="pre">Text</span></code></a> 的视频：
 <a class="reference external" href="https://www.bilibili.com/video/BV1CC4y1H7kp">〔manim教程〕第四讲 SVG、图片与文字</a></p>
 <p>由于这个类的作者XiaoYoung写了中文的文档，这里就不放出文档字符串了，以下是原文档：</p>
 <div class="section" id="textsetting">
@@ -247,10 +247,8 @@
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.text_mobject.</code><code class="sig-name descname">Text</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">config</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.text_mobject.Text" title="永久链接至目标">¶</a></dt>
 <dd><p>传入一个文件名指向输入的SVG文件</p>
 </dd></dl>
-<ul class="simple">
-<li><p>Demo</p></li>
-</ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="manim-example"><img alt="../../_images/image1.png" class="align-center" id="textdemo" src="../../_images/image1.png"/>
+<h5 class="example-header">TextDemo<a class="headerlink" href="#textdemo">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
 
 <span class="k">class</span> <span class="nc">Demo</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -258,84 +256,63 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Write</span><span class="p">(</span><span class="n">text</span><span class="p">))</span>
 </pre></div>
 </div>
-<p><img alt="introduction" src="../../_images/image1.png"/></p>
-<p><strong>参数</strong>：</p>
-<ul>
+</div><p><strong>参数</strong>：</p>
+<ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">text</span></code>:</p>
-<blockquote>
-<div><ul class="simple">
+<ul>
 <li><p>接收一个<code class="docutils literal notranslate"><span class="pre">str</span></code>，如<code class="docutils literal notranslate"><span class="pre">'Hello,</span> <span class="pre">world!'</span></code></p></li>
 <li><p>不支持LaTex语法</p></li>
 <li><p>如果只有一行，字符串前后的空格会被忽略(指不会产生长度，但是这些空格会被计算，可以用下标访问)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">\t</span></code>默认会被替换为4个空格，可以通过调整tab_width改变这一行为</p></li>
 </ul>
-</div></blockquote>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">color</span></code>:</p>
-<blockquote>
-<div><ul>
+<ul>
 <li><p>接收一个<code class="docutils literal notranslate"><span class="pre">str</span></code>，如<code class="docutils literal notranslate"><span class="pre">'#FFFFFF'</span></code></p></li>
 <li><p>或者是定义在<code class="docutils literal notranslate"><span class="pre">constants.py</span></code>里的颜色常量，如<code class="docutils literal notranslate"><span class="pre">BLUE</span></code></p></li>
 <li><p>Demo</p>
-<blockquote>
-<div><ul class="simple">
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello',</span> <span class="pre">color=BLUE)</span></code> <img alt="color" src="../../_images/image2.png"/></p></li>
 </ul>
-</div></blockquote>
 </li>
 </ul>
-</div></blockquote>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">t2c</span></code>:</p>
-<blockquote>
-<div><ul>
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">text2color</span></code>的缩写</p></li>
 <li><p>接收一个<code class="docutils literal notranslate"><span class="pre">dict</span></code>，如<code class="docutils literal notranslate"><span class="pre">{'text':</span> <span class="pre">color}</span></code></p></li>
 <li><p>或者切片模式，如<code class="docutils literal notranslate"><span class="pre">{'[1:4]':</span> <span class="pre">color}</span></code></p></li>
 <li><p>Demo</p>
-<blockquote>
-<div><ul class="simple">
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello,</span> <span class="pre">world!',</span> <span class="pre">t2c={'world':BLUE})</span></code> <img alt="t2c" src="../../_images/image3.png"/></p></li>
 </ul>
-</div></blockquote>
 </li>
 </ul>
-</div></blockquote>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">gradient</span></code>:</p>
-<blockquote>
-<div><ul>
+<ul>
 <li><p>接收一个<code class="docutils literal notranslate"><span class="pre">tuple</span></code>，如<code class="docutils literal notranslate"><span class="pre">(BLUE,</span> <span class="pre">GREEN,</span> <span class="pre">'#FFFFFF')</span></code></p></li>
 <li><p>Demo</p>
-<blockquote>
-<div><ul class="simple">
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello',</span> <span class="pre">gradient=(BLUE,</span> <span class="pre">GREEN))</span></code> <img alt="gradient" src="../../_images/image4.png"/></p></li>
 </ul>
-</div></blockquote>
 </li>
 </ul>
-</div></blockquote>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">t2g</span></code>:</p>
-<blockquote>
-<div><ul>
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">text2gradient</span></code>的缩写</p></li>
 <li><p>接收一个<code class="docutils literal notranslate"><span class="pre">dict</span></code>，如<code class="docutils literal notranslate"><span class="pre">{'text':</span> <span class="pre">(BLUE,</span> <span class="pre">GREEN,</span> <span class="pre">'#FFFFFF')}</span></code></p></li>
 <li><p>或者切片模式，如<code class="docutils literal notranslate"><span class="pre">{'[1:4]':</span> <span class="pre">(BLUE,</span> <span class="pre">GREEN,</span> <span class="pre">'#FFFFFF')}</span></code></p></li>
 <li><p>Demo</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello,</span> <span class="pre">world!',</span> <span class="pre">t2g={'world':(BLUE,</span> <span class="pre">GREEN)})</span></code>
-<img alt="t2g" src="../../_images/image5.png"/></p></li>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello,</span> <span class="pre">world!',</span> <span class="pre">t2g={'world':(BLUE,</span> <span class="pre">GREEN)})</span></code> <img alt="t2g" src="../../_images/image5.png"/></p></li>
 </ul>
-</div></blockquote>
 </li>
 </ul>
-</div></blockquote>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">font</span></code>:</p>
-<blockquote>
-<div><ul>
+<ul>
 <li><dl class="simple">
 <dt>接收一个<code class="docutils literal notranslate"><span class="pre">str</span></code>,</dt><dd><p>如<code class="docutils literal notranslate"><span class="pre">'Source</span> <span class="pre">Han</span> <span class="pre">Sans'</span></code>，请确保字体名正确</p>
 </dd>
@@ -343,66 +320,49 @@
 </li>
 <li><p>不支持直接读取给定的字体文件路径，必须先将字体安装到系统中才能使用</p></li>
 <li><p>Demo</p>
-<blockquote>
-<div><ul class="simple">
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello',</span> <span class="pre">font='Source</span> <span class="pre">Han</span> <span class="pre">Sans')</span></code> <img alt="font" src="../../_images/image6.png"/></p></li>
 </ul>
-</div></blockquote>
 </li>
 </ul>
-</div></blockquote>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">t2f</span></code>:</p>
-<blockquote>
-<div><ul>
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">text2font</span></code>的缩写</p></li>
 <li><p>接收一个<code class="docutils literal notranslate"><span class="pre">dict</span></code>，如<code class="docutils literal notranslate"><span class="pre">{'text':</span> <span class="pre">'Source</span> <span class="pre">Han</span> <span class="pre">Sans'}</span></code></p></li>
 <li><p>或者切片模式，如<code class="docutils literal notranslate"><span class="pre">{'[1:4]':</span> <span class="pre">'Source</span> <span class="pre">Han</span> <span class="pre">Sans'}</span></code></p></li>
 <li><p>Demo</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello,</span> <span class="pre">world!',</span> <span class="pre">t2f={'world':'Forte'})</span></code>
-<img alt="t2f" src="../../_images/image7.png"/></p></li>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello,</span> <span class="pre">world!',</span> <span class="pre">t2f={'world':'Forte'})</span></code> <img alt="t2f" src="../../_images/image7.png"/></p></li>
 </ul>
-</div></blockquote>
 </li>
 </ul>
-</div></blockquote>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">slant</span></code>:</p>
-<blockquote>
-<div><ul>
+<ul>
 <li><p>斜体选项: <code class="docutils literal notranslate"><span class="pre">NORMAL</span></code>或者<code class="docutils literal notranslate"><span class="pre">ITALIC</span></code></p></li>
 <li><p>其实还有一个<code class="docutils literal notranslate"><span class="pre">OBLIQUE</span></code>，但是貌似效果跟<code class="docutils literal notranslate"><span class="pre">ITALIC</span></code>一样</p></li>
 <li><p>Demo</p>
-<blockquote>
-<div><ul class="simple">
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello',</span> <span class="pre">slant=ITALIC)</span></code> <img alt="slant" src="../../_images/image8.png"/></p></li>
 </ul>
-</div></blockquote>
 </li>
 </ul>
-</div></blockquote>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">t2s</span></code>:</p>
-<blockquote>
-<div><ul>
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">text2slant</span></code>的缩写</p></li>
 <li><p>接收一个<code class="docutils literal notranslate"><span class="pre">dict</span></code>，如<code class="docutils literal notranslate"><span class="pre">{'text':</span> <span class="pre">ITALIC}</span></code></p></li>
 <li><p>或者切片模式，如<code class="docutils literal notranslate"><span class="pre">{'[1:4]':</span> <span class="pre">ITALIC}</span></code></p></li>
 <li><p>Demo</p>
-<blockquote>
-<div><ul class="simple">
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello,</span> <span class="pre">world!',</span> <span class="pre">t2s={'world':ITALIC})</span></code> <img alt="t2s" src="../../_images/image9.png"/></p></li>
 </ul>
-</div></blockquote>
 </li>
 </ul>
-</div></blockquote>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">weight</span></code>:</p>
-<blockquote>
-<div><ul>
+<ul>
 <li><p>字重(粗细)选项: <code class="docutils literal notranslate"><span class="pre">NORMAL</span></code>或者<code class="docutils literal notranslate"><span class="pre">BOLD</span></code></p></li>
 <li><p>目前只支持调用<code class="docutils literal notranslate"><span class="pre">NORMAL</span></code>和<code class="docutils literal notranslate"><span class="pre">BOLD</span></code>是因为底层的包不支持其它选项</p></li>
 <li><p>如果想用Light、Condensed等选项可以在调用字体的时候声明，如<code class="docutils literal notranslate"><span class="pre">'Open</span> <span class="pre">Sans</span> <span class="pre">Light'</span></code></p></li>
@@ -412,34 +372,26 @@
 </dl>
 </li>
 <li><p>Demo</p>
-<blockquote>
-<div><ul class="simple">
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello',</span> <span class="pre">weight=BOLD)</span></code> <img alt="weight" src="../../_images/image10.png"/></p></li>
 </ul>
-</div></blockquote>
 </li>
 </ul>
-</div></blockquote>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">t2w</span></code>:</p>
-<blockquote>
-<div><ul>
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">text2weight</span></code>的缩写</p></li>
 <li><p>接收一个<code class="docutils literal notranslate"><span class="pre">dict</span></code>，如<code class="docutils literal notranslate"><span class="pre">{'text':</span> <span class="pre">BOLD}</span></code></p></li>
 <li><p>或者切片模式，如<code class="docutils literal notranslate"><span class="pre">{'[1:4]':</span> <span class="pre">BOLD}</span></code></p></li>
 <li><p>Demo</p>
-<blockquote>
-<div><ul class="simple">
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello,</span> <span class="pre">world!',</span> <span class="pre">t2w={'world':BOLD})</span></code> <img alt="t2w" src="../../_images/image11.png"/></p></li>
 </ul>
-</div></blockquote>
 </li>
 </ul>
-</div></blockquote>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">size</span></code>:</p>
-<blockquote>
-<div><ul>
+<ul>
 <li><p>不建议使用</p></li>
 <li><p>接收一个数且该数要大于0.1</p></li>
 <li><p>不是线性的，因为<code class="docutils literal notranslate"><span class="pre">SVGMobject</span></code>的缩放逻辑有点迷</p></li>
@@ -447,55 +399,43 @@
 <li><p>目前与MUnit没有关联，所以玄学调参</p></li>
 <li><p>如果需要精确控制大小，建议使用<code class="docutils literal notranslate"><span class="pre">.scale()</span></code></p></li>
 <li><p>Demo</p>
-<blockquote>
-<div><ul class="simple">
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello',</span> <span class="pre">size=5)</span></code> <img alt="size" src="../../_images/image12.png"/></p></li>
 </ul>
-</div></blockquote>
 </li>
 </ul>
-</div></blockquote>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">lsh</span></code>:</p>
-<blockquote>
-<div><ul>
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">line_spacing_height</span></code>的缩写</p></li>
 <li><p>不建议使用</p></li>
 <li><p>默认与<code class="docutils literal notranslate"><span class="pre">size</span></code>相等</p></li>
 <li><p>非线性(存疑)</p></li>
 <li><p>与MUnit没有关联</p></li>
 <li><p>Demo</p>
-<blockquote>
-<div><ul class="simple">
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello\nWorld',</span> <span class="pre">lsh=1.5)</span></code> <img alt="lsh" src="../../_images/image13.png"/></p></li>
 </ul>
-</div></blockquote>
 </li>
 </ul>
-</div></blockquote>
 </li>
 <li><p>其它:</p>
-<blockquote>
-<div><ul class="simple">
+<ul>
 <li><p>还有一些从<code class="docutils literal notranslate"><span class="pre">Mobject</span></code>继承来的参数也可以使用</p></li>
 <li><p>如: <code class="docutils literal notranslate"><span class="pre">fill_color</span></code>、<code class="docutils literal notranslate"><span class="pre">fill_opacity</span></code>、<code class="docutils literal notranslate"><span class="pre">stroke_color</span></code>、<code class="docutils literal notranslate"><span class="pre">stroke_width</span></code></p></li>
 </ul>
-</div></blockquote>
 </li>
 </ul>
 <p><strong>CONFIG中属性</strong>：</p>
-<ul>
+<ul class="simple">
 <li><p>Mobjcet:</p>
-<blockquote>
-<div><ul class="simple">
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">color</span></code>: 默认为<code class="docutils literal notranslate"><span class="pre">WHITE</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">heigth</span></code>: 默认为<code class="docutils literal notranslate"><span class="pre">None</span></code></p></li>
 </ul>
-</div></blockquote>
 </li>
 <li><p>Text:</p>
-<blockquote>
-<div><ul class="simple">
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">font</span></code>: 默认为<code class="docutils literal notranslate"><span class="pre">''</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">gradient</span></code>: 默认为<code class="docutils literal notranslate"><span class="pre">None</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">lsh</span></code>: 默认为<code class="docutils literal notranslate"><span class="pre">-1</span></code></p></li>
@@ -509,58 +449,46 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">t2w</span></code>: 默认为<code class="docutils literal notranslate"><span class="pre">{}</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">tab_width</span></code>: 默认为<code class="docutils literal notranslate"><span class="pre">4</span></code></p></li>
 </ul>
-</div></blockquote>
 </li>
 </ul>
 <p><strong>方法</strong>：</p>
-<ul>
+<ul class="simple">
 <li><p>Mobject:</p>
-<blockquote>
-<div><ul>
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">set_color(self,</span> <span class="pre">color)</span></code>:</p>
-<blockquote>
-<div><ul class="simple">
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">text.set_color(BLUE)</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">text[7:12].set_color(BLUE)</span></code></p></li>
 </ul>
-</div></blockquote>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">set_color_by_gradient(self,</span> <span class="pre">gradient)</span></code>:</p>
-<blockquote>
-<div><ul class="simple">
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">text.set_color_by_gradient(BLUE,</span> <span class="pre">GREEN)</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">text[7:12].set_color_by_gradient(BLUE,</span> <span class="pre">GREEN)</span></code></p></li>
 </ul>
-</div></blockquote>
 </li>
 </ul>
-</div></blockquote>
 </li>
 <li><p>Text:</p>
-<blockquote>
-<div><ul>
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">set_color_by_t2c(self,</span> <span class="pre">t2c)</span></code>:</p>
-<blockquote>
-<div><ul class="simple">
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">text.set_color_by_t2c({'world':BLUE})</span></code></p></li>
 </ul>
-</div></blockquote>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">set_color_by_t2g(self,</span> <span class="pre">t2g)</span></code>:</p>
-<blockquote>
-<div><ul class="simple">
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">text.set_color_by_t2g({'world':(BLUE,</span> <span class="pre">GREEN)})</span></code></p></li>
 </ul>
-</div></blockquote>
 </li>
 </ul>
-</div></blockquote>
 </li>
 </ul>
 <p><strong>其它</strong>：</p>
 <ul>
 <li><p>切片模式:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span>
+<div class="manim-example"><img alt="../../_images/image14.png" class="align-center" id="textslice" src="../../_images/image14.png"/>
+<h5 class="example-header">TextSlice<a class="headerlink" href="#textslice">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span>
     <span class="s1">'Google'</span><span class="p">,</span>
     <span class="n">t2c</span><span class="o">=</span><span class="p">{</span>
         <span class="s1">'[:1]'</span><span class="p">:</span><span class="s1">'#3174f0'</span><span class="p">,</span> <span class="s1">'[1:2]'</span><span class="p">:</span><span class="s1">'#e53125'</span><span class="p">,</span>
@@ -570,10 +498,10 @@
 <span class="p">)</span>
 </pre></div>
 </div>
-<p><img alt="accurate_mode" src="../../_images/image14.png"/></p>
-</li>
+</div></li>
 <li><p>UTF-8:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="k">import</span> <span class="o">*</span>
+<div class="manim-example"><img alt="../../_images/image15.png" class="align-center" id="textutf8" src="../../_images/image15.png"/>
+<h5 class="example-header">TextUTF8<a class="headerlink" href="#textutf8">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
 
 <span class="n">script</span> <span class="o">=</span> <span class="s1">'''</span>
 <span class="s1">Hello</span>
@@ -588,8 +516,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Write</span><span class="p">(</span><span class="n">text</span><span class="p">))</span>
 </pre></div>
 </div>
-<p><img alt="utf-8" src="../../_images/image15.png"/></p>
-</li>
+</div></li>
 <li><p>目前对GBK(中日韩)文字的支持没有太大问题</p></li>
 <li><p>但是对于其它文字，如印度语、阿拉伯语的显示有很大问题</p></li>
 </ul>
@@ -601,7 +528,8 @@
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.text_mobject.</code><code class="sig-name descname">Paragraph</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">text</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">config</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.text_mobject.Paragraph" title="永久链接至目标">¶</a></dt>
 <dd><p>段落，方便实现code_mobject.py中的Code</p>
 </dd></dl>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ParagraphExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><img alt="../../_images/Paragraph1.png" class="align-center" id="paragraphexample" src="../../_images/Paragraph1.png"/>
+<h5 class="example-header">ParagraphExample<a class="headerlink" href="#paragraphexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ParagraphExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">t</span> <span class="o">=</span> <span class="n">Paragraph</span><span class="p">(</span>
             <span class="s1">'this is a awesome'</span><span class="p">,</span>
@@ -625,8 +553,8 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">rect</span><span class="p">)</span>
 </pre></div>
 </div>
-<img alt="../../_images/Paragraph1.png" src="../../_images/Paragraph1.png"/>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Test7</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+</div><div class="manim-example"><img alt="../../_images/Paragraph2.gif" class="align-center" id="paragraphexample2" src="../../_images/Paragraph2.gif"/>
+<h5 class="example-header">ParagraphExample2<a class="headerlink" href="#paragraphexample2">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Test7</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">t</span> <span class="o">=</span> <span class="n">Paragraph</span><span class="p">(</span>
             <span class="s1">'this is a awesome'</span><span class="p">,</span>
@@ -649,8 +577,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </pre></div>
 </div>
-<img alt="../../_images/Paragraph2.gif" src="../../_images/Paragraph2.gif"/>
-</div>
+</div></div>
 </div>
 
       </article>

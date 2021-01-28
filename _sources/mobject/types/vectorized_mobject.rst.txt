@@ -1,8 +1,8 @@
 VMobject
 ========
 
-:class:`~mobject.types.vectorized_mobject.VMobject` 是
-:class:`~mobject.mobject.Mobject` 的子类，使用贝塞尔曲线来表示物体
+:class:`~manimlib.mobject.types.vectorized_mobject.VMobject` 是
+:class:`~manimlib.mobject.mobject.Mobject` 的子类，使用贝塞尔曲线来表示物体
 
 VMobject
 ********

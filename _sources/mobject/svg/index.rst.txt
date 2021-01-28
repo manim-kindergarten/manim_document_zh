@@ -2,10 +2,10 @@ SVG图像相关物体svg
 ====================
 
 ``SVG`` 是一种基于xml格式表示的矢量图形，因此可以直接转化为
-:class:`~mobject.types.vectorized_mobject.VMobject` 中的点集。
+:class:`~manimlib.mobject.types.vectorized_mobject.VMobject` 中的点集。
 
 ``manimlib/mobject/svg/`` 文件夹中包含了解析SVG文件的 
-:class:`~mobject.svg.svg_mobject.SVGMobject`，和一些基于SVG的常用子类(例如文字)。
+:class:`~manimlib.mobject.svg.svg_mobject.SVGMobject`，和一些基于SVG的常用子类(例如文字)。
 
 但是manim对SVG的解析目前不完善，所以可能不能很好的解析出正常的图像。
 

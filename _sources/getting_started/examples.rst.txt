@@ -59,14 +59,14 @@
 
    class SquareToCircle(Scene):
 
-通过编写一个 :class:`~scene.scene.Scene` 的子类来创建一个场景，用于渲染出视频
+通过编写一个 :class:`~manimlib.scene.scene.Scene` 的子类来创建一个场景，用于渲染出视频
 
 .. code-block:: python
    :lineno-start: 4
 
    def construct(self):
 
-在 :meth:`~scene.scene.Scene.construct` 方法中说明当 :class:`~scene.scene.Scene` 渲染时要进行什么操作
+在 :meth:`~manimlib.scene.scene.Scene.construct` 方法中说明当 :class:`~manimlib.scene.scene.Scene` 渲染时要进行什么操作
 
 .. code-block:: python
    :lineno-start: 5
@@ -74,10 +74,10 @@
    circle = Circle()
    square = Square()
 
-``Circle()`` 和 ``Square()`` 创建了 :class:`~mobject.geometry.Circle` 和 :class:`~mobject.geometry.Square` 的实例，即一个圆一个方
+``Circle()`` 和 ``Square()`` 创建了 :class:`~manimlib.mobject.geometry.Circle` 和 :class:`~manimlib.mobject.geometry.Square` 的实例，即一个圆一个方
 
-它们都是 :class:`~mobject.mobject.Mobject` 的子类，注意如果一个 :class:`~mobject.mobject.Mobject` 实例
-没有添加到 :class:`~scene.scene.Scene` 中, 渲染之后就不会看到任何东西
+它们都是 :class:`~manimlib.mobject.mobject.Mobject` 的子类，注意如果一个 :class:`~manimlib.mobject.mobject.Mobject` 实例
+没有添加到 :class:`~manimlib.scene.scene.Scene` 中, 渲染之后就不会看到任何东西
 
 .. code-block:: python
    :lineno-start: 7
@@ -88,9 +88,9 @@
 
 ``flip()`` ``rotate()`` ``set_fill()`` 在执行动画之前应用了一些mobjects的变换
 
-- 调用 :meth:`~mobject.mobject.Mobject.flip` 以水平为轴翻转了 :class:`~mobject.geometry.Square`，相当于x轴上的反射
-- 调用 :meth:`~mobject.mobject.Mobject.rotate` 逆时针旋转了 :class:`~mobject.geometry.Square` 3/8圆.
-- 调用 :meth:`~mobject.mobject.Mobject.set_fill` 设置了 :class:`~mobject.geometry.Circle` 填充颜色为粉色(PINK), 不透明度(opacity)为0.5.
+- 调用 :meth:`~manimlib.mobject.mobject.Mobject.flip` 以水平为轴翻转了 :class:`~manimlib.mobject.geometry.Square`，相当于x轴上的反射
+- 调用 :meth:`~manimlib.mobject.mobject.Mobject.rotate` 逆时针旋转了 :class:`~manimlib.mobject.geometry.Square` 3/8圆.
+- 调用 :meth:`~manimlib.mobject.types.vectorized_mobject.VMobject.set_fill` 设置了 :class:`~manimlib.mobject.geometry.Circle` 填充颜色为粉色(PINK), 不透明度(opacity)为0.5.
 
 详细教程可以看 `〔manim教程〕第一讲 物体的位置与坐标变换  <https://www.bilibili.com/video/BV1p54y197cC>`_
 
@@ -101,25 +101,25 @@
    self.play(Transform(square, circle))
    self.play(FadeOut(square))
 
-实例化 :class:`~animation.animation.Animation` 构建动画
+实例化 :class:`~manimlib.animation.animation.Animation` 构建动画
 
-每个 :class:`~animation.animation.Animation` 传入一个或多个 :class:`~mobject.mobject.Mobject` 对象参数
-传递给 :meth:`~scene.scene.Scene.play` 呈现出动画，构建视频。
+每个 :class:`~manimlib.animation.animation.Animation` 传入一个或多个 :class:`~manimlib.mobject.mobject.Mobject` 对象参数
+传递给 :meth:`~manimlib.scene.scene.Scene.play` 呈现出动画，构建视频。
 
-:class:`~mobject.mobject.Mobject` 实例会自动添加到 :class:`~scene.scene.Scene` 中，当使用动画时
-你可以把 :class:`~mobject.mobject.Mobject` 通过使用 :meth:`~scene.scene.Scene.add` 方法手动添加到 :class:`~scene.scene.Scene` 中
+:class:`~manimlib.mobject.mobject.Mobject` 实例会自动添加到 :class:`~manimlib.scene.scene.Scene` 中，当使用动画时
+你可以把 :class:`~manimlib.mobject.mobject.Mobject` 通过使用 :meth:`~manimlib.scene.scene.Scene.add` 方法手动添加到 :class:`~manimlib.scene.scene.Scene` 中
 
 
-- :class:`~animation.creation.ShowCreation` 在屏幕上绘制出一个 :class:`~mobject.mobject.Mobject` 
-- :class:`~animation.transform.Transform` 把一个 :class:`~mobject.mobject.Mobject` 变成另一个图像
-- :class:`~animation.creation.FadeOut` 使一个 :class:`~mobject.mobject.Mobject` 淡出
+- :class:`~manimlib.animation.creation.ShowCreation` 在屏幕上绘制出一个 :class:`~manimlib.mobject.mobject.Mobject` 
+- :class:`~manimlib.animation.transform.Transform` 把一个 :class:`~manimlib.mobject.mobject.Mobject` 变成另一个图像
+- :class:`~manimlib.animation.fading.FadeOut` 使一个 :class:`~manimlib.mobject.mobject.Mobject` 淡出
 
 .. note::
 
-  第一个Mobject对象会被 :class:`~animation.transform.Transform` 方法修改，第二个对象不会被添加到Scene类中。
+  第一个Mobject对象会被 :class:`~manimlib.animation.transform.Transform` 方法修改，第二个对象不会被添加到Scene类中。
   仅仅更改了外形但是没有更改根本/基础的属性
 
-  例子中，``transform()`` 变换后 ``square`` 还是 :class:`~mobject.geometry.Square` 的实例，仅仅是渲染出来圆形外表，还要调用 :class:`~mobject.geometry.Square` 的属性和方法。
+  例子中，``transform()`` 变换后 ``square`` 还是 :class:`~manimlib.mobject.geometry.Square` 的实例，仅仅是渲染出来圆形外表，还要调用 :class:`~manimlib.mobject.geometry.Square` 的属性和方法。
 
 扭曲正方形WarpSquare
 ----------------------
@@ -148,13 +148,13 @@
        square
    ))
 
-从第六行开始，执行了一个动画 :class:`~animation.transform.ApplyPointwiseFunction` ，
+从第六行开始，执行了一个动画 :class:`~manimlib.animation.transform.ApplyPointwiseFunction` ，
 传入了一个函数 ``lambda point: complex_to_R3(np.exp(R3_to_complex(point)))``
 
 这个函数的输入值是一个点坐标，先经过 ``R3_to_complex`` 函数将点坐标转换为该点在复平面上代表的复数值，
 后求了e指数，将其结果传入 ``complex_to_R3`` 函数，将结果的复数转换为在复平面上的点坐标。
 
-将这个函数和物体square传入 :class:`~animation.transform.ApplyPointwiseFunction` 后，
+将这个函数和物体square传入 :class:`~manimlib.animation.transform.ApplyPointwiseFunction` 后，
 会对square的点集施加这个函数的作用（将每个点设为将该点传入函数后的返回值），实现了复变换。
 
 .. code-block:: python
@@ -197,8 +197,8 @@
        tex_to_color_map={"text": YELLOW}
    )
 
-第五行到第八行创建了一个文字（:class:`~mobject.svg.tex_mobject.TextMobject`），内容是"This is a some text"（打错字了）。
-第七行传入了一个字典 ``tex_to_color_map`` 将"text"指定为黄色。这时 :class:`~mobject.svg.tex_mobject.TextMobject`
+第五行到第八行创建了一个文字（:class:`~manimlib.mobject.svg.tex_mobject.TextMobject`），内容是"This is a some text"（打错字了）。
+第七行传入了一个字典 ``tex_to_color_map`` 将"text"指定为黄色。这时 :class:`~manimlib.mobject.svg.tex_mobject.TextMobject`
 会自动识别拆分开字符串，将并将"text"部分设置为黄色。
 
 .. code-block:: python
@@ -208,7 +208,7 @@
        "\\sum_{k=1}^\\infty {1 \\over k^2} = {\\pi^2 \\over 6}",
    )
 
-第九行到第十一行创建了一个公式（:class:`~mobject.svg.tex_mobject.TexMobject`），它使用LaTeX来渲染，所以使用LaTeX的公式语法，
+第九行到第十一行创建了一个公式（:class:`~manimlib.mobject.svg.tex_mobject.TexMobject`），它使用LaTeX来渲染，所以使用LaTeX的公式语法，
 并且在python中，需要将 ``\`` 转义写为 ``\\`` ，或者在字符串前加上 ``r`` ，例如这三行也可以写为：
 
 .. code-block:: python
@@ -225,7 +225,7 @@
    group.arrange(DOWN)
    group.set_width(FRAME_WIDTH - 2 * LARGE_BUFF)
 
-| 第十二行到第十四行先创建了一个物体集合（:class:`~mobject.types.vectorized_mobject.VGroup`），包含前面创建的文字和公式
+| 第十二行到第十四行先创建了一个物体集合（:class:`~manimlib.mobject.types.vectorized_mobject.VGroup`），包含前面创建的文字和公式
 | 第十三行调用了 ``arrange`` 方法，将 ``group`` 中的物体依次向下（DOWN）排列
 | 第十四行将整个 ``group`` 缩放到宽度为画面宽度，并且距离两边为 ``LARGE_BUFF``
 
@@ -236,7 +236,7 @@
    self.play(Write(example_tex))
    self.wait()
 
-| 第十六行开始是场景中的动画部分，前两行将创建的文字和公式使用 :class:`~animation.creation.Write` 动画"写"在画面中
+| 第十六行开始是场景中的动画部分，前两行将创建的文字和公式使用 :class:`~manimlib.animation.creation.Write` 动画"写"在画面中
 | 并且最后添加了一秒的停顿
 
 更新程序UpdatersExample
@@ -278,7 +278,7 @@
        include_sign=True,
    )
 
-| 第五行起创建了一个可变的十进制数字 :class:`~mobject.numbers.DecimalNumber` ，初始值为0
+| 第五行起创建了一个可变的十进制数字 :class:`~manimlib.mobject.numbers.DecimalNumber` ，初始值为0
 | 从第七行起设置了其属性，即显示省略号 ``show_ellipsis=True`` ，小数保留3位 ``num_decimal_places=3`` ，正数包含正号 ``include_sign=True``
 
 .. code-block:: python
