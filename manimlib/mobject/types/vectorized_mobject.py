@@ -70,25 +70,25 @@ class VMobject(Mobject):
 
         - ``fill`` 填充样式
 
-            - 颜色: ``fill_color`` 或 ``color``
-            - 不透明度: ``fill_opacity``
+          - 颜色: ``fill_color`` 或 ``color``
+          - 不透明度: ``fill_opacity``
 
         - ``stroke`` 线条样式
 
-            - 颜色: ``stroke_color`` 或 ``color``
-            - 宽度: ``stroke_width``
-            - 不透明度: ``stroke_opacity``
+          - 颜色: ``stroke_color`` 或 ``color``
+          - 宽度: ``stroke_width``
+          - 不透明度: ``stroke_opacity``
             
         - ``background_stroke`` 背景线条样式
 
-            - 颜色: ``background_stroke_color`` 或 ``color``
-            - 宽度: ``background_stroke_width``
-            - 不透明度: ``background_stroke_opacity``
+          - 颜色: ``background_stroke_color`` 或 ``color``
+          - 宽度: ``background_stroke_width``
+          - 不透明度: ``background_stroke_opacity``
         
         - ``sheen`` 光泽样式
 
-            - 光泽尺度: ``sheen_factor``
-            - 光泽方向: ``sheen_direction``
+          - 光泽尺度: ``sheen_factor``
+          - 光泽方向: ``sheen_direction``
         """
         self.set_fill(
             color=self.fill_color or self.color,

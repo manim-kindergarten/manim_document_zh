@@ -236,7 +236,7 @@ def midpoint(point1, point2):
 
 def line_intersection(line1, line2):
     """
-    求两直线交点
+    求两直线交点::
 
         point=line_intersection(line1.get_start_and_end(), line2.get_start_and_end())
     """

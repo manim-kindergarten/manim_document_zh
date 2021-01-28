@@ -245,11 +245,11 @@ class StreamLines(VGroup):
         - ``virtual_time`` : 总共流动的时间（默认3） ``virtual_time/dt`` 为流动的次数
         - ``color_by_arc_length`` : 根据弧长上色（默认为True）
 
-            - ``min_arc_length, max_arc_length`` : 最小最大的弧长
+          - ``min_arc_length, max_arc_length`` : 最小最大的弧长
 
         - ``color_by_magnitude`` : 根据距离上色
 
-            - ``min_magnitude, max_magnitude`` : 最小最大距离
+          - ``min_magnitude, max_magnitude`` : 最小最大距离
         
         - ``colors`` : 颜色梯度的范围，默认为 ``[BLUE_E, GREEN, YELLOW, RED]``
         - ``cutoff_norm`` : 运行每条流线的最大长度

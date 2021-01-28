@@ -50,25 +50,25 @@ class NumberLine(Line):
         - ``unit_size`` : 单位长度大小
         - 刻度相关
 
-            - ``include_ticks`` : 是否包含刻度线（bool值，默认True）
-            - ``tick_size`` : 刻度大小（默认0.1）
-            - ``tick_frequency`` : 刻度的频率（默认每一个单位一个刻度）
-            - ``numbers_with_elongated_ticks`` : 需要大刻度的数字（一个列表，默认为[0]）
+          - ``include_ticks`` : 是否包含刻度线（bool值，默认True）
+          - ``tick_size`` : 刻度大小（默认0.1）
+          - ``tick_frequency`` : 刻度的频率（默认每一个单位一个刻度）
+          - ``numbers_with_elongated_ticks`` : 需要大刻度的数字（一个列表，默认为[0]）
 
         - 数字相关
 
-            - ``include_numbers`` : 是否包含数字（bool值，默认False）
-            - ``numbers_to_show`` : 需要显示的数字
-            - ``number_at_center`` : 中心的数字
-            - ``label_direction`` : 数字在刻度的哪个方位（默认DOWN）
-            - ``line_to_number_buff`` : 数字到线的距离
-            - ``decimal_number_config`` : 字典，表示要传入给 ``DecimalNumber`` 的样式
-            - ``exclude_zero_from_default_numbers`` : 是否不显示0，默认False
+          - ``include_numbers`` : 是否包含数字（bool值，默认False）
+          - ``numbers_to_show`` : 需要显示的数字
+          - ``number_at_center`` : 中心的数字
+          - ``label_direction`` : 数字在刻度的哪个方位（默认DOWN）
+          - ``line_to_number_buff`` : 数字到线的距离
+          - ``decimal_number_config`` : 字典，表示要传入给 ``DecimalNumber`` 的样式
+          - ``exclude_zero_from_default_numbers`` : 是否不显示0，默认False
         
         - 箭头相关
 
-            - ``include_tip`` : 是否包含箭头（bool值，默认False）
-            - ``tip_width, tip_height`` : 箭头的宽度、高度
+          - ``include_tip`` : 是否包含箭头（bool值，默认False）
+          - ``tip_width, tip_height`` : 箭头的宽度、高度
         """
         digest_config(self, kwargs)
         start = self.unit_size * self.x_min * RIGHT

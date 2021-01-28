@@ -82,7 +82,7 @@ class Matrix(VMobject):
         
         - ``Matrix[0]`` 为中间元素，从左到右从上到下依次编号（只有一维）
 
-            - ``Matrix.mob_matrix`` 为二维数组，包含所有中间元素（按照传入格式）
+          - ``Matrix.mob_matrix`` 为二维数组，包含所有中间元素（按照传入格式）
 
         - ``Matrix[1]`` 为左括号（[）
         - ``Matrix[2]`` 为右括号（]）
