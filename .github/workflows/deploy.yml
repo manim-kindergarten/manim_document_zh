@@ -1,10 +1,6 @@
 name: docs
 
-on:
-  push:
-    branches:
-      - master
-      - manim
+on: push
 
 jobs:
   build_docs_and_deploy:
@@ -36,6 +32,14 @@ jobs:
         make html
         cd build/html
         echo "manim.ml" > CNAME
+
+    - name: Build document for shaders
+      run: |
+        export PATH="$PATH:/home/runner/.local/bin:/home/runner/manim_document_zh/manim"
+        export SPHINXBUILD="python3 -m sphinx"
+        cd shaders
+        make html
+        mv build/html/ ../build/html/shaders/
         
     - name: Deploy to GitHub pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
