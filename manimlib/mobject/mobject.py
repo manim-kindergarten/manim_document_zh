@@ -246,7 +246,7 @@ class Mobject(Container):
         return self
 
     def scale(self, scale_factor, **kwargs):
-        """放大(缩小)到原来的 ``scale_factor`` ，``kwargs`` 中可以传入 ``aligned_edge``"""
+        """放大(缩小)到原来的 ``scale_factor`` ，``kwargs`` 中可以传入 ``about_point/about_edge``"""
         self.apply_points_function_about_point(
             lambda points: scale_factor * points, **kwargs
         )
