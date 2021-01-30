@@ -25,6 +25,7 @@ multipledispatch==0.6.0
 nltk==3.5
 numpy==1.19.5
 olefile==0.46
+opencv-python
 packaging==20.4
 parso==0.6.2
 pickleshare==0.7.5
