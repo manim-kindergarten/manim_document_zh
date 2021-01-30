@@ -3,13 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="练习部分(TODO)" href="../homework/index.html" /><link rel="prev" title="常见问题" href="index.html" />
 
-    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.4.3, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>安装问题 - manim  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?fd030e9f28ca663231825da6">
-    <link rel="stylesheet" href="../_static/pygments.css?fd030e9f28ca663231825da6">
+    <link rel="stylesheet" href="../_static/styles/default.css?f777bb36eae935ae1df023c3">
+    <link rel="stylesheet" href="../_static/pygments.css?f777bb36eae935ae1df023c3">
     
 <style>
   :root {
@@ -23,10 +23,12 @@
       
         <script src="../_static/doctools.js" defer></script>
       
+        <script src="../_static/language_data.js" defer></script>
+      
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?fd030e9f28ca663231825da6"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?f777bb36eae935ae1df023c3"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -282,11 +284,11 @@
 <div class="section" id="q1-big-ol-pile-of-manim-imports">
 <h3>Q1: 没有模块<code class="docutils literal notranslate"><span class="pre">big_ol_pile_of_manim_imports</span></code><a class="headerlink" href="#q1-big-ol-pile-of-manim-imports" title="永久链接至标题">¶</a></h3>
 <p>将文件中的</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">big_ol_pile_of_manim_imports</span> <span class="k">import</span> <span class="o">*</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">big_ol_pile_of_manim_imports</span> <span class="kn">import</span> <span class="o">*</span>
 </pre></div>
 </div>
 <p>改成</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="k">import</span> <span class="o">*</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
 </pre></div>
 </div>
 </div>
@@ -614,7 +616,7 @@ b+a
 添加外部包的名称 <a class="footnote-reference brackets" href="#id35" id="id17">10</a></p>
 <p>就拿上面的音符为例，因为是在<code class="docutils literal notranslate"><span class="pre">harmony</span></code>包中的，所以在<code class="docutils literal notranslate"><span class="pre">tex</span></code>文件中添加<code class="docutils literal notranslate"><span class="pre">\usepackage{harmony}</span></code> <a class="footnote-reference brackets" href="#id36" id="id18">11</a></p>
 <p>然后新建一个<code class="docutils literal notranslate"><span class="pre">py</span></code>文件，写入代码</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="k">import</span> <span class="o">*</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="k">class</span> <span class="nc">TestHarmony</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="c1"># harmony具体用法请百度</span>

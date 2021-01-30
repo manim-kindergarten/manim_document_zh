@@ -3,13 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="Rate_functions" href="rate_functions.html" /><link rel="prev" title="Iterables" href="iterables.html" />
 
-    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.4.3, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>Paths - manim  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?1f5ad5683ae982ba0e75b497">
-    <link rel="stylesheet" href="../_static/pygments.css?1f5ad5683ae982ba0e75b497">
+    <link rel="stylesheet" href="../_static/styles/default.css?dec7f03b63b6d39829316b64">
+    <link rel="stylesheet" href="../_static/pygments.css?dec7f03b63b6d39829316b64">
     
 <style>
   :root {
@@ -23,10 +23,12 @@
       
         <script src="../_static/doctools.js" defer></script>
       
+        <script src="../_static/language_data.js" defer></script>
+      
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?1f5ad5683ae982ba0e75b497"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?dec7f03b63b6d39829316b64"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -228,40 +230,18 @@
 <h1>Paths<a class="headerlink" href="#paths" title="永久链接至标题">¶</a></h1>
 <p><code class="docutils literal notranslate"><span class="pre">manimlib/utils/paths.py</span></code> 这个文件中主要实现了和路径有关的函数</p>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.utils.paths.straight_path">
-<code class="sig-prename descclassname">manimlib.utils.paths.</code><code class="sig-name descname">straight_path</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start_points</span></em>, <em class="sig-param"><span class="n">end_points</span></em>, <em class="sig-param"><span class="n">alpha</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.paths.straight_path" title="永久链接至目标">¶</a></dt>
-<dd><p>Same function as interpolate, but renamed to reflect
-intent of being used to determine how a set of points move
-to another set.  For instance, it should be a specific case
-of path_along_arc</p>
-</dd></dl>
 <p>直线路径，和线性插值相同</p>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.utils.paths.path_along_arc">
-<code class="sig-prename descclassname">manimlib.utils.paths.</code><code class="sig-name descname">path_along_arc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">arc_angle</span></em>, <em class="sig-param"><span class="n">axis</span><span class="o">=</span><span class="default_value">array([0., 0., 1.])</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.paths.path_along_arc" title="永久链接至目标">¶</a></dt>
-<dd><p>If vect is vector from start to end, [vect[:,1], -vect[:,0]] is
-perpendicular to vect in the left direction.</p>
-</dd></dl>
 <div class="line-block">
 <div class="line">以 <code class="docutils literal notranslate"><span class="pre">axis</span></code> 为轴， <code class="docutils literal notranslate"><span class="pre">arc_angle</span></code> 为圆心角的圆弧路径</div>
 <div class="line">返回含有三个参数 <code class="docutils literal notranslate"><span class="pre">(start_points,</span> <span class="pre">end_points,</span> <span class="pre">alpha)</span></code> 的函数</div>
 </div>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.utils.paths.clockwise_path">
-<code class="sig-prename descclassname">manimlib.utils.paths.</code><code class="sig-name descname">clockwise_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.paths.clockwise_path" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <div class="line-block">
 <div class="line">顺时针圆路径</div>
 <div class="line">返回含有三个参数 <code class="docutils literal notranslate"><span class="pre">(start_points,</span> <span class="pre">end_points,</span> <span class="pre">alpha)</span></code> 的函数</div>
 </div>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.utils.paths.counterclockwise_path">
-<code class="sig-prename descclassname">manimlib.utils.paths.</code><code class="sig-name descname">counterclockwise_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.paths.counterclockwise_path" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <div class="line-block">
 <div class="line">逆时针圆路径</div>
 <div class="line">返回含有三个参数 <code class="docutils literal notranslate"><span class="pre">(start_points,</span> <span class="pre">end_points,</span> <span class="pre">alpha)</span></code> 的函数</div>

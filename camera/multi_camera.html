@@ -3,13 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="ThreeDCamera" href="three_d_camera.html" /><link rel="prev" title="MovingCamera" href="moving_camera.html" />
 
-    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.4.3, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>MultiCamera - manim  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?b96dcf3988df883646d48243">
-    <link rel="stylesheet" href="../_static/pygments.css?b96dcf3988df883646d48243">
+    <link rel="stylesheet" href="../_static/styles/default.css?db1c9d088efbe85b8666b3ea">
+    <link rel="stylesheet" href="../_static/pygments.css?db1c9d088efbe85b8666b3ea">
     
 <style>
   :root {
@@ -23,10 +23,12 @@
       
         <script src="../_static/doctools.js" defer></script>
       
+        <script src="../_static/language_data.js" defer></script>
+      
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?b96dcf3988df883646d48243"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?db1c9d088efbe85b8666b3ea"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -227,40 +229,10 @@
         <div class="section" id="multicamera">
 <h1>MultiCamera<a class="headerlink" href="#multicamera" title="永久链接至标题">¶</a></h1>
 <p><code class="docutils literal notranslate"><span class="pre">MultiCamera</span></code> 是一个支持多机位的相机类，通过添加
-<a class="reference internal" href="../mobject/types/image_mobject.html#manimlib.mobject.types.image_mobject.ImageMobjectFromCamera" title="manimlib.mobject.types.image_mobject.ImageMobjectFromCamera"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageMobjectFromCamera</span></code></a> 来相当于添加子相机。
+<code class="xref py py-class docutils literal notranslate"><span class="pre">ImageMobjectFromCamera</span></code> 来相当于添加子相机。
 在 <code class="xref py py-class docutils literal notranslate"><span class="pre">ZoomedScene</span></code> 中被默认使用。</p>
 <div class="section" id="id1">
 <h2>MultiCamera<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.camera.multi_camera.MultiCamera">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.camera.multi_camera.</code><code class="sig-name descname">MultiCamera</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">image_mobjects_from_cameras</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.multi_camera.MultiCamera" title="永久链接至目标">¶</a></dt>
-<dd><p>可以在初始化时传入多个 <code class="docutils literal notranslate"><span class="pre">ImageMobjectFromCamera</span></code></p>
-<dl class="py method">
-<dt id="manimlib.camera.multi_camera.MultiCamera.add_image_mobject_from_camera">
-<code class="sig-name descname">add_image_mobject_from_camera</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">image_mobject_from_camera</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.multi_camera.MultiCamera.add_image_mobject_from_camera" title="永久链接至目标">¶</a></dt>
-<dd><p>把 <code class="docutils literal notranslate"><span class="pre">image_mobject_from_camera</span></code> 添加到所有’相机’中</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.camera.multi_camera.MultiCamera.capture_mobjects">
-<code class="sig-name descname">capture_mobjects</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobjects</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.multi_camera.MultiCamera.capture_mobjects" title="永久链接至目标">¶</a></dt>
-<dd><p>捕获 <code class="docutils literal notranslate"><span class="pre">mobjects</span></code> 中的所有物体</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.camera.multi_camera.MultiCamera.get_mobjects_indicating_movement">
-<code class="sig-name descname">get_mobjects_indicating_movement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.multi_camera.MultiCamera.get_mobjects_indicating_movement" title="永久链接至目标">¶</a></dt>
-<dd><p>返回主相机和所有子相机的所有frame构成的列表</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.camera.multi_camera.MultiCamera.reset">
-<code class="sig-name descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.multi_camera.MultiCamera.reset" title="永久链接至目标">¶</a></dt>
-<dd><p>全部重置</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.camera.multi_camera.MultiCamera.update_sub_cameras">
-<code class="sig-name descname">update_sub_cameras</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.multi_camera.MultiCamera.update_sub_cameras" title="永久链接至目标">¶</a></dt>
-<dd><p>更新子相机的 <code class="docutils literal notranslate"><span class="pre">pixel_array</span></code></p>
-</dd></dl>
-</dd></dl>
 </div>
 </div>
 

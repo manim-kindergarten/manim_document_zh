@@ -3,13 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="ThreeDimensions" href="three_dimensions.html" /><link rel="prev" title="ThreeDShadingUtils" href="three_d_shading_utils.html" />
 
-    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.4.3, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>ThreeDUtils - manim  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?0501e56bec97b62a74c7a342">
-    <link rel="stylesheet" href="../_static/pygments.css?0501e56bec97b62a74c7a342">
+    <link rel="stylesheet" href="../_static/styles/default.css?399f153b6714994a91683a08">
+    <link rel="stylesheet" href="../_static/pygments.css?399f153b6714994a91683a08">
     
 <style>
   :root {
@@ -23,10 +23,12 @@
       
         <script src="../_static/doctools.js" defer></script>
       
+        <script src="../_static/language_data.js" defer></script>
+      
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?0501e56bec97b62a74c7a342"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?399f153b6714994a91683a08"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -228,53 +230,13 @@
 <h1>ThreeDUtils<a class="headerlink" href="#threedutils" title="永久链接至标题">¶</a></h1>
 <p><code class="docutils literal notranslate"><span class="pre">manimlib/mobject/three_d_utils.py</span></code> 这个文件中主要实现了3D物体根据光照改变颜色的相关函数。</p>
 <p>在 <code class="xref py py-class docutils literal notranslate"><span class="pre">ThreeDScene</span></code> 的方法 <code class="docutils literal notranslate"><span class="pre">modified_rgbas</span></code> 中调用来实现光照效果。</p>
-<dl class="py function">
-<dt id="manimlib.mobject.three_d_utils.get_3d_vmob_gradient_start_and_end_points">
-<code class="sig-prename descclassname">manimlib.mobject.three_d_utils.</code><code class="sig-name descname">get_3d_vmob_gradient_start_and_end_points</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vmob</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.three_d_utils.get_3d_vmob_gradient_start_and_end_points" title="永久链接至目标">¶</a></dt>
-<dd><p>获取三维物体 <code class="docutils literal notranslate"><span class="pre">vmob</span></code> 光照着色梯度开始和结束的点</p>
-</dd></dl>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.mobject.three_d_utils.get_3d_vmob_start_corner_index">
-<code class="sig-prename descclassname">manimlib.mobject.three_d_utils.</code><code class="sig-name descname">get_3d_vmob_start_corner_index</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vmob</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.three_d_utils.get_3d_vmob_start_corner_index" title="永久链接至目标">¶</a></dt>
-<dd><p>获取三维物体 <code class="docutils literal notranslate"><span class="pre">vmob</span></code> 光照着色梯度开始的点在点集中的索引</p>
-</dd></dl>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.mobject.three_d_utils.get_3d_vmob_end_corner_index">
-<code class="sig-prename descclassname">manimlib.mobject.three_d_utils.</code><code class="sig-name descname">get_3d_vmob_end_corner_index</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vmob</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.three_d_utils.get_3d_vmob_end_corner_index" title="永久链接至目标">¶</a></dt>
-<dd><p>获取三维物体 <code class="docutils literal notranslate"><span class="pre">vmob</span></code> 光照着色梯度结束的点在点集中的索引</p>
-</dd></dl>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.mobject.three_d_utils.get_3d_vmob_start_corner">
-<code class="sig-prename descclassname">manimlib.mobject.three_d_utils.</code><code class="sig-name descname">get_3d_vmob_start_corner</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vmob</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.three_d_utils.get_3d_vmob_start_corner" title="永久链接至目标">¶</a></dt>
-<dd><p>获取三维物体 <code class="docutils literal notranslate"><span class="pre">vmob</span></code> 光照着色梯度开始的点</p>
-</dd></dl>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.mobject.three_d_utils.get_3d_vmob_end_corner">
-<code class="sig-prename descclassname">manimlib.mobject.three_d_utils.</code><code class="sig-name descname">get_3d_vmob_end_corner</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vmob</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.three_d_utils.get_3d_vmob_end_corner" title="永久链接至目标">¶</a></dt>
-<dd><p>获取三维物体 <code class="docutils literal notranslate"><span class="pre">vmob</span></code> 光照着色梯度结束的点</p>
-</dd></dl>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.mobject.three_d_utils.get_3d_vmob_unit_normal">
-<code class="sig-prename descclassname">manimlib.mobject.three_d_utils.</code><code class="sig-name descname">get_3d_vmob_unit_normal</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vmob</span></em>, <em class="sig-param"><span class="n">point_index</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.three_d_utils.get_3d_vmob_unit_normal" title="永久链接至目标">¶</a></dt>
-<dd><p>获取三维物体 <code class="docutils literal notranslate"><span class="pre">vmob</span></code> 在 <code class="docutils literal notranslate"><span class="pre">point_index</span></code> 点处的法线（单位向量）</p>
-</dd></dl>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.mobject.three_d_utils.get_3d_vmob_start_corner_unit_normal">
-<code class="sig-prename descclassname">manimlib.mobject.three_d_utils.</code><code class="sig-name descname">get_3d_vmob_start_corner_unit_normal</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vmob</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.three_d_utils.get_3d_vmob_start_corner_unit_normal" title="永久链接至目标">¶</a></dt>
-<dd><p>获取三维物体 <code class="docutils literal notranslate"><span class="pre">vmob</span></code> 在光照着色梯度开始的点处的法线（单位向量）</p>
-</dd></dl>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.mobject.three_d_utils.get_3d_vmob_end_corner_unit_normal">
-<code class="sig-prename descclassname">manimlib.mobject.three_d_utils.</code><code class="sig-name descname">get_3d_vmob_end_corner_unit_normal</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vmob</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.three_d_utils.get_3d_vmob_end_corner_unit_normal" title="永久链接至目标">¶</a></dt>
-<dd><p>获取三维物体 <code class="docutils literal notranslate"><span class="pre">vmob</span></code> 在光照着色梯度结束的点处的法线（单位向量）</p>
-</dd></dl>
 </div>
 
       </article>

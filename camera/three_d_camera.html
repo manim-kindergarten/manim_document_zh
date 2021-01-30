@@ -3,13 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="场景部分scene(TODO)" href="../scene/index.html" /><link rel="prev" title="MultiCamera" href="multi_camera.html" />
 
-    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.4.3, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>ThreeDCamera - manim  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?10d7946db61a9d5932a69417">
-    <link rel="stylesheet" href="../_static/pygments.css?10d7946db61a9d5932a69417">
+    <link rel="stylesheet" href="../_static/styles/default.css?2edf08f6a057ef1273127962">
+    <link rel="stylesheet" href="../_static/pygments.css?2edf08f6a057ef1273127962">
     
 <style>
   :root {
@@ -23,10 +23,12 @@
       
         <script src="../_static/doctools.js" defer></script>
       
+        <script src="../_static/language_data.js" defer></script>
+      
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?10d7946db61a9d5932a69417"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?2edf08f6a057ef1273127962"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -232,71 +234,6 @@
 <code class="xref py py-class docutils literal notranslate"><span class="pre">SpecialThreeDScene</span></code> 中被默认使用。</p>
 <div class="section" id="id1">
 <h2>ThreeDCamera<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.camera.three_d_camera.ThreeDCamera">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.camera.three_d_camera.</code><code class="sig-name descname">ThreeDCamera</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.three_d_camera.ThreeDCamera" title="永久链接至目标">¶</a></dt>
-<dd><p>使用球坐标系，<code class="docutils literal notranslate"><span class="pre">phi,theta</span></code> 和球坐标系中意义相同。
-<code class="docutils literal notranslate"><span class="pre">distance</span></code> 表示画面扭曲程度，不表示相机距离。
-<code class="docutils literal notranslate"><span class="pre">gamma</span></code> 表示相机转角。
-<code class="docutils literal notranslate"><span class="pre">frame_center</span></code> 表示相机的中心，为一个 <code class="docutils literal notranslate"><span class="pre">ndarray</span></code>。
-<code class="docutils literal notranslate"><span class="pre">should_apply_shading</span></code> 是一个bool值，为True时根据光源位置设置光泽。
-<code class="docutils literal notranslate"><span class="pre">light_source_start_point</span></code> 为一个 <code class="docutils literal notranslate"><span class="pre">ndarray</span></code> 表示光源位置</p>
-<dl class="py method">
-<dt id="manimlib.camera.three_d_camera.ThreeDCamera.add_fixed_in_frame_mobjects">
-<code class="sig-name descname">add_fixed_in_frame_mobjects</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">mobjects</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.three_d_camera.ThreeDCamera.add_fixed_in_frame_mobjects" title="永久链接至目标">¶</a></dt>
-<dd><p>将 <code class="docutils literal notranslate"><span class="pre">mobjects</span></code> 固定在屏幕上（2D）</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.camera.three_d_camera.ThreeDCamera.add_fixed_orientation_mobjects">
-<code class="sig-name descname">add_fixed_orientation_mobjects</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">mobjects</span></em>, <em class="sig-param"><span class="n">use_static_center_func</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">center_func</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.three_d_camera.ThreeDCamera.add_fixed_orientation_mobjects" title="永久链接至目标">¶</a></dt>
-<dd><p>将 <code class="docutils literal notranslate"><span class="pre">mobjects</span></code> 固定在相机中（3D）</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.camera.three_d_camera.ThreeDCamera.capture_mobjects">
-<code class="sig-name descname">capture_mobjects</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobjects</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.three_d_camera.ThreeDCamera.capture_mobjects" title="永久链接至目标">¶</a></dt>
-<dd><p>捕获 <code class="docutils literal notranslate"><span class="pre">mobjects</span></code> 中的所有物体</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.camera.three_d_camera.ThreeDCamera.generate_rotation_matrix">
-<code class="sig-name descname">generate_rotation_matrix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.three_d_camera.ThreeDCamera.generate_rotation_matrix" title="永久链接至目标">¶</a></dt>
-<dd><p>根据角度获取旋转矩阵，将3D映射到2D</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.camera.three_d_camera.ThreeDCamera.get_mobjects_to_display">
-<code class="sig-name descname">get_mobjects_to_display</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.three_d_camera.ThreeDCamera.get_mobjects_to_display" title="永久链接至目标">¶</a></dt>
-<dd><p>获取所有要显示的物体</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.camera.three_d_camera.ThreeDCamera.get_value_trackers">
-<code class="sig-name descname">get_value_trackers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.three_d_camera.ThreeDCamera.get_value_trackers" title="永久链接至目标">¶</a></dt>
-<dd><p>获取存储phi,theta,distance,gamma的ValueTracker</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.camera.three_d_camera.ThreeDCamera.modified_rgbas">
-<code class="sig-name descname">modified_rgbas</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vmobject</span></em>, <em class="sig-param"><span class="n">rgbas</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.three_d_camera.ThreeDCamera.modified_rgbas" title="永久链接至目标">¶</a></dt>
-<dd><p>给 <code class="docutils literal notranslate"><span class="pre">vmobject</span></code> 的颜色数组 <code class="docutils literal notranslate"><span class="pre">rgbas</span></code> 加入光照处理</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.camera.three_d_camera.ThreeDCamera.project_points">
-<code class="sig-name descname">project_points</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">points</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.three_d_camera.ThreeDCamera.project_points" title="永久链接至目标">¶</a></dt>
-<dd><p>使用 <code class="docutils literal notranslate"><span class="pre">rotation_matrix</span></code> 处理所有物体的点</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.camera.three_d_camera.ThreeDCamera.remove_fixed_in_frame_mobjects">
-<code class="sig-name descname">remove_fixed_in_frame_mobjects</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">mobjects</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.three_d_camera.ThreeDCamera.remove_fixed_in_frame_mobjects" title="永久链接至目标">¶</a></dt>
-<dd><p>将固定在屏幕上的 <code class="docutils literal notranslate"><span class="pre">mobjects</span></code> 移除固定</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.camera.three_d_camera.ThreeDCamera.remove_fixed_orientation_mobjects">
-<code class="sig-name descname">remove_fixed_orientation_mobjects</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">mobjects</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.three_d_camera.ThreeDCamera.remove_fixed_orientation_mobjects" title="永久链接至目标">¶</a></dt>
-<dd><p>将固定在相机中的 <code class="docutils literal notranslate"><span class="pre">mobjects</span></code> 移除固定</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.camera.three_d_camera.ThreeDCamera.transform_points_pre_display">
-<code class="sig-name descname">transform_points_pre_display</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">points</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.three_d_camera.ThreeDCamera.transform_points_pre_display" title="永久链接至目标">¶</a></dt>
-<dd><p>调用 <code class="docutils literal notranslate"><span class="pre">project_points</span></code> 处理 <code class="docutils literal notranslate"><span class="pre">mobject</span></code></p>
-</dd></dl>
-</dd></dl>
 </div>
 </div>
 

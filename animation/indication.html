@@ -3,13 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="Movement" href="movement.html" /><link rel="prev" title="Growing" href="growing.html" />
 
-    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.4.3, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>Indication - manim  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?3c61688bd752f4097f6a5f29">
-    <link rel="stylesheet" href="../_static/pygments.css?3c61688bd752f4097f6a5f29">
+    <link rel="stylesheet" href="../_static/styles/default.css?18d16e39134642c5ea942290">
+    <link rel="stylesheet" href="../_static/pygments.css?18d16e39134642c5ea942290">
     
 <style>
   :root {
@@ -23,10 +23,12 @@
       
         <script src="../_static/doctools.js" defer></script>
       
+        <script src="../_static/language_data.js" defer></script>
+      
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?3c61688bd752f4097f6a5f29"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?18d16e39134642c5ea942290"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -232,10 +234,6 @@
 </div>
 <div class="section" id="focuson">
 <h2>FocusOn<a class="headerlink" href="#focuson" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.indication.FocusOn">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.indication.</code><code class="sig-name descname">FocusOn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">focus_point</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.indication.FocusOn" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="focusonexample" loop="" src="../_static/manim_3fed/FocusOnExample.mp4"></video><h5 class="example-header">FocusOnExample<a class="headerlink" href="#focusonexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FocusOnExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
@@ -262,10 +260,6 @@
 </div></div>
 <div class="section" id="indicate">
 <h2>Indicate<a class="headerlink" href="#indicate" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.indication.Indicate">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.indication.</code><code class="sig-name descname">Indicate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">target_mobject</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.indication.Indicate" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="indicateexample" loop="" src="../_static/manim_3fed/IndicateExample.mp4"></video><h5 class="example-header">IndicateExample<a class="headerlink" href="#indicateexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">IndicateExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="c1">#                     0    1   2</span>
@@ -287,10 +281,6 @@
 </div></div>
 <div class="section" id="flash">
 <h2>Flash<a class="headerlink" href="#flash" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.indication.Flash">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.indication.</code><code class="sig-name descname">Flash</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em>, <em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">'#FFFF00'</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.indication.Flash" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="flashexample" loop="" src="../_static/manim_3fed/FlashExample.mp4"></video><h5 class="example-header">FlashExample<a class="headerlink" href="#flashexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FlashExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
@@ -317,10 +307,6 @@
 </div></div>
 <div class="section" id="circleindicate">
 <h2>CircleIndicate<a class="headerlink" href="#circleindicate" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.indication.CircleIndicate">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.indication.</code><code class="sig-name descname">CircleIndicate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.indication.CircleIndicate" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="circleindicateexample" loop="" src="../_static/manim_3fed/CircleIndicateExample.mp4"></video><h5 class="example-header">CircleIndicateExample<a class="headerlink" href="#circleindicateexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CircleIndicateExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
@@ -339,17 +325,9 @@
 </div></div>
 <div class="section" id="showpassingflash">
 <h2>ShowPassingFlash<a class="headerlink" href="#showpassingflash" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.indication.ShowPassingFlash">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.indication.</code><code class="sig-name descname">ShowPassingFlash</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.indication.ShowPassingFlash" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 </div>
 <div class="section" id="showcreationthendestruction">
 <h2>ShowCreationThenDestruction<a class="headerlink" href="#showcreationthendestruction" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.indication.ShowCreationThenDestruction">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.indication.</code><code class="sig-name descname">ShowCreationThenDestruction</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.indication.ShowCreationThenDestruction" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="showcreationthendestructionexample" loop="" src="../_static/manim_3fed/ShowCreationThenDestructionExample.mp4"></video><h5 class="example-header">ShowCreationThenDestructionExample<a class="headerlink" href="#showcreationthendestructionexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ShowCreationThenDestructionExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
@@ -372,10 +350,6 @@
 </div></div>
 <div class="section" id="showcreationthenfadeout">
 <h2>ShowCreationThenFadeOut<a class="headerlink" href="#showcreationthenfadeout" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.indication.ShowCreationThenFadeOut">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.indication.</code><code class="sig-name descname">ShowCreationThenFadeOut</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.indication.ShowCreationThenFadeOut" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="showcreationthenfadeoutexample" loop="" src="../_static/manim_3fed/ShowCreationThenFadeOutExample.mp4"></video><h5 class="example-header">ShowCreationThenFadeOutExample<a class="headerlink" href="#showcreationthenfadeoutexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ShowCreationThenFadeOutExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
@@ -398,17 +372,9 @@
 </div></div>
 <div class="section" id="animationonsurroundingrectangle">
 <h2>AnimationOnSurroundingRectangle<a class="headerlink" href="#animationonsurroundingrectangle" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.indication.AnimationOnSurroundingRectangle">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.indication.</code><code class="sig-name descname">AnimationOnSurroundingRectangle</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.indication.AnimationOnSurroundingRectangle" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 </div>
 <div class="section" id="showpassingflasharound">
 <h2>ShowPassingFlashAround<a class="headerlink" href="#showpassingflasharound" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.indication.ShowPassingFlashAround">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.indication.</code><code class="sig-name descname">ShowPassingFlashAround</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.indication.ShowPassingFlashAround" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="showpassingflasharoundexample" loop="" src="../_static/manim_3fed/ShowPassingFlashAroundExample.mp4"></video><h5 class="example-header">ShowPassingFlashAroundExample<a class="headerlink" href="#showpassingflasharoundexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ShowPassingFlashAroundExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
@@ -431,10 +397,6 @@
 </div></div>
 <div class="section" id="showcreationthendestructionaround">
 <h2>ShowCreationThenDestructionAround<a class="headerlink" href="#showcreationthendestructionaround" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.indication.ShowCreationThenDestructionAround">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.indication.</code><code class="sig-name descname">ShowCreationThenDestructionAround</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.indication.ShowCreationThenDestructionAround" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="showcreationthendestructionaroundexample" loop="" src="../_static/manim_3fed/ShowCreationThenDestructionAroundExample.mp4"></video><h5 class="example-header">ShowCreationThenDestructionAroundExample<a class="headerlink" href="#showcreationthendestructionaroundexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ShowCreationThenDestructionAroundExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
@@ -459,10 +421,6 @@
 </div></div>
 <div class="section" id="showcreationthenfadearound">
 <h2>ShowCreationThenFadeAround<a class="headerlink" href="#showcreationthenfadearound" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.indication.ShowCreationThenFadeAround">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.indication.</code><code class="sig-name descname">ShowCreationThenFadeAround</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.indication.ShowCreationThenFadeAround" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="showcreationthenfadearoundexample" loop="" src="../_static/manim_3fed/ShowCreationThenFadeAroundExample.mp4"></video><h5 class="example-header">ShowCreationThenFadeAroundExample<a class="headerlink" href="#showcreationthenfadearoundexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ShowCreationThenFadeAroundExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
@@ -487,12 +445,6 @@
 </div></div>
 <div class="section" id="applywave">
 <h2>ApplyWave<a class="headerlink" href="#applywave" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.indication.ApplyWave">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.indication.</code><code class="sig-name descname">ApplyWave</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.indication.ApplyWave" title="永久链接至目标">¶</a></dt>
-<dd><p>Homotopy is a function from
-(x, y, z, t) to (x’, y’, z’)</p>
-</dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="applywaveexample" loop="" src="../_static/manim_3fed/ApplyWaveExample.mp4"></video><h5 class="example-header">ApplyWaveExample<a class="headerlink" href="#applywaveexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ApplyWaveExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
@@ -517,10 +469,6 @@
 </div></div>
 <div class="section" id="wiggleoutthenin">
 <h2>WiggleOutThenIn<a class="headerlink" href="#wiggleoutthenin" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.indication.WiggleOutThenIn">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.indication.</code><code class="sig-name descname">WiggleOutThenIn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.indication.WiggleOutThenIn" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="wiggleouttheninexample" loop="" src="../_static/manim_3fed/WiggleOutThenInExample.mp4"></video><h5 class="example-header">WiggleOutThenInExample<a class="headerlink" href="#wiggleouttheninexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">WiggleOutThenInExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
@@ -545,10 +493,6 @@
 </div></div>
 <div class="section" id="turninsideout">
 <h2>TurnInsideOut<a class="headerlink" href="#turninsideout" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.indication.TurnInsideOut">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.indication.</code><code class="sig-name descname">TurnInsideOut</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">target_mobject</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.indication.TurnInsideOut" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="turninsideoutexample" loop="" src="../_static/manim_3fed/TurnInsideOutExample.mp4"></video><h5 class="example-header">TurnInsideOutExample<a class="headerlink" href="#turninsideoutexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TurnInsideOutExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>

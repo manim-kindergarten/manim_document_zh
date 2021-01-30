@@ -3,13 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="CONFIG字典用法" href="config.html" /><link rel="prev" title="命令行参数和配置" href="configuration.html" />
 
-    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.4.3, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>样例学习 - manim shaders  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?48241d733860fde2be28f251">
-    <link rel="stylesheet" href="../_static/pygments.css?48241d733860fde2be28f251">
+    <link rel="stylesheet" href="../_static/styles/default.css?0c6ebc95debf0cc94b2e7920">
+    <link rel="stylesheet" href="../_static/pygments.css?0c6ebc95debf0cc94b2e7920">
     
 <style>
   :root {
@@ -23,10 +23,12 @@
       
         <script src="../_static/doctools.js" defer></script>
       
+        <script src="../_static/language_data.js" defer></script>
+      
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?48241d733860fde2be28f251"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?0c6ebc95debf0cc94b2e7920"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -257,7 +259,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
             <span class="n">TransformMatchingTex</span><span class="p">(</span>
                 <span class="n">lines</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">(),</span> <span class="n">lines</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span>
-                <span class="n">fade_transform_mismatches</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+                <span class="n">fade_transform_mismatches</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
             <span class="p">),</span>
             <span class="o">**</span><span class="n">play_kw</span>
         <span class="p">)</span>
@@ -291,9 +293,9 @@
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">decimal</span> <span class="o">=</span> <span class="n">DecimalNumber</span><span class="p">(</span>
             <span class="mi">0</span><span class="p">,</span>
-            <span class="n">show_ellipsis</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+            <span class="n">show_ellipsis</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
             <span class="n">num_decimal_places</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
-            <span class="n">include_sign</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+            <span class="n">include_sign</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
         <span class="p">)</span>
         <span class="n">square</span> <span class="o">=</span> <span class="n">Square</span><span class="p">()</span>
         <span class="n">square</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
@@ -431,7 +433,7 @@
         <span class="n">title</span> <span class="o">=</span> <span class="n">TexText</span><span class="p">(</span><span class="s2">"This is some </span><span class="se">\\</span><span class="s2">LaTeX"</span><span class="p">)</span>
         <span class="n">basel</span> <span class="o">=</span> <span class="n">Tex</span><span class="p">(</span>
             <span class="s2">"</span><span class="se">\\</span><span class="s2">sum_{n=1}^</span><span class="se">\\</span><span class="s2">infty "</span>
-            <span class="s2">"</span><span class="se">\\</span><span class="s2">frac{1}{n^2} = </span><span class="se">\\</span><span class="s2">frac{</span><span class="se">\\</span><span class="s2">pi^2}{6}"</span>
+            <span class="s2">"</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}</span><span class="s2">{n^2} = </span><span class="se">\\</span><span class="s2">frac{</span><span class="se">\\</span><span class="s2">pi^2}</span><span class="si">{6}</span><span class="s2">"</span>
         <span class="p">)</span>
         <span class="n">VGroup</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">basel</span><span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
@@ -484,7 +486,7 @@
         <span class="n">matrix</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]]</span>
         <span class="n">linear_transform_title</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
             <span class="n">Text</span><span class="p">(</span><span class="s2">"This is what the matrix"</span><span class="p">),</span>
-            <span class="n">IntegerMatrix</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">include_background_rectangle</span><span class="o">=</span><span class="bp">True</span><span class="p">),</span>
+            <span class="n">IntegerMatrix</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">include_background_rectangle</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
             <span class="n">Text</span><span class="p">(</span><span class="s2">"looks like"</span><span class="p">)</span>
         <span class="p">)</span>
         <span class="n">linear_transform_title</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">)</span>
@@ -500,7 +502,7 @@
         <span class="n">grid_transform_title</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span>
             <span class="s2">"And this is a nonlinear transformation"</span>
         <span class="p">)</span>
-        <span class="n">grid_transform_title</span><span class="o">.</span><span class="n">set_stroke</span><span class="p">(</span><span class="n">BLACK</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">background</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+        <span class="n">grid_transform_title</span><span class="o">.</span><span class="n">set_stroke</span><span class="p">(</span><span class="n">BLACK</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">background</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
         <span class="n">grid_transform_title</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
         <span class="n">grid</span><span class="o">.</span><span class="n">prepare_for_nonlinear_transform</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>

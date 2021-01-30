@@ -3,13 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="Tex_file_writing" href="tex_file_writing.html" /><link rel="prev" title="Space_ops" href="space_ops.html" />
 
-    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.4.3, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>Strings - manim  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?dfe0c8dd0ee74f09bb43eb75">
-    <link rel="stylesheet" href="../_static/pygments.css?dfe0c8dd0ee74f09bb43eb75">
+    <link rel="stylesheet" href="../_static/styles/default.css?faa3ceb33d28e63f0e924643">
+    <link rel="stylesheet" href="../_static/pygments.css?faa3ceb33d28e63f0e924643">
     
 <style>
   :root {
@@ -23,10 +23,12 @@
       
         <script src="../_static/doctools.js" defer></script>
       
+        <script src="../_static/language_data.js" defer></script>
+      
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?dfe0c8dd0ee74f09bb43eb75"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?faa3ceb33d28e63f0e924643"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -228,39 +230,14 @@
 <h1>Strings<a class="headerlink" href="#strings" title="永久链接至标题">¶</a></h1>
 <p><code class="docutils literal notranslate"><span class="pre">manimlib/utils/strings.py</span></code> 这个文件中主要实现了处理字符串的函数</p>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.utils.strings.to_camel_case">
-<code class="sig-prename descclassname">manimlib.utils.strings.</code><code class="sig-name descname">to_camel_case</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.strings.to_camel_case" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <p>将name转化为驼峰命名（应该会报错）</p>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.utils.strings.initials">
-<code class="sig-prename descclassname">manimlib.utils.strings.</code><code class="sig-name descname">initials</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">sep_values</span><span class="o">=</span><span class="default_value">[' ', '_']</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.strings.initials" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <p>获取name中每个单词的首字母</p>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.utils.strings.camel_case_initials">
-<code class="sig-prename descclassname">manimlib.utils.strings.</code><code class="sig-name descname">camel_case_initials</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.strings.camel_case_initials" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <p>获取name中的大写字母</p>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.utils.strings.complex_string">
-<code class="sig-prename descclassname">manimlib.utils.strings.</code><code class="sig-name descname">complex_string</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">complex_num</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.strings.complex_string" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <p>获取complex_num的每一个字符，括号除外</p>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.utils.strings.split_string_to_isolate_substrings">
-<code class="sig-prename descclassname">manimlib.utils.strings.</code><code class="sig-name descname">split_string_to_isolate_substrings</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">full_string</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">substrings_to_isolate</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.strings.split_string_to_isolate_substrings" title="永久链接至目标">¶</a></dt>
-<dd><p>Given a string, and an arbitrary number of possible substrings, returns a list
-of strings which would concatenate to make the full string, and in which
-these special substrings appear as their own elements.</p>
-<p>For example, split_string_to_isolate_substrings(“to be or not to be”, “to”, “be”) would
-return [“to”, ” “, “be”, ” or not “, “to”, ” “, “be”]</p>
-</dd></dl>
 <div class="line-block">
 <div class="line">给出一个完整字符串，和一系列可能包含的字符串</div>
 <div class="line">将完整字符串分割，若出现可能包含的字符串，则将其分离</div>
@@ -269,12 +246,6 @@ return [“to”, ” “, “be”, ” or not “, “to”, ” “, “be”
 <li><p>例： <code class="docutils literal notranslate"><span class="pre">split_string_to_isolate_substrings("to</span> <span class="pre">be</span> <span class="pre">or</span> <span class="pre">not</span> <span class="pre">to</span> <span class="pre">be",</span> <span class="pre">"to",</span> <span class="pre">"be")</span></code> 会返回 <code class="docutils literal notranslate"><span class="pre">["to",</span> <span class="pre">"</span> <span class="pre">",</span> <span class="pre">"be",</span> <span class="pre">"</span> <span class="pre">or</span> <span class="pre">not</span> <span class="pre">",</span> <span class="pre">"to",</span> <span class="pre">"</span> <span class="pre">",</span> <span class="pre">"be"]</span></code></p></li>
 </ul>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.utils.strings.split_string_list_to_isolate_substrings">
-<code class="sig-prename descclassname">manimlib.utils.strings.</code><code class="sig-name descname">split_string_list_to_isolate_substrings</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">string_list</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">substrings_to_isolate</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.strings.split_string_list_to_isolate_substrings" title="永久链接至目标">¶</a></dt>
-<dd><p>Similar to split_string_to_isolate_substrings, but the first argument
-is a list of strings, thought of as something already broken up a bit.</p>
-</dd></dl>
 <p>对string_list中每个字符串都执行 <code class="docutils literal notranslate"><span class="pre">split_string_to_isolate_substrings(full_string,</span> <span class="pre">*substrings_to_isolate)</span></code></p>
 </div>
 

@@ -3,13 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="CoordinateSystems" href="coordinate_systems.html" /><link rel="prev" title="Brace" href="svg/brace.html" />
 
-    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.4.3, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>Changing - manim  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?8d9c6b065553c7b594f22d8a">
-    <link rel="stylesheet" href="../_static/pygments.css?8d9c6b065553c7b594f22d8a">
+    <link rel="stylesheet" href="../_static/styles/default.css?6fc7f037b1ee41623b63087a">
+    <link rel="stylesheet" href="../_static/pygments.css?6fc7f037b1ee41623b63087a">
     
 <style>
   :root {
@@ -23,10 +23,12 @@
       
         <script src="../_static/doctools.js" defer></script>
       
+        <script src="../_static/language_data.js" defer></script>
+      
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?8d9c6b065553c7b594f22d8a"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?6fc7f037b1ee41623b63087a"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -228,29 +230,9 @@
 <h1>Changing<a class="headerlink" href="#changing" title="永久链接至标题">¶</a></h1>
 <div class="section" id="animatedboundary">
 <h2>AnimatedBoundary<a class="headerlink" href="#animatedboundary" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.mobject.changing.AnimatedBoundary">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.changing.</code><code class="sig-name descname">AnimatedBoundary</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vmobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.changing.AnimatedBoundary" title="永久链接至目标">¶</a></dt>
-<dd><p>动态变化的边界</p>
-<p>传入需要显示动态边界的物体 <code class="docutils literal notranslate"><span class="pre">vmobject</span></code></p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">colors</span></code> 表示变化中出现的颜色</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">max_stroke_width</span></code> 表示边界最大的粗细</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">cycle_rate</span></code> 表示循环率</p></li>
-</ul>
-</dd></dl>
 </div>
 <div class="section" id="tracedpath">
 <h2>TracedPath<a class="headerlink" href="#tracedpath" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.mobject.changing.TracedPath">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.changing.</code><code class="sig-name descname">TracedPath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">traced_point_func</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.changing.TracedPath" title="永久链接至目标">¶</a></dt>
-<dd><p>记录路径的VMobject</p>
-<p>传入一个可调用的对象 <code class="docutils literal notranslate"><span class="pre">traced_point_func</span></code> (一般为 <code class="docutils literal notranslate"><span class="pre">mob.get_center()</span></code> )</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">min_distance_to_new_point</span></code> : 两点之间的最小距离，若小于此距离则不增加点</p></li>
-</ul>
-</dd></dl>
 </div>
 </div>
 

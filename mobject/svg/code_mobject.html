@@ -3,13 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="../../about.html" /><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Brace" href="brace.html" /><link rel="prev" title="Text" href="text_mobject.html" />
 
-    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.4.3, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>Code - manim  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="../../_static/custom.css" />
     <link rel="stylesheet" href="../../_static/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?759924ca6c89e8c069cbb730">
-    <link rel="stylesheet" href="../../_static/pygments.css?759924ca6c89e8c069cbb730">
+    <link rel="stylesheet" href="../../_static/styles/default.css?8c2173adc631534793034566">
+    <link rel="stylesheet" href="../../_static/pygments.css?8c2173adc631534793034566">
     
 <style>
   :root {
@@ -23,10 +23,12 @@
       
         <script src="../../_static/doctools.js" defer></script>
       
+        <script src="../../_static/language_data.js" defer></script>
+      
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?759924ca6c89e8c069cbb730"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?8c2173adc631534793034566"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -226,15 +228,11 @@
         </label>
         <div class="section" id="code">
 <h1>Code<a class="headerlink" href="#code" title="永久链接至标题">¶</a></h1>
-<p><a class="reference internal" href="#manimlib.mobject.svg.code_mobject.Code" title="manimlib.mobject.svg.code_mobject.Code"><code class="xref py py-class docutils literal notranslate"><span class="pre">Code</span></code></a> 使用 <code class="docutils literal notranslate"><span class="pre">pygments</span></code> 给代码生成带语法高亮
+<p><code class="xref py py-class docutils literal notranslate"><span class="pre">Code</span></code> 使用 <code class="docutils literal notranslate"><span class="pre">pygments</span></code> 给代码生成带语法高亮
 的html文件，然后再转换为物体。</p>
 <div class="section" id="id1">
 <h2>Code<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.mobject.svg.code_mobject.Code">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.code_mobject.</code><code class="sig-name descname">Code</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_name</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.code_mobject.Code" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
-<p><a class="reference internal" href="#manimlib.mobject.svg.code_mobject.Code" title="manimlib.mobject.svg.code_mobject.Code"><code class="xref py py-class docutils literal notranslate"><span class="pre">Code</span></code></a> 的结构如下：</p>
+<p><code class="xref py py-class docutils literal notranslate"><span class="pre">Code</span></code> 的结构如下：</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Code[0]</span></code> 是代码的背景 ( <code class="docutils literal notranslate"><span class="pre">Code.background_mobject</span></code> )</p>
 <ol class="arabic simple">
@@ -254,7 +252,7 @@
             <span class="s2">"helloworldc.c"</span><span class="p">,</span>
             <span class="n">run_time</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
             <span class="n">line_spacing</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>
-            <span class="n">insert_line_no</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span>
+            <span class="n">insert_line_no</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
             <span class="n">style</span><span class="o">=</span><span class="n">code_styles_list</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span>
             <span class="n">background</span><span class="o">=</span><span class="s2">"rectangle"</span><span class="p">,</span>
             <span class="n">language</span><span class="o">=</span><span class="n">code_languages_list</span><span class="p">[</span><span class="s2">"c"</span><span class="p">],</span>

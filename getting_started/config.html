@@ -3,13 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="manim结构" href="structure.html" /><link rel="prev" title="运行命令" href="command.html" />
 
-    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.4.3, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>CONFIG字典用法 - manim  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?7bc321539498476758ee3a3c">
-    <link rel="stylesheet" href="../_static/pygments.css?7bc321539498476758ee3a3c">
+    <link rel="stylesheet" href="../_static/styles/default.css?319d0805f99e8d5c2eaa5795">
+    <link rel="stylesheet" href="../_static/pygments.css?319d0805f99e8d5c2eaa5795">
     
 <style>
   :root {
@@ -23,10 +23,12 @@
       
         <script src="../_static/doctools.js" defer></script>
       
+        <script src="../_static/language_data.js" defer></script>
+      
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?7bc321539498476758ee3a3c"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?319d0805f99e8d5c2eaa5795"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -249,8 +251,8 @@
         <span class="s2">"color"</span><span class="p">:</span> <span class="n">WHITE</span><span class="p">,</span>
         <span class="s2">"height"</span><span class="p">:</span> <span class="mf">2.0</span><span class="p">,</span>
         <span class="s2">"width"</span><span class="p">:</span> <span class="mf">4.0</span><span class="p">,</span>
-        <span class="s2">"mark_paths_closed"</span><span class="p">:</span> <span class="bp">True</span><span class="p">,</span>
-        <span class="s2">"close_new_points"</span><span class="p">:</span> <span class="bp">True</span><span class="p">,</span>
+        <span class="s2">"mark_paths_closed"</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="s2">"close_new_points"</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
     <span class="p">}</span>
 </pre></div>
 </div>
@@ -265,7 +267,7 @@
 <p>CONFIG字典支持嵌套，即键的值也为一个字典，例如</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Camera</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="n">CONFIG</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s2">"background_image"</span><span class="p">:</span> <span class="bp">None</span><span class="p">,</span>
+        <span class="s2">"background_image"</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
         <span class="s2">"pixel_height"</span><span class="p">:</span> <span class="n">DEFAULT_PIXEL_HEIGHT</span><span class="p">,</span>
         <span class="s2">"pixel_width"</span><span class="p">:</span> <span class="n">DEFAULT_PIXEL_WIDTH</span><span class="p">,</span>
         <span class="s2">"frame_rate"</span><span class="p">:</span> <span class="n">DEFAULT_FRAME_RATE</span><span class="p">,</span>
@@ -288,12 +290,12 @@
         <span class="s2">"camera_class"</span><span class="p">:</span> <span class="n">Camera</span><span class="p">,</span>
         <span class="s2">"camera_config"</span><span class="p">:</span> <span class="p">{},</span>
         <span class="s2">"file_writer_config"</span><span class="p">:</span> <span class="p">{},</span>
-        <span class="s2">"skip_animations"</span><span class="p">:</span> <span class="bp">False</span><span class="p">,</span>
-        <span class="s2">"always_update_mobjects"</span><span class="p">:</span> <span class="bp">False</span><span class="p">,</span>
+        <span class="s2">"skip_animations"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="s2">"always_update_mobjects"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
         <span class="s2">"random_seed"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="s2">"start_at_animation_number"</span><span class="p">:</span> <span class="bp">None</span><span class="p">,</span>
-        <span class="s2">"end_at_animation_number"</span><span class="p">:</span> <span class="bp">None</span><span class="p">,</span>
-        <span class="s2">"leave_progress_bars"</span><span class="p">:</span> <span class="bp">False</span><span class="p">,</span>
+        <span class="s2">"start_at_animation_number"</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">"end_at_animation_number"</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">"leave_progress_bars"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
     <span class="p">}</span>
 
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>

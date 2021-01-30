@@ -3,13 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="Sounds" href="sounds.html" /><link rel="prev" title="Rate_functions" href="rate_functions.html" />
 
-    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.4.3, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>Simple_functions - manim  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?f63dfecef769396a2db565fd">
-    <link rel="stylesheet" href="../_static/pygments.css?f63dfecef769396a2db565fd">
+    <link rel="stylesheet" href="../_static/styles/default.css?19f399e99b0d0ed7d0a2c7b2">
+    <link rel="stylesheet" href="../_static/pygments.css?19f399e99b0d0ed7d0a2c7b2">
     
 <style>
   :root {
@@ -23,10 +23,12 @@
       
         <script src="../_static/doctools.js" defer></script>
       
+        <script src="../_static/language_data.js" defer></script>
+      
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?f63dfecef769396a2db565fd"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?19f399e99b0d0ed7d0a2c7b2"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -228,53 +230,20 @@
 <h1>Simple_functions<a class="headerlink" href="#simple-functions" title="永久链接至标题">¶</a></h1>
 <p><code class="docutils literal notranslate"><span class="pre">manimlib/utils/simple_functions.py</span></code> 这个文件中包含了一些常用的简单函数</p>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.utils.simple_functions.sigmoid">
-<code class="sig-prename descclassname">manimlib.utils.simple_functions.</code><code class="sig-name descname">sigmoid</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.simple_functions.sigmoid" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <p>sigmoid函数， <code class="docutils literal notranslate"><span class="pre">1/(1+e^(-x))</span></code></p>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.utils.simple_functions.choose_using_cache">
-<code class="sig-prename descclassname">manimlib.utils.simple_functions.</code><code class="sig-name descname">choose_using_cache</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em>, <em class="sig-param"><span class="n">r</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.simple_functions.choose_using_cache" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <p>计算 <span class="math notranslate nohighlight">\(C^k_n\)</span> ，并使用缓存</p>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.utils.simple_functions.choose">
-<code class="sig-prename descclassname">manimlib.utils.simple_functions.</code><code class="sig-name descname">choose</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em>, <em class="sig-param"><span class="n">r</span></em>, <em class="sig-param"><span class="n">use_cache</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.simple_functions.choose" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <p>计算 <span class="math notranslate nohighlight">\(C^k_n\)</span> ， 若 <code class="docutils literal notranslate"><span class="pre">use_cache=True</span></code> 则使用缓存，否则直接计算</p>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.utils.simple_functions.get_num_args">
-<code class="sig-prename descclassname">manimlib.utils.simple_functions.</code><code class="sig-name descname">get_num_args</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.simple_functions.get_num_args" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <p>获取function的参数个数</p>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.utils.simple_functions.get_parameters">
-<code class="sig-prename descclassname">manimlib.utils.simple_functions.</code><code class="sig-name descname">get_parameters</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.simple_functions.get_parameters" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <p>获取function的参数</p>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.utils.simple_functions.clip_in_place">
-<code class="sig-prename descclassname">manimlib.utils.simple_functions.</code><code class="sig-name descname">clip_in_place</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">array</span></em>, <em class="sig-param"><span class="n">min_val</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">max_val</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.simple_functions.clip_in_place" title="永久链接至目标">¶</a></dt>
-<dd><p>将ndarray中小于min的值全设为min，大于max的值全设为max</p>
-</dd></dl>
 <p>将ndarray中小于min的值全设为min，大于max的值全设为max，并返回</p>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.utils.simple_functions.fdiv">
-<code class="sig-prename descclassname">manimlib.utils.simple_functions.</code><code class="sig-name descname">fdiv</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em>, <em class="sig-param"><span class="n">zero_over_zero_value</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.simple_functions.fdiv" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <p>计算a/b，若0/0则返回 <code class="docutils literal notranslate"><span class="pre">zero_over_zero_value</span></code></p>
 <hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.utils.simple_functions.binary_search">
-<code class="sig-prename descclassname">manimlib.utils.simple_functions.</code><code class="sig-name descname">binary_search</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span></em>, <em class="sig-param"><span class="n">target</span></em>, <em class="sig-param"><span class="n">lower_bound</span></em>, <em class="sig-param"><span class="n">upper_bound</span></em>, <em class="sig-param"><span class="n">tolerance</span><span class="o">=</span><span class="default_value">0.0001</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.simple_functions.binary_search" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <p>二分查找</p>
 </div>
 

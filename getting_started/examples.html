@@ -3,13 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="运行命令" href="command.html" /><link rel="prev" title="快速入门" href="index.html" />
 
-    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.4.3, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>案例学习 - manim  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?48253e74a361054dbba1b01e">
-    <link rel="stylesheet" href="../_static/pygments.css?48253e74a361054dbba1b01e">
+    <link rel="stylesheet" href="../_static/styles/default.css?ca6a9467e6602509dffdc27b">
+    <link rel="stylesheet" href="../_static/pygments.css?ca6a9467e6602509dffdc27b">
     
 <style>
   :root {
@@ -23,10 +23,12 @@
       
         <script src="../_static/doctools.js" defer></script>
       
+        <script src="../_static/language_data.js" defer></script>
+      
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?48253e74a361054dbba1b01e"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?ca6a9467e6602509dffdc27b"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -283,8 +285,8 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
 <span class="n">square</span> <span class="o">=</span> <span class="n">Square</span><span class="p">()</span>
 </pre></div>
 </td></tr></table></div></div>
-<p><code class="docutils literal notranslate"><span class="pre">Circle()</span></code> 和 <code class="docutils literal notranslate"><span class="pre">Square()</span></code> 创建了 <a class="reference internal" href="../mobject/geometry.html#manimlib.mobject.geometry.Circle" title="manimlib.mobject.geometry.Circle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Circle</span></code></a> 和 <a class="reference internal" href="../mobject/geometry.html#manimlib.mobject.geometry.Square" title="manimlib.mobject.geometry.Square"><code class="xref py py-class docutils literal notranslate"><span class="pre">Square</span></code></a> 的实例，即一个圆一个方</p>
-<p>它们都是 <a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> 的子类，注意如果一个 <a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> 实例
+<p><code class="docutils literal notranslate"><span class="pre">Circle()</span></code> 和 <code class="docutils literal notranslate"><span class="pre">Square()</span></code> 创建了 <code class="xref py py-class docutils literal notranslate"><span class="pre">Circle</span></code> 和 <code class="xref py py-class docutils literal notranslate"><span class="pre">Square</span></code> 的实例，即一个圆一个方</p>
+<p>它们都是 <code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code> 的子类，注意如果一个 <code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code> 实例
 没有添加到 <code class="xref py py-class docutils literal notranslate"><span class="pre">Scene</span></code> 中, 渲染之后就不会看到任何东西</p>
 <div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>7
 8
@@ -295,9 +297,9 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
 </td></tr></table></div></div>
 <p><code class="docutils literal notranslate"><span class="pre">flip()</span></code> <code class="docutils literal notranslate"><span class="pre">rotate()</span></code> <code class="docutils literal notranslate"><span class="pre">set_fill()</span></code> 在执行动画之前应用了一些mobjects的变换</p>
 <ul class="simple">
-<li><p>调用 <a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject.flip" title="manimlib.mobject.mobject.Mobject.flip"><code class="xref py py-meth docutils literal notranslate"><span class="pre">flip()</span></code></a> 以水平为轴翻转了 <a class="reference internal" href="../mobject/geometry.html#manimlib.mobject.geometry.Square" title="manimlib.mobject.geometry.Square"><code class="xref py py-class docutils literal notranslate"><span class="pre">Square</span></code></a>，相当于x轴上的反射</p></li>
-<li><p>调用 <a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject.rotate" title="manimlib.mobject.mobject.Mobject.rotate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">rotate()</span></code></a> 逆时针旋转了 <a class="reference internal" href="../mobject/geometry.html#manimlib.mobject.geometry.Square" title="manimlib.mobject.geometry.Square"><code class="xref py py-class docutils literal notranslate"><span class="pre">Square</span></code></a> 3/8圆.</p></li>
-<li><p>调用 <a class="reference internal" href="../mobject/types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VMobject.set_fill" title="manimlib.mobject.types.vectorized_mobject.VMobject.set_fill"><code class="xref py py-meth docutils literal notranslate"><span class="pre">set_fill()</span></code></a> 设置了 <a class="reference internal" href="../mobject/geometry.html#manimlib.mobject.geometry.Circle" title="manimlib.mobject.geometry.Circle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Circle</span></code></a> 填充颜色为粉色(PINK), 不透明度(opacity)为0.5.</p></li>
+<li><p>调用 <code class="xref py py-meth docutils literal notranslate"><span class="pre">flip()</span></code> 以水平为轴翻转了 <code class="xref py py-class docutils literal notranslate"><span class="pre">Square</span></code>，相当于x轴上的反射</p></li>
+<li><p>调用 <code class="xref py py-meth docutils literal notranslate"><span class="pre">rotate()</span></code> 逆时针旋转了 <code class="xref py py-class docutils literal notranslate"><span class="pre">Square</span></code> 3/8圆.</p></li>
+<li><p>调用 <code class="xref py py-meth docutils literal notranslate"><span class="pre">set_fill()</span></code> 设置了 <code class="xref py py-class docutils literal notranslate"><span class="pre">Circle</span></code> 填充颜色为粉色(PINK), 不透明度(opacity)为0.5.</p></li>
 </ul>
 <p>详细教程可以看 <a class="reference external" href="https://www.bilibili.com/video/BV1p54y197cC">〔manim教程〕第一讲 物体的位置与坐标变换</a></p>
 <div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>11
@@ -307,21 +309,21 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
 <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">FadeOut</span><span class="p">(</span><span class="n">square</span><span class="p">))</span>
 </pre></div>
 </td></tr></table></div></div>
-<p>实例化 <a class="reference internal" href="../animation/index.html#manimlib.animation.animation.Animation" title="manimlib.animation.animation.Animation"><code class="xref py py-class docutils literal notranslate"><span class="pre">Animation</span></code></a> 构建动画</p>
-<p>每个 <a class="reference internal" href="../animation/index.html#manimlib.animation.animation.Animation" title="manimlib.animation.animation.Animation"><code class="xref py py-class docutils literal notranslate"><span class="pre">Animation</span></code></a> 传入一个或多个 <a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> 对象参数
+<p>实例化 <code class="xref py py-class docutils literal notranslate"><span class="pre">Animation</span></code> 构建动画</p>
+<p>每个 <code class="xref py py-class docutils literal notranslate"><span class="pre">Animation</span></code> 传入一个或多个 <code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code> 对象参数
 传递给 <code class="xref py py-meth docutils literal notranslate"><span class="pre">play()</span></code> 呈现出动画，构建视频。</p>
-<p><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> 实例会自动添加到 <code class="xref py py-class docutils literal notranslate"><span class="pre">Scene</span></code> 中，当使用动画时
-你可以把 <a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> 通过使用 <code class="xref py py-meth docutils literal notranslate"><span class="pre">add()</span></code> 方法手动添加到 <code class="xref py py-class docutils literal notranslate"><span class="pre">Scene</span></code> 中</p>
+<p><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code> 实例会自动添加到 <code class="xref py py-class docutils literal notranslate"><span class="pre">Scene</span></code> 中，当使用动画时
+你可以把 <code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code> 通过使用 <code class="xref py py-meth docutils literal notranslate"><span class="pre">add()</span></code> 方法手动添加到 <code class="xref py py-class docutils literal notranslate"><span class="pre">Scene</span></code> 中</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="../animation/creation.html#manimlib.animation.creation.ShowCreation" title="manimlib.animation.creation.ShowCreation"><code class="xref py py-class docutils literal notranslate"><span class="pre">ShowCreation</span></code></a> 在屏幕上绘制出一个 <a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a></p></li>
-<li><p><a class="reference internal" href="../animation/transform.html#manimlib.animation.transform.Transform" title="manimlib.animation.transform.Transform"><code class="xref py py-class docutils literal notranslate"><span class="pre">Transform</span></code></a> 把一个 <a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> 变成另一个图像</p></li>
-<li><p><a class="reference internal" href="../animation/fading.html#manimlib.animation.fading.FadeOut" title="manimlib.animation.fading.FadeOut"><code class="xref py py-class docutils literal notranslate"><span class="pre">FadeOut</span></code></a> 使一个 <a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> 淡出</p></li>
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ShowCreation</span></code> 在屏幕上绘制出一个 <code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></p></li>
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Transform</span></code> 把一个 <code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code> 变成另一个图像</p></li>
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">FadeOut</span></code> 使一个 <code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code> 淡出</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">注解</p>
-<p>第一个Mobject对象会被 <a class="reference internal" href="../animation/transform.html#manimlib.animation.transform.Transform" title="manimlib.animation.transform.Transform"><code class="xref py py-class docutils literal notranslate"><span class="pre">Transform</span></code></a> 方法修改，第二个对象不会被添加到Scene类中。
+<p>第一个Mobject对象会被 <code class="xref py py-class docutils literal notranslate"><span class="pre">Transform</span></code> 方法修改，第二个对象不会被添加到Scene类中。
 仅仅更改了外形但是没有更改根本/基础的属性</p>
-<p>例子中，<code class="docutils literal notranslate"><span class="pre">transform()</span></code> 变换后 <code class="docutils literal notranslate"><span class="pre">square</span></code> 还是 <a class="reference internal" href="../mobject/geometry.html#manimlib.mobject.geometry.Square" title="manimlib.mobject.geometry.Square"><code class="xref py py-class docutils literal notranslate"><span class="pre">Square</span></code></a> 的实例，仅仅是渲染出来圆形外表，还要调用 <a class="reference internal" href="../mobject/geometry.html#manimlib.mobject.geometry.Square" title="manimlib.mobject.geometry.Square"><code class="xref py py-class docutils literal notranslate"><span class="pre">Square</span></code></a> 的属性和方法。</p>
+<p>例子中，<code class="docutils literal notranslate"><span class="pre">transform()</span></code> 变换后 <code class="docutils literal notranslate"><span class="pre">square</span></code> 还是 <code class="xref py py-class docutils literal notranslate"><span class="pre">Square</span></code> 的实例，仅仅是渲染出来圆形外表，还要调用 <code class="xref py py-class docutils literal notranslate"><span class="pre">Square</span></code> 的属性和方法。</p>
 </div>
 </div>
 <div class="section" id="warpsquare">
@@ -348,11 +350,11 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
 <span class="p">))</span>
 </pre></div>
 </td></tr></table></div></div>
-<p>从第六行开始，执行了一个动画 <a class="reference internal" href="../animation/transform.html#manimlib.animation.transform.ApplyPointwiseFunction" title="manimlib.animation.transform.ApplyPointwiseFunction"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyPointwiseFunction</span></code></a> ，
+<p>从第六行开始，执行了一个动画 <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyPointwiseFunction</span></code> ，
 传入了一个函数 <code class="docutils literal notranslate"><span class="pre">lambda</span> <span class="pre">point:</span> <span class="pre">complex_to_R3(np.exp(R3_to_complex(point)))</span></code></p>
 <p>这个函数的输入值是一个点坐标，先经过 <code class="docutils literal notranslate"><span class="pre">R3_to_complex</span></code> 函数将点坐标转换为该点在复平面上代表的复数值，
 后求了e指数，将其结果传入 <code class="docutils literal notranslate"><span class="pre">complex_to_R3</span></code> 函数，将结果的复数转换为在复平面上的点坐标。</p>
-<p>将这个函数和物体square传入 <a class="reference internal" href="../animation/transform.html#manimlib.animation.transform.ApplyPointwiseFunction" title="manimlib.animation.transform.ApplyPointwiseFunction"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyPointwiseFunction</span></code></a> 后，
+<p>将这个函数和物体square传入 <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyPointwiseFunction</span></code> 后，
 会对square的点集施加这个函数的作用（将每个点设为将该点传入函数后的返回值），实现了复变换。</p>
 <div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </pre></div>
@@ -390,8 +392,8 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
 <span class="p">)</span>
 </pre></div>
 </td></tr></table></div></div>
-<p>第五行到第八行创建了一个文字（<a class="reference internal" href="../mobject/svg/tex_mobject.html#manimlib.mobject.svg.tex_mobject.TextMobject" title="manimlib.mobject.svg.tex_mobject.TextMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextMobject</span></code></a>），内容是”This is a some text”（打错字了）。
-第七行传入了一个字典 <code class="docutils literal notranslate"><span class="pre">tex_to_color_map</span></code> 将”text”指定为黄色。这时 <a class="reference internal" href="../mobject/svg/tex_mobject.html#manimlib.mobject.svg.tex_mobject.TextMobject" title="manimlib.mobject.svg.tex_mobject.TextMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextMobject</span></code></a>
+<p>第五行到第八行创建了一个文字（<code class="xref py py-class docutils literal notranslate"><span class="pre">TextMobject</span></code>），内容是”This is a some text”（打错字了）。
+第七行传入了一个字典 <code class="docutils literal notranslate"><span class="pre">tex_to_color_map</span></code> 将”text”指定为黄色。这时 <code class="xref py py-class docutils literal notranslate"><span class="pre">TextMobject</span></code>
 会自动识别拆分开字符串，将并将”text”部分设置为黄色。</p>
 <div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 9
 10
@@ -400,7 +402,7 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
 <span class="p">)</span>
 </pre></div>
 </td></tr></table></div></div>
-<p>第九行到第十一行创建了一个公式（<a class="reference internal" href="../mobject/svg/tex_mobject.html#manimlib.mobject.svg.tex_mobject.TexMobject" title="manimlib.mobject.svg.tex_mobject.TexMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">TexMobject</span></code></a>），它使用LaTeX来渲染，所以使用LaTeX的公式语法，
+<p>第九行到第十一行创建了一个公式（<code class="xref py py-class docutils literal notranslate"><span class="pre">TexMobject</span></code>），它使用LaTeX来渲染，所以使用LaTeX的公式语法，
 并且在python中，需要将 <code class="docutils literal notranslate"><span class="pre">\</span></code> 转义写为 <code class="docutils literal notranslate"><span class="pre">\\</span></code> ，或者在字符串前加上 <code class="docutils literal notranslate"><span class="pre">r</span></code> ，例如这三行也可以写为：</p>
 <div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 9
 10
@@ -417,7 +419,7 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
 </pre></div>
 </td></tr></table></div></div>
 <div class="line-block">
-<div class="line">第十二行到第十四行先创建了一个物体集合（<a class="reference internal" href="../mobject/types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VGroup" title="manimlib.mobject.types.vectorized_mobject.VGroup"><code class="xref py py-class docutils literal notranslate"><span class="pre">VGroup</span></code></a>），包含前面创建的文字和公式</div>
+<div class="line">第十二行到第十四行先创建了一个物体集合（<code class="xref py py-class docutils literal notranslate"><span class="pre">VGroup</span></code>），包含前面创建的文字和公式</div>
 <div class="line">第十三行调用了 <code class="docutils literal notranslate"><span class="pre">arrange</span></code> 方法，将 <code class="docutils literal notranslate"><span class="pre">group</span></code> 中的物体依次向下（DOWN）排列</div>
 <div class="line">第十四行将整个 <code class="docutils literal notranslate"><span class="pre">group</span></code> 缩放到宽度为画面宽度，并且距离两边为 <code class="docutils literal notranslate"><span class="pre">LARGE_BUFF</span></code></div>
 </div>
@@ -429,7 +431,7 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
 </pre></div>
 </td></tr></table></div></div>
 <div class="line-block">
-<div class="line">第十六行开始是场景中的动画部分，前两行将创建的文字和公式使用 <a class="reference internal" href="../animation/creation.html#manimlib.animation.creation.Write" title="manimlib.animation.creation.Write"><code class="xref py py-class docutils literal notranslate"><span class="pre">Write</span></code></a> 动画”写”在画面中</div>
+<div class="line">第十六行开始是场景中的动画部分，前两行将创建的文字和公式使用 <code class="xref py py-class docutils literal notranslate"><span class="pre">Write</span></code> 动画”写”在画面中</div>
 <div class="line">并且最后添加了一秒的停顿</div>
 </div>
 </div>
@@ -441,9 +443,9 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">decimal</span> <span class="o">=</span> <span class="n">DecimalNumber</span><span class="p">(</span>
             <span class="mi">0</span><span class="p">,</span>
-            <span class="n">show_ellipsis</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+            <span class="n">show_ellipsis</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
             <span class="n">num_decimal_places</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
-            <span class="n">include_sign</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+            <span class="n">include_sign</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
         <span class="p">)</span>
         <span class="n">square</span> <span class="o">=</span> <span class="n">Square</span><span class="p">()</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
 
@@ -465,14 +467,14 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
  9
 10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">decimal</span> <span class="o">=</span> <span class="n">DecimalNumber</span><span class="p">(</span>
     <span class="mi">0</span><span class="p">,</span>
-    <span class="n">show_ellipsis</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+    <span class="n">show_ellipsis</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
     <span class="n">num_decimal_places</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
-    <span class="n">include_sign</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+    <span class="n">include_sign</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
 <span class="p">)</span>
 </pre></div>
 </td></tr></table></div></div>
 <div class="line-block">
-<div class="line">第五行起创建了一个可变的十进制数字 <a class="reference internal" href="../mobject/numbers.html#manimlib.mobject.numbers.DecimalNumber" title="manimlib.mobject.numbers.DecimalNumber"><code class="xref py py-class docutils literal notranslate"><span class="pre">DecimalNumber</span></code></a> ，初始值为0</div>
+<div class="line">第五行起创建了一个可变的十进制数字 <code class="xref py py-class docutils literal notranslate"><span class="pre">DecimalNumber</span></code> ，初始值为0</div>
 <div class="line">从第七行起设置了其属性，即显示省略号 <code class="docutils literal notranslate"><span class="pre">show_ellipsis=True</span></code> ，小数保留3位 <code class="docutils literal notranslate"><span class="pre">num_decimal_places=3</span></code> ，正数包含正号 <code class="docutils literal notranslate"><span class="pre">include_sign=True</span></code></div>
 </div>
 <div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>13
@@ -516,7 +518,7 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
         <span class="n">title</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span><span class="s2">"This is some </span><span class="se">\\</span><span class="s2">LaTeX"</span><span class="p">)</span> <span class="c1"># 文字</span>
         <span class="n">basel</span> <span class="o">=</span> <span class="n">TexMobject</span><span class="p">(</span>                         <span class="c1"># 公式</span>
             <span class="s2">"</span><span class="se">\\</span><span class="s2">sum_{n=1}^</span><span class="se">\\</span><span class="s2">infty "</span>
-            <span class="s2">"</span><span class="se">\\</span><span class="s2">frac{1}{n^2} = </span><span class="se">\\</span><span class="s2">frac{</span><span class="se">\\</span><span class="s2">pi^2}{6}"</span>
+            <span class="s2">"</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}</span><span class="s2">{n^2} = </span><span class="se">\\</span><span class="s2">frac{</span><span class="se">\\</span><span class="s2">pi^2}</span><span class="si">{6}</span><span class="s2">"</span>
         <span class="p">)</span>
         <span class="n">VGroup</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">basel</span><span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">)</span>          <span class="c1"># 集合到一起后排列位置</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>

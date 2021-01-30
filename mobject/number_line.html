@@ -3,13 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="Numbers" href="numbers.html" /><link rel="prev" title="MobjectUpdateUtils" href="mobject_update_utils.html" />
 
-    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.4.3, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>NumberLine - manim  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?fa38f0f42ebea3b686dd5001">
-    <link rel="stylesheet" href="../_static/pygments.css?fa38f0f42ebea3b686dd5001">
+    <link rel="stylesheet" href="../_static/styles/default.css?af8946cc54bd7b78a9fb069c">
+    <link rel="stylesheet" href="../_static/pygments.css?af8946cc54bd7b78a9fb069c">
     
 <style>
   :root {
@@ -23,10 +23,12 @@
       
         <script src="../_static/doctools.js" defer></script>
       
+        <script src="../_static/language_data.js" defer></script>
+      
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?fa38f0f42ebea3b686dd5001"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?af8946cc54bd7b78a9fb069c"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -228,79 +230,9 @@
 <h1>NumberLine<a class="headerlink" href="#numberline" title="永久链接至标题">¶</a></h1>
 <div class="section" id="id1">
 <h2>NumberLine<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.mobject.number_line.NumberLine">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.number_line.</code><code class="sig-name descname">NumberLine</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.number_line.NumberLine" title="永久链接至目标">¶</a></dt>
-<dd><p>数轴</p>
-<p>全部以关键字参数的形式传入</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">x_min,</span> <span class="pre">x_max</span></code> : 数轴的最大值最小值</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">unit_size</span></code> : 单位长度大小</p></li>
-<li><p>刻度相关</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">include_ticks</span></code> : 是否包含刻度线（bool值，默认True）</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">tick_size</span></code> : 刻度大小（默认0.1）</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">tick_frequency</span></code> : 刻度的频率（默认每一个单位一个刻度）</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">numbers_with_elongated_ticks</span></code> : 需要大刻度的数字（一个列表，默认为[0]）</p></li>
-</ul>
-</li>
-<li><p>数字相关</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">include_numbers</span></code> : 是否包含数字（bool值，默认False）</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">numbers_to_show</span></code> : 需要显示的数字</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">number_at_center</span></code> : 中心的数字</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">label_direction</span></code> : 数字在刻度的哪个方位（默认DOWN）</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">line_to_number_buff</span></code> : 数字到线的距离</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">decimal_number_config</span></code> : 字典，表示要传入给 <code class="docutils literal notranslate"><span class="pre">DecimalNumber</span></code> 的样式</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">exclude_zero_from_default_numbers</span></code> : 是否不显示0，默认False</p></li>
-</ul>
-</li>
-<li><p>箭头相关</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">include_tip</span></code> : 是否包含箭头（bool值，默认False）</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">tip_width,</span> <span class="pre">tip_height</span></code> : 箭头的宽度、高度</p></li>
-</ul>
-</li>
-</ul>
-<dl class="py method">
-<dt id="manimlib.mobject.number_line.NumberLine.get_number_mobject">
-<code class="sig-name descname">get_number_mobject</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">number</span></em>, <em class="sig-param"><span class="n">number_config</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">scale_val</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">buff</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.number_line.NumberLine.get_number_mobject" title="永久链接至目标">¶</a></dt>
-<dd><p>根据传入的 <code class="docutils literal notranslate"><span class="pre">number</span></code> 获取需要显示的数字物体</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.number_line.NumberLine.get_number_mobjects">
-<code class="sig-name descname">get_number_mobjects</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">numbers</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.number_line.NumberLine.get_number_mobjects" title="永久链接至目标">¶</a></dt>
-<dd><p>根据传入的 <code class="docutils literal notranslate"><span class="pre">number</span></code> 数组获取需要显示的数字物体</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.number_line.NumberLine.n2p">
-<code class="sig-name descname">n2p</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">number</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.number_line.NumberLine.n2p" title="永久链接至目标">¶</a></dt>
-<dd><p><code class="docutils literal notranslate"><span class="pre">number_to_point</span></code> 的简写</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.number_line.NumberLine.number_to_point">
-<code class="sig-name descname">number_to_point</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">number</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.number_line.NumberLine.number_to_point" title="永久链接至目标">¶</a></dt>
-<dd><p>将在数轴上的数字转化为在屏幕上的点坐标</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.number_line.NumberLine.p2n">
-<code class="sig-name descname">p2n</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.number_line.NumberLine.p2n" title="永久链接至目标">¶</a></dt>
-<dd><p><code class="docutils literal notranslate"><span class="pre">point_to_number</span></code> 的简写</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.number_line.NumberLine.point_to_number">
-<code class="sig-name descname">point_to_number</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.number_line.NumberLine.point_to_number" title="永久链接至目标">¶</a></dt>
-<dd><p>将在屏幕上的点坐标转化为在数轴上的数字</p>
-</dd></dl>
-</dd></dl>
 </div>
 <div class="section" id="unitinterval">
 <h2>UnitInterval<a class="headerlink" href="#unitinterval" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.mobject.number_line.UnitInterval">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.number_line.</code><code class="sig-name descname">UnitInterval</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.number_line.UnitInterval" title="永久链接至目标">¶</a></dt>
-<dd><p>0到1的区间（单位长度默认为6）</p>
-</dd></dl>
 </div>
 </div>
 

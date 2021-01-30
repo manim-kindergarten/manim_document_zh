@@ -3,13 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="../../about.html" /><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="SVG图像相关物体svg" href="../svg/index.html" /><link rel="prev" title="PMobject" href="point_cloud_mobject.html" />
 
-    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.4.3, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>ImageMobject - manim  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="../../_static/custom.css" />
     <link rel="stylesheet" href="../../_static/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?1bcdbfd132b927007655b8f1">
-    <link rel="stylesheet" href="../../_static/pygments.css?1bcdbfd132b927007655b8f1">
+    <link rel="stylesheet" href="../../_static/styles/default.css?a22880e09267c70f348ff9bf">
+    <link rel="stylesheet" href="../../_static/pygments.css?a22880e09267c70f348ff9bf">
     
 <style>
   :root {
@@ -23,10 +23,12 @@
       
         <script src="../../_static/doctools.js" defer></script>
       
+        <script src="../../_static/language_data.js" defer></script>
+      
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?1bcdbfd132b927007655b8f1"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?a22880e09267c70f348ff9bf"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -227,75 +229,18 @@
         <div class="section" id="imagemobject">
 <h1>ImageMobject<a class="headerlink" href="#imagemobject" title="永久链接至标题">¶</a></h1>
 <p><code class="xref py py-class docutils literal notranslate"><span class="pre">AbstractImageMobject</span></code> 是
-<a class="reference internal" href="../mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> 的子类，可看作抽象类，用于存放 <code class="docutils literal notranslate"><span class="pre">pixel_array</span></code>。</p>
+<code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code> 的子类，可看作抽象类，用于存放 <code class="docutils literal notranslate"><span class="pre">pixel_array</span></code>。</p>
 <p>它有两个子类：<code class="xref py py-class docutils literal notranslate"><span class="pre">ImageMobject</span></code>
 用于在场景中插入图片；<code class="xref py py-class docutils literal notranslate"><span class="pre">ImageMobjectFromCamera</span></code>
-用相机不断获取图片，主要用在 <a class="reference internal" href="../../camera/multi_camera.html#manimlib.camera.multi_camera.MultiCamera" title="manimlib.camera.multi_camera.MultiCamera"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiCamera</span></code></a>
+用相机不断获取图片，主要用在 <code class="xref py py-class docutils literal notranslate"><span class="pre">MultiCamera</span></code>
 中作为子相机</p>
-<p>MK做了一个关于常用 <a class="reference internal" href="#manimlib.mobject.types.image_mobject.ImageMobject" title="manimlib.mobject.types.image_mobject.ImageMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageMobject</span></code></a> 的的视频：
+<p>MK做了一个关于常用 <code class="xref py py-class docutils literal notranslate"><span class="pre">ImageMobject</span></code> 的的视频：
 <a class="reference external" href="https://www.bilibili.com/video/BV1CC4y1H7kp">〔manim教程〕第四讲 SVG、图片与文字</a></p>
 <div class="section" id="abstractimagemobject">
 <h2>AbstractImageMobject<a class="headerlink" href="#abstractimagemobject" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.mobject.types.image_mobject.AbstractImageMobject">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.image_mobject.</code><code class="sig-name descname">AbstractImageMobject</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.image_mobject.AbstractImageMobject" title="永久链接至目标">¶</a></dt>
-<dd><p>图片的”抽象”类</p>
-<dl class="py method">
-<dt id="manimlib.mobject.types.image_mobject.AbstractImageMobject.get_pixel_array">
-<code class="sig-name descname">get_pixel_array</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.image_mobject.AbstractImageMobject.get_pixel_array" title="永久链接至目标">¶</a></dt>
-<dd><p>给子类实现</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.types.image_mobject.AbstractImageMobject.reset_points">
-<code class="sig-name descname">reset_points</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.image_mobject.AbstractImageMobject.reset_points" title="永久链接至目标">¶</a></dt>
-<dd><p>点集为图片左上右上左下三个点，实现了定位</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.types.image_mobject.AbstractImageMobject.set_color">
-<code class="sig-name descname">set_color</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.image_mobject.AbstractImageMobject.set_color" title="永久链接至目标">¶</a></dt>
-<dd><p>给子类实现</p>
-</dd></dl>
-</dd></dl>
 </div>
 <div class="section" id="id1">
 <h2>ImageMobject<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.mobject.types.image_mobject.ImageMobject">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.image_mobject.</code><code class="sig-name descname">ImageMobject</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename_or_array</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.image_mobject.ImageMobject" title="永久链接至目标">¶</a></dt>
-<dd><p>图片物体</p>
-<p>初始化输入的 <code class="docutils literal notranslate"><span class="pre">filename_or_array</span></code> 指向了图片文件的位置</p>
-<p><code class="docutils literal notranslate"><span class="pre">invert=True</span></code> 表示反色</p>
-<dl class="py method">
-<dt id="manimlib.mobject.types.image_mobject.ImageMobject.change_to_rgba_array">
-<code class="sig-name descname">change_to_rgba_array</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.image_mobject.ImageMobject.change_to_rgba_array" title="永久链接至目标">¶</a></dt>
-<dd><p>将输入的 <code class="docutils literal notranslate"><span class="pre">pixel_array</span></code> 转换为rgba数组</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.types.image_mobject.ImageMobject.fade">
-<code class="sig-name descname">fade</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">darkness</span><span class="o">=</span><span class="default_value">0.5</span></em>, <em class="sig-param"><span class="n">family</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.image_mobject.ImageMobject.fade" title="永久链接至目标">¶</a></dt>
-<dd><p>利用不透明度来变暗</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.types.image_mobject.ImageMobject.get_pixel_array">
-<code class="sig-name descname">get_pixel_array</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.image_mobject.ImageMobject.get_pixel_array" title="永久链接至目标">¶</a></dt>
-<dd><p>获取像素数组 <code class="docutils literal notranslate"><span class="pre">pixel_array</span></code></p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.types.image_mobject.ImageMobject.interpolate_color">
-<code class="sig-name descname">interpolate_color</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject1</span></em>, <em class="sig-param"><span class="n">mobject2</span></em>, <em class="sig-param"><span class="n">alpha</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.image_mobject.ImageMobject.interpolate_color" title="永久链接至目标">¶</a></dt>
-<dd><p>两张图片之间插值，<code class="docutils literal notranslate"><span class="pre">pixel_array</span></code> 必须一样大</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.types.image_mobject.ImageMobject.set_color">
-<code class="sig-name descname">set_color</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span></em>, <em class="sig-param"><span class="n">alpha</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">family</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.image_mobject.ImageMobject.set_color" title="永久链接至目标">¶</a></dt>
-<dd><p>将像素全部转化为color颜色</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.types.image_mobject.ImageMobject.set_opacity">
-<code class="sig-name descname">set_opacity</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">alpha</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.image_mobject.ImageMobject.set_opacity" title="永久链接至目标">¶</a></dt>
-<dd><p>设置图片不透明度</p>
-</dd></dl>
-</dd></dl>
 <p><strong>关于传入的图片</strong>：</p>
 <ul class="simple">
 <li><p>使用相对于运行位置的相对路径，或使用绝对路径，或把图片放在 <code class="docutils literal notranslate"><span class="pre">assets/raster_images</span></code> 文件夹中</p></li>
@@ -305,22 +250,6 @@
 </div>
 <div class="section" id="imagemobjectfromcamera">
 <h2>ImageMobjectFromCamera<a class="headerlink" href="#imagemobjectfromcamera" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.mobject.types.image_mobject.ImageMobjectFromCamera">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.image_mobject.</code><code class="sig-name descname">ImageMobjectFromCamera</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">camera</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.image_mobject.ImageMobjectFromCamera" title="永久链接至目标">¶</a></dt>
-<dd><p>从camera中获取图片的类</p>
-<p>初始化需要传入一个相机，用于获取图像</p>
-<dl class="py method">
-<dt id="manimlib.mobject.types.image_mobject.ImageMobjectFromCamera.add_display_frame">
-<code class="sig-name descname">add_display_frame</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.image_mobject.ImageMobjectFromCamera.add_display_frame" title="永久链接至目标">¶</a></dt>
-<dd><p>在画面中显示当前图像（一个矩形框起来）</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.types.image_mobject.ImageMobjectFromCamera.get_pixel_array">
-<code class="sig-name descname">get_pixel_array</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.image_mobject.ImageMobjectFromCamera.get_pixel_array" title="永久链接至目标">¶</a></dt>
-<dd><p>从相机中获取图像</p>
-</dd></dl>
-</dd></dl>
 </div>
 </div>
 

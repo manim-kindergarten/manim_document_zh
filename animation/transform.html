@@ -3,13 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="Update" href="update.html" /><link rel="prev" title="Rotation" href="rotation.html" />
 
-    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.4.3, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>Transform - manim  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?e5731155ea580ffdbb0cf814">
-    <link rel="stylesheet" href="../_static/pygments.css?e5731155ea580ffdbb0cf814">
+    <link rel="stylesheet" href="../_static/styles/default.css?6f3649274683bccf076479ce">
+    <link rel="stylesheet" href="../_static/pygments.css?6f3649274683bccf076479ce">
     
 <style>
   :root {
@@ -23,10 +23,12 @@
       
         <script src="../_static/doctools.js" defer></script>
       
+        <script src="../_static/language_data.js" defer></script>
+      
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?e5731155ea580ffdbb0cf814"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?6f3649274683bccf076479ce"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -228,10 +230,6 @@
 <h1>Transform<a class="headerlink" href="#transform" title="永久链接至标题">¶</a></h1>
 <div class="section" id="id1">
 <h2>Transform<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.transform.Transform">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">Transform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">target_mobject</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.Transform" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="transformexample" loop="" src="../_static/mk/TransformExample.mp4"></video><h5 class="example-header">TransformExample<a class="headerlink" href="#transformexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TransformExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">A</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span><span class="s2">"Text-A"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
@@ -249,10 +247,6 @@
 </div></div>
 <div class="section" id="replacementtransform">
 <h2>ReplacementTransform<a class="headerlink" href="#replacementtransform" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.transform.ReplacementTransform">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">ReplacementTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">target_mobject</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.ReplacementTransform" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="replacementtransformexample" loop="" src="../_static/mk/ReplacementTransformExample.mp4"></video><h5 class="example-header">ReplacementTransformExample<a class="headerlink" href="#replacementtransformexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ReplacementTransformExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">A</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span><span class="s2">"Text-A"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
@@ -284,11 +278,6 @@
 </div>
 <div class="section" id="transformfromcopy">
 <h2>TransformFromCopy<a class="headerlink" href="#transformfromcopy" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.transform.TransformFromCopy">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">TransformFromCopy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">target_mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.TransformFromCopy" title="永久链接至目标">¶</a></dt>
-<dd><p>Performs a reversed Transform</p>
-</dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="transformfromcopyexample" loop="" src="../_static/mk/TransformFromCopyExample.mp4"></video><h5 class="example-header">TransformFromCopyExample<a class="headerlink" href="#transformfromcopyexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TransformFromCopyExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">A</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span><span class="s2">"Text-A"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
@@ -303,10 +292,6 @@
 </div></div>
 <div class="section" id="clockwisetransform">
 <h2>ClockwiseTransform<a class="headerlink" href="#clockwisetransform" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.transform.ClockwiseTransform">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">ClockwiseTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">target_mobject</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.ClockwiseTransform" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="clockwisetransformexample" loop="" src="../_static/mk/ClockwiseTransformExample.mp4"></video><h5 class="example-header">ClockwiseTransformExample<a class="headerlink" href="#clockwisetransformexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ClockwiseTransformExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">A</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span><span class="s2">"Text-A"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
@@ -321,10 +306,6 @@
 </div></div>
 <div class="section" id="counterclockwisetransform">
 <h2>CounterclockwiseTransform<a class="headerlink" href="#counterclockwisetransform" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.transform.CounterclockwiseTransform">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">CounterclockwiseTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">target_mobject</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.CounterclockwiseTransform" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="counterclockwisetransformexample" loop="" src="../_static/mk/CounterclockwiseTransformExample.mp4"></video><h5 class="example-header">CounterclockwiseTransformExample<a class="headerlink" href="#counterclockwisetransformexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CounterclockwiseTransformExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">A</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span><span class="s2">"Text-A"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
@@ -339,10 +320,6 @@
 </div></div>
 <div class="section" id="movetotarget">
 <h2>MoveToTarget<a class="headerlink" href="#movetotarget" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.transform.MoveToTarget">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">MoveToTarget</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.MoveToTarget" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="movetotargetexample" loop="" src="../_static/mk/MoveToTargetExample.mp4"></video><h5 class="example-header">MoveToTargetExample<a class="headerlink" href="#movetotargetexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MoveToTargetExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">A</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span><span class="s2">"Text-A"</span><span class="p">)</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">LEFT</span><span class="p">)</span>
@@ -373,10 +350,6 @@
 </div></div>
 <div class="section" id="applymethod">
 <h2>ApplyMethod<a class="headerlink" href="#applymethod" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.transform.ApplyMethod">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">ApplyMethod</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">method</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.ApplyMethod" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="applymethodexample" loop="" src="../_static/mk/ApplyMethodExample.mp4"></video><h5 class="example-header">ApplyMethodExample<a class="headerlink" href="#applymethodexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ApplyMethodExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">A</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span><span class="s2">"Text-A"</span><span class="p">)</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">LEFT</span><span class="p">)</span>
@@ -394,41 +367,18 @@
 </div>
 <div class="section" id="applypointwisefunction">
 <h2>ApplyPointwiseFunction<a class="headerlink" href="#applypointwisefunction" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.transform.ApplyPointwiseFunction">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">ApplyPointwiseFunction</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span></em>, <em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.ApplyPointwiseFunction" title="永久链接至目标">¶</a></dt>
-<dd><p>等价于 <code class="docutils literal notranslate"><span class="pre">ApplyMethod(mobject.apply_function,</span> <span class="pre">function,</span> <span class="pre">**kwargs)</span></code></p>
-</dd></dl>
 </div>
 <div class="section" id="applypointwisefunctiontocenter">
 <h2>ApplyPointwiseFunctionToCenter<a class="headerlink" href="#applypointwisefunctiontocenter" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.transform.ApplyPointwiseFunctionToCenter">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">ApplyPointwiseFunctionToCenter</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span></em>, <em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.ApplyPointwiseFunctionToCenter" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 </div>
 <div class="section" id="fadetocolor">
 <h2>FadeToColor<a class="headerlink" href="#fadetocolor" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.transform.FadeToColor">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">FadeToColor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">color</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.FadeToColor" title="永久链接至目标">¶</a></dt>
-<dd><p>等价于 <code class="docutils literal notranslate"><span class="pre">ApplyMethod(mobject.set_color,</span> <span class="pre">color,</span> <span class="pre">**kwargs)</span></code></p>
-</dd></dl>
 </div>
 <div class="section" id="scaleinplace">
 <h2>ScaleInPlace<a class="headerlink" href="#scaleinplace" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.transform.ScaleInPlace">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">ScaleInPlace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">scale_factor</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.ScaleInPlace" title="永久链接至目标">¶</a></dt>
-<dd><p>等价于 <code class="docutils literal notranslate"><span class="pre">ApplyMethod(mobject.scale,</span> <span class="pre">scale_factor,</span> <span class="pre">**kwargs)</span></code></p>
-</dd></dl>
 </div>
 <div class="section" id="shrinktocenter">
 <h2>ShrinkToCenter<a class="headerlink" href="#shrinktocenter" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.transform.ShrinkToCenter">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">ShrinkToCenter</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.ShrinkToCenter" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="shrinktocenterexample" loop="" src="../_static/manim_3fed/ShrinkToCenterExample.mp4"></video><h5 class="example-header">ShrinkToCenterExample<a class="headerlink" href="#shrinktocenterexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ShrinkToCenterExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
@@ -449,11 +399,6 @@
 </div></div>
 <div class="section" id="restore">
 <h2>Restore<a class="headerlink" href="#restore" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.transform.Restore">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">Restore</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.Restore" title="永久链接至目标">¶</a></dt>
-<dd><p>等价于 <code class="docutils literal notranslate"><span class="pre">ApplyMethod(mobject.restore,</span> <span class="pre">**kwargs)</span></code></p>
-</dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="restoreexample" loop="" src="../_static/mk/RestoreExample.mp4"></video><h5 class="example-header">RestoreExample<a class="headerlink" href="#restoreexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">RestoreExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">A</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span><span class="s2">"Text-A"</span><span class="p">)</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">LEFT</span><span class="p">)</span>
@@ -469,10 +414,6 @@
 </div></div>
 <div class="section" id="applyfunction">
 <h2>ApplyFunction<a class="headerlink" href="#applyfunction" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.transform.ApplyFunction">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">ApplyFunction</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span></em>, <em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.ApplyFunction" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="applyfunctionexample" loop="" src="../_static/mk/ApplyFunctionExample.mp4"></video><h5 class="example-header">ApplyFunctionExample<a class="headerlink" href="#applyfunctionexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ApplyFunctionExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">A</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span><span class="s2">"Text-A"</span><span class="p">)</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">LEFT</span><span class="p">)</span>
@@ -489,10 +430,6 @@
 </div></div>
 <div class="section" id="applymatrix">
 <h2>ApplyMatrix<a class="headerlink" href="#applymatrix" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.transform.ApplyMatrix">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">ApplyMatrix</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">matrix</span></em>, <em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.ApplyMatrix" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="applymatrixexample" loop="" src="../_static/mk/ApplyMatrixExample.mp4"></video><h5 class="example-header">ApplyMatrixExample<a class="headerlink" href="#applymatrixexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ApplyMatrixExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">A</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span><span class="s2">"Text-A"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -511,18 +448,9 @@
 </div></div>
 <div class="section" id="applycomplexfunction">
 <h2>ApplyComplexFunction<a class="headerlink" href="#applycomplexfunction" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.transform.ApplyComplexFunction">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">ApplyComplexFunction</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span></em>, <em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.ApplyComplexFunction" title="永久链接至目标">¶</a></dt>
-<dd><p>等价于 <code class="docutils literal notranslate"><span class="pre">ApplyMethod(mobject.apply_complex_function,</span> <span class="pre">function,</span> <span class="pre">**kwargs)</span></code></p>
-</dd></dl>
 </div>
 <div class="section" id="cyclicreplace">
 <h2>CyclicReplace<a class="headerlink" href="#cyclicreplace" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.transform.CyclicReplace">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">CyclicReplace</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">mobjects</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.CyclicReplace" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="cyclicreplaceexample" loop="" src="../_static/mk/CyclicReplaceExample.mp4"></video><h5 class="example-header">CyclicReplaceExample<a class="headerlink" href="#cyclicreplaceexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CyclicReplaceExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">A</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span><span class="s2">"Text-A"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
@@ -538,18 +466,9 @@
 </div></div>
 <div class="section" id="swap">
 <h2>Swap<a class="headerlink" href="#swap" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.transform.Swap">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">Swap</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">mobjects</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.Swap" title="永久链接至目标">¶</a></dt>
-<dd><p>同 <code class="docutils literal notranslate"><span class="pre">CyclicReplace</span></code></p>
-</dd></dl>
 </div>
 <div class="section" id="transformanimations">
 <h2>TransformAnimations<a class="headerlink" href="#transformanimations" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.animation.transform.TransformAnimations">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">TransformAnimations</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start_anim</span></em>, <em class="sig-param"><span class="n">end_anim</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.TransformAnimations" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
 <p>这个不常用，甚至Grant都怀疑它存在的意义</p>
 </div>
 </div>

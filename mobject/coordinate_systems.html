@@ -3,13 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="Frame" href="frame.html" /><link rel="prev" title="Changing" href="changing.html" />
 
-    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.4.3, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>CoordinateSystems - manim  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?489d18224a0d5348496cbf3b">
-    <link rel="stylesheet" href="../_static/pygments.css?489d18224a0d5348496cbf3b">
+    <link rel="stylesheet" href="../_static/styles/default.css?02884d32c7c3c26873ddfddf">
+    <link rel="stylesheet" href="../_static/pygments.css?02884d32c7c3c26873ddfddf">
     
 <style>
   :root {
@@ -23,10 +23,12 @@
       
         <script src="../_static/doctools.js" defer></script>
       
+        <script src="../_static/language_data.js" defer></script>
+      
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?489d18224a0d5348496cbf3b"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?02884d32c7c3c26873ddfddf"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -228,196 +230,18 @@
 <h1>CoordinateSystems<a class="headerlink" href="#coordinatesystems" title="永久链接至标题">¶</a></h1>
 <div class="section" id="coordinatesystem">
 <h2>CoordinateSystem<a class="headerlink" href="#coordinatesystem" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.coordinate_systems.</code><code class="sig-name descname">CoordinateSystem</code><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem" title="永久链接至目标">¶</a></dt>
-<dd><p>坐标系统(Axes, NumberPlane)的抽象基类</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">dimension</span></code> : 坐标系统维度</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">x_min,</span> <span class="pre">x_max</span></code> : x轴范围(默认全屏)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">y_min,</span> <span class="pre">y_max</span></code> : y轴范围(默认全屏)</p></li>
-</ul>
-<dl class="py method">
-<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.c2p">
-<code class="sig-name descname">c2p</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">coords</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.c2p" title="永久链接至目标">¶</a></dt>
-<dd><p>Abbreviation for coords_to_point</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.get_axis_labels">
-<code class="sig-name descname">get_axis_labels</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x_label_tex</span><span class="o">=</span><span class="default_value">'x'</span></em>, <em class="sig-param"><span class="n">y_label_tex</span><span class="o">=</span><span class="default_value">'y'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.get_axis_labels" title="永久链接至目标">¶</a></dt>
-<dd><p>获取x轴和y轴上的标志（一个VGroup）</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.get_graph">
-<code class="sig-name descname">get_graph</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.get_graph" title="永久链接至目标">¶</a></dt>
-<dd><p>获取函数图像（使用 <code class="docutils literal notranslate"><span class="pre">ParametricFunction</span></code> ）</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.get_parametric_curve">
-<code class="sig-name descname">get_parametric_curve</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.get_parametric_curve" title="永久链接至目标">¶</a></dt>
-<dd><p>获取参数方程图像（使用 <code class="docutils literal notranslate"><span class="pre">ParametricFunction</span></code> ）</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.get_x_axis_label">
-<code class="sig-name descname">get_x_axis_label</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">label_tex</span></em>, <em class="sig-param"><span class="n">edge</span><span class="o">=</span><span class="default_value">array([1., 0., 0.])</span></em>, <em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">array([- 1., - 1., 0.])</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.get_x_axis_label" title="永久链接至目标">¶</a></dt>
-<dd><p>获取x轴上的标志</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.get_y_axis_label">
-<code class="sig-name descname">get_y_axis_label</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">label_tex</span></em>, <em class="sig-param"><span class="n">edge</span><span class="o">=</span><span class="default_value">array([0., 1., 0.])</span></em>, <em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">array([1., - 1., 0.])</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.get_y_axis_label" title="永久链接至目标">¶</a></dt>
-<dd><p>获取y轴上的标志</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.input_to_graph_point">
-<code class="sig-name descname">input_to_graph_point</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">graph</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.input_to_graph_point" title="永久链接至目标">¶</a></dt>
-<dd><p>返回图像 <code class="docutils literal notranslate"><span class="pre">graph</span></code> 上横坐标为 <code class="docutils literal notranslate"><span class="pre">x</span></code> 的点</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.p2c">
-<code class="sig-name descname">p2c</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.p2c" title="永久链接至目标">¶</a></dt>
-<dd><p>Abbreviation for point_to_coords</p>
-</dd></dl>
-</dd></dl>
 </div>
 <div class="section" id="axes">
 <h2>Axes<a class="headerlink" href="#axes" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.mobject.coordinate_systems.Axes">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.coordinate_systems.</code><code class="sig-name descname">Axes</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.Axes" title="永久链接至目标">¶</a></dt>
-<dd><p>直角坐标系</p>
-<p>由两个 <code class="docutils literal notranslate"><span class="pre">NumberLine</span></code> 构成 ( <code class="docutils literal notranslate"><span class="pre">Axes.axes=VGroup(Axes.x_axis,</span> <span class="pre">Axes.y_axis)</span></code> )</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">number_line_config</span></code> : x/y轴共有的属性</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">x_axis_config</span></code> : x轴特有的属性</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">y_axis_config</span></code> : y轴特有的属性</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">center_point</span></code> : 原点的位置</p></li>
-</ul>
-<dl class="py method">
-<dt id="manimlib.mobject.coordinate_systems.Axes.add_coordinates">
-<code class="sig-name descname">add_coordinates</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x_vals</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">y_vals</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.Axes.add_coordinates" title="永久链接至目标">¶</a></dt>
-<dd><p>添加坐标轴上的数字（将 <code class="docutils literal notranslate"><span class="pre">get_coordinate_labels</span></code> 返回的添加到场景中）</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.coordinate_systems.Axes.c2p">
-<code class="sig-name descname">c2p</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">coords</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.Axes.c2p" title="永久链接至目标">¶</a></dt>
-<dd><p><code class="docutils literal notranslate"><span class="pre">coords_to_point</span></code> 的缩写</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.coordinate_systems.Axes.coords_to_point">
-<code class="sig-name descname">coords_to_point</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">coords</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.Axes.coords_to_point" title="永久链接至目标">¶</a></dt>
-<dd><p>在该坐标系里的坐标转化为在画面上的点</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.coordinate_systems.Axes.get_coordinate_labels">
-<code class="sig-name descname">get_coordinate_labels</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x_vals</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">y_vals</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.Axes.get_coordinate_labels" title="永久链接至目标">¶</a></dt>
-<dd><p>获取坐标轴上的数字</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">x_vals</span></code> : x轴上需要的数字（默认为空，即全需要）</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">y_vals</span></code> : y轴上需要的数字（默认为空，即全需要）</p></li>
-</ul>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.coordinate_systems.Axes.p2c">
-<code class="sig-name descname">p2c</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.Axes.p2c" title="永久链接至目标">¶</a></dt>
-<dd><p><code class="docutils literal notranslate"><span class="pre">point_to_coords</span></code> 的缩写</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.coordinate_systems.Axes.point_to_coords">
-<code class="sig-name descname">point_to_coords</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.Axes.point_to_coords" title="永久链接至目标">¶</a></dt>
-<dd><p>在画面上的点转化为在在该坐标系里的坐标</p>
-</dd></dl>
-</dd></dl>
 </div>
 <div class="section" id="threedaxes">
 <h2>ThreeDAxes<a class="headerlink" href="#threedaxes" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.mobject.coordinate_systems.ThreeDAxes">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.coordinate_systems.</code><code class="sig-name descname">ThreeDAxes</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.ThreeDAxes" title="永久链接至目标">¶</a></dt>
-<dd><p>空间直角坐标系</p>
-<p>在 <code class="docutils literal notranslate"><span class="pre">Axes</span></code> 基础上加了一个轴</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">z_axis_config</span></code> : z轴特有的属性</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">num_axis_piece</span></code> : 每个轴需要拆成的部分，默认20（简单解决3D中遮盖问题）</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">light_source</span></code> : 虚拟光源的位置</p></li>
-<li><p>其余同 <code class="docutils literal notranslate"><span class="pre">Axes</span></code></p></li>
-</ul>
-</dd></dl>
 </div>
 <div class="section" id="numberplane">
 <h2>NumberPlane<a class="headerlink" href="#numberplane" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.mobject.coordinate_systems.NumberPlane">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.coordinate_systems.</code><code class="sig-name descname">NumberPlane</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.NumberPlane" title="永久链接至目标">¶</a></dt>
-<dd><p>坐标平面</p>
-<p>与 <code class="docutils literal notranslate"><span class="pre">Axes</span></code> 类似</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">axis_config</span></code> : 坐标轴的共有属性（也可写为 <code class="docutils literal notranslate"><span class="pre">number_line_config</span></code> ）</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">x_axis_config,</span> <span class="pre">y_axis_config</span></code> : x/y轴的特有属性</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">background_line_style</span></code> : 背景直线的样式</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">fade_line_style</span></code> : 背景中较暗直线的样式，默认为None</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">x_line_frequency,</span> <span class="pre">y_line_frequency</span></code> : 背景直线的频率</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">faded_line_ratio</span></code> : 背景中较暗直线的所占比例</p></li>
-<li><p>其余同 <code class="docutils literal notranslate"><span class="pre">Axes</span></code></p></li>
-</ul>
-<dl class="py method">
-<dt id="manimlib.mobject.coordinate_systems.NumberPlane.get_vector">
-<code class="sig-name descname">get_vector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">coords</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.NumberPlane.get_vector" title="永久链接至目标">¶</a></dt>
-<dd><p>获取一个从原点到 <code class="docutils literal notranslate"><span class="pre">coords</span></code> 的向量( <code class="docutils literal notranslate"><span class="pre">Arrow</span></code> )</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.coordinate_systems.NumberPlane.prepare_for_nonlinear_transform">
-<code class="sig-name descname">prepare_for_nonlinear_transform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">num_inserted_curves</span><span class="o">=</span><span class="default_value">50</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.NumberPlane.prepare_for_nonlinear_transform" title="永久链接至目标">¶</a></dt>
-<dd><p>将所有线拆成 <code class="docutils literal notranslate"><span class="pre">num_inserted_curves</span></code> 段，以执行非线性变换</p>
-</dd></dl>
-</dd></dl>
 </div>
 <div class="section" id="complexplane">
 <h2>ComplexPlane<a class="headerlink" href="#complexplane" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.mobject.coordinate_systems.ComplexPlane">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.coordinate_systems.</code><code class="sig-name descname">ComplexPlane</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.ComplexPlane" title="永久链接至目标">¶</a></dt>
-<dd><p>复平面</p>
-<p>与 <code class="docutils literal notranslate"><span class="pre">Axes</span></code> 类似</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">axis_config</span></code> : 坐标轴的共有属性（也可写为 <code class="docutils literal notranslate"><span class="pre">number_line_config</span></code> ）</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">x_axis_config,</span> <span class="pre">y_axis_config</span></code> : x/y轴的特有属性</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">background_line_style</span></code> : 背景直线的样式</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">fade_line_style</span></code> : 背景中较暗直线的样式，默认为None</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">x_line_frequency,</span> <span class="pre">y_line_frequency</span></code> : 背景直线的频率</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">faded_line_ratio</span></code> : 背景中较暗直线的所占比例</p></li>
-<li><p>其余同 <code class="docutils literal notranslate"><span class="pre">Axes</span></code></p></li>
-</ul>
-<dl class="py method">
-<dt id="manimlib.mobject.coordinate_systems.ComplexPlane.add_coordinates">
-<code class="sig-name descname">add_coordinates</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">numbers</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.ComplexPlane.add_coordinates" title="永久链接至目标">¶</a></dt>
-<dd><p>将坐标轴上数字添加到场景中（传入多个实数或纯虚数 <code class="docutils literal notranslate"><span class="pre">numbers</span></code> ）</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.coordinate_systems.ComplexPlane.get_coordinate_labels">
-<code class="sig-name descname">get_coordinate_labels</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">numbers</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.ComplexPlane.get_coordinate_labels" title="永久链接至目标">¶</a></dt>
-<dd><p>获取坐标轴上数字物体，传入多个实数或纯虚数 <code class="docutils literal notranslate"><span class="pre">numbers</span></code></p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.coordinate_systems.ComplexPlane.n2p">
-<code class="sig-name descname">n2p</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">number</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.ComplexPlane.n2p" title="永久链接至目标">¶</a></dt>
-<dd><p><code class="docutils literal notranslate"><span class="pre">number_to_point</span></code> 的简写</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.coordinate_systems.ComplexPlane.number_to_point">
-<code class="sig-name descname">number_to_point</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">number</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.ComplexPlane.number_to_point" title="永久链接至目标">¶</a></dt>
-<dd><p>复平面中一个复数转化为画面中的点</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.coordinate_systems.ComplexPlane.p2n">
-<code class="sig-name descname">p2n</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.ComplexPlane.p2n" title="永久链接至目标">¶</a></dt>
-<dd><p><code class="docutils literal notranslate"><span class="pre">point_to_number</span></code> 的简写</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.coordinate_systems.ComplexPlane.point_to_number">
-<code class="sig-name descname">point_to_number</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.ComplexPlane.point_to_number" title="永久链接至目标">¶</a></dt>
-<dd><p>画面中的点转化为复平面中一个复数</p>
-</dd></dl>
-</dd></dl>
 </div>
 </div>
 
