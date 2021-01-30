@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?9fc3244df97d1f6ba9707ba5">
-    <link rel="stylesheet" href="../_static/pygments.css?9fc3244df97d1f6ba9707ba5">
+    <link rel="stylesheet" href="../_static/styles/default.css?99cc416a7838dc439c66375a">
+    <link rel="stylesheet" href="../_static/pygments.css?99cc416a7838dc439c66375a">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?9fc3244df97d1f6ba9707ba5"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?99cc416a7838dc439c66375a"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -230,18 +230,51 @@
 <h1>ThreeDimensions<a class="headerlink" href="#threedimensions" title="永久链接至标题">¶</a></h1>
 <div class="section" id="threedvmobject">
 <h2>ThreeDVMobject<a class="headerlink" href="#threedvmobject" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.three_dimensions.ThreeDVMobject">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.three_dimensions.</code><code class="sig-name descname">ThreeDVMobject</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.three_dimensions.ThreeDVMobject" title="永久链接至目标">¶</a></dt>
+<dd><p>设置了 <code class="docutils literal notranslate"><span class="pre">shade_in_3d=True</span></code> 的VMobject</p>
+</dd></dl>
 </div>
 <div class="section" id="parametricsurface">
 <h2>ParametricSurface<a class="headerlink" href="#parametricsurface" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.three_dimensions.ParametricSurface">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.three_dimensions.</code><code class="sig-name descname">ParametricSurface</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">func</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.three_dimensions.ParametricSurface" title="永久链接至目标">¶</a></dt>
+<dd><p>参数曲面</p>
+<p>传入 <code class="docutils literal notranslate"><span class="pre">func</span></code> 为自变量为参数 <code class="docutils literal notranslate"><span class="pre">u,v</span></code> ，返回值为一个点的函数</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">u_min,</span> <span class="pre">u_max,</span> <span class="pre">v_min,</span> <span class="pre">v_max</span></code> : 参数范围</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">resolution</span></code> : <code class="docutils literal notranslate"><span class="pre">u,v</span></code> 范围分为多少段（为一个数时uv均为此值，为元组时u为第一个v为第二个）</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">surface_piece_config</span></code> : 面上每一片的属性设置</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">checkerboard_colors</span></code> : 棋盘格颜色（None或数组）为None时无棋盘格，使用 <code class="docutils literal notranslate"><span class="pre">fill_color</span></code> 填充颜色</p></li>
+</ul>
+</dd></dl>
 </div>
 <div class="section" id="sphere">
 <h2>Sphere<a class="headerlink" href="#sphere" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.three_dimensions.Sphere">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.three_dimensions.</code><code class="sig-name descname">Sphere</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.three_dimensions.Sphere" title="永久链接至目标">¶</a></dt>
+<dd><p>利用 <code class="docutils literal notranslate"><span class="pre">ParametricSurface</span></code> 生成的球面</p>
+<p>半径为 <code class="docutils literal notranslate"><span class="pre">radius</span></code></p>
+</dd></dl>
 </div>
 <div class="section" id="cube">
 <h2>Cube<a class="headerlink" href="#cube" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.three_dimensions.Cube">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.three_dimensions.</code><code class="sig-name descname">Cube</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">vmobjects</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.three_dimensions.Cube" title="永久链接至目标">¶</a></dt>
+<dd><p>立方体（6个 <code class="docutils literal notranslate"><span class="pre">Square</span></code>）</p>
+</dd></dl>
 </div>
 <div class="section" id="prism">
 <h2>Prism<a class="headerlink" href="#prism" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.three_dimensions.Prism">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.three_dimensions.</code><code class="sig-name descname">Prism</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">vmobjects</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.three_dimensions.Prism" title="永久链接至目标">¶</a></dt>
+<dd><p>四棱柱（数组 <code class="docutils literal notranslate"><span class="pre">dimensions</span></code> 为每维上的长度）</p>
+</dd></dl>
 </div>
 </div>
 

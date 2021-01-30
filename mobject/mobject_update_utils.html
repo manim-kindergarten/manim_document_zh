@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?d23eee632378ebbd635a855e">
-    <link rel="stylesheet" href="../_static/pygments.css?d23eee632378ebbd635a855e">
+    <link rel="stylesheet" href="../_static/styles/default.css?8cb808543479ed0b4aec4251">
+    <link rel="stylesheet" href="../_static/pygments.css?8cb808543479ed0b4aec4251">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?d23eee632378ebbd635a855e"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?8cb808543479ed0b4aec4251"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -228,13 +228,56 @@
         </label>
         <div class="section" id="mobjectupdateutils">
 <h1>MobjectUpdateUtils<a class="headerlink" href="#mobjectupdateutils" title="永久链接至标题">¶</a></h1>
+<dl class="py function">
+<dt id="manimlib.mobject.mobject_update_utils.assert_is_mobject_method">
+<code class="sig-prename descclassname">manimlib.mobject.mobject_update_utils.</code><code class="sig-name descname">assert_is_mobject_method</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">method</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject_update_utils.assert_is_mobject_method" title="永久链接至目标">¶</a></dt>
+<dd><p>判断 <code class="docutils literal notranslate"><span class="pre">method</span></code> 是否是Mobject的方法</p>
+</dd></dl>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.mobject.mobject_update_utils.always">
+<code class="sig-prename descclassname">manimlib.mobject.mobject_update_utils.</code><code class="sig-name descname">always</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">method</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject_update_utils.always" title="永久链接至目标">¶</a></dt>
+<dd><p>一直调用 <code class="docutils literal notranslate"><span class="pre">method</span></code>，传入 <code class="docutils literal notranslate"><span class="pre">*args,</span> <span class="pre">**kwargs</span></code></p>
+</dd></dl>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.mobject.mobject_update_utils.f_always">
+<code class="sig-prename descclassname">manimlib.mobject.mobject_update_utils.</code><code class="sig-name descname">f_always</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">method</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">arg_generators</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject_update_utils.f_always" title="永久链接至目标">¶</a></dt>
+<dd><p>与 <code class="docutils literal notranslate"><span class="pre">always</span></code> 类似，但是传入的多个 <code class="docutils literal notranslate"><span class="pre">arg_generators</span></code> 是可调用对象，用于生成参数</p>
+</dd></dl>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.mobject.mobject_update_utils.always_redraw">
+<code class="sig-prename descclassname">manimlib.mobject.mobject_update_utils.</code><code class="sig-name descname">always_redraw</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">func</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject_update_utils.always_redraw" title="永久链接至目标">¶</a></dt>
+<dd><p>始终重复调用 <code class="docutils literal notranslate"><span class="pre">func</span></code> 生成新物体</p>
+</dd></dl>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.mobject.mobject_update_utils.always_shift">
+<code class="sig-prename descclassname">manimlib.mobject.mobject_update_utils.</code><code class="sig-name descname">always_shift</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">array([1.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="n">rate</span><span class="o">=</span><span class="default_value">0.1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject_update_utils.always_shift" title="永久链接至目标">¶</a></dt>
+<dd><p>将 <code class="docutils literal notranslate"><span class="pre">mobject</span></code> 始终向 <code class="docutils literal notranslate"><span class="pre">direction</span></code> 方向移动，速度为 <code class="docutils literal notranslate"><span class="pre">rate</span></code></p>
+</dd></dl>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.mobject.mobject_update_utils.always_rotate">
+<code class="sig-prename descclassname">manimlib.mobject.mobject_update_utils.</code><code class="sig-name descname">always_rotate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">rate</span><span class="o">=</span><span class="default_value">0.3490658503988659</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject_update_utils.always_rotate" title="永久链接至目标">¶</a></dt>
+<dd><p>将 <code class="docutils literal notranslate"><span class="pre">mobject</span></code> 始终旋转</p>
+</dd></dl>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.mobject.mobject_update_utils.turn_animation_into_updater">
+<code class="sig-prename descclassname">manimlib.mobject.mobject_update_utils.</code><code class="sig-name descname">turn_animation_into_updater</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">animation</span></em>, <em class="sig-param"><span class="n">cycle</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject_update_utils.turn_animation_into_updater" title="永久链接至目标">¶</a></dt>
+<dd><p>将 <code class="docutils literal notranslate"><span class="pre">animation</span></code> 转化为对执行动画对象的updater</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">cycle</span></code> 为True时循环执行，否则只执行一次</p></li>
+</ul>
+</dd></dl>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.mobject.mobject_update_utils.cycle_animation">
+<code class="sig-prename descclassname">manimlib.mobject.mobject_update_utils.</code><code class="sig-name descname">cycle_animation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">animation</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject_update_utils.cycle_animation" title="永久链接至目标">¶</a></dt>
+<dd><p>循环执行 <code class="docutils literal notranslate"><span class="pre">animation</span></code></p>
+</dd></dl>
 </div>
 
       </article>

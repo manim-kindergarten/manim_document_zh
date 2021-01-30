@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?78dcdc6d0a1b86fbe7c0234d">
-    <link rel="stylesheet" href="../_static/pygments.css?78dcdc6d0a1b86fbe7c0234d">
+    <link rel="stylesheet" href="../_static/styles/default.css?e39d2276dba0df39c57757cd">
+    <link rel="stylesheet" href="../_static/pygments.css?e39d2276dba0df39c57757cd">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?78dcdc6d0a1b86fbe7c0234d"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?e39d2276dba0df39c57757cd"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -230,19 +230,35 @@
 <h1>FILE_ops<a class="headerlink" href="#file-ops" title="永久链接至标题">¶</a></h1>
 <p><code class="docutils literal notranslate"><span class="pre">manimlib/utils/file_ops.py</span></code> 这个文件中主要实现了处理文件有关的函数</p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.file_ops.add_extension_if_not_present">
+<code class="sig-prename descclassname">manimlib.utils.file_ops.</code><code class="sig-name descname">add_extension_if_not_present</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_name</span></em>, <em class="sig-param"><span class="n">extension</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.file_ops.add_extension_if_not_present" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
 <p>如果file_name没有扩展名extension，则加上扩展名</p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.file_ops.guarantee_existence">
+<code class="sig-prename descclassname">manimlib.utils.file_ops.</code><code class="sig-name descname">guarantee_existence</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.file_ops.guarantee_existence" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
 <p>返回path的绝对路径</p>
 <ul class="simple">
 <li><p>若path不存在，则创建</p></li>
 </ul>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.file_ops.seek_full_path_from_defaults">
+<code class="sig-prename descclassname">manimlib.utils.file_ops.</code><code class="sig-name descname">seek_full_path_from_defaults</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_name</span></em>, <em class="sig-param"><span class="n">default_dir</span></em>, <em class="sig-param"><span class="n">extensions</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.file_ops.seek_full_path_from_defaults" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
 <p>从默认值中查找完整路径，默认路径如下</p>
 <ol class="arabic simple">
 <li><p>当前目录下file_name文件</p></li>
 <li><p>default_dir下file_name文件和加上扩展名extensions的文件</p></li>
 </ol>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.file_ops.get_sorted_integer_files">
+<code class="sig-prename descclassname">manimlib.utils.file_ops.</code><code class="sig-name descname">get_sorted_integer_files</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directory</span></em>, <em class="sig-param"><span class="n">min_index</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">max_index</span><span class="o">=</span><span class="default_value">inf</span></em>, <em class="sig-param"><span class="n">remove_non_integer_files</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">remove_indices_greater_than</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">extension</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.file_ops.get_sorted_integer_files" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
 <p>获取根据整数排序的文件(在partial_movie_files的合并中用到)</p>
 </div>
 

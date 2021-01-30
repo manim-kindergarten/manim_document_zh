@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?18e24c3abe6070a801e066a7">
-    <link rel="stylesheet" href="../_static/pygments.css?18e24c3abe6070a801e066a7">
+    <link rel="stylesheet" href="../_static/styles/default.css?3365dec73dc64a8ae69fe1d4">
+    <link rel="stylesheet" href="../_static/pygments.css?3365dec73dc64a8ae69fe1d4">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?18e24c3abe6070a801e066a7"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?3365dec73dc64a8ae69fe1d4"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -230,12 +230,59 @@
 <h1>VectorField<a class="headerlink" href="#vectorfield" title="永久链接至标题">¶</a></h1>
 <div class="section" id="id1">
 <h2>VectorField<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.vector_field.VectorField">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.vector_field.</code><code class="sig-name descname">VectorField</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">func</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.vector_field.VectorField" title="永久链接至目标">¶</a></dt>
+<dd><p>向量场</p>
+<p>传入的 <code class="docutils literal notranslate"><span class="pre">func</span></code> 为自变量为一个点，返回值也为一个点的函数</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">delta_x,</span> <span class="pre">delta_y</span></code> : 向量场每两个起点之间x/y轴的间隔（默认均为0.5）</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">x_min,</span> <span class="pre">x_max,</span> <span class="pre">y_min,</span> <span class="pre">y_max</span></code> : 向量场的范围（默认为全屏）</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">min_magnitude,</span> <span class="pre">max_magnitude</span></code> : 用于梯度颜色的最小和最大长度</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">colors</span></code> : 需要的颜色梯度范围，默认为 <code class="docutils literal notranslate"><span class="pre">[BLUE_E,</span> <span class="pre">GREEN,</span> <span class="pre">YELLOW,</span> <span class="pre">RED]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">length_func</span></code> : 映射向量长度的函数，可改为 <code class="docutils literal notranslate"><span class="pre">linear</span></code> 表示原长</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">vector_config</span></code> : 每个向量的属性设置</p></li>
+</ul>
+<p>初始化之后为一系列向量</p>
+</dd></dl>
 </div>
 <div class="section" id="streamlines">
 <h2>StreamLines<a class="headerlink" href="#streamlines" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.vector_field.StreamLines">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.vector_field.</code><code class="sig-name descname">StreamLines</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">func</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.vector_field.StreamLines" title="永久链接至目标">¶</a></dt>
+<dd><p>流线</p>
+<p>传入的 <code class="docutils literal notranslate"><span class="pre">func</span></code> 为自变量为一个点，返回值也为一个点的函数</p>
+<p>随机生成一系列起点，并且根据func流动形成图形</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">x_min,</span> <span class="pre">x_max,</span> <span class="pre">y_min,</span> <span class="pre">y_max</span></code> : 流线起点的范围</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">delta_x,</span> <span class="pre">delta_y</span></code> : 每两个流线起点x/y的变化量</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">n_repeats</span></code> : 起点重复多少次</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dt</span></code> : 每次流动的时间（默认为0.05）</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">virtual_time</span></code> : 总共流动的时间（默认3） <code class="docutils literal notranslate"><span class="pre">virtual_time/dt</span></code> 为流动的次数</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">color_by_arc_length</span></code> : 根据弧长上色（默认为True）</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">min_arc_length,</span> <span class="pre">max_arc_length</span></code> : 最小最大的弧长</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">color_by_magnitude</span></code> : 根据距离上色</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">min_magnitude,</span> <span class="pre">max_magnitude</span></code> : 最小最大距离</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">colors</span></code> : 颜色梯度的范围，默认为 <code class="docutils literal notranslate"><span class="pre">[BLUE_E,</span> <span class="pre">GREEN,</span> <span class="pre">YELLOW,</span> <span class="pre">RED]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cutoff_norm</span></code> : 运行每条流线的最大长度</p></li>
+</ul>
+</dd></dl>
 </div>
 <div class="section" id="showpassingflashwiththinningstrokewidth">
 <h2>ShowPassingFlashWithThinningStrokeWidth<a class="headerlink" href="#showpassingflashwiththinningstrokewidth" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.vector_field.ShowPassingFlashWithThinningStrokeWidth">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.vector_field.</code><code class="sig-name descname">ShowPassingFlashWithThinningStrokeWidth</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vmobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.vector_field.ShowPassingFlashWithThinningStrokeWidth" title="永久链接至目标">¶</a></dt>
+<dd><p>通过改变线条宽度来实现流动效果</p>
+<p>传入的 <code class="docutils literal notranslate"><span class="pre">vmobject</span></code> 表示需要显示流动效果的物体（一般是 <code class="docutils literal notranslate"><span class="pre">StreamLines</span></code>）</p>
+</dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="showpassingflashwiththinningstrokewidthexample" loop="" src="../_static/mk/ShowPassingFlashWithThinningStrokeWidthExample.mp4"></video><h5 class="example-header">ShowPassingFlashWithThinningStrokeWidthExample<a class="headerlink" href="#showpassingflashwiththinningstrokewidthexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ShowPassingFlashWithThinningStrokeWidthExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">sl</span> <span class="o">=</span> <span class="n">StreamLines</span><span class="p">(</span>
@@ -250,6 +297,17 @@
 </div></div>
 <div class="section" id="animatedstreamlines">
 <h2>AnimatedStreamLines<a class="headerlink" href="#animatedstreamlines" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.vector_field.AnimatedStreamLines">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.vector_field.</code><code class="sig-name descname">AnimatedStreamLines</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">stream_lines</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.vector_field.AnimatedStreamLines" title="永久链接至目标">¶</a></dt>
+<dd><p>自动实现流动效果的物体（利用 <code class="docutils literal notranslate"><span class="pre">StreamLines</span></code> 和转化为 <code class="docutils literal notranslate"><span class="pre">updater</span></code> 的动画）</p>
+<p>传入的 <code class="docutils literal notranslate"><span class="pre">stream_lines</span></code> 为一个 <code class="docutils literal notranslate"><span class="pre">StreamLines</span></code> 实例</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">lag_range</span></code> : 延迟的范围</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">line_anim_class</span></code> : 对每条线执行的动画，默认为 <code class="docutils literal notranslate"><span class="pre">ShowPassingFlash</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">line_anim_config</span></code> : 对每条线执行动画的属性设置</p></li>
+</ul>
+</dd></dl>
 </div>
 </div>
 

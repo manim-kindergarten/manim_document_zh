@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="../../_static/custom.css" />
     <link rel="stylesheet" href="../../_static/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?dc4c156dd26dc09bb308ea88">
-    <link rel="stylesheet" href="../../_static/pygments.css?dc4c156dd26dc09bb308ea88">
+    <link rel="stylesheet" href="../../_static/styles/default.css?7f3b39de8c66ed76884719cc">
+    <link rel="stylesheet" href="../../_static/pygments.css?7f3b39de8c66ed76884719cc">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?dc4c156dd26dc09bb308ea88"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?7f3b39de8c66ed76884719cc"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -228,36 +228,129 @@
         </label>
         <div class="section" id="texmobject">
 <h1>TexMobject<a class="headerlink" href="#texmobject" title="永久链接至标题">¶</a></h1>
-<p><code class="xref py py-class docutils literal notranslate"><span class="pre">TexMobject</span></code> 和 <code class="xref py py-class docutils literal notranslate"><span class="pre">TextMobject</span></code>
+<p><a class="reference internal" href="#manimlib.mobject.svg.tex_mobject.TexMobject" title="manimlib.mobject.svg.tex_mobject.TexMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">TexMobject</span></code></a> 和 <a class="reference internal" href="#manimlib.mobject.svg.tex_mobject.TextMobject" title="manimlib.mobject.svg.tex_mobject.TextMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextMobject</span></code></a>
 使用 <code class="docutils literal notranslate"><span class="pre">latex/xelatex</span></code> 来讲输入的字符串根据LaTeX语法编译为 <code class="docutils literal notranslate"><span class="pre">dvi/xdv</span></code> 文件，
-再通过 <code class="docutils literal notranslate"><span class="pre">dvisvgm</span></code> 将其转换为 <code class="docutils literal notranslate"><span class="pre">svg</span></code> 文件，通过 <code class="xref py py-class docutils literal notranslate"><span class="pre">SVGMobject</span></code>
+再通过 <code class="docutils literal notranslate"><span class="pre">dvisvgm</span></code> 将其转换为 <code class="docutils literal notranslate"><span class="pre">svg</span></code> 文件，通过 <a class="reference internal" href="svg_mobject.html#manimlib.mobject.svg.svg_mobject.SVGMobject" title="manimlib.mobject.svg.svg_mobject.SVGMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">SVGMobject</span></code></a>
 转换为物体，实现添加文字/公式的效果。</p>
-<p>关于 <code class="xref py py-class docutils literal notranslate"><span class="pre">TexMobject</span></code> 和 <code class="xref py py-class docutils literal notranslate"><span class="pre">TextMobject</span></code>
+<p>关于 <a class="reference internal" href="#manimlib.mobject.svg.tex_mobject.TexMobject" title="manimlib.mobject.svg.tex_mobject.TexMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">TexMobject</span></code></a> 和 <a class="reference internal" href="#manimlib.mobject.svg.tex_mobject.TextMobject" title="manimlib.mobject.svg.tex_mobject.TextMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextMobject</span></code></a>
 的区别，还有 <code class="docutils literal notranslate"><span class="pre">LaTeX</span></code> 发行版安装和文字字体问题，常见问题中有更详细的解答：</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://manim.ml/CommonProblems/v2.3.html#latex">manim常见问题：LaTeX问题</a></p></li>
 <li><p><a class="reference external" href="https://manim.ml/CommonProblems/v2.3.html#id7">manim常见问题：中文显示问题</a></p></li>
 <li><p><a class="reference external" href="https://manim.ml/CommonProblems/v2.3.html#id8">manim常见问题：文字问题</a></p></li>
 </ul>
-<p>MK做了一个关于常用 <code class="xref py py-class docutils literal notranslate"><span class="pre">TexMobject</span></code> 和 <code class="xref py py-class docutils literal notranslate"><span class="pre">TextMobject</span></code> 的视频：
+<p>MK做了一个关于常用 <a class="reference internal" href="#manimlib.mobject.svg.tex_mobject.TexMobject" title="manimlib.mobject.svg.tex_mobject.TexMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">TexMobject</span></code></a> 和 <a class="reference internal" href="#manimlib.mobject.svg.tex_mobject.TextMobject" title="manimlib.mobject.svg.tex_mobject.TextMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextMobject</span></code></a> 的视频：
 <a class="reference external" href="https://www.bilibili.com/video/BV1CC4y1H7kp">〔manim教程〕第四讲 SVG、图片与文字</a></p>
 <div class="section" id="texsymbol">
 <h2>TexSymbol<a class="headerlink" href="#texsymbol" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.svg.tex_mobject.TexSymbol">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.tex_mobject.</code><code class="sig-name descname">TexSymbol</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path_string</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.tex_mobject.TexSymbol" title="永久链接至目标">¶</a></dt>
+<dd><p>VMobjectFromSVGPathstring的别名，每个路径都是一个TexSymbol</p>
+</dd></dl>
 </div>
 <div class="section" id="singlestringtexmobject">
 <h2>SingleStringTexMobject<a class="headerlink" href="#singlestringtexmobject" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.svg.tex_mobject.SingleStringTexMobject">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.tex_mobject.</code><code class="sig-name descname">SingleStringTexMobject</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tex_string</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.tex_mobject.SingleStringTexMobject" title="永久链接至目标">¶</a></dt>
+<dd><p>单个字符串渲染出的SVGMobject</p>
+<p>只传入一个字符串 <code class="docutils literal notranslate"><span class="pre">tex_string</span></code></p>
+<dl class="py method">
+<dt id="manimlib.mobject.svg.tex_mobject.SingleStringTexMobject.get_modified_expression">
+<code class="sig-name descname">get_modified_expression</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tex_string</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.tex_mobject.SingleStringTexMobject.get_modified_expression" title="永久链接至目标">¶</a></dt>
+<dd><p>将对齐参数与传入的字符串拼接，并且处理特殊的字符串</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.svg.tex_mobject.SingleStringTexMobject.modify_special_strings">
+<code class="sig-name descname">modify_special_strings</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tex</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.tex_mobject.SingleStringTexMobject.modify_special_strings" title="永久链接至目标">¶</a></dt>
+<dd><p>处理特殊不合法的字符串</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.svg.tex_mobject.SingleStringTexMobject.remove_stray_braces">
+<code class="sig-name descname">remove_stray_braces</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tex</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.tex_mobject.SingleStringTexMobject.remove_stray_braces" title="永久链接至目标">¶</a></dt>
+<dd><p>匹配大括号</p>
+</dd></dl>
+</dd></dl>
 </div>
 <div class="section" id="id1">
 <h2>TexMobject<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.svg.tex_mobject.TexMobject">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.tex_mobject.</code><code class="sig-name descname">TexMobject</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">tex_strings</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.tex_mobject.TexMobject" title="永久链接至目标">¶</a></dt>
+<dd><p>用于生成LaTeX公式（align环境）</p>
+<p>可传入多个 <code class="docutils literal notranslate"><span class="pre">tex_strings</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">arg_separator</span></code> 表示每两个字符串之间的字符，默认为空格</p>
+<p><code class="docutils literal notranslate"><span class="pre">tex_to_color_map</span></code> 为一个字典，会根据其中的键自动拆开字符串用于上色</p>
+<dl class="py method">
+<dt id="manimlib.mobject.svg.tex_mobject.TexMobject.break_up_by_substrings">
+<code class="sig-name descname">break_up_by_substrings</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.tex_mobject.TexMobject.break_up_by_substrings" title="永久链接至目标">¶</a></dt>
+<dd><p>重新组织子物体，<code class="docutils literal notranslate"><span class="pre">tex_string</span></code> 中每个子字符串为一个子物体</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.svg.tex_mobject.TexMobject.break_up_tex_strings">
+<code class="sig-name descname">break_up_tex_strings</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tex_strings</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.tex_mobject.TexMobject.break_up_tex_strings" title="永久链接至目标">¶</a></dt>
+<dd><p>根据传入的tex_to_color_map再次拆开tex_strings</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.svg.tex_mobject.TexMobject.index_of_part_by_tex">
+<code class="sig-name descname">index_of_part_by_tex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tex</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.tex_mobject.TexMobject.index_of_part_by_tex" title="永久链接至目标">¶</a></dt>
+<dd><p>根据tex获取在子物体中的下标</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.svg.tex_mobject.TexMobject.set_color_by_tex">
+<code class="sig-name descname">set_color_by_tex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tex</span></em>, <em class="sig-param"><span class="n">color</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.tex_mobject.TexMobject.set_color_by_tex" title="永久链接至目标">¶</a></dt>
+<dd><p>给 <code class="docutils literal notranslate"><span class="pre">tex</span></code> 上颜色为 <code class="docutils literal notranslate"><span class="pre">color</span></code> ，注意此时 <code class="docutils literal notranslate"><span class="pre">tex</span></code> 要独立存在，否则会给包含 <code class="docutils literal notranslate"><span class="pre">tex</span></code> 的也上色</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.svg.tex_mobject.TexMobject.set_color_by_tex_to_color_map">
+<code class="sig-name descname">set_color_by_tex_to_color_map</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">texs_to_color_map</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.tex_mobject.TexMobject.set_color_by_tex_to_color_map" title="永久链接至目标">¶</a></dt>
+<dd><p>根据 <code class="docutils literal notranslate"><span class="pre">texs_to_color_map</span></code> 上色，同样，会给包含键的全部上色，不会自动拆分</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.svg.tex_mobject.TexMobject.sort_alphabetically">
+<code class="sig-name descname">sort_alphabetically</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.tex_mobject.TexMobject.sort_alphabetically" title="永久链接至目标">¶</a></dt>
+<dd><p>根据字典序给子物体排序</p>
+</dd></dl>
+</dd></dl>
 </div>
 <div class="section" id="textmobject">
 <h2>TextMobject<a class="headerlink" href="#textmobject" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.svg.tex_mobject.TextMobject">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.tex_mobject.</code><code class="sig-name descname">TextMobject</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">tex_strings</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.tex_mobject.TextMobject" title="永久链接至目标">¶</a></dt>
+<dd><p>用于生成LaTeX文字，默认每行之间居中</p>
+<p>传入的两个字符串之间无分隔(即 <code class="docutils literal notranslate"><span class="pre">arg_separator=""</span></code> )</p>
+<p>可传入多个 <code class="docutils literal notranslate"><span class="pre">tex_strings</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">arg_separator</span></code> 表示每两个字符串之间的字符，默认为空格</p>
+<p><code class="docutils literal notranslate"><span class="pre">tex_to_color_map</span></code> 为一个字典，会根据其中的键自动拆开字符串用于上色</p>
+</dd></dl>
 </div>
 <div class="section" id="bulletedlist">
 <h2>BulletedList<a class="headerlink" href="#bulletedlist" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.svg.tex_mobject.BulletedList">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.tex_mobject.</code><code class="sig-name descname">BulletedList</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">items</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.tex_mobject.BulletedList" title="永久链接至目标">¶</a></dt>
+<dd><p>项目列表</p>
+<p>支持多个字符串，每个一行；也支持一个字符串，使用LaTeX的换行（\）</p>
+<dl class="py method">
+<dt id="manimlib.mobject.svg.tex_mobject.BulletedList.fade_all_but">
+<code class="sig-name descname">fade_all_but</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">index_or_string</span></em>, <em class="sig-param"><span class="n">opacity</span><span class="o">=</span><span class="default_value">0.5</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.tex_mobject.BulletedList.fade_all_but" title="永久链接至目标">¶</a></dt>
+<dd><p>把除了 <code class="docutils literal notranslate"><span class="pre">index_or_string</span></code> 之外的不透明度均设为 <code class="docutils literal notranslate"><span class="pre">opacity</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">index_or_string</span></code> 可以传入子物体的下标，也可以传入一个字符串</p>
+</dd></dl>
+</dd></dl>
 </div>
 <div class="section" id="title">
 <h2>Title<a class="headerlink" href="#title" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.svg.tex_mobject.Title">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.tex_mobject.</code><code class="sig-name descname">Title</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">text_parts</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.tex_mobject.Title" title="永久链接至目标">¶</a></dt>
+<dd><p>标题</p>
+<p><code class="docutils literal notranslate"><span class="pre">include_underline=True</span></code> 会添加下划线（默认添加）</p>
+<p><code class="docutils literal notranslate"><span class="pre">underline_width</span></code> 下划线的长度（默认屏幕宽-2个单位）</p>
+<p><code class="docutils literal notranslate"><span class="pre">match_underline_width_to_text=True</span></code> 时将下划线的长度和文字匹配（默认为False）</p>
+</dd></dl>
 </div>
 </div>
 

@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?68533ac785b71da63d725ed0">
-    <link rel="stylesheet" href="../_static/pygments.css?68533ac785b71da63d725ed0">
+    <link rel="stylesheet" href="../_static/styles/default.css?7bc9674adcfad9b87a7bf6e0">
+    <link rel="stylesheet" href="../_static/pygments.css?7bc9674adcfad9b87a7bf6e0">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?68533ac785b71da63d725ed0"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?7bc9674adcfad9b87a7bf6e0"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -230,25 +230,49 @@
 <h1>Tex_file_writing<a class="headerlink" href="#tex-file-writing" title="永久链接至标题">¶</a></h1>
 <p><code class="docutils literal notranslate"><span class="pre">manimlib/utils/tex_file_writing.py</span></code> 这个文件中主要包含了将tex字符串使用LaTeX编译成svg的函数</p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.tex_file_writing.tex_hash">
+<code class="sig-prename descclassname">manimlib.utils.tex_file_writing.</code><code class="sig-name descname">tex_hash</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">expression</span></em>, <em class="sig-param"><span class="n">template_tex_file_body</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.tex_file_writing.tex_hash" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
 <p>返回将 <code class="docutils literal notranslate"><span class="pre">expression</span></code> 和 <code class="docutils literal notranslate"><span class="pre">template_tex_file_body</span></code> 合并后sha256后的哈希值</p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.tex_file_writing.tex_to_svg_file">
+<code class="sig-prename descclassname">manimlib.utils.tex_file_writing.</code><code class="sig-name descname">tex_to_svg_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">expression</span></em>, <em class="sig-param"><span class="n">template_tex_file_body</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.tex_file_writing.tex_to_svg_file" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
 <div class="line-block">
 <div class="line">将tex表达式转换为svg文件</div>
 <div class="line">(先写入.tex文件，再编译为.dvi/.xdv文件，后转换为.svg文件)</div>
 </div>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.tex_file_writing.generate_tex_file">
+<code class="sig-prename descclassname">manimlib.utils.tex_file_writing.</code><code class="sig-name descname">generate_tex_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">expression</span></em>, <em class="sig-param"><span class="n">template_tex_file_body</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.tex_file_writing.generate_tex_file" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
 <div class="line-block">
 <div class="line">将 <code class="docutils literal notranslate"><span class="pre">expression</span></code> 写入tex文件，并返回tex文件</div>
 <div class="line">使用 <code class="docutils literal notranslate"><span class="pre">expression</span></code> 替换掉 <code class="docutils literal notranslate"><span class="pre">template_tex_file_body</span></code> 文件中的 <code class="docutils literal notranslate"><span class="pre">TEX_TEXT_TO_REPLACE</span></code></div>
 <div class="line">tex文件名为hash值</div>
 </div>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.tex_file_writing.tex_to_dvi">
+<code class="sig-prename descclassname">manimlib.utils.tex_file_writing.</code><code class="sig-name descname">tex_to_dvi</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tex_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.tex_file_writing.tex_to_dvi" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
 <p>将tex文件编译为dvi/xdv文件，并返回dvi/xdv文件</p>
 <ul class="simple">
 <li><p>若 <code class="docutils literal notranslate"><span class="pre">TEX_USE_CTEX=False</span></code> ，则使用latex将tex编译为dvi</p></li>
 <li><p>若 <code class="docutils literal notranslate"><span class="pre">TEX_USE_CTEX=True</span></code> ，则使用xelatex将tex编译为xdv</p></li>
 </ul>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.tex_file_writing.dvi_to_svg">
+<code class="sig-prename descclassname">manimlib.utils.tex_file_writing.</code><code class="sig-name descname">dvi_to_svg</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dvi_file</span></em>, <em class="sig-param"><span class="n">regen_if_exists</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.tex_file_writing.dvi_to_svg" title="永久链接至目标">¶</a></dt>
+<dd><p>Converts a dvi, which potentially has multiple slides, into a
+directory full of enumerated pngs corresponding with these slides.
+Returns a list of PIL Image objects for these images sorted as they
+where in the dvi</p>
+</dd></dl>
 <p>使用dvisvgm将dvi/xdv文件转换为svg文件，并返回svg文件</p>
 </div>
 

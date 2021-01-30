@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?dce602450969b9e4c4492aab">
-    <link rel="stylesheet" href="../_static/pygments.css?dce602450969b9e4c4492aab">
+    <link rel="stylesheet" href="../_static/styles/default.css?5c1f0fab053da3a5c19581e5">
+    <link rel="stylesheet" href="../_static/pygments.css?5c1f0fab053da3a5c19581e5">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?dce602450969b9e4c4492aab"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?5c1f0fab053da3a5c19581e5"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -234,6 +234,12 @@
 </div>
 <div class="section" id="homotopy">
 <h2>Homotopy<a class="headerlink" href="#homotopy" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.animation.movement.Homotopy">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.movement.</code><code class="sig-name descname">Homotopy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">homotopy</span></em>, <em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.movement.Homotopy" title="永久链接至目标">¶</a></dt>
+<dd><p>Homotopy is a function from
+(x, y, z, t) to (x’, y’, z’)</p>
+</dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="homotopyexample" loop="" src="../_static/manim_3fed/HomotopyExample.mp4"></video><h5 class="example-header">HomotopyExample<a class="headerlink" href="#homotopyexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">HomotopyExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">def</span> <span class="nf">plane_wave_homotopy</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
@@ -260,9 +266,18 @@
 </div></div>
 <div class="section" id="complexhomotopy">
 <h2>ComplexHomotopy<a class="headerlink" href="#complexhomotopy" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.animation.movement.ComplexHomotopy">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.movement.</code><code class="sig-name descname">ComplexHomotopy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">complex_homotopy</span></em>, <em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.movement.ComplexHomotopy" title="永久链接至目标">¶</a></dt>
+<dd><p>Complex Hootopy a function Cx[0, 1] to C</p>
+</dd></dl>
 </div>
 <div class="section" id="phaseflow">
 <h2>PhaseFlow<a class="headerlink" href="#phaseflow" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.animation.movement.PhaseFlow">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.movement.</code><code class="sig-name descname">PhaseFlow</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span></em>, <em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.movement.PhaseFlow" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="phaseflowexample" loop="" src="../_static/manim_3fed/PhaseFlowExample.mp4"></video><h5 class="example-header">PhaseFlowExample<a class="headerlink" href="#phaseflowexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">PhaseFlowExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
@@ -286,6 +301,10 @@
 </div></div>
 <div class="section" id="movealongpath">
 <h2>MoveAlongPath<a class="headerlink" href="#movealongpath" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.animation.movement.MoveAlongPath">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.movement.</code><code class="sig-name descname">MoveAlongPath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">path</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.movement.MoveAlongPath" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="movealongpathexample" loop="" src="../_static/manim_3fed/MoveAlongPathExample.mp4"></video><h5 class="example-header">MoveAlongPathExample<a class="headerlink" href="#movealongpathexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MoveAlongPathExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">line</span><span class="o">=</span><span class="n">Line</span><span class="p">(</span><span class="n">ORIGIN</span><span class="p">,</span><span class="n">RIGHT</span><span class="o">*</span><span class="n">FRAME_WIDTH</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>

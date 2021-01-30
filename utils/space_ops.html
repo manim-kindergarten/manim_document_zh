@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?d0178c0326808ce1e5016b69">
-    <link rel="stylesheet" href="../_static/pygments.css?d0178c0326808ce1e5016b69">
+    <link rel="stylesheet" href="../_static/styles/default.css?2c17fdb359fee0292aa85431">
+    <link rel="stylesheet" href="../_static/pygments.css?2c17fdb359fee0292aa85431">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?d0178c0326808ce1e5016b69"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?2c17fdb359fee0292aa85431"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -230,64 +230,197 @@
 <h1>Space_ops<a class="headerlink" href="#space-ops" title="永久链接至标题">¶</a></h1>
 <p><code class="docutils literal notranslate"><span class="pre">manimlib/utils/space_ops.py</span></code> 这个文件中主要实现了和空间坐标计算有关的函数</p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.space_ops.get_norm">
+<code class="sig-prename descclassname">manimlib.utils.space_ops.</code><code class="sig-name descname">get_norm</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vect</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.space_ops.get_norm" title="永久链接至目标">¶</a></dt>
+<dd><p>模长</p>
+</dd></dl>
 <p>返回向量vect的模长</p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.space_ops.quaternion_mult">
+<code class="sig-prename descclassname">manimlib.utils.space_ops.</code><code class="sig-name descname">quaternion_mult</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">q1</span></em>, <em class="sig-param"><span class="n">q2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.space_ops.quaternion_mult" title="永久链接至目标">¶</a></dt>
+<dd><p>四元数相乘</p>
+</dd></dl>
 <p>返回两个 <em>四元数</em> q1,q2相乘的乘积</p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.space_ops.quaternion_from_angle_axis">
+<code class="sig-prename descclassname">manimlib.utils.space_ops.</code><code class="sig-name descname">quaternion_from_angle_axis</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">angle</span></em>, <em class="sig-param"><span class="n">axis</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.space_ops.quaternion_from_angle_axis" title="永久链接至目标">¶</a></dt>
+<dd><p>根据轴-角确定的用于旋转的四元数
+[cos(θ/2), sin(θ/2)u]</p>
+</dd></dl>
 <p>根据 <em>轴-角</em> 确定用于旋转的 <em>四元数</em>
 返回<code class="docutils literal notranslate"><span class="pre">[cos(angle/2),</span> <span class="pre">sin(abgle/2)*axis]</span></code></p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.space_ops.angle_axis_from_quaternion">
+<code class="sig-prename descclassname">manimlib.utils.space_ops.</code><code class="sig-name descname">angle_axis_from_quaternion</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">quaternion</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.space_ops.angle_axis_from_quaternion" title="永久链接至目标">¶</a></dt>
+<dd><p>从四元数确定旋转轴-角</p>
+</dd></dl>
 <p>返回从四元数确定旋转的轴和角</p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.space_ops.quaternion_conjugate">
+<code class="sig-prename descclassname">manimlib.utils.space_ops.</code><code class="sig-name descname">quaternion_conjugate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">quaternion</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.space_ops.quaternion_conjugate" title="永久链接至目标">¶</a></dt>
+<dd><p>共轭四元数</p>
+</dd></dl>
 <p>返回quaternion的共轭四元数</p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.space_ops.rotate_vector">
+<code class="sig-prename descclassname">manimlib.utils.space_ops.</code><code class="sig-name descname">rotate_vector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vector</span></em>, <em class="sig-param"><span class="n">angle</span></em>, <em class="sig-param"><span class="n">axis</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 1.0])</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.space_ops.rotate_vector" title="永久链接至目标">¶</a></dt>
+<dd><p>旋转向量 2D-复数运算 3D-四元数qvq_inv</p>
+</dd></dl>
 <p>返回将vector以axis为轴，旋转angle角度后的向量</p>
 <ul class="simple">
 <li><p>若vector是二维ndarray，则使用复数运算</p></li>
 <li><p>若vector是三维ndarray，则使用四元数运算</p></li>
 </ul>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.space_ops.thick_diagonal">
+<code class="sig-prename descclassname">manimlib.utils.space_ops.</code><code class="sig-name descname">thick_diagonal</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dim</span></em>, <em class="sig-param"><span class="n">thickness</span><span class="o">=</span><span class="default_value">2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.space_ops.thick_diagonal" title="永久链接至目标">¶</a></dt>
+<dd><p>对角线为1 其余为0，对角线宽度由thickness决定</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">thick_diagonal</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="go">[[1, 0, 0],</span>
+<span class="go"> [0, 1, 0],</span>
+<span class="go"> [0, 0, 1]]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">thick_diagonal</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="go">[[1, 1, 0],</span>
+<span class="go"> [1, 1, 1],</span>
+<span class="go"> [0, 1, 1]]</span>
+</pre></div>
+</div>
+</dd></dl>
 <p>返回一个dim*dim大小，对角线宽度为thickness的方阵</p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.space_ops.rotation_matrix">
+<code class="sig-prename descclassname">manimlib.utils.space_ops.</code><code class="sig-name descname">rotation_matrix</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">angle</span></em>, <em class="sig-param"><span class="n">axis</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.space_ops.rotation_matrix" title="永久链接至目标">¶</a></dt>
+<dd><p>通过轴-角确定旋转矩阵</p>
+</dd></dl>
 <p>返回通过角angle轴axis确定的旋转矩阵</p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.space_ops.rotation_about_z">
+<code class="sig-prename descclassname">manimlib.utils.space_ops.</code><code class="sig-name descname">rotation_about_z</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">angle</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.space_ops.rotation_about_z" title="永久链接至目标">¶</a></dt>
+<dd><p>沿z轴旋转angle角(右手螺旋)</p>
+</dd></dl>
 <p>返回沿z轴旋转angle的旋转矩阵</p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.space_ops.z_to_vector">
+<code class="sig-prename descclassname">manimlib.utils.space_ops.</code><code class="sig-name descname">z_to_vector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vector</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.space_ops.z_to_vector" title="永久链接至目标">¶</a></dt>
+<dd><p>返回能使z轴变换到vector的矩阵</p>
+</dd></dl>
 <p>返回可以使z轴方向旋转到vector方向的变换矩阵</p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.space_ops.angle_between">
+<code class="sig-prename descclassname">manimlib.utils.space_ops.</code><code class="sig-name descname">angle_between</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">v1</span></em>, <em class="sig-param"><span class="n">v2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.space_ops.angle_between" title="永久链接至目标">¶</a></dt>
+<dd><p>返回两向量夹角</p>
+</dd></dl>
 <p>返回两向量v1,v2的夹角</p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.space_ops.angle_of_vector">
+<code class="sig-prename descclassname">manimlib.utils.space_ops.</code><code class="sig-name descname">angle_of_vector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vector</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.space_ops.angle_of_vector" title="永久链接至目标">¶</a></dt>
+<dd><p>在xy平面上投影的极坐标θ</p>
+</dd></dl>
 <p>返回vector在xy平面投影的极坐标系下的theta</p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.space_ops.angle_between_vectors">
+<code class="sig-prename descclassname">manimlib.utils.space_ops.</code><code class="sig-name descname">angle_between_vectors</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">v1</span></em>, <em class="sig-param"><span class="n">v2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.space_ops.angle_between_vectors" title="永久链接至目标">¶</a></dt>
+<dd><p>返回两向量夹角</p>
+</dd></dl>
 <p>返回两向量v1,v2的夹角</p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.space_ops.normalize">
+<code class="sig-prename descclassname">manimlib.utils.space_ops.</code><code class="sig-name descname">normalize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vect</span></em>, <em class="sig-param"><span class="n">fall_back</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.space_ops.normalize" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
 <p>返回vect的单位向量</p>
 <ul class="simple">
 <li><p>若vect为零向量，且fall_back=None，返回零向量</p></li>
 <li><p>若vect为零向量，且fall_back不为None，返回fall_back</p></li>
 </ul>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.space_ops.cross">
+<code class="sig-prename descclassname">manimlib.utils.space_ops.</code><code class="sig-name descname">cross</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">v1</span></em>, <em class="sig-param"><span class="n">v2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.space_ops.cross" title="永久链接至目标">¶</a></dt>
+<dd><p>两向量叉积</p>
+</dd></dl>
 <p>返回两向量v1,v2的叉积</p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.space_ops.get_unit_normal">
+<code class="sig-prename descclassname">manimlib.utils.space_ops.</code><code class="sig-name descname">get_unit_normal</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">v1</span></em>, <em class="sig-param"><span class="n">v2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.space_ops.get_unit_normal" title="永久链接至目标">¶</a></dt>
+<dd><p>法向量</p>
+</dd></dl>
 <p>返回向量v1,v2确定的平面的法向量</p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.space_ops.compass_directions">
+<code class="sig-prename descclassname">manimlib.utils.space_ops.</code><code class="sig-name descname">compass_directions</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span><span class="o">=</span><span class="default_value">4</span></em>, <em class="sig-param"><span class="n">start_vect</span><span class="o">=</span><span class="default_value">array([1.0, 0.0, 0.0])</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.space_ops.compass_directions" title="永久链接至目标">¶</a></dt>
+<dd><p>将TAU分成n份，从start_vect开始返回沿每个方向的单位向量</p>
+</dd></dl>
 <p>将TAU分成n份，从start_vect开始返回沿每个方向的单位向量</p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.space_ops.complex_to_R3">
+<code class="sig-prename descclassname">manimlib.utils.space_ops.</code><code class="sig-name descname">complex_to_R3</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">complex_num</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.space_ops.complex_to_R3" title="永久链接至目标">¶</a></dt>
+<dd><p>复数转化为坐标（z轴为0）</p>
+</dd></dl>
 <p>复数转化为坐标（z轴为0）</p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.space_ops.R3_to_complex">
+<code class="sig-prename descclassname">manimlib.utils.space_ops.</code><code class="sig-name descname">R3_to_complex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.space_ops.R3_to_complex" title="永久链接至目标">¶</a></dt>
+<dd><p>取坐标前两轴为复数</p>
+</dd></dl>
 <p>取坐标前两轴为复数</p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.space_ops.complex_func_to_R3_func">
+<code class="sig-prename descclassname">manimlib.utils.space_ops.</code><code class="sig-name descname">complex_func_to_R3_func</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">complex_func</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.space_ops.complex_func_to_R3_func" title="永久链接至目标">¶</a></dt>
+<dd><p>将复函数转化为针对坐标的函数</p>
+</dd></dl>
 <p>将针对复数的函数转化为针对坐标的函数</p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.space_ops.center_of_mass">
+<code class="sig-prename descclassname">manimlib.utils.space_ops.</code><code class="sig-name descname">center_of_mass</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">points</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.space_ops.center_of_mass" title="永久链接至目标">¶</a></dt>
+<dd><p>获取点集的重心</p>
+</dd></dl>
 <p>返回点集points的重心</p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.space_ops.midpoint">
+<code class="sig-prename descclassname">manimlib.utils.space_ops.</code><code class="sig-name descname">midpoint</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point1</span></em>, <em class="sig-param"><span class="n">point2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.space_ops.midpoint" title="永久链接至目标">¶</a></dt>
+<dd><p>两点的中点</p>
+</dd></dl>
 <p>返回point1，point2的中点</p>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.space_ops.line_intersection">
+<code class="sig-prename descclassname">manimlib.utils.space_ops.</code><code class="sig-name descname">line_intersection</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">line1</span></em>, <em class="sig-param"><span class="n">line2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.space_ops.line_intersection" title="永久链接至目标">¶</a></dt>
+<dd><p>求两直线交点:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">point</span><span class="o">=</span><span class="n">line_intersection</span><span class="p">(</span><span class="n">line1</span><span class="o">.</span><span class="n">get_start_and_end</span><span class="p">(),</span> <span class="n">line2</span><span class="o">.</span><span class="n">get_start_and_end</span><span class="p">())</span>
+</pre></div>
+</div>
+</dd></dl>
 <p>返回两直线交点</p>
 <ul class="simple">
 <li><p><strong>注意：</strong> 需要使用<code class="docutils literal notranslate"><span class="pre">get_start_and_end()</span></code></p></li>
 </ul>
 <hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.space_ops.get_winding_number">
+<code class="sig-prename descclassname">manimlib.utils.space_ops.</code><code class="sig-name descname">get_winding_number</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">points</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.space_ops.get_winding_number" title="永久链接至目标">¶</a></dt>
+<dd><p>获取卷绕数（所有点一共绕过的角度）</p>
+</dd></dl>
 <p>返回卷绕数</p>
 </div>
 

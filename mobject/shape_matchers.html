@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?772eb0670420f2f975fb38a6">
-    <link rel="stylesheet" href="../_static/pygments.css?772eb0670420f2f975fb38a6">
+    <link rel="stylesheet" href="../_static/styles/default.css?2526fc8eedef1d9949f8999c">
+    <link rel="stylesheet" href="../_static/pygments.css?2526fc8eedef1d9949f8999c">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?772eb0670420f2f975fb38a6"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?2526fc8eedef1d9949f8999c"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -230,15 +230,49 @@
 <h1>ShapeMatchers<a class="headerlink" href="#shapematchers" title="永久链接至标题">¶</a></h1>
 <div class="section" id="surroundingrectangle">
 <h2>SurroundingRectangle<a class="headerlink" href="#surroundingrectangle" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.shape_matchers.SurroundingRectangle">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.shape_matchers.</code><code class="sig-name descname">SurroundingRectangle</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.shape_matchers.SurroundingRectangle" title="永久链接至目标">¶</a></dt>
+<dd><p>环绕矩形</p>
+<p>传入 <code class="docutils literal notranslate"><span class="pre">mobject</span></code> 为环绕的物体</p>
+</dd></dl>
 </div>
 <div class="section" id="backgroundrectangle">
 <h2>BackgroundRectangle<a class="headerlink" href="#backgroundrectangle" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.shape_matchers.BackgroundRectangle">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.shape_matchers.</code><code class="sig-name descname">BackgroundRectangle</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.shape_matchers.BackgroundRectangle" title="永久链接至目标">¶</a></dt>
+<dd><p>背景矩形</p>
+<p>传入 <code class="docutils literal notranslate"><span class="pre">mobject</span></code> 为需要添加背景的物体</p>
+<dl class="py method">
+<dt id="manimlib.mobject.shape_matchers.BackgroundRectangle.pointwise_become_partial">
+<code class="sig-name descname">pointwise_become_partial</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.shape_matchers.BackgroundRectangle.pointwise_become_partial" title="永久链接至目标">¶</a></dt>
+<dd><p>把vmobject的[a,b]部分作为自己的全部（ab为0~1之间的数）</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.shape_matchers.BackgroundRectangle.set_style_data">
+<code class="sig-name descname">set_style_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">stroke_color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">stroke_width</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fill_color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fill_opacity</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">family</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.shape_matchers.BackgroundRectangle.set_style_data" title="永久链接至目标">¶</a></dt>
+<dd><p>除了不透明度，其余不可以更改（初始化时除外）</p>
+</dd></dl>
+</dd></dl>
 </div>
 <div class="section" id="cross">
 <h2>Cross<a class="headerlink" href="#cross" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.shape_matchers.Cross">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.shape_matchers.</code><code class="sig-name descname">Cross</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.shape_matchers.Cross" title="永久链接至目标">¶</a></dt>
+<dd><p>交叉错号</p>
+<p>传入的 <code class="docutils literal notranslate"><span class="pre">mobject</span></code> 为要打错号的物体</p>
+</dd></dl>
 </div>
 <div class="section" id="underline">
 <h2>Underline<a class="headerlink" href="#underline" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.shape_matchers.Underline">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.shape_matchers.</code><code class="sig-name descname">Underline</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.shape_matchers.Underline" title="永久链接至目标">¶</a></dt>
+<dd><p>下划线</p>
+<p>传入的 <code class="docutils literal notranslate"><span class="pre">mobject</span></code> 为需要下划线的物体</p>
+</dd></dl>
 </div>
 </div>
 

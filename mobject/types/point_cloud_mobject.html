@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="../../_static/custom.css" />
     <link rel="stylesheet" href="../../_static/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?2cf4062e6f4c0fac512bf94d">
-    <link rel="stylesheet" href="../../_static/pygments.css?2cf4062e6f4c0fac512bf94d">
+    <link rel="stylesheet" href="../../_static/styles/default.css?3cc0f524a7d219b649fc757e">
+    <link rel="stylesheet" href="../../_static/pygments.css?3cc0f524a7d219b649fc757e">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?2cf4062e6f4c0fac512bf94d"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?3cc0f524a7d219b649fc757e"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -228,30 +228,120 @@
         </label>
         <div class="section" id="pmobject">
 <h1>PMobject<a class="headerlink" href="#pmobject" title="永久链接至标题">¶</a></h1>
-<p><code class="xref py py-class docutils literal notranslate"><span class="pre">PMobject</span></code> 是
-<code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code> 的子类，使用点集来表示物体，目前不太常用</p>
+<p><a class="reference internal" href="#manimlib.mobject.types.point_cloud_mobject.PMobject" title="manimlib.mobject.types.point_cloud_mobject.PMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">PMobject</span></code></a> 是
+<a class="reference internal" href="../mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> 的子类，使用点集来表示物体，目前不太常用</p>
 <div class="section" id="id1">
 <h2>PMobject<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.types.point_cloud_mobject.PMobject">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.point_cloud_mobject.</code><code class="sig-name descname">PMobject</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.point_cloud_mobject.PMobject" title="永久链接至目标">¶</a></dt>
+<dd><dl class="py method">
+<dt id="manimlib.mobject.types.point_cloud_mobject.PMobject.add_points">
+<code class="sig-name descname">add_points</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">points</span></em>, <em class="sig-param"><span class="n">rgbas</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">alpha</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.point_cloud_mobject.PMobject.add_points" title="永久链接至目标">¶</a></dt>
+<dd><p>添加点集</p>
+<p>点为3维ndarray，<code class="docutils literal notranslate"><span class="pre">points</span></code> 和 <code class="docutils literal notranslate"><span class="pre">rgbas</span></code> 必须同样大小，除非 <code class="docutils literal notranslate"><span class="pre">rgbas</span></code> 为 <code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.point_cloud_mobject.PMobject.fade_to">
+<code class="sig-name descname">fade_to</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span></em>, <em class="sig-param"><span class="n">alpha</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.point_cloud_mobject.PMobject.fade_to" title="永久链接至目标">¶</a></dt>
+<dd><p>根据alpha在当前颜色和color之间插值作为颜色</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.point_cloud_mobject.PMobject.filter_out">
+<code class="sig-name descname">filter_out</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">condition</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.point_cloud_mobject.PMobject.filter_out" title="永久链接至目标">¶</a></dt>
+<dd><p>根据condition函数过滤所有点</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.point_cloud_mobject.PMobject.get_point_mobject">
+<code class="sig-name descname">get_point_mobject</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">center</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.point_cloud_mobject.PMobject.get_point_mobject" title="永久链接至目标">¶</a></dt>
+<dd><p>返回点集中心的点（Point）</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.point_cloud_mobject.PMobject.match_colors">
+<code class="sig-name descname">match_colors</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.point_cloud_mobject.PMobject.match_colors" title="永久链接至目标">¶</a></dt>
+<dd><p>和mobject匹配颜色</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.point_cloud_mobject.PMobject.pointwise_become_partial">
+<code class="sig-name descname">pointwise_become_partial</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.point_cloud_mobject.PMobject.pointwise_become_partial" title="永久链接至目标">¶</a></dt>
+<dd><p>点集的[a,b]部分变为整体</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.point_cloud_mobject.PMobject.set_color">
+<code class="sig-name descname">set_color</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">'#FFFF00'</span></em>, <em class="sig-param"><span class="n">family</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.point_cloud_mobject.PMobject.set_color" title="永久链接至目标">¶</a></dt>
+<dd><p>设置所有点的颜色</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.point_cloud_mobject.PMobject.set_color_by_gradient">
+<code class="sig-name descname">set_color_by_gradient</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">colors</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.point_cloud_mobject.PMobject.set_color_by_gradient" title="永久链接至目标">¶</a></dt>
+<dd><p>根据梯度给每个点上色</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.point_cloud_mobject.PMobject.set_colors_by_radial_gradient">
+<code class="sig-name descname">set_colors_by_radial_gradient</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">center</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">radius</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">inner_color</span><span class="o">=</span><span class="default_value">'#FFFFFF'</span></em>, <em class="sig-param"><span class="n">outer_color</span><span class="o">=</span><span class="default_value">'#000000'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.point_cloud_mobject.PMobject.set_colors_by_radial_gradient" title="永久链接至目标">¶</a></dt>
+<dd><p>根据半径距离给所有点上色</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.point_cloud_mobject.PMobject.set_stroke_width">
+<code class="sig-name descname">set_stroke_width</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">width</span></em>, <em class="sig-param"><span class="n">family</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.point_cloud_mobject.PMobject.set_stroke_width" title="永久链接至目标">¶</a></dt>
+<dd><p>设置 <code class="docutils literal notranslate"><span class="pre">stroke_width</span></code> 即点的大小</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.point_cloud_mobject.PMobject.sort_points">
+<code class="sig-name descname">sort_points</code><span class="sig-paren">(</span><em class="sig-param">function=&lt;function PMobject.&lt;lambda&gt;&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.point_cloud_mobject.PMobject.sort_points" title="永久链接至目标">¶</a></dt>
+<dd><p>根据function给点排序</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.point_cloud_mobject.PMobject.thin_out">
+<code class="sig-name descname">thin_out</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">factor</span><span class="o">=</span><span class="default_value">5</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.point_cloud_mobject.PMobject.thin_out" title="永久链接至目标">¶</a></dt>
+<dd><p>只保留第 <code class="docutils literal notranslate"><span class="pre">factor</span></code> 倍数的点</p>
+</dd></dl>
+</dd></dl>
 </div>
 <div class="section" id="mobject1d">
 <h2>Mobject1D<a class="headerlink" href="#mobject1d" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.types.point_cloud_mobject.Mobject1D">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.point_cloud_mobject.</code><code class="sig-name descname">Mobject1D</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.point_cloud_mobject.Mobject1D" title="永久链接至目标">¶</a></dt>
+<dd><p>目前没大用了</p>
+</dd></dl>
 </div>
 <div class="section" id="mobject2d">
 <h2>Mobject2D<a class="headerlink" href="#mobject2d" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.types.point_cloud_mobject.Mobject2D">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.point_cloud_mobject.</code><code class="sig-name descname">Mobject2D</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.point_cloud_mobject.Mobject2D" title="永久链接至目标">¶</a></dt>
+<dd><p>目前没大用了</p>
+</dd></dl>
 </div>
 <div class="section" id="pgroup">
 <h2>PGroup<a class="headerlink" href="#pgroup" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.types.point_cloud_mobject.PGroup">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.point_cloud_mobject.</code><code class="sig-name descname">PGroup</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">pmobs</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.point_cloud_mobject.PGroup" title="永久链接至目标">¶</a></dt>
+<dd><p>和PMobject一样，用于存放子物体（必须都是PMobject）</p>
+</dd></dl>
 </div>
 <div class="section" id="pointclouddot">
 <h2>PointCloudDot<a class="headerlink" href="#pointclouddot" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.types.point_cloud_mobject.PointCloudDot">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.point_cloud_mobject.</code><code class="sig-name descname">PointCloudDot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">center</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.point_cloud_mobject.PointCloudDot" title="永久链接至目标">¶</a></dt>
+<dd><p>由点集构成的点</p>
+</dd></dl>
 </div>
 <div class="section" id="point">
 <h2>Point<a class="headerlink" href="#point" title="永久链接至标题">¶</a></h2>
-<p>但是不推荐使用 <code class="xref py py-class docutils literal notranslate"><span class="pre">PointCloudDot</span></code>
-或 <code class="xref py py-class docutils literal notranslate"><span class="pre">Point</span></code> 来表示点，
-这样会因为属于 <code class="xref py py-class docutils literal notranslate"><span class="pre">PMobject</span></code>
-而非 <code class="xref py py-class docutils literal notranslate"><span class="pre">VMobject</span></code> 而产生很多问题。</p>
-<p>一般来表示点，通常使用 <code class="xref py py-class docutils literal notranslate"><span class="pre">Dot</span></code> 来完成</p>
+<dl class="py class">
+<dt id="manimlib.mobject.types.point_cloud_mobject.Point">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.point_cloud_mobject.</code><code class="sig-name descname">Point</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">location</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.point_cloud_mobject.Point" title="永久链接至目标">¶</a></dt>
+<dd><p>单个点</p>
+</dd></dl>
+<p>但是不推荐使用 <a class="reference internal" href="#manimlib.mobject.types.point_cloud_mobject.PointCloudDot" title="manimlib.mobject.types.point_cloud_mobject.PointCloudDot"><code class="xref py py-class docutils literal notranslate"><span class="pre">PointCloudDot</span></code></a>
+或 <a class="reference internal" href="#manimlib.mobject.types.point_cloud_mobject.Point" title="manimlib.mobject.types.point_cloud_mobject.Point"><code class="xref py py-class docutils literal notranslate"><span class="pre">Point</span></code></a> 来表示点，
+这样会因为属于 <a class="reference internal" href="#manimlib.mobject.types.point_cloud_mobject.PMobject" title="manimlib.mobject.types.point_cloud_mobject.PMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">PMobject</span></code></a>
+而非 <a class="reference internal" href="vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VMobject" title="manimlib.mobject.types.vectorized_mobject.VMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">VMobject</span></code></a> 而产生很多问题。</p>
+<p>一般来表示点，通常使用 <a class="reference internal" href="../geometry.html#manimlib.mobject.geometry.Dot" title="manimlib.mobject.geometry.Dot"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dot</span></code></a> 来完成</p>
 </div>
 </div>
 

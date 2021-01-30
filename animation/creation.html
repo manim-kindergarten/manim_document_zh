@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?5aa229cdb7fb7dcb149f88f2">
-    <link rel="stylesheet" href="../_static/pygments.css?5aa229cdb7fb7dcb149f88f2">
+    <link rel="stylesheet" href="../_static/styles/default.css?5118b869f1a644a07132deb6">
+    <link rel="stylesheet" href="../_static/pygments.css?5118b869f1a644a07132deb6">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?5aa229cdb7fb7dcb149f88f2"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?5118b869f1a644a07132deb6"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -235,9 +235,18 @@
 </div>
 <div class="section" id="showpartial">
 <h2>ShowPartial<a class="headerlink" href="#showpartial" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.animation.creation.ShowPartial">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.creation.</code><code class="sig-name descname">ShowPartial</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.creation.ShowPartial" title="永久链接至目标">¶</a></dt>
+<dd><p>ShowCreation和ShowPassingFlash的抽象类</p>
+</dd></dl>
 </div>
 <div class="section" id="showcreation">
 <h2>ShowCreation<a class="headerlink" href="#showcreation" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.animation.creation.ShowCreation">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.creation.</code><code class="sig-name descname">ShowCreation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.creation.ShowCreation" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="showcreationexample" loop="" src="../_static/manim_3fed/ShowCreationExample.mp4"></video><h5 class="example-header">ShowCreationExample<a class="headerlink" href="#showcreationexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ShowCreationExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
@@ -258,6 +267,10 @@
 </div></div>
 <div class="section" id="uncreate">
 <h2>Uncreate<a class="headerlink" href="#uncreate" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.animation.creation.Uncreate">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.creation.</code><code class="sig-name descname">Uncreate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.creation.Uncreate" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="uncreateexample" loop="" src="../_static/manim_3fed/UncreateExample.mp4"></video><h5 class="example-header">UncreateExample<a class="headerlink" href="#uncreateexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">UncreateExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
@@ -282,6 +295,10 @@
 </div></div>
 <div class="section" id="drawborderthenfill">
 <h2>DrawBorderThenFill<a class="headerlink" href="#drawborderthenfill" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.animation.creation.DrawBorderThenFill">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.creation.</code><code class="sig-name descname">DrawBorderThenFill</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vmobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.creation.DrawBorderThenFill" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="drawborderthenfillexample" loop="" src="../_static/manim_3fed/DrawBorderThenFillExample.mp4"></video><h5 class="example-header">DrawBorderThenFillExample<a class="headerlink" href="#drawborderthenfillexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">DrawBorderThenFillExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">vmobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
@@ -302,6 +319,10 @@
 </div></div>
 <div class="section" id="write">
 <h2>Write<a class="headerlink" href="#write" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.animation.creation.Write">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.creation.</code><code class="sig-name descname">Write</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.creation.Write" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="writeexample" loop="" src="../_static/manim_3fed/WriteExample.mp4"></video><h5 class="example-header">WriteExample<a class="headerlink" href="#writeexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">WriteExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
@@ -322,6 +343,10 @@
 </div></div>
 <div class="section" id="showincreasingsubsets">
 <h2>ShowIncreasingSubsets<a class="headerlink" href="#showincreasingsubsets" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.animation.creation.ShowIncreasingSubsets">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.creation.</code><code class="sig-name descname">ShowIncreasingSubsets</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">group</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.creation.ShowIncreasingSubsets" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="showincreasingsubsetsexample" loop="" src="../_static/mk/ShowIncreasingSubsetsExample.mp4"></video><h5 class="example-header">ShowIncreasingSubsetsExample<a class="headerlink" href="#showincreasingsubsetsexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ShowIncreasingSubsetsExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">text</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span><span class="s2">"ShowIncreasingSubsets"</span><span class="p">)</span>
@@ -334,6 +359,10 @@
 </div></div>
 <div class="section" id="showsubmobjectsonebyone">
 <h2>ShowSubmobjectsOneByOne<a class="headerlink" href="#showsubmobjectsonebyone" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.animation.creation.ShowSubmobjectsOneByOne">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.creation.</code><code class="sig-name descname">ShowSubmobjectsOneByOne</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">group</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.creation.ShowSubmobjectsOneByOne" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="showsubmobjectsonebyoneexample" loop="" src="../_static/mk/ShowSubmobjectsOneByOneExample.mp4"></video><h5 class="example-header">ShowSubmobjectsOneByOneExample<a class="headerlink" href="#showsubmobjectsonebyoneexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ShowSubmobjectsOneByOneExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">text</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span><span class="s2">"ShowSubmobjectsOneByOne"</span><span class="p">)</span>
