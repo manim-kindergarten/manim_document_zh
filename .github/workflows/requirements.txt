@@ -46,7 +46,7 @@ olefile==0.46
 packaging==20.4
 parso==0.6.2
 pickleshare==0.7.5
-Pillow==5.2.0
+Pillow==7.1.0
 pprintpp==0.4.0
 progressbar==2.5
 prompt-toolkit==3.0.5
