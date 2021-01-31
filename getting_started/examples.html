@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?8a14983dbee54c4455470b33">
-    <link rel="stylesheet" href="../_static/pygments.css?8a14983dbee54c4455470b33">
+    <link rel="stylesheet" href="../_static/styles/default.css?9de214793d86354806012ab4">
+    <link rel="stylesheet" href="../_static/pygments.css?9de214793d86354806012ab4">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?8a14983dbee54c4455470b33"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?9de214793d86354806012ab4"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -443,9 +443,9 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">decimal</span> <span class="o">=</span> <span class="n">DecimalNumber</span><span class="p">(</span>
             <span class="mi">0</span><span class="p">,</span>
-            <span class="n">show_ellipsis</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">show_ellipsis</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
             <span class="n">num_decimal_places</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
-            <span class="n">include_sign</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">include_sign</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
         <span class="p">)</span>
         <span class="n">square</span> <span class="o">=</span> <span class="n">Square</span><span class="p">()</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
 
@@ -467,9 +467,9 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
  9
 10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">decimal</span> <span class="o">=</span> <span class="n">DecimalNumber</span><span class="p">(</span>
     <span class="mi">0</span><span class="p">,</span>
-    <span class="n">show_ellipsis</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">show_ellipsis</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
     <span class="n">num_decimal_places</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
-    <span class="n">include_sign</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">include_sign</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
 <span class="p">)</span>
 </pre></div>
 </td></tr></table></div></div>
@@ -518,7 +518,7 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
         <span class="n">title</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span><span class="s2">"This is some </span><span class="se">\\</span><span class="s2">LaTeX"</span><span class="p">)</span> <span class="c1"># 文字</span>
         <span class="n">basel</span> <span class="o">=</span> <span class="n">TexMobject</span><span class="p">(</span>                         <span class="c1"># 公式</span>
             <span class="s2">"</span><span class="se">\\</span><span class="s2">sum_{n=1}^</span><span class="se">\\</span><span class="s2">infty "</span>
-            <span class="s2">"</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}</span><span class="s2">{n^2} = </span><span class="se">\\</span><span class="s2">frac{</span><span class="se">\\</span><span class="s2">pi^2}</span><span class="si">{6}</span><span class="s2">"</span>
+            <span class="s2">"</span><span class="se">\\</span><span class="s2">frac{1}{n^2} = </span><span class="se">\\</span><span class="s2">frac{</span><span class="se">\\</span><span class="s2">pi^2}{6}"</span>
         <span class="p">)</span>
         <span class="n">VGroup</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">basel</span><span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">)</span>          <span class="c1"># 集合到一起后排列位置</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>

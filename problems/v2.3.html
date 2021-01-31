@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?7424be1670de69af57cbeef9">
-    <link rel="stylesheet" href="../_static/pygments.css?7424be1670de69af57cbeef9">
+    <link rel="stylesheet" href="../_static/styles/default.css?206940452bccc1f905ae2898">
+    <link rel="stylesheet" href="../_static/pygments.css?206940452bccc1f905ae2898">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?7424be1670de69af57cbeef9"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?206940452bccc1f905ae2898"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -284,11 +284,11 @@
 <div class="section" id="q1-big-ol-pile-of-manim-imports">
 <h3>Q1: 没有模块<code class="docutils literal notranslate"><span class="pre">big_ol_pile_of_manim_imports</span></code><a class="headerlink" href="#q1-big-ol-pile-of-manim-imports" title="永久链接至标题">¶</a></h3>
 <p>将文件中的</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">big_ol_pile_of_manim_imports</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">big_ol_pile_of_manim_imports</span> <span class="k">import</span> <span class="o">*</span>
 </pre></div>
 </div>
 <p>改成</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="k">import</span> <span class="o">*</span>
 </pre></div>
 </div>
 </div>
@@ -616,7 +616,7 @@ b+a
 添加外部包的名称 <a class="footnote-reference brackets" href="#id35" id="id17">10</a></p>
 <p>就拿上面的音符为例，因为是在<code class="docutils literal notranslate"><span class="pre">harmony</span></code>包中的，所以在<code class="docutils literal notranslate"><span class="pre">tex</span></code>文件中添加<code class="docutils literal notranslate"><span class="pre">\usepackage{harmony}</span></code> <a class="footnote-reference brackets" href="#id36" id="id18">11</a></p>
 <p>然后新建一个<code class="docutils literal notranslate"><span class="pre">py</span></code>文件，写入代码</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="k">import</span> <span class="o">*</span>
 <span class="k">class</span> <span class="nc">TestHarmony</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="c1"># harmony具体用法请百度</span>

@@ -245,7 +245,7 @@ manim使用三维坐标，并且用 ``ndarray`` 的类型
 
 .. raw:: html
 
-   <div style="margin-top: 27em;"></div>
+   <div style="float: right;">
 
 另外，在pycharm编辑器中颜色会警告，可以调小警告等级。
 在vscode中如果你安装了python扩展也会发出警告，其原因是vscode在检测变量时并不会识别在运行时添加的变量，
@@ -327,3 +327,6 @@ manim使用三维坐标，并且用 ``ndarray`` 的类型
    MAROON = "#C55F73"
    PURPLE = "#9A72AC"
 
+.. raw:: html
+
+   </div>
