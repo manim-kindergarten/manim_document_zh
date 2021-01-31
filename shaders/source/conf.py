@@ -8,6 +8,7 @@ project = 'manim shaders'
 copyright = '2020-2021 Manim Kindergarten Team'
 author = 'TonyCrane'
 
+version = '0.0.1'
 release = ''
 
 extensions = [
