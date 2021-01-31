@@ -12,6 +12,10 @@ p.color-text-small {
     color: WHITE;
 }
 
+.color-container {
+    float: left;
+}
+
 .colors {
     float: left;
     padding: 10px;
