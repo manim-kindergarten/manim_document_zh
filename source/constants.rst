@@ -175,7 +175,7 @@ manim使用三维坐标，并且用 ``ndarray`` 的类型
 
 .. raw:: html
 
-    <div class="color-container">
+    <div style="float: left;">
     <h3>BLUE</h3>
     <div class="colors BLUE_E"><p class="color-text">BLUE_E</p></div>
     <div class="colors BLUE_D"><p class="color-text">BLUE_D</p></div>
@@ -183,7 +183,7 @@ manim使用三维坐标，并且用 ``ndarray`` 的类型
     <div class="colors BLUE_B"><p class="color-text">BLUE_B</p></div>
     <div class="colors BLUE_A"><p class="color-text">BLUE_A</p></div>
     </div>
-    <div class="color-container">
+    <div style="float: left;">
     <h3>TEAL</h3>
     <div class="colors TEAL_E"><p class="color-text">TEAL_E</p></div>
     <div class="colors TEAL_D"><p class="color-text">TEAL_D</p></div>
@@ -191,7 +191,7 @@ manim使用三维坐标，并且用 ``ndarray`` 的类型
     <div class="colors TEAL_B"><p class="color-text">TEAL_B</p></div>
     <div class="colors TEAL_A"><p class="color-text">TEAL_A</p></div>
     </div>
-    <div class="color-container">
+    <div style="float: left;">
     <h3>GREEN</h3>
     <div class="colors GREEN_E"><p class="color-text">GREEN_E</p></div>
     <div class="colors GREEN_D"><p class="color-text">GREEN_D</p></div>
@@ -199,7 +199,7 @@ manim使用三维坐标，并且用 ``ndarray`` 的类型
     <div class="colors GREEN_B"><p class="color-text">GREEN_B</p></div>
     <div class="colors GREEN_A"><p class="color-text">GREEN_A</p></div>
     </div>
-    <div class="color-container">
+    <div style="float: left;">
     <h3>YELLOW</h3>
     <div class="colors YELLOW_E"><p class="color-text">YELLOW_E</p></div>
     <div class="colors YELLOW_D"><p class="color-text">YELLOW_D</p></div>
@@ -207,7 +207,7 @@ manim使用三维坐标，并且用 ``ndarray`` 的类型
     <div class="colors YELLOW_B"><p class="color-text">YELLOW_B</p></div>
     <div class="colors YELLOW_A"><p class="color-text">YELLOW_A</p></div>
     </div>
-    <div class="color-container">
+    <div style="float: left;">
     <h3>GOLD</h3>
     <div class="colors GOLD_E"><p class="color-text">GOLD_E</p></div>
     <div class="colors GOLD_D"><p class="color-text">GOLD_D</p></div>
@@ -215,7 +215,7 @@ manim使用三维坐标，并且用 ``ndarray`` 的类型
     <div class="colors GOLD_B"><p class="color-text">GOLD_B</p></div>
     <div class="colors GOLD_A"><p class="color-text">GOLD_A</p></div>
     </div>
-    <div class="color-container">
+    <div style="float: left;">
     <h3>RED</h3>
     <div class="colors RED_E"><p class="color-text">RED_E</p></div>
     <div class="colors RED_D"><p class="color-text">RED_D</p></div>
@@ -223,7 +223,7 @@ manim使用三维坐标，并且用 ``ndarray`` 的类型
     <div class="colors RED_B"><p class="color-text">RED_B</p></div>
     <div class="colors RED_A"><p class="color-text">RED_A</p></div>
     </div>
-    <div class="color-container">
+    <div style="float: left;">
     <h3>MAROON</h3>
     <div class="colors MAROON_E"><p class="color-text">MAROON_E</p></div>
     <div class="colors MAROON_D"><p class="color-text">MAROON_D</p></div>
@@ -231,7 +231,7 @@ manim使用三维坐标，并且用 ``ndarray`` 的类型
     <div class="colors MAROON_B"><p class="color-text">MAROON_B</p></div>
     <div class="colors MAROON_A"><p class="color-text">MAROON_A</p></div>
     </div>
-    <div class="color-container">
+    <div style="float: left;">
     <h3>PURPLE</h3>
     <div class="colors PURPLE_E"><p class="color-text">PURPLE_E</p></div>
     <div class="colors PURPLE_D"><p class="color-text">PURPLE_D</p></div>
@@ -239,7 +239,7 @@ manim使用三维坐标，并且用 ``ndarray`` 的类型
     <div class="colors PURPLE_B"><p class="color-text">PURPLE_B</p></div>
     <div class="colors PURPLE_A"><p class="color-text">PURPLE_A</p></div>
     </div>
-    <div class="color-container">
+    <div style="float: left;">
     <h3>Others</h3>
     <div class="colors WHITE"><p class="color-text" style="color: BLACK">WHITE</p></div>
     <div class="colors BLACK"><p class="color-text">BLACK</p></div>
