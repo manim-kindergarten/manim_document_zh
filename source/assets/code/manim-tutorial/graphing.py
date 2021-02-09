@@ -40,8 +40,10 @@ class Graphing(GraphScene):
         self.wait(2)
 
 
-    def func_to_graph(self, x):
+    @staticmethod
+    def func_to_graph(x):
         return (x**2)
 
-    def func_to_graph_2(self, x):
+    @staticmethod
+    def func_to_graph_2(x):
         return(x**3)
