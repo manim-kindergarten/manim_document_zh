@@ -1,7 +1,7 @@
 class DotMap(Scene):
     def construct(self):
-        dots = dict()
-        annos = dict()
+        dots = {}
+        annos = {}
         var_index = 0
         for x in range(-7, 8):
             for y in range(-4, 5):
