@@ -13,7 +13,7 @@
 [`manim`](https://github.com/manim-kindergarten/manim_document_zh/tree/manim)分支中为带有文档字符串的manim源码，用于文档中自动构建文档字符串。
 
 ## 文档地址
-https://manim.ml/
+https://manim-kindergarten.github.io/manim_document_zh/
 
 还在完善中，目前完成情况：
 - [x] 安装指南
