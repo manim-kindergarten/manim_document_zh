@@ -30,8 +30,8 @@ jobs:
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/manim_document_zh/manim"
         export SPHINXBUILD="python3 -m sphinx"
         make html
-        cd build/html
-        echo "manim.ml" > CNAME
+        #cd build/html
+        #echo "manim.ml" > CNAME
 
     - name: Build document for shaders
       run: |
