@@ -3,7 +3,7 @@
 
 如果你想要为这个文档做出贡献，可以向 `这个repo <https://github.com/manim-kindergarten/manim_document_zh>`__ 提出Pull Request，
 同时会自动构建一份文档放在 `Netlify <https://app.netlify.com/sites/manim-doc/overview>`__ 上，我们在review了之后会merge，
-并且自动构建并发布到 `GitHub Page这个网站 <https://manim.ml/>`__ 上。
+并且自动构建并发布到 `GitHub Page这个网站 <https://manim.wiki/>`__ 上。
 
 这里是一些规范和指南
 

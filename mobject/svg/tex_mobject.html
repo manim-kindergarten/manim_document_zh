@@ -1,15 +1,16 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="../../about.html" /><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Text" href="text_mobject.html" /><link rel="prev" title="SVGMobject" href="svg_mobject.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="author" title="关于这些文档" href="../../about.html" /><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Text" href="text_mobject.html" /><link rel="prev" title="SVGMobject" href="svg_mobject.html" />
 
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>TexMobject - manim  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="../../_static/custom.css" />
     <link rel="stylesheet" href="../../_static/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?5a226ae3c82f2d727ee95ab8">
-    <link rel="stylesheet" href="../../_static/pygments.css?5a226ae3c82f2d727ee95ab8">
+    <link rel="stylesheet" href="../../_static/styles/default.css?3264c6812090042bdaeb6094">
+    <link rel="stylesheet" href="../../_static/pygments.css?3264c6812090042bdaeb6094">
     
 <style>
   :root {
@@ -28,7 +29,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?5a226ae3c82f2d727ee95ab8"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?3264c6812090042bdaeb6094"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -89,7 +90,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p class="caption"><span class="caption-text">入门教程向</span></p>
+  <p><span class="caption-text">入门教程向</span></p>
 <ul>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../installation/index.html">安装指南</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../installation/linux.html">Linux</a></li>
@@ -113,7 +114,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../homework/index.html">练习部分(TODO)</a></li>
 </ul>
-<p class="caption"><span class="caption-text">进阶文档向</span></p>
+<p><span class="caption-text">进阶文档向</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../constants.html">常量部分constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../container/index.html">属性容器container</a></li>
@@ -202,7 +203,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption"><span class="caption-text">杂项</span></p>
+<p><span class="caption-text">杂项</span></p>
 <ul>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../manim_sandbox/index.html">manim_sandbox中的自定义类</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label for="toctree-checkbox-11"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../manim_sandbox/functions.html">自定义工具函数</a></li>
@@ -226,7 +227,7 @@
         <label class="toc-overlay-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <div class="section" id="texmobject">
+        <section id="texmobject">
 <h1>TexMobject<a class="headerlink" href="#texmobject" title="永久链接至标题">¶</a></h1>
 <p><a class="reference internal" href="#manimlib.mobject.svg.tex_mobject.TexMobject" title="manimlib.mobject.svg.tex_mobject.TexMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">TexMobject</span></code></a> 和 <a class="reference internal" href="#manimlib.mobject.svg.tex_mobject.TextMobject" title="manimlib.mobject.svg.tex_mobject.TextMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextMobject</span></code></a>
 使用 <code class="docutils literal notranslate"><span class="pre">latex/xelatex</span></code> 来讲输入的字符串根据LaTeX语法编译为 <code class="docutils literal notranslate"><span class="pre">dvi/xdv</span></code> 文件，
@@ -235,21 +236,21 @@
 <p>关于 <a class="reference internal" href="#manimlib.mobject.svg.tex_mobject.TexMobject" title="manimlib.mobject.svg.tex_mobject.TexMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">TexMobject</span></code></a> 和 <a class="reference internal" href="#manimlib.mobject.svg.tex_mobject.TextMobject" title="manimlib.mobject.svg.tex_mobject.TextMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextMobject</span></code></a>
 的区别，还有 <code class="docutils literal notranslate"><span class="pre">LaTeX</span></code> 发行版安装和文字字体问题，常见问题中有更详细的解答：</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://manim.ml/CommonProblems/v2.3.html#latex">manim常见问题：LaTeX问题</a></p></li>
-<li><p><a class="reference external" href="https://manim.ml/CommonProblems/v2.3.html#id7">manim常见问题：中文显示问题</a></p></li>
-<li><p><a class="reference external" href="https://manim.ml/CommonProblems/v2.3.html#id8">manim常见问题：文字问题</a></p></li>
+<li><p><a class="reference external" href="https://manim.wiki/CommonProblems/v2.3.html#latex">manim常见问题：LaTeX问题</a></p></li>
+<li><p><a class="reference external" href="https://manim.wiki/CommonProblems/v2.3.html#id7">manim常见问题：中文显示问题</a></p></li>
+<li><p><a class="reference external" href="https://manim.wiki/CommonProblems/v2.3.html#id8">manim常见问题：文字问题</a></p></li>
 </ul>
 <p>MK做了一个关于常用 <a class="reference internal" href="#manimlib.mobject.svg.tex_mobject.TexMobject" title="manimlib.mobject.svg.tex_mobject.TexMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">TexMobject</span></code></a> 和 <a class="reference internal" href="#manimlib.mobject.svg.tex_mobject.TextMobject" title="manimlib.mobject.svg.tex_mobject.TextMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextMobject</span></code></a> 的视频：
 <a class="reference external" href="https://www.bilibili.com/video/BV1CC4y1H7kp">〔manim教程〕第四讲 SVG、图片与文字</a></p>
-<div class="section" id="texsymbol">
+<section id="texsymbol">
 <h2>TexSymbol<a class="headerlink" href="#texsymbol" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.svg.tex_mobject.TexSymbol">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.tex_mobject.</code><code class="sig-name descname">TexSymbol</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path_string</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.tex_mobject.TexSymbol" title="永久链接至目标">¶</a></dt>
 <dd><p>VMobjectFromSVGPathstring的别名，每个路径都是一个TexSymbol</p>
 </dd></dl>
-</div>
-<div class="section" id="singlestringtexmobject">
+</section>
+<section id="singlestringtexmobject">
 <h2>SingleStringTexMobject<a class="headerlink" href="#singlestringtexmobject" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.svg.tex_mobject.SingleStringTexMobject">
@@ -272,8 +273,8 @@
 <dd><p>匹配大括号</p>
 </dd></dl>
 </dd></dl>
-</div>
-<div class="section" id="id1">
+</section>
+<section id="id1">
 <h2>TexMobject<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.svg.tex_mobject.TexMobject">
@@ -313,8 +314,8 @@
 <dd><p>根据字典序给子物体排序</p>
 </dd></dl>
 </dd></dl>
-</div>
-<div class="section" id="textmobject">
+</section>
+<section id="textmobject">
 <h2>TextMobject<a class="headerlink" href="#textmobject" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.svg.tex_mobject.TextMobject">
@@ -325,8 +326,8 @@
 <p><code class="docutils literal notranslate"><span class="pre">arg_separator</span></code> 表示每两个字符串之间的字符，默认为空格</p>
 <p><code class="docutils literal notranslate"><span class="pre">tex_to_color_map</span></code> 为一个字典，会根据其中的键自动拆开字符串用于上色</p>
 </dd></dl>
-</div>
-<div class="section" id="bulletedlist">
+</section>
+<section id="bulletedlist">
 <h2>BulletedList<a class="headerlink" href="#bulletedlist" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.svg.tex_mobject.BulletedList">
@@ -340,8 +341,8 @@
 <p><code class="docutils literal notranslate"><span class="pre">index_or_string</span></code> 可以传入子物体的下标，也可以传入一个字符串</p>
 </dd></dl>
 </dd></dl>
-</div>
-<div class="section" id="title">
+</section>
+<section id="title">
 <h2>Title<a class="headerlink" href="#title" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.svg.tex_mobject.Title">
@@ -351,8 +352,8 @@
 <p><code class="docutils literal notranslate"><span class="pre">underline_width</span></code> 下划线的长度（默认屏幕宽-2个单位）</p>
 <p><code class="docutils literal notranslate"><span class="pre">match_underline_width_to_text=True</span></code> 时将下划线的长度和文字匹配（默认为False）</p>
 </dd></dl>
-</div>
-</div>
+</section>
+</section>
 
       </article>
       <footer>
