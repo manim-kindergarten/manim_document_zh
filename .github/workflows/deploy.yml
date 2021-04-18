@@ -31,7 +31,7 @@ jobs:
         export SPHINXBUILD="python3 -m sphinx"
         make html
         #cd build/html
-        #echo "manim.ml" > CNAME
+        #echo "manim.wiki" > CNAME
 
     - name: Build document for shaders
       run: |
