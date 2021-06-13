@@ -3,7 +3,7 @@
 import sys
 import os
 sys.path.insert(0, os.path.abspath("."))
-sys.path.insert(0, os.path.abspath("../../manim/"))
+sys.path.insert(0, os.path.abspath("../../manim_with_doc/"))
 
 project = 'manim'
 copyright = '2020-2021 Manim Kindergarten Team'

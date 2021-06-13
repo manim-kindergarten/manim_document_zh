@@ -14,8 +14,8 @@ jobs:
     - name: Clone pre repositories
       run: |
         cd ..
-        git clone -b manim https://github.com/manim-kindergarten/manim_document_zh.git manim
-        cd manim
+        git clone -b manim https://github.com/manim-kindergarten/manim_document_zh.git manim_with_doc
+        cd manim_with_doc
         git clone https://github.com/manim-kindergarten/manim_sandbox.git
     
     - name: Install sphinx and manim env
@@ -23,19 +23,19 @@ jobs:
         pip3 install --upgrade pip
         sudo apt install python3-setuptools
         pip3 install -r requirements.txt
-        pip3 install -r ../manim/requirements.txt
+        pip3 install -r ../manim_with_doc/requirements.txt
     
     - name: Build document with Sphinx
       run: |
-        export PATH="$PATH:/home/runner/.local/bin:/home/runner/manim_document_zh/manim"
+        export PATH="$PATH:/home/runner/.local/bin:/home/runner/manim_document_zh/manim_with_doc"
         export SPHINXBUILD="python3 -m sphinx"
         make html
-        #cd build/html
-        #echo "manim.wiki" > CNAME
+        cd build/html
+        echo "manim.wiki" > CNAME
 
     - name: Build document for shaders
       run: |
-        export PATH="$PATH:/home/runner/.local/bin:/home/runner/manim_document_zh/manim"
+        export PATH="$PATH:/home/runner/.local/bin:/home/runner/manim_document_zh/manim_with_doc"
         export SPHINXBUILD="python3 -m sphinx"
         cd shaders
         make html
