@@ -1,6 +1,10 @@
 name: docs
 
-on: push
+on: 
+  push:
+    branches:
+      - master
+      - manim
 
 jobs:
   build_docs_and_deploy:
