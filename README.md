@@ -39,7 +39,7 @@ https://manim.wiki
 **Step 2.** 准备目录结构：
 ```text
 .
-├── manim/
+├── manim_with_doc/
 │   ├── manimlib/
 │   ├── manim_sandbox/
 │   ├── ...
