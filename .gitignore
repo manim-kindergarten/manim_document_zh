@@ -11,3 +11,4 @@ media/
 example_scenes.py
 
 __pycache__/
+.DS_Store
