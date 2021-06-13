@@ -3,7 +3,7 @@ git clone -b manim https://github.com/manim-kindergarten/manim_document_zh.git m
 cd manim_with_doc
 git clone https://github.com/manim-kindergarten/manim_sandbox.git
 
-cd repo
+cd ../repo
 
 make html
 
