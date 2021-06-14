@@ -14,7 +14,7 @@ Manim是一个数学动画引擎。你可以使用它来制作像3Blue1Brown一�
 
 - `ManimCommunity/manim <https://github.com/ManimCommunity/manim>`_：由Manim Community开发团队维护。
 
-通过用cairo来使用CPU进行渲染。有更好的文档和更开放的贡献社区。
+通过多种后端模块化渲染。有更好的文档和更开放的贡献社区。
 
 
 关于这个文档

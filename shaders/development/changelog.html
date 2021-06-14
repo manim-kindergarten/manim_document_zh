@@ -2,15 +2,15 @@
 <html class="no-js">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="贡献" href="contributing.html" /><link rel="prev" title="默认配置custom_default" href="../documentation/custom_default.html" />
+<link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="贡献" href="contributing.html" /><link rel="prev" title="默认配置custom_config" href="../documentation/custom_config.html" />
 
     <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>变更 - manim shaders  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?96c6072937fc3d1ec45b7f84">
-    <link rel="stylesheet" href="../_static/pygments.css?96c6072937fc3d1ec45b7f84">
+    <link rel="stylesheet" href="../_static/styles/default.css?b91bd12029d35ea87400b573">
+    <link rel="stylesheet" href="../_static/pygments.css?b91bd12029d35ea87400b573">
     
 <style>
   :root {
@@ -28,8 +28,7 @@
       
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
-        <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?96c6072937fc3d1ec45b7f84"></script></head>
+        <script src="../_static/translations.js"></script><script src="../_static/scripts/main.js?b91bd12029d35ea87400b573"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -102,7 +101,7 @@
 <p><span class="caption-text">进阶文档</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../documentation/constants.html">常量部分constants</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../documentation/custom_default.html">默认配置custom_default</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../documentation/custom_config.html">默认配置custom_config</a></li>
 </ul>
 <p><span class="caption-text">开发相关</span></p>
 <ul class="current">
@@ -119,12 +118,52 @@
   <main class="main">
     <div class="content">
       <article role="main">
-        <label class="toc-overlay-icon no-toc" for="__toc">
+        <label class="toc-overlay-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
         <section id="id1">
 <h1>变更<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
-<p>暂无更改</p>
+<section id="id2">
+<h2>尚未发布<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<section id="bug">
+<h3>Bug修复<a class="headerlink" href="#bug" title="永久链接至标题">¶</a></h3>
+<ul class="simple">
+<li><p>修复了当 <code class="docutils literal notranslate"><span class="pre">length=0</span></code> 时 <code class="xref py py-func docutils literal notranslate"><span class="pre">resize_with_interpolation()</span></code> 的bug</p></li>
+<li><p>修复了 <code class="xref py py-class docutils literal notranslate"><span class="pre">Elbow</span></code> 中 <code class="docutils literal notranslate"><span class="pre">__init__</span></code> 的错误用法</p></li>
+<li><p>无法选择显示器时使用存在的显示器</p></li>
+<li><p>确保 <code class="docutils literal notranslate"><span class="pre">mobject.data</span></code> 在每个动画结束后锁定</p></li>
+<li><p>修复了中心不在原点的向量场出现的bug</p></li>
+<li><p>使 <code class="docutils literal notranslate"><span class="pre">Mobject.match_points</span></code> 返回自身 <code class="docutils literal notranslate"><span class="pre">self</span></code></p></li>
+<li><p>修复了 <code class="docutils literal notranslate"><span class="pre">example_scenes.py</span></code> 中的 <code class="docutils literal notranslate"><span class="pre">AnimatingMethods</span></code></p></li>
+</ul>
+</section>
+<section id="id3">
+<h3>新特性<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
+<ul class="simple">
+<li><p>新增了 <code class="xref py py-class docutils literal notranslate"><span class="pre">VShowPassingFlash</span></code></p></li>
+<li><p>新增了 <code class="docutils literal notranslate"><span class="pre">COLORMAP_3B1B</span></code></p></li>
+<li><p>新增了一些获取坐标系统所有轴范围和中心的方法</p>
+<ul>
+<li><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_origin()</span></code></p></li>
+<li><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_all_ranges()</span></code></p></li>
+</ul>
+</li>
+<li><p>新增了 <code class="xref py py-meth docutils literal notranslate"><span class="pre">set_color_by_rgba_func()</span></code></p></li>
+<li><p>更新了 <code class="xref py py-class docutils literal notranslate"><span class="pre">VectorField</span></code> 和 <code class="xref py py-class docutils literal notranslate"><span class="pre">StreamLines</span></code></p></li>
+<li><p>允许 <code class="docutils literal notranslate"><span class="pre">3b1b_colormap</span></code> 作为 <code class="xref py py-func docutils literal notranslate"><span class="pre">get_colormap_list()</span></code> 的一个选项</p></li>
+<li><p>使 <code class="docutils literal notranslate"><span class="pre">stroke_width</span></code> 返回一个一维数组（支持可变线宽）</p></li>
+<li><p>新增了 <code class="xref py py-meth docutils literal notranslate"><span class="pre">get_parts_by_text()</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Brace</span></code> 使用 <code class="docutils literal notranslate"><span class="pre">Text</span></code> 而非 <code class="docutils literal notranslate"><span class="pre">TexText</span></code></p></li>
+<li><p>更新 <code class="docutils literal notranslate"><span class="pre">Cross</span></code> 默认使用可变线宽</p></li>
+<li><p>新增了 <code class="xref py py-class docutils literal notranslate"><span class="pre">FlashAround</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">FlashUnder</span></code></p></li>
+<li><p>允许向 <code class="docutils literal notranslate"><span class="pre">Brace.get_text</span></code> 中传入 <code class="docutils literal notranslate"><span class="pre">Text</span></code> 的配置</p></li>
+<li><p>新增了 <code class="xref py py-meth docutils literal notranslate"><span class="pre">reorient()</span></code> 来快速设定相机角度</p></li>
+<li><p>为 <code class="xref py py-meth docutils literal notranslate"><span class="pre">set_euler_angles()</span></code> 新增了单位参数 <code class="docutils literal notranslate"><span class="pre">units</span></code></p></li>
+<li><p>允许任何 <code class="docutils literal notranslate"><span class="pre">VMobject</span></code> 传入 <code class="docutils literal notranslate"><span class="pre">TransformMatchingTex</span></code></p></li>
+<li><p>删除了 <code class="docutils literal notranslate"><span class="pre">Tex</span></code> 和 <code class="docutils literal notranslate"><span class="pre">TexText</span></code> 中双大括号自动分割的用法</p></li>
+</ul>
+</section>
+</section>
 </section>
 
       </article>
@@ -140,14 +179,14 @@
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="../documentation/custom_default.html">
+          <a class="prev-page" href="../documentation/custom_config.html">
               <svg><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">默认配置custom_default</div>
+                <div class="title">默认配置custom_config</div>
                 
               </div>
             </a>
@@ -162,8 +201,29 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            目录
+          </span>
+        </div>
+        <div class="toc-tree">
+          <ul>
+<li><a class="reference internal" href="#">变更</a><ul>
+<li><a class="reference internal" href="#id2">尚未发布</a><ul>
+<li><a class="reference internal" href="#bug">Bug修复</a></li>
+<li><a class="reference internal" href="#id3">新特性</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
       
       
     </aside>

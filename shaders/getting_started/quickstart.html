@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?bacb5923ef889aabde8951dc">
-    <link rel="stylesheet" href="../_static/pygments.css?bacb5923ef889aabde8951dc">
+    <link rel="stylesheet" href="../_static/styles/default.css?0592e16601c03408a8cf3003">
+    <link rel="stylesheet" href="../_static/pygments.css?0592e16601c03408a8cf3003">
     
 <style>
   :root {
@@ -28,8 +28,7 @@
       
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
-        <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?bacb5923ef889aabde8951dc"></script></head>
+        <script src="../_static/translations.js"></script><script src="../_static/scripts/main.js?0592e16601c03408a8cf3003"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -102,7 +101,7 @@
 <p><span class="caption-text">进阶文档</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../documentation/constants.html">常量部分constants</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../documentation/custom_default.html">默认配置custom_default</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../documentation/custom_config.html">默认配置custom_config</a></li>
 </ul>
 <p><span class="caption-text">开发相关</span></p>
 <ul>
@@ -130,9 +129,9 @@
 ├── manimlib/
 │   ├── animation/
 │   ├── ...
+│   ├── default_config.yml
 │   └── window.py
-├── custom_default.yml
-├── manim.py
+├── custom_config.yml
 <span class="hll">└── start.py
 </span></pre></div>
 </div>
@@ -145,7 +144,7 @@
 6
 7
 8
-9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib</span> <span class="kn">import</span> <span class="o">*</span>
 
 <span class="k">class</span> <span class="nc">SquareToCircle</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -157,7 +156,7 @@
 </pre></div>
 </td></tr></table></div></div>
 <p>运行这个命令：</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python manim.py start.py SquareToCircle
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>manimgl start.py SquareToCircle
 </pre></div>
 </div>
 <p>屏幕上会弹出一个窗口，这时你可以：</p>
@@ -169,7 +168,7 @@
 </ul>
 <p>最后，你可以通过按 <kbd class="kbd docutils literal notranslate">q</kbd> 来关闭窗口并退出程序.</p>
 <p>再运行这个命令：</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python manim.py start.py SquareToCircle -os
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>manimgl start.py SquareToCircle -os
 </pre></div>
 </div>
 <p>这时将没有窗口弹出，当程序运行结束后，会自动打开这张渲染得到的图片
@@ -179,7 +178,7 @@
 <h2>制作图片<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <p>接下来我们来详细看看每一行都有什么作用：</p>
 <p><strong>Line 1</strong>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib</span> <span class="kn">import</span> <span class="o">*</span>
 </pre></div>
 </div>
 <p>这将一步引入在使用manim时所有可能会用到的类。</p>
@@ -231,7 +230,7 @@
 10
 11
 12
-13</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
+13</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib</span> <span class="kn">import</span> <span class="o">*</span>
 
 <span class="k">class</span> <span class="nc">SquareToCircle</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -247,12 +246,12 @@
 </pre></div>
 </td></tr></table></div></div>
 <p>这次运行：</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python manim.py start.py SquareToCircle
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>manimgl start.py SquareToCircle
 </pre></div>
 </div>
 <p>弹出的窗口中会播放一个绘制正方形并变换为圆的动画。
 若想要保存这段动画，运行：</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python manim.py start.py SquareToCircle -ow
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>manimgl start.py SquareToCircle -ow
 </pre></div>
 </div>
 <p>这次将不会弹出窗口，但会在运行结束后自动打开这个视频文件
@@ -277,17 +276,17 @@
 </pre></div>
 </div>
 <p>播放将 <code class="docutils literal notranslate"><span class="pre">square</span></code> 变化为 <code class="docutils literal notranslate"><span class="pre">circle</span></code> 的动画。<code class="docutils literal notranslate"><span class="pre">ReplacementTransform(A,</span> <span class="pre">B)</span></code>
-表示把A转换为B的图案并替代B。</p>
-<p><strong>Line 13</strong>: 同Line 11，停顿1s.</p>
+表示把A转换为B的图案并替代B</p>
+<p><strong>Line 13</strong>: 同Line 11，停顿1s</p>
 </section>
 <section id="id4">
 <h2>启用交互<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
-<p>支持交互是新版本的新特性，可以在代码的末尾加上如下一行来启用交互 <code class="docutils literal notranslate"><span class="pre">self.embed()</span></code>：</p>
+<p>支持交互是新版本的新特性，可以在代码的末尾加上如下一行来启用交互：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">embed</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>这时再执行 <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">manim.py</span> <span class="pre">start.py</span> <span class="pre">SquareToCircle</span></code>。</p>
-<p>在前面的动画执行后，将会在命令行打开ipython终端。之后你可以在其中继续编写代码，
+<p>这时再执行 <code class="docutils literal notranslate"><span class="pre">manimgl</span> <span class="pre">start.py</span> <span class="pre">SquareToCircle</span></code>。</p>
+<p>在前面的动画执行后，将会在命令行打开iPython终端。之后你可以在其中继续编写代码，
 回车后将会立即运行你输入的语句。例如：向其中分别输入以下行
 （<code class="docutils literal notranslate"><span class="pre">self.play</span></code> 在此时可以简写为 <code class="docutils literal notranslate"><span class="pre">play</span></code> ）：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 在水平方向上拉伸到四倍</span>
@@ -306,8 +305,8 @@
 </div>
 <p>你将得到类似下面的动画：</p>
 <video autoplay="" class="manim-video" controls="" loop="" src="../_static/quickstart/SquareToCircleEmbed.mp4"></video><p>如果你想要直接进入交互模式的话，你不必特意编写一个只含 <code class="docutils literal notranslate"><span class="pre">self.embed()</span></code> 的空场景，
-你可以直接运行下面的命令（这会在弹出窗口的同时进入ipython终端）：</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python manim.py
+你可以直接运行下面的命令（这会在弹出窗口的同时进入iPython终端）：</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>manimgl
 </pre></div>
 </div>
 </section>

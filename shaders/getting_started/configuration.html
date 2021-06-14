@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="../_static/custom.css" />
     <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?543098428cf594cf9156ebe7">
-    <link rel="stylesheet" href="../_static/pygments.css?543098428cf594cf9156ebe7">
+    <link rel="stylesheet" href="../_static/styles/default.css?8a822d38a62a677ad4e20b21">
+    <link rel="stylesheet" href="../_static/pygments.css?8a822d38a62a677ad4e20b21">
     
 <style>
   :root {
@@ -28,8 +28,7 @@
       
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
-        <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?543098428cf594cf9156ebe7"></script></head>
+        <script src="../_static/translations.js"></script><script src="../_static/scripts/main.js?8a822d38a62a677ad4e20b21"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -102,7 +101,7 @@
 <p><span class="caption-text">进阶文档</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../documentation/constants.html">常量部分constants</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../documentation/custom_default.html">默认配置custom_default</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../documentation/custom_config.html">默认配置custom_config</a></li>
 </ul>
 <p><span class="caption-text">开发相关</span></p>
 <ul>
@@ -126,8 +125,10 @@
 <h1>命令行参数和配置<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
 <section id="id2">
 <h2>命令行界面<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
-<p>使用manim运行一个动画，需要进入到与 <code class="docutils literal notranslate"><span class="pre">manim.py</span></code> 同级的目录中，并向命令行中输入如下格式的命令：</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>python manim.py &lt;code&gt;.py &lt;Scene&gt; &lt;flags&gt;
+<p>使用manim运行一个动画，需要进入到与 <code class="docutils literal notranslate"><span class="pre">manimlib/</span></code> 文件夹同级的目录中，并向命令行中输入如下格式的命令：</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>manimgl &lt;code&gt;.py &lt;Scene&gt; &lt;flags&gt;
+<span class="c1"># 或</span>
+manim-render &lt;code&gt;.py &lt;Scene&gt; &lt;flags&gt;
 </pre></div>
 </div>
 <ul class="simple">
@@ -259,22 +260,22 @@
 <section id="id5">
 <h2>个性化默认值<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
 <p>为了进行更多配置（关于目录等）并且永久更改默认值（不必每次都在命令中添加flags），
-可以修改 <code class="docutils literal notranslate"><span class="pre">custom_default.yml</span></code> ，其中各选项含义见： <a class="reference internal" href="../documentation/custom_default.html"><span class="doc">默认配置custom_default</span></a> 。</p>
-<p>你也可以对于不同目录使用不同的custom_default.yml，如按照以下目录结构：</p>
+可以修改/新建 <code class="docutils literal notranslate"><span class="pre">custom_config.yml</span></code> ，其中各选项含义见： <a class="reference internal" href="../documentation/custom_config.html"><span class="doc">默认配置custom_config</span></a> 。</p>
+<p>你也可以对于不同目录使用不同的custom_config.yml，如按照以下目录结构：</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>manim/
 ├── manimlib/
 │   ├── animation/
 │   ├── ...
+│   ├── default_config.yml
 │   └── window.py
 ├── project/
 │   ├── code.py
-│   └── custom_default.yml
-├── custom_default.yml
-└── manim.py
+│   └── custom_config.yml
+└── custom_config.yml
 </pre></div>
 </div>
-<p>进入 <code class="docutils literal notranslate"><span class="pre">project/</span></code> 文件夹中，运行 <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">../manim.py</span> <span class="pre">code.py</span> <span class="pre">&lt;Scene&gt;</span></code> 的时候，
-会用 <code class="docutils literal notranslate"><span class="pre">project/</span></code> 文件夹下的 <code class="docutils literal notranslate"><span class="pre">custom_default.yml</span></code> 覆盖 <code class="docutils literal notranslate"><span class="pre">manim/custom_default.yml</span></code>。</p>
+<p>进入 <code class="docutils literal notranslate"><span class="pre">project/</span></code> 文件夹中，运行 <code class="docutils literal notranslate"><span class="pre">manimgl</span> <span class="pre">code.py</span> <span class="pre">&lt;Scene&gt;</span></code> 的时候，
+会用 <code class="docutils literal notranslate"><span class="pre">project/</span></code> 文件夹下的 <code class="docutils literal notranslate"><span class="pre">custom_config.yml</span></code> 覆盖 <code class="docutils literal notranslate"><span class="pre">manim/default_config.yml</span></code>。</p>
 </section>
 </section>
 

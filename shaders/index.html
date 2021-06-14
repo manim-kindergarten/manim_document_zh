@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="_static/copybutton.css" />
     <link rel="stylesheet" href="_static/custom.css" />
     <link rel="stylesheet" href="_static/colors.css" />
-    <link rel="stylesheet" href="_static/styles/default.css?7d1d6d07981785ae02bf11eb">
-    <link rel="stylesheet" href="_static/pygments.css?7d1d6d07981785ae02bf11eb">
+    <link rel="stylesheet" href="_static/styles/default.css?a94836eaa6c7aa8953a7d135">
+    <link rel="stylesheet" href="_static/pygments.css?a94836eaa6c7aa8953a7d135">
     
 <style>
   :root {
@@ -28,8 +28,7 @@
       
         <script src="_static/clipboard.min.js"></script>
         <script src="_static/copybutton.js"></script>
-        <script src="_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="_static/scripts/main.js?7d1d6d07981785ae02bf11eb"></script></head>
+        <script src="_static/translations.js"></script><script src="_static/scripts/main.js?a94836eaa6c7aa8953a7d135"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -102,7 +101,7 @@
 <p><span class="caption-text">进阶文档</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="documentation/constants.html">常量部分constants</a></li>
-<li class="toctree-l1"><a class="reference internal" href="documentation/custom_default.html">默认配置custom_default</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation/custom_config.html">默认配置custom_config</a></li>
 </ul>
 <p><span class="caption-text">开发相关</span></p>
 <ul>
@@ -125,7 +124,7 @@
         <section id="manim-shaders">
 <h1>Manim shaders版本教程文档<a class="headerlink" href="#manim-shaders" title="永久链接至标题">¶</a></h1>
 <img alt="_images/DocumentHeader.png" src="_images/DocumentHeader.png"/>
-<p>这些文档基于 <a class="reference external" href="https://github.com/3b1b/manim">3b1b/manim存储库</a> 的 <a class="reference external" href="https://github.com/3b1b/manim/tree/shaders">shaders分支</a> 。
+<p>这些文档基于 <a class="reference external" href="https://github.com/3b1b/manim">3b1b/manim存储库</a> 的 <a class="reference external" href="https://github.com/3b1b/manim/">master分支</a> 。
 是这个 <a class="reference external" href="https://3b1b.github.io/manim/">官方文档</a> 的中文版本。</p>
 <div class="admonition- admonition">
 <p class="admonition-title">_(:з」∠)_</p>
@@ -138,7 +137,6 @@
 <li class="toctree-l2"><a class="reference internal" href="getting_started/installation.html#id2">直接安装</a></li>
 <li class="toctree-l2"><a class="reference internal" href="getting_started/installation.html#windows">直接安装 (Windows)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="getting_started/installation.html#anaconda">使用Anaconda</a></li>
-<li class="toctree-l2"><a class="reference internal" href="getting_started/installation.html#virtualenvvirtualenvwrapper">使用virtualenv和virtualenvwrapper</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started/quickstart.html">快速入门</a><ul>
@@ -154,11 +152,13 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started/example_scenes.html">样例学习</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="getting_started/example_scenes.html#squaretocircle">由方变圆SquareToCircle</a></li>
-<li class="toctree-l2"><a class="reference internal" href="getting_started/example_scenes.html#warpsquare">扭曲方形WarpSquare</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started/example_scenes.html#interactivedevlopment">交互开发InteractiveDevlopment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started/example_scenes.html#animatingmethods">方法动画AnimatingMethods</a></li>
 <li class="toctree-l2"><a class="reference internal" href="getting_started/example_scenes.html#textexample">文字示例TextExample</a></li>
 <li class="toctree-l2"><a class="reference internal" href="getting_started/example_scenes.html#textransformexample">匹配变换TexTransformExample</a></li>
 <li class="toctree-l2"><a class="reference internal" href="getting_started/example_scenes.html#updatersexample">更新程序UpdatersExample</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started/example_scenes.html#coordinatesystemexample">坐标系统CoordinateSystemExample</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started/example_scenes.html#graphexample">函数图像GraphExample</a></li>
 <li class="toctree-l2"><a class="reference internal" href="getting_started/example_scenes.html#surfaceexample">三维示例SurfaceExample</a></li>
 <li class="toctree-l2"><a class="reference internal" href="getting_started/example_scenes.html#openingmanimexample">整体示例OpeningManimExample</a></li>
 </ul>
@@ -191,13 +191,14 @@
 <li class="toctree-l2"><a class="reference internal" href="documentation/constants.html#id7">颜色</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="documentation/custom_default.html">默认配置custom_default</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="documentation/custom_default.html#directories"><code class="docutils literal notranslate"><span class="pre">directories</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="documentation/custom_default.html#tex"><code class="docutils literal notranslate"><span class="pre">tex</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="documentation/custom_default.html#universal-import-line"><code class="docutils literal notranslate"><span class="pre">universal_import_line</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="documentation/custom_default.html#style"><code class="docutils literal notranslate"><span class="pre">style</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="documentation/custom_default.html#window-position"><code class="docutils literal notranslate"><span class="pre">window_position</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="documentation/custom_default.html#camera-qualities"><code class="docutils literal notranslate"><span class="pre">camera_qualities</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation/custom_config.html">默认配置custom_config</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="documentation/custom_config.html#directories"><code class="docutils literal notranslate"><span class="pre">directories</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentation/custom_config.html#tex"><code class="docutils literal notranslate"><span class="pre">tex</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentation/custom_config.html#universal-import-line"><code class="docutils literal notranslate"><span class="pre">universal_import_line</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentation/custom_config.html#style"><code class="docutils literal notranslate"><span class="pre">style</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentation/custom_config.html#window-position"><code class="docutils literal notranslate"><span class="pre">window_position</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentation/custom_config.html#window-monitor"><code class="docutils literal notranslate"><span class="pre">window_monitor</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentation/custom_config.html#camera-qualities"><code class="docutils literal notranslate"><span class="pre">camera_qualities</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -205,7 +206,10 @@
 <div class="toctree-wrapper compound">
 <p><span class="caption-text">开发相关</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="development/changelog.html">变更</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/changelog.html">变更</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="development/changelog.html#id2">尚未发布</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="development/contributing.html">贡献</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="development/contributing.html#id2">如何构建本文档</a></li>
 </ul>
