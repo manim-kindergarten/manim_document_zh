@@ -12,9 +12,9 @@
     ├── manimlib/
     │   ├── animation/
     │   ├── ...
+    │   ├── default_config.yml
     │   └── window.py
-    ├── custom_default.yml
-    ├── manim.py
+    ├── custom_config.yml
     └── start.py
 
 然后粘贴如下代码（稍后我会详细解释其每行的作用）：
@@ -22,7 +22,7 @@
 .. code-block:: python
     :linenos:
 
-    from manimlib.imports import *
+    from manimlib import *
 
     class SquareToCircle(Scene):
         def construct(self):
@@ -36,7 +36,7 @@
 
 .. code-block:: sh
 
-    python manim.py start.py SquareToCircle
+    manimgl start.py SquareToCircle
 
 屏幕上会弹出一个窗口，这时你可以：
 
@@ -51,7 +51,7 @@
 
 .. code-block:: sh
 
-    python manim.py start.py SquareToCircle -os
+    manimgl start.py SquareToCircle -os
 
 这时将没有窗口弹出，当程序运行结束后，会自动打开这张渲染得到的图片
 （默认位于同级目录的子目录 ``images/`` 中）：
@@ -68,7 +68,7 @@
 
 .. code-block:: python
     
-    from manimlib.imports import *
+    from manimlib import *
     
 这将一步引入在使用manim时所有可能会用到的类。
 
@@ -126,7 +126,7 @@
 .. code-block:: python
     :linenos:
 
-    from manimlib.imports import *
+    from manimlib import *
 
     class SquareToCircle(Scene):
         def construct(self):
@@ -144,14 +144,14 @@
 
 .. code-block:: sh
 
-    python manim.py start.py SquareToCircle
+    manimgl start.py SquareToCircle
 
 弹出的窗口中会播放一个绘制正方形并变换为圆的动画。
 若想要保存这段动画，运行：
 
 .. code-block:: sh
     
-    python manim.py start.py SquareToCircle -ow
+    manimgl start.py SquareToCircle -ow
 
 这次将不会弹出窗口，但会在运行结束后自动打开这个视频文件
 （默认存放在与 ``start.py`` 同级的 ``videos/`` 文件夹中）：
@@ -189,23 +189,23 @@
     self.play(ReplacementTransform(square, circle))
 
 播放将 ``square`` 变化为 ``circle`` 的动画。``ReplacementTransform(A, B)`` 
-表示把A转换为B的图案并替代B。
+表示把A转换为B的图案并替代B
 
-**Line 13**: 同Line 11，停顿1s.
+**Line 13**: 同Line 11，停顿1s
 
 
 启用交互
 ------------------
 
-支持交互是新版本的新特性，可以在代码的末尾加上如下一行来启用交互 ``self.embed()``：
+支持交互是新版本的新特性，可以在代码的末尾加上如下一行来启用交互：
 
 .. code-block:: python
 
     self.embed()
 
-这时再执行 ``python manim.py start.py SquareToCircle``。
+这时再执行 ``manimgl start.py SquareToCircle``。
 
-在前面的动画执行后，将会在命令行打开ipython终端。之后你可以在其中继续编写代码，
+在前面的动画执行后，将会在命令行打开iPython终端。之后你可以在其中继续编写代码，
 回车后将会立即运行你输入的语句。例如：向其中分别输入以下行
 （``self.play`` 在此时可以简写为 ``play`` ）：
 
@@ -231,11 +231,11 @@
     <video class="manim-video" controls loop autoplay src="../_static/quickstart/SquareToCircleEmbed.mp4"></video>
 
 如果你想要直接进入交互模式的话，你不必特意编写一个只含 ``self.embed()`` 的空场景，
-你可以直接运行下面的命令（这会在弹出窗口的同时进入ipython终端）：
+你可以直接运行下面的命令（这会在弹出窗口的同时进入iPython终端）：
 
 .. code-block:: sh
 
-    python manim.py
+    manimgl
 
 成功入门
 --------------

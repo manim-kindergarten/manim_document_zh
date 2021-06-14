@@ -4,11 +4,13 @@
 命令行界面
 ----------------------
 
-使用manim运行一个动画，需要进入到与 ``manim.py`` 同级的目录中，并向命令行中输入如下格式的命令：
+使用manim运行一个动画，需要进入到与 ``manimlib/`` 文件夹同级的目录中，并向命令行中输入如下格式的命令：
 
 .. code-block:: sh
 
-    python manim.py <code>.py <Scene> <flags>
+    manimgl <code>.py <Scene> <flags>
+    # 或
+    manim-render <code>.py <Scene> <flags>
 
 - ``<code>.py`` : 你写的python文件，需要与 ``manim.py`` 同级，否则需要使用绝对路径，或写准相对路径
 - ``<Scene>`` : 你想要渲染的场景，或者一些场景。如果没有写或者写错，若文件中只有一个Scene，会直接渲染这个类，否则会列出所有让你选择
@@ -60,9 +62,9 @@
 --------------
 
 为了进行更多配置（关于目录等）并且永久更改默认值（不必每次都在命令中添加flags），
-可以修改 ``custom_default.yml`` ，其中各选项含义见： :doc:`../documentation/custom_default` 。
+可以修改/新建 ``custom_config.yml`` ，其中各选项含义见： :doc:`../documentation/custom_config` 。
 
-你也可以对于不同目录使用不同的custom_default.yml，如按照以下目录结构：
+你也可以对于不同目录使用不同的custom_config.yml，如按照以下目录结构：
 
 .. code-block:: text
 
@@ -70,12 +72,12 @@
     ├── manimlib/
     │   ├── animation/
     │   ├── ...
+    │   ├── default_config.yml
     │   └── window.py
     ├── project/
     │   ├── code.py
-    │   └── custom_default.yml
-    ├── custom_default.yml
-    └── manim.py
+    │   └── custom_config.yml
+    └── custom_config.yml
 
-进入 ``project/`` 文件夹中，运行 ``python ../manim.py code.py <Scene>`` 的时候，
-会用 ``project/`` 文件夹下的 ``custom_default.yml`` 覆盖 ``manim/custom_default.yml``。
+进入 ``project/`` 文件夹中，运行 ``manimgl code.py <Scene>`` 的时候，
+会用 ``project/`` 文件夹下的 ``custom_config.yml`` 覆盖 ``manim/default_config.yml``。
