@@ -34,8 +34,8 @@ jobs:
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/manim_document_zh/manim_with_doc"
         export SPHINXBUILD="python3 -m sphinx"
         make html
-        # cd build/html
-        # echo "manim.wiki" > CNAME
+        cd build/html
+        echo "docs.manim.org.cn" > CNAME
 
     - name: Build document for shaders
       run: |
