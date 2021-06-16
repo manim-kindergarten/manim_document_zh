@@ -15,7 +15,7 @@ manim安装并不难，只需要解决相关依赖就好了：
 -  `pdcxs的专栏教程 <https://www.bilibili.com/read/cv3387999>`__
 -  `pdcxs关于vscode自动运行脚本的教程 <https://www.bilibili.com/read/cv4152112>`__
 
-关于安装后在IDE中颜色会提示错误，尝试按照 `constants页面最下方 <https://manim.wiki/constants.html#id7>`__ 处理
+关于安装后在IDE中颜色会提示错误，尝试按照 `constants页面最下方 <https://docs.manim.org.cn/constants.html#id7>`__ 处理
 
 Theorem of Beethoven也做过相关视频，B站搬运链接：`BV1W4411Z7Zt <https://www.bilibili.com/video/BV1W4411Z7Zt>`__ 。
 
