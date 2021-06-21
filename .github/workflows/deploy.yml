@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - manim
+  pull_request:
 
 jobs:
   build_docs_and_deploy:
@@ -47,6 +48,7 @@ jobs:
         
     - name: Deploy to GitHub pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
+      if: ${{ github.event_name == 'push' }}
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages
