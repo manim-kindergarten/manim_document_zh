@@ -18,7 +18,7 @@
     $ # manim example_scenes.py SquareToCircle -p # 通过pypi安装
 
 .. manim-example:: SquareToCircle
-   :media: ../_static/example/SquareToCircle.mp4
+   :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/example/SquareToCircle.mp4
 
    from manimlib.imports import *
 
@@ -125,7 +125,7 @@
 ----------------------
 
 .. manim-example:: WarpSquare
-   :media: ../_static/example/WarpSquare.mp4
+   :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/example/WarpSquare.mp4
 
    from manimlib.imports import *
 
@@ -168,7 +168,7 @@
 -------------------
 
 .. manim-example:: WriteStuff
-   :media: ../_static/example/WriteStuff.mp4
+   :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/example/WriteStuff.mp4
 
    from manimlib.imports import *
 
@@ -243,7 +243,7 @@
 ------------------------
 
 .. manim-example:: UpdatersExample
-   :media: ../_static/example/UpdatersExample.mp4
+   :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/example/UpdatersExample.mp4
 
    from manimlib.imports import *
 
@@ -316,7 +316,7 @@
 在看过了前面的例子之后，文件中的第一个视频就容易理解了
 
 .. manim-example:: OpeningManimExample
-   :media: ../_static/example/OpeningManimExample.mp4
+   :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/example/OpeningManimExample.mp4
 
    from manimlib.imports import *
 

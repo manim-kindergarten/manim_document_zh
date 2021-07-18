@@ -36,7 +36,10 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'remain']
 pygments_style = 'default'
 
 html_static_path = ['assets']
-html_css_files = ["custom.css", "colors.css"]
+html_css_files = [
+    "https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/custom.css", 
+    "https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/colors.css"
+]
 html_theme = 'furo'  # pip install furo==2020.10.5b9
 html_favicon = 'mk.png'
 html_logo = 'assets/image/Logo_white.png'
