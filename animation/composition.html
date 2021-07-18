@@ -7,10 +7,10 @@
     <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>Composition - manim  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
-    <link rel="stylesheet" href="../_static/custom.css" />
-    <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?950ecfe4a241579b396a40c5">
-    <link rel="stylesheet" href="../_static/pygments.css?950ecfe4a241579b396a40c5">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/custom.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/colors.css" />
+    <link rel="stylesheet" href="../_static/styles/default.css?c451aa85c74f667ee4d1b293">
+    <link rel="stylesheet" href="../_static/pygments.css?c451aa85c74f667ee4d1b293">
     
 <style>
   :root {
@@ -29,7 +29,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?950ecfe4a241579b396a40c5"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?c451aa85c74f667ee4d1b293"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -236,7 +236,7 @@
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.composition.</code><code class="sig-name descname">AnimationGroup</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">animations</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.composition.AnimationGroup" title="永久链接至目标">¶</a></dt>
 <dd><p>包含一系列动画，默认lag_ratio为0，但不是序列（即不能通过下标访问动画）</p>
 </dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="animationgroupexample" loop="" src="../_static/mk/AnimationGroupExample.mp4"></video><h5 class="example-header">AnimationGroupExample<a class="headerlink" href="#animationgroupexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">AnimationGroupExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="animationgroupexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/AnimationGroupExample.mp4"></video><h5 class="example-header">AnimationGroupExample<a class="headerlink" href="#animationgroupexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">AnimationGroupExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
             <span class="n">Circle</span><span class="p">(),</span>
@@ -262,7 +262,7 @@
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.composition.</code><code class="sig-name descname">Succession</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">animations</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.composition.Succession" title="永久链接至目标">¶</a></dt>
 <dd><p>将传入的动画一个一个执行</p>
 </dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="successionexample" loop="" src="../_static/mk/SuccessionExample.mp4"></video><h5 class="example-header">SuccessionExample<a class="headerlink" href="#successionexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SuccessionExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="successionexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/SuccessionExample.mp4"></video><h5 class="example-header">SuccessionExample<a class="headerlink" href="#successionexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SuccessionExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
             <span class="n">Circle</span><span class="p">(),</span>
@@ -289,7 +289,7 @@
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.composition.</code><code class="sig-name descname">LaggedStart</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">animations</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.composition.LaggedStart" title="永久链接至目标">¶</a></dt>
 <dd><p>和AnimationGroup相同，lag_ratio为0.05（即上一个动画运行到5%的时候运行下一个动画）</p>
 </dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="laggedstartexample" loop="" src="../_static/mk/LaggedStartExample.mp4"></video><h5 class="example-header">LaggedStartExample<a class="headerlink" href="#laggedstartexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">LaggedStartExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="laggedstartexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/LaggedStartExample.mp4"></video><h5 class="example-header">LaggedStartExample<a class="headerlink" href="#laggedstartexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">LaggedStartExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
             <span class="n">Circle</span><span class="p">(),</span>
@@ -316,7 +316,7 @@
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.composition.</code><code class="sig-name descname">LaggedStartMap</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">AnimationClass</span></em>, <em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">arg_creator</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.composition.LaggedStartMap" title="永久链接至目标">¶</a></dt>
 <dd><p>对所有mobject根据AnimationClass创建动画并传入LaggedStart中</p>
 </dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="laggedstartmapexample" loop="" src="../_static/mk/LaggedStartMapExample.mp4"></video><h5 class="example-header">LaggedStartMapExample<a class="headerlink" href="#laggedstartmapexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">LaggedStartMapExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="laggedstartmapexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/LaggedStartMapExample.mp4"></video><h5 class="example-header">LaggedStartMapExample<a class="headerlink" href="#laggedstartmapexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">LaggedStartMapExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
             <span class="n">Circle</span><span class="p">(),</span>

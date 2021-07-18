@@ -7,10 +7,10 @@
     <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>Numbers - manim  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
-    <link rel="stylesheet" href="../_static/custom.css" />
-    <link rel="stylesheet" href="../_static/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?ec88941702491fabaf03706b">
-    <link rel="stylesheet" href="../_static/pygments.css?ec88941702491fabaf03706b">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/custom.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/colors.css" />
+    <link rel="stylesheet" href="../_static/styles/default.css?6fc83acf20376c10d45787d8">
+    <link rel="stylesheet" href="../_static/pygments.css?6fc83acf20376c10d45787d8">
     
 <style>
   :root {
@@ -29,7 +29,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?ec88941702491fabaf03706b"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?6fc83acf20376c10d45787d8"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -235,7 +235,7 @@
 <dt id="manimlib.animation.numbers.ChangingDecimal">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.numbers.</code><code class="sig-name descname">ChangingDecimal</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">decimal_mob</span></em>, <em class="sig-param"><span class="n">number_update_func</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.numbers.ChangingDecimal" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="changingdecimalexample" loop="" src="../_static/mk/ChangingDecimalExample.mp4"></video><h5 class="example-header">ChangingDecimalExample<a class="headerlink" href="#changingdecimalexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ChangingDecimalExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="changingdecimalexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ChangingDecimalExample.mp4"></video><h5 class="example-header">ChangingDecimalExample<a class="headerlink" href="#changingdecimalexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ChangingDecimalExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">number</span> <span class="o">=</span> <span class="n">DecimalNumber</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
         <span class="k">def</span> <span class="nf">update_func</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
@@ -253,7 +253,7 @@
 <dt id="manimlib.animation.numbers.ChangeDecimalToValue">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.numbers.</code><code class="sig-name descname">ChangeDecimalToValue</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">decimal_mob</span></em>, <em class="sig-param"><span class="n">target_number</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.numbers.ChangeDecimalToValue" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="changedecimaltovalueexample" loop="" src="../_static/mk/ChangeDecimalToValueExample.mp4"></video><h5 class="example-header">ChangeDecimalToValueExample<a class="headerlink" href="#changedecimaltovalueexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ChangeDecimalToValueExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="changedecimaltovalueexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ChangeDecimalToValueExample.mp4"></video><h5 class="example-header">ChangeDecimalToValueExample<a class="headerlink" href="#changedecimaltovalueexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ChangeDecimalToValueExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">number</span> <span class="o">=</span> <span class="n">DecimalNumber</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>

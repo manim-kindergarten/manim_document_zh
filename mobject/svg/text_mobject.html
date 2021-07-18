@@ -7,10 +7,10 @@
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>Text - manim  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" href="../../_static/custom.css" />
-    <link rel="stylesheet" href="../../_static/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?2a0dde0026ed867a03495e76">
-    <link rel="stylesheet" href="../../_static/pygments.css?2a0dde0026ed867a03495e76">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/custom.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/colors.css" />
+    <link rel="stylesheet" href="../../_static/styles/default.css?c958dc6e62aa687958fb0e64">
+    <link rel="stylesheet" href="../../_static/pygments.css?c958dc6e62aa687958fb0e64">
     
 <style>
   :root {
@@ -29,7 +29,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?2a0dde0026ed867a03495e76"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?c958dc6e62aa687958fb0e64"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -250,7 +250,7 @@
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.text_mobject.</code><code class="sig-name descname">Text</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">config</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.text_mobject.Text" title="永久链接至目标">¶</a></dt>
 <dd><p>传入一个文件名指向输入的SVG文件</p>
 </dd></dl>
-<div class="manim-example"><img alt="../../_images/image1.png" class="align-center" id="textdemo" src="../../_images/image1.png"/>
+<div class="manim-example"><img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image1.png" class="align-center" id="textdemo" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image1.png"/>
 <h5 class="example-header">TextDemo<a class="headerlink" href="#textdemo">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
 
 <span class="k">class</span> <span class="nc">Demo</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
@@ -275,7 +275,7 @@
 <li><p>或者是定义在<code class="docutils literal notranslate"><span class="pre">constants.py</span></code>里的颜色常量，如<code class="docutils literal notranslate"><span class="pre">BLUE</span></code></p></li>
 <li><p>Demo</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello',</span> <span class="pre">color=BLUE)</span></code> <img alt="color" src="../../_images/image2.png"/></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello',</span> <span class="pre">color=BLUE)</span></code> <img alt="color" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image2.png"/></p></li>
 </ul>
 </li>
 </ul>
@@ -287,7 +287,7 @@
 <li><p>或者切片模式，如<code class="docutils literal notranslate"><span class="pre">{'[1:4]':</span> <span class="pre">color}</span></code></p></li>
 <li><p>Demo</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello,</span> <span class="pre">world!',</span> <span class="pre">t2c={'world':BLUE})</span></code> <img alt="t2c" src="../../_images/image3.png"/></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello,</span> <span class="pre">world!',</span> <span class="pre">t2c={'world':BLUE})</span></code> <img alt="t2c" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image3.png"/></p></li>
 </ul>
 </li>
 </ul>
@@ -297,7 +297,7 @@
 <li><p>接收一个<code class="docutils literal notranslate"><span class="pre">tuple</span></code>，如<code class="docutils literal notranslate"><span class="pre">(BLUE,</span> <span class="pre">GREEN,</span> <span class="pre">'#FFFFFF')</span></code></p></li>
 <li><p>Demo</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello',</span> <span class="pre">gradient=(BLUE,</span> <span class="pre">GREEN))</span></code> <img alt="gradient" src="../../_images/image4.png"/></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello',</span> <span class="pre">gradient=(BLUE,</span> <span class="pre">GREEN))</span></code> <img alt="gradient" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image4.png"/></p></li>
 </ul>
 </li>
 </ul>
@@ -309,7 +309,7 @@
 <li><p>或者切片模式，如<code class="docutils literal notranslate"><span class="pre">{'[1:4]':</span> <span class="pre">(BLUE,</span> <span class="pre">GREEN,</span> <span class="pre">'#FFFFFF')}</span></code></p></li>
 <li><p>Demo</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello,</span> <span class="pre">world!',</span> <span class="pre">t2g={'world':(BLUE,</span> <span class="pre">GREEN)})</span></code> <img alt="t2g" src="../../_images/image5.png"/></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello,</span> <span class="pre">world!',</span> <span class="pre">t2g={'world':(BLUE,</span> <span class="pre">GREEN)})</span></code> <img alt="t2g" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image5.png"/></p></li>
 </ul>
 </li>
 </ul>
@@ -324,7 +324,7 @@
 <li><p>不支持直接读取给定的字体文件路径，必须先将字体安装到系统中才能使用</p></li>
 <li><p>Demo</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello',</span> <span class="pre">font='Source</span> <span class="pre">Han</span> <span class="pre">Sans')</span></code> <img alt="font" src="../../_images/image6.png"/></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello',</span> <span class="pre">font='Source</span> <span class="pre">Han</span> <span class="pre">Sans')</span></code> <img alt="font" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image6.png"/></p></li>
 </ul>
 </li>
 </ul>
@@ -336,7 +336,7 @@
 <li><p>或者切片模式，如<code class="docutils literal notranslate"><span class="pre">{'[1:4]':</span> <span class="pre">'Source</span> <span class="pre">Han</span> <span class="pre">Sans'}</span></code></p></li>
 <li><p>Demo</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello,</span> <span class="pre">world!',</span> <span class="pre">t2f={'world':'Forte'})</span></code> <img alt="t2f" src="../../_images/image7.png"/></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello,</span> <span class="pre">world!',</span> <span class="pre">t2f={'world':'Forte'})</span></code> <img alt="t2f" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image7.png"/></p></li>
 </ul>
 </li>
 </ul>
@@ -347,7 +347,7 @@
 <li><p>其实还有一个<code class="docutils literal notranslate"><span class="pre">OBLIQUE</span></code>，但是貌似效果跟<code class="docutils literal notranslate"><span class="pre">ITALIC</span></code>一样</p></li>
 <li><p>Demo</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello',</span> <span class="pre">slant=ITALIC)</span></code> <img alt="slant" src="../../_images/image8.png"/></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello',</span> <span class="pre">slant=ITALIC)</span></code> <img alt="slant" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image8.png"/></p></li>
 </ul>
 </li>
 </ul>
@@ -359,7 +359,7 @@
 <li><p>或者切片模式，如<code class="docutils literal notranslate"><span class="pre">{'[1:4]':</span> <span class="pre">ITALIC}</span></code></p></li>
 <li><p>Demo</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello,</span> <span class="pre">world!',</span> <span class="pre">t2s={'world':ITALIC})</span></code> <img alt="t2s" src="../../_images/image9.png"/></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello,</span> <span class="pre">world!',</span> <span class="pre">t2s={'world':ITALIC})</span></code> <img alt="t2s" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image9.png"/></p></li>
 </ul>
 </li>
 </ul>
@@ -376,7 +376,7 @@
 </li>
 <li><p>Demo</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello',</span> <span class="pre">weight=BOLD)</span></code> <img alt="weight" src="../../_images/image10.png"/></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello',</span> <span class="pre">weight=BOLD)</span></code> <img alt="weight" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image10.png"/></p></li>
 </ul>
 </li>
 </ul>
@@ -388,7 +388,7 @@
 <li><p>或者切片模式，如<code class="docutils literal notranslate"><span class="pre">{'[1:4]':</span> <span class="pre">BOLD}</span></code></p></li>
 <li><p>Demo</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello,</span> <span class="pre">world!',</span> <span class="pre">t2w={'world':BOLD})</span></code> <img alt="t2w" src="../../_images/image11.png"/></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello,</span> <span class="pre">world!',</span> <span class="pre">t2w={'world':BOLD})</span></code> <img alt="t2w" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image11.png"/></p></li>
 </ul>
 </li>
 </ul>
@@ -403,7 +403,7 @@
 <li><p>如果需要精确控制大小，建议使用<code class="docutils literal notranslate"><span class="pre">.scale()</span></code></p></li>
 <li><p>Demo</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello',</span> <span class="pre">size=5)</span></code> <img alt="size" src="../../_images/image12.png"/></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello',</span> <span class="pre">size=5)</span></code> <img alt="size" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image12.png"/></p></li>
 </ul>
 </li>
 </ul>
@@ -417,7 +417,7 @@
 <li><p>与MUnit没有关联</p></li>
 <li><p>Demo</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello\nWorld',</span> <span class="pre">lsh=1.5)</span></code> <img alt="lsh" src="../../_images/image13.png"/></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello\nWorld',</span> <span class="pre">lsh=1.5)</span></code> <img alt="lsh" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image13.png"/></p></li>
 </ul>
 </li>
 </ul>
@@ -490,7 +490,7 @@
 <p><strong>其它</strong>：</p>
 <ul>
 <li><p>切片模式:</p>
-<div class="manim-example"><img alt="../../_images/image14.png" class="align-center" id="textslice" src="../../_images/image14.png"/>
+<div class="manim-example"><img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image14.png" class="align-center" id="textslice" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image14.png"/>
 <h5 class="example-header">TextSlice<a class="headerlink" href="#textslice">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span>
     <span class="s1">'Google'</span><span class="p">,</span>
     <span class="n">t2c</span><span class="o">=</span><span class="p">{</span>
@@ -503,7 +503,7 @@
 </div>
 </div></li>
 <li><p>UTF-8:</p>
-<div class="manim-example"><img alt="../../_images/image15.png" class="align-center" id="textutf8" src="../../_images/image15.png"/>
+<div class="manim-example"><img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image15.png" class="align-center" id="textutf8" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image15.png"/>
 <h5 class="example-header">TextUTF8<a class="headerlink" href="#textutf8">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
 
 <span class="n">script</span> <span class="o">=</span> <span class="s1">'''</span>
@@ -531,7 +531,7 @@
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.text_mobject.</code><code class="sig-name descname">Paragraph</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">text</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">config</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.text_mobject.Paragraph" title="永久链接至目标">¶</a></dt>
 <dd><p>段落，方便实现code_mobject.py中的Code</p>
 </dd></dl>
-<div class="manim-example"><img alt="../../_images/Paragraph1.png" class="align-center" id="paragraphexample" src="../../_images/Paragraph1.png"/>
+<div class="manim-example"><img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/Paragraph1.png" class="align-center" id="paragraphexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/Paragraph1.png"/>
 <h5 class="example-header">ParagraphExample<a class="headerlink" href="#paragraphexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ParagraphExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">t</span> <span class="o">=</span> <span class="n">Paragraph</span><span class="p">(</span>
@@ -556,7 +556,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">rect</span><span class="p">)</span>
 </pre></div>
 </div>
-</div><div class="manim-example"><img alt="../../_images/Paragraph2.gif" class="align-center" id="paragraphexample2" src="../../_images/Paragraph2.gif"/>
+</div><div class="manim-example"><img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/Paragraph2.gif" class="align-center" id="paragraphexample2" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/Paragraph2.gif"/>
 <h5 class="example-header">ParagraphExample2<a class="headerlink" href="#paragraphexample2">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Test7</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">t</span> <span class="o">=</span> <span class="n">Paragraph</span><span class="p">(</span>

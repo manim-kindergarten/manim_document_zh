@@ -20,7 +20,7 @@ Text
 .. autoclass:: manimlib.mobject.svg.text_mobject.Text
 
 .. manim-example:: TextDemo
-  :media: ../../assets/image/Text/image1.png
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image1.png
 
   from manimlib.imports import *
   
@@ -207,7 +207,7 @@ Text
 -  切片模式:
 
    .. manim-example:: TextSlice
-     :media: ../../assets/image/Text/image14.png
+     :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image14.png
    
      text = Text(
          'Google', 
@@ -221,7 +221,7 @@ Text
 -  UTF-8:
 
    .. manim-example:: TextUTF8
-     :media: ../../assets/image/Text/image15.png
+     :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image15.png
    
      from manimlib.imports import *
      
@@ -245,7 +245,7 @@ Paragraph
 .. autoclass:: manimlib.mobject.svg.text_mobject.Paragraph
 
 .. manim-example:: ParagraphExample
-  :media: ../../assets/image/Text/Paragraph1.png
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/Paragraph1.png
 
   class ParagraphExample(Scene):
       def construct(self):
@@ -272,7 +272,7 @@ Paragraph
 
 
 .. manim-example:: ParagraphExample2
-  :media: ../../assets/image/Text/Paragraph2.gif
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/Paragraph2.gif
 
   class Test7(Scene):
       def construct(self):
@@ -297,15 +297,15 @@ Paragraph
           self.wait()
 
 
-.. |color| image:: ../../assets/image/Text/image2.png
-.. |t2c| image:: ../../assets/image/Text/image3.png
-.. |gradient| image:: ../../assets/image/Text/image4.png
-.. |t2g| image:: ../../assets/image/Text/image5.png
-.. |font| image:: ../../assets/image/Text/image6.png
-.. |t2f| image:: ../../assets/image/Text/image7.png
-.. |slant| image:: ../../assets/image/Text/image8.png
-.. |t2s| image:: ../../assets/image/Text/image9.png
-.. |weight| image:: ../../assets/image/Text/image10.png
-.. |t2w| image:: ../../assets/image/Text/image11.png
-.. |size| image:: ../../assets/image/Text/image12.png
-.. |lsh| image:: ../../assets/image/Text/image13.png
+.. |color| image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image2.png
+.. |t2c| image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image3.png
+.. |gradient| image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image4.png
+.. |t2g| image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image5.png
+.. |font| image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image6.png
+.. |t2f| image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image7.png
+.. |slant| image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image8.png
+.. |t2s| image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image9.png
+.. |weight| image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image10.png
+.. |t2w| image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image11.png
+.. |size| image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image12.png
+.. |lsh| image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image13.png

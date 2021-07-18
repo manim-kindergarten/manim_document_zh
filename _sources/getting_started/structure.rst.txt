@@ -122,12 +122,12 @@ manim类的继承结构
 `这里 <https://github.com/manim-kindergarten/manim_sandbox/blob/master/documents/manim%E7%B1%BB%E7%BB%93%E6%9E%84.pdf>`_ 整理了一个manim类继承的pdf，
 比较大，但是基本所有的类都有包含
 
-.. image:: ../assets/image/manim.png
+.. image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/manim.png
 
 manim运行顺序
 -------------
 
-.. image:: ../assets/image/manim_exe.png
+.. image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/manim_exe.png
 
 manim运行的主要顺序如上图所示
 

@@ -21,7 +21,7 @@ Code
 3. ``Code[2]`` 是代码 (``Code.code``)，一个带有颜色的Paragraph
 
 .. manim-example:: CodeExample
-  :media: ../../assets/image/Text/Code.gif
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/Code.gif
 
   class CodeExample(Scene):
       def construct(self):
