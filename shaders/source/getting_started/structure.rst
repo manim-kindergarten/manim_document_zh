@@ -118,9 +118,9 @@ Manim的类继承结构
 `这里 <https://github.com/3b1b/manim/files/5824383/manim_shaders_structure.pdf>`_ 
 整理了一个manim类继承的pdf，比较大，但是基本所有的类都有包含：
 
-.. image:: ../_static/manim_shaders_structure.png
+.. image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/manim_shaders_structure.png
 
 Manim运行过程
 -----------------------
 
-.. image:: ../_static/manim_shaders_process_cn.png
+.. image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/manim_shaders_process_cn.png
