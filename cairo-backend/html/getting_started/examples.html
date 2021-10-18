@@ -1,0 +1,641 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="运行命令" href="command.html" /><link rel="prev" title="快速入门" href="index.html" />
+
+    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
+        <title>案例学习 - manim  文档</title>
+      <link rel="stylesheet" href="../_static/copybutton.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/custom.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/colors.css" />
+    <link rel="stylesheet" href="../_static/styles/default.css?8eda46c7f2b4915aa8a0ef3a">
+    <link rel="stylesheet" href="../_static/pygments.css?8eda46c7f2b4915aa8a0ef3a">
+    
+<style>
+  :root {
+    --color-code-background: #f8f8f8;
+    --color-code-foreground: #000000;
+  
+  }
+</style>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script><script src="../_static/jquery.js"></script>
+      <script src="../_static/underscore.js"></script>
+      
+        <script src="../_static/doctools.js" defer></script>
+      
+        <script src="../_static/language_data.js" defer></script>
+      
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?8eda46c7f2b4915aa8a0ef3a"></script></head>
+  <body dir="">
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke-width="1.5" stroke="#101010" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z"/>
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+
+<div class="page">
+  <header class="mobile-header">
+    <label class="header-left nav-overlay-icon" for="__navigation">
+      <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+    </label>
+    <div class="header-center"><div class="brand">manim  文档</div></div>
+    <div class="header-right"></div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand centered" href="../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="../_static/Logo_white.png" alt="Logo"/>
+  </div>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html">
+  <input class="sidebar-search" placeholder="Search" name="q">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form><div class="sidebar-tree sidebar-scroll">
+  <p><span class="caption-text">入门教程向</span></p>
+<ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../installation/index.html">安装指南</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../installation/linux.html">Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/mac.html">Mac</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/windows.html">Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/ffmpeg.html">附：ffmpeg相关用法</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">快速入门</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label for="toctree-checkbox-2"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">案例学习</a></li>
+<li class="toctree-l2"><a class="reference internal" href="command.html">运行命令</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config.html">CONFIG字典用法</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structure.html">manim结构</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../problems/index.html">常见问题</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../problems/v2.3.html">安装问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../problems/v2.3.html#id5">运行时问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../problems/v2.3.html#id14">其它问题</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../homework/index.html">练习部分(TODO)</a></li>
+</ul>
+<p><span class="caption-text">进阶文档向</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../container/index.html">属性容器container</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../animation/index.html">动画部分animation</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label for="toctree-checkbox-4"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../animation/creation.html">Creation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/fading.html">Fading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/growing.html">Growing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/indication.html">Indication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/movement.html">Movement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/numbers.html">Numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/rotation.html">Rotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/transform.html">Transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/update.html">Update</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/composition.html">Composition</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mobject/index.html">物体部分mobject</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label for="toctree-checkbox-5"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/mobject.html">数学物品Mobject</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../mobject/types/index.html">三种物体基类types</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label for="toctree-checkbox-6"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/types/vectorized_mobject.html">VMobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/types/point_cloud_mobject.html">PMobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/types/image_mobject.html">ImageMobject</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../mobject/svg/index.html">SVG图像相关物体svg</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/svg_mobject.html">SVGMobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/tex_mobject.html">TexMobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/text_mobject.html">Text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/code_mobject.html">Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/brace.html">Brace</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/changing.html">Changing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/coordinate_systems.html">CoordinateSystems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/frame.html">Frame</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/geometry.html">Geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/matrix.html">Matrix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/mobject_update_utils.html">MobjectUpdateUtils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/number_line.html">NumberLine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/numbers.html">Numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/probability.html">Probability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/shape_matchers.html">ShapeMatchers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/three_d_shading_utils.html">ThreeDShadingUtils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/three_d_utils.html">ThreeDUtils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/three_dimensions.html">ThreeDimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/value_tracker.html">ValueTracker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/vector_field.html">VectorField</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../camera/index.html">相机部分camera</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label for="toctree-checkbox-8"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../camera/camera.html">Camera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../camera/mapping_camera.html">MappingCamera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../camera/moving_camera.html">MovingCamera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../camera/multi_camera.html">MultiCamera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../camera/three_d_camera.html">ThreeDCamera</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../scene/index.html">场景部分scene(TODO)</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label for="toctree-checkbox-9"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scene/scene.html">Scene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/scene_file_writer.html">SceneFileWriter(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/moving_camera_scene.html">MovingCameraScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/zoomed_scene.html">ZoomedScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/graph_scene.html">GraphScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/three_d_scene.html">ThreeDScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/reconfigurable_scene.html">ReconfigurableScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/vector_space_scene.html">VectorScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/sample_space_scene.html">SampleSpaceScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/scene_from_video.html">SceneFromVideo(TODO)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../utils/index.html">工具函数utils</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label for="toctree-checkbox-10"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../utils/bezier.html">Bezier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/color.html">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/config_ops.html">CONFIG_ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/file_ops.html">FILE_ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/images.html">Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/iterables.html">Iterables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/paths.html">Paths</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/rate_functions.html">Rate_functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/simple_functions.html">Simple_functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/sounds.html">Sounds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/space_ops.html">Space_ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/strings.html">Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/tex_file_writing.html">Tex_file_writing</a></li>
+</ul>
+</li>
+</ul>
+<p><span class="caption-text">杂项</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../manim_sandbox/index.html">manim_sandbox中的自定义类</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label for="toctree-checkbox-11"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../manim_sandbox/functions.html">自定义工具函数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manim_sandbox/mobjects.html">自定义物体</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manim_sandbox/scenes.html">自定义场景</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manim_sandbox/animations.html">自定义动画</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../contribution.html">贡献规则及编写指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">关于</a></li>
+</ul>
+
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <main class="main">
+    <div class="content">
+      <article role="main">
+        <label class="toc-overlay-icon" for="__toc">
+          <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        </label>
+        <section id="id1">
+<h1>案例学习<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<div class="admonition- admonition">
+<p class="admonition-title">声明</p>
+<p>第一个示例翻译自EulerTour的教程，其余为鹤翔万里编写</p>
+</div>
+<p>样例 <code class="docutils literal notranslate"><span class="pre">example_scenes.py</span></code> 包含了一些学习manim的示例场景，可以运行测试，也可以入门学习</p>
+<section id="squaretocircle">
+<h2>方变圆SquareToCircle<a class="headerlink" href="#squaretocircle" title="永久链接至标题">¶</a></h2>
+<p>在manim文件夹中尝试执行运行命令</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ python -m manim example_scenes.py SquareToCircle -p <span class="c1">#通过clone存储库安装</span>
+$ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安装</span>
+</pre></div>
+</div>
+<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="squaretocircle" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/example/SquareToCircle.mp4"></video><h5 class="example-header">SquareToCircle<a class="headerlink" href="#squaretocircle">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">class</span> <span class="nc">SquareToCircle</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">circle</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">()</span>
+        <span class="n">square</span> <span class="o">=</span> <span class="n">Square</span><span class="p">()</span>
+        <span class="n">square</span><span class="o">.</span><span class="n">flip</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">)</span>
+        <span class="n">square</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span> <span class="o">*</span> <span class="n">TAU</span> <span class="o">/</span> <span class="mi">8</span><span class="p">)</span>
+        <span class="n">circle</span><span class="o">.</span><span class="n">set_fill</span><span class="p">(</span><span class="n">PINK</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ShowCreation</span><span class="p">(</span><span class="n">square</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Transform</span><span class="p">(</span><span class="n">square</span><span class="p">,</span> <span class="n">circle</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">FadeOut</span><span class="p">(</span><span class="n">square</span><span class="p">))</span>
+</pre></div>
+</div>
+</div><div class="admonition note">
+<p class="admonition-title">注解</p>
+<dl class="simple">
+<dt>选项 <code class="docutils literal notranslate"><span class="pre">-p</span></code> 使用系统默认播放器播放渲染出的视频文件，没有指定质量，则默认使用 <code class="docutils literal notranslate"><span class="pre">-w</span></code> 选项最高画质（1440p60），其他常用选项:</dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">-l</span></code> 低分辨率480p15渲染更快</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-m</span></code> 中等分辨率720p30</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-s</span></code> 只导出最后一帧</p></li>
+</ul>
+</dd>
+</dl>
+<p>运行 <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">manim</span> <span class="pre">-h</span></code> 或 <code class="docutils literal notranslate"><span class="pre">manim</span> <span class="pre">-h</span></code> 查看所有可用选项</p>
+</div>
+<p>让我们一行一行解析 <code class="docutils literal notranslate"><span class="pre">SquareToCircle</span></code> 的代码</p>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</td></tr></table></div></div>
+<p>将manim中的所有类都引入进来，可以直接使用</p>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SquareToCircle</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+</pre></div>
+</td></tr></table></div></div>
+<p>通过编写一个 <code class="xref py py-class docutils literal notranslate"><span class="pre">Scene</span></code> 的子类来创建一个场景，用于渲染出视频</p>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</pre></div>
+</td></tr></table></div></div>
+<p>在 <code class="xref py py-meth docutils literal notranslate"><span class="pre">construct()</span></code> 方法中说明当 <code class="xref py py-class docutils literal notranslate"><span class="pre">Scene</span></code> 渲染时要进行什么操作</p>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">circle</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">()</span>
+<span class="n">square</span> <span class="o">=</span> <span class="n">Square</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div></div>
+<p><code class="docutils literal notranslate"><span class="pre">Circle()</span></code> 和 <code class="docutils literal notranslate"><span class="pre">Square()</span></code> 创建了 <a class="reference internal" href="../mobject/geometry.html#manimlib.mobject.geometry.Circle" title="manimlib.mobject.geometry.Circle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Circle</span></code></a> 和 <a class="reference internal" href="../mobject/geometry.html#manimlib.mobject.geometry.Square" title="manimlib.mobject.geometry.Square"><code class="xref py py-class docutils literal notranslate"><span class="pre">Square</span></code></a> 的实例，即一个圆一个方</p>
+<p>它们都是 <a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> 的子类，注意如果一个 <a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> 实例
+没有添加到 <code class="xref py py-class docutils literal notranslate"><span class="pre">Scene</span></code> 中, 渲染之后就不会看到任何东西</p>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">square</span><span class="o">.</span><span class="n">flip</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">)</span>
+<span class="n">square</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span> <span class="o">*</span> <span class="n">TAU</span> <span class="o">/</span> <span class="mi">8</span><span class="p">)</span>
+<span class="n">circle</span><span class="o">.</span><span class="n">set_fill</span><span class="p">(</span><span class="n">PINK</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div></div>
+<p><code class="docutils literal notranslate"><span class="pre">flip()</span></code> <code class="docutils literal notranslate"><span class="pre">rotate()</span></code> <code class="docutils literal notranslate"><span class="pre">set_fill()</span></code> 在执行动画之前应用了一些mobjects的变换</p>
+<ul class="simple">
+<li><p>调用 <a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject.flip" title="manimlib.mobject.mobject.Mobject.flip"><code class="xref py py-meth docutils literal notranslate"><span class="pre">flip()</span></code></a> 以水平为轴翻转了 <a class="reference internal" href="../mobject/geometry.html#manimlib.mobject.geometry.Square" title="manimlib.mobject.geometry.Square"><code class="xref py py-class docutils literal notranslate"><span class="pre">Square</span></code></a>，相当于x轴上的反射</p></li>
+<li><p>调用 <a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject.rotate" title="manimlib.mobject.mobject.Mobject.rotate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">rotate()</span></code></a> 逆时针旋转了 <a class="reference internal" href="../mobject/geometry.html#manimlib.mobject.geometry.Square" title="manimlib.mobject.geometry.Square"><code class="xref py py-class docutils literal notranslate"><span class="pre">Square</span></code></a> 3/8圆.</p></li>
+<li><p>调用 <a class="reference internal" href="../mobject/types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VMobject.set_fill" title="manimlib.mobject.types.vectorized_mobject.VMobject.set_fill"><code class="xref py py-meth docutils literal notranslate"><span class="pre">set_fill()</span></code></a> 设置了 <a class="reference internal" href="../mobject/geometry.html#manimlib.mobject.geometry.Circle" title="manimlib.mobject.geometry.Circle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Circle</span></code></a> 填充颜色为粉色(PINK), 不透明度(opacity)为0.5.</p></li>
+</ul>
+<p>详细教程可以看 <a class="reference external" href="https://www.bilibili.com/video/BV1p54y197cC">〔manim教程〕第一讲 物体的位置与坐标变换</a></p>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>11
+12
+13</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ShowCreation</span><span class="p">(</span><span class="n">square</span><span class="p">))</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Transform</span><span class="p">(</span><span class="n">square</span><span class="p">,</span> <span class="n">circle</span><span class="p">))</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">FadeOut</span><span class="p">(</span><span class="n">square</span><span class="p">))</span>
+</pre></div>
+</td></tr></table></div></div>
+<p>实例化 <a class="reference internal" href="../animation/index.html#manimlib.animation.animation.Animation" title="manimlib.animation.animation.Animation"><code class="xref py py-class docutils literal notranslate"><span class="pre">Animation</span></code></a> 构建动画</p>
+<p>每个 <a class="reference internal" href="../animation/index.html#manimlib.animation.animation.Animation" title="manimlib.animation.animation.Animation"><code class="xref py py-class docutils literal notranslate"><span class="pre">Animation</span></code></a> 传入一个或多个 <a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> 对象参数
+传递给 <code class="xref py py-meth docutils literal notranslate"><span class="pre">play()</span></code> 呈现出动画，构建视频。</p>
+<p><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> 实例会自动添加到 <code class="xref py py-class docutils literal notranslate"><span class="pre">Scene</span></code> 中，当使用动画时
+你可以把 <a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> 通过使用 <code class="xref py py-meth docutils literal notranslate"><span class="pre">add()</span></code> 方法手动添加到 <code class="xref py py-class docutils literal notranslate"><span class="pre">Scene</span></code> 中</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../animation/creation.html#manimlib.animation.creation.ShowCreation" title="manimlib.animation.creation.ShowCreation"><code class="xref py py-class docutils literal notranslate"><span class="pre">ShowCreation</span></code></a> 在屏幕上绘制出一个 <a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a></p></li>
+<li><p><a class="reference internal" href="../animation/transform.html#manimlib.animation.transform.Transform" title="manimlib.animation.transform.Transform"><code class="xref py py-class docutils literal notranslate"><span class="pre">Transform</span></code></a> 把一个 <a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> 变成另一个图像</p></li>
+<li><p><a class="reference internal" href="../animation/fading.html#manimlib.animation.fading.FadeOut" title="manimlib.animation.fading.FadeOut"><code class="xref py py-class docutils literal notranslate"><span class="pre">FadeOut</span></code></a> 使一个 <a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> 淡出</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>第一个Mobject对象会被 <a class="reference internal" href="../animation/transform.html#manimlib.animation.transform.Transform" title="manimlib.animation.transform.Transform"><code class="xref py py-class docutils literal notranslate"><span class="pre">Transform</span></code></a> 方法修改，第二个对象不会被添加到Scene类中。
+仅仅更改了外形但是没有更改根本/基础的属性</p>
+<p>例子中，<code class="docutils literal notranslate"><span class="pre">transform()</span></code> 变换后 <code class="docutils literal notranslate"><span class="pre">square</span></code> 还是 <a class="reference internal" href="../mobject/geometry.html#manimlib.mobject.geometry.Square" title="manimlib.mobject.geometry.Square"><code class="xref py py-class docutils literal notranslate"><span class="pre">Square</span></code></a> 的实例，仅仅是渲染出来圆形外表，还要调用 <a class="reference internal" href="../mobject/geometry.html#manimlib.mobject.geometry.Square" title="manimlib.mobject.geometry.Square"><code class="xref py py-class docutils literal notranslate"><span class="pre">Square</span></code></a> 的属性和方法。</p>
+</div>
+</section>
+<section id="warpsquare">
+<h2>扭曲正方形WarpSquare<a class="headerlink" href="#warpsquare" title="永久链接至标题">¶</a></h2>
+<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="warpsquare" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/example/WarpSquare.mp4"></video><h5 class="example-header">WarpSquare<a class="headerlink" href="#warpsquare">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">class</span> <span class="nc">WarpSquare</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">square</span> <span class="o">=</span> <span class="n">Square</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ApplyPointwiseFunction</span><span class="p">(</span>
+            <span class="k">lambda</span> <span class="n">point</span><span class="p">:</span> <span class="n">complex_to_R3</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">R3_to_complex</span><span class="p">(</span><span class="n">point</span><span class="p">))),</span>
+            <span class="n">square</span>
+        <span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+</div><p>前四行和前面的一样，不重复了。第五行同样创建了一个默认的正方形</p>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ApplyPointwiseFunction</span><span class="p">(</span>
+    <span class="k">lambda</span> <span class="n">point</span><span class="p">:</span> <span class="n">complex_to_R3</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">R3_to_complex</span><span class="p">(</span><span class="n">point</span><span class="p">))),</span>
+    <span class="n">square</span>
+<span class="p">))</span>
+</pre></div>
+</td></tr></table></div></div>
+<p>从第六行开始，执行了一个动画 <a class="reference internal" href="../animation/transform.html#manimlib.animation.transform.ApplyPointwiseFunction" title="manimlib.animation.transform.ApplyPointwiseFunction"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyPointwiseFunction</span></code></a> ，
+传入了一个函数 <code class="docutils literal notranslate"><span class="pre">lambda</span> <span class="pre">point:</span> <span class="pre">complex_to_R3(np.exp(R3_to_complex(point)))</span></code></p>
+<p>这个函数的输入值是一个点坐标，先经过 <code class="docutils literal notranslate"><span class="pre">R3_to_complex</span></code> 函数将点坐标转换为该点在复平面上代表的复数值，
+后求了e指数，将其结果传入 <code class="docutils literal notranslate"><span class="pre">complex_to_R3</span></code> 函数，将结果的复数转换为在复平面上的点坐标。</p>
+<p>将这个函数和物体square传入 <a class="reference internal" href="../animation/transform.html#manimlib.animation.transform.ApplyPointwiseFunction" title="manimlib.animation.transform.ApplyPointwiseFunction"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyPointwiseFunction</span></code></a> 后，
+会对square的点集施加这个函数的作用（将每个点设为将该点传入函数后的返回值），实现了复变换。</p>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div></div>
+<p>添加了一个停顿，默认1秒，相当于 <code class="docutils literal notranslate"><span class="pre">self.wait(1)</span></code> 。类似的，可以使用 <code class="docutils literal notranslate"><span class="pre">self.wait(3)</span></code> 来停顿3秒。</p>
+</section>
+<section id="writestuff">
+<h2>书写文字WriteStuff<a class="headerlink" href="#writestuff" title="永久链接至标题">¶</a></h2>
+<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="writestuff" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/example/WriteStuff.mp4"></video><h5 class="example-header">WriteStuff<a class="headerlink" href="#writestuff">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">class</span> <span class="nc">WriteStuff</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">example_text</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span>
+            <span class="s2">"This is a some text"</span><span class="p">,</span>
+            <span class="n">tex_to_color_map</span><span class="o">=</span><span class="p">{</span><span class="s2">"text"</span><span class="p">:</span> <span class="n">YELLOW</span><span class="p">}</span>
+        <span class="p">)</span>
+        <span class="n">example_tex</span> <span class="o">=</span> <span class="n">TexMobject</span><span class="p">(</span>
+            <span class="s2">"</span><span class="se">\\</span><span class="s2">sum_{k=1}^</span><span class="se">\\</span><span class="s2">infty {1 </span><span class="se">\\</span><span class="s2">over k^2} = {</span><span class="se">\\</span><span class="s2">pi^2 </span><span class="se">\\</span><span class="s2">over 6}"</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="n">group</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="n">example_text</span><span class="p">,</span> <span class="n">example_tex</span><span class="p">)</span>
+        <span class="n">group</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">)</span>
+        <span class="n">group</span><span class="o">.</span><span class="n">set_width</span><span class="p">(</span><span class="n">FRAME_WIDTH</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">LARGE_BUFF</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Write</span><span class="p">(</span><span class="n">example_text</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Write</span><span class="p">(</span><span class="n">example_tex</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+</div><div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">example_text</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span>
+    <span class="s2">"This is a some text"</span><span class="p">,</span>
+    <span class="n">tex_to_color_map</span><span class="o">=</span><span class="p">{</span><span class="s2">"text"</span><span class="p">:</span> <span class="n">YELLOW</span><span class="p">}</span>
+<span class="p">)</span>
+</pre></div>
+</td></tr></table></div></div>
+<p>第五行到第八行创建了一个文字（<a class="reference internal" href="../mobject/svg/tex_mobject.html#manimlib.mobject.svg.tex_mobject.TextMobject" title="manimlib.mobject.svg.tex_mobject.TextMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextMobject</span></code></a>），内容是”This is a some text”（打错字了）。
+第七行传入了一个字典 <code class="docutils literal notranslate"><span class="pre">tex_to_color_map</span></code> 将”text”指定为黄色。这时 <a class="reference internal" href="../mobject/svg/tex_mobject.html#manimlib.mobject.svg.tex_mobject.TextMobject" title="manimlib.mobject.svg.tex_mobject.TextMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextMobject</span></code></a>
+会自动识别拆分开字符串，将并将”text”部分设置为黄色。</p>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">example_tex</span> <span class="o">=</span> <span class="n">TexMobject</span><span class="p">(</span>
+    <span class="s2">"</span><span class="se">\\</span><span class="s2">sum_{k=1}^</span><span class="se">\\</span><span class="s2">infty {1 </span><span class="se">\\</span><span class="s2">over k^2} = {</span><span class="se">\\</span><span class="s2">pi^2 </span><span class="se">\\</span><span class="s2">over 6}"</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</td></tr></table></div></div>
+<p>第九行到第十一行创建了一个公式（<a class="reference internal" href="../mobject/svg/tex_mobject.html#manimlib.mobject.svg.tex_mobject.TexMobject" title="manimlib.mobject.svg.tex_mobject.TexMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">TexMobject</span></code></a>），它使用LaTeX来渲染，所以使用LaTeX的公式语法，
+并且在python中，需要将 <code class="docutils literal notranslate"><span class="pre">\</span></code> 转义写为 <code class="docutils literal notranslate"><span class="pre">\\</span></code> ，或者在字符串前加上 <code class="docutils literal notranslate"><span class="pre">r</span></code> ，例如这三行也可以写为：</p>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">example_tex</span> <span class="o">=</span> <span class="n">TexMobject</span><span class="p">(</span>
+    <span class="sa">r</span><span class="s2">"\sum_{k=1}^\infty {1 \over k^2} = {\pi^2 \over 6}"</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</td></tr></table></div></div>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>12
+13
+14</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">group</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="n">example_text</span><span class="p">,</span> <span class="n">example_tex</span><span class="p">)</span>
+<span class="n">group</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">)</span>
+<span class="n">group</span><span class="o">.</span><span class="n">set_width</span><span class="p">(</span><span class="n">FRAME_WIDTH</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">LARGE_BUFF</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div></div>
+<div class="line-block">
+<div class="line">第十二行到第十四行先创建了一个物体集合（<a class="reference internal" href="../mobject/types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VGroup" title="manimlib.mobject.types.vectorized_mobject.VGroup"><code class="xref py py-class docutils literal notranslate"><span class="pre">VGroup</span></code></a>），包含前面创建的文字和公式</div>
+<div class="line">第十三行调用了 <code class="docutils literal notranslate"><span class="pre">arrange</span></code> 方法，将 <code class="docutils literal notranslate"><span class="pre">group</span></code> 中的物体依次向下（DOWN）排列</div>
+<div class="line">第十四行将整个 <code class="docutils literal notranslate"><span class="pre">group</span></code> 缩放到宽度为画面宽度，并且距离两边为 <code class="docutils literal notranslate"><span class="pre">LARGE_BUFF</span></code></div>
+</div>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>16
+17
+18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Write</span><span class="p">(</span><span class="n">example_text</span><span class="p">))</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Write</span><span class="p">(</span><span class="n">example_tex</span><span class="p">))</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div></div>
+<div class="line-block">
+<div class="line">第十六行开始是场景中的动画部分，前两行将创建的文字和公式使用 <a class="reference internal" href="../animation/creation.html#manimlib.animation.creation.Write" title="manimlib.animation.creation.Write"><code class="xref py py-class docutils literal notranslate"><span class="pre">Write</span></code></a> 动画”写”在画面中</div>
+<div class="line">并且最后添加了一秒的停顿</div>
+</div>
+</section>
+<section id="updatersexample">
+<h2>更新程序UpdatersExample<a class="headerlink" href="#updatersexample" title="永久链接至标题">¶</a></h2>
+<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="updatersexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/example/UpdatersExample.mp4"></video><h5 class="example-header">UpdatersExample<a class="headerlink" href="#updatersexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">class</span> <span class="nc">UpdatersExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">decimal</span> <span class="o">=</span> <span class="n">DecimalNumber</span><span class="p">(</span>
+            <span class="mi">0</span><span class="p">,</span>
+            <span class="n">show_ellipsis</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+            <span class="n">num_decimal_places</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+            <span class="n">include_sign</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="n">square</span> <span class="o">=</span> <span class="n">Square</span><span class="p">()</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
+
+        <span class="n">decimal</span><span class="o">.</span><span class="n">add_updater</span><span class="p">(</span><span class="k">lambda</span> <span class="n">d</span><span class="p">:</span> <span class="n">d</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">square</span><span class="p">,</span> <span class="n">RIGHT</span><span class="p">))</span>
+        <span class="n">decimal</span><span class="o">.</span><span class="n">add_updater</span><span class="p">(</span><span class="k">lambda</span> <span class="n">d</span><span class="p">:</span> <span class="n">d</span><span class="o">.</span><span class="n">set_value</span><span class="p">(</span><span class="n">square</span><span class="o">.</span><span class="n">get_center</span><span class="p">()[</span><span class="mi">1</span><span class="p">]))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">square</span><span class="p">,</span> <span class="n">decimal</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+            <span class="n">square</span><span class="o">.</span><span class="n">to_edge</span><span class="p">,</span> <span class="n">DOWN</span><span class="p">,</span>
+            <span class="n">rate_func</span><span class="o">=</span><span class="n">there_and_back</span><span class="p">,</span>
+            <span class="n">run_time</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+</div><div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">decimal</span> <span class="o">=</span> <span class="n">DecimalNumber</span><span class="p">(</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="n">show_ellipsis</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+    <span class="n">num_decimal_places</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+    <span class="n">include_sign</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</td></tr></table></div></div>
+<div class="line-block">
+<div class="line">第五行起创建了一个可变的十进制数字 <a class="reference internal" href="../mobject/numbers.html#manimlib.mobject.numbers.DecimalNumber" title="manimlib.mobject.numbers.DecimalNumber"><code class="xref py py-class docutils literal notranslate"><span class="pre">DecimalNumber</span></code></a> ，初始值为0</div>
+<div class="line">从第七行起设置了其属性，即显示省略号 <code class="docutils literal notranslate"><span class="pre">show_ellipsis=True</span></code> ，小数保留3位 <code class="docutils literal notranslate"><span class="pre">num_decimal_places=3</span></code> ，正数包含正号 <code class="docutils literal notranslate"><span class="pre">include_sign=True</span></code></div>
+</div>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>13
+14</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">decimal</span><span class="o">.</span><span class="n">add_updater</span><span class="p">(</span><span class="k">lambda</span> <span class="n">d</span><span class="p">:</span> <span class="n">d</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">square</span><span class="p">,</span> <span class="n">RIGHT</span><span class="p">))</span>
+<span class="n">decimal</span><span class="o">.</span><span class="n">add_updater</span><span class="p">(</span><span class="k">lambda</span> <span class="n">d</span><span class="p">:</span> <span class="n">d</span><span class="o">.</span><span class="n">set_value</span><span class="p">(</span><span class="n">square</span><span class="o">.</span><span class="n">get_center</span><span class="p">()[</span><span class="mi">1</span><span class="p">]))</span>
+</pre></div>
+</td></tr></table></div></div>
+<p>从第十三行起为这个数字添加了两个更新程序（<code class="docutils literal notranslate"><span class="pre">updater</span></code>）
+1. 将这个数字始终放在正方形右侧（即始终调用 <code class="docutils literal notranslate"><span class="pre">next_to</span></code> 这个方法来维护数字的位置）
+2. 将这个数字的值始终设置为正方形在画面中的纵坐标</p>
+<p>设置了updater之后，每一帧在运行时都会调用传入的函数来更新当前物体，所以传入的函数的参数为一个物体，没有返回值，在函数内部调用这个物体的方法来维护属性</p>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>15
+16
+17
+18
+19
+20
+21</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">square</span><span class="p">,</span> <span class="n">decimal</span><span class="p">)</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+    <span class="n">square</span><span class="o">.</span><span class="n">to_edge</span><span class="p">,</span> <span class="n">DOWN</span><span class="p">,</span>
+    <span class="n">rate_func</span><span class="o">=</span><span class="n">there_and_back</span><span class="p">,</span>
+    <span class="n">run_time</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div></div>
+<p>第十五行直接将数字和正方形添加在画面中，即视频一开始两物体就已经存在于画面中了</p>
+<div class="line-block">
+<div class="line">第十六行开始为一个动画， <code class="docutils literal notranslate"><span class="pre">square.to_edge,</span> <span class="pre">DOWN</span></code> 表示将 <code class="docutils literal notranslate"><span class="pre">square</span></code> 执行了 <code class="docutils literal notranslate"><span class="pre">.to_edge(DOWN)</span></code> 之后设置为目标，并且变换到那个位置处</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">rate_func=there_and_back</span></code> 指明了当前动画使用的速率函数为 <code class="docutils literal notranslate"><span class="pre">there_and_back</span></code> ，即到位置后再回来</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">run_time=5</span></code> 指明了当前动画需要5秒</div>
+</div>
+</section>
+<section id="openingmanimexample">
+<h2>整体示例OpeningManimExample<a class="headerlink" href="#openingmanimexample" title="永久链接至标题">¶</a></h2>
+<p>在看过了前面的例子之后，文件中的第一个视频就容易理解了</p>
+<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="openingmanimexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/example/OpeningManimExample.mp4"></video><h5 class="example-header">OpeningManimExample<a class="headerlink" href="#openingmanimexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">class</span> <span class="nc">OpeningManimExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">title</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span><span class="s2">"This is some </span><span class="se">\\</span><span class="s2">LaTeX"</span><span class="p">)</span> <span class="c1"># 文字</span>
+        <span class="n">basel</span> <span class="o">=</span> <span class="n">TexMobject</span><span class="p">(</span>                         <span class="c1"># 公式</span>
+            <span class="s2">"</span><span class="se">\\</span><span class="s2">sum_{n=1}^</span><span class="se">\\</span><span class="s2">infty "</span>
+            <span class="s2">"</span><span class="se">\\</span><span class="s2">frac{1}{n^2} = </span><span class="se">\\</span><span class="s2">frac{</span><span class="se">\\</span><span class="s2">pi^2}{6}"</span>
+        <span class="p">)</span>
+        <span class="n">VGroup</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">basel</span><span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">)</span>          <span class="c1"># 集合到一起后排列位置</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+            <span class="n">Write</span><span class="p">(</span><span class="n">title</span><span class="p">),</span>             <span class="c1"># "写"出title文字</span>
+            <span class="n">FadeInFrom</span><span class="p">(</span><span class="n">basel</span><span class="p">,</span> <span class="n">UP</span><span class="p">),</span>    <span class="c1"># 将basel公式从上方淡入</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>  <span class="c1"># 停顿一秒</span>
+
+        <span class="n">transform_title</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span><span class="s2">"That was a transform"</span><span class="p">)</span>
+        <span class="n">transform_title</span><span class="o">.</span><span class="n">to_corner</span><span class="p">(</span><span class="n">UP</span> <span class="o">+</span> <span class="n">LEFT</span><span class="p">)</span> <span class="c1"># 放到最左上角</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+            <span class="n">Transform</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">transform_title</span><span class="p">),</span> <span class="c1"># 将title变换为transform_title</span>
+            <span class="n">LaggedStart</span><span class="p">(</span><span class="o">*</span><span class="nb">map</span><span class="p">(</span><span class="n">FadeOutAndShiftDown</span><span class="p">,</span> <span class="n">basel</span><span class="p">)),</span> <span class="c1"># 将basel公式中的每个字符依次从下方淡出</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>  <span class="c1"># 停顿一秒</span>
+
+        <span class="n">grid</span> <span class="o">=</span> <span class="n">NumberPlane</span><span class="p">()</span>  <span class="c1"># 构建一个坐标平面</span>
+        <span class="n">grid_title</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span><span class="s2">"This is a grid"</span><span class="p">)</span>
+        <span class="n">grid_title</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span>
+        <span class="n">grid_title</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">transform_title</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">grid_title</span><span class="p">)</span>  <span class="c1"># 确保grid_title在grid上方</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+            <span class="n">FadeOut</span><span class="p">(</span><span class="n">title</span><span class="p">),</span>               <span class="c1"># 淡出title</span>
+            <span class="n">FadeInFromDown</span><span class="p">(</span><span class="n">grid_title</span><span class="p">),</span>   <span class="c1"># 从下方淡入grid_title</span>
+            <span class="n">ShowCreation</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">run_time</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">lag_ratio</span><span class="o">=</span><span class="mf">0.1</span><span class="p">),</span> <span class="c1"># 创建grid的动画，时长为3，延迟为10%</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+
+        <span class="n">grid_transform_title</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span>
+            <span class="s2">"That was a non-linear function </span><span class="se">\\\\</span><span class="s2">"</span>
+            <span class="s2">"applied to the grid"</span>
+        <span class="p">)</span>
+        <span class="n">grid_transform_title</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">grid_title</span><span class="p">,</span> <span class="n">UL</span><span class="p">)</span>
+        <span class="n">grid</span><span class="o">.</span><span class="n">prepare_for_nonlinear_transform</span><span class="p">()</span> <span class="c1"># 让grid准备进行非线性变换</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+            <span class="n">grid</span><span class="o">.</span><span class="n">apply_function</span><span class="p">,</span>       <span class="c1"># 对grid施加一个函数，实现非线性变换</span>
+            <span class="k">lambda</span> <span class="n">p</span><span class="p">:</span> <span class="n">p</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>   <span class="c1"># 输入值为一个点，返回值也为一个点</span>
+                <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span>
+                <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span>
+                <span class="mi">0</span><span class="p">,</span>
+            <span class="p">]),</span>
+            <span class="n">run_time</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+            <span class="n">Transform</span><span class="p">(</span><span class="n">grid_title</span><span class="p">,</span> <span class="n">grid_transform_title</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+</div></section>
+</section>
+
+      </article>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="command.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">运行命令</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="index.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">快速入门</div>
+                
+              </div>
+            </a>
+        </div>
+
+        <div class="related-information">
+          <span class="copyright">版权所有 &copy; 2020-2021 Manim Kindergarten Team</span> |
+          Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using
+          <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+          <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            目录
+          </span>
+        </div>
+        <div class="toc-tree">
+          <ul>
+<li><a class="reference internal" href="#">案例学习</a><ul>
+<li><a class="reference internal" href="#squaretocircle">方变圆SquareToCircle</a></li>
+<li><a class="reference internal" href="#warpsquare">扭曲正方形WarpSquare</a></li>
+<li><a class="reference internal" href="#writestuff">书写文字WriteStuff</a></li>
+<li><a class="reference internal" href="#updatersexample">更新程序UpdatersExample</a></li>
+<li><a class="reference internal" href="#openingmanimexample">整体示例OpeningManimExample</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+      
+      
+    </aside>
+  </main>
+</div>
+  </body>
+</html>

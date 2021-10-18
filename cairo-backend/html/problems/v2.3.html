@@ -1,0 +1,910 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="练习部分(TODO)" href="../homework/index.html" /><link rel="prev" title="常见问题" href="index.html" />
+
+    <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
+        <title>安装问题 - manim  文档</title>
+      <link rel="stylesheet" href="../_static/copybutton.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/custom.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/colors.css" />
+    <link rel="stylesheet" href="../_static/styles/default.css?68494a3768817c4adbaf2bbf">
+    <link rel="stylesheet" href="../_static/pygments.css?68494a3768817c4adbaf2bbf">
+    
+<style>
+  :root {
+    --color-code-background: #f8f8f8;
+    --color-code-foreground: #000000;
+  
+  }
+</style>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script><script src="../_static/jquery.js"></script>
+      <script src="../_static/underscore.js"></script>
+      
+        <script src="../_static/doctools.js" defer></script>
+      
+        <script src="../_static/language_data.js" defer></script>
+      
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?68494a3768817c4adbaf2bbf"></script></head>
+  <body dir="">
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke-width="1.5" stroke="#101010" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z"/>
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+
+<div class="page">
+  <header class="mobile-header">
+    <label class="header-left nav-overlay-icon" for="__navigation">
+      <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+    </label>
+    <div class="header-center"><div class="brand">manim  文档</div></div>
+    <div class="header-right"></div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand centered" href="../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="../_static/Logo_white.png" alt="Logo"/>
+  </div>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html">
+  <input class="sidebar-search" placeholder="Search" name="q">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form><div class="sidebar-tree sidebar-scroll">
+  <p><span class="caption-text">入门教程向</span></p>
+<ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../installation/index.html">安装指南</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../installation/linux.html">Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/mac.html">Mac</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/windows.html">Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/ffmpeg.html">附：ffmpeg相关用法</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../getting_started/index.html">快速入门</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label for="toctree-checkbox-2"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/examples.html">案例学习</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/command.html">运行命令</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/config.html">CONFIG字典用法</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/structure.html">manim结构</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">常见问题</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">安装问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">运行时问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id14">其它问题</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../homework/index.html">练习部分(TODO)</a></li>
+</ul>
+<p><span class="caption-text">进阶文档向</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../container/index.html">属性容器container</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../animation/index.html">动画部分animation</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label for="toctree-checkbox-4"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../animation/creation.html">Creation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/fading.html">Fading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/growing.html">Growing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/indication.html">Indication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/movement.html">Movement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/numbers.html">Numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/rotation.html">Rotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/transform.html">Transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/update.html">Update</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/composition.html">Composition</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mobject/index.html">物体部分mobject</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label for="toctree-checkbox-5"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/mobject.html">数学物品Mobject</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../mobject/types/index.html">三种物体基类types</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label for="toctree-checkbox-6"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/types/vectorized_mobject.html">VMobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/types/point_cloud_mobject.html">PMobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/types/image_mobject.html">ImageMobject</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../mobject/svg/index.html">SVG图像相关物体svg</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/svg_mobject.html">SVGMobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/tex_mobject.html">TexMobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/text_mobject.html">Text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/code_mobject.html">Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/brace.html">Brace</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/changing.html">Changing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/coordinate_systems.html">CoordinateSystems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/frame.html">Frame</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/geometry.html">Geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/matrix.html">Matrix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/mobject_update_utils.html">MobjectUpdateUtils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/number_line.html">NumberLine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/numbers.html">Numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/probability.html">Probability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/shape_matchers.html">ShapeMatchers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/three_d_shading_utils.html">ThreeDShadingUtils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/three_d_utils.html">ThreeDUtils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/three_dimensions.html">ThreeDimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/value_tracker.html">ValueTracker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/vector_field.html">VectorField</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../camera/index.html">相机部分camera</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label for="toctree-checkbox-8"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../camera/camera.html">Camera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../camera/mapping_camera.html">MappingCamera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../camera/moving_camera.html">MovingCamera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../camera/multi_camera.html">MultiCamera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../camera/three_d_camera.html">ThreeDCamera</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../scene/index.html">场景部分scene(TODO)</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label for="toctree-checkbox-9"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scene/scene.html">Scene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/scene_file_writer.html">SceneFileWriter(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/moving_camera_scene.html">MovingCameraScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/zoomed_scene.html">ZoomedScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/graph_scene.html">GraphScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/three_d_scene.html">ThreeDScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/reconfigurable_scene.html">ReconfigurableScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/vector_space_scene.html">VectorScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/sample_space_scene.html">SampleSpaceScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/scene_from_video.html">SceneFromVideo(TODO)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../utils/index.html">工具函数utils</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label for="toctree-checkbox-10"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../utils/bezier.html">Bezier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/color.html">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/config_ops.html">CONFIG_ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/file_ops.html">FILE_ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/images.html">Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/iterables.html">Iterables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/paths.html">Paths</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/rate_functions.html">Rate_functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/simple_functions.html">Simple_functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/sounds.html">Sounds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/space_ops.html">Space_ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/strings.html">Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/tex_file_writing.html">Tex_file_writing</a></li>
+</ul>
+</li>
+</ul>
+<p><span class="caption-text">杂项</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../manim_sandbox/index.html">manim_sandbox中的自定义类</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label for="toctree-checkbox-11"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../manim_sandbox/functions.html">自定义工具函数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manim_sandbox/mobjects.html">自定义物体</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manim_sandbox/scenes.html">自定义场景</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manim_sandbox/animations.html">自定义动画</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../contribution.html">贡献规则及编写指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">关于</a></li>
+</ul>
+
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <main class="main">
+    <div class="content">
+      <article role="main">
+        <label class="toc-overlay-icon" for="__toc">
+          <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        </label>
+        <section id="id1">
+<h1>安装问题<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>安装时最好不要看<code class="docutils literal notranslate"><span class="pre">README.md</span></code>自己研究，
+推荐一视数学卷毛杨的两个教程：</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.bilibili.com/video/av38126904">https://www.bilibili.com/video/av38126904</a></p></li>
+<li><p><a class="reference external" href="https://www.bilibili.com/read/cv4139851">https://www.bilibili.com/read/cv4139851</a></p></li>
+</ul>
+<section id="python">
+<h2><code class="docutils literal notranslate"><span class="pre">Python</span></code>问题<a class="headerlink" href="#python" title="永久链接至标题">¶</a></h2>
+<section id="q1-anaconda-python">
+<h3>Q1: 使用<code class="docutils literal notranslate"><span class="pre">anaconda</span></code>，命令行输入<code class="docutils literal notranslate"><span class="pre">python</span></code>无反应或报错<a class="headerlink" href="#q1-anaconda-python" title="永久链接至标题">¶</a></h3>
+<p>考虑<code class="docutils literal notranslate"><span class="pre">path</span></code>环境变量是否填全 <a class="footnote-reference brackets" href="#id26" id="id2">1</a>，<code class="docutils literal notranslate"><span class="pre">path</span></code>变量里应该有：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">your_path</span><span class="o">&gt;</span>\<span class="n">Anaconda3</span><span class="p">;</span>
+<span class="o">&lt;</span><span class="n">your_path</span><span class="o">&gt;</span>\<span class="n">Anaconda3</span>\<span class="n">Scripts</span><span class="p">;</span>
+<span class="o">&lt;</span><span class="n">your_path</span><span class="o">&gt;</span>\<span class="n">Anaconda3</span>\<span class="n">Library</span>\<span class="nb">bin</span><span class="p">;</span>
+</pre></div>
+</div>
+</section>
+<section id="q2-pip-install">
+<h3>Q2: <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">...</span></code>时满屏红字报错，或者安装过慢<a class="headerlink" href="#q2-pip-install" title="永久链接至标题">¶</a></h3>
+<p>更换国内镜像源，使用</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span> <span class="o">-</span><span class="n">i</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">pypi</span><span class="o">.</span><span class="n">tuna</span><span class="o">.</span><span class="n">tsinghua</span><span class="o">.</span><span class="n">edu</span><span class="o">.</span><span class="n">cn</span><span class="o">/</span><span class="n">simple</span>
+</pre></div>
+</div>
+<p>代替 <a class="footnote-reference brackets" href="#id27" id="id3">2</a></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+</section>
+<section id="q3-pippycairo">
+<h3>Q3: <code class="docutils literal notranslate"><span class="pre">pip</span></code>安装<code class="docutils literal notranslate"><span class="pre">pycairo</span></code>总是失败<a class="headerlink" href="#q3-pippycairo" title="永久链接至标题">¶</a></h3>
+<p>下载<code class="docutils literal notranslate"><span class="pre">pycairo</span></code>对应版本的<code class="docutils literal notranslate"><span class="pre">whl</span></code>包  <a class="footnote-reference brackets" href="#id28" id="id4">3</a></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pycairo</span><span class="o">......</span><span class="n">whl</span>
+</pre></div>
+</div>
+<p>并手动安装</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">pycairo</span><span class="o">......</span><span class="n">whl</span>
+</pre></div>
+</div>
+</section>
+<section id="q4-pip">
+<h3>Q4: <code class="docutils literal notranslate"><span class="pre">pip</span></code>安装过包，但运行时提示没有模块<a class="headerlink" href="#q4-pip" title="永久链接至标题">¶</a></h3>
+<p>考虑电脑上是否有多个<code class="docutils literal notranslate"><span class="pre">Python</span></code>，确定<code class="docutils literal notranslate"><span class="pre">pip</span></code>把包装到了需要使用的<code class="docutils literal notranslate"><span class="pre">Python</span></code>上面。</p>
+</section>
+<section id="q5-scipy">
+<h3>Q5: 关于<code class="docutils literal notranslate"><span class="pre">scipy</span></code>有报错<a class="headerlink" href="#q5-scipy" title="永久链接至标题">¶</a></h3>
+<p>可能是版本不对，使用<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">uninstall</span></code>后重新<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">scipy</span></code></p>
+</section>
+</section>
+</section>
+<section id="id5">
+<h1>运行时问题<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h1>
+<section id="import">
+<h2><code class="docutils literal notranslate"><span class="pre">import</span></code>问题<a class="headerlink" href="#import" title="永久链接至标题">¶</a></h2>
+<section id="q1-big-ol-pile-of-manim-imports">
+<h3>Q1: 没有模块<code class="docutils literal notranslate"><span class="pre">big_ol_pile_of_manim_imports</span></code><a class="headerlink" href="#q1-big-ol-pile-of-manim-imports" title="永久链接至标题">¶</a></h3>
+<p>将文件中的</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">big_ol_pile_of_manim_imports</span> <span class="k">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>改成</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="k">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="latex">
+<h2>LaTeX问题<a class="headerlink" href="#latex" title="永久链接至标题">¶</a></h2>
+<section id="q1-latex-error-converting-to-dvi">
+<h3>Q1: 报错<code class="docutils literal notranslate"><span class="pre">Latex</span> <span class="pre">error</span> <span class="pre">converting</span> <span class="pre">to</span> <span class="pre">dvi</span></code><a class="headerlink" href="#q1-latex-error-converting-to-dvi" title="永久链接至标题">¶</a></h3>
+<p>先不要管错误在哪，先把<code class="docutils literal notranslate"><span class="pre">manimlib/constants.py</span></code>中的<code class="docutils literal notranslate"><span class="pre">TEX_USE_CTEX</span></code>改成<code class="docutils literal notranslate"><span class="pre">True</span></code>再运行</p>
+</section>
+<section id="q2-xelatex-error-converting-to-xdv">
+<span id="sub-q2"></span><h3>Q2: 报错 <code class="docutils literal notranslate"><span class="pre">xelatex</span> <span class="pre">error</span> <span class="pre">converting</span> <span class="pre">to</span> <span class="pre">xdv</span></code><a class="headerlink" href="#q2-xelatex-error-converting-to-xdv" title="永久链接至标题">¶</a></h3>
+<p>若为<code class="docutils literal notranslate"><span class="pre">Windows</span></code>系统，先把<code class="docutils literal notranslate"><span class="pre">manimlib/constants.py</span></code>的第29行：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MEDIA_DIR</span> <span class="o">=</span> <span class="s2">"./media"</span>
+</pre></div>
+</div>
+<p>改成</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MEDIA_DIR</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">(),</span> <span class="s2">"media"</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>再进行尝试</p>
+<ol class="upperroman">
+<li><p><strong>若安装的TeX发行版为MiKTeX</strong></p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">MiKTeX</span></code>的有关路径是否添加到环境变量中</p></li>
+<li><p>是否有包没有装全</p></li>
+</ol>
+<div class="line-block">
+<div class="line">对于<code class="docutils literal notranslate"><span class="pre">2.</span></code>，可以正常运行一遍<code class="docutils literal notranslate"><span class="pre">WriteStuff</span></code>场景，看是否有框弹出提示<code class="docutils literal notranslate"><span class="pre">install</span></code>什么东西，
+如果有，则<code class="docutils literal notranslate"><span class="pre">install</span></code>，并重复运行安装运行安装…直到不报错为止。</div>
+<div class="line">或者使用TeX编辑器<code class="docutils literal notranslate"><span class="pre">TeXStudio</span></code>
+并使用<code class="docutils literal notranslate"><span class="pre">xelatex</span></code>手动编译<code class="docutils literal notranslate"><span class="pre">media/Tex</span></code>文件夹中的
+<code class="docutils literal notranslate"><span class="pre">.tex</span></code>文件，查看是否有包没有安装。</div>
+</div>
+<p>对于没有<code class="docutils literal notranslate"><span class="pre">1.</span></code>和<code class="docutils literal notranslate"><span class="pre">2.</span></code>问题却依旧报错的，可以选择重新安装新版<code class="docutils literal notranslate"><span class="pre">MiKTeX</span></code>或者安装<code class="docutils literal notranslate"><span class="pre">TeXLive-full</span></code>版。</p>
+</li>
+<li><p><strong>若安装的TeX发行版为TeXLive</strong></p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">TeXLive</span></code>有关路径是否添加到环境变量中</p></li>
+<li><p>安装的是否为<code class="docutils literal notranslate"><span class="pre">full</span></code>版本</p></li>
+</ol>
+</li>
+<li><p><strong>若安装的TeX发行版不为以上两款</strong></p>
+<p>建议换成<code class="docutils literal notranslate"><span class="pre">TeXLive-full</span></code>版或者<code class="docutils literal notranslate"><span class="pre">MiKTeX</span></code>，并且在重新安装前请删除旧版</p>
+</li>
+</ol>
+</section>
+<section id="q3-svg">
+<h3>Q3: 报错在文件夹内找不到<code class="docutils literal notranslate"><span class="pre">svg</span></code>文件<a class="headerlink" href="#q3-svg" title="永久链接至标题">¶</a></h3>
+<p>清空<code class="docutils literal notranslate"><span class="pre">media/Tex</span></code>文件夹内全部内容，再次运行带文字的场景，查看<code class="docutils literal notranslate"><span class="pre">Tex</span></code>文件夹中的内容：</p>
+<ol class="upperroman">
+<li><p>若仅有<code class="docutils literal notranslate"><span class="pre">tex</span></code>文件和<code class="docutils literal notranslate"><span class="pre">log</span></code>文件,按照<code class="docutils literal notranslate"><span class="pre">[sub:Q2]</span></code>中方法处理</p></li>
+<li><p>若含有<code class="docutils literal notranslate"><span class="pre">xdv</span></code>文件但没有<code class="docutils literal notranslate"><span class="pre">svg</span></code>文件</p>
+<ol class="arabic">
+<li><p><code class="docutils literal notranslate"><span class="pre">divsvgm</span></code>是否添加到环境变量，可以使用<code class="docutils literal notranslate"><span class="pre">dvisvgm</span> <span class="pre">–version</span></code>观察是否由报错来检查</p></li>
+<li><div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">dvisvgm</span></code>版本是否过低，若<code class="docutils literal notranslate"><span class="pre">dvisvgm</span> <span class="pre">–verison</span></code>的输出版本号为1开头，</div>
+<div class="line">请更换新版<code class="docutils literal notranslate"><span class="pre">dvisvgm</span></code> <a class="footnote-reference brackets" href="#id29" id="id6">4</a>，并注意将含有<code class="docutils literal notranslate"><span class="pre">dvisvgm</span></code>的文件夹添加到环境变量中</div>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</section>
+</section>
+<section id="id7">
+<h2>中文显示问题<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+<section id="q1-textmobject-latex-error-converting-to-dvi">
+<h3>Q1: 含有中文的<code class="docutils literal notranslate"><span class="pre">TextMobject</span></code>编译报错，<code class="docutils literal notranslate"><span class="pre">Latex</span> <span class="pre">error</span> <span class="pre">converting</span> <span class="pre">to</span> <span class="pre">dvi</span></code><a class="headerlink" href="#q1-textmobject-latex-error-converting-to-dvi" title="永久链接至标题">¶</a></h3>
+<p>将<code class="docutils literal notranslate"><span class="pre">manimlib/constants.py</span></code>中的<code class="docutils literal notranslate"><span class="pre">TEX_USE_CTEX</span></code>改成<code class="docutils literal notranslate"><span class="pre">True</span></code>再尝试</p>
+</section>
+<section id="q2">
+<h3>Q2: 英文可以正常显示，中文不报错，但不显示<a class="headerlink" href="#q2" title="永久链接至标题">¶</a></h3>
+<p>考虑使用的是否为<code class="docutils literal notranslate"><span class="pre">TextMobject</span></code>而不是<code class="docutils literal notranslate"><span class="pre">TexMobject</span></code></p>
+</section>
+</section>
+<section id="id8">
+<h2>文字问题<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
+<section id="q1-textmobjecttexmobject">
+<h3>Q1: <code class="docutils literal notranslate"><span class="pre">TextMobject</span></code>和<code class="docutils literal notranslate"><span class="pre">TexMobject</span></code>有什么区别<a class="headerlink" href="#q1-textmobjecttexmobject" title="永久链接至标题">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">TextMobject</span></code>和<code class="docutils literal notranslate"><span class="pre">TexMobject</span></code>使用的都是LaTeX语法</p>
+<p>其中<code class="docutils literal notranslate"><span class="pre">TextMobject</span></code>文字模式相当于直接在LaTeX环境下书写</p>
+<p><code class="docutils literal notranslate"><span class="pre">TexMobject</span></code>公式模式使用的是LaTeX的 <code class="docutils literal notranslate"><span class="pre">\begin{align*}</span></code>
+环境或者可以看成加了<span class="math notranslate nohighlight">\(\texttt{\$}\texttt{\$}\)</span>的环境</p>
+<p>使用<code class="docutils literal notranslate"><span class="pre">TextMobject</span></code>与<code class="docutils literal notranslate"><span class="pre">TexMobject</span></code>书写公式时：</p>
+</section>
+<section id="q2-textmobject">
+<h3>Q2: <code class="docutils literal notranslate"><span class="pre">TextMobject</span></code>中怎么改字体样式<a class="headerlink" href="#q2-textmobject" title="永久链接至标题">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">TextMobject</span></code>中只能使用LaTeX的字体样式</p>
+<p>字体常用样式命令见表：</p>
+<div class="table-wrapper"><table class="docutils align-default">
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 24%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>字体样式</p></th>
+<th class="head"><p>LaTeX命令</p></th>
+<th class="head"><p>字体样式</p></th>
+<th class="head"><p>LaTeX命令</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>roman</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\textrm{…}</span></code></p></td>
+<td><p><strong>bold face</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\textbf{…}</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>sans serif</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\textsf{…}</span></code></p></td>
+<td><p>medium weight</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\textmd{…}</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">typewriter</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\texttt{…}</span></code></p></td>
+<td><p><em>italic</em></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\textit{…}</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Small Caps</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\textsc{…}</span></code></p></td>
+<td><p><em>slanted</em></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\textsl{…}</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>upright</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\textup{…}</span></code></p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>严格地讲中文字体并没有衬线、无衬线、等宽、斜体等概念</p>
+</section>
+<section id="q3">
+<h3>Q3: 想自定义字体怎么办<a class="headerlink" href="#q3" title="永久链接至标题">¶</a></h3>
+<p>使用新版<code class="docutils literal notranslate"><span class="pre">manim</span></code>特有的<code class="docutils literal notranslate"><span class="pre">Text()</span></code>类，
+方法如下<code class="docutils literal notranslate"><span class="pre">Text("文字",</span> <span class="pre">font="字体")</span></code>，
+其中字体要填写在计算机内存储的格式 <a class="footnote-reference brackets" href="#id30" id="id9">5</a>，但是不能使用LaTeX语法书写公式</p>
+</section>
+<section id="q4">
+<h3>Q4: 想用自定义字体写公式怎么办<a class="headerlink" href="#q4" title="永久链接至标题">¶</a></h3>
+<p>可以使用群文件里<code class="docutils literal notranslate"><span class="pre">cigar666</span></code>编写的<code class="docutils literal notranslate"><span class="pre">MyText()</span></code>类</p>
+</section>
+<section id="q5-texmobject">
+<h3>Q5: <code class="docutils literal notranslate"><span class="pre">TexMobject</span></code>中换行是什么<a class="headerlink" href="#q5-texmobject" title="永久链接至标题">¶</a></h3>
+<p>四个右划线<code class="docutils literal notranslate"><span class="pre">\\\\</span></code>，
+<code class="docutils literal notranslate"><span class="pre">Python</span></code>转义右划线，所以涉及到<code class="docutils literal notranslate"><span class="pre">\</span></code>的均要写成两个<code class="docutils literal notranslate"><span class="pre">\\</span></code>，
+而换行在LaTeX中是两个右划线，所以要写成四个 <a class="footnote-reference brackets" href="#id31" id="id10">6</a></p>
+</section>
+<section id="q6">
+<h3>Q6: 公式怎么对齐<a class="headerlink" href="#q6" title="永久链接至标题">¶</a></h3>
+<ol class="upperroman simple">
+<li><p>直接在<code class="docutils literal notranslate"><span class="pre">TexMobject</span></code>中使用<code class="docutils literal notranslate"><span class="pre">&amp;</span></code>对齐</p></li>
+<li><p>两个<code class="docutils literal notranslate"><span class="pre">mobject</span></code>对齐，使用<code class="docutils literal notranslate"><span class="pre">obj2.next_to(obj1,</span> <span class="pre">DOWN,</span> <span class="pre">aligned_edge=LEFT)</span></code>使<code class="docutils literal notranslate"><span class="pre">obj2</span></code>在<code class="docutils literal notranslate"><span class="pre">obj1</span></code>下方，并左对齐</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">VGroup</span></code>内对齐，使用<code class="docutils literal notranslate"><span class="pre">group.arrange(DOWN,</span> <span class="pre">aligned_edge=LEFT)</span></code>使<code class="docutils literal notranslate"><span class="pre">VGroup</span></code>中的子元素依次向下排开，并左对齐</p></li>
+</ol>
+<p>写公式的示例：</p>
+<p><a class="reference external" href="https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/3_text_like_arrays/scenes.md">https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/3_text_like_arrays/scenes.md</a></p>
+</section>
+<section id="q7-texmobject">
+<h3>Q7: <code class="docutils literal notranslate"><span class="pre">TexMobject</span></code>上色问题的处理办法<a class="headerlink" href="#q7-texmobject" title="永久链接至标题">¶</a></h3>
+<ol class="upperroman simple">
+<li><p>将上色的字符分开，使用<code class="docutils literal notranslate"><span class="pre">text[i].set_color(color)</span></code> 来上色</p></li>
+<li><p>将上色的字符分开，使用<code class="docutils literal notranslate"><span class="pre">text.set_color_by_tex_to_color_map(t2c)</span></code>传入<code class="docutils literal notranslate"><span class="pre">t2c</span></code>字典来对相同的字符串上色</p></li>
+<li><p>只传入一个字符串，但同时传入<code class="docutils literal notranslate"><span class="pre">tex_to_color_map=t2c</span></code>来自动拆分上色(容易出问题)</p></li>
+<li><p>只传入一个字符串，使用<code class="docutils literal notranslate"><span class="pre">text[0][i]</span></code>来对细小的路径上色(一般是一个字符一个下标)</p></li>
+</ol>
+</section>
+<section id="q8-texmobject">
+<h3>Q8: <code class="docutils literal notranslate"><span class="pre">TexMobject</span></code>的下标怎么分析<a class="headerlink" href="#q8-texmobject" title="永久链接至标题">¶</a></h3>
+<ol class="upperroman simple">
+<li><p>使用<code class="docutils literal notranslate"><span class="pre">debugTeX</span></code> <a class="footnote-reference brackets" href="#id32" id="id11">7</a>,先<code class="docutils literal notranslate"><span class="pre">self.add(tex)</span></code>然后再<code class="docutils literal notranslate"><span class="pre">debugTeX(self,</span> <span class="pre">tex)</span></code>，
+导出最后一帧 <a class="footnote-reference brackets" href="#id33" id="id12">8</a>，观察每段字符上的标号，即为下标</p></li>
+<li><p>使用自带的函数<code class="docutils literal notranslate"><span class="pre">get_submobject_index_labels</span></code>获取下标的<code class="docutils literal notranslate"><span class="pre">VGroup</span></code>，然后添加</p></li>
+</ol>
+</section>
+<section id="q9-texmobject-frac">
+<h3>Q9: <code class="docutils literal notranslate"><span class="pre">TexMobject</span></code>使用 <code class="docutils literal notranslate"><span class="pre">\frac</span></code> 拆分时出错<a class="headerlink" href="#q9-texmobject-frac" title="永久链接至标题">¶</a></h3>
+<p>这个是<code class="docutils literal notranslate"><span class="pre">Grant</span></code>写<code class="docutils literal notranslate"><span class="pre">tex_file_writing.py</span></code> 的一个<code class="docutils literal notranslate"><span class="pre">bug</span></code>，
+建议使用<code class="docutils literal notranslate"><span class="pre">{</span></code>分子 <code class="docutils literal notranslate"><span class="pre">\over</span></code>分母<code class="docutils literal notranslate"><span class="pre">}</span></code> 来代替
+<code class="docutils literal notranslate"><span class="pre">\frac{</span></code>分子<code class="docutils literal notranslate"><span class="pre">}{</span></code>分母<code class="docutils literal notranslate"><span class="pre">}</span></code></p>
+</section>
+<section id="q10">
+<h3>Q10: 括号匹配不全<a class="headerlink" href="#q10" title="永久链接至标题">¶</a></h3>
+<p>显示不全的例子</p>
+<div class="math-wrapper"><div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+a+b\\
+b+a
+\end{cases}\end{split}\]</div></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">TexMobject</span><span class="p">(</span><span class="sa">r</span><span class="s2">"\left\{\begin</span><span class="si">{matrix}</span><span class="s2"> a+b </span><span class="se">\\</span><span class="s2"> b+a </span><span class="se">\\</span><span class="s2"> \end</span><span class="si">{matrix}</span><span class="s2">\right."</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">matrix</span></code>这样的写法在<code class="docutils literal notranslate"><span class="pre">manim</span></code>中会报错，无法生成<code class="docutils literal notranslate"><span class="pre">dvi</span></code>，
+原因是<code class="docutils literal notranslate"><span class="pre">manim</span></code>会自动寻找相对应的括号来匹配，这里缺少了右边的大括号</p>
+<p>所以推荐使用<code class="docutils literal notranslate"><span class="pre">cases</span></code>环境,效果是一样的：</p>
+<div class="math-wrapper"><div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+ a+b \\
+ b+a \\
+\end{cases}\end{split}\]</div></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">TexMobject</span><span class="p">(</span><span class="sa">r</span><span class="s2">"\begin</span><span class="si">{cases}</span><span class="s2"> a+b </span><span class="se">\\</span><span class="s2"> b+a </span><span class="se">\\</span><span class="s2"> \end</span><span class="si">{cases}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="id13">
+<h2>素材引用问题<a class="headerlink" href="#id13" title="永久链接至标题">¶</a></h2>
+<section id="q1-svgmobjectsvg">
+<h3>Q1: 使用<code class="docutils literal notranslate"><span class="pre">SVGMobject</span></code>找不到<code class="docutils literal notranslate"><span class="pre">svg</span></code>文件<a class="headerlink" href="#q1-svgmobjectsvg" title="永久链接至标题">¶</a></h3>
+<ol class="upperroman simple">
+<li><p>直接使用绝对路径引用<code class="docutils literal notranslate"><span class="pre">svg</span></code>文件</p></li>
+<li><p>将<code class="docutils literal notranslate"><span class="pre">svg</span></code>文件放到<code class="docutils literal notranslate"><span class="pre">assets/svg_images/</span></code>文件夹中</p></li>
+</ol>
+</section>
+<section id="q2-jpgpng">
+<h3>Q2: 如何使用<code class="docutils literal notranslate"><span class="pre">jpg</span></code>或者<code class="docutils literal notranslate"><span class="pre">png</span></code>文件<a class="headerlink" href="#q2-jpgpng" title="永久链接至标题">¶</a></h3>
+<ol class="upperroman simple">
+<li><p>直接使用绝对路径引用，并使用<code class="docutils literal notranslate"><span class="pre">ImageMobject</span></code></p></li>
+<li><p>将<code class="docutils literal notranslate"><span class="pre">jpg/png</span></code>文件放到<code class="docutils literal notranslate"><span class="pre">assets/raster_images/</span></code>文件夹中</p></li>
+</ol>
+</section>
+<section id="q3-gif">
+<h3>Q3: 能否导入<code class="docutils literal notranslate"><span class="pre">gif</span></code>文件<a class="headerlink" href="#q3-gif" title="永久链接至标题">¶</a></h3>
+<p>可以使用<code class="docutils literal notranslate"><span class="pre">ImageMobject</span></code>导入，但是只保留第一帧，不会显示动图</p>
+</section>
+</section>
+</section>
+<section id="id14">
+<h1>其它问题<a class="headerlink" href="#id14" title="永久链接至标题">¶</a></h1>
+<section id="q1-manim">
+<h2>Q1: 有什么manim教程<a class="headerlink" href="#q1-manim" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://github.com/manim-kindergarten/manim">https://github.com/manim-kindergarten/manim</a>这里的<code class="docutils literal notranslate"><span class="pre">README</span></code>文件中也有整合</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">MK</span></code>制作的系列视频教程（制作中）</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://space.bilibili.com/171431343/favlist?fid=947158443">https://space.bilibili.com/171431343/favlist?fid=947158443</a></p></li>
+</ul>
+</li>
+<li><p>群主<code class="docutils literal notranslate"><span class="pre">cigar666</span></code>的B站专栏</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.bilibili.com/read/readlist/rl82339">https://www.bilibili.com/read/readlist/rl82339</a></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pdcxs</span></code>大大转载的<code class="docutils literal notranslate"><span class="pre">manim</span></code>教程</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.bilibili.com/video/av64023740">https://www.bilibili.com/video/av64023740</a></p></li>
+<li><p>源码 <a class="reference external" href="https://github.com/Elteoremadebeethoven/AnimationsWithManim">https://github.com/Elteoremadebeethoven/AnimationsWithManim</a></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">GitHub</span></code>上<code class="docutils literal notranslate"><span class="pre">cai-hust</span></code>的中文教程</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/cai-hust/manim-tutorial-CN">https://github.com/cai-hust/manim-tutorial-CN</a></p></li>
+</ul>
+</li>
+<li><p>看<code class="docutils literal notranslate"><span class="pre">manim</span></code>源码</p></li>
+</ol>
+</section>
+<section id="q2-manim">
+<h2>Q2: 没有<code class="docutils literal notranslate"><span class="pre">manim</span></code>源码<a class="headerlink" href="#q2-manim" title="永久链接至标题">¶</a></h2>
+<p>最好不要使用<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">manimlib</span></code>来装<code class="docutils literal notranslate"><span class="pre">manim</span></code>，请在<code class="docutils literal notranslate"><span class="pre">GitHub</span></code>上<code class="docutils literal notranslate"><span class="pre">clone</span></code>下来<code class="docutils literal notranslate"><span class="pre">manim</span></code>的全部内容，
+可以选择<code class="docutils literal notranslate"><span class="pre">MK</span></code>修改的版本：<a class="reference external" href="https://github.com/manim-kindergarten/manim">https://github.com/manim-kindergarten/manim</a></p>
+</section>
+<section id="q3-manim">
+<h2>Q3: 群友用的<code class="docutils literal notranslate"><span class="pre">manim</span></code>都是什么版本<a class="headerlink" href="#q3-manim" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">manim</span></code>不看版本，一般使用的都是最新库，<code class="docutils literal notranslate"><span class="pre">release</span></code>里面带版本号的都可以看作旧版</p>
+</section>
+<section id="id15">
+<h2>Q4: 如何使用傅里叶级数作图<a class="headerlink" href="#id15" title="永久链接至标题">¶</a></h2>
+<p>套用 Grant 写好的文件</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">from_3b1b</span><span class="o">/</span><span class="n">active</span><span class="o">/</span><span class="n">diffyq</span><span class="o">/</span><span class="n">part2</span><span class="o">/</span><span class="n">fourier_series</span><span class="o">.</span><span class="n">py</span>
+<span class="n">from_3b1b</span><span class="o">/</span><span class="n">active</span><span class="o">/</span><span class="n">diffyq</span><span class="o">/</span><span class="n">part4</span><span class="o">/</span><span class="n">fourier_series_scenes</span><span class="o">.</span><span class="n">py</span>
+<span class="n">from_3b1b</span><span class="o">/</span><span class="n">active</span><span class="o">/</span><span class="n">diffyq</span><span class="o">/</span><span class="n">part4</span><span class="o">/</span><span class="n">long_fourier_series</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+</section>
+<section id="q5">
+<h2>Q5: 傅里叶级数作图如何调整时长<a class="headerlink" href="#q5" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">CONFIG</span></code>中<code class="docutils literal notranslate"><span class="pre">run_time</span></code>无法控制，使用<code class="docutils literal notranslate"><span class="pre">slow_factor</span></code>和<code class="docutils literal notranslate"><span class="pre">n_cycles</span></code>来控制</p>
+<p><span class="math notranslate nohighlight">\(\mathtt{\dfrac{1}{slow\_factor}}\)</span>为一个循环的时间，<code class="docutils literal notranslate"><span class="pre">n_cycles</span></code>为循环的个数</p>
+<p>只需要更换<code class="docutils literal notranslate"><span class="pre">svg</span></code>素材即可 <a class="footnote-reference brackets" href="#id34" id="id16">9</a></p>
+</section>
+<section id="q6-svg">
+<h2>Q6: <code class="docutils literal notranslate"><span class="pre">svg</span></code>用什么软件制作<a class="headerlink" href="#q6-svg" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Adobe</span> <span class="pre">Illustrator</span></code>(简称 AI)或者<code class="docutils literal notranslate"><span class="pre">inkscape</span></code>(简称 ink)</p>
+<p>尽量不要使用网页版编辑器</p>
+<p>目前<code class="docutils literal notranslate"><span class="pre">manim</span></code>对<code class="docutils literal notranslate"><span class="pre">SVG</span></code>的解析很局限，推荐使用<code class="docutils literal notranslate"><span class="pre">AI</span></code>导出</p>
+</section>
+<section id="q7">
+<h2>Q7: 动画怎么显示旋转一个物体<a class="headerlink" href="#q7" title="永久链接至标题">¶</a></h2>
+<p>使用<code class="docutils literal notranslate"><span class="pre">Ratate</span></code>和<code class="docutils literal notranslate"><span class="pre">Rotating</span></code>，区别在群文件中有视频</p>
+</section>
+<section id="q8-transformreplacementtransform">
+<h2>Q8: <code class="docutils literal notranslate"><span class="pre">Transform</span></code>和<code class="docutils literal notranslate"><span class="pre">ReplacementTransform</span></code>有什么区别<a class="headerlink" href="#q8-transformreplacementtransform" title="永久链接至标题">¶</a></h2>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Transform(A,</span> <span class="pre">B)</span></code>在画面上<code class="docutils literal notranslate"><span class="pre">A</span></code>变成了<code class="docutils literal notranslate"><span class="pre">B</span></code>的样子，但是画面上的物体名字还叫<code class="docutils literal notranslate"><span class="pre">A</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ReplacementTransform(A,</span> <span class="pre">B)</span></code>在画面上<code class="docutils literal notranslate"><span class="pre">A</span></code>变成了<code class="docutils literal notranslate"><span class="pre">B</span></code>的样子，并且画面上的物体名字叫<code class="docutils literal notranslate"><span class="pre">B</span></code></p></li>
+</ol>
+<p>所以以下两个效果相同</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Transform</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">))</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Transform</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">C</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ReplacementTransform</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">))</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ReplacementTransform</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">))</span>
+</pre></div>
+</div>
+</section>
+<section id="q9-transform">
+<h2>Q9: 怎么控制物体移动或者<code class="docutils literal notranslate"><span class="pre">Transform</span></code>的速率<a class="headerlink" href="#q9-transform" title="永久链接至标题">¶</a></h2>
+<p>使用<code class="docutils literal notranslate"><span class="pre">rate_func</span></code>，一些<code class="docutils literal notranslate"><span class="pre">manim</span></code>中已经定义的在群文件中有视频</p>
+<img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/rate_functions.png" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/rate_functions.png"/>
+</section>
+<section id="q10-latex">
+<h2>Q10: 数学符号/公式 用LaTeX怎么打<a class="headerlink" href="#q10-latex" title="永久链接至标题">¶</a></h2>
+<p>请见
+<a class="reference external" href="https://www.luogu.com.cn/blog/IowaBattleship/latex-gong-shi-tai-quan">https://www.luogu.com.cn/blog/IowaBattleship/latex-gong-shi-tai-quan</a></p>
+<p>推荐妈咪叔维护的<a class="reference external" href="https://www.latexlive.com/">https://www.latexlive.com/</a></p>
+</section>
+<section id="q11-latex">
+<h2>Q11: 一些特殊LaTeX的外部包<a class="headerlink" href="#q11-latex" title="永久链接至标题">¶</a></h2>
+<p><strong>如何使用manim画出上面的音符，或怎么使用这些包？</strong></p>
+<p>在<code class="docutils literal notranslate"><span class="pre">manimlib</span></code>目录下的<code class="docutils literal notranslate"><span class="pre">ctex_template.tex</span></code>或者<code class="docutils literal notranslate"><span class="pre">tex_template.tex</span></code>文件中
+添加外部包的名称 <a class="footnote-reference brackets" href="#id35" id="id17">10</a></p>
+<p>就拿上面的音符为例，因为是在<code class="docutils literal notranslate"><span class="pre">harmony</span></code>包中的，所以在<code class="docutils literal notranslate"><span class="pre">tex</span></code>文件中添加<code class="docutils literal notranslate"><span class="pre">\usepackage{harmony}</span></code> <a class="footnote-reference brackets" href="#id36" id="id18">11</a></p>
+<p>然后新建一个<code class="docutils literal notranslate"><span class="pre">py</span></code>文件，写入代码</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="k">import</span> <span class="o">*</span>
+<span class="k">class</span> <span class="nc">TestHarmony</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># harmony具体用法请百度</span>
+        <span class="n">harmony</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span><span class="sa">r</span><span class="s2">"\Ganz \Halb \Vier \Acht \Sech \Zwdr"</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ShowCreation</span><span class="p">(</span><span class="n">harmony</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>运行py文件即可</p>
+</section>
+<section id="q12-latex">
+<h2>Q12: 使用LaTeX外部包，编译错误或者无显示<a class="headerlink" href="#q12-latex" title="永久链接至标题">¶</a></h2>
+<p>首先，并不是所有外部包都能在<code class="docutils literal notranslate"><span class="pre">manim</span></code>中顺利使用，大多都不支持<code class="docutils literal notranslate"><span class="pre">xelatex</span></code>编译，
+所以建议需要使用外部包时只用<code class="docutils literal notranslate"><span class="pre">latex</span></code>编译 <a class="footnote-reference brackets" href="#id37" id="id19">12</a></p>
+<p>至于有些群友常用<code class="docutils literal notranslate"><span class="pre">TiKZ</span></code>这个外部包，也是使用<code class="docutils literal notranslate"><span class="pre">latex</span></code>才能顺利运行，
+在<code class="docutils literal notranslate"><span class="pre">xelatex</span></code>用 <code class="docutils literal notranslate"><span class="pre">\draw</span></code>会无法显示，
+需要修改<code class="docutils literal notranslate"><span class="pre">tex_template.tex</span></code>文件<a class="reference external" href="#change">[change]</a>，修改成如下：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">documentclass</span><span class="p">[</span><span class="n">preview</span><span class="p">,</span> <span class="n">dvisvgm</span><span class="p">]{</span><span class="n">standalone</span><span class="p">}</span>
+\<span class="n">usepackage</span><span class="p">{</span><span class="n">tikz</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>新建<code class="docutils literal notranslate"><span class="pre">py</span></code>文件，写入代码来画一条线：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TestTikz</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">tikz</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span>
+            <span class="c1"># tikz具体用法请百度</span>
+            <span class="sa">r</span><span class="s2">"\tikz{\draw (-1, 0) -- (1, 0);}"</span><span class="p">,</span>
+            <span class="n">color</span><span class="o">=</span><span class="n">WHITE</span><span class="p">,</span>
+            <span class="n">stroke_width</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+            <span class="n">stroke_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ShowCreation</span><span class="p">(</span><span class="n">tikz</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>运行py文件即可</p>
+</section>
+<section id="q13">
+<h2>Q13: 一些比较复杂,操纵东西比较多的动画怎么做<a class="headerlink" href="#q13" title="永久链接至标题">¶</a></h2>
+<p>使用外部剪辑软件,例如<code class="docutils literal notranslate"><span class="pre">Adobe</span> <span class="pre">Premiere</span> <span class="pre">Pro</span></code>或者达芬奇</p>
+</section>
+<section id="q14-self-playapplymethod">
+<h2>Q14: 一个<code class="docutils literal notranslate"><span class="pre">self.play</span></code>里写两个<code class="docutils literal notranslate"><span class="pre">ApplyMethod</span></code>只对一个起作用怎么办<a class="headerlink" href="#q14-self-playapplymethod" title="永久链接至标题">¶</a></h2>
+<p>去掉<code class="docutils literal notranslate"><span class="pre">ApplyMethod</span></code>，例如：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ApplyMethod</span><span class="p">(</span><span class="n">mob</span><span class="o">.</span><span class="n">scale</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">ApplyMethod</span><span class="p">(</span><span class="n">mob</span><span class="o">.</span><span class="n">shift</span><span class="p">,</span> <span class="n">DOWN</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>改成</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">mob</span><span class="o">.</span><span class="n">scale</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">mob</span><span class="o">.</span><span class="n">shift</span><span class="p">,</span> <span class="n">DOWN</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="q15">
+<h2>Q15: 如何解决二维画面中的图层问题<a class="headerlink" href="#q15" title="永久链接至标题">¶</a></h2>
+<p>可以使用<code class="docutils literal notranslate"><span class="pre">pdcxs</span></code>添加的<code class="docutils literal notranslate"><span class="pre">plot_depth</span></code>，具体更改见下图 <a class="footnote-reference brackets" href="#id38" id="id20">13</a></p>
+<p><code class="docutils literal notranslate"><span class="pre">MK</span> <span class="pre">fork</span></code>的版本已经做了修改：<a class="reference external" href="https://github.com/manim-kindergarten/manim">https://github.com/manim-kindergarten/manim</a></p>
+<p><img alt="imagepd1" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/CommonProblems/pd1.png"/></p>
+<p><img alt="imagepd2" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/CommonProblems/pd2.png"/></p>
+</section>
+<section id="q16-gif">
+<h2>Q16: 如何导出<code class="docutils literal notranslate"><span class="pre">gif</span></code>文件<a class="headerlink" href="#q16-gif" title="永久链接至标题">¶</a></h2>
+<p>在新版本中，<code class="docutils literal notranslate"><span class="pre">manim</span></code>导出<code class="docutils literal notranslate"><span class="pre">gif</span></code>已经失效，可以导出<code class="docutils literal notranslate"><span class="pre">mp4</span></code>，后用<code class="docutils literal notranslate"><span class="pre">ffmpeg</span></code>转换。也可以按照下图修改源码</p>
+<p><code class="docutils literal notranslate"><span class="pre">MK</span> <span class="pre">fork</span></code>的版本已经做了修改：<a class="reference external" href="https://github.com/manim-kindergarten/manim">https://github.com/manim-kindergarten/manim</a></p>
+<p><img alt="imagegif" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/CommonProblems/gif.png"/></p>
+<p>改过后，在输入命令时加上<code class="docutils literal notranslate"><span class="pre">-i</span></code>选项，就能导出<code class="docutils literal notranslate"><span class="pre">gif</span></code>了</p>
+</section>
+<section id="q17">
+<h2>Q17: 如何导出透明的图片或者视频<a class="headerlink" href="#q17" title="永久链接至标题">¶</a></h2>
+<p>在运行命令的时候加上 <code class="docutils literal notranslate"><span class="pre">-t</span></code>选项</p>
+<ul class="simple">
+<li><p>如果是 <code class="docutils literal notranslate"><span class="pre">-s</span></code>保存图片，则会存储为背景透明的<code class="docutils literal notranslate"><span class="pre">png</span></code>图片</p></li>
+<li><p>如果是
+<code class="docutils literal notranslate"><span class="pre">-l/-m/-w</span></code>保存视频，则会存储为背景透明的<code class="docutils literal notranslate"><span class="pre">mov</span></code>视频文件，方便<code class="docutils literal notranslate"><span class="pre">pr</span></code>中的剪辑</p></li>
+</ul>
+</section>
+<section id="q18">
+<h2>Q18: 渲染视频的画质和帧率怎么调整<a class="headerlink" href="#q18" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">manim</span></code>的默认画质有四种</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">-l</span></code> 最低画质 <code class="docutils literal notranslate"><span class="pre">480P15</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-m</span></code> 中等画质 <code class="docutils literal notranslate"><span class="pre">720P30</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">–high_quality</span></code> <a class="footnote-reference brackets" href="#id39" id="id21">14</a> 高画质 <code class="docutils literal notranslate"><span class="pre">1080P60</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-w</span></code> 导出(最高)画质 <code class="docutils literal notranslate"><span class="pre">1440P60(2K)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-uhd</span></code> 超高清 <code class="docutils literal notranslate"><span class="pre">4K120fps</span></code>(B站最高) <a class="footnote-reference brackets" href="#id40" id="id22">15</a></p></li>
+</ul>
+<p>不加画质选项，默认使用 <code class="docutils literal notranslate"><span class="pre">-w</span></code>最高画质 <a class="footnote-reference brackets" href="#id41" id="id23">16</a>。
+可以通过修改<code class="docutils literal notranslate"><span class="pre">constants.py</span></code>中对应的画面长宽和帧率来修改 <a class="footnote-reference brackets" href="#id42" id="id24">17</a></p>
+<p>一般把 <code class="docutils literal notranslate"><span class="pre">-w</span></code>最高画质修改成<code class="docutils literal notranslate"><span class="pre">1080P60</span></code></p>
+</section>
+<section id="q19">
+<h2>Q19: 有没有什么好的场景例子供学习<a class="headerlink" href="#q19" title="永久链接至标题">¶</a></h2>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">GitHub</span></code>上<code class="docutils literal notranslate"><span class="pre">manim-kindergarten/manim_sandbox</span></code>中的<code class="docutils literal notranslate"><span class="pre">demo</span></code>和<code class="docutils literal notranslate"><span class="pre">videos</span></code>文件夹中的代码</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Grant</span></code>的代码 <a class="footnote-reference brackets" href="#id43" id="id25">18</a> 对应<code class="docutils literal notranslate"><span class="pre">3B1B</span></code>的视频，可能会有报错，需要魔改</p></li>
+<li><p>群文件里“<code class="docutils literal notranslate"><span class="pre">manim</span></code>相关的<code class="docutils literal notranslate"><span class="pre">python</span></code>代码及视频结果”</p></li>
+<li><p>群里几个B站<code class="docutils literal notranslate"><span class="pre">up</span></code>主的<code class="docutils literal notranslate"><span class="pre">GitHub</span></code>库对应他们的代码</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">cigar666</span></code> <a class="reference external" href="https://github.com/cigar666/my_manim_projects">https://github.com/cigar666/my_manim_projects</a></p></li>
+<li><p>鹤翔万里 <a class="reference external" href="https://github.com/Tony031218/manim_projects">https://github.com/Tony031218/manim_projects</a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pdcxs</span></code> <a class="reference external" href="https://github.com/pdcxs/ManimProjects">https://github.com/pdcxs/ManimProjects</a></p></li>
+<li><p>有一种悲伤叫颓废 <a class="reference external" href="https://github.com/136108Haumea/my-manim">https://github.com/136108Haumea/my-manim</a></p></li>
+</ul>
+</li>
+</ol>
+<dl class="footnote brackets">
+<dt class="label" id="id26"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
+<dd><p>安装<code class="docutils literal notranslate"><span class="pre">anaconda</span></code>时是否勾选添加到<code class="docutils literal notranslate"><span class="pre">path</span></code>变量</p>
+</dd>
+<dt class="label" id="id27"><span class="brackets"><a class="fn-backref" href="#id3">2</a></span></dt>
+<dd><p>临时换源</p>
+</dd>
+<dt class="label" id="id28"><span class="brackets"><a class="fn-backref" href="#id4">3</a></span></dt>
+<dd><p>群文件中有某个版本的<code class="docutils literal notranslate"><span class="pre">pycairo</span></code>，注意<code class="docutils literal notranslate"><span class="pre">Python</span></code>版本和系统版本是否均合适</p>
+</dd>
+<dt class="label" id="id29"><span class="brackets"><a class="fn-backref" href="#id6">4</a></span></dt>
+<dd><p>上网下载、或者使用群文件中的版本</p>
+</dd>
+<dt class="label" id="id30"><span class="brackets"><a class="fn-backref" href="#id9">5</a></span></dt>
+<dd><p>例如：Microsoft YaHei，Source Han Sans CN(Windows可以打开C:/Windows)</p>
+</dd>
+<dt class="label" id="id31"><span class="brackets"><a class="fn-backref" href="#id10">6</a></span></dt>
+<dd><p>或者在字符串前加r，正常书写</p>
+</dd>
+<dt class="label" id="id32"><span class="brackets"><a class="fn-backref" href="#id11">7</a></span></dt>
+<dd><p><a class="reference external" href="https://github.com/manim-kindergarten/manim_sandbox/blob/master/utils/functions/debugTeX.py">https://github.com/manim-kindergarten/manim_sandbox/blob/master/utils/functions/debugTeX.py</a></p>
+</dd>
+<dt class="label" id="id33"><span class="brackets"><a class="fn-backref" href="#id12">8</a></span></dt>
+<dd><p>-s 选项</p>
+</dd>
+<dt class="label" id="id34"><span class="brackets"><a class="fn-backref" href="#id16">9</a></span></dt>
+<dd><p>自己制作，或者使用群里的<code class="docutils literal notranslate"><span class="pre">svg</span></code>素材</p>
+</dd>
+<dt class="label" id="id35"><span class="brackets"><a class="fn-backref" href="#id17">10</a></span></dt>
+<dd><p>修改<code class="docutils literal notranslate"><span class="pre">TEX_USE_CTEX</span></code>为<code class="docutils literal notranslate"><span class="pre">True</span></code>的，可以只在<code class="docutils literal notranslate"><span class="pre">ctex_template.tex</span></code>中添加</p>
+</dd>
+<dt class="label" id="id36"><span class="brackets"><a class="fn-backref" href="#id18">11</a></span></dt>
+<dd><p>不需要使用的时候记得改回来哦[change]</p>
+</dd>
+<dt class="label" id="id37"><span class="brackets"><a class="fn-backref" href="#id19">12</a></span></dt>
+<dd><p>即把<code class="docutils literal notranslate"><span class="pre">TEX_USE_CTEX</span></code>改为<code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd>
+<dt class="label" id="id38"><span class="brackets"><a class="fn-backref" href="#id20">13</a></span></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">plot_depth</span></code>的值越大，运行出来的物体就越在上面</p>
+</dd>
+<dt class="label" id="id39"><span class="brackets"><a class="fn-backref" href="#id21">14</a></span></dt>
+<dd><p>没有缩写</p>
+</dd>
+<dt class="label" id="id40"><span class="brackets"><a class="fn-backref" href="#id22">15</a></span></dt>
+<dd><p>仅限<code class="docutils literal notranslate"><span class="pre">MK</span></code>版本<code class="docutils literal notranslate"><span class="pre">manim</span></code></p>
+</dd>
+<dt class="label" id="id41"><span class="brackets"><a class="fn-backref" href="#id23">16</a></span></dt>
+<dd><p>比如 <code class="docutils literal notranslate"><span class="pre">-p</span></code>(虽然很多人把 <code class="docutils literal notranslate"><span class="pre">-p</span></code>当成了 <code class="docutils literal notranslate"><span class="pre">-w</span></code>。。。)</p>
+</dd>
+<dt class="label" id="id42"><span class="brackets"><a class="fn-backref" href="#id24">17</a></span></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">manimlib/constants.py</span></code>的<code class="docutils literal notranslate"><span class="pre">118</span></code>行开始</p>
+</dd>
+<dt class="label" id="id43"><span class="brackets"><a class="fn-backref" href="#id25">18</a></span></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">from_3b1b</span></code>文件夹中</p>
+</dd>
+</dl>
+</section>
+</section>
+
+      </article>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="../homework/index.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">练习部分(TODO)</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="index.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">常见问题</div>
+                
+              </div>
+            </a>
+        </div>
+
+        <div class="related-information">
+          <span class="copyright">版权所有 &copy; 2020-2021 Manim Kindergarten Team</span> |
+          Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using
+          <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+          <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            目录
+          </span>
+        </div>
+        <div class="toc-tree">
+          <ul>
+<li><a class="reference internal" href="#">安装问题</a><ul>
+<li><a class="reference internal" href="#python"><code class="docutils literal notranslate"><span class="pre">Python</span></code>问题</a><ul>
+<li><a class="reference internal" href="#q1-anaconda-python">Q1: 使用<code class="docutils literal notranslate"><span class="pre">anaconda</span></code>，命令行输入<code class="docutils literal notranslate"><span class="pre">python</span></code>无反应或报错</a></li>
+<li><a class="reference internal" href="#q2-pip-install">Q2: <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">...</span></code>时满屏红字报错，或者安装过慢</a></li>
+<li><a class="reference internal" href="#q3-pippycairo">Q3: <code class="docutils literal notranslate"><span class="pre">pip</span></code>安装<code class="docutils literal notranslate"><span class="pre">pycairo</span></code>总是失败</a></li>
+<li><a class="reference internal" href="#q4-pip">Q4: <code class="docutils literal notranslate"><span class="pre">pip</span></code>安装过包，但运行时提示没有模块</a></li>
+<li><a class="reference internal" href="#q5-scipy">Q5: 关于<code class="docutils literal notranslate"><span class="pre">scipy</span></code>有报错</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id5">运行时问题</a><ul>
+<li><a class="reference internal" href="#import"><code class="docutils literal notranslate"><span class="pre">import</span></code>问题</a><ul>
+<li><a class="reference internal" href="#q1-big-ol-pile-of-manim-imports">Q1: 没有模块<code class="docutils literal notranslate"><span class="pre">big_ol_pile_of_manim_imports</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#latex">LaTeX问题</a><ul>
+<li><a class="reference internal" href="#q1-latex-error-converting-to-dvi">Q1: 报错<code class="docutils literal notranslate"><span class="pre">Latex</span> <span class="pre">error</span> <span class="pre">converting</span> <span class="pre">to</span> <span class="pre">dvi</span></code></a></li>
+<li><a class="reference internal" href="#q2-xelatex-error-converting-to-xdv">Q2: 报错 <code class="docutils literal notranslate"><span class="pre">xelatex</span> <span class="pre">error</span> <span class="pre">converting</span> <span class="pre">to</span> <span class="pre">xdv</span></code></a></li>
+<li><a class="reference internal" href="#q3-svg">Q3: 报错在文件夹内找不到<code class="docutils literal notranslate"><span class="pre">svg</span></code>文件</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id7">中文显示问题</a><ul>
+<li><a class="reference internal" href="#q1-textmobject-latex-error-converting-to-dvi">Q1: 含有中文的<code class="docutils literal notranslate"><span class="pre">TextMobject</span></code>编译报错，<code class="docutils literal notranslate"><span class="pre">Latex</span> <span class="pre">error</span> <span class="pre">converting</span> <span class="pre">to</span> <span class="pre">dvi</span></code></a></li>
+<li><a class="reference internal" href="#q2">Q2: 英文可以正常显示，中文不报错，但不显示</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id8">文字问题</a><ul>
+<li><a class="reference internal" href="#q1-textmobjecttexmobject">Q1: <code class="docutils literal notranslate"><span class="pre">TextMobject</span></code>和<code class="docutils literal notranslate"><span class="pre">TexMobject</span></code>有什么区别</a></li>
+<li><a class="reference internal" href="#q2-textmobject">Q2: <code class="docutils literal notranslate"><span class="pre">TextMobject</span></code>中怎么改字体样式</a></li>
+<li><a class="reference internal" href="#q3">Q3: 想自定义字体怎么办</a></li>
+<li><a class="reference internal" href="#q4">Q4: 想用自定义字体写公式怎么办</a></li>
+<li><a class="reference internal" href="#q5-texmobject">Q5: <code class="docutils literal notranslate"><span class="pre">TexMobject</span></code>中换行是什么</a></li>
+<li><a class="reference internal" href="#q6">Q6: 公式怎么对齐</a></li>
+<li><a class="reference internal" href="#q7-texmobject">Q7: <code class="docutils literal notranslate"><span class="pre">TexMobject</span></code>上色问题的处理办法</a></li>
+<li><a class="reference internal" href="#q8-texmobject">Q8: <code class="docutils literal notranslate"><span class="pre">TexMobject</span></code>的下标怎么分析</a></li>
+<li><a class="reference internal" href="#q9-texmobject-frac">Q9: <code class="docutils literal notranslate"><span class="pre">TexMobject</span></code>使用 <code class="docutils literal notranslate"><span class="pre">\frac</span></code> 拆分时出错</a></li>
+<li><a class="reference internal" href="#q10">Q10: 括号匹配不全</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id13">素材引用问题</a><ul>
+<li><a class="reference internal" href="#q1-svgmobjectsvg">Q1: 使用<code class="docutils literal notranslate"><span class="pre">SVGMobject</span></code>找不到<code class="docutils literal notranslate"><span class="pre">svg</span></code>文件</a></li>
+<li><a class="reference internal" href="#q2-jpgpng">Q2: 如何使用<code class="docutils literal notranslate"><span class="pre">jpg</span></code>或者<code class="docutils literal notranslate"><span class="pre">png</span></code>文件</a></li>
+<li><a class="reference internal" href="#q3-gif">Q3: 能否导入<code class="docutils literal notranslate"><span class="pre">gif</span></code>文件</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id14">其它问题</a><ul>
+<li><a class="reference internal" href="#q1-manim">Q1: 有什么manim教程</a></li>
+<li><a class="reference internal" href="#q2-manim">Q2: 没有<code class="docutils literal notranslate"><span class="pre">manim</span></code>源码</a></li>
+<li><a class="reference internal" href="#q3-manim">Q3: 群友用的<code class="docutils literal notranslate"><span class="pre">manim</span></code>都是什么版本</a></li>
+<li><a class="reference internal" href="#id15">Q4: 如何使用傅里叶级数作图</a></li>
+<li><a class="reference internal" href="#q5">Q5: 傅里叶级数作图如何调整时长</a></li>
+<li><a class="reference internal" href="#q6-svg">Q6: <code class="docutils literal notranslate"><span class="pre">svg</span></code>用什么软件制作</a></li>
+<li><a class="reference internal" href="#q7">Q7: 动画怎么显示旋转一个物体</a></li>
+<li><a class="reference internal" href="#q8-transformreplacementtransform">Q8: <code class="docutils literal notranslate"><span class="pre">Transform</span></code>和<code class="docutils literal notranslate"><span class="pre">ReplacementTransform</span></code>有什么区别</a></li>
+<li><a class="reference internal" href="#q9-transform">Q9: 怎么控制物体移动或者<code class="docutils literal notranslate"><span class="pre">Transform</span></code>的速率</a></li>
+<li><a class="reference internal" href="#q10-latex">Q10: 数学符号/公式 用LaTeX怎么打</a></li>
+<li><a class="reference internal" href="#q11-latex">Q11: 一些特殊LaTeX的外部包</a></li>
+<li><a class="reference internal" href="#q12-latex">Q12: 使用LaTeX外部包，编译错误或者无显示</a></li>
+<li><a class="reference internal" href="#q13">Q13: 一些比较复杂,操纵东西比较多的动画怎么做</a></li>
+<li><a class="reference internal" href="#q14-self-playapplymethod">Q14: 一个<code class="docutils literal notranslate"><span class="pre">self.play</span></code>里写两个<code class="docutils literal notranslate"><span class="pre">ApplyMethod</span></code>只对一个起作用怎么办</a></li>
+<li><a class="reference internal" href="#q15">Q15: 如何解决二维画面中的图层问题</a></li>
+<li><a class="reference internal" href="#q16-gif">Q16: 如何导出<code class="docutils literal notranslate"><span class="pre">gif</span></code>文件</a></li>
+<li><a class="reference internal" href="#q17">Q17: 如何导出透明的图片或者视频</a></li>
+<li><a class="reference internal" href="#q18">Q18: 渲染视频的画质和帧率怎么调整</a></li>
+<li><a class="reference internal" href="#q19">Q19: 有没有什么好的场景例子供学习</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+      
+      
+    </aside>
+  </main>
+</div>
+  </body>
+</html>

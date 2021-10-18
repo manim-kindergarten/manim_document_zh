@@ -1,0 +1,490 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Frame" href="frame.html" /><link rel="prev" title="Changing" href="changing.html" />
+
+    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
+        <title>CoordinateSystems - manim shaders  文档</title>
+      <link rel="stylesheet" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
+    <link rel="stylesheet" href="../../_static/styles/default.css?f0c80edaca061ac19e26253c">
+    <link rel="stylesheet" href="../../_static/pygments.css?f0c80edaca061ac19e26253c">
+    
+<style>
+  :root {
+    --color-code-background: #f8f8f8;
+    --color-code-foreground: #000000;
+  
+  }
+</style>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
+      <script src="../../_static/underscore.js"></script>
+      
+        <script src="../../_static/doctools.js" defer></script>
+      
+        <script src="../../_static/language_data.js" defer></script>
+      
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/translations.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?f0c80edaca061ac19e26253c"></script></head>
+  <body dir="">
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke-width="1.5" stroke="#101010" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z"/>
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+
+<div class="page">
+  <header class="mobile-header">
+    <label class="header-left nav-overlay-icon" for="__navigation">
+      <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+    </label>
+    <div class="header-center"><div class="brand">manim shaders  文档</div></div>
+    <div class="header-right"></div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand centered" href="../../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="../../_static/Logo_white.png" alt="Logo"/>
+  </div>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html">
+  <input class="sidebar-search" placeholder="Search" name="q">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form><div class="sidebar-tree sidebar-scroll">
+  <p><span class="caption-text">入门教程</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/configuration.html">命令行参数和配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/example_scenes.html">样例学习</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG字典用法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim结构</a></li>
+</ul>
+<p><span class="caption-text">进阶文档</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../animation/index.html">动画部分 animation</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../animation/creation.html">Creation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/fading.html">Fading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/growing.html">Growing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/indication.html">Indication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/movement.html">Movement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/numbers.html">Numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/rotation.html">Rotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/transform.html">Transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/transform_matching_parts.html">Transform Matching Parts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/update.html">Update</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/composition.html">Composition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/specialized.html">Specialized</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../camera/index.html">相机部分 camera</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label for="toctree-checkbox-2"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../camera/camera.html">Camera</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">数学物件 Mobject</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="types/index.html">types</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label for="toctree-checkbox-4"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="types/dot_cloud.html">Dot Cloud</a></li>
+<li class="toctree-l3"><a class="reference internal" href="types/image_mobject.html">Image Mobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="types/point_cloud_mobject.html">Point Cloud Mobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="types/surface.html">Surface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="types/vectorized_mobject.html">Vectorized Mobject</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="svg/index.html">svg</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label for="toctree-checkbox-5"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="svg/brace.html">Brace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="svg/drawings.html">Drawings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="svg/svg_mobject.html">SVGMobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="svg/tex_mobject.html">Tex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="svg/text_mobject.html">Text</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="changing.html">Changing</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">CoordinateSystems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="frame.html">Frame</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geometry.html">Geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interactive.html">Interactive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matrix.html">Matrix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mobject.html">Mobject</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mobject_update_utils.html">MobjectUpdateUtils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="number_line.html">NumberLine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="numbers.html">Numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="probability.html">Probability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shape_matchers.html">ShapeMatchers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="three_dimensions.html">ThreeDimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="value_tracker.html">ValueTracker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vector_field.html">VectorField</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../scene/index.html">场景部分 scene</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label for="toctree-checkbox-6"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scene/scene.html">Scene</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/scene_file_writer.html">SceneFileWriter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/three_d_scene.html">ThreeDScene</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/sample_space_scene.html">SampleSpaceScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/vector_space_scene.html">VectorScene</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../shaders/index.html">Shaders (TODO)</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../utils/index.html">工具函数 utils</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../utils/bezier.html">Bezier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/color.html">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/config_ops.html">CONFIG_ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/file_ops.html">FILE_ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/images.html">Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/iterables.html">Iterables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/paths.html">Paths</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/rate_functions.html">Rate_functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/simple_functions.html">Simple_functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/sounds.html">Sounds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/space_ops.html">Space_ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/strings.html">Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/tex_file_writing.html">Tex_file_writing</a></li>
+</ul>
+</li>
+</ul>
+<p><span class="caption-text">开发相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/about.html">关于</a></li>
+</ul>
+
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <main class="main">
+    <div class="content">
+      <article role="main">
+        <label class="toc-overlay-icon" for="__toc">
+          <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        </label>
+        <section id="coordinatesystems">
+<h1>CoordinateSystems<a class="headerlink" href="#coordinatesystems" title="永久链接至标题">¶</a></h1>
+<div class="admonition- admonition">
+<p class="admonition-title">声明</p>
+<p>坐标系在新版中改动幅度较大，整体用法基本不变，一些参数定义更加规范化</p>
+</div>
+<section id="coordinatesystem">
+<h2>CoordinateSystem<a class="headerlink" href="#coordinatesystem" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.coordinate_systems.</code><code class="sig-name descname">CoordinateSystem</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem" title="永久链接至目标">¶</a></dt>
+<dd><p>Axes 和 NumberPlane 的抽象基类</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">x_range</span></code> 和 <code class="docutils literal notranslate"><span class="pre">y_range</span></code> 控制坐标轴范围和分割精度，格式为 <code class="docutils literal notranslate"><span class="pre">x_range=[x_min,</span> <span class="pre">x_max,</span> <span class="pre">dx]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">width</span></code> 和 <code class="docutils literal notranslate"><span class="pre">height</span></code> 控制坐标轴的宽度和高度</p></li>
+</ul>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.angle_of_tangent">
+<code class="sig-name descname">angle_of_tangent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="n">dx</span><span class="o">=</span><span class="default_value">1e-08</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.angle_of_tangent" title="永久链接至目标">¶</a></dt>
+<dd><p>获取横坐标为 x 的点处切线的倾斜角</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.c2p">
+<code class="sig-name descname">c2p</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">coords</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.c2p" title="永久链接至目标">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">coords_to_point</span></code> 的简写</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.coords_to_point">
+<code class="sig-name descname">coords_to_point</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">coords</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.coords_to_point" title="永久链接至目标">¶</a></dt>
+<dd><p>输入坐标轴上的二维坐标，返回场景的绝对坐标，(x, y) -&gt; array[x’, y’, 0]</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.get_axis">
+<code class="sig-name descname">get_axis</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">index</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.get_axis" title="永久链接至目标">¶</a></dt>
+<dd><p>获取坐标轴 Mobject</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.get_axis_labels">
+<code class="sig-name descname">get_axis_labels</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x_label_tex</span><span class="o">=</span><span class="default_value">'x'</span></em>, <em class="sig-param"><span class="n">y_label_tex</span><span class="o">=</span><span class="default_value">'y'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.get_axis_labels" title="永久链接至目标">¶</a></dt>
+<dd><p>获取 x 轴和 y 轴上的标志（一个 VGroup）</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.get_graph">
+<code class="sig-name descname">get_graph</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span></em>, <em class="sig-param"><span class="n">x_range</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.get_graph" title="永久链接至目标">¶</a></dt>
+<dd><p>绘制函数图像，并且自动移动到坐标轴的相对位置，使用 <code class="docutils literal notranslate"><span class="pre">ParametricCurve</span></code></p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.get_graph_label">
+<code class="sig-name descname">get_graph_label</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="n">label</span><span class="o">=</span><span class="default_value">'f(x)'</span></em>, <em class="sig-param"><span class="n">x</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">array([1.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="n">buff</span><span class="o">=</span><span class="default_value">0.25</span></em>, <em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.get_graph_label" title="永久链接至目标">¶</a></dt>
+<dd><p>给函数图像标上文本标签</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.get_h_line">
+<code class="sig-name descname">get_h_line</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.get_h_line" title="永久链接至目标">¶</a></dt>
+<dd><p>传入一个点，过该点作水平线</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.get_h_line_to_graph">
+<code class="sig-name descname">get_h_line_to_graph</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.get_h_line_to_graph" title="永久链接至目标">¶</a></dt>
+<dd><p>以 x 为纵坐标~~（为什么不用 y 呢）~~作水平线并与函数图像相交</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.get_riemann_rectangles">
+<code class="sig-name descname">get_riemann_rectangles</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="n">x_range</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">dx</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">input_sample_type</span><span class="o">=</span><span class="default_value">'left'</span></em>, <em class="sig-param"><span class="n">stroke_width</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">stroke_color</span><span class="o">=</span><span class="default_value">'#000000'</span></em>, <em class="sig-param"><span class="n">fill_opacity</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">colors</span><span class="o">=</span><span class="default_value">'#58C4DD', '#83C167'</span></em>, <em class="sig-param"><span class="n">show_signed_area</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.get_riemann_rectangles" title="永久链接至目标">¶</a></dt>
+<dd><p>绘制矩形填充图像下方的区域</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">x_range</span> <span class="pre">=</span> <span class="pre">[x_min,</span> <span class="pre">x_max,</span> <span class="pre">dx]</span></code> 可以指定范围，其中 <code class="docutils literal notranslate"><span class="pre">dx</span></code> 为分割精度</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">input_sample_type</span></code> 指定矩形的左上角、上边缘中心、右上角抵在图像上</p></li>
+</ul>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.get_tangent_line">
+<code class="sig-name descname">get_tangent_line</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">graph</em>, <em class="sig-param">length=5</em>, <em class="sig-param">line_func=&lt;class 'manimlib.mobject.geometry.Line'&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.get_tangent_line" title="永久链接至目标">¶</a></dt>
+<dd><p>绘制横坐标为 x 的点处的切线，返回一个 Line Mobject</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.get_v_line">
+<code class="sig-name descname">get_v_line</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.get_v_line" title="永久链接至目标">¶</a></dt>
+<dd><p>传入一个点，过该点作铅垂线</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.get_v_line_to_graph">
+<code class="sig-name descname">get_v_line_to_graph</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.get_v_line_to_graph" title="永久链接至目标">¶</a></dt>
+<dd><p>以 x 为横坐标作铅垂线并与函数图像相交</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.i2gp">
+<code class="sig-name descname">i2gp</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">graph</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.i2gp" title="永久链接至目标">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">input_to_graph_point</span></code> 的简写</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.input_to_graph_point">
+<code class="sig-name descname">input_to_graph_point</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">graph</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.input_to_graph_point" title="永久链接至目标">¶</a></dt>
+<dd><p>传入一个 x，返回图像上以该 x 为横坐标的点的绝对坐标</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.p2c">
+<code class="sig-name descname">p2c</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.p2c" title="永久链接至目标">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">point_to_coords</span></code> 的简写</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.point_to_coords">
+<code class="sig-name descname">point_to_coords</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.point_to_coords" title="永久链接至目标">¶</a></dt>
+<dd><p>输入场景的绝对坐标，返回坐标轴上的二维坐标，array[x, y, 0] -&gt; (x’, y’)</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.slope_of_tangent">
+<code class="sig-name descname">slope_of_tangent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.slope_of_tangent" title="永久链接至目标">¶</a></dt>
+<dd><p>获取横坐标为 x 的点处切线的斜率</p>
+</dd></dl>
+</dd></dl>
+</section>
+<section id="axes">
+<h2>Axes<a class="headerlink" href="#axes" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.coordinate_systems.Axes">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.coordinate_systems.</code><code class="sig-name descname">Axes</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x_range</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">y_range</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.Axes" title="永久链接至目标">¶</a></dt>
+<dd><p>xOy 二维坐标系，由两条 <code class="docutils literal notranslate"><span class="pre">NumberLine</span></code> 组成，因此可以在一些参数中使用 <code class="docutils literal notranslate"><span class="pre">NumberLine</span></code> 的参数列表</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">x_axis_config</span></code> 中放入 x 轴的参数，格式为一个字典</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">y_axis_config</span></code> 中放入 y 轴的参数，同上</p></li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">axis_config</span></code></dt><dd><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">include_tip</span></code> 是否包含箭头</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">numbers_to_exclude</span></code> 在给坐标轴标上数字时，在这个列表中的数字会被排除</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">x_range</span></code> 和 <code class="docutils literal notranslate"><span class="pre">y_range</span></code> 控制坐标轴范围和分割精度，格式为 <code class="docutils literal notranslate"><span class="pre">x_range=[x_min,</span> <span class="pre">x_max,</span> <span class="pre">dx]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">width</span></code> 和 <code class="docutils literal notranslate"><span class="pre">height</span></code> 控制坐标轴的宽度和高度</p></li>
+</ul>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.Axes.add_coordinate_labels">
+<code class="sig-name descname">add_coordinate_labels</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x_values</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">y_values</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.Axes.add_coordinate_labels" title="永久链接至目标">¶</a></dt>
+<dd><p>给坐标轴标上数字</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.Axes.coords_to_point">
+<code class="sig-name descname">coords_to_point</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">coords</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.Axes.coords_to_point" title="永久链接至目标">¶</a></dt>
+<dd><p>输入坐标轴上的二维坐标，返回场景的绝对坐标，(x, y) -&gt; array[x’, y’, 0]</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.Axes.point_to_coords">
+<code class="sig-name descname">point_to_coords</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.Axes.point_to_coords" title="永久链接至目标">¶</a></dt>
+<dd><p>输入场景的绝对坐标，返回坐标轴上的二维坐标，array[x, y, 0] -&gt; (x’, y’)</p>
+</dd></dl>
+</dd></dl>
+</section>
+<section id="threedaxes">
+<h2>ThreeDAxes<a class="headerlink" href="#threedaxes" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.coordinate_systems.ThreeDAxes">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.coordinate_systems.</code><code class="sig-name descname">ThreeDAxes</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x_range</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">y_range</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">z_range</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.ThreeDAxes" title="永久链接至目标">¶</a></dt>
+<dd><p>继承于 <code class="docutils literal notranslate"><span class="pre">Axes</span></code> 的三维坐标系，包含 xyz</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">x_range</span></code>, <code class="docutils literal notranslate"><span class="pre">y_range</span></code>, <code class="docutils literal notranslate"><span class="pre">z_range</span></code> 控制坐标轴范围和分割精度，格式为 <code class="docutils literal notranslate"><span class="pre">x_range=[x_min,</span> <span class="pre">x_max,</span> <span class="pre">dx]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">width</span></code>, <code class="docutils literal notranslate"><span class="pre">height</span></code>, <code class="docutils literal notranslate"><span class="pre">depth</span></code> 控制坐标轴的宽度、高度、深度</p></li>
+</ul>
+</dd></dl>
+</section>
+<section id="numberplane">
+<h2>NumberPlane<a class="headerlink" href="#numberplane" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.coordinate_systems.NumberPlane">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.coordinate_systems.</code><code class="sig-name descname">NumberPlane</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x_range</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">y_range</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.NumberPlane" title="永久链接至目标">¶</a></dt>
+<dd><p>带有网格线的二维坐标系</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">x_range</span></code> 和 <code class="docutils literal notranslate"><span class="pre">y_range</span></code> 控制坐标轴范围和分割精度，格式为 <code class="docutils literal notranslate"><span class="pre">x_range=[x_min,</span> <span class="pre">x_max,</span> <span class="pre">dx]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">width</span></code> 和 <code class="docutils literal notranslate"><span class="pre">height</span></code> 控制坐标轴的宽度和高度</p></li>
+</ul>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.NumberPlane.get_vector">
+<code class="sig-name descname">get_vector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">coords</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.NumberPlane.get_vector" title="永久链接至目标">¶</a></dt>
+<dd><p>输入一个坐标轴的相对坐标，绘制一个【从原点到该点的向量】</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.NumberPlane.prepare_for_nonlinear_transform">
+<code class="sig-name descname">prepare_for_nonlinear_transform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">num_inserted_curves</span><span class="o">=</span><span class="default_value">50</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.NumberPlane.prepare_for_nonlinear_transform" title="永久链接至目标">¶</a></dt>
+<dd><p>将坐标系的每一条线进行分割，以适配即将应用的非线性变换</p>
+</dd></dl>
+</dd></dl>
+</section>
+<section id="complexplane">
+<h2>ComplexPlane<a class="headerlink" href="#complexplane" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.coordinate_systems.ComplexPlane">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.coordinate_systems.</code><code class="sig-name descname">ComplexPlane</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x_range</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">y_range</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.ComplexPlane" title="永久链接至目标">¶</a></dt>
+<dd><p>复平面坐标系</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">x_range</span></code> 和 <code class="docutils literal notranslate"><span class="pre">y_range</span></code> 控制坐标轴范围和分割精度，格式为 <code class="docutils literal notranslate"><span class="pre">x_range=[x_min,</span> <span class="pre">x_max,</span> <span class="pre">dx]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">width</span></code> 和 <code class="docutils literal notranslate"><span class="pre">height</span></code> 控制坐标轴的宽度和高度</p></li>
+</ul>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.ComplexPlane.add_coordinate_labels">
+<code class="sig-name descname">add_coordinate_labels</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">numbers</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">skip_first</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.ComplexPlane.add_coordinate_labels" title="永久链接至目标">¶</a></dt>
+<dd><p>给坐标轴标上数字</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.ComplexPlane.n2p">
+<code class="sig-name descname">n2p</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">number</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.ComplexPlane.n2p" title="永久链接至目标">¶</a></dt>
+<dd><p>number_to_point 的简写</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.ComplexPlane.number_to_point">
+<code class="sig-name descname">number_to_point</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">number</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.ComplexPlane.number_to_point" title="永久链接至目标">¶</a></dt>
+<dd><p>输入一个复数，返回该数对应的点的绝对坐标</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.ComplexPlane.p2n">
+<code class="sig-name descname">p2n</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.ComplexPlane.p2n" title="永久链接至目标">¶</a></dt>
+<dd><p>point_to_number 的简写</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.coordinate_systems.ComplexPlane.point_to_number">
+<code class="sig-name descname">point_to_number</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.ComplexPlane.point_to_number" title="永久链接至目标">¶</a></dt>
+<dd><p>输入一个绝对坐标，返回复平面上该点对应的复数</p>
+</dd></dl>
+</dd></dl>
+</section>
+</section>
+
+      </article>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="frame.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Frame</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="changing.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Changing</div>
+                
+              </div>
+            </a>
+        </div>
+
+        <div class="related-information">
+          <span class="copyright">版权所有 &copy; 2020-2021 Manim Kindergarten Team</span> |
+          Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using
+          <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+          <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            目录
+          </span>
+        </div>
+        <div class="toc-tree">
+          <ul>
+<li><a class="reference internal" href="#">CoordinateSystems</a><ul>
+<li><a class="reference internal" href="#coordinatesystem">CoordinateSystem</a></li>
+<li><a class="reference internal" href="#axes">Axes</a></li>
+<li><a class="reference internal" href="#threedaxes">ThreeDAxes</a></li>
+<li><a class="reference internal" href="#numberplane">NumberPlane</a></li>
+<li><a class="reference internal" href="#complexplane">ComplexPlane</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+      
+      
+    </aside>
+  </main>
+</div>
+  </body>
+</html>
