@@ -26,7 +26,7 @@ jobs:
     - name: Install sphinx and manim env
       run: |
         pip3 install --upgrade pip
-        sudo apt install python3-setuptools
+        sudo apt install python3-setuptools libpango1.0-dev
         pip3 install -r cairo-backend/requirements.txt
         pip3 install -r manim_with_doc/requirements.txt
     
@@ -37,7 +37,7 @@ jobs:
         cd cairo-backend
         make html
         mkdir -p ../build/html/cairo-backend
-        mv build/html ../build/html/cairo-backend
+        mv build/html/* ../build/html/cairo-backend
         cd ../build/html/cairo-backend
         echo "docs.manim.org.cn" > CNAME
 
@@ -51,7 +51,7 @@ jobs:
         cd docs
         pip3 install -r requirements.txt
         make html
-        mv build/html/ ../../build/html/
+        mv build/html/* ../../build/html/
         
     - name: Deploy to GitHub pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
