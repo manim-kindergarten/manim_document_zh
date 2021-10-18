@@ -8,6 +8,7 @@ cd ..
 
 # Build doc
 cd cairo-backend
+python -m pip install -r requirements.txt
 make html
 mkdir -p ../build/html/cairo-backend
 mv build/html/* ../build/html/cairo-backend/
@@ -16,8 +17,8 @@ mv build/html/* ../build/html/cairo-backend/
 cd ..
 git clone https://github.com/manim-kindergarten/manim.git manim_cn 
 cd manim_cn 
-pip install .
-pip install -r docs/requirements.txt 
+python -m pip install .
+python -m pip install -r docs/requirements.txt 
 cd docs
 make html
 mv build/html/* ../../build/html/
