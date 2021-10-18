@@ -1,0 +1,366 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Color" href="color.html" /><link rel="prev" title="工具函数 utils" href="index.html" />
+
+    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
+        <title>Bezier - manim shaders  文档</title>
+      <link rel="stylesheet" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
+    <link rel="stylesheet" href="../../_static/styles/default.css?b6be13e6bcc0f3330f38a028">
+    <link rel="stylesheet" href="../../_static/pygments.css?b6be13e6bcc0f3330f38a028">
+    
+<style>
+  :root {
+    --color-code-background: #f8f8f8;
+    --color-code-foreground: #000000;
+  
+  }
+</style>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
+      <script src="../../_static/underscore.js"></script>
+      
+        <script src="../../_static/doctools.js" defer></script>
+      
+        <script src="../../_static/language_data.js" defer></script>
+      
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/translations.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?b6be13e6bcc0f3330f38a028"></script></head>
+  <body dir="">
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke-width="1.5" stroke="#101010" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z"/>
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+
+<div class="page">
+  <header class="mobile-header">
+    <label class="header-left nav-overlay-icon" for="__navigation">
+      <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+    </label>
+    <div class="header-center"><div class="brand">manim shaders  文档</div></div>
+    <div class="header-right"></div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand centered" href="../../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="../../_static/Logo_white.png" alt="Logo"/>
+  </div>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html">
+  <input class="sidebar-search" placeholder="Search" name="q">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form><div class="sidebar-tree sidebar-scroll">
+  <p><span class="caption-text">入门教程</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/configuration.html">命令行参数和配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/example_scenes.html">样例学习</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG字典用法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim结构</a></li>
+</ul>
+<p><span class="caption-text">进阶文档</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../animation/index.html">动画部分 animation</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../animation/creation.html">Creation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/fading.html">Fading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/growing.html">Growing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/indication.html">Indication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/movement.html">Movement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/numbers.html">Numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/rotation.html">Rotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/transform.html">Transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/transform_matching_parts.html">Transform Matching Parts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/update.html">Update</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/composition.html">Composition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/specialized.html">Specialized</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../camera/index.html">相机部分 camera</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label for="toctree-checkbox-2"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../camera/camera.html">Camera</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mobject/index.html">数学物件 Mobject</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../mobject/types/index.html">types</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label for="toctree-checkbox-4"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/types/dot_cloud.html">Dot Cloud</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/types/image_mobject.html">Image Mobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/types/point_cloud_mobject.html">Point Cloud Mobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/types/surface.html">Surface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/types/vectorized_mobject.html">Vectorized Mobject</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../mobject/svg/index.html">svg</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label for="toctree-checkbox-5"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/brace.html">Brace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/drawings.html">Drawings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/svg_mobject.html">SVGMobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/tex_mobject.html">Tex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/text_mobject.html">Text</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/changing.html">Changing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/coordinate_systems.html">CoordinateSystems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/frame.html">Frame</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/geometry.html">Geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/interactive.html">Interactive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/matrix.html">Matrix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/mobject.html">Mobject</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/mobject_update_utils.html">MobjectUpdateUtils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/number_line.html">NumberLine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/numbers.html">Numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/probability.html">Probability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/shape_matchers.html">ShapeMatchers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/three_dimensions.html">ThreeDimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/value_tracker.html">ValueTracker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/vector_field.html">VectorField</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../scene/index.html">场景部分 scene</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label for="toctree-checkbox-6"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scene/scene.html">Scene</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/scene_file_writer.html">SceneFileWriter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/three_d_scene.html">ThreeDScene</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/sample_space_scene.html">SampleSpaceScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/vector_space_scene.html">VectorScene</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../shaders/index.html">Shaders (TODO)</a></li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">工具函数 utils</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Bezier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="color.html">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config_ops.html">CONFIG_ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_ops.html">FILE_ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="images.html">Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iterables.html">Iterables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="paths.html">Paths</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rate_functions.html">Rate_functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="simple_functions.html">Simple_functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sounds.html">Sounds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="space_ops.html">Space_ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="strings.html">Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tex_file_writing.html">Tex_file_writing</a></li>
+</ul>
+</li>
+</ul>
+<p><span class="caption-text">开发相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/about.html">关于</a></li>
+</ul>
+
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <main class="main">
+    <div class="content">
+      <article role="main">
+        <label class="toc-overlay-icon no-toc" for="__toc">
+          <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        </label>
+        <section id="bezier">
+<h1>Bezier<a class="headerlink" href="#bezier" title="永久链接至标题">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">manimlib/utils/bezier.py</span></code> 这个文件中主要实现了和贝塞尔曲线、插值有关的函数</p>
+<hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.bezier.bezier">
+<code class="sig-prename descclassname">manimlib.utils.bezier.</code><code class="sig-name descname">bezier</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">points</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.bezier.bezier" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+<div class="line-block">
+<div class="line">返回由点集(锚点，控制点)确定的参数方程</div>
+<div class="line">贝塞尔曲线的次数由 points 中点的个数确定</div>
+</div>
+<hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.bezier.partial_bezier_points">
+<code class="sig-prename descclassname">manimlib.utils.bezier.</code><code class="sig-name descname">partial_bezier_points</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">points</span></em>, <em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.bezier.partial_bezier_points" title="永久链接至目标">¶</a></dt>
+<dd><p>Given an list of points which define
+a bezier curve, and two numbers 0&lt;=a&lt;b&lt;=1,
+return an list of the same size, which
+describes the portion of the original bezier
+curve on the interval [a, b].</p>
+<p>This algorithm is pretty nifty, and pretty dense.</p>
+</dd></dl>
+<div class="line-block">
+<div class="line">给出贝塞尔曲线的点数组和两个 01 之间的数 ab</div>
+<div class="line">返回一个大小相同的数组，该数组描述原始贝塞尔曲线在间隔 [a,b] 上的部分</div>
+</div>
+<hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.bezier.partial_quadratic_bezier_points">
+<code class="sig-prename descclassname">manimlib.utils.bezier.</code><code class="sig-name descname">partial_quadratic_bezier_points</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">points</span></em>, <em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.bezier.partial_quadratic_bezier_points" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+<div class="line-block">
+<div class="line">给出二阶贝塞尔曲线的点数组和两个 01 之间的数 ab</div>
+<div class="line">返回一个大小相同的数组，该数组描述原始二阶贝塞尔曲线在间隔 [a,b] 上的部分</div>
+</div>
+<hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.bezier.interpolate">
+<code class="sig-prename descclassname">manimlib.utils.bezier.</code><code class="sig-name descname">interpolate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start</span></em>, <em class="sig-param"><span class="n">end</span></em>, <em class="sig-param"><span class="n">alpha</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.bezier.interpolate" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+<p>线性插值</p>
+<hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.bezier.set_array_by_interpolation">
+<code class="sig-prename descclassname">manimlib.utils.bezier.</code><code class="sig-name descname">set_array_by_interpolation</code><span class="sig-paren">(</span><em class="sig-param">arr</em>, <em class="sig-param">arr1</em>, <em class="sig-param">arr2</em>, <em class="sig-param">alpha</em>, <em class="sig-param">interp_func=&lt;function interpolate&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.bezier.set_array_by_interpolation" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+<p>传入两个大小相同的数组，返回一个相同大小的数组，其中包含的元素为每个对应元素的插值</p>
+<hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.bezier.integer_interpolate">
+<code class="sig-prename descclassname">manimlib.utils.bezier.</code><code class="sig-name descname">integer_interpolate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start</span></em>, <em class="sig-param"><span class="n">end</span></em>, <em class="sig-param"><span class="n">alpha</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.bezier.integer_interpolate" title="永久链接至目标">¶</a></dt>
+<dd><p>alpha is a float between 0 and 1.  This returns
+an integer between start and end (inclusive) representing
+appropriate interpolation between them, along with a
+“residue” representing a new proportion between the
+returned integer and the next one of the
+list.</p>
+<p>For example, if start=0, end=10, alpha=0.46, This
+would return (4, 0.6).</p>
+</dd></dl>
+<p>整数插值，返回两个数，第一个为插值结果(整数)，第二个为和线性插值相差的小数部分</p>
+<hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.bezier.mid">
+<code class="sig-prename descclassname">manimlib.utils.bezier.</code><code class="sig-name descname">mid</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start</span></em>, <em class="sig-param"><span class="n">end</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.bezier.mid" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+<p>返回 (start+end)/2，start 和 end 可以是任意类型</p>
+<hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.bezier.inverse_interpolate">
+<code class="sig-prename descclassname">manimlib.utils.bezier.</code><code class="sig-name descname">inverse_interpolate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start</span></em>, <em class="sig-param"><span class="n">end</span></em>, <em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.bezier.inverse_interpolate" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+<p>由插值的结果 value，返回 alpha</p>
+<hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.bezier.match_interpolate">
+<code class="sig-prename descclassname">manimlib.utils.bezier.</code><code class="sig-name descname">match_interpolate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">new_start</span></em>, <em class="sig-param"><span class="n">new_end</span></em>, <em class="sig-param"><span class="n">old_start</span></em>, <em class="sig-param"><span class="n">old_end</span></em>, <em class="sig-param"><span class="n">old_value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.bezier.match_interpolate" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+<div class="line-block">
+<div class="line">匹配插值，给出原插值范围 old_start, old_end 和结果 old_value</div>
+<div class="line">返回以相同比例，插值范围为 new_start, new_end 的插值结果</div>
+</div>
+<hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.bezier.get_smooth_quadratic_bezier_handle_points">
+<code class="sig-prename descclassname">manimlib.utils.bezier.</code><code class="sig-name descname">get_smooth_quadratic_bezier_handle_points</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">points</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.bezier.get_smooth_quadratic_bezier_handle_points" title="永久链接至目标">¶</a></dt>
+<dd><p>Figuring out which bezier curves most smoothly connect a sequence of points.</p>
+<p>Given three successive points, P0, P1 and P2, you can compute that by defining
+h = (1/4) P0 + P1 - (1/4)P2, the bezier curve defined by (P0, h, P1) will pass
+through the point P2.</p>
+<p>So for a given set of four successive points, P0, P1, P2, P3, if we want to add
+a handle point h between P1 and P2 so that the quadratic bezier (P1, h, P2) is
+part of a smooth curve passing through all four points, we calculate one solution
+for h that would produce a parbola passing through P3, call it smooth_to_right, and
+another that would produce a parabola passing through P0, call it smooth_to_left,
+and use the midpoint between the two.</p>
+</dd></dl>
+<p>给出一系列锚点 points，返回经过 points 的平滑贝塞尔曲线的一系列控制点</p>
+<hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.bezier.diag_to_matrix">
+<code class="sig-prename descclassname">manimlib.utils.bezier.</code><code class="sig-name descname">diag_to_matrix</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">l_and_u</span></em>, <em class="sig-param"><span class="n">diag</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.bezier.diag_to_matrix" title="永久链接至目标">¶</a></dt>
+<dd><p>Converts array whose rows represent diagonal
+entries of a matrix into the matrix itself.
+See scipy.linalg.solve_banded</p>
+</dd></dl>
+<div class="line-block">
+<div class="line">用矩阵以对角线形式填充矩阵</div>
+<div class="line">l, u 为非零下上对角线数，diag 为将以对角线形式填充的矩阵</div>
+</div>
+<hr class="docutils"/>
+<dl class="py function">
+<dt id="manimlib.utils.bezier.is_closed">
+<code class="sig-prename descclassname">manimlib.utils.bezier.</code><code class="sig-name descname">is_closed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">points</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.bezier.is_closed" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+<p>检查曲线是否闭合(首尾锚点重合)</p>
+</section>
+
+      </article>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="color.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Color</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="index.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">工具函数 utils</div>
+                
+              </div>
+            </a>
+        </div>
+
+        <div class="related-information">
+          <span class="copyright">版权所有 &copy; 2020-2021 Manim Kindergarten Team</span> |
+          Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using
+          <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+          <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </main>
+</div>
+  </body>
+</html>

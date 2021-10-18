@@ -1,0 +1,979 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="MobjectUpdateUtils" href="mobject_update_utils.html" /><link rel="prev" title="Matrix" href="matrix.html" />
+
+    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
+        <title>Mobject - manim shaders  文档</title>
+      <link rel="stylesheet" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
+    <link rel="stylesheet" href="../../_static/styles/default.css?230d6237153f6afb3e14544a">
+    <link rel="stylesheet" href="../../_static/pygments.css?230d6237153f6afb3e14544a">
+    
+<style>
+  :root {
+    --color-code-background: #f8f8f8;
+    --color-code-foreground: #000000;
+  
+  }
+</style>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
+      <script src="../../_static/underscore.js"></script>
+      
+        <script src="../../_static/doctools.js" defer></script>
+      
+        <script src="../../_static/language_data.js" defer></script>
+      
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/translations.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?230d6237153f6afb3e14544a"></script></head>
+  <body dir="">
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke-width="1.5" stroke="#101010" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z"/>
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+
+<div class="page">
+  <header class="mobile-header">
+    <label class="header-left nav-overlay-icon" for="__navigation">
+      <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+    </label>
+    <div class="header-center"><div class="brand">manim shaders  文档</div></div>
+    <div class="header-right"></div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand centered" href="../../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="../../_static/Logo_white.png" alt="Logo"/>
+  </div>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html">
+  <input class="sidebar-search" placeholder="Search" name="q">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form><div class="sidebar-tree sidebar-scroll">
+  <p><span class="caption-text">入门教程</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/configuration.html">命令行参数和配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/example_scenes.html">样例学习</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG字典用法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim结构</a></li>
+</ul>
+<p><span class="caption-text">进阶文档</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../animation/index.html">动画部分 animation</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../animation/creation.html">Creation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/fading.html">Fading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/growing.html">Growing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/indication.html">Indication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/movement.html">Movement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/numbers.html">Numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/rotation.html">Rotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/transform.html">Transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/transform_matching_parts.html">Transform Matching Parts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/update.html">Update</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/composition.html">Composition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/specialized.html">Specialized</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../camera/index.html">相机部分 camera</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label for="toctree-checkbox-2"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../camera/camera.html">Camera</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">数学物件 Mobject</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="types/index.html">types</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label for="toctree-checkbox-4"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="types/dot_cloud.html">Dot Cloud</a></li>
+<li class="toctree-l3"><a class="reference internal" href="types/image_mobject.html">Image Mobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="types/point_cloud_mobject.html">Point Cloud Mobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="types/surface.html">Surface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="types/vectorized_mobject.html">Vectorized Mobject</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="svg/index.html">svg</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label for="toctree-checkbox-5"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="svg/brace.html">Brace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="svg/drawings.html">Drawings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="svg/svg_mobject.html">SVGMobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="svg/tex_mobject.html">Tex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="svg/text_mobject.html">Text</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="changing.html">Changing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coordinate_systems.html">CoordinateSystems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="frame.html">Frame</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geometry.html">Geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interactive.html">Interactive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matrix.html">Matrix</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Mobject</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mobject_update_utils.html">MobjectUpdateUtils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="number_line.html">NumberLine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="numbers.html">Numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="probability.html">Probability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shape_matchers.html">ShapeMatchers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="three_dimensions.html">ThreeDimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="value_tracker.html">ValueTracker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vector_field.html">VectorField</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../scene/index.html">场景部分 scene</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label for="toctree-checkbox-6"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scene/scene.html">Scene</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/scene_file_writer.html">SceneFileWriter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/three_d_scene.html">ThreeDScene</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/sample_space_scene.html">SampleSpaceScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/vector_space_scene.html">VectorScene</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../shaders/index.html">Shaders (TODO)</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../utils/index.html">工具函数 utils</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../utils/bezier.html">Bezier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/color.html">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/config_ops.html">CONFIG_ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/file_ops.html">FILE_ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/images.html">Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/iterables.html">Iterables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/paths.html">Paths</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/rate_functions.html">Rate_functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/simple_functions.html">Simple_functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/sounds.html">Sounds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/space_ops.html">Space_ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/strings.html">Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/tex_file_writing.html">Tex_file_writing</a></li>
+</ul>
+</li>
+</ul>
+<p><span class="caption-text">开发相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/about.html">关于</a></li>
+</ul>
+
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <main class="main">
+    <div class="content">
+      <article role="main">
+        <label class="toc-overlay-icon" for="__toc">
+          <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        </label>
+        <section id="mobject">
+<h1>Mobject<a class="headerlink" href="#mobject" title="永久链接至标题">¶</a></h1>
+<p>MK做了一个关于常用 <a class="reference internal" href="#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> 的方法的视频：
+<a class="reference external" href="https://www.bilibili.com/video/BV1p54y197cC">〔manim教程〕第一讲 物体的位置与坐标变换</a></p>
+<p>虽然 <code class="docutils literal notranslate"><span class="pre">manimgl</span></code> 对一部分物件进行了更新，但大体还能用，有变化的可以看源码进行修改。</p>
+<section id="id1">
+<h2>Mobject<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.mobject.Mobject">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.mobject.</code><code class="sig-name descname">Mobject</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject" title="永久链接至目标">¶</a></dt>
+<dd><p>数学物品（屏幕上的所有物体的超类）</p>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.add">
+<code class="sig-name descname">add</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">mobjects</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.add" title="永久链接至目标">¶</a></dt>
+<dd><p>将 <code class="docutils literal notranslate"><span class="pre">mobjects</span></code> 添加到子物体中</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.add_background_rectangle">
+<code class="sig-name descname">add_background_rectangle</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">opacity</span><span class="o">=</span><span class="default_value">0.75</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.add_background_rectangle" title="永久链接至目标">¶</a></dt>
+<dd><p>添加背景矩形</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.add_background_rectangle_to_submobjects">
+<code class="sig-name descname">add_background_rectangle_to_submobjects</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.add_background_rectangle_to_submobjects" title="永久链接至目标">¶</a></dt>
+<dd><p>给子物件添加背景矩形</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.add_event_listner">
+<code class="sig-name descname">add_event_listner</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">event_type</span></em>, <em class="sig-param"><span class="n">event_callback</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.add_event_listner" title="永久链接至目标">¶</a></dt>
+<dd><p>添加事件侦听</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.add_to_back">
+<code class="sig-name descname">add_to_back</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">mobjects</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.add_to_back" title="永久链接至目标">¶</a></dt>
+<dd><p>将 <code class="docutils literal notranslate"><span class="pre">mobjects</span></code> 添加到子物体前面（覆盖关系在下）</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.add_updater">
+<code class="sig-name descname">add_updater</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">update_function</span></em>, <em class="sig-param"><span class="n">index</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">call_updater</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.add_updater" title="永久链接至目标">¶</a></dt>
+<dd><p>添加 <code class="docutils literal notranslate"><span class="pre">updater</span></code> 函数</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.align_on_border">
+<code class="sig-name descname">align_on_border</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">direction</span></em>, <em class="sig-param"><span class="n">buff</span><span class="o">=</span><span class="default_value">0.5</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.align_on_border" title="永久链接至目标">¶</a></dt>
+<dd><p>以 <code class="docutils literal notranslate"><span class="pre">direction</span></code> 这个边界对齐</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.align_to">
+<code class="sig-name descname">align_to</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject_or_point</span></em>, <em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.align_to" title="永久链接至目标">¶</a></dt>
+<dd><p>对齐</p>
+<p>例子：
+<code class="docutils literal notranslate"><span class="pre">mob1.align_to(mob2,</span> <span class="pre">UP)</span></code> 会将 <code class="docutils literal notranslate"><span class="pre">mob1</span></code> 垂直移动，顶部与 <code class="docutils literal notranslate"><span class="pre">mob2</span></code> 的上边缘对齐</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.append_points">
+<code class="sig-name descname">append_points</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">new_points</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.append_points" title="永久链接至目标">¶</a></dt>
+<dd><p>添加锚点</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.apply_complex_function">
+<code class="sig-name descname">apply_complex_function</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.apply_complex_function" title="永久链接至目标">¶</a></dt>
+<dd><p>施加一个复变函数</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.apply_function">
+<code class="sig-name descname">apply_function</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.apply_function" title="永久链接至目标">¶</a></dt>
+<dd><p>把 <code class="docutils literal notranslate"><span class="pre">function</span></code> 作用到所有锚点上</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.apply_function_to_position">
+<code class="sig-name descname">apply_function_to_position</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.apply_function_to_position" title="永久链接至目标">¶</a></dt>
+<dd><p>给物体所在的位置执行 <code class="docutils literal notranslate"><span class="pre">function</span></code></p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.apply_function_to_submobject_positions">
+<code class="sig-name descname">apply_function_to_submobject_positions</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.apply_function_to_submobject_positions" title="永久链接至目标">¶</a></dt>
+<dd><p>给所有子物体所在的位置执行 <code class="docutils literal notranslate"><span class="pre">function</span></code></p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.apply_matrix">
+<code class="sig-name descname">apply_matrix</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">matrix</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.apply_matrix" title="永久链接至目标">¶</a></dt>
+<dd><p>把 <code class="docutils literal notranslate"><span class="pre">matrix</span></code> 矩阵作用到所有点上</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.apply_points_function">
+<code class="sig-name descname">apply_points_function</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">func</span></em>, <em class="sig-param"><span class="n">about_point</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">about_edge</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="n">works_on_bounding_box</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.apply_points_function" title="永久链接至目标">¶</a></dt>
+<dd><p>以 <code class="docutils literal notranslate"><span class="pre">about_point</span></code> 为不变基准点，或以 <code class="docutils literal notranslate"><span class="pre">about_edge</span></code> 为不变基准边，对所有点执行 <code class="docutils literal notranslate"><span class="pre">func</span></code></p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.arrange">
+<code class="sig-name descname">arrange</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">array([1.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="n">center</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.arrange" title="永久链接至目标">¶</a></dt>
+<dd><p>将子物件按照 <code class="docutils literal notranslate"><span class="pre">direction</span></code> 方向排列</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.arrange_in_grid">
+<code class="sig-name descname">arrange_in_grid</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_rows</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">n_cols</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">buff</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">h_buff</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">v_buff</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">buff_ratio</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">h_buff_ratio</span><span class="o">=</span><span class="default_value">0.5</span></em>, <em class="sig-param"><span class="n">v_buff_ratio</span><span class="o">=</span><span class="default_value">0.5</span></em>, <em class="sig-param"><span class="n">aligned_edge</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="n">fill_rows_first</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.arrange_in_grid" title="永久链接至目标">¶</a></dt>
+<dd><p>将子物件按表格方式排列</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">n_rows</span></code>, <code class="docutils literal notranslate"><span class="pre">n_cols</span></code> : 行数、列数</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">v_buff</span></code>,``h_buff`` : 行距、列距</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">aligned_edge</span></code> : 对齐边缘</p></li>
+</ul>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.become">
+<code class="sig-name descname">become</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.become" title="永久链接至目标">¶</a></dt>
+<dd><p>重构物件数据并将它变成传入的 <code class="docutils literal notranslate"><span class="pre">mobject</span></code></p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.center">
+<code class="sig-name descname">center</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.center" title="永久链接至目标">¶</a></dt>
+<dd><p>放到画面中心</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.clear_event_listners">
+<code class="sig-name descname">clear_event_listners</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.clear_event_listners" title="永久链接至目标">¶</a></dt>
+<dd><p>清空事件侦听</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.clear_points">
+<code class="sig-name descname">clear_points</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.clear_points" title="永久链接至目标">¶</a></dt>
+<dd><p>清空物件锚点</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.clear_updaters">
+<code class="sig-name descname">clear_updaters</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.clear_updaters" title="永久链接至目标">¶</a></dt>
+<dd><p>清空所有的 <code class="docutils literal notranslate"><span class="pre">updater</span></code> 函数</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.compute_bounding_box">
+<code class="sig-name descname">compute_bounding_box</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.compute_bounding_box" title="永久链接至目标">¶</a></dt>
+<dd><p>计算包围框</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.copy" title="永久链接至目标">¶</a></dt>
+<dd><p>获取物件的拷贝</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.digest_mobject_attrs">
+<code class="sig-name descname">digest_mobject_attrs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.digest_mobject_attrs" title="永久链接至目标">¶</a></dt>
+<dd><p>确保所有对象属性都包含在子对象列表中</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.fade">
+<code class="sig-name descname">fade</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">darkness</span><span class="o">=</span><span class="default_value">0.5</span></em>, <em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.fade" title="永久链接至目标">¶</a></dt>
+<dd><p>变暗</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.fix_in_frame">
+<code class="sig-name descname">fix_in_frame</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.fix_in_frame" title="永久链接至目标">¶</a></dt>
+<dd><p>将物件锁定在屏幕上，常用于 3D 场景需要旋转镜头的情况</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.flip">
+<code class="sig-name descname">flip</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">axis</span><span class="o">=</span><span class="default_value">array([0.0, 1.0, 0.0])</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.flip" title="永久链接至目标">¶</a></dt>
+<dd><p>绕 <code class="docutils literal notranslate"><span class="pre">axis</span></code> 轴翻转</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.generate_target">
+<code class="sig-name descname">generate_target</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">use_deepcopy</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.generate_target" title="永久链接至目标">¶</a></dt>
+<dd><p>通过复制自身作为自己的 target, 生成一个 target 属性</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_all_points">
+<code class="sig-name descname">get_all_points</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_all_points" title="永久链接至目标">¶</a></dt>
+<dd><p>获取物件所有锚点</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_bottom">
+<code class="sig-name descname">get_bottom</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_bottom" title="永久链接至目标">¶</a></dt>
+<dd><p>获取下边缘中心</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_bounding_box">
+<code class="sig-name descname">get_bounding_box</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_bounding_box" title="永久链接至目标">¶</a></dt>
+<dd><p>获取物件的矩形包围框（碰撞箱）</p>
+<p>包含三个元素，分别为左上，中心，右下</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_center">
+<code class="sig-name descname">get_center</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_center" title="永久链接至目标">¶</a></dt>
+<dd><p>获取物件中心坐标</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_center_of_mass">
+<code class="sig-name descname">get_center_of_mass</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_center_of_mass" title="永久链接至目标">¶</a></dt>
+<dd><p>获取重心</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_color">
+<code class="sig-name descname">get_color</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_color" title="永久链接至目标">¶</a></dt>
+<dd><p>获取颜色</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_coord">
+<code class="sig-name descname">get_coord</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dim</span></em>, <em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_coord" title="永久链接至目标">¶</a></dt>
+<dd><p>获取物件在 <code class="docutils literal notranslate"><span class="pre">dim</span></code> 维度上的坐标</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_corner">
+<code class="sig-name descname">get_corner</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">direction</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_corner" title="永久链接至目标">¶</a></dt>
+<dd><p>获取某一个角落</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_depth">
+<code class="sig-name descname">get_depth</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_depth" title="永久链接至目标">¶</a></dt>
+<dd><p>获取物件深度（即 z 轴方向的宽度）</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_edge_center">
+<code class="sig-name descname">get_edge_center</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">direction</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_edge_center" title="永久链接至目标">¶</a></dt>
+<dd><p>获取某一边缘的中心</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_end">
+<code class="sig-name descname">get_end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_end" title="永久链接至目标">¶</a></dt>
+<dd><p>获取终止点</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_event_listners">
+<code class="sig-name descname">get_event_listners</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_event_listners" title="永久链接至目标">¶</a></dt>
+<dd><p>获取事件侦听</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_gloss">
+<code class="sig-name descname">get_gloss</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_gloss" title="永久链接至目标">¶</a></dt>
+<dd><p>获取光泽</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_grid">
+<code class="sig-name descname">get_grid</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_rows</span></em>, <em class="sig-param"><span class="n">n_cols</span></em>, <em class="sig-param"><span class="n">height</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_grid" title="永久链接至目标">¶</a></dt>
+<dd><p>拷贝一份，并将这份拷贝按表格方式排好后返回</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_height">
+<code class="sig-name descname">get_height</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_height" title="永久链接至目标">¶</a></dt>
+<dd><p>获取物件高度</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_left">
+<code class="sig-name descname">get_left</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_left" title="永久链接至目标">¶</a></dt>
+<dd><p>获取左边缘中心</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_nadir">
+<code class="sig-name descname">get_nadir</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_nadir" title="永久链接至目标">¶</a></dt>
+<dd><p>获取内边缘中心（这里的内，指垂直于屏幕向内的平面）</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_num_points">
+<code class="sig-name descname">get_num_points</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_num_points" title="永久链接至目标">¶</a></dt>
+<dd><p>获取锚点数量</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_opacity">
+<code class="sig-name descname">get_opacity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_opacity" title="永久链接至目标">¶</a></dt>
+<dd><p>获取透明度</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_pieces">
+<code class="sig-name descname">get_pieces</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_pieces</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_pieces" title="永久链接至目标">¶</a></dt>
+<dd><p>将物体拆成 <code class="docutils literal notranslate"><span class="pre">n_pieces</span></code> 个部分，便于部分解决 3D 中透视问题</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_points">
+<code class="sig-name descname">get_points</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_points" title="永久链接至目标">¶</a></dt>
+<dd><p>获取物件锚点</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_right">
+<code class="sig-name descname">get_right</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_right" title="永久链接至目标">¶</a></dt>
+<dd><p>获取右边缘中心</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_shader_data">
+<code class="sig-name descname">get_shader_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_shader_data" title="永久链接至目标">¶</a></dt>
+<dd><p>获取 shader 数据</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_shader_wrapper">
+<code class="sig-name descname">get_shader_wrapper</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_shader_wrapper" title="永久链接至目标">¶</a></dt>
+<dd><p>获取 shader 包装</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_shader_wrapper_list">
+<code class="sig-name descname">get_shader_wrapper_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_shader_wrapper_list" title="永久链接至目标">¶</a></dt>
+<dd><p>获取 shader 包装列表</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_shadow">
+<code class="sig-name descname">get_shadow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_shadow" title="永久链接至目标">¶</a></dt>
+<dd><p>阴影光泽</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_start">
+<code class="sig-name descname">get_start</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_start" title="永久链接至目标">¶</a></dt>
+<dd><p>获取起始点</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_start_and_end">
+<code class="sig-name descname">get_start_and_end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_start_and_end" title="永久链接至目标">¶</a></dt>
+<dd><p>获取起始点和终止点</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_top">
+<code class="sig-name descname">get_top</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_top" title="永久链接至目标">¶</a></dt>
+<dd><p>获取上边缘中心</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_width">
+<code class="sig-name descname">get_width</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_width" title="永久链接至目标">¶</a></dt>
+<dd><p>获取物件宽度</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_x">
+<code class="sig-name descname">get_x</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_x" title="永久链接至目标">¶</a></dt>
+<dd><p>获取 x 坐标</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_y">
+<code class="sig-name descname">get_y</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_y" title="永久链接至目标">¶</a></dt>
+<dd><p>获取 y 坐标</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_z">
+<code class="sig-name descname">get_z</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_z" title="永久链接至目标">¶</a></dt>
+<dd><p>获取 z 坐标</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.get_zenith">
+<code class="sig-name descname">get_zenith</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.get_zenith" title="永久链接至目标">¶</a></dt>
+<dd><p>获取外边缘中心（这里的外，指垂直于屏幕向外的平面）</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.has_points">
+<code class="sig-name descname">has_points</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.has_points" title="永久链接至目标">¶</a></dt>
+<dd><p>判断是否有锚点</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.is_off_screen">
+<code class="sig-name descname">is_off_screen</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.is_off_screen" title="永久链接至目标">¶</a></dt>
+<dd><p>判断是否在画面外</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.is_point_touching">
+<code class="sig-name descname">is_point_touching</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em>, <em class="sig-param"><span class="n">buff</span><span class="o">=</span><span class="default_value">0.25</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.is_point_touching" title="永久链接至目标">¶</a></dt>
+<dd><p>判断某一点是否在本物件的包围框范围内</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.length_over_dim">
+<code class="sig-name descname">length_over_dim</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dim</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.length_over_dim" title="永久链接至目标">¶</a></dt>
+<dd><p>在 <code class="docutils literal notranslate"><span class="pre">dim</span></code> 维度的长度</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.lock_data">
+<code class="sig-name descname">lock_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">keys</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.lock_data" title="永久链接至目标">¶</a></dt>
+<dd><p>为了加速一些动画，尤其是 Transform，它可以很方便地确认哪些数据片段不会在动画期间改变，
+以便调用插值可以跳过这一点，这样它就不会被不必要地读入 shader_wrapper 对象</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.match_color">
+<code class="sig-name descname">match_color</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.match_color" title="永久链接至目标">¶</a></dt>
+<dd><p>将自己的颜色与 <code class="docutils literal notranslate"><span class="pre">mobject</span></code> 匹配</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.match_depth">
+<code class="sig-name descname">match_depth</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.match_depth" title="永久链接至目标">¶</a></dt>
+<dd><p>将自己的深度与 <code class="docutils literal notranslate"><span class="pre">mobject</span></code> 匹配（这里的深度指 z 轴方向的宽度）</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.match_height">
+<code class="sig-name descname">match_height</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.match_height" title="永久链接至目标">¶</a></dt>
+<dd><p>将自己的高度与 <code class="docutils literal notranslate"><span class="pre">mobject</span></code> 匹配</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.match_points">
+<code class="sig-name descname">match_points</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.match_points" title="永久链接至目标">¶</a></dt>
+<dd><p>将自身锚点与 <code class="docutils literal notranslate"><span class="pre">mobject</span></code> 的锚点匹配</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.match_updaters">
+<code class="sig-name descname">match_updaters</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.match_updaters" title="永久链接至目标">¶</a></dt>
+<dd><p>将自己的 <code class="docutils literal notranslate"><span class="pre">updater</span></code> 函数与 <code class="docutils literal notranslate"><span class="pre">mobject</span></code> 匹配</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.match_width">
+<code class="sig-name descname">match_width</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.match_width" title="永久链接至目标">¶</a></dt>
+<dd><p>将自己的宽度与 <code class="docutils literal notranslate"><span class="pre">mobject</span></code> 匹配</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.match_x">
+<code class="sig-name descname">match_x</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.match_x" title="永久链接至目标">¶</a></dt>
+<dd><p>移动到 <code class="docutils literal notranslate"><span class="pre">mobject</span></code> 的 x 轴坐标</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.match_y">
+<code class="sig-name descname">match_y</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.match_y" title="永久链接至目标">¶</a></dt>
+<dd><p>移动到 <code class="docutils literal notranslate"><span class="pre">mobject</span></code> 的 y 轴坐标</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.match_z">
+<code class="sig-name descname">match_z</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.match_z" title="永久链接至目标">¶</a></dt>
+<dd><p>移动到 <code class="docutils literal notranslate"><span class="pre">mobject</span></code> 的 z 轴坐标</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.move_to">
+<code class="sig-name descname">move_to</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point_or_mobject</span></em>, <em class="sig-param"><span class="n">aligned_edge</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="n">coor_mask</span><span class="o">=</span><span class="default_value">array([1, 1, 1])</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.move_to" title="永久链接至目标">¶</a></dt>
+<dd><p>移动到 <code class="docutils literal notranslate"><span class="pre">point_or_mobject</span></code> 的位置</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.next_to">
+<code class="sig-name descname">next_to</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject_or_point</span></em>, <em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">array([1.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="n">buff</span><span class="o">=</span><span class="default_value">0.25</span></em>, <em class="sig-param"><span class="n">aligned_edge</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="n">submobject_to_align</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">index_of_submobject_to_align</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">coor_mask</span><span class="o">=</span><span class="default_value">array([1, 1, 1])</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.next_to" title="永久链接至目标">¶</a></dt>
+<dd><p>放到 <code class="docutils literal notranslate"><span class="pre">mobject_or_point</span></code> 旁边</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.pfp">
+<code class="sig-name descname">pfp</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">alpha</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.pfp" title="永久链接至目标">¶</a></dt>
+<dd><p>point_from_proportion 的简写</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.point_from_proportion">
+<code class="sig-name descname">point_from_proportion</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">alpha</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.point_from_proportion" title="永久链接至目标">¶</a></dt>
+<dd><p>在整条路径上占比为 <code class="docutils literal notranslate"><span class="pre">alpha</span></code> 处的点</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.pointwise_become_partial">
+<code class="sig-name descname">pointwise_become_partial</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.pointwise_become_partial" title="永久链接至目标">¶</a></dt>
+<dd><p>生成一个路径百分比从 a 到 b 的物件</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.put_start_and_end_on">
+<code class="sig-name descname">put_start_and_end_on</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start</span></em>, <em class="sig-param"><span class="n">end</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.put_start_and_end_on" title="永久链接至目标">¶</a></dt>
+<dd><p>把物体点集中的起点和终点通过旋转缩放放在 <code class="docutils literal notranslate"><span class="pre">start</span></code> 和 <code class="docutils literal notranslate"><span class="pre">end</span></code></p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.refresh_bounding_box">
+<code class="sig-name descname">refresh_bounding_box</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">recurse_down</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">recurse_up</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.refresh_bounding_box" title="永久链接至目标">¶</a></dt>
+<dd><p>更新包围框</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.remove">
+<code class="sig-name descname">remove</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">mobjects</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.remove" title="永久链接至目标">¶</a></dt>
+<dd><p>将 <code class="docutils literal notranslate"><span class="pre">mobjects</span></code> 从子物体中移除</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.remove_event_listner">
+<code class="sig-name descname">remove_event_listner</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">event_type</span></em>, <em class="sig-param"><span class="n">event_callback</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.remove_event_listner" title="永久链接至目标">¶</a></dt>
+<dd><p>移除事件侦听</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.remove_updater">
+<code class="sig-name descname">remove_updater</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">update_function</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.remove_updater" title="永久链接至目标">¶</a></dt>
+<dd><p>移除指定的 <code class="docutils literal notranslate"><span class="pre">updater</span></code> 函数</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.replace">
+<code class="sig-name descname">replace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">dim_to_match</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">stretch</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.replace" title="永久链接至目标">¶</a></dt>
+<dd><p>放到和 <code class="docutils literal notranslate"><span class="pre">mobject</span></code> 的位置，并且大小相同</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.replace_submobject">
+<code class="sig-name descname">replace_submobject</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">index</span></em>, <em class="sig-param"><span class="n">new_submob</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.replace_submobject" title="永久链接至目标">¶</a></dt>
+<dd><p>用新的子物件代替指定索引处的旧子物件</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.restore">
+<code class="sig-name descname">restore</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.restore" title="永久链接至目标">¶</a></dt>
+<dd><p>恢复为 <code class="docutils literal notranslate"><span class="pre">saved_state</span></code> 的状态</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.resume_updating">
+<code class="sig-name descname">resume_updating</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">call_updater</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.resume_updating" title="永久链接至目标">¶</a></dt>
+<dd><p>恢复物件更新</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.reverse_points">
+<code class="sig-name descname">reverse_points</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.reverse_points" title="永久链接至目标">¶</a></dt>
+<dd><p>反转锚点</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.rotate">
+<code class="sig-name descname">rotate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">angle</span></em>, <em class="sig-param"><span class="n">axis</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 1.0])</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.rotate" title="永久链接至目标">¶</a></dt>
+<dd><p>以 <code class="docutils literal notranslate"><span class="pre">axis</span></code> 为方向，<code class="docutils literal notranslate"><span class="pre">angle</span></code> 为角度旋转，<code class="docutils literal notranslate"><span class="pre">kwargs</span></code> 中可传入 <code class="docutils literal notranslate"><span class="pre">about_point</span></code></p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.rotate_about_origin">
+<code class="sig-name descname">rotate_about_origin</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">angle</span></em>, <em class="sig-param"><span class="n">axis</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 1.0])</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.rotate_about_origin" title="永久链接至目标">¶</a></dt>
+<dd><p>绕原点旋转 <code class="docutils literal notranslate"><span class="pre">angle</span></code> 弧度</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.save_state">
+<code class="sig-name descname">save_state</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">use_deepcopy</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.save_state" title="永久链接至目标">¶</a></dt>
+<dd><p>保留状态，即复制一份作为 <code class="docutils literal notranslate"><span class="pre">saved_state</span></code> 属性</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.scale">
+<code class="sig-name descname">scale</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">scale_factor</span></em>, <em class="sig-param"><span class="n">min_scale_factor</span><span class="o">=</span><span class="default_value">1e-08</span></em>, <em class="sig-param"><span class="n">about_point</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">about_edge</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.scale" title="永久链接至目标">¶</a></dt>
+<dd><p>放大 (缩小) 到原来的 <code class="docutils literal notranslate"><span class="pre">scale_factor</span></code> 倍，<code class="docutils literal notranslate"><span class="pre">kwargs</span></code> 中可以传入 <code class="docutils literal notranslate"><span class="pre">about_point/about_edge</span></code></p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.set_color">
+<code class="sig-name descname">set_color</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span></em>, <em class="sig-param"><span class="n">opacity</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.set_color" title="永久链接至目标">¶</a></dt>
+<dd><p>设置颜色</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.set_color_by_code">
+<code class="sig-name descname">set_color_by_code</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">glsl_code</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.set_color_by_code" title="永久链接至目标">¶</a></dt>
+<dd><p>传入一段 <code class="docutils literal notranslate"><span class="pre">glsl</span></code> 代码，用这段代码来给物件上色</p>
+<p>代码中包含以下变量：</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">vec4</span> <span class="pre">color</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">vec3</span> <span class="pre">point</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">vec3</span> <span class="pre">unit_normal</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">vec3</span> <span class="pre">light_coords</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">float</span> <span class="pre">gloss</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">float</span> <span class="pre">shadow</span></code></p></li>
+</ul>
+<p>如果想要学习如何用 glsl 上色，推荐去 <a class="reference external" href="https://thebookofshaders/">https://thebookofshaders/</a> 和 <a class="reference external" href="https://shadertoy.com/">https://shadertoy.com/</a> 学习一番`</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.set_color_by_gradient">
+<code class="sig-name descname">set_color_by_gradient</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">colors</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.set_color_by_gradient" title="永久链接至目标">¶</a></dt>
+<dd><p>渐变染色</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.set_color_by_rgb_func">
+<code class="sig-name descname">set_color_by_rgb_func</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">func</span></em>, <em class="sig-param"><span class="n">opacity</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.set_color_by_rgb_func" title="永久链接至目标">¶</a></dt>
+<dd><p>传入一个函数，这个函数接受一个三维坐标，将物件按照这个函数的方法设置颜色</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.set_color_by_rgba_func">
+<code class="sig-name descname">set_color_by_rgba_func</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">func</span></em>, <em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.set_color_by_rgba_func" title="永久链接至目标">¶</a></dt>
+<dd><p>传入一个函数，这个函数接受一个三维坐标，将物件按照这个函数的方法设置颜色，包含透明度</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.set_color_by_xyz_func">
+<code class="sig-name descname">set_color_by_xyz_func</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">glsl_snippet</span></em>, <em class="sig-param"><span class="n">min_value</span><span class="o">=</span><span class="default_value">- 5.0</span></em>, <em class="sig-param"><span class="n">max_value</span><span class="o">=</span><span class="default_value">5.0</span></em>, <em class="sig-param"><span class="n">colormap</span><span class="o">=</span><span class="default_value">'viridis'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.set_color_by_xyz_func" title="永久链接至目标">¶</a></dt>
+<dd><p>传入一个关于 <code class="docutils literal notranslate"><span class="pre">x,</span> <span class="pre">y,</span> <span class="pre">z</span></code> 的字符串表达式，这个表达式应当返回一个 float 值</p>
+<p>这个方法不是非常智能，因为会把所有匹配到的 <code class="docutils literal notranslate"><span class="pre">x,</span> <span class="pre">y,</span> <span class="pre">z</span></code> 都认为是变量，
+所以如果有特殊必要的话请查看该方法的源码，进行一些更改，取消字符串的匹配和替换</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.set_coord">
+<code class="sig-name descname">set_coord</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em>, <em class="sig-param"><span class="n">dim</span></em>, <em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.set_coord" title="永久链接至目标">¶</a></dt>
+<dd><p>移动到 <code class="docutils literal notranslate"><span class="pre">dim</span></code> 维度的 <code class="docutils literal notranslate"><span class="pre">value</span></code> 位置</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.set_gloss">
+<code class="sig-name descname">set_gloss</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">gloss</span></em>, <em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.set_gloss" title="永久链接至目标">¶</a></dt>
+<dd><p>设置光泽</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.set_opacity">
+<code class="sig-name descname">set_opacity</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">opacity</span></em>, <em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.set_opacity" title="永久链接至目标">¶</a></dt>
+<dd><p>设置透明度</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.set_points">
+<code class="sig-name descname">set_points</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">points</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.set_points" title="永久链接至目标">¶</a></dt>
+<dd><p>设置锚点</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.set_rgba_array">
+<code class="sig-name descname">set_rgba_array</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rgba_array</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">'rgbas'</span></em>, <em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.set_rgba_array" title="永久链接至目标">¶</a></dt>
+<dd><p>将 rgbas 成员变量设置为指定的值</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.set_rgba_array_by_color">
+<code class="sig-name descname">set_rgba_array_by_color</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">opacity</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">'rgbas'</span></em>, <em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.set_rgba_array_by_color" title="永久链接至目标">¶</a></dt>
+<dd><p>通过颜色设置 rgba_array 成员以染色</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.set_shadow">
+<code class="sig-name descname">set_shadow</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">shadow</span></em>, <em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.set_shadow" title="永久链接至目标">¶</a></dt>
+<dd><p>设置阴影</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.set_submobjects">
+<code class="sig-name descname">set_submobjects</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">submobject_list</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.set_submobjects" title="永久链接至目标">¶</a></dt>
+<dd><p>重新设置子物件</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.set_x">
+<code class="sig-name descname">set_x</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.set_x" title="永久链接至目标">¶</a></dt>
+<dd><p>将 x 轴坐标设置为 x</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.set_y">
+<code class="sig-name descname">set_y</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">y</span></em>, <em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.set_y" title="永久链接至目标">¶</a></dt>
+<dd><p>将 y 轴坐标设置为 y</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.set_z">
+<code class="sig-name descname">set_z</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">z</span></em>, <em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.set_z" title="永久链接至目标">¶</a></dt>
+<dd><p>将 z 轴坐标设置为 z</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.shift">
+<code class="sig-name descname">shift</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vector</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.shift" title="永久链接至目标">¶</a></dt>
+<dd><p>相对移动 vector 向量</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.shift_onto_screen">
+<code class="sig-name descname">shift_onto_screen</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.shift_onto_screen" title="永久链接至目标">¶</a></dt>
+<dd><p>确保在画面中</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.shuffle">
+<code class="sig-name descname">shuffle</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.shuffle" title="永久链接至目标">¶</a></dt>
+<dd><p>随机打乱子物件的顺序</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.sort">
+<code class="sig-name descname">sort</code><span class="sig-paren">(</span><em class="sig-param">point_to_num_func=&lt;function Mobject.&lt;lambda&gt;&gt;</em>, <em class="sig-param">submob_func=None</em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.sort" title="永久链接至目标">¶</a></dt>
+<dd><p>对子物件进行排序</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.space_out_submobjects">
+<code class="sig-name descname">space_out_submobjects</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">factor</span><span class="o">=</span><span class="default_value">1.5</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.space_out_submobjects" title="永久链接至目标">¶</a></dt>
+<dd><p>调整子物件的间距为 <code class="docutils literal notranslate"><span class="pre">factor</span></code> 倍</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.stretch">
+<code class="sig-name descname">stretch</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">factor</span></em>, <em class="sig-param"><span class="n">dim</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.stretch" title="永久链接至目标">¶</a></dt>
+<dd><p>把 <code class="docutils literal notranslate"><span class="pre">dim</span></code> 维度伸缩到原来的 <code class="docutils literal notranslate"><span class="pre">factor</span></code> 倍</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.surround">
+<code class="sig-name descname">surround</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">dim_to_match</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">stretch</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">buff</span><span class="o">=</span><span class="default_value">0.25</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.surround" title="永久链接至目标">¶</a></dt>
+<dd><p>环绕着 mobject</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.suspend_updating">
+<code class="sig-name descname">suspend_updating</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.suspend_updating" title="永久链接至目标">¶</a></dt>
+<dd><p>停止物件更新</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.to_corner">
+<code class="sig-name descname">to_corner</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">corner</span><span class="o">=</span><span class="default_value">array([- 1.0, - 1.0, 0.0])</span></em>, <em class="sig-param"><span class="n">buff</span><span class="o">=</span><span class="default_value">0.5</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.to_corner" title="永久链接至目标">¶</a></dt>
+<dd><p>和 <code class="docutils literal notranslate"><span class="pre">corner</span></code> 这个角落对齐</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.to_edge">
+<code class="sig-name descname">to_edge</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">edge</span><span class="o">=</span><span class="default_value">array([- 1.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="n">buff</span><span class="o">=</span><span class="default_value">0.5</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.to_edge" title="永久链接至目标">¶</a></dt>
+<dd><p>和 <code class="docutils literal notranslate"><span class="pre">edge</span></code> 这个边对齐</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.unfix_from_frame">
+<code class="sig-name descname">unfix_from_frame</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.unfix_from_frame" title="永久链接至目标">¶</a></dt>
+<dd><p>将锁定在屏幕上的物件解锁</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Mobject.wag">
+<code class="sig-name descname">wag</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">array([1.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="n">axis</span><span class="o">=</span><span class="default_value">array([0.0, - 1.0, 0.0])</span></em>, <em class="sig-param"><span class="n">wag_factor</span><span class="o">=</span><span class="default_value">1.0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Mobject.wag" title="永久链接至目标">¶</a></dt>
+<dd><p>沿 <code class="docutils literal notranslate"><span class="pre">axis</span></code> 轴 <code class="docutils literal notranslate"><span class="pre">direction</span></code> 方向摇摆 <code class="docutils literal notranslate"><span class="pre">wag_factor</span></code></p>
+</dd></dl>
+</dd></dl>
+</section>
+<section id="group">
+<h2>Group<a class="headerlink" href="#group" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.mobject.Group">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.mobject.</code><code class="sig-name descname">Group</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">mobjects</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Group" title="永久链接至目标">¶</a></dt>
+<dd><p>数学物件组合</p>
+<p>传入一系列 <code class="docutils literal notranslate"><span class="pre">mobjects</span></code> 作为子物件，可以用 <code class="docutils literal notranslate"><span class="pre">[]</span></code> 索引</p>
+</dd></dl>
+<p>和Mobject相同，用于存放一些子物体</p>
+</section>
+<section id="point">
+<h2>Point<a class="headerlink" href="#point" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.mobject.Point">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.mobject.</code><code class="sig-name descname">Point</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">location</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Point" title="永久链接至目标">¶</a></dt>
+<dd><p>点</p>
+<p>似乎仅用于表示坐标</p>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Point.get_height">
+<code class="sig-name descname">get_height</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Point.get_height" title="永久链接至目标">¶</a></dt>
+<dd><p>获取物件高度</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Point.get_location">
+<code class="sig-name descname">get_location</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Point.get_location" title="永久链接至目标">¶</a></dt>
+<dd><p>获取坐标位置</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Point.get_width">
+<code class="sig-name descname">get_width</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Point.get_width" title="永久链接至目标">¶</a></dt>
+<dd><p>获取物件宽度</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject.Point.set_location">
+<code class="sig-name descname">set_location</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">new_loc</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Point.set_location" title="永久链接至目标">¶</a></dt>
+<dd><p>设置坐标位置</p>
+</dd></dl>
+</dd></dl>
+</section>
+<section id="animationbuilder">
+<h2>_AnimationBuilder<a class="headerlink" href="#animationbuilder" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.mobject._AnimationBuilder">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.mobject.</code><code class="sig-name descname">_AnimationBuilder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject._AnimationBuilder" title="永久链接至目标">¶</a></dt>
+<dd><p>动画编译器</p>
+<p>用于场景类 <code class="docutils literal notranslate"><span class="pre">Scene</span></code> 的 <code class="docutils literal notranslate"><span class="pre">play</span></code> 中，用法如下：</p>
+<p><code class="docutils literal notranslate"><span class="pre">self.play(mob.animate.shift(UP).scale(2).rotate(PI))</span></code></p>
+<p>该示例中，会使 mob 生成一个 <strong>向上移动 2 个单位，放大至 2 倍，旋转 180 度</strong> 的目标，并使用类似
+<code class="docutils literal notranslate"><span class="pre">MoveToTarget</span></code> 的方法将它变为目标的样式</p>
+</dd></dl>
+</section>
+</section>
+
+      </article>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="mobject_update_utils.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">MobjectUpdateUtils</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="matrix.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Matrix</div>
+                
+              </div>
+            </a>
+        </div>
+
+        <div class="related-information">
+          <span class="copyright">版权所有 &copy; 2020-2021 Manim Kindergarten Team</span> |
+          Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using
+          <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+          <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            目录
+          </span>
+        </div>
+        <div class="toc-tree">
+          <ul>
+<li><a class="reference internal" href="#">Mobject</a><ul>
+<li><a class="reference internal" href="#id1">Mobject</a></li>
+<li><a class="reference internal" href="#group">Group</a></li>
+<li><a class="reference internal" href="#point">Point</a></li>
+<li><a class="reference internal" href="#animationbuilder">_AnimationBuilder</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+      
+      
+    </aside>
+  </main>
+</div>
+  </body>
+</html>
