@@ -19,7 +19,6 @@ jobs:
 
     - name: Clone pre repositories
       run: |
-        pwd
         git clone -b manim https://github.com/manim-kindergarten/manim_document_zh.git manim_with_doc
         cd manim_with_doc
         git clone https://github.com/manim-kindergarten/manim_sandbox.git
@@ -33,11 +32,11 @@ jobs:
     
     - name: Build document with Sphinx
       run: |
-        export PATH="$PATH:/home/runner/.local/bin:/home/runner/manim_document_zh/manim_with_doc"
+        export PATH="$PATH:/home/runner/.local/bin:/home/runner/work/manim_document_zh/manim_document_zh/manim_with_doc"
         export SPHINXBUILD="python3 -m sphinx"
         cd cairo-backend
         make html
-        mkdir ../build/html/cairo-backend
+        mkdir -p ../build/html/cairo-backend
         mv build/html ../build/html/cairo-backend
         cd ../build/html/cairo-backend
         echo "docs.manim.org.cn" > CNAME
