@@ -19,7 +19,7 @@ jobs:
 
     - name: Clone pre repositories
       run: |
-        cd ..
+        pwd
         git clone -b manim https://github.com/manim-kindergarten/manim_document_zh.git manim_with_doc
         cd manim_with_doc
         git clone https://github.com/manim-kindergarten/manim_sandbox.git
@@ -29,7 +29,7 @@ jobs:
         pip3 install --upgrade pip
         sudo apt install python3-setuptools
         pip3 install -r cairo-backend/requirements.txt
-        pip3 install -r ../manim_with_doc/requirements.txt
+        pip3 install -r manim_with_doc/requirements.txt
     
     - name: Build document with Sphinx
       run: |
