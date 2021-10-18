@@ -1,4 +1,4 @@
-manim教程文档
+manim cairo-backend版本 教程文档
 ==================================================
 
 .. image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/DocumentHeader.png
@@ -7,7 +7,7 @@ manim教程文档
 
 目前包含两大部分， **入门教程** 和 **进阶文档** 。入门教程中还有很多需要完善，进阶文档还需要补充示例。后续可能还会添加 **进阶教程** 部分
 
-针对master分支（新版）的文档在这里：https://docs.manim.org.cn/shaders/
+针对master分支（新版）的文档在这里：https://docs.manim.org.cn/
 
 .. admonition:: 声明
 

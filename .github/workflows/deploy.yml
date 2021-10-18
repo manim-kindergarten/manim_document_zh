@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - manim
+      - beta
   pull_request:
 
 jobs:
@@ -18,7 +19,6 @@ jobs:
 
     - name: Clone pre repositories
       run: |
-        cd ..
         git clone -b manim https://github.com/manim-kindergarten/manim_document_zh.git manim_with_doc
         cd manim_with_doc
         git clone https://github.com/manim-kindergarten/manim_sandbox.git
@@ -26,25 +26,32 @@ jobs:
     - name: Install sphinx and manim env
       run: |
         pip3 install --upgrade pip
-        sudo apt install python3-setuptools
-        pip3 install -r requirements.txt
-        pip3 install -r ../manim_with_doc/requirements.txt
+        sudo apt install python3-setuptools libpango1.0-dev
+        pip3 install -r cairo-backend/requirements.txt
+        pip3 install -r manim_with_doc/requirements.txt
     
     - name: Build document with Sphinx
       run: |
-        export PATH="$PATH:/home/runner/.local/bin:/home/runner/manim_document_zh/manim_with_doc"
+        export PATH="$PATH:/home/runner/.local/bin:/home/runner/work/manim_document_zh/manim_document_zh/manim_with_doc"
         export SPHINXBUILD="python3 -m sphinx"
+        cd cairo-backend
         make html
-        cd build/html
+        mkdir -p ../build/html/cairo-backend
+        mv build/html/* ../build/html/cairo-backend
+        cd ../build/html/cairo-backend
         echo "docs.manim.org.cn" > CNAME
 
     - name: Build document for shaders
       run: |
-        export PATH="$PATH:/home/runner/.local/bin:/home/runner/manim_document_zh/manim_with_doc"
+        git clone https://github.com/manim-kindergarten/manim.git manim_cn
+        export PATH="$PATH:/home/runner/.local/bin"
         export SPHINXBUILD="python3 -m sphinx"
-        cd shaders
+        cd manim_cn
+        pip3 install .
+        cd docs
+        pip3 install -r requirements.txt
         make html
-        mv build/html/ ../build/html/shaders/
+        mv build/html/* ../../build/html/
         
     - name: Deploy to GitHub pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
