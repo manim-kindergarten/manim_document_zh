@@ -5,12 +5,12 @@
 <link rel="index" title="索引" href="genindex.html" /><link rel="search" title="搜索" href="search.html" /><link rel="next" title="安装指南" href="getting_started/installation.html" />
 
     <link rel="shortcut icon" href="_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
-        <title>Home - manim shaders  文档</title>
+        <title>Home - ManimGL  文档</title>
       <link rel="stylesheet" href="_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="_static/styles/default.css?694e144dcbb231bd32085eb2">
-    <link rel="stylesheet" href="_static/pygments.css?694e144dcbb231bd32085eb2">
+    <link rel="stylesheet" href="_static/styles/default.css?f85506cf392f9eddb86250a6">
+    <link rel="stylesheet" href="_static/pygments.css?f85506cf392f9eddb86250a6">
     
 <style>
   :root {
@@ -29,7 +29,7 @@
         <script src="_static/clipboard.min.js"></script>
         <script src="_static/copybutton.js"></script>
         <script src="_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="_static/scripts/main.js?694e144dcbb231bd32085eb2"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="_static/scripts/main.js?f85506cf392f9eddb86250a6"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -74,7 +74,7 @@
     <label class="header-left nav-overlay-icon" for="__navigation">
       <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
     </label>
-    <div class="header-center"><div class="brand">manim shaders  文档</div></div>
+    <div class="header-center"><div class="brand">ManimGL  文档</div></div>
     <div class="header-right"></div>
   </header>
   <aside class="sidebar-drawer">
@@ -122,7 +122,7 @@
 <li class="toctree-l2"><a class="reference internal" href="documentation/camera/camera.html">Camera</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="documentation/mobject/index.html">数学物件 Mobject</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="documentation/mobject/index.html">数学物件 mobject</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="documentation/mobject/types/index.html">types</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label for="toctree-checkbox-4"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="documentation/mobject/types/dot_cloud.html">Dot Cloud</a></li>
 <li class="toctree-l3"><a class="reference internal" href="documentation/mobject/types/image_mobject.html">Image Mobject</a></li>
@@ -165,7 +165,7 @@
 <li class="toctree-l2"><a class="reference internal" href="documentation/scene/vector_space_scene.html">VectorScene</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="documentation/shaders/index.html">Shaders (TODO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation/shaders/index.html">着色代码 shaders (TODO)</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="documentation/utils/index.html">工具函数 utils</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="documentation/utils/bezier.html">Bezier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="documentation/utils/color.html">Color</a></li>
@@ -201,11 +201,13 @@
         <label class="toc-overlay-icon no-toc" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <section id="manim-shaders">
-<h1>Manim shaders版本教程文档<a class="headerlink" href="#manim-shaders" title="永久链接至标题">¶</a></h1>
+        <section id="manimgl">
+<h1>ManimGL教程文档<a class="headerlink" href="#manimgl" title="永久链接至标题">¶</a></h1>
 <img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/DocumentHeader.png" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/DocumentHeader.png"/>
 <p>这些文档基于 <a class="reference external" href="https://github.com/3b1b/manim">3b1b/manim存储库</a> 的 <a class="reference external" href="https://github.com/3b1b/manim/">master分支</a> 。
 是这个 <a class="reference external" href="https://3b1b.github.io/manim/">官方文档</a> 的中文版本。</p>
+<p>旧版manim（即cairo-backend）的文档链接：<a class="reference external" href="https://docs.manim.org.cn/cairo-backend">docs.manim.org.cn/cairo-backend</a>。</p>
+<p>社区版manim的文档链接：<a class="reference external" href="https://docs.manim.community">docs.manim.community</a>。</p>
 <div class="admonition- admonition">
 <p class="admonition-title">_(:з」∠)_</p>
 <p>不是翻译版本哦，是中文版。因为那个的作者也是我（没想到吧2333）</p>
@@ -301,7 +303,7 @@
 <li class="toctree-l2"><a class="reference internal" href="documentation/camera/camera.html">Camera</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="documentation/mobject/index.html">数学物件 Mobject</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="documentation/mobject/index.html">数学物件 mobject</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="documentation/mobject/types/index.html">types</a></li>
 <li class="toctree-l2"><a class="reference internal" href="documentation/mobject/svg/index.html">svg</a></li>
 <li class="toctree-l2"><a class="reference internal" href="documentation/mobject/changing.html">Changing</a></li>
@@ -330,7 +332,7 @@
 <li class="toctree-l2"><a class="reference internal" href="documentation/scene/vector_space_scene.html">VectorScene</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="documentation/shaders/index.html">Shaders (TODO)</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="documentation/shaders/index.html">着色代码 shaders (TODO)</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="documentation/shaders/index.html#set-color-by-code">set_color_by_code</a></li>
 </ul>
 </li>

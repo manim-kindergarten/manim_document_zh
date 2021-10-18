@@ -5,12 +5,12 @@
 <link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="工具函数 utils" href="../utils/index.html" /><link rel="prev" title="VectorScene" href="../scene/vector_space_scene.html" />
 
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
-        <title>Shaders (TODO) - manim shaders  文档</title>
+        <title>着色代码 shaders (TODO) - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?3bb66e4dde915ef93f351d57">
-    <link rel="stylesheet" href="../../_static/pygments.css?3bb66e4dde915ef93f351d57">
+    <link rel="stylesheet" href="../../_static/styles/default.css?2545d3b20a8dbf7ed7892336">
+    <link rel="stylesheet" href="../../_static/pygments.css?2545d3b20a8dbf7ed7892336">
     
 <style>
   :root {
@@ -29,7 +29,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?3bb66e4dde915ef93f351d57"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?2545d3b20a8dbf7ed7892336"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -74,7 +74,7 @@
     <label class="header-left nav-overlay-icon" for="__navigation">
       <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
     </label>
-    <div class="header-center"><div class="brand">manim shaders  文档</div></div>
+    <div class="header-center"><div class="brand">ManimGL  文档</div></div>
     <div class="header-right"></div>
   </header>
   <aside class="sidebar-drawer">
@@ -122,7 +122,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../camera/camera.html">Camera</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../mobject/index.html">数学物件 Mobject</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mobject/index.html">数学物件 mobject</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../mobject/types/index.html">types</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label for="toctree-checkbox-4"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/types/dot_cloud.html">Dot Cloud</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/types/image_mobject.html">Image Mobject</a></li>
@@ -165,7 +165,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../scene/vector_space_scene.html">VectorScene</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Shaders (TODO)</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">着色代码 shaders (TODO)</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../utils/index.html">工具函数 utils</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../utils/bezier.html">Bezier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../utils/color.html">Color</a></li>
@@ -202,7 +202,7 @@
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
         <section id="shaders-todo">
-<h1>Shaders (TODO)<a class="headerlink" href="#shaders-todo" title="永久链接至标题">¶</a></h1>
+<h1>着色代码 shaders (TODO)<a class="headerlink" href="#shaders-todo" title="永久链接至标题">¶</a></h1>
 <div class="admonition- admonition">
 <p class="admonition-title">注意</p>
 <p>本部分与 manim 入门的关联不算很大，因为涉及到大量的 OpenGL Shading Language 的成分，主要用于图形的上色。</p>
@@ -215,24 +215,20 @@
 <section id="glsl">
 <h3>glsl 中的变量<a class="headerlink" href="#glsl" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
-<li><dl class="simple">
-<dt><code class="docutils literal notranslate"><span class="pre">vec4</span> <span class="pre">color</span></code><span class="classifier">颜色，rgba的范围均为 [0.0, 1.0]</span></dt><dd><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">vec4</span> <span class="pre">color</span></code> : 颜色，rgba的范围均为 [0.0, 1.0]</p>
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">float</span> <span class="pre">r</span></code> : 红色</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">float</span> <span class="pre">g</span></code> : 绿色</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">float</span> <span class="pre">b</span></code> : 蓝色</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">float</span> <span class="pre">a</span></code> : 透明度</p></li>
 </ul>
-</dd>
-</dl>
 </li>
-<li><dl class="simple">
-<dt><code class="docutils literal notranslate"><span class="pre">vec3</span> <span class="pre">points</span></code><span class="classifier">三维坐标</span></dt><dd><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">vec3</span> <span class="pre">points</span></code> : 三维坐标</p>
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">float</span> <span class="pre">x</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">float</span> <span class="pre">y</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">float</span> <span class="pre">z</span></code></p></li>
 </ul>
-</dd>
-</dl>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">vec3</span> <span class="pre">unit_normal</span></code> : 单位法线</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">vec3</span> <span class="pre">light_coords</span></code> : 光源坐标</p></li>
@@ -301,7 +297,7 @@
         </div>
         <div class="toc-tree">
           <ul>
-<li><a class="reference internal" href="#">Shaders (TODO)</a><ul>
+<li><a class="reference internal" href="#">着色代码 shaders (TODO)</a><ul>
 <li><a class="reference internal" href="#set-color-by-code">set_color_by_code</a><ul>
 <li><a class="reference internal" href="#glsl">glsl 中的变量</a></li>
 </ul>

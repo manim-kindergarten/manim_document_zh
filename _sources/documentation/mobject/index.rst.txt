@@ -1,4 +1,4 @@
-数学物件 Mobject
+数学物件 mobject
 ================
 
 .. admonition:: 声明

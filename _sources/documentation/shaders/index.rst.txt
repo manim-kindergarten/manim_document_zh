@@ -1,5 +1,5 @@
-Shaders (TODO)
-==============
+着色代码 shaders (TODO)
+==========================
 
 .. admonition:: 注意
 
@@ -18,15 +18,17 @@ glsl 中的变量
 -------------
 
 - ``vec4 color`` : 颜色，rgba的范围均为 [0.0, 1.0]
-    - ``float r`` : 红色
-    - ``float g`` : 绿色
-    - ``float b`` : 蓝色
-    - ``float a`` : 透明度
+
+  - ``float r`` : 红色
+  - ``float g`` : 绿色
+  - ``float b`` : 蓝色
+  - ``float a`` : 透明度
 
 - ``vec3 points`` : 三维坐标
-    - ``float x``
-    - ``float y``
-    - ``float z``
+
+  - ``float x``
+  - ``float y``
+  - ``float z``
 
 - ``vec3 unit_normal`` : 单位法线
 
