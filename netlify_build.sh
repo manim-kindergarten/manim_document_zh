@@ -5,7 +5,7 @@ git clone https://github.com/manim-kindergarten/manim_sandbox.git
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 cd ..
-apt install libpango1.0-dev -y
+sudo apt install libpango1.0-dev -y
 
 # Build doc
 cd cairo-backend
