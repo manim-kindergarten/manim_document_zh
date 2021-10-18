@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?fb19174fa1f19a75d11fc3fc">
-    <link rel="stylesheet" href="../../_static/pygments.css?fb19174fa1f19a75d11fc3fc">
+    <link rel="stylesheet" href="../../_static/styles/default.css?0c04712518854618d979d130">
+    <link rel="stylesheet" href="../../_static/pygments.css?0c04712518854618d979d130">
     
 <style>
   :root {
@@ -29,7 +29,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?fb19174fa1f19a75d11fc3fc"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?0c04712518854618d979d130"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -269,8 +269,40 @@
 <code class="sig-name descname">set_euler_angles</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">theta</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">phi</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">gamma</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">units</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.set_euler_angles" title="永久链接至目标">¶</a></dt>
 <dd><p>设置欧拉角</p>
 </dd></dl>
+<dl class="py method">
+<dt id="manimlib.camera.camera.CameraFrame.to_default_state">
+<code class="sig-name descname">to_default_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.to_default_state" title="永久链接至目标">¶</a></dt>
+<dd><p>相机恢复到默认位置</p>
 </dd></dl>
-</section>
+</dd></dl>
+<p>在 <code class="docutils literal notranslate"><span class="pre">manimgl</span></code> 版本，你可以通过改变 <code class="docutils literal notranslate"><span class="pre">CameraFrame</span></code> 的属性来控制相机所拍摄到的画面，也就是说，旋转、缩放画面大小都可以用这种方式来完成。</p>
+<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="movecameraexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/MoveCameraExample.mp4"></video><h5 class="example-header">MoveCameraExample<a class="headerlink" href="#movecameraexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MoveCameraExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">setup</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">plane</span> <span class="o">=</span> <span class="n">NumberPlane</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">plane</span><span class="o">.</span><span class="n">add_coordinate_labels</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">plane</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">t_func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
+        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+            <span class="n">a</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="o">/</span> <span class="n">t</span><span class="p">,</span>
+            <span class="n">b</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="o">/</span> <span class="n">t</span><span class="p">,</span>
+            <span class="mi">0</span>
+        <span class="p">])</span>
+
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">frame</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">camera</span><span class="o">.</span><span class="n">frame</span>
+        <span class="n">curve</span> <span class="o">=</span> <span class="n">ParametricCurve</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">t_func</span><span class="p">,</span> <span class="n">t_range</span><span class="o">=</span><span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">YELLOW</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">curve</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+            <span class="n">curve</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">set_stroke</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mf">0.3</span><span class="p">),</span>
+            <span class="n">frame</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">set_width</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">PI</span> <span class="o">/</span> <span class="mi">2</span><span class="p">),</span>
+            <span class="n">run_time</span><span class="o">=</span><span class="mi">3</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></section>
 <section id="id1">
 <h2>Camera<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
@@ -280,6 +312,11 @@
 <p><cite>widcardw 在线瞎写，因为看不懂</cite></p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">frame_config</span></code> : 相机帧参数</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pixel_width</span></code> : 像素宽度，默认 1920</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pixel_height</span></code> : 像素高度，默认 1080</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">frame_rate</span></code> : 相机帧率，默认 30</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">light_source_position</span></code> : 光源位置</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">anti_alias_width</span></code> : 抗锯齿</p></li>
 </ul>
 <dl class="py method">
 <dt id="manimlib.camera.camera.Camera.capture">
@@ -369,7 +406,7 @@
 <dl class="py method">
 <dt id="manimlib.camera.camera.Camera.get_texture_id">
 <code class="sig-name descname">get_texture_id</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.Camera.get_texture_id" title="永久链接至目标">¶</a></dt>
-<dd><p>获取材质 id</p>
+<dd><p>获取资源 id</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.camera.camera.Camera.refresh_perspective_uniforms">
@@ -387,9 +424,19 @@
 <dd><p>释放静态物件</p>
 </dd></dl>
 <dl class="py method">
+<dt id="manimlib.camera.camera.Camera.release_texture">
+<code class="sig-name descname">release_texture</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.Camera.release_texture" title="永久链接至目标">¶</a></dt>
+<dd><p>释放资源</p>
+</dd></dl>
+<dl class="py method">
 <dt id="manimlib.camera.camera.Camera.render">
 <code class="sig-name descname">render</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">render_group</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.Camera.render" title="永久链接至目标">¶</a></dt>
 <dd><p>渲染</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.camera.camera.Camera.reset_pixel_shape">
+<code class="sig-name descname">reset_pixel_shape</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">new_width</span></em>, <em class="sig-param"><span class="n">new_height</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.Camera.reset_pixel_shape" title="永久链接至目标">¶</a></dt>
+<dd><p>重置像素宽高</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.camera.camera.Camera.resize_frame_shape">
@@ -418,6 +465,11 @@
 <dd><p>仅用于保证旧版场景不崩溃</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">frame_config</span></code> : 相机帧参数</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pixel_width</span></code> : 像素宽度，默认 1920</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pixel_height</span></code> : 像素高度，默认 1080</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">frame_rate</span></code> : 相机帧率，默认 30</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">light_source_position</span></code> : 光源位置</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">anti_alias_width</span></code> : 抗锯齿</p></li>
 </ul>
 </dd></dl>
 </section>

@@ -35,9 +35,8 @@ AnimatedStreamLines
 
 这里附上 GZTime 写的一个示例，读者可以自己尝试渲染一下
 
-.. image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FuncFlow.jpg
-
-.. code:: python
+.. manim-example:: AnimatedStreamLinesExample
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FuncFlow.jpg
 
    from manimlib import *
    

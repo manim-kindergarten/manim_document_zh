@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?2545d3b20a8dbf7ed7892336">
-    <link rel="stylesheet" href="../../_static/pygments.css?2545d3b20a8dbf7ed7892336">
+    <link rel="stylesheet" href="../../_static/styles/default.css?f1522ac4e5e00caf0c02e990">
+    <link rel="stylesheet" href="../../_static/pygments.css?f1522ac4e5e00caf0c02e990">
     
 <style>
   :root {
@@ -29,7 +29,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?2545d3b20a8dbf7ed7892336"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?f1522ac4e5e00caf0c02e990"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -245,6 +245,10 @@
 <span class="s2">            color.rgb = mix(blue, red, (point.x + 1.5) / 3);</span>
 <span class="s2">        """</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">square</span><span class="p">)</span>
+
+        <span class="c1"># hex_to_rgb 会将 16 进制颜色字符串转变为 RGB 三元列表，其值范围均为 [0,1]</span>
+        <span class="c1"># 利用 tuple 将它们用圆括号括起来，翻译后的字符串就变为（这里仅展示一部分）</span>
+        <span class="c1"># vec3 blue = vec3(0.345, 0.769, 0.867);</span>
 </pre></div>
 </div>
 </section>

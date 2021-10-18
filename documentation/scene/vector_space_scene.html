@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?87e578892d55b2ec8852c512">
-    <link rel="stylesheet" href="../../_static/pygments.css?87e578892d55b2ec8852c512">
+    <link rel="stylesheet" href="../../_static/styles/default.css?e74f7185866a321bf88e984c">
+    <link rel="stylesheet" href="../../_static/pygments.css?e74f7185866a321bf88e984c">
     
 <style>
   :root {
@@ -29,7 +29,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?87e578892d55b2ec8852c512"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?e74f7185866a321bf88e984c"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -290,7 +290,8 @@
 <dl class="py class">
 <dt id="manimlib.scene.vector_space_scene.LinearTransformationScene">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.scene.vector_space_scene.</code><code class="sig-name descname">LinearTransformationScene</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.LinearTransformationScene" title="永久链接至目标">¶</a></dt>
-<dd><ul class="simple">
+<dd><p>线性变换的向量场景</p>
+<ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">window_config</span></code> : 窗口参数</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">camera_config</span></code> : 相机参数</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">file_writer_config</span></code> : 文件写入参数</p></li>
@@ -299,9 +300,19 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">preview</span></code> : 是否为预览</p></li>
 </ul>
 <dl class="py method">
+<dt id="manimlib.scene.vector_space_scene.LinearTransformationScene.add_unit_square">
+<code class="sig-name descname">add_unit_square</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">animate</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.LinearTransformationScene.add_unit_square" title="永久链接至目标">¶</a></dt>
+<dd><p>添加单位正方形</p>
+</dd></dl>
+<dl class="py method">
 <dt id="manimlib.scene.vector_space_scene.LinearTransformationScene.add_vector">
 <code class="sig-name descname">add_vector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vector</span></em>, <em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">'#FFFF00'</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.LinearTransformationScene.add_vector" title="永久链接至目标">¶</a></dt>
-<dd><p>动态绘制一个向量</p>
+<dd><p>添加向量</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.scene.vector_space_scene.LinearTransformationScene.get_matrix_transformation">
+<code class="sig-name descname">get_matrix_transformation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">matrix</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.LinearTransformationScene.get_matrix_transformation" title="永久链接至目标">¶</a></dt>
+<dd><p>获取矩阵变换</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.scene.vector_space_scene.LinearTransformationScene.setup">

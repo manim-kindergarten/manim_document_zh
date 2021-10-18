@@ -340,3 +340,7 @@ TurnInsideOut
   
           self.wait(0.3)
 
+FlashyFadeIn
+***********************
+.. autoclass:: manimlib.animation.indication.FlashyFadeIn
+    :members:

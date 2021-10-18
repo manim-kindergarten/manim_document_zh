@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?6da440f9a89ec6babe0df810">
-    <link rel="stylesheet" href="../../_static/pygments.css?6da440f9a89ec6babe0df810">
+    <link rel="stylesheet" href="../../_static/styles/default.css?bf4526b26f281a9bfa4a64af">
+    <link rel="stylesheet" href="../../_static/pygments.css?bf4526b26f281a9bfa4a64af">
     
 <style>
   :root {
@@ -29,7 +29,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?6da440f9a89ec6babe0df810"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?bf4526b26f281a9bfa4a64af"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -221,7 +221,8 @@
 <dl class="py class">
 <dt id="manimlib.animation.creation.ShowCreation">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.creation.</code><code class="sig-name descname">ShowCreation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.creation.ShowCreation" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
+<dd><p>显示创建过程</p>
+</dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="showcreationexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/ShowCreationExample.mp4"></video><h5 class="example-header">ShowCreationExample<a class="headerlink" href="#showcreationexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ShowCreationExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
@@ -245,7 +246,8 @@
 <dl class="py class">
 <dt id="manimlib.animation.creation.Uncreate">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.creation.</code><code class="sig-name descname">Uncreate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.creation.Uncreate" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
+<dd><p>显示销毁过程（ <code class="docutils literal notranslate"><span class="pre">ShowCreation</span></code> 的倒放）</p>
+</dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="uncreateexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/UncreateExample.mp4"></video><h5 class="example-header">UncreateExample<a class="headerlink" href="#uncreateexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">UncreateExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
@@ -273,7 +275,8 @@
 <dl class="py class">
 <dt id="manimlib.animation.creation.DrawBorderThenFill">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.creation.</code><code class="sig-name descname">DrawBorderThenFill</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vmobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.creation.DrawBorderThenFill" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
+<dd><p>画出边缘，然后填充颜色</p>
+</dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="drawborderthenfillexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/DrawBorderThenFillExample.mp4"></video><h5 class="example-header">DrawBorderThenFillExample<a class="headerlink" href="#drawborderthenfillexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">DrawBorderThenFillExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">vmobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
@@ -297,7 +300,8 @@
 <dl class="py class">
 <dt id="manimlib.animation.creation.Write">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.creation.</code><code class="sig-name descname">Write</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.creation.Write" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
+<dd><p>写（对子物件逐个使用 <code class="docutils literal notranslate"><span class="pre">DrawBorderThenFill</span></code> ）</p>
+</dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="writeexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/WriteExample.mp4"></video><h5 class="example-header">WriteExample<a class="headerlink" href="#writeexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">WriteExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>

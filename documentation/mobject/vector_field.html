@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?dc11f6c6b5df8664117d661b">
-    <link rel="stylesheet" href="../../_static/pygments.css?dc11f6c6b5df8664117d661b">
+    <link rel="stylesheet" href="../../_static/styles/default.css?ac8298bbd9cd2684a2d46219">
+    <link rel="stylesheet" href="../../_static/pygments.css?ac8298bbd9cd2684a2d46219">
     
 <style>
   :root {
@@ -29,7 +29,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?dc11f6c6b5df8664117d661b"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?ac8298bbd9cd2684a2d46219"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -252,6 +252,11 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">line_anim_class</span></code> : 对每条线执行的动画，默认为 <code class="docutils literal notranslate"><span class="pre">ShowPassingFlash</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">line_anim_config</span></code> : 对每条线执行动画的属性设置</p></li>
 </ul>
+<dl class="py method">
+<dt id="manimlib.mobject.vector_field.AnimatedStreamLines.update">
+<code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.vector_field.AnimatedStreamLines.update" title="永久链接至目标">¶</a></dt>
+<dd><p>更新物件状态，为 <strong>动画 (Animation)</strong> 、 <strong>更新 (updater)</strong> 调用</p>
+</dd></dl>
 </dd></dl>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="animatedstreamlinesexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/AnimatedStreamLinesExample.mp4"></video><h5 class="example-header">AnimatedStreamLinesExample<a class="headerlink" href="#animatedstreamlinesexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">AnimatedStreamLinesExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -268,8 +273,8 @@
 </pre></div>
 </div>
 </div><p>这里附上 GZTime 写的一个示例，读者可以自己尝试渲染一下</p>
-<img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FuncFlow.jpg" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FuncFlow.jpg"/>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="manim-example"><img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FuncFlow.jpg" class="align-center" id="animatedstreamlinesexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FuncFlow.jpg"/>
+<h5 class="example-header">AnimatedStreamLinesExample<a class="headerlink" href="#animatedstreamlinesexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib</span> <span class="kn">import</span> <span class="o">*</span>
 
 
 <span class="k">def</span> <span class="nf">get_vector_field_and_stream_lines</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">coordinate_system</span><span class="p">,</span>
@@ -363,7 +368,7 @@
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">slow_factor</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span> <span class="o">-</span> <span class="n">y</span><span class="p">])</span>
 </pre></div>
 </div>
-</section>
+</div></section>
 </section>
 
       </article>

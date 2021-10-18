@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?59e8c0a66584a74176143082">
-    <link rel="stylesheet" href="../../_static/pygments.css?59e8c0a66584a74176143082">
+    <link rel="stylesheet" href="../../_static/styles/default.css?b3ce34a35fc9ca72afe43e82">
+    <link rel="stylesheet" href="../../_static/pygments.css?b3ce34a35fc9ca72afe43e82">
     
 <style>
   :root {
@@ -29,7 +29,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?59e8c0a66584a74176143082"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?b3ce34a35fc9ca72afe43e82"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -249,12 +249,17 @@
 <dl class="py method">
 <dt id="manimlib.mobject.geometry.TipableVMobject.get_end">
 <code class="sig-name descname">get_end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.TipableVMobject.get_end" title="永久链接至目标">¶</a></dt>
-<dd><p>获取终止点</p>
+<dd><p>获取物件结束点</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.geometry.TipableVMobject.get_length">
+<code class="sig-name descname">get_length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.TipableVMobject.get_length" title="永久链接至目标">¶</a></dt>
+<dd><p>获取起止点之间的直线距离</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.mobject.geometry.TipableVMobject.get_start">
 <code class="sig-name descname">get_start</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.TipableVMobject.get_start" title="永久链接至目标">¶</a></dt>
-<dd><p>获取起始点</p>
+<dd><p>获取物件起始点</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.mobject.geometry.TipableVMobject.get_tip">
@@ -294,6 +299,16 @@
 <dt id="manimlib.mobject.geometry.Arc.get_arc_center">
 <code class="sig-name descname">get_arc_center</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Arc.get_arc_center" title="永久链接至目标">¶</a></dt>
 <dd><p>获取圆弧圆心</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.geometry.Arc.get_start_angle">
+<code class="sig-name descname">get_start_angle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Arc.get_start_angle" title="永久链接至目标">¶</a></dt>
+<dd><p>获取起始角度</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.geometry.Arc.get_stop_angle">
+<code class="sig-name descname">get_stop_angle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Arc.get_stop_angle" title="永久链接至目标">¶</a></dt>
+<dd><p>获取终止角度</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.mobject.geometry.Arc.move_arc_center_to">
@@ -403,7 +418,7 @@
 <dt id="manimlib.mobject.geometry.Sector">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">Sector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start_angle</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">angle</span><span class="o">=</span><span class="default_value">1.5707963267948966</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Sector" title="永久链接至目标">¶</a></dt>
 <dd><p>扇形</p>
-<p>即内圆半径为0的扇环</p>
+<p>即内圆半径为 0 的扇环</p>
 <p>传入 <code class="docutils literal notranslate"><span class="pre">start_angle</span></code> 表示起始的角度，<code class="docutils literal notranslate"><span class="pre">angle</span></code> 表示圆心角</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">radius</span></code> : 圆弧半径</p></li>
@@ -465,8 +480,7 @@
 <dl class="py method">
 <dt id="manimlib.mobject.geometry.Line.pointify">
 <code class="sig-name descname">pointify</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mob_or_point</span></em>, <em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Line.pointify" title="永久链接至目标">¶</a></dt>
-<dd><p>Take an argument passed into Line (or subclass) and turn
-it into a 3d point.</p>
+<dd><p>将一个参数传递给 Line (或子类) 并将其转换为一个 3D 点。</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.mobject.geometry.Line.put_start_and_end_on">
@@ -503,12 +517,12 @@ it into a 3d point.</p>
 <dl class="py method">
 <dt id="manimlib.mobject.geometry.DashedLine.get_end">
 <code class="sig-name descname">get_end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.DashedLine.get_end" title="永久链接至目标">¶</a></dt>
-<dd><p>获取终止点</p>
+<dd><p>获取物件结束点</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.mobject.geometry.DashedLine.get_start">
 <code class="sig-name descname">get_start</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.DashedLine.get_start" title="永久链接至目标">¶</a></dt>
-<dd><p>获取起始点</p>
+<dd><p>获取物件起始点</p>
 </dd></dl>
 </dd></dl>
 </section>
@@ -539,8 +553,7 @@ it into a 3d point.</p>
 <dl class="py class">
 <dt id="manimlib.mobject.geometry.Arrow">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">Arrow</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start</span><span class="o">=</span><span class="default_value">array([- 1.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="n">end</span><span class="o">=</span><span class="default_value">array([1.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Arrow" title="永久链接至目标">¶</a></dt>
-<dd><p>带箭头的直线</p>
-<p>和 <code class="docutils literal notranslate"><span class="pre">Line</span></code> 相同，箭头大小自动</p>
+<dd><p>带箭头的直线，箭头大小自动</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">buff</span></code> : 默认为0.25</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">max_tip_length_to_length_ratio</span></code> : 箭头长度和直线长度最大比例（默认0.25）</p></li>
@@ -579,12 +592,12 @@ it into a 3d point.</p>
 <dl class="py method">
 <dt id="manimlib.mobject.geometry.FillArrow.get_end">
 <code class="sig-name descname">get_end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.FillArrow.get_end" title="永久链接至目标">¶</a></dt>
-<dd><p>获取终止点</p>
+<dd><p>获取物件结束点</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.mobject.geometry.FillArrow.get_start">
 <code class="sig-name descname">get_start</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.FillArrow.get_start" title="永久链接至目标">¶</a></dt>
-<dd><p>获取起始点</p>
+<dd><p>获取物件起始点</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.mobject.geometry.FillArrow.put_start_and_end_on">
@@ -611,7 +624,7 @@ it into a 3d point.</p>
 <dd><p>向量</p>
 <p>即起点为ORIGIN的箭头，终点为 <code class="docutils literal notranslate"><span class="pre">direction</span></code></p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">buff</span></code> 默认设为了0</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">buff</span></code> 默认设为了 0</p></li>
 </ul>
 </dd></dl>
 </section>
@@ -691,6 +704,16 @@ it into a 3d point.</p>
 </dl>
 </li>
 </ul>
+<dl class="py method">
+<dt id="manimlib.mobject.geometry.ArrowTip.get_base">
+<code class="sig-name descname">get_base</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.ArrowTip.get_base" title="永久链接至目标">¶</a></dt>
+<dd><p>获取箭头尾部的点</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.geometry.ArrowTip.get_tip_point">
+<code class="sig-name descname">get_tip_point</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.ArrowTip.get_tip_point" title="永久链接至目标">¶</a></dt>
+<dd><p>获取箭头首部的点</p>
+</dd></dl>
 </dd></dl>
 </section>
 <section id="rectangle">

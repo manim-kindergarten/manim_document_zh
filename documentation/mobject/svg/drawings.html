@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../../_static/styles/default.css?b01df17a3c94898f74ccfe6c">
-    <link rel="stylesheet" href="../../../_static/pygments.css?b01df17a3c94898f74ccfe6c">
+    <link rel="stylesheet" href="../../../_static/styles/default.css?475682bd320c9bab90786666">
+    <link rel="stylesheet" href="../../../_static/pygments.css?475682bd320c9bab90786666">
     
 <style>
   :root {
@@ -29,7 +29,7 @@
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
         <script src="../../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?b01df17a3c94898f74ccfe6c"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?475682bd320c9bab90786666"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -211,12 +211,7 @@
 <dt id="manimlib.mobject.svg.drawings.Checkmark">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.drawings.</code><code class="sig-name descname">Checkmark</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.drawings.Checkmark" title="永久链接至目标">¶</a></dt>
 <dd><p>✔</p>
-<p>可传入多个 <code class="docutils literal notranslate"><span class="pre">tex_strings</span></code></p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">arg_separator</span></code> 表示每两个字符串之间的字符，默认为空格</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">isolate</span></code> 列表中放有想要单独拆开的字符串，可以不用手动拆开</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">tex_to_color_map</span></code> 为一个字典，会根据其中的键自动拆开字符串用于上色</p></li>
-</ul>
+<p>使用了 LaTex 的 <code class="docutils literal notranslate"><span class="pre">\ding\{51\}</span></code></p>
 </dd></dl>
 </section>
 <section id="exmark">
@@ -225,12 +220,7 @@
 <dt id="manimlib.mobject.svg.drawings.Exmark">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.drawings.</code><code class="sig-name descname">Exmark</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.drawings.Exmark" title="永久链接至目标">¶</a></dt>
 <dd><p>❌</p>
-<p>可传入多个 <code class="docutils literal notranslate"><span class="pre">tex_strings</span></code></p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">arg_separator</span></code> 表示每两个字符串之间的字符，默认为空格</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">isolate</span></code> 列表中放有想要单独拆开的字符串，可以不用手动拆开</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">tex_to_color_map</span></code> 为一个字典，会根据其中的键自动拆开字符串用于上色</p></li>
-</ul>
+<p>使用了 LaTex 的 <code class="docutils literal notranslate"><span class="pre">\ding\{55\}</span></code></p>
 </dd></dl>
 </section>
 <section id="lightbulb">
@@ -238,8 +228,8 @@
 <dl class="py class">
 <dt id="manimlib.mobject.svg.drawings.Lightbulb">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.drawings.</code><code class="sig-name descname">Lightbulb</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.drawings.Lightbulb" title="永久链接至目标">¶</a></dt>
-<dd><p>💡 无 SVG</p>
-<p>传入一个文件名指向输入的SVG文件</p>
+<dd><p>💡</p>
+<p>暂无 SVG，如有需求可以去 Grant 那里取</p>
 </dd></dl>
 </section>
 <section id="speedometer">
@@ -248,29 +238,16 @@
 <dt id="manimlib.mobject.svg.drawings.Speedometer">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.drawings.</code><code class="sig-name descname">Speedometer</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.drawings.Speedometer" title="永久链接至目标">¶</a></dt>
 <dd><p>汽车速度表盘</p>
-<p>初始化样式，VMobject 的样式有以下</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">fill</span></code> 填充样式</p>
-<ul>
-<li><p>颜色: <code class="docutils literal notranslate"><span class="pre">fill_color</span></code> 或 <code class="docutils literal notranslate"><span class="pre">color</span></code></p></li>
-<li><p>不透明度: <code class="docutils literal notranslate"><span class="pre">fill_opacity</span></code></p></li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">stroke</span></code> 线条样式</p>
-<ul>
-<li><p>颜色: <code class="docutils literal notranslate"><span class="pre">stroke_color</span></code> 或 <code class="docutils literal notranslate"><span class="pre">color</span></code></p></li>
-<li><p>宽度: <code class="docutils literal notranslate"><span class="pre">stroke_width</span></code></p></li>
-<li><p>不透明度: <code class="docutils literal notranslate"><span class="pre">stroke_opacity</span></code></p></li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">gloss</span></code> 光泽</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">shadow</span></code> 阴影</p></li>
-</ul>
-<p>其中，opacity, width 等属性均可以为一个列表，在渲染时会按照列表对其进行补间</p>
+<p>使用纯 VMobject 构建，可直接使用</p>
 <dl class="py method">
 <dt id="manimlib.mobject.svg.drawings.Speedometer.get_center">
 <code class="sig-name descname">get_center</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.drawings.Speedometer.get_center" title="永久链接至目标">¶</a></dt>
 <dd><p>获取物件中心坐标</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.svg.drawings.Speedometer.move_needle_to_velocity">
+<code class="sig-name descname">move_needle_to_velocity</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">velocity</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.drawings.Speedometer.move_needle_to_velocity" title="永久链接至目标">¶</a></dt>
+<dd><p>将指针旋转至指定速度</p>
 </dd></dl>
 </dd></dl>
 </section>
@@ -280,25 +257,7 @@
 <dt id="manimlib.mobject.svg.drawings.Laptop">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.drawings.</code><code class="sig-name descname">Laptop</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.drawings.Laptop" title="永久链接至目标">¶</a></dt>
 <dd><p>笔记本电脑</p>
-<p>初始化样式，VMobject 的样式有以下</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">fill</span></code> 填充样式</p>
-<ul>
-<li><p>颜色: <code class="docutils literal notranslate"><span class="pre">fill_color</span></code> 或 <code class="docutils literal notranslate"><span class="pre">color</span></code></p></li>
-<li><p>不透明度: <code class="docutils literal notranslate"><span class="pre">fill_opacity</span></code></p></li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">stroke</span></code> 线条样式</p>
-<ul>
-<li><p>颜色: <code class="docutils literal notranslate"><span class="pre">stroke_color</span></code> 或 <code class="docutils literal notranslate"><span class="pre">color</span></code></p></li>
-<li><p>宽度: <code class="docutils literal notranslate"><span class="pre">stroke_width</span></code></p></li>
-<li><p>不透明度: <code class="docutils literal notranslate"><span class="pre">stroke_opacity</span></code></p></li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">gloss</span></code> 光泽</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">shadow</span></code> 阴影</p></li>
-</ul>
-<p>其中，opacity, width 等属性均可以为一个列表，在渲染时会按照列表对其进行补间</p>
+<p>使用纯 VMobject 构建，可直接使用</p>
 </dd></dl>
 </section>
 <section id="videoicon">
@@ -306,8 +265,8 @@
 <dl class="py class">
 <dt id="manimlib.mobject.svg.drawings.VideoIcon">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.drawings.</code><code class="sig-name descname">VideoIcon</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.drawings.VideoIcon" title="永久链接至目标">¶</a></dt>
-<dd><p>视频播放按钮，无 SVG</p>
-<p>传入一个文件名指向输入的SVG文件</p>
+<dd><p>视频播放按钮</p>
+<p>暂无 SVG</p>
 </dd></dl>
 </section>
 <section id="clock">
@@ -316,25 +275,7 @@
 <dt id="manimlib.mobject.svg.drawings.Clock">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.drawings.</code><code class="sig-name descname">Clock</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.drawings.Clock" title="永久链接至目标">¶</a></dt>
 <dd><p>时钟</p>
-<p>初始化样式，VMobject 的样式有以下</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">fill</span></code> 填充样式</p>
-<ul>
-<li><p>颜色: <code class="docutils literal notranslate"><span class="pre">fill_color</span></code> 或 <code class="docutils literal notranslate"><span class="pre">color</span></code></p></li>
-<li><p>不透明度: <code class="docutils literal notranslate"><span class="pre">fill_opacity</span></code></p></li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">stroke</span></code> 线条样式</p>
-<ul>
-<li><p>颜色: <code class="docutils literal notranslate"><span class="pre">stroke_color</span></code> 或 <code class="docutils literal notranslate"><span class="pre">color</span></code></p></li>
-<li><p>宽度: <code class="docutils literal notranslate"><span class="pre">stroke_width</span></code></p></li>
-<li><p>不透明度: <code class="docutils literal notranslate"><span class="pre">stroke_opacity</span></code></p></li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">gloss</span></code> 光泽</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">shadow</span></code> 阴影</p></li>
-</ul>
-<p>其中，opacity, width 等属性均可以为一个列表，在渲染时会按照列表对其进行补间</p>
+<p>对应有 <code class="docutils literal notranslate"><span class="pre">ClockPassesTime</span></code> 用于控制时钟前进</p>
 </dd></dl>
 </section>
 <section id="clockpassestime">
@@ -354,8 +295,8 @@
 <dl class="py class">
 <dt id="manimlib.mobject.svg.drawings.Bubble">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.drawings.</code><code class="sig-name descname">Bubble</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.drawings.Bubble" title="永久链接至目标">¶</a></dt>
-<dd><p>气泡，无 SVG</p>
-<p>传入一个文件名指向输入的SVG文件</p>
+<dd><p>气泡</p>
+<p>需要 SVG 显示</p>
 <dl class="py method">
 <dt id="manimlib.mobject.svg.drawings.Bubble.flip">
 <code class="sig-name descname">flip</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">axis</span><span class="o">=</span><span class="default_value">array([0.0, 1.0, 0.0])</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.drawings.Bubble.flip" title="永久链接至目标">¶</a></dt>
@@ -368,7 +309,8 @@
 <dl class="py class">
 <dt id="manimlib.mobject.svg.drawings.SpeechBubble">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.drawings.</code><code class="sig-name descname">SpeechBubble</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.drawings.SpeechBubble" title="永久链接至目标">¶</a></dt>
-<dd><p>传入一个文件名指向输入的SVG文件</p>
+<dd><p>对话气泡</p>
+<p>需要 SVG 显示</p>
 </dd></dl>
 </section>
 <section id="doublespeechbubble">
@@ -376,7 +318,8 @@
 <dl class="py class">
 <dt id="manimlib.mobject.svg.drawings.DoubleSpeechBubble">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.drawings.</code><code class="sig-name descname">DoubleSpeechBubble</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.drawings.DoubleSpeechBubble" title="永久链接至目标">¶</a></dt>
-<dd><p>传入一个文件名指向输入的SVG文件</p>
+<dd><p>多人同时说话气泡</p>
+<p>需要 SVG 显示</p>
 </dd></dl>
 </section>
 <section id="thoughtbubble">
@@ -384,7 +327,8 @@
 <dl class="py class">
 <dt id="manimlib.mobject.svg.drawings.ThoughtBubble">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.drawings.</code><code class="sig-name descname">ThoughtBubble</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.drawings.ThoughtBubble" title="永久链接至目标">¶</a></dt>
-<dd><p>传入一个文件名指向输入的SVG文件</p>
+<dd><p>思考气泡</p>
+<p>需要 SVG 显示</p>
 </dd></dl>
 </section>
 <section id="vectorizedearth">
@@ -392,7 +336,8 @@
 <dl class="py class">
 <dt id="manimlib.mobject.svg.drawings.VectorizedEarth">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.drawings.</code><code class="sig-name descname">VectorizedEarth</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.drawings.VectorizedEarth" title="永久链接至目标">¶</a></dt>
-<dd><p>传入一个文件名指向输入的SVG文件</p>
+<dd><p>矢量图地球</p>
+<p>需要 SVG</p>
 </dd></dl>
 </section>
 </section>
