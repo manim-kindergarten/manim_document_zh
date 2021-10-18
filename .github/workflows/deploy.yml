@@ -28,7 +28,7 @@ jobs:
       run: |
         pip3 install --upgrade pip
         sudo apt install python3-setuptools
-        pip3 install -r requirements.txt
+        pip3 install -r cairo-backend/requirements.txt
         pip3 install -r ../manim_with_doc/requirements.txt
     
     - name: Build document with Sphinx
