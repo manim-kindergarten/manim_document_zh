@@ -4,7 +4,7 @@
 在了解了前面的知识后，我们可以运行更多的场景了。
 ``example_scenes.py`` 中给出了许多示例场景，让我们从简单的开始一个一个研究。
 
-交互开发InteractiveDevlopment
+交互开发 InteractiveDevlopment
 -----------------------------------
 
 .. manim-example:: InteractiveDevelopment
@@ -53,7 +53,7 @@
 这个场景就是我们在 :doc:`quickstart` 中编写的。
 这里不再解释。
 
-方法动画AnimatingMethods
+方法动画 AnimatingMethods
 ----------------------------
 
 .. manim-example:: AnimatingMethods
@@ -105,7 +105,7 @@
 - ``.get_grid()`` 方法会返回一个由该物体复制得到的阵列
 - ``self.play(mob.animate.method(args))`` 动画化方法，详细用法在上面代码注释中说明了
 
-文字示例TextExample
+文字示例 TextExample
 ----------------------
 
 .. manim-example:: TextExample
@@ -162,7 +162,7 @@
 
 .. _匹配变换TexTransformExample:
 
-匹配变换TexTransformExample
+匹配变换 TexTransformExample
 -----------------------------
 
 .. manim-example:: TexTransformExample
@@ -261,12 +261,12 @@
 这个场景中新出现的类是 ``Tex``，``TexText``，``TransformMatchingTex``
 和 ``TransformMatchingShapes``：
 
-- ``Tex`` 利用LaTeX来创建数学公式
-- ``TexText`` 利用LaTeX来创建文字
-- ``TransformMatchingTeX`` 根据 ``Tex`` 中tex的异同来自动对子物体进行 ``Transform``
+- ``Tex`` 利用 LaTeX 来创建数学公式
+- ``TexText`` 利用 LaTeX 来创建文字
+- ``TransformMatchingTeX`` 根据 ``Tex`` 中 tex 的异同来自动对子物体进行 ``Transform``
 - ``TransformMatchingShapes`` 直接根据物体点集的异同来自动对子物体进行 ``Transform``
 
-更新程序UpdatersExample
+更新程序 UpdatersExample
 --------------------------
 
 .. manim-example:: UpdatersExample
@@ -330,7 +330,7 @@
 - ``.set_y()`` 表示设置该物体在画面上的的纵坐标
 - ``.add_updater()`` 为该物体设置一个更新函数。例如：``mob1.add_updater(lambda mob: mob.next_to(mob2))`` 表示每帧都执行 ``mob1.next_to(mob2)``
 
-坐标系统CoordinateSystemExample
+坐标系统 CoordinateSystemExample
 ----------------------------------
 
 .. manim-example:: CoordinateSystemExample
@@ -402,7 +402,7 @@
             # manim还有一些其它的坐标系统：ThreeDAxes，NumberPlane，ComplexPlane
 
 
-函数图像GraphExample
+函数图像 GraphExample
 ---------------------
 
 .. manim-example:: GraphExample
@@ -484,7 +484,7 @@
             self.wait()
 
 
-三维示例SurfaceExample
+三维示例 SurfaceExample
 ------------------------
 
 .. manim-example:: SurfaceExample
@@ -582,7 +582,7 @@
 
 - ``.fix_in_frame()`` 使该物体不随画面视角变化而变化，一直显示在画面上的固定位置
 
-整体示例OpeningManimExample
+整体示例 OpeningManimExample
 -----------------------------
 
 .. manim-example:: OpeningManimExample
@@ -590,92 +590,62 @@
 
     class OpeningManimExample(Scene):
         def construct(self):
-            title = TexText("This is some \\LaTeX")
-            basel = Tex(
-                "\\sum_{n=1}^\\infty "
-                "\\frac{1}{n^2} = \\frac{\\pi^2}{6}"
-            )
-            VGroup(title, basel).arrange(DOWN)
-            self.play(
-                Write(title),
-                FadeIn(basel, UP),
-            )
-            self.wait()
+            intro_words = Text("""
+                The original motivation for manim was to
+                better illustrate mathematical functions
+                as transformations.
+            """)
+            intro_words.to_edge(UP)
 
-            transform_title = Text("That was a transform")
-            transform_title.to_corner(UL)
-            self.play(
-                Transform(title, transform_title),
-                LaggedStartMap(FadeOut, basel, shift=DOWN),
-            )
-            self.wait()
+            self.play(Write(intro_words))
+            self.wait(2)
 
-            fade_comment = Text(
-                """
-                You probably don't want to overuse
-                Transforms, though, a simple fade often
-                looks nicer.
-                """,
-                font_size=36,
-                color=GREY_B,
-            )
-            fade_comment.next_to(
-                transform_title, DOWN,
-                buff=LARGE_BUFF,
-                aligned_edge=LEFT
-            )
-            self.play(FadeIn(fade_comment, shift=DOWN))
-            self.wait(3)
-
+            # Linear transform
             grid = NumberPlane((-10, 10), (-5, 5))
-            grid_title = Text(
-                "But manim is for illustrating math, not text",
-            )
-            grid_title.to_edge(UP)
-            grid_title.add_background_rectangle()
-
-            self.add(grid, grid_title)  # Make sure title is on top of grid
-            self.play(
-                FadeOut(title, shift=LEFT),
-                FadeOut(fade_comment, shift=LEFT),
-                FadeIn(grid_title),
-                ShowCreation(grid, run_time=3, lag_ratio=0.1),
-            )
-            self.wait()
-
             matrix = [[1, 1], [0, 1]]
-            linear_transform_title = VGroup(
+            linear_transform_words = VGroup(
                 Text("This is what the matrix"),
                 IntegerMatrix(matrix, include_background_rectangle=True),
                 Text("looks like")
             )
-            linear_transform_title.arrange(RIGHT)
-            linear_transform_title.to_edge(UP)
+            linear_transform_words.arrange(RIGHT)
+            linear_transform_words.to_edge(UP)
+            linear_transform_words.set_stroke(BLACK, 10, background=True)
 
             self.play(
-                FadeOut(grid_title),
-                FadeIn(linear_transform_title),
+                ShowCreation(grid),
+                FadeTransform(intro_words, linear_transform_words)
             )
-            self.play(grid.apply_matrix, matrix, run_time=3)
+            self.wait()
+            self.play(grid.animate.apply_matrix(matrix), run_time=3)
             self.wait()
 
-            grid_transform_title = Text(
-                "And this is a nonlinear transformation"
-            )
-            grid_transform_title.set_stroke(BLACK, 5, background=True)
-            grid_transform_title.to_edge(UP)
-            grid.prepare_for_nonlinear_transform(100)
+            # Complex map
+            c_grid = ComplexPlane()
+            moving_c_grid = c_grid.copy()
+            moving_c_grid.prepare_for_nonlinear_transform()
+            c_grid.set_stroke(BLUE_E, 1)
+            c_grid.add_coordinate_labels(font_size=24)
+            complex_map_words = TexText("""
+                Or thinking of the plane as $\\mathds{C}$,\\\\
+                this is the map $z \\rightarrow z^2$
+            """)
+            complex_map_words.to_corner(UR)
+            complex_map_words.set_stroke(BLACK, 5, background=True)
+
             self.play(
-                ApplyPointwiseFunction(
-                    lambda p: p + np.array([np.sin(p[1]), np.sin(p[0]), 0]),
-                    grid,
-                    run_time=5,
-                ),
-                FadeOut(linear_transform_title),
-                FadeIn(grid_transform_title),
+                FadeOut(grid),
+                Write(c_grid, run_time=3),
+                FadeIn(moving_c_grid),
+                FadeTransform(linear_transform_words, complex_map_words),
             )
             self.wait()
+            self.play(
+                moving_c_grid.animate.apply_complex_function(lambda z: z**2),
+                run_time=6,
+            )
+            self.wait(2)
 
 这个场景是一个二维场景的综合运用
 
-在看过这些场景后，你就已经了解了manim的部分用法了。更多的例子可以看 `3b1b的视频代码 <https://github.com/3b1b/videos>`_。
+在看过这些场景后，你就已经了解了 manim 的部分用法了。更多的例子可以看 `3b1b的视频代码 <https://github.com/3b1b/videos>`_。

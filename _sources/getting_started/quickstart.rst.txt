@@ -1,7 +1,7 @@
 快速入门
 ===========
 
-在按照 :doc:`installation` 页面中的指导安装好manim的环境后，你可以尝试从头开始自己制作一个场景。
+在按照 :doc:`installation` 页面中的指导安装好 manim 的环境后，你可以尝试从头开始自己制作一个场景。
 
 首先，根据如下结构创建一个新的 ``.py`` 文件（如 ``start.py`` ）：
 
@@ -14,7 +14,7 @@
     │   ├── ...
     │   ├── default_config.yml
     │   └── window.py
-    ├── custom_config.yml
+    ├── (custom_config.yml)
     └── start.py
 
 然后粘贴如下代码（稍后我会详细解释其每行的作用）：
@@ -70,7 +70,7 @@
     
     from manimlib import *
     
-这将一步引入在使用manim时所有可能会用到的类。
+这将一步引入在使用 manim 时所有可能会用到的类。
 
 **Line 3**:
 
@@ -105,7 +105,7 @@
     circle.set_fill(BLUE, opacity=0.5)
     circle.set_stroke(BLUE_E, width=4)
 
-通过调用circle的方法设置circle的样式。
+通过调用 circle 的方法设置 circle 的样式。
 
 - ``.set_fill()`` 方法将这个圆的填充颜色设为蓝色（``BLUE``，在 :doc:`../documentation/constants` 中定义），填充透明度设为0.5。
 - ``.set_stroke()`` 方法将这个圆的线条颜色设为深蓝色（``BLUE_E``，在 :doc:`../documentation/constants` 中定义），线条宽度设为4
@@ -205,7 +205,10 @@
 
 这时再执行 ``manimgl start.py SquareToCircle``。
 
-在前面的动画执行后，将会在命令行打开iPython终端。之后你可以在其中继续编写代码，
+在前面的动画执行后，将会在命令行打开 iPython 终端。这时你将不能触碰动画窗口，而只能在终端中输入要运行的代码，
+如果要和动画窗口进行互动，则要在终端中输入 ``touch()`` 或 ``self.interact()``。
+
+在 iPython 中你可以继续编写代码，
 回车后将会立即运行你输入的语句。例如：向其中分别输入以下行
 （``self.play`` 在此时可以简写为 ``play`` ）：
 
@@ -240,6 +243,6 @@
 成功入门
 --------------
 
-在看完上述内容后，你已经了解如何使用manim了，下面你可以看一些例子，在 :doc:`example_scenes` 页面中。
-但在这之前，你最好先了解一下manim的 :doc:`configuration`。
+在看完上述内容后，你已经了解如何使用 manim 了，下面你可以看一些例子，在 :doc:`example_scenes` 页面中。
+但在这之前，你最好先了解一下 manim 的 :doc:`configuration`。
 

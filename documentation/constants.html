@@ -2,15 +2,15 @@
 <html class="no-js">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="默认配置 custom_config" href="custom_config.html" /><link rel="prev" title="Manim结构" href="../getting_started/structure.html" />
+<link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="默认配置 custom_config" href="custom_config.html" /><link rel="prev" title="Manim 结构" href="../getting_started/structure.html" />
 
     <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>常量部分 constants - ManimGL  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?35fd7d8b4f303ceedf53da5b">
-    <link rel="stylesheet" href="../_static/pygments.css?35fd7d8b4f303ceedf53da5b">
+    <link rel="stylesheet" href="../_static/styles/default.css?ac86fbf818737a4682bef66c">
+    <link rel="stylesheet" href="../_static/pygments.css?ac86fbf818737a4682bef66c">
     
 <style>
   :root {
@@ -29,7 +29,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?35fd7d8b4f303ceedf53da5b"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?ac86fbf818737a4682bef66c"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -96,8 +96,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/quickstart.html">快速入门</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/configuration.html">命令行参数和配置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/example_scenes.html">样例学习</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/config.html">CONFIG字典用法</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/structure.html">Manim结构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/config.html">CONFIG 字典用法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/structure.html">Manim 结构</a></li>
 </ul>
 <p><span class="caption-text">进阶文档</span></p>
 <ul class="current">
@@ -240,7 +240,7 @@
 </section>
 <section id="id4">
 <h2>坐标<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
-<p>manim使用三维坐标，并且用 <code class="docutils literal notranslate"><span class="pre">ndarray</span></code> 的类型</p>
+<p>manim 使用三维坐标，并且用 <code class="docutils literal notranslate"><span class="pre">ndarray</span></code> 的类型</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ORIGIN</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">))</span>
 <span class="n">UP</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">))</span>
 <span class="n">DOWN</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="mf">0.</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">))</span>
@@ -270,11 +270,23 @@
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PI</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span>
 <span class="n">TAU</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">PI</span>
 <span class="n">DEGREES</span> <span class="o">=</span> <span class="n">TAU</span> <span class="o">/</span> <span class="mi">360</span>
+<span class="n">RADIANS</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># 以弧度制作为单位</span>
+</pre></div>
+</div>
+</section>
+<section id="opengl">
+<h2>针对 OpenGL<a class="headerlink" href="#opengl" title="永久链接至标题">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">JOINT_TYPE_MAP</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"auto"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="s2">"round"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"bevel"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="s2">"miter"</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </section>
 <section id="text">
-<h2>针对Text<a class="headerlink" href="#text" title="永久链接至标题">¶</a></h2>
+<h2>针对 Text<a class="headerlink" href="#text" title="永久链接至标题">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">START_X</span> <span class="o">=</span> <span class="mi">30</span>
 <span class="n">START_Y</span> <span class="o">=</span> <span class="mi">20</span>
 <span class="n">NORMAL</span> <span class="o">=</span> <span class="s2">"NORMAL"</span>
@@ -292,6 +304,7 @@
 </section>
 <section id="id7">
 <h2>颜色<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+<p>颜色相关工具和预览可以使用：<a class="reference external" href="https://manim.org.cn/tools/colors.html">颜色工具 - MK官网</a></p>
 <p>这里是manim中定义的颜色的预览：(修改自
 <a class="reference external" href="https://elteoremadebeethoven.github.io/manim_3feb_docs.github.io/html/_static/colors/colors.html">elteoremadebeethoven</a>)</p>
 <div style="float: left;">
@@ -400,7 +413,7 @@
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Manim结构</div>
+                <div class="title">Manim 结构</div>
                 
               </div>
             </a>
@@ -432,7 +445,8 @@
 <li><a class="reference internal" href="#id3">动画默认运行时间</a></li>
 <li><a class="reference internal" href="#id4">坐标</a></li>
 <li><a class="reference internal" href="#id5">数学常数</a></li>
-<li><a class="reference internal" href="#text">针对Text</a></li>
+<li><a class="reference internal" href="#opengl">针对 OpenGL</a></li>
+<li><a class="reference internal" href="#text">针对 Text</a></li>
 <li><a class="reference internal" href="#id6">线条宽度</a></li>
 <li><a class="reference internal" href="#id7">颜色</a></li>
 </ul>

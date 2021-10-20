@@ -2,15 +2,15 @@
 <html class="no-js">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="CONFIG字典用法" href="config.html" /><link rel="prev" title="命令行参数和配置" href="configuration.html" />
+<link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="CONFIG 字典用法" href="config.html" /><link rel="prev" title="命令行参数和配置" href="configuration.html" />
 
     <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>样例学习 - ManimGL  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?e24d89c3a528d466bd6e838b">
-    <link rel="stylesheet" href="../_static/pygments.css?e24d89c3a528d466bd6e838b">
+    <link rel="stylesheet" href="../_static/styles/default.css?040ce2d0929be726338abe25">
+    <link rel="stylesheet" href="../_static/pygments.css?040ce2d0929be726338abe25">
     
 <style>
   :root {
@@ -29,7 +29,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?e24d89c3a528d466bd6e838b"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?040ce2d0929be726338abe25"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -96,8 +96,8 @@
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">快速入门</a></li>
 <li class="toctree-l1"><a class="reference internal" href="configuration.html">命令行参数和配置</a></li>
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">样例学习</a></li>
-<li class="toctree-l1"><a class="reference internal" href="config.html">CONFIG字典用法</a></li>
-<li class="toctree-l1"><a class="reference internal" href="structure.html">Manim结构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">CONFIG 字典用法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structure.html">Manim 结构</a></li>
 </ul>
 <p><span class="caption-text">进阶文档</span></p>
 <ul>
@@ -206,7 +206,7 @@
 <p>在了解了前面的知识后，我们可以运行更多的场景了。
 <code class="docutils literal notranslate"><span class="pre">example_scenes.py</span></code> 中给出了许多示例场景，让我们从简单的开始一个一个研究。</p>
 <section id="interactivedevlopment">
-<h2>交互开发InteractiveDevlopment<a class="headerlink" href="#interactivedevlopment" title="永久链接至标题">¶</a></h2>
+<h2>交互开发 InteractiveDevlopment<a class="headerlink" href="#interactivedevlopment" title="永久链接至标题">¶</a></h2>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="interactivedevelopment" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/InteractiveDevelopment.mp4"></video><h5 class="example-header">InteractiveDevelopment<a class="headerlink" href="#interactivedevelopment">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib</span> <span class="kn">import</span> <span class="o">*</span>
 
 <span class="k">class</span> <span class="nc">InteractiveDevelopment</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
@@ -252,7 +252,7 @@
 这里不再解释。</p>
 </section>
 <section id="animatingmethods">
-<h2>方法动画AnimatingMethods<a class="headerlink" href="#animatingmethods" title="永久链接至标题">¶</a></h2>
+<h2>方法动画 AnimatingMethods<a class="headerlink" href="#animatingmethods" title="永久链接至标题">¶</a></h2>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="animatingmethods" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/AnimatingMethods.mp4"></video><h5 class="example-header">AnimatingMethods<a class="headerlink" href="#animatingmethods">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">AnimatingMethods</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">grid</span> <span class="o">=</span> <span class="n">Tex</span><span class="p">(</span><span class="sa">r</span><span class="s2">"\pi"</span><span class="p">)</span><span class="o">.</span><span class="n">get_grid</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
@@ -302,7 +302,7 @@
 </ul>
 </section>
 <section id="textexample">
-<h2>文字示例TextExample<a class="headerlink" href="#textexample" title="永久链接至标题">¶</a></h2>
+<h2>文字示例 TextExample<a class="headerlink" href="#textexample" title="永久链接至标题">¶</a></h2>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="textexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/TextExample.mp4"></video><h5 class="example-header">TextExample<a class="headerlink" href="#textexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TextExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="c1"># 想要正确运行这个场景，你需要确保你的计算机中安装了Consolas字体</span>
@@ -354,7 +354,7 @@
 </ul>
 </section>
 <section id="textransformexample">
-<span id="id2"></span><h2>匹配变换TexTransformExample<a class="headerlink" href="#textransformexample" title="永久链接至标题">¶</a></h2>
+<span id="id2"></span><h2>匹配变换 TexTransformExample<a class="headerlink" href="#textransformexample" title="永久链接至标题">¶</a></h2>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="textransformexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/TexTransformExample.mp4"></video><h5 class="example-header">TexTransformExample<a class="headerlink" href="#textransformexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TexTransformExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">to_isolate</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"B"</span><span class="p">,</span> <span class="s2">"C"</span><span class="p">,</span> <span class="s2">"="</span><span class="p">,</span> <span class="s2">"("</span><span class="p">,</span> <span class="s2">")"</span><span class="p">]</span>
@@ -449,14 +449,14 @@
 </div><p>这个场景中新出现的类是 <code class="docutils literal notranslate"><span class="pre">Tex</span></code>，<code class="docutils literal notranslate"><span class="pre">TexText</span></code>，<code class="docutils literal notranslate"><span class="pre">TransformMatchingTex</span></code>
 和 <code class="docutils literal notranslate"><span class="pre">TransformMatchingShapes</span></code>：</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Tex</span></code> 利用LaTeX来创建数学公式</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">TexText</span></code> 利用LaTeX来创建文字</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">TransformMatchingTeX</span></code> 根据 <code class="docutils literal notranslate"><span class="pre">Tex</span></code> 中tex的异同来自动对子物体进行 <code class="docutils literal notranslate"><span class="pre">Transform</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Tex</span></code> 利用 LaTeX 来创建数学公式</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TexText</span></code> 利用 LaTeX 来创建文字</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TransformMatchingTeX</span></code> 根据 <code class="docutils literal notranslate"><span class="pre">Tex</span></code> 中 tex 的异同来自动对子物体进行 <code class="docutils literal notranslate"><span class="pre">Transform</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">TransformMatchingShapes</span></code> 直接根据物体点集的异同来自动对子物体进行 <code class="docutils literal notranslate"><span class="pre">Transform</span></code></p></li>
 </ul>
 </section>
 <section id="updatersexample">
-<h2>更新程序UpdatersExample<a class="headerlink" href="#updatersexample" title="永久链接至标题">¶</a></h2>
+<h2>更新程序 UpdatersExample<a class="headerlink" href="#updatersexample" title="永久链接至标题">¶</a></h2>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="updatersexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/UpdatersExample.mp4"></video><h5 class="example-header">UpdatersExample<a class="headerlink" href="#updatersexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">UpdatersExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">square</span> <span class="o">=</span> <span class="n">Square</span><span class="p">()</span>
@@ -518,7 +518,7 @@
 </ul>
 </section>
 <section id="coordinatesystemexample">
-<h2>坐标系统CoordinateSystemExample<a class="headerlink" href="#coordinatesystemexample" title="永久链接至标题">¶</a></h2>
+<h2>坐标系统 CoordinateSystemExample<a class="headerlink" href="#coordinatesystemexample" title="永久链接至标题">¶</a></h2>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="coordinatesystemexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/CoordinateSystemExample.mp4"></video><h5 class="example-header">CoordinateSystemExample<a class="headerlink" href="#coordinatesystemexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CoordinateSystemExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">axes</span> <span class="o">=</span> <span class="n">Axes</span><span class="p">(</span>
@@ -587,7 +587,7 @@
 </div>
 </div></section>
 <section id="graphexample">
-<h2>函数图像GraphExample<a class="headerlink" href="#graphexample" title="永久链接至标题">¶</a></h2>
+<h2>函数图像 GraphExample<a class="headerlink" href="#graphexample" title="永久链接至标题">¶</a></h2>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="graphexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/GraphExample.mp4"></video><h5 class="example-header">GraphExample<a class="headerlink" href="#graphexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">GraphExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">axes</span> <span class="o">=</span> <span class="n">Axes</span><span class="p">((</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
@@ -666,7 +666,7 @@
 </div>
 </div></section>
 <section id="surfaceexample">
-<h2>三维示例SurfaceExample<a class="headerlink" href="#surfaceexample" title="永久链接至标题">¶</a></h2>
+<h2>三维示例 SurfaceExample<a class="headerlink" href="#surfaceexample" title="永久链接至标题">¶</a></h2>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="surfaceexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/SurfaceExample.mp4"></video><h5 class="example-header">SurfaceExample<a class="headerlink" href="#surfaceexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SurfaceExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="n">CONFIG</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s2">"camera_class"</span><span class="p">:</span> <span class="n">ThreeDCamera</span><span class="p">,</span>
@@ -762,98 +762,68 @@
 </ul>
 </section>
 <section id="openingmanimexample">
-<h2>整体示例OpeningManimExample<a class="headerlink" href="#openingmanimexample" title="永久链接至标题">¶</a></h2>
+<h2>整体示例 OpeningManimExample<a class="headerlink" href="#openingmanimexample" title="永久链接至标题">¶</a></h2>
 <div class="manim-example"><video autoplay="" class="manim-video" controls="" id="openingmanimexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/OpeningManimExample.mp4"></video><h5 class="example-header">OpeningManimExample<a class="headerlink" href="#openingmanimexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">OpeningManimExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">title</span> <span class="o">=</span> <span class="n">TexText</span><span class="p">(</span><span class="s2">"This is some </span><span class="se">\\</span><span class="s2">LaTeX"</span><span class="p">)</span>
-        <span class="n">basel</span> <span class="o">=</span> <span class="n">Tex</span><span class="p">(</span>
-            <span class="s2">"</span><span class="se">\\</span><span class="s2">sum_{n=1}^</span><span class="se">\\</span><span class="s2">infty "</span>
-            <span class="s2">"</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}</span><span class="s2">{n^2} = </span><span class="se">\\</span><span class="s2">frac{</span><span class="se">\\</span><span class="s2">pi^2}</span><span class="si">{6}</span><span class="s2">"</span>
-        <span class="p">)</span>
-        <span class="n">VGroup</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">basel</span><span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
-            <span class="n">Write</span><span class="p">(</span><span class="n">title</span><span class="p">),</span>
-            <span class="n">FadeIn</span><span class="p">(</span><span class="n">basel</span><span class="p">,</span> <span class="n">UP</span><span class="p">),</span>
-        <span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+        <span class="n">intro_words</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"""</span>
+<span class="s2">            The original motivation for manim was to</span>
+<span class="s2">            better illustrate mathematical functions</span>
+<span class="s2">            as transformations.</span>
+<span class="s2">        """</span><span class="p">)</span>
+        <span class="n">intro_words</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
 
-        <span class="n">transform_title</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"That was a transform"</span><span class="p">)</span>
-        <span class="n">transform_title</span><span class="o">.</span><span class="n">to_corner</span><span class="p">(</span><span class="n">UL</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
-            <span class="n">Transform</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">transform_title</span><span class="p">),</span>
-            <span class="n">LaggedStartMap</span><span class="p">(</span><span class="n">FadeOut</span><span class="p">,</span> <span class="n">basel</span><span class="p">,</span> <span class="n">shift</span><span class="o">=</span><span class="n">DOWN</span><span class="p">),</span>
-        <span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Write</span><span class="p">(</span><span class="n">intro_words</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 
-        <span class="n">fade_comment</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span>
-            <span class="sd">"""</span>
-<span class="sd">            You probably don't want to overuse</span>
-<span class="sd">            Transforms, though, a simple fade often</span>
-<span class="sd">            looks nicer.</span>
-<span class="sd">            """</span><span class="p">,</span>
-            <span class="n">font_size</span><span class="o">=</span><span class="mi">36</span><span class="p">,</span>
-            <span class="n">color</span><span class="o">=</span><span class="n">GREY_B</span><span class="p">,</span>
-        <span class="p">)</span>
-        <span class="n">fade_comment</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span>
-            <span class="n">transform_title</span><span class="p">,</span> <span class="n">DOWN</span><span class="p">,</span>
-            <span class="n">buff</span><span class="o">=</span><span class="n">LARGE_BUFF</span><span class="p">,</span>
-            <span class="n">aligned_edge</span><span class="o">=</span><span class="n">LEFT</span>
-        <span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">FadeIn</span><span class="p">(</span><span class="n">fade_comment</span><span class="p">,</span> <span class="n">shift</span><span class="o">=</span><span class="n">DOWN</span><span class="p">))</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-
+        <span class="c1"># Linear transform</span>
         <span class="n">grid</span> <span class="o">=</span> <span class="n">NumberPlane</span><span class="p">((</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
-        <span class="n">grid_title</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span>
-            <span class="s2">"But manim is for illustrating math, not text"</span><span class="p">,</span>
-        <span class="p">)</span>
-        <span class="n">grid_title</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
-        <span class="n">grid_title</span><span class="o">.</span><span class="n">add_background_rectangle</span><span class="p">()</span>
-
-        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">grid_title</span><span class="p">)</span>  <span class="c1"># Make sure title is on top of grid</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
-            <span class="n">FadeOut</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">shift</span><span class="o">=</span><span class="n">LEFT</span><span class="p">),</span>
-            <span class="n">FadeOut</span><span class="p">(</span><span class="n">fade_comment</span><span class="p">,</span> <span class="n">shift</span><span class="o">=</span><span class="n">LEFT</span><span class="p">),</span>
-            <span class="n">FadeIn</span><span class="p">(</span><span class="n">grid_title</span><span class="p">),</span>
-            <span class="n">ShowCreation</span><span class="p">(</span><span class="n">grid</span><span class="p">,</span> <span class="n">run_time</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">lag_ratio</span><span class="o">=</span><span class="mf">0.1</span><span class="p">),</span>
-        <span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
-
         <span class="n">matrix</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]]</span>
-        <span class="n">linear_transform_title</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
+        <span class="n">linear_transform_words</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
             <span class="n">Text</span><span class="p">(</span><span class="s2">"This is what the matrix"</span><span class="p">),</span>
             <span class="n">IntegerMatrix</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">include_background_rectangle</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
             <span class="n">Text</span><span class="p">(</span><span class="s2">"looks like"</span><span class="p">)</span>
         <span class="p">)</span>
-        <span class="n">linear_transform_title</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">)</span>
-        <span class="n">linear_transform_title</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
+        <span class="n">linear_transform_words</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">)</span>
+        <span class="n">linear_transform_words</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
+        <span class="n">linear_transform_words</span><span class="o">.</span><span class="n">set_stroke</span><span class="p">(</span><span class="n">BLACK</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">background</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
-            <span class="n">FadeOut</span><span class="p">(</span><span class="n">grid_title</span><span class="p">),</span>
-            <span class="n">FadeIn</span><span class="p">(</span><span class="n">linear_transform_title</span><span class="p">),</span>
+            <span class="n">ShowCreation</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span>
+            <span class="n">FadeTransform</span><span class="p">(</span><span class="n">intro_words</span><span class="p">,</span> <span class="n">linear_transform_words</span><span class="p">)</span>
         <span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">apply_matrix</span><span class="p">,</span> <span class="n">matrix</span><span class="p">,</span> <span class="n">run_time</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">apply_matrix</span><span class="p">(</span><span class="n">matrix</span><span class="p">),</span> <span class="n">run_time</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 
-        <span class="n">grid_transform_title</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span>
-            <span class="s2">"And this is a nonlinear transformation"</span>
-        <span class="p">)</span>
-        <span class="n">grid_transform_title</span><span class="o">.</span><span class="n">set_stroke</span><span class="p">(</span><span class="n">BLACK</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">background</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-        <span class="n">grid_transform_title</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
-        <span class="n">grid</span><span class="o">.</span><span class="n">prepare_for_nonlinear_transform</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+        <span class="c1"># Complex map</span>
+        <span class="n">c_grid</span> <span class="o">=</span> <span class="n">ComplexPlane</span><span class="p">()</span>
+        <span class="n">moving_c_grid</span> <span class="o">=</span> <span class="n">c_grid</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="n">moving_c_grid</span><span class="o">.</span><span class="n">prepare_for_nonlinear_transform</span><span class="p">()</span>
+        <span class="n">c_grid</span><span class="o">.</span><span class="n">set_stroke</span><span class="p">(</span><span class="n">BLUE_E</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">c_grid</span><span class="o">.</span><span class="n">add_coordinate_labels</span><span class="p">(</span><span class="n">font_size</span><span class="o">=</span><span class="mi">24</span><span class="p">)</span>
+        <span class="n">complex_map_words</span> <span class="o">=</span> <span class="n">TexText</span><span class="p">(</span><span class="s2">"""</span>
+<span class="s2">            Or thinking of the plane as $</span><span class="se">\\</span><span class="s2">mathds</span><span class="si">{C}</span><span class="s2">$,</span><span class="se">\\\\</span><span class="s2"></span>
+<span class="s2">            this is the map $z </span><span class="se">\\</span><span class="s2">rightarrow z^2$</span>
+<span class="s2">        """</span><span class="p">)</span>
+        <span class="n">complex_map_words</span><span class="o">.</span><span class="n">to_corner</span><span class="p">(</span><span class="n">UR</span><span class="p">)</span>
+        <span class="n">complex_map_words</span><span class="o">.</span><span class="n">set_stroke</span><span class="p">(</span><span class="n">BLACK</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">background</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
         <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
-            <span class="n">ApplyPointwiseFunction</span><span class="p">(</span>
-                <span class="k">lambda</span> <span class="n">p</span><span class="p">:</span> <span class="n">p</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="mi">0</span><span class="p">]),</span>
-                <span class="n">grid</span><span class="p">,</span>
-                <span class="n">run_time</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
-            <span class="p">),</span>
-            <span class="n">FadeOut</span><span class="p">(</span><span class="n">linear_transform_title</span><span class="p">),</span>
-            <span class="n">FadeIn</span><span class="p">(</span><span class="n">grid_transform_title</span><span class="p">),</span>
+            <span class="n">FadeOut</span><span class="p">(</span><span class="n">grid</span><span class="p">),</span>
+            <span class="n">Write</span><span class="p">(</span><span class="n">c_grid</span><span class="p">,</span> <span class="n">run_time</span><span class="o">=</span><span class="mi">3</span><span class="p">),</span>
+            <span class="n">FadeIn</span><span class="p">(</span><span class="n">moving_c_grid</span><span class="p">),</span>
+            <span class="n">FadeTransform</span><span class="p">(</span><span class="n">linear_transform_words</span><span class="p">,</span> <span class="n">complex_map_words</span><span class="p">),</span>
         <span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+            <span class="n">moving_c_grid</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">apply_complex_function</span><span class="p">(</span><span class="k">lambda</span> <span class="n">z</span><span class="p">:</span> <span class="n">z</span><span class="o">**</span><span class="mi">2</span><span class="p">),</span>
+            <span class="n">run_time</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div><p>这个场景是一个二维场景的综合运用</p>
-<p>在看过这些场景后，你就已经了解了manim的部分用法了。更多的例子可以看 <a class="reference external" href="https://github.com/3b1b/videos">3b1b的视频代码</a>。</p>
+<p>在看过这些场景后，你就已经了解了 manim 的部分用法了。更多的例子可以看 <a class="reference external" href="https://github.com/3b1b/videos">3b1b的视频代码</a>。</p>
 </section>
 </section>
 
@@ -866,7 +836,7 @@
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">CONFIG字典用法</div>
+                <div class="title">CONFIG 字典用法</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -904,15 +874,15 @@
         <div class="toc-tree">
           <ul>
 <li><a class="reference internal" href="#">样例学习</a><ul>
-<li><a class="reference internal" href="#interactivedevlopment">交互开发InteractiveDevlopment</a></li>
-<li><a class="reference internal" href="#animatingmethods">方法动画AnimatingMethods</a></li>
-<li><a class="reference internal" href="#textexample">文字示例TextExample</a></li>
-<li><a class="reference internal" href="#textransformexample">匹配变换TexTransformExample</a></li>
-<li><a class="reference internal" href="#updatersexample">更新程序UpdatersExample</a></li>
-<li><a class="reference internal" href="#coordinatesystemexample">坐标系统CoordinateSystemExample</a></li>
-<li><a class="reference internal" href="#graphexample">函数图像GraphExample</a></li>
-<li><a class="reference internal" href="#surfaceexample">三维示例SurfaceExample</a></li>
-<li><a class="reference internal" href="#openingmanimexample">整体示例OpeningManimExample</a></li>
+<li><a class="reference internal" href="#interactivedevlopment">交互开发 InteractiveDevlopment</a></li>
+<li><a class="reference internal" href="#animatingmethods">方法动画 AnimatingMethods</a></li>
+<li><a class="reference internal" href="#textexample">文字示例 TextExample</a></li>
+<li><a class="reference internal" href="#textransformexample">匹配变换 TexTransformExample</a></li>
+<li><a class="reference internal" href="#updatersexample">更新程序 UpdatersExample</a></li>
+<li><a class="reference internal" href="#coordinatesystemexample">坐标系统 CoordinateSystemExample</a></li>
+<li><a class="reference internal" href="#graphexample">函数图像 GraphExample</a></li>
+<li><a class="reference internal" href="#surfaceexample">三维示例 SurfaceExample</a></li>
+<li><a class="reference internal" href="#openingmanimexample">整体示例 OpeningManimExample</a></li>
 </ul>
 </li>
 </ul>

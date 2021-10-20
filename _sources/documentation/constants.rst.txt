@@ -43,7 +43,7 @@
 坐标
 -----------
 
-manim使用三维坐标，并且用 ``ndarray`` 的类型
+manim 使用三维坐标，并且用 ``ndarray`` 的类型
 
 .. code-block:: python
 
@@ -77,8 +77,21 @@ manim使用三维坐标，并且用 ``ndarray`` 的类型
    PI = np.pi
    TAU = 2 * PI
    DEGREES = TAU / 360
+   RADIANS = 1  # 以弧度制作为单位
 
-针对Text
+针对 OpenGL
+--------------
+
+.. code-block:: python 
+
+    JOINT_TYPE_MAP = {
+        "auto": 0,
+        "round": 1,
+        "bevel": 2,
+        "miter": 3,
+    }
+
+针对 Text
 ----------
 
 .. code-block:: python
@@ -99,6 +112,8 @@ manim使用三维坐标，并且用 ``ndarray`` 的类型
 
 颜色
 -------
+
+颜色相关工具和预览可以使用：`颜色工具 - MK官网 <https://manim.org.cn/tools/colors.html>`_
 
 这里是manim中定义的颜色的预览：(修改自 
 `elteoremadebeethoven <https://elteoremadebeethoven.github.io/manim_3feb_docs.github.io/html/_static/colors/colors.html>`_)

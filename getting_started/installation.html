@@ -2,15 +2,15 @@
 <html class="no-js">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="快速入门" href="quickstart.html" /><link rel="prev" title="ManimGL教程文档" href="../index.html" />
+<link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="快速入门" href="quickstart.html" /><link rel="prev" title="ManimGL 教程文档" href="../index.html" />
 
     <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>安装指南 - ManimGL  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?1a146099a95ee6a546e52208">
-    <link rel="stylesheet" href="../_static/pygments.css?1a146099a95ee6a546e52208">
+    <link rel="stylesheet" href="../_static/styles/default.css?29a3c9db7d613973432063b9">
+    <link rel="stylesheet" href="../_static/pygments.css?29a3c9db7d613973432063b9">
     
 <style>
   :root {
@@ -29,7 +29,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?1a146099a95ee6a546e52208"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?29a3c9db7d613973432063b9"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -96,8 +96,8 @@
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">快速入门</a></li>
 <li class="toctree-l1"><a class="reference internal" href="configuration.html">命令行参数和配置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="example_scenes.html">样例学习</a></li>
-<li class="toctree-l1"><a class="reference internal" href="config.html">CONFIG字典用法</a></li>
-<li class="toctree-l1"><a class="reference internal" href="structure.html">Manim结构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">CONFIG 字典用法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structure.html">Manim 结构</a></li>
 </ul>
 <p><span class="caption-text">进阶文档</span></p>
 <ul>
@@ -203,25 +203,25 @@
         </label>
         <section id="id1">
 <h1>安装指南<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
-<p>Manim运行在Python 3.6或者更高版本上（推荐使用Python 3.8）</p>
+<p>Manim 运行在 Python 3.6 或者更高版本上（推荐使用 Python 3.8）</p>
 <p>另外，不是特别推荐在 WSL 上安装 manimgl，因为 manimgl 在 <strong>预览时</strong> 不可避免地会调用 Pyglet Window 这个库，而这个库需要 GUI。不少用户为此花费大量的心血寻找解决方案，但真正解决的少之又少 qwq</p>
 <p>所需的系统依赖有：</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://ffmpeg.org/">FFmpeg</a></p></li>
-<li><p><a class="reference external" href="https://www.opengl.org//">OpenGL</a> (包含在python包 <code class="docutils literal notranslate"><span class="pre">PyOpenGL</span></code> 中)</p></li>
-<li><p><a class="reference external" href="https://www.latex-project.org">LaTeX</a> (可选，如果需要LaTeX则必需)</p></li>
-<li><p><a class="reference external" href="https://pango.org">Pango</a> (只有Linux系统需要，可选，如果需要使用manim的 <code class="docutils literal notranslate"><span class="pre">Text</span></code> 则必需)</p></li>
+<li><p><a class="reference external" href="https://www.opengl.org//">OpenGL</a> (包含在 python 包 <code class="docutils literal notranslate"><span class="pre">PyOpenGL</span></code> 中)</p></li>
+<li><p><a class="reference external" href="https://www.latex-project.org">LaTeX</a> (可选，如果需要 LaTeX 则必需)</p></li>
+<li><p><a class="reference external" href="https://pango.org">Pango</a> (只有 Linux 系统需要，可选，如果需要使用 manim 的 <code class="docutils literal notranslate"><span class="pre">Text</span></code> 则必需)</p></li>
 </ul>
 <section id="id2">
-<h2>直接安装<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># 通过pip安装manimgl</span>
+<h2>直接安装（一般）<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># 通过 pip 安装 manimgl</span>
 pip install manimgl
 
 <span class="c1"># 测试一下</span>
 manimgl
 </pre></div>
 </div>
-<p>如果你想要更改manimlib的源码并使用，或者使用最新版本，可以clone下这个存储库（不要下载zip）
+<p>如果你想要更改 manimlib 的源码并使用，或者使用最新版本，可以 clone 下这个存储库
 然后进入文件夹中执行：</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># 安装</span>
 pip install -e .
@@ -232,14 +232,14 @@ manimgl example_scenes.py OpeningManimExample
 manim-render example_scenes.py OpeningManimExample
 </pre></div>
 </div>
-<p>如果你运行了上面这条命令，并且没有任何报错信息出现，那么你就已经安装好了manim所需的全部环境。</p>
+<p>如果你运行了上面这条命令，并且没有任何报错信息出现，那么你就已经安装好了 manim 所需的全部环境。</p>
 </section>
 <section id="windows">
-<h2>直接安装 (Windows)<a class="headerlink" href="#windows" title="永久链接至标题">¶</a></h2>
+<h2>直接安装 (针对Windows)<a class="headerlink" href="#windows" title="永久链接至标题">¶</a></h2>
 <ol class="arabic simple">
 <li><p>安装 <a class="reference external" href="https://www.wikihow.com/Install-FFmpeg-on-Windows">FFmpeg</a>, 并且保证它在 <code class="docutils literal notranslate"><span class="pre">PATH</span></code> 环境变量中</p></li>
-<li><p>安装一个LaTeX发行版，推荐 <a class="reference external" href="http://tug.org/texlive/">TeXLive-full</a></p></li>
-<li><p>安装剩余的python依赖包</p></li>
+<li><p>安装一个 LaTeX 发行版，推荐 <a class="reference external" href="http://tug.org/texlive/">TeXLive-full</a></p></li>
+<li><p>安装剩余的 python 依赖包</p></li>
 </ol>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/3b1b/manim.git
 <span class="nb">cd</span> manim
@@ -249,10 +249,10 @@ manimgl example_scenes.py OpeningManimExample
 </div>
 </section>
 <section id="anaconda">
-<h2>使用Anaconda<a class="headerlink" href="#anaconda" title="永久链接至标题">¶</a></h2>
+<h2>使用 Anaconda<a class="headerlink" href="#anaconda" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
-<li><p>同上安装FFmpeg和LaTeX</p></li>
-<li><p>创建一个新的conda环境：</p></li>
+<li><p>同上安装 FFmpeg 和 LaTeX</p></li>
+<li><p>创建一个新的 conda 环境：</p></li>
 </ul>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/3b1b/manim.git
 <span class="nb">cd</span> manim
@@ -311,9 +311,9 @@ pip install -e .
         <div class="toc-tree">
           <ul>
 <li><a class="reference internal" href="#">安装指南</a><ul>
-<li><a class="reference internal" href="#id2">直接安装</a></li>
-<li><a class="reference internal" href="#windows">直接安装 (Windows)</a></li>
-<li><a class="reference internal" href="#anaconda">使用Anaconda</a></li>
+<li><a class="reference internal" href="#id2">直接安装（一般）</a></li>
+<li><a class="reference internal" href="#windows">直接安装 (针对Windows)</a></li>
+<li><a class="reference internal" href="#anaconda">使用 Anaconda</a></li>
 </ul>
 </li>
 </ul>

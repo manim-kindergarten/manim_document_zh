@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?916c9c434f4f515a5fa82cb2">
-    <link rel="stylesheet" href="../_static/pygments.css?916c9c434f4f515a5fa82cb2">
+    <link rel="stylesheet" href="../_static/styles/default.css?8daaacc4a769408566e3813a">
+    <link rel="stylesheet" href="../_static/pygments.css?8daaacc4a769408566e3813a">
     
 <style>
   :root {
@@ -29,7 +29,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?916c9c434f4f515a5fa82cb2"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?8daaacc4a769408566e3813a"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -96,8 +96,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/quickstart.html">快速入门</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/configuration.html">命令行参数和配置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/example_scenes.html">样例学习</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/config.html">CONFIG字典用法</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started/structure.html">Manim结构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/config.html">CONFIG 字典用法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/structure.html">Manim 结构</a></li>
 </ul>
 <p><span class="caption-text">进阶文档</span></p>
 <ul class="current">
@@ -327,6 +327,11 @@
 <h2><code class="docutils literal notranslate"><span class="pre">window_monitor</span></code><a class="headerlink" href="#window-monitor" title="永久链接至标题">¶</a></h2>
 <p>反馈窗口出现的显示器的编号</p>
 </section>
+<section id="break-into-partial-movies">
+<h2><code class="docutils literal notranslate"><span class="pre">break_into_partial_movies</span></code><a class="headerlink" href="#break-into-partial-movies" title="永久链接至标题">¶</a></h2>
+<p>是否在导出视频的时候为每个 self.play 和 self.wait 生成一个视频片段</p>
+<p>设为 <code class="docutils literal notranslate"><span class="pre">True</span></code> 方便后期剪辑，设为 <code class="docutils literal notranslate"><span class="pre">False</span></code> 速度更快效率更高</p>
+</section>
 <section id="camera-qualities">
 <h2><code class="docutils literal notranslate"><span class="pre">camera_qualities</span></code><a class="headerlink" href="#camera-qualities" title="永久链接至标题">¶</a></h2>
 <p>导出质量</p>
@@ -413,6 +418,7 @@
 <li><a class="reference internal" href="#style"><code class="docutils literal notranslate"><span class="pre">style</span></code></a></li>
 <li><a class="reference internal" href="#window-position"><code class="docutils literal notranslate"><span class="pre">window_position</span></code></a></li>
 <li><a class="reference internal" href="#window-monitor"><code class="docutils literal notranslate"><span class="pre">window_monitor</span></code></a></li>
+<li><a class="reference internal" href="#break-into-partial-movies"><code class="docutils literal notranslate"><span class="pre">break_into_partial_movies</span></code></a></li>
 <li><a class="reference internal" href="#camera-qualities"><code class="docutils literal notranslate"><span class="pre">camera_qualities</span></code></a></li>
 </ul>
 </li>

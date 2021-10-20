@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?c833c7a82cfdeda72b67fcbc">
-    <link rel="stylesheet" href="../_static/pygments.css?c833c7a82cfdeda72b67fcbc">
+    <link rel="stylesheet" href="../_static/styles/default.css?bb39b0efa10e521694f436cf">
+    <link rel="stylesheet" href="../_static/pygments.css?bb39b0efa10e521694f436cf">
     
 <style>
   :root {
@@ -29,7 +29,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?c833c7a82cfdeda72b67fcbc"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?bb39b0efa10e521694f436cf"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -96,8 +96,8 @@
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">快速入门</a></li>
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">命令行参数和配置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="example_scenes.html">样例学习</a></li>
-<li class="toctree-l1"><a class="reference internal" href="config.html">CONFIG字典用法</a></li>
-<li class="toctree-l1"><a class="reference internal" href="structure.html">Manim结构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">CONFIG 字典用法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structure.html">Manim 结构</a></li>
 </ul>
 <p><span class="caption-text">进阶文档</span></p>
 <ul>
@@ -205,15 +205,15 @@
 <h1>命令行参数和配置<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
 <section id="id2">
 <h2>命令行界面<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
-<p>使用manim运行一个动画，需要进入到与 <code class="docutils literal notranslate"><span class="pre">manimlib/</span></code> 文件夹同级的目录中，并向命令行中输入如下格式的命令：</p>
+<p>使用 manim 运行一个动画，需要进入到与 <code class="docutils literal notranslate"><span class="pre">manimlib/</span></code> 文件夹同级的目录中，并向命令行中输入如下格式的命令：</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>manimgl &lt;code&gt;.py &lt;Scene&gt; &lt;flags&gt;
 <span class="c1"># 或</span>
 manim-render &lt;code&gt;.py &lt;Scene&gt; &lt;flags&gt;
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">&lt;code&gt;.py</span></code> : 你写的python文件，需要与 <code class="docutils literal notranslate"><span class="pre">manim.py</span></code> 同级，否则需要使用绝对路径，或写准相对路径</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">&lt;Scene&gt;</span></code> : 你想要渲染的场景，或者一些场景。如果没有写或者写错，若文件中只有一个Scene，会直接渲染这个类，否则会列出所有让你选择</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;code&gt;.py</span></code> : 你写的 python 文件，可以使用绝对路径或相对于当前命令行所在路径的相对路径</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;Scene&gt;</span></code> : 你想要渲染的场景，或者一些场景。如果没有写或者写错，若文件中只有一个 Scene，会直接渲染这个类，否则会列出所有让你选择</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&lt;flags&gt;</span></code> : 传入的选项</p></li>
 </ul>
 <section id="id3">
@@ -245,65 +245,73 @@ manim-render &lt;code&gt;.py &lt;Scene&gt; &lt;flags&gt;
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--help</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--version</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-v</span></code></p></td>
+<td><p>显示 ManimGL 的版本</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--help</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-h</span></code></p></td>
 <td><p>显示提示信息并退出</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--write_file</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--write_file</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-w</span></code></p></td>
 <td><p>把场景渲染成视频文件</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--skip_animations</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--skip_animations</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-s</span></code></p></td>
 <td><p>跳到最后一帧</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--low_quality</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--low_quality</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-l</span></code></p></td>
-<td><p>使用低质量渲染(默认480p15)</p></td>
+<td><p>使用低质量渲染(默认 480p15)</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--medium_quality</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--medium_quality</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-m</span></code></p></td>
-<td><p>使用中等质量渲染(默认720p30)</p></td>
+<td><p>使用中等质量渲染(默认 720p30)</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--hd</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--hd</span></code></p></td>
 <td></td>
-<td><p>使用高质量渲染(默认1080p30)</p></td>
+<td><p>使用高质量渲染(默认 1080p30)</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--uhd</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--uhd</span></code></p></td>
 <td></td>
-<td><p>使用4K质量渲染</p></td>
+<td><p>使用 4K 质量渲染</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--full_screen</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--full_screen</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-f</span></code></p></td>
 <td><p>全屏呈现窗口</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--save_pngs</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--save_pngs</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-g</span></code></p></td>
-<td><p>把所有帧都保存为png文件</p></td>
+<td><p>把所有帧都保存为 png 文件（尚未实现）</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--save_as_gif</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--save_as_gif</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-i</span></code></p></td>
-<td><p>把场景输出为gif文件</p></td>
+<td><p>把场景输出为 gif 文件</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--transparent</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--transparent</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-t</span></code></p></td>
-<td><p>渲染alpha通道，视频为mov格式</p></td>
+<td><p>渲染 alpha 通道，视频为 mov 格式</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--quiet</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--quiet</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-q</span></code></p></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--write_all</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--write_all</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-a</span></code></p></td>
 <td><p>渲染文件中的所有场景</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--open</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--open</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-o</span></code></p></td>
 <td><p>保存文件后自动打开</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--finder</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--finder</span></code></p></td>
 <td></td>
 <td><p>打开保存文件的文件夹</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--config</span></code></p></td>
+<td></td>
+<td><p>进入自动配置指南</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--file_name</span> <span class="pre">FILE_NAME</span></code></p></td>
 <td></td>
@@ -333,15 +341,23 @@ manim-render &lt;code&gt;.py &lt;Scene&gt; &lt;flags&gt;
 <td></td>
 <td><p>存放视频的目录</p></td>
 </tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--config_file</span> <span class="pre">CONFIG_FILE</span></code></p></td>
+<td></td>
+<td><p>使用指定的配置文件</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--log-level</span> <span class="pre">LOG_LEVEL</span></code></p></td>
+<td></td>
+<td><p>输出日志的等级</p></td>
+</tr>
 </tbody>
 </table></div>
 </section>
 </section>
 <section id="id5">
 <h2>个性化默认值<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
-<p>为了进行更多配置（关于目录等）并且永久更改默认值（不必每次都在命令中添加flags），
+<p>为了进行更多配置（关于目录等）并且永久更改默认值（不必每次都在命令中添加 flags），
 可以修改/新建 <code class="docutils literal notranslate"><span class="pre">custom_config.yml</span></code> ，其中各选项含义见： <a class="reference internal" href="../documentation/custom_config.html"><span class="doc">默认配置 custom_config</span></a> 。</p>
-<p>你也可以对于不同目录使用不同的custom_config.yml，如按照以下目录结构：</p>
+<p>你也可以对于不同目录使用不同的 <code class="docutils literal notranslate"><span class="pre">custom_config.yml</span></code>，如按照以下目录结构：</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>manim/
 ├── manimlib/
 │   ├── animation/

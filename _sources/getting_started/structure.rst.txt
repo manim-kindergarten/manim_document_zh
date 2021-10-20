@@ -1,13 +1,13 @@
-Manim结构
+Manim 结构
 =================
 
 
-Manim目录结构
+Manim 目录结构
 ---------------------------
 
-manim的目录看起来很复杂，文件很多，但是结构非常清晰
+manim 的目录看起来很复杂，文件很多，但是结构非常清晰
 
-下面是manim的目录结构：
+下面是 manim 的目录结构：
 
 .. code-block:: text
 
@@ -20,6 +20,7 @@ manim的目录看起来很复杂，文件很多，但是结构非常清晰
     ├── extract_scene.py     # 提取、运行场景
     ├── shader_wrapper.py    # Shader包装器
     ├── window.py            # 反馈窗口
+    ├── logger.py            # 创建Logger实例
     ├── tex_templates/ # LaTeX模板
     │   ├── tex_templates.tex   # tex模板(将使用latex编译，默认)
     │   └── ctex_templates.tex  # 支持中文的tex模板(将使用xelatex编译)
@@ -58,12 +59,13 @@ manim的目录看起来很复杂，文件很多，但是结构非常清晰
     │   │   ├── brace.py                # 大括号
     │   │   ├── drawings.py             # svg图像的一些特殊mobject
     │   │   ├── tex_mobject.py          # 依赖LaTeX实现的文字
-    │   │   └── text_mobject.py         # 依赖cairo实现的文字
+    │   │   └── text_mobject.py         # 依赖cairo实现的文字及Code
     │   ├── changing.py             # 动态变化的mobject
     │   ├── coordinate_systems.py   # 坐标系统
     │   ├── frame.py                # 和frame有关的mobject
     │   ├── functions.py            # 参数方程
     │   ├── geometry.py             # 几何图形的mobject
+    │   ├── interactive.py          # 可交互的物件
     │   ├── matrix.py               # 矩阵
     │   ├── mobject_update_utils.py # 一些定义的更新程序
     │   ├── number_line.py          # 数轴
@@ -73,6 +75,10 @@ manim的目录看起来很复杂，文件很多，但是结构非常清晰
     │   ├── three_dimensions.py     # 三维物体
     │   ├── value_tracker.py        # ValueTracker(存储数的mobject)
     │   └── vector_field.py         # 向量场 
+    ├── event_handler/ # 处理交互事件（不常用）
+    │   ├── event_dispatcher.py 
+    │   ├── event_listener.py 
+    │   └── event_type.py
     ├── once_useful_constructs/  # 3b1b为某些视频写的常用场景
     │   └── ...
     ├── shaders/ # 渲染中使用的GLSL脚本
@@ -86,6 +92,10 @@ manim的目录看起来很复杂，文件很多，但是结构非常清晰
     │   │   └── ... # 包含vertex shader、fragment shader和geometry shader
     │   ├── quadratic_bezier_stroke/ # 针对二阶贝塞尔线条的glsl
     │   │   └── ... # 包含vertex shader、fragment shader和geometry shader
+    │   ├── mandelbrot_fractal/ # 针对M集的glsl
+    │   │   └── ... # 包含vertex shader和fragment shader
+    │   ├── newton_fractal/ # 针对牛顿分形的glsl
+    │   │   └── ... # 包含vertex shader和fragment shader
     │   ├── surface/ # 针对三维面的glsl
     │   │   └── ... # 包含vertex shader和fragment shader
     │   ├── textured_surface/ # 针对纹理面的glsl
@@ -112,15 +122,15 @@ manim的目录看起来很复杂，文件很多，但是结构非常清晰
         ├── strings.py            # 处理字符串
         └── tex_file_writing.py   # 将字符串利用LaTeX写成svg
 
-Manim的类继承结构
+Manim 的类继承结构
 ----------------------------------------
 
 `这里 <https://github.com/3b1b/manim/files/5824383/manim_shaders_structure.pdf>`_ 
-整理了一个manim类继承的pdf，比较大，但是基本所有的类都有包含：
+整理了一个 manim 类继承的 pdf，比较大，但是基本所有的类都有包含：
 
 .. image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/manim_shaders_structure.png
 
-Manim运行过程
+Manim 运行过程
 -----------------------
 
 .. image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/manim_shaders_process_cn.png
