@@ -1,16 +1,15 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="author" title="关于这些文档" href="../../about.html" /><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="SVG图像相关物体svg" href="../svg/index.html" /><link rel="prev" title="PMobject" href="point_cloud_mobject.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="../../about.html" /><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="SVG图像相关物体svg" href="../svg/index.html" /><link rel="prev" title="PMobject" href="point_cloud_mobject.html" />
 
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>ImageMobject - manim  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?1ba381504dfb51e61aac4d41">
-    <link rel="stylesheet" href="../../_static/pygments.css?1ba381504dfb51e61aac4d41">
+    <link rel="stylesheet" href="../../_static/styles/default.css?59c49542009ac855ee0ae095">
+    <link rel="stylesheet" href="../../_static/pygments.css?59c49542009ac855ee0ae095">
     
 <style>
   :root {
@@ -29,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?1ba381504dfb51e61aac4d41"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?59c49542009ac855ee0ae095"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -90,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p><span class="caption-text">入门教程向</span></p>
+  <p class="caption"><span class="caption-text">入门教程向</span></p>
 <ul>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../installation/index.html">安装指南</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../installation/linux.html">Linux</a></li>
@@ -114,7 +113,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../homework/index.html">练习部分(TODO)</a></li>
 </ul>
-<p><span class="caption-text">进阶文档向</span></p>
+<p class="caption"><span class="caption-text">进阶文档向</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../constants.html">常量部分constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../container/index.html">属性容器container</a></li>
@@ -203,7 +202,7 @@
 </ul>
 </li>
 </ul>
-<p><span class="caption-text">杂项</span></p>
+<p class="caption"><span class="caption-text">杂项</span></p>
 <ul>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../manim_sandbox/index.html">manim_sandbox中的自定义类</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label for="toctree-checkbox-11"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../manim_sandbox/functions.html">自定义工具函数</a></li>
@@ -227,7 +226,7 @@
         <label class="toc-overlay-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <section id="imagemobject">
+        <div class="section" id="imagemobject">
 <h1>ImageMobject<a class="headerlink" href="#imagemobject" title="永久链接至标题">¶</a></h1>
 <p><code class="xref py py-class docutils literal notranslate"><span class="pre">AbstractImageMobject</span></code> 是
 <a class="reference internal" href="../mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> 的子类，可看作抽象类，用于存放 <code class="docutils literal notranslate"><span class="pre">pixel_array</span></code>。</p>
@@ -237,7 +236,7 @@
 中作为子相机</p>
 <p>MK做了一个关于常用 <a class="reference internal" href="#manimlib.mobject.types.image_mobject.ImageMobject" title="manimlib.mobject.types.image_mobject.ImageMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageMobject</span></code></a> 的的视频：
 <a class="reference external" href="https://www.bilibili.com/video/BV1CC4y1H7kp">〔manim教程〕第四讲 SVG、图片与文字</a></p>
-<section id="abstractimagemobject">
+<div class="section" id="abstractimagemobject">
 <h2>AbstractImageMobject<a class="headerlink" href="#abstractimagemobject" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.types.image_mobject.AbstractImageMobject">
@@ -259,8 +258,8 @@
 <dd><p>给子类实现</p>
 </dd></dl>
 </dd></dl>
-</section>
-<section id="id1">
+</div>
+<div class="section" id="id1">
 <h2>ImageMobject<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.types.image_mobject.ImageMobject">
@@ -305,8 +304,8 @@
 <li><p>可以是 <code class="docutils literal notranslate"><span class="pre">jpg/png/gif</span></code> ，但 <code class="docutils literal notranslate"><span class="pre">gif</span></code> 格式不会添加动图，只会显示第一帧</p></li>
 <li><p>可以直接传入 <code class="docutils literal notranslate"><span class="pre">pixel_array</span></code> 数组，内容是rgba模式表示的每个像素颜色。可以利用这个达到像素级处理</p></li>
 </ul>
-</section>
-<section id="imagemobjectfromcamera">
+</div>
+<div class="section" id="imagemobjectfromcamera">
 <h2>ImageMobjectFromCamera<a class="headerlink" href="#imagemobjectfromcamera" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.types.image_mobject.ImageMobjectFromCamera">
@@ -324,8 +323,8 @@
 <dd><p>从相机中获取图像</p>
 </dd></dl>
 </dd></dl>
-</section>
-</section>
+</div>
+</div>
 
       </article>
       <footer>

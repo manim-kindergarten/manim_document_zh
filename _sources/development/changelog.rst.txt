@@ -7,6 +7,7 @@
 BUG 修复 
 ^^^^^^^^^^
 
+- `#1655 <https://github.com/3b1b/manim/pull/1655>`__: 修复浮点数计算精度丢失造成的 ``CameraFrame`` 在调用 ``rotate`` 方法时报错的问题
 - `#1653 <https://github.com/3b1b/manim/pull/1653>`__: 修复 ``Mobject.stretch_to_fit_depth``
 
 新特性

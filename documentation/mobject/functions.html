@@ -1,16 +1,15 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Geometry" href="geometry.html" /><link rel="prev" title="Frame" href="frame.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Geometry" href="geometry.html" /><link rel="prev" title="Frame" href="frame.html" />
 
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>Functions - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?70e8175c2e090610e169713b">
-    <link rel="stylesheet" href="../../_static/pygments.css?70e8175c2e090610e169713b">
+    <link rel="stylesheet" href="../../_static/styles/default.css?62990b59deaf535b9b879bdc">
+    <link rel="stylesheet" href="../../_static/pygments.css?62990b59deaf535b9b879bdc">
     
 <style>
   :root {
@@ -29,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?70e8175c2e090610e169713b"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?62990b59deaf535b9b879bdc"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -90,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -99,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -183,7 +182,7 @@
 </ul>
 </li>
 </ul>
-<p><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -201,9 +200,9 @@
         <label class="toc-overlay-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <section id="functions">
+        <div class="section" id="functions">
 <h1>Functions<a class="headerlink" href="#functions" title="永久链接至标题">¶</a></h1>
-<section id="parametriccurve">
+<div class="section" id="parametriccurve">
 <h2>ParametricCurve<a class="headerlink" href="#parametriccurve" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.functions.ParametricCurve">
@@ -211,8 +210,8 @@
 <dd><p>参数曲线</p>
 <p>传入 <code class="docutils literal notranslate"><span class="pre">function</span></code> 函数，自变量为参数 <code class="docutils literal notranslate"><span class="pre">t</span></code> ，返回值为一个三维点坐标</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">t_range=[t_mix,</span> <span class="pre">t_max,</span> <span class="pre">dt]</span></code> : 参数范围</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">discontinuities</span></code> : 间断点列表</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">t_range=[t_mix,</span> <span class="pre">t_max,</span> <span class="pre">dt]</span></code> : 参数 <code class="docutils literal notranslate"><span class="pre">t</span></code> 的取值范围和步进</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">discontinuities</span></code> : 间断点列表（在这个列表中的值所对应的点将会是图像的间断点）</p></li>
 </ul>
 <dl class="py method">
 <dt id="manimlib.mobject.functions.ParametricCurve.get_point_from_function">
@@ -220,8 +219,8 @@
 <dd><p>获取 t 值对应的点坐标</p>
 </dd></dl>
 </dd></dl>
-</section>
-<section id="functiongraph">
+</div>
+<div class="section" id="functiongraph">
 <h2>FunctionGraph<a class="headerlink" href="#functiongraph" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.functions.FunctionGraph">
@@ -229,7 +228,7 @@
 <dd><p>y-x 函数图像</p>
 <p>传入 <code class="docutils literal notranslate"><span class="pre">function</span></code> 函数，自变量为 x ，返回值为 y</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">x_range=[x_mix,</span> <span class="pre">x_max,</span> <span class="pre">dx]</span></code> 为自变量 x 的范围</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">x_range=[x_mix,</span> <span class="pre">x_max,</span> <span class="pre">dx]</span></code> 为自变量 x 的取值范围和步进</p></li>
 </ul>
 <dl class="py method">
 <dt id="manimlib.mobject.functions.FunctionGraph.get_function">
@@ -242,8 +241,8 @@
 <dd><p>给出一个横坐标 x ，返回图像上横坐标为 x 的点坐标</p>
 </dd></dl>
 </dd></dl>
-</section>
-</section>
+</div>
+</div>
 
       </article>
       <footer>

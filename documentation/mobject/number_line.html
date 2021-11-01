@@ -1,16 +1,15 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Numbers" href="numbers.html" /><link rel="prev" title="MobjectUpdateUtils" href="mobject_update_utils.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Numbers" href="numbers.html" /><link rel="prev" title="MobjectUpdateUtils" href="mobject_update_utils.html" />
 
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>NumberLine - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?4d9b146851f15161298bdb45">
-    <link rel="stylesheet" href="../../_static/pygments.css?4d9b146851f15161298bdb45">
+    <link rel="stylesheet" href="../../_static/styles/default.css?d51c8db9988f275a73c42d5f">
+    <link rel="stylesheet" href="../../_static/pygments.css?d51c8db9988f275a73c42d5f">
     
 <style>
   :root {
@@ -29,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?4d9b146851f15161298bdb45"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?d51c8db9988f275a73c42d5f"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -90,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -99,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -183,7 +182,7 @@
 </ul>
 </li>
 </ul>
-<p><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -201,9 +200,9 @@
         <label class="toc-overlay-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <section id="numberline">
+        <div class="section" id="numberline">
 <h1>NumberLine<a class="headerlink" href="#numberline" title="永久链接至标题">¶</a></h1>
-<section id="id1">
+<div class="section" id="id1">
 <h2>NumberLine<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.number_line.NumberLine">
@@ -212,6 +211,9 @@
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">x_range=[x_min,</span> <span class="pre">x_max,</span> <span class="pre">dx]</span></code> : 范围和步进</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">include_numbers</span></code> : 是否包含数字</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">numbers_to_exclude</span></code> : 数轴包含数字时，这个列表内的数字不会显示</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">include_tip</span></code> : 包含箭头</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tip_config</span></code> : 箭头参数</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">include_ticks</span></code> : 包含刻度</p></li>
 <li><dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">decimal_number_config</span></code><span class="classifier">数轴标数</span></dt><dd><ul>
@@ -253,8 +255,8 @@
 <dd><p>输入一个绝对坐标，返回这个坐标在数轴上标的数，array[x, y, 0] -&gt; number</p>
 </dd></dl>
 </dd></dl>
-</section>
-<section id="unitinterval">
+</div>
+<div class="section" id="unitinterval">
 <h2>UnitInterval<a class="headerlink" href="#unitinterval" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.number_line.UnitInterval">
@@ -263,6 +265,9 @@
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">x_range=[x_min,</span> <span class="pre">x_max,</span> <span class="pre">dx]</span></code> : 范围和步进</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">include_numbers</span></code> : 是否包含数字</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">numbers_to_exclude</span></code> : 数轴包含数字时，这个列表内的数字不会显示</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">include_tip</span></code> : 包含箭头</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tip_config</span></code> : 箭头参数</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">include_ticks</span></code> : 包含刻度</p></li>
 <li><dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">decimal_number_config</span></code><span class="classifier">数轴标数</span></dt><dd><ul>
@@ -274,8 +279,8 @@
 </li>
 </ul>
 </dd></dl>
-</section>
-</section>
+</div>
+</div>
 
       </article>
       <footer>

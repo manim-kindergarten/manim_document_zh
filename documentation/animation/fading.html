@@ -1,16 +1,15 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Growing" href="growing.html" /><link rel="prev" title="Creation" href="creation.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Growing" href="growing.html" /><link rel="prev" title="Creation" href="creation.html" />
 
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>Fading - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?036ad42a7e813849c46edc95">
-    <link rel="stylesheet" href="../../_static/pygments.css?036ad42a7e813849c46edc95">
+    <link rel="stylesheet" href="../../_static/styles/default.css?4b74d3b195b457644084fe3d">
+    <link rel="stylesheet" href="../../_static/pygments.css?4b74d3b195b457644084fe3d">
     
 <style>
   :root {
@@ -29,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?036ad42a7e813849c46edc95"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?4b74d3b195b457644084fe3d"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -90,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -99,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -183,7 +182,7 @@
 </ul>
 </li>
 </ul>
-<p><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -201,7 +200,7 @@
         <label class="toc-overlay-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <section id="fading">
+        <div class="section" id="fading">
 <h1>Fading<a class="headerlink" href="#fading" title="永久链接至标题">¶</a></h1>
 <div class="admonition- admonition">
 <p class="admonition-title">声明</p>
@@ -212,7 +211,7 @@
 <p class="admonition-title">注意</p>
 <p>旧版的各种 <code class="docutils literal notranslate"><span class="pre">FadeInFrom</span></code> 和 <code class="docutils literal notranslate"><span class="pre">FadeOutFrom</span></code> 等方法已经全部整合在 <code class="docutils literal notranslate"><span class="pre">FadeIn</span></code> 和 <code class="docutils literal notranslate"><span class="pre">FadeOut</span></code> 中，以参数的形式给出，使得类的使用更加简洁</p>
 </div>
-<section id="fadeout">
+<div class="section" id="fadeout">
 <h2>FadeOut<a class="headerlink" href="#fadeout" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.animation.fading.FadeOut">
@@ -243,8 +242,8 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </pre></div>
 </div>
-</div></section>
-<section id="fadein">
+</div></div>
+<div class="section" id="fadein">
 <h2>FadeIn<a class="headerlink" href="#fadein" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.animation.fading.FadeIn">
@@ -342,8 +341,8 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)</span>
 </pre></div>
 </div>
-</div></section>
-<section id="fadeinfrompoint">
+</div></div>
+<div class="section" id="fadeinfrompoint">
 <h2>FadeInFromPoint<a class="headerlink" href="#fadeinfrompoint" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.animation.fading.FadeInFromPoint">
@@ -367,47 +366,47 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </pre></div>
 </div>
-</div></section>
-<section id="fadeouttopoint">
+</div></div>
+<div class="section" id="fadeouttopoint">
 <h2>FadeOutToPoint<a class="headerlink" href="#fadeouttopoint" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.animation.fading.FadeOutToPoint">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.fading.</code><code class="sig-name descname">FadeOutToPoint</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">point</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.FadeOutToPoint" title="永久链接至目标">¶</a></dt>
 <dd><p>淡出到指定的坐标点</p>
 </dd></dl>
-</section>
-<section id="fadetransform">
+</div>
+<div class="section" id="fadetransform">
 <h2>FadeTransform<a class="headerlink" href="#fadetransform" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.animation.fading.FadeTransform">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.fading.</code><code class="sig-name descname">FadeTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">target_mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.FadeTransform" title="永久链接至目标">¶</a></dt>
 <dd><p>渐变</p>
 </dd></dl>
-</section>
-<section id="fadetransformpieces">
+</div>
+<div class="section" id="fadetransformpieces">
 <h2>FadeTransformPieces<a class="headerlink" href="#fadetransformpieces" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.animation.fading.FadeTransformPieces">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.fading.</code><code class="sig-name descname">FadeTransformPieces</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">target_mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.FadeTransformPieces" title="永久链接至目标">¶</a></dt>
 <dd><p>子物件分别渐变为目标</p>
 </dd></dl>
-</section>
-<section id="vfadein">
+</div>
+<div class="section" id="vfadein">
 <h2>VFadeIn<a class="headerlink" href="#vfadein" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.animation.fading.VFadeIn">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.fading.</code><code class="sig-name descname">VFadeIn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.VFadeIn" title="永久链接至目标">¶</a></dt>
 <dd><p>VFadeIn and VFadeOut only work for VMobjects,</p>
 </dd></dl>
-</section>
-<section id="vfadeout">
+</div>
+<div class="section" id="vfadeout">
 <h2>VFadeOut<a class="headerlink" href="#vfadeout" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.animation.fading.VFadeOut">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.fading.</code><code class="sig-name descname">VFadeOut</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.VFadeOut" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
-</section>
-<section id="vfadeinthenout">
+</div>
+<div class="section" id="vfadeinthenout">
 <h2>VFadeInThenOut<a class="headerlink" href="#vfadeinthenout" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.animation.fading.VFadeInThenOut">
@@ -417,8 +416,8 @@
 <p><strong>Fade和VFade的区别</strong>：</p>
 <video autoplay="" class="manim-video" controls="" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/FadeAndVFade.mp4"></video><p><code class="docutils literal notranslate"><span class="pre">FadeIn</span></code> 的边从细变粗，从暗变亮。 <code class="docutils literal notranslate"><span class="pre">VFadeIn</span></code> 的边始终是正常粗细，从暗变亮。</p>
 <p><code class="docutils literal notranslate"><span class="pre">FadeOut</span></code> 和 <code class="docutils literal notranslate"><span class="pre">VFadeOut</span></code> 无区别</p>
-</section>
-</section>
+</div>
+</div>
 
       </article>
       <footer>

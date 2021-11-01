@@ -5,7 +5,11 @@
 
     本部分与 manim 入门的关联不算很大，因为涉及到大量的 OpenGL Shading Language 的成分，主要用于图形的上色。
 
-    有能力的读者，可以先去 `<https://thebookofshaders.com/>`_ 和 `<https://shadertoy.com/>`_ 学习一番。
+    有能力的读者，可以先下面的网站学习一下
+    
+    - `<https://thebookofshaders.com/>`_ 
+    - `<https://shadertoy.com/>`_ 
+    - `<https://smoothstep.io/>`_
 
 
 set_color_by_code

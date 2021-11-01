@@ -1,16 +1,15 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="CoordinateSystems" href="coordinate_systems.html" /><link rel="prev" title="Text" href="svg/text_mobject.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="CoordinateSystems" href="coordinate_systems.html" /><link rel="prev" title="Text" href="svg/text_mobject.html" />
 
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>Changing - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?1b8c738ed9a55bbfaffc03d7">
-    <link rel="stylesheet" href="../../_static/pygments.css?1b8c738ed9a55bbfaffc03d7">
+    <link rel="stylesheet" href="../../_static/styles/default.css?52f02c93634e9c6646bfe68c">
+    <link rel="stylesheet" href="../../_static/pygments.css?52f02c93634e9c6646bfe68c">
     
 <style>
   :root {
@@ -29,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?1b8c738ed9a55bbfaffc03d7"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?52f02c93634e9c6646bfe68c"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -90,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -99,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -183,7 +182,7 @@
 </ul>
 </li>
 </ul>
-<p><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -201,9 +200,9 @@
         <label class="toc-overlay-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <section id="changing">
+        <div class="section" id="changing">
 <h1>Changing<a class="headerlink" href="#changing" title="永久链接至标题">¶</a></h1>
-<section id="animatedboundary">
+<div class="section" id="animatedboundary">
 <h2>AnimatedBoundary<a class="headerlink" href="#animatedboundary" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.changing.AnimatedBoundary">
@@ -216,36 +215,31 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">cycle_rate</span></code> 表示循环率</p></li>
 </ul>
 </dd></dl>
-</section>
-<section id="tracedpath">
+</div>
+<div class="section" id="tracedpath">
 <h2>TracedPath<a class="headerlink" href="#tracedpath" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.changing.TracedPath">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.changing.</code><code class="sig-name descname">TracedPath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">traced_point_func</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.changing.TracedPath" title="永久链接至目标">¶</a></dt>
 <dd><p>记录路径的 VMobject</p>
-<p>传入一个可调用的对象 <code class="docutils literal notranslate"><span class="pre">traced_point_func</span></code> (一般为 <code class="docutils literal notranslate"><span class="pre">mob.get_center()</span></code> )</p>
+<p>传入一个可调用的对象 <code class="docutils literal notranslate"><span class="pre">traced_point_func</span></code> (一般为 <code class="docutils literal notranslate"><span class="pre">mob.get_center</span></code> )</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">min_distance_to_new_point</span></code> : 两点之间的最小距离，若小于此距离则不增加点</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">time_traced</span></code> : 追踪时间</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">time_per_anchor</span></code> : 采样时间间隔</p></li>
 </ul>
 </dd></dl>
-</section>
-<section id="tracingtail">
+</div>
+<div class="section" id="tracingtail">
 <h2>TracingTail<a class="headerlink" href="#tracingtail" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.changing.TracingTail">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.changing.</code><code class="sig-name descname">TracingTail</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject_or_func</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.changing.TracingTail" title="永久链接至目标">¶</a></dt>
 <dd><p>自动减淡的轨迹</p>
-<p>传入一个可调用的对象 <code class="docutils literal notranslate"><span class="pre">traced_point_func</span></code> (一般为 <code class="docutils literal notranslate"><span class="pre">mob.get_center()</span></code> )</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">min_distance_to_new_point</span></code> : 两点之间的最小距离，若小于此距离则不增加点</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">time_traced</span></code> : 追踪时间</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">time_per_anchor</span></code> : 采样时间间隔</p></li>
-</ul>
+<p>传入一个 <code class="docutils literal notranslate"><span class="pre">Mobject</span></code> 或者一个可调用的对象 <code class="docutils literal notranslate"><span class="pre">func``（如</span> <span class="pre">``line.get_end</span></code>），追踪其运动轨迹</p>
 </dd></dl>
-</section>
-</section>
+</div>
+</div>
 
       </article>
       <footer>

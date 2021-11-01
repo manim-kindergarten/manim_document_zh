@@ -1,16 +1,15 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Specialized" href="specialized.html" /><link rel="prev" title="Update" href="update.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Specialized" href="specialized.html" /><link rel="prev" title="Update" href="update.html" />
 
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>Composition - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?b67179cc211dedba3e8c0ae4">
-    <link rel="stylesheet" href="../../_static/pygments.css?b67179cc211dedba3e8c0ae4">
+    <link rel="stylesheet" href="../../_static/styles/default.css?412f87f092f21638da0ea9ea">
+    <link rel="stylesheet" href="../../_static/pygments.css?412f87f092f21638da0ea9ea">
     
 <style>
   :root {
@@ -29,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?b67179cc211dedba3e8c0ae4"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?412f87f092f21638da0ea9ea"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -90,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -99,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -183,7 +182,7 @@
 </ul>
 </li>
 </ul>
-<p><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -201,9 +200,9 @@
         <label class="toc-overlay-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <section id="composition">
+        <div class="section" id="composition">
 <h1>Composition<a class="headerlink" href="#composition" title="永久链接至标题">¶</a></h1>
-<section id="animationgroup">
+<div class="section" id="animationgroup">
 <h2>AnimationGroup<a class="headerlink" href="#animationgroup" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.animation.composition.AnimationGroup">
@@ -212,12 +211,14 @@
 <dl class="py method">
 <dt id="manimlib.animation.composition.AnimationGroup.build_animations_with_timings">
 <code class="sig-name descname">build_animations_with_timings</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.composition.AnimationGroup.build_animations_with_timings" title="永久链接至目标">¶</a></dt>
-<dd><p>创建表单的三元组列表 (anim, start_time, end_time)</p>
+<dd><p>创建三元组列表 (anim, start_time, end_time)</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.animation.composition.AnimationGroup.update_mobjects">
 <code class="sig-name descname">update_mobjects</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.composition.AnimationGroup.update_mobjects" title="永久链接至目标">¶</a></dt>
-<dd><p>Updates things like starting_mobject, and (for
+<dd><p>更新 starting_mobject，以及 Transform 中的 target_mobject 的状态</p>
+<p>注意：通常情况下，处在动画进程中的 self.mobject 会停止更新（只处理动画），所以这个方法对它是没有用的</p>
+<p>Updates things like starting_mobject, and (for
 Transforms) target_mobject.  Note, since typically
 (always?) self.mobject will have its updating
 suspended during the animation, this will do
@@ -242,8 +243,8 @@ nothing to self.mobject.</p>
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </pre></div>
 </div>
-</div></section>
-<section id="succession">
+</div></div>
+<div class="section" id="succession">
 <h2>Succession<a class="headerlink" href="#succession" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.animation.composition.Succession">
@@ -252,7 +253,9 @@ nothing to self.mobject.</p>
 <dl class="py method">
 <dt id="manimlib.animation.composition.Succession.update_mobjects">
 <code class="sig-name descname">update_mobjects</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.composition.Succession.update_mobjects" title="永久链接至目标">¶</a></dt>
-<dd><p>Updates things like starting_mobject, and (for
+<dd><p>更新 starting_mobject，以及 Transform 中的 target_mobject 的状态</p>
+<p>注意：通常情况下，处在动画进程中的 self.mobject 会停止更新（只处理动画），所以这个方法对它是没有用的</p>
+<p>Updates things like starting_mobject, and (for
 Transforms) target_mobject.  Note, since typically
 (always?) self.mobject will have its updating
 suspended during the animation, this will do
@@ -278,8 +281,8 @@ nothing to self.mobject.</p>
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </pre></div>
 </div>
-</div></section>
-<section id="laggedstart">
+</div></div>
+<div class="section" id="laggedstart">
 <h2>LaggedStart<a class="headerlink" href="#laggedstart" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.animation.composition.LaggedStart">
@@ -305,8 +308,8 @@ nothing to self.mobject.</p>
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </pre></div>
 </div>
-</div></section>
-<section id="laggedstartmap">
+</div></div>
+<div class="section" id="laggedstartmap">
 <h2>LaggedStartMap<a class="headerlink" href="#laggedstartmap" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.animation.composition.LaggedStartMap">
@@ -332,8 +335,8 @@ nothing to self.mobject.</p>
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </pre></div>
 </div>
-</div></section>
-</section>
+</div></div>
+</div>
 
       </article>
       <footer>

@@ -1,16 +1,15 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Matrix" href="matrix.html" /><link rel="prev" title="Geometry" href="geometry.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Matrix" href="matrix.html" /><link rel="prev" title="Geometry" href="geometry.html" />
 
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>Interactive - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?fbdeb5f6a652830928f5f6ab">
-    <link rel="stylesheet" href="../../_static/pygments.css?fbdeb5f6a652830928f5f6ab">
+    <link rel="stylesheet" href="../../_static/styles/default.css?b5993486e055e65b61c68126">
+    <link rel="stylesheet" href="../../_static/pygments.css?b5993486e055e65b61c68126">
     
 <style>
   :root {
@@ -29,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?fbdeb5f6a652830928f5f6ab"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?b5993486e055e65b61c68126"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -90,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -99,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -183,7 +182,7 @@
 </ul>
 </li>
 </ul>
-<p><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -201,28 +200,28 @@
         <label class="toc-overlay-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <section id="interactive">
+        <div class="section" id="interactive">
 <h1>Interactive<a class="headerlink" href="#interactive" title="永久链接至标题">¶</a></h1>
-<section id="motionmobject">
+<div class="section" id="motionmobject">
 <h2>MotionMobject<a class="headerlink" href="#motionmobject" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.interactive.MotionMobject">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.interactive.</code><code class="sig-name descname">MotionMobject</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.MotionMobject" title="永久链接至目标">¶</a></dt>
 <dd><p>可以用鼠标拖拽移动的物件</p>
-<p>传入一个 <code class="docutils literal notranslate"><span class="pre">mobject</span></code> 将这个物件封装成可以移动的</p>
+<p>传入一个 <code class="docutils literal notranslate"><span class="pre">mobject</span></code> 将这个物件封装成可以用鼠标拖动的</p>
 </dd></dl>
-</section>
-<section id="button">
+</div>
+<div class="section" id="button">
 <h2>Button<a class="headerlink" href="#button" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.interactive.Button">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.interactive.</code><code class="sig-name descname">Button</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">on_click</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.Button" title="永久链接至目标">¶</a></dt>
 <dd><p>按钮</p>
 <p>传入一个 <code class="docutils literal notranslate"><span class="pre">mobject</span></code>，并注册一个 <code class="docutils literal notranslate"><span class="pre">on_click</span></code> 方法</p>
-<p><code class="docutils literal notranslate"><span class="pre">on_click</span></code> 方法的参数列表中包含一个 <code class="docutils literal notranslate"><span class="pre">mobject</span></code>，该响应函数需要读者自行定义</p>
+<p><code class="docutils literal notranslate"><span class="pre">on_click</span></code> 方法的参数列表中包含一个 <code class="docutils literal notranslate"><span class="pre">mobject</span></code>，该响应函数需要使用者自行定义</p>
 </dd></dl>
-</section>
-<section id="controlmobject">
+</div>
+<div class="section" id="controlmobject">
 <h2>ControlMobject<a class="headerlink" href="#controlmobject" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.interactive.ControlMobject">
@@ -232,11 +231,11 @@
 <dl class="py method">
 <dt id="manimlib.mobject.interactive.ControlMobject.set_value">
 <code class="sig-name descname">set_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.ControlMobject.set_value" title="永久链接至目标">¶</a></dt>
-<dd><p>将值设为 <code class="docutils literal notranslate"><span class="pre">value</span></code></p>
+<dd><p>设置变量控制器的值</p>
 </dd></dl>
 </dd></dl>
-</section>
-<section id="enabledisablebutton">
+</div>
+<div class="section" id="enabledisablebutton">
 <h2>EnableDisableButton<a class="headerlink" href="#enabledisablebutton" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.interactive.EnableDisableButton">
@@ -257,8 +256,8 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">disable_color</span></code> : 禁用时颜色</p></li>
 </ul>
 </dd></dl>
-</section>
-<section id="checkbox">
+</div>
+<div class="section" id="checkbox">
 <h2>Checkbox<a class="headerlink" href="#checkbox" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.interactive.Checkbox">
@@ -270,8 +269,8 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">cross_kwargs</span></code> : 控制❌外形的参数</p></li>
 </ul>
 </dd></dl>
-</section>
-<section id="linearnumberslider">
+</div>
+<div class="section" id="linearnumberslider">
 <h2>LinearNumberSlider<a class="headerlink" href="#linearnumberslider" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.interactive.LinearNumberSlider">
@@ -286,8 +285,8 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">circle_kwargs</span></code> : 滑块外形参数</p></li>
 </ul>
 </dd></dl>
-</section>
-<section id="colorsliders">
+</div>
+<div class="section" id="colorsliders">
 <h2>ColorSliders<a class="headerlink" href="#colorsliders" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.interactive.ColorSliders">
@@ -302,7 +301,7 @@
 <dl class="py method">
 <dt id="manimlib.mobject.interactive.ColorSliders.get_picked_opacity">
 <code class="sig-name descname">get_picked_opacity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.ColorSliders.get_picked_opacity" title="永久链接至目标">¶</a></dt>
-<dd><p>‘获取当前选色器颜色透明度</p>
+<dd><p>获取当前选色器颜色透明度</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.mobject.interactive.ColorSliders.get_value">
@@ -315,8 +314,8 @@
 <dd><p>设置 RGBA 值</p>
 </dd></dl>
 </dd></dl>
-</section>
-<section id="textbox">
+</div>
+<div class="section" id="textbox">
 <h2>Textbox<a class="headerlink" href="#textbox" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.interactive.Textbox">
@@ -333,8 +332,8 @@
 <dd><p>键盘按下响应</p>
 </dd></dl>
 </dd></dl>
-</section>
-<section id="controlpanel">
+</div>
+<div class="section" id="controlpanel">
 <h2>ControlPanel<a class="headerlink" href="#controlpanel" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.interactive.ControlPanel">
@@ -392,8 +391,8 @@
 <dd><p>移除控制器</p>
 </dd></dl>
 </dd></dl>
-</section>
-</section>
+</div>
+</div>
 
       </article>
       <footer>

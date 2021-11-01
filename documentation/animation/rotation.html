@@ -1,16 +1,15 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Transform" href="transform.html" /><link rel="prev" title="Numbers" href="numbers.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Transform" href="transform.html" /><link rel="prev" title="Numbers" href="numbers.html" />
 
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>Rotation - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?3397784bf043a9ffe9870f3f">
-    <link rel="stylesheet" href="../../_static/pygments.css?3397784bf043a9ffe9870f3f">
+    <link rel="stylesheet" href="../../_static/styles/default.css?1cc25b8ebe7ae93f606ff7a7">
+    <link rel="stylesheet" href="../../_static/pygments.css?1cc25b8ebe7ae93f606ff7a7">
     
 <style>
   :root {
@@ -29,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?3397784bf043a9ffe9870f3f"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?1cc25b8ebe7ae93f606ff7a7"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -90,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -99,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -183,7 +182,7 @@
 </ul>
 </li>
 </ul>
-<p><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -201,14 +200,14 @@
         <label class="toc-overlay-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <section id="rotation">
+        <div class="section" id="rotation">
 <h1>Rotation<a class="headerlink" href="#rotation" title="永久链接至标题">¶</a></h1>
 <div class="admonition- admonition">
 <p class="admonition-title">声明</p>
 <p>这一页翻译自elteoremadebeethoven的 <a class="reference external" href="https://elteoremadebeethoven.github.io/manim_3feb_docs.github.io/html/tree/animations/movement.html">manim_3feb_docs</a></p>
 <p>由鹤翔万里补充</p>
 </div>
-<section id="rotating">
+<div class="section" id="rotating">
 <h2>Rotating<a class="headerlink" href="#rotating" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.animation.rotation.Rotating">
@@ -238,8 +237,8 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)</span>
 </pre></div>
 </div>
-</div></section>
-<section id="rotate">
+</div></div>
+<div class="section" id="rotate">
 <h2>Rotate<a class="headerlink" href="#rotate" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.animation.rotation.Rotate">
@@ -271,8 +270,8 @@
 </div>
 </div><p>请不要尝试直接使用 <code class="docutils literal notranslate"><span class="pre">ApplyMethod</span></code> 或 <code class="docutils literal notranslate"><span class="pre">self.play(mob.rotate,</span> <span class="pre">...)</span></code> 来旋转，
 因为这只是在当前和结果之间进行 <code class="docutils literal notranslate"><span class="pre">Transform</span></code> ，并无旋转效果</p>
-</section>
-</section>
+</div>
+</div>
 
       </article>
       <footer>

@@ -1,16 +1,15 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="Manim 结构" href="structure.html" /><link rel="prev" title="样例学习" href="example_scenes.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="Manim 结构" href="structure.html" /><link rel="prev" title="样例学习" href="example_scenes.html" />
 
     <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>CONFIG 字典用法 - ManimGL  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?647600937c44c63b7c72e9d9">
-    <link rel="stylesheet" href="../_static/pygments.css?647600937c44c63b7c72e9d9">
+    <link rel="stylesheet" href="../_static/styles/default.css?d991b8d64fbe1911407c5f14">
+    <link rel="stylesheet" href="../_static/pygments.css?d991b8d64fbe1911407c5f14">
     
 <style>
   :root {
@@ -29,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?647600937c44c63b7c72e9d9"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?d991b8d64fbe1911407c5f14"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -90,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">快速入门</a></li>
@@ -99,7 +98,7 @@
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="structure.html">Manim 结构</a></li>
 </ul>
-<p><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../documentation/constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../documentation/custom_config.html">默认配置 custom_config</a></li>
@@ -183,7 +182,7 @@
 </ul>
 </li>
 </ul>
-<p><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development/contributing.html">贡献</a></li>
@@ -201,9 +200,9 @@
         <label class="toc-overlay-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <section id="config">
+        <div class="section" id="config">
 <h1>CONFIG 字典用法<a class="headerlink" href="#config" title="永久链接至标题">¶</a></h1>
-<section id="id1">
+<div class="section" id="id1">
 <h2>什么是 CONFIG 字典<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <p>CONFIG 字典是 manim 的一个特性，方便了父子类之间参数的继承和修改</p>
 <div class="line-block">
@@ -237,8 +236,8 @@
 <p><code class="docutils literal notranslate"><span class="pre">Circle</span></code> 类通过在 CONFIG 字典中的键值对 <code class="docutils literal notranslate"><span class="pre">"color":</span> <span class="pre">BLUE,</span></code> 添加了 <code class="docutils literal notranslate"><span class="pre">self.color</span></code> 这个属性，
 在父类 <code class="docutils literal notranslate"><span class="pre">VMobject</span></code> 中访问 <code class="docutils literal notranslate"><span class="pre">self.color</span></code> 对 <code class="docutils literal notranslate"><span class="pre">Circle</span></code> 上色</p>
 <p>同时 <code class="docutils literal notranslate"><span class="pre">Dot</span></code> 类在 CONFIG 字典中也含有键 <code class="docutils literal notranslate"><span class="pre">color</span></code>，但值不同，此时会利用优先级将 <code class="docutils literal notranslate"><span class="pre">self.color</span></code> 这个属性修改为 <code class="docutils literal notranslate"><span class="pre">WHITE</span></code>，</p>
-</section>
-<section id="id2">
+</div>
+<div class="section" id="id2">
 <h2>CONFIG 字典嵌套<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <p>CONFIG 字典支持嵌套，即键的值也为一个字典，例如</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Camera</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -266,8 +265,8 @@
 为了更方便的控制， <code class="docutils literal notranslate"><span class="pre">Scene</span></code> 类中有一个特殊的键值对 <code class="docutils literal notranslate"><span class="pre">"camera_config":</span> <span class="pre">{}</span></code> ，
 它的值是一个字典，通过初始化 <code class="docutils literal notranslate"><span class="pre">Camera</span></code> 类的时候作为 <code class="docutils literal notranslate"><span class="pre">kwargs</span></code> 传入，修改 <code class="docutils literal notranslate"><span class="pre">Camera</span></code> 类的属性的值</p>
 <p>所以 CONFIG 字典的嵌套 <strong>本质</strong> 上是将值作为 <code class="docutils literal notranslate"><span class="pre">kwargs</span></code> 传入</p>
-</section>
-</section>
+</div>
+</div>
 
       </article>
       <footer>

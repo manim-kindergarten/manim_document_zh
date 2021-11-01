@@ -1,16 +1,15 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="自定义场景" href="scenes.html" /><link rel="prev" title="自定义工具函数" href="functions.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="自定义场景" href="scenes.html" /><link rel="prev" title="自定义工具函数" href="functions.html" />
 
     <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>自定义物体 - manim  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?228a5ce1484985a98badeff4">
-    <link rel="stylesheet" href="../_static/pygments.css?228a5ce1484985a98badeff4">
+    <link rel="stylesheet" href="../_static/styles/default.css?16e1e4227f28ba27d16c854c">
+    <link rel="stylesheet" href="../_static/pygments.css?16e1e4227f28ba27d16c854c">
     
 <style>
   :root {
@@ -29,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?228a5ce1484985a98badeff4"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?16e1e4227f28ba27d16c854c"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -90,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p><span class="caption-text">入门教程向</span></p>
+  <p class="caption"><span class="caption-text">入门教程向</span></p>
 <ul>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../installation/index.html">安装指南</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../installation/linux.html">Linux</a></li>
@@ -114,7 +113,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../homework/index.html">练习部分(TODO)</a></li>
 </ul>
-<p><span class="caption-text">进阶文档向</span></p>
+<p class="caption"><span class="caption-text">进阶文档向</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../container/index.html">属性容器container</a></li>
@@ -203,7 +202,7 @@
 </ul>
 </li>
 </ul>
-<p><span class="caption-text">杂项</span></p>
+<p class="caption"><span class="caption-text">杂项</span></p>
 <ul class="current">
 <li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">manim_sandbox中的自定义类</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label for="toctree-checkbox-11"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="functions.html">自定义工具函数</a></li>
@@ -227,9 +226,9 @@
         <label class="toc-overlay-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <section id="id1">
+        <div class="section" id="id1">
 <h1>自定义物体<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
-<section id="angle-py">
+<div class="section" id="angle-py">
 <h2>angle.py<a class="headerlink" href="#angle-py" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manim_sandbox.utils.mobjects.angle.Angle">
@@ -245,16 +244,16 @@
 <p>用法: <code class="docutils literal notranslate"><span class="pre">Angle(p1,</span> <span class="pre">p2,</span> <span class="pre">p3)</span></code>, <code class="docutils literal notranslate"><span class="pre">p1,</span> <span class="pre">p2,</span> <span class="pre">p3</span></code> 应该按逆时针顺序，
 <code class="docutils literal notranslate"><span class="pre">p2</span></code> 是顶点， <code class="docutils literal notranslate"><span class="pre">is_right=True</span></code> 始终是直角， <code class="docutils literal notranslate"><span class="pre">not_right</span></code> 始终不是直角。
 <code class="docutils literal notranslate"><span class="pre">is_right</span></code> 和 <code class="docutils literal notranslate"><span class="pre">not_right</span></code> 都是 <code class="docutils literal notranslate"><span class="pre">False</span></code> 时，根据值来选择</p>
-</section>
-<section id="arc-group-py">
+</div>
+<div class="section" id="arc-group-py">
 <h2>Arc_group.py<a class="headerlink" href="#arc-group-py" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manim_sandbox.utils.mobjects.Arc_group.Angle">
 <em class="property">class </em><code class="sig-prename descclassname">manim_sandbox.utils.mobjects.Arc_group.</code><code class="sig-name descname">Angle</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">A</span></em>, <em class="sig-param"><span class="n">O</span></em>, <em class="sig-param"><span class="n">B</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manim_sandbox.utils.mobjects.Arc_group.Angle" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>cigar666写的关于角的类，更复杂好看一些</p>
-</section>
-<section id="colortext-py">
+</div>
+<div class="section" id="colortext-py">
 <h2>ColorText.py<a class="headerlink" href="#colortext-py" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manim_sandbox.utils.mobjects.ColorText.ColorText">
@@ -268,28 +267,28 @@
 <dd></dd></dl>
 <p>同 <code class="docutils literal notranslate"><span class="pre">DecimalNumber</span></code> 使用 <code class="docutils literal notranslate"><span class="pre">Text</span></code> 代替 <code class="docutils literal notranslate"><span class="pre">TextMobject</span></code>。
 可以通过 <code class="docutils literal notranslate"><span class="pre">text_config={"font":</span> <span class="pre">"..."}</span></code> 来更换数字字体。</p>
-</section>
-<section id="fractal-tree-py">
+</div>
+<div class="section" id="fractal-tree-py">
 <h2>fractal_tree.py<a class="headerlink" href="#fractal-tree-py" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manim_sandbox.utils.mobjects.fractal_tree.BaseTree">
 <em class="property">class </em><code class="sig-prename descclassname">manim_sandbox.utils.mobjects.fractal_tree.</code><code class="sig-name descname">BaseTree</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mob</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">change_stroke</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manim_sandbox.utils.mobjects.fractal_tree.BaseTree" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>可以看同文件里的其他例子</p>
-</section>
-<section id="grear-py">
+</div>
+<div class="section" id="grear-py">
 <h2>Grear.py<a class="headerlink" href="#grear-py" title="永久链接至标题">¶</a></h2>
 <p>几个齿轮类</p>
-</section>
-<section id="intersection-py">
+</div>
+<div class="section" id="intersection-py">
 <h2>intersection.py<a class="headerlink" href="#intersection-py" title="永久链接至标题">¶</a></h2>
 <ol class="arabic simple">
 <li><p>主要用来求解两圆和多圆相交的交集部分的示意（如果是空集会出问题）</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Intersection_n_circle</span></code> 是没有基于前两个类的，其实就用它也就行了</p></li>
 <li><p>可以用来做一些类似文氏图之类的，其他凸区域的交集可使用类似的方法写出来（如果谁有兴趣可以写一下</p></li>
 </ol>
-</section>
-<section id="myboxes-py">
+</div>
+<div class="section" id="myboxes-py">
 <h2>MyBoxes.py<a class="headerlink" href="#myboxes-py" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manim_sandbox.utils.mobjects.MyBoxes.MyBox">
@@ -301,8 +300,8 @@
 <em class="property">class </em><code class="sig-prename descclassname">manim_sandbox.utils.mobjects.MyBoxes.</code><code class="sig-name descname">MyBoxes</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manim_sandbox.utils.mobjects.MyBoxes.MyBoxes" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>一堆Box，可以根据数组或者函数更新高度、上下位置和颜色</p>
-</section>
-<section id="mytext-py">
+</div>
+<div class="section" id="mytext-py">
 <h2>MyText.py<a class="headerlink" href="#mytext-py" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manim_sandbox.utils.mobjects.MyText.MyText">
@@ -312,8 +311,8 @@
 <p><code class="docutils literal notranslate"><span class="pre">tex_to_color_map</span></code> 为一个字典，会根据其中的键自动拆开字符串用于上色</p>
 </dd></dl>
 <p>可以修改字体的公式，根据TexMobject定位，然后用Unicode字符替换特殊符号</p>
-</section>
-<section id="mytriangle-py">
+</div>
+<div class="section" id="mytriangle-py">
 <h2>MyTriangle.py<a class="headerlink" href="#mytriangle-py" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manim_sandbox.utils.mobjects.MyTriangle.MyTriangle">
@@ -322,8 +321,8 @@
 </dd></dl>
 <p>由MATHEART_EVER和我是害羞的向量制作</p>
 <p>功能：支持求三角形的周长，面积，五心，以及内切圆，外接圆，旁切圆，欧拉圆等</p>
-</section>
-<section id="object-border-py">
+</div>
+<div class="section" id="object-border-py">
 <h2>Object_Border.py<a class="headerlink" href="#object-border-py" title="永久链接至标题">¶</a></h2>
 <p>显示一个物体上下左右的边界，对教程有用</p>
 <dl class="py class">
@@ -334,24 +333,24 @@
 <dt id="manim_sandbox.utils.mobjects.Object_Border.BorderNoneUpdate">
 <em class="property">class </em><code class="sig-prename descclassname">manim_sandbox.utils.mobjects.Object_Border.</code><code class="sig-name descname">BorderNoneUpdate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manim_sandbox.utils.mobjects.Object_Border.BorderNoneUpdate" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
-</section>
-<section id="periodictable-py">
+</div>
+<div class="section" id="periodictable-py">
 <h2>PeriodicTable.py<a class="headerlink" href="#periodictable-py" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manim_sandbox.utils.mobjects.PeriodicTable.PeriodicTable">
 <em class="property">class </em><code class="sig-prename descclassname">manim_sandbox.utils.mobjects.PeriodicTable.</code><code class="sig-name descname">PeriodicTable</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manim_sandbox.utils.mobjects.PeriodicTable.PeriodicTable" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>基于 <code class="docutils literal notranslate"><span class="pre">MyBoxes</span></code> 的元素周期表</p>
-</section>
-<section id="right-angle-py">
+</div>
+<div class="section" id="right-angle-py">
 <h2>Right_angle.py<a class="headerlink" href="#right-angle-py" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manim_sandbox.utils.mobjects.Right_angle.Right_angle">
 <em class="property">class </em><code class="sig-prename descclassname">manim_sandbox.utils.mobjects.Right_angle.</code><code class="sig-name descname">Right_angle</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">corner</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="n">angle</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manim_sandbox.utils.mobjects.Right_angle.Right_angle" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>直角符号</p>
-</section>
-<section id="rubik-cube-py">
+</div>
+<div class="section" id="rubik-cube-py">
 <h2>Rubik_Cube.py<a class="headerlink" href="#rubik-cube-py" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manim_sandbox.utils.mobjects.Rubik_Cube.Cube_array">
@@ -363,8 +362,8 @@
 <em class="property">class </em><code class="sig-prename descclassname">manim_sandbox.utils.mobjects.Rubik_Cube.</code><code class="sig-name descname">Rubik_Cube</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">size</span><span class="o">=</span><span class="default_value">3</span></em>, <em class="sig-param"><span class="n">order</span><span class="o">=</span><span class="default_value">3</span></em>, <em class="sig-param"><span class="n">base_color</span><span class="o">=</span><span class="default_value">'#BBBBBB'</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manim_sandbox.utils.mobjects.Rubik_Cube.Rubik_Cube" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>魔方类</p>
-</section>
-<section id="shadow-arround-py">
+</div>
+<div class="section" id="shadow-arround-py">
 <h2>Shadow_arround.py<a class="headerlink" href="#shadow-arround-py" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manim_sandbox.utils.mobjects.Shadow_around.Shadow_around">
@@ -375,8 +374,8 @@
 <li><p>这个类尚不完善，对圆形、接近圆的椭圆和多边形等效果还凑合，对于其他形状可能和预期的阴影效果不一样</p></li>
 <li><p>本质上是一个渐变效果，所以通过改动CONFIG或其他参数可以用来表示其他类似渐变效果</p></li>
 </ol>
-</section>
-<section id="threebody-py">
+</div>
+<div class="section" id="threebody-py">
 <h2>ThreeBody.py<a class="headerlink" href="#threebody-py" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manim_sandbox.utils.mobjects.ThreeBody.Sun">
@@ -388,8 +387,8 @@
 <em class="property">class </em><code class="sig-prename descclassname">manim_sandbox.utils.mobjects.ThreeBody.</code><code class="sig-name descname">Three_Body</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">three_Mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manim_sandbox.utils.mobjects.ThreeBody.Three_Body" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>三体系统，实现自动模拟</p>
-</section>
-<section id="threedvector-py">
+</div>
+<div class="section" id="threedvector-py">
 <h2>ThreeDVector.py<a class="headerlink" href="#threedvector-py" title="永久链接至标题">¶</a></h2>
 <p>三维向量</p>
 <dl class="py class">
@@ -405,24 +404,24 @@
 <p>The parameter “circle_side_width” means the width of the side of the base circle of the cone and the base circles of the truncated cone</p>
 <p>The parameter “circle_side_color” means the color of the side of the base circle of the cone and the base circles of the truncated cone</p>
 </dd></dl>
-</section>
-<section id="trail-py">
+</div>
+<div class="section" id="trail-py">
 <h2>Trail.py<a class="headerlink" href="#trail-py" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manim_sandbox.utils.mobjects.Trail.Trail">
 <em class="property">class </em><code class="sig-prename descclassname">manim_sandbox.utils.mobjects.Trail.</code><code class="sig-name descname">Trail</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mob</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manim_sandbox.utils.mobjects.Trail.Trail" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>轨迹类，末尾轨迹自动变小到消失</p>
-</section>
-<section id="videoprogressbar-py">
+</div>
+<div class="section" id="videoprogressbar-py">
 <h2>VideoProgressBar.py<a class="headerlink" href="#videoprogressbar-py" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manim_sandbox.utils.mobjects.VideoProgressBar.VideoProgressBar">
 <em class="property">class </em><code class="sig-prename descclassname">manim_sandbox.utils.mobjects.VideoProgressBar.</code><code class="sig-name descname">VideoProgressBar</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manim_sandbox.utils.mobjects.VideoProgressBar.VideoProgressBar" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>教程系列的底端进度条</p>
-</section>
-</section>
+</div>
+</div>
 
       </article>
       <footer>

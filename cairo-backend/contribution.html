@@ -1,16 +1,15 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="author" title="关于这些文档" href="about.html" /><link rel="index" title="索引" href="genindex.html" /><link rel="search" title="搜索" href="search.html" /><link rel="next" title="关于" href="about.html" /><link rel="prev" title="自定义动画" href="manim_sandbox/animations.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="about.html" /><link rel="index" title="索引" href="genindex.html" /><link rel="search" title="搜索" href="search.html" /><link rel="next" title="关于" href="about.html" /><link rel="prev" title="自定义动画" href="manim_sandbox/animations.html" />
 
     <link rel="shortcut icon" href="_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>贡献规则及编写指南 - manim  文档</title>
       <link rel="stylesheet" href="_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/colors.css" />
-    <link rel="stylesheet" href="_static/styles/default.css?fb69a9f9169498f38c591d38">
-    <link rel="stylesheet" href="_static/pygments.css?fb69a9f9169498f38c591d38">
+    <link rel="stylesheet" href="_static/styles/default.css?a003ef10e973734d360076ca">
+    <link rel="stylesheet" href="_static/pygments.css?a003ef10e973734d360076ca">
     
 <style>
   :root {
@@ -29,7 +28,7 @@
         <script src="_static/clipboard.min.js"></script>
         <script src="_static/copybutton.js"></script>
         <script src="_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="_static/scripts/main.js?fb69a9f9169498f38c591d38"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="_static/scripts/main.js?a003ef10e973734d360076ca"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -90,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p><span class="caption-text">入门教程向</span></p>
+  <p class="caption"><span class="caption-text">入门教程向</span></p>
 <ul>
 <li class="toctree-l1 has-children"><a class="reference internal" href="installation/index.html">安装指南</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="installation/linux.html">Linux</a></li>
@@ -114,7 +113,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="homework/index.html">练习部分(TODO)</a></li>
 </ul>
-<p><span class="caption-text">进阶文档向</span></p>
+<p class="caption"><span class="caption-text">进阶文档向</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="constants.html">常量部分constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="container/index.html">属性容器container</a></li>
@@ -203,7 +202,7 @@
 </ul>
 </li>
 </ul>
-<p><span class="caption-text">杂项</span></p>
+<p class="caption"><span class="caption-text">杂项</span></p>
 <ul class="current">
 <li class="toctree-l1 has-children"><a class="reference internal" href="manim_sandbox/index.html">manim_sandbox中的自定义类</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label for="toctree-checkbox-11"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="manim_sandbox/functions.html">自定义工具函数</a></li>
@@ -227,7 +226,7 @@
         <label class="toc-overlay-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <section id="id1">
+        <div class="section" id="id1">
 <h1>贡献规则及编写指南<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
 <p>如果你想要为这个文档做出贡献，可以向 <a class="reference external" href="https://github.com/manim-kindergarten/manim_document_zh">这个repo</a> 提出Pull Request，
 同时会自动构建一份文档放在 <a class="reference external" href="https://app.netlify.com/sites/manim-doc/overview">Netlify</a> 上，我们在review了之后会merge，
@@ -235,7 +234,7 @@
 <p>这里是一些规范和指南</p>
 <p>首先，文档需要使用 <code class="docutils literal notranslate"><span class="pre">reStructuredText</span></code> 语言来编写，具体语法见 <a class="reference external" href="https://zh-sphinx-doc.readthedocs.io/en/latest/rest.html">Sphinx文档</a></p>
 <p>目前未完成的部分见 <a class="reference external" href="https://github.com/manim-kindergarten/manim_document_zh/projects/1">这个repo的project</a></p>
-<section id="id2">
+<div class="section" id="id2">
 <h2>目录结构规范<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <ul>
 <li><p>如果是一整个系列的内容，请新建一个文件夹，并且包含 <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> 和其他各页的源文件，并写好目录如下:</p>
@@ -251,8 +250,8 @@
 <li><p>如果是单个页面，请直接在 <code class="docutils literal notranslate"><span class="pre">source</span></code> 文件夹中新建一个 <code class="docutils literal notranslate"><span class="pre">rst</span></code> 文件，并改好 <code class="docutils literal notranslate"><span class="pre">source/index.rst</span></code> 中的目录结构</p></li>
 <li><p>如果为某个系列补充页面，请将文件新建在对应的文件夹中，并改好其对应的 <code class="docutils literal notranslate"><span class="pre">index</span></code> 中的目录</p></li>
 </ul>
-</section>
-<section id="id3">
+</div>
+<div class="section" id="id3">
 <h2>页面内部规范<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
 <ul>
 <li><p>目前的目录结构是根据 <code class="docutils literal notranslate"><span class="pre">manimlib</span></code> 中文件夹结构排列好的，所以请根据添加内容在 <code class="docutils literal notranslate"><span class="pre">manimlib</span></code> 中的位置添加在对应页面中</p></li>
@@ -296,16 +295,16 @@
 </li>
 </ul>
 <p>以上均可以通过点击 <code class="docutils literal notranslate"><span class="pre">animation</span></code> 相关页面及 <code class="docutils literal notranslate"><span class="pre">mobject</span></code> 中完成的页面右上角查看源代码来了解</p>
-</section>
-<section id="id4">
+</div>
+<div class="section" id="id4">
 <h2>关于文档字符串<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
 <div class="line-block">
 <div class="line">这个文档用于生成文档字符串的 <code class="docutils literal notranslate"><span class="pre">manimlib</span></code> 在当前repo的 <a class="reference external" href="https://github.com/manim-kindergarten/manim_document_zh/tree/manim">manim分支下</a></div>
 <div class="line">注意文档字符串也需要使用 <code class="docutils literal notranslate"><span class="pre">reStructuredText</span></code> 语法编写，并符合 <a class="reference external" href="https://www.python.org/dev/peps/pep-0257/">PEP257</a> 中规范</div>
 </div>
 <p>如果所添加的内容需要更改文档字符串，请修改manim分支后另外提交pr</p>
-</section>
-</section>
+</div>
+</div>
 
       </article>
       <footer>

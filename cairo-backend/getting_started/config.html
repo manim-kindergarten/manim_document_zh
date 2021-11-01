@@ -1,16 +1,15 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="manim结构" href="structure.html" /><link rel="prev" title="运行命令" href="command.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="manim结构" href="structure.html" /><link rel="prev" title="运行命令" href="command.html" />
 
     <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>CONFIG字典用法 - manim  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?ca64922b4ec5c532bc423585">
-    <link rel="stylesheet" href="../_static/pygments.css?ca64922b4ec5c532bc423585">
+    <link rel="stylesheet" href="../_static/styles/default.css?ec844650e57734bf571b63de">
+    <link rel="stylesheet" href="../_static/pygments.css?ec844650e57734bf571b63de">
     
 <style>
   :root {
@@ -29,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?ca64922b4ec5c532bc423585"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?ec844650e57734bf571b63de"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -90,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p><span class="caption-text">入门教程向</span></p>
+  <p class="caption"><span class="caption-text">入门教程向</span></p>
 <ul class="current">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../installation/index.html">安装指南</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../installation/linux.html">Linux</a></li>
@@ -114,7 +113,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../homework/index.html">练习部分(TODO)</a></li>
 </ul>
-<p><span class="caption-text">进阶文档向</span></p>
+<p class="caption"><span class="caption-text">进阶文档向</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../container/index.html">属性容器container</a></li>
@@ -203,7 +202,7 @@
 </ul>
 </li>
 </ul>
-<p><span class="caption-text">杂项</span></p>
+<p class="caption"><span class="caption-text">杂项</span></p>
 <ul>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../manim_sandbox/index.html">manim_sandbox中的自定义类</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label for="toctree-checkbox-11"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../manim_sandbox/functions.html">自定义工具函数</a></li>
@@ -227,7 +226,7 @@
         <label class="toc-overlay-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <section id="config">
+        <div class="section" id="config">
 <h1>CONFIG字典用法<a class="headerlink" href="#config" title="永久链接至标题">¶</a></h1>
 <p>CONFIG字典是manim的一个特性，方便了父子类之间参数的继承和修改</p>
 <div class="line-block">
@@ -263,7 +262,7 @@
 <div class="line">同时Rectangle类在CONFIG字典中也含有键color，但值不同，此时会利用优先级将<code class="docutils literal notranslate"><span class="pre">self.color</span></code>这个属性修改为<code class="docutils literal notranslate"><span class="pre">WHITE</span></code></div>
 <div class="line">而且还通过键值对<code class="docutils literal notranslate"><span class="pre">"height":</span> <span class="pre">2.0</span></code>等设置了一些特有的属性，方便后面使用</div>
 </div>
-<section id="id1">
+<div class="section" id="id1">
 <h2>CONFIG字典嵌套<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <p>CONFIG字典支持嵌套，即键的值也为一个字典，例如</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Camera</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -308,8 +307,8 @@
 为了更方便的控制，Scene类中有一个特殊的键值对<code class="docutils literal notranslate"><span class="pre">"camera_config":</span> <span class="pre">{}</span></code>，
 它的值是一个字典，通过初始化Camera类的时候作为kwargs传入，修改Camera类的属性的值</p>
 <p>所以CONFIG字典的嵌套 <strong>本质</strong> 上是将值作为kwargs传入</p>
-</section>
-<section id="id2">
+</div>
+<div class="section" id="id2">
 <h2>常见使用方法<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <p>在自己写类的时候，可以通过CONFIG来添加属性或者修改父类的属性</p>
 <p>最常用的还是在编写Scene的时候，用来修改camera的属性</p>
@@ -321,8 +320,8 @@
 </pre></div>
 </div>
 <p>例如添加如上字典，更改背景颜色为白色，等等</p>
-</section>
-</section>
+</div>
+</div>
 
       </article>
       <footer>

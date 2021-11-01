@@ -1,16 +1,15 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="三种物体基类types" href="types/index.html" /><link rel="prev" title="物体部分mobject" href="index.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="三种物体基类types" href="types/index.html" /><link rel="prev" title="物体部分mobject" href="index.html" />
 
     <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>数学物品Mobject - manim  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?da543f12db98140224e7700f">
-    <link rel="stylesheet" href="../_static/pygments.css?da543f12db98140224e7700f">
+    <link rel="stylesheet" href="../_static/styles/default.css?c079d92dfe1ecca650de5a28">
+    <link rel="stylesheet" href="../_static/pygments.css?c079d92dfe1ecca650de5a28">
     
 <style>
   :root {
@@ -29,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?da543f12db98140224e7700f"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?c079d92dfe1ecca650de5a28"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -90,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p><span class="caption-text">入门教程向</span></p>
+  <p class="caption"><span class="caption-text">入门教程向</span></p>
 <ul>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../installation/index.html">安装指南</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../installation/linux.html">Linux</a></li>
@@ -114,7 +113,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../homework/index.html">练习部分(TODO)</a></li>
 </ul>
-<p><span class="caption-text">进阶文档向</span></p>
+<p class="caption"><span class="caption-text">进阶文档向</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../container/index.html">属性容器container</a></li>
@@ -203,7 +202,7 @@
 </ul>
 </li>
 </ul>
-<p><span class="caption-text">杂项</span></p>
+<p class="caption"><span class="caption-text">杂项</span></p>
 <ul>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../manim_sandbox/index.html">manim_sandbox中的自定义类</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label for="toctree-checkbox-11"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../manim_sandbox/functions.html">自定义工具函数</a></li>
@@ -227,11 +226,11 @@
         <label class="toc-overlay-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <section id="mobject">
+        <div class="section" id="mobject">
 <h1>数学物品Mobject<a class="headerlink" href="#mobject" title="永久链接至标题">¶</a></h1>
 <p>MK做了一个关于常用 <a class="reference internal" href="#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> 的方法的视频：
 <a class="reference external" href="https://www.bilibili.com/video/BV1p54y197cC">〔manim教程〕第一讲 物体的位置与坐标变换</a></p>
-<section id="id1">
+<div class="section" id="id1">
 <h2>Mobject<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.mobject.Mobject">
@@ -628,16 +627,16 @@
 <dd><p>沿 <code class="docutils literal notranslate"><span class="pre">axis</span></code> 轴 <code class="docutils literal notranslate"><span class="pre">direction</span></code> 方向摇摆 <code class="docutils literal notranslate"><span class="pre">wag_factor</span></code></p>
 </dd></dl>
 </dd></dl>
-</section>
-<section id="group">
+</div>
+<div class="section" id="group">
 <h2>Group<a class="headerlink" href="#group" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.mobject.Group">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.mobject.</code><code class="sig-name descname">Group</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">mobjects</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject.Group" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>和Mobject相同，用于存放一些子物体</p>
-</section>
-</section>
+</div>
+</div>
 
       </article>
       <footer>

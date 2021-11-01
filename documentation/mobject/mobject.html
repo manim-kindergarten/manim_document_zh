@@ -1,16 +1,15 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="MobjectUpdateUtils" href="mobject_update_utils.html" /><link rel="prev" title="Matrix" href="matrix.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="MobjectUpdateUtils" href="mobject_update_utils.html" /><link rel="prev" title="Matrix" href="matrix.html" />
 
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>Mobject - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?a4cce83dd00b2be71467634a">
-    <link rel="stylesheet" href="../../_static/pygments.css?a4cce83dd00b2be71467634a">
+    <link rel="stylesheet" href="../../_static/styles/default.css?54379ec0e65d5fc786ceb32a">
+    <link rel="stylesheet" href="../../_static/pygments.css?54379ec0e65d5fc786ceb32a">
     
 <style>
   :root {
@@ -29,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?a4cce83dd00b2be71467634a"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?54379ec0e65d5fc786ceb32a"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -90,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -99,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -183,7 +182,7 @@
 </ul>
 </li>
 </ul>
-<p><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -201,12 +200,12 @@
         <label class="toc-overlay-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <section id="mobject">
+        <div class="section" id="mobject">
 <h1>Mobject<a class="headerlink" href="#mobject" title="永久链接至标题">¶</a></h1>
 <p>MK做了一个关于常用 <a class="reference internal" href="#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> 的方法的视频：
 <a class="reference external" href="https://www.bilibili.com/video/BV1p54y197cC">〔manim教程〕第一讲 物体的位置与坐标变换</a></p>
 <p>虽然 <code class="docutils literal notranslate"><span class="pre">manimgl</span></code> 对一部分物件进行了更新，但大体还能用，有变化的可以看源码进行修改。</p>
-<section id="id1">
+<div class="section" id="id1">
 <h2>Mobject<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.mobject.Mobject">
@@ -924,8 +923,8 @@
 <dd><p>沿 <code class="docutils literal notranslate"><span class="pre">axis</span></code> 轴 <code class="docutils literal notranslate"><span class="pre">direction</span></code> 方向摇摆 <code class="docutils literal notranslate"><span class="pre">wag_factor</span></code></p>
 </dd></dl>
 </dd></dl>
-</section>
-<section id="group">
+</div>
+<div class="section" id="group">
 <h2>Group<a class="headerlink" href="#group" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.mobject.Group">
@@ -934,8 +933,8 @@
 <p>传入一系列 <code class="docutils literal notranslate"><span class="pre">mobjects</span></code> 作为子物件，可以用 <code class="docutils literal notranslate"><span class="pre">[]</span></code> 索引</p>
 </dd></dl>
 <p>和Mobject相同，用于存放一些子物体</p>
-</section>
-<section id="point">
+</div>
+<div class="section" id="point">
 <h2>Point<a class="headerlink" href="#point" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.mobject.Point">
@@ -963,20 +962,46 @@
 <dd><p>设置坐标位置</p>
 </dd></dl>
 </dd></dl>
-</section>
-<section id="animationbuilder">
+</div>
+<div class="section" id="animationbuilder">
 <h2>_AnimationBuilder<a class="headerlink" href="#animationbuilder" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.mobject._AnimationBuilder">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.mobject.</code><code class="sig-name descname">_AnimationBuilder</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject._AnimationBuilder" title="永久链接至目标">¶</a></dt>
 <dd><p>动画编译器</p>
 <p>用于场景类 <code class="docutils literal notranslate"><span class="pre">Scene</span></code> 的 <code class="docutils literal notranslate"><span class="pre">play</span></code> 中，用法如下：</p>
-<p><code class="docutils literal notranslate"><span class="pre">self.play(mob.animate.shift(UP).scale(2).rotate(PI))</span></code></p>
-<p>该示例中，会使 mob 生成一个 <strong>向上移动 2 个单位，放大至 2 倍，旋转 180 度</strong> 的目标，并使用类似
-<code class="docutils literal notranslate"><span class="pre">MoveToTarget</span></code> 的方法将它变为目标的样式</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">mob</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">PI</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>该示例中，会使 mob 生成一个 <strong>向上移动 2 个单位，放大至 2 倍，旋转 180 度</strong> 的目标，并使用
+<code class="docutils literal notranslate"><span class="pre">MoveToTarget</span></code> 进行转变</p>
+<p>这个方法可以采用 <strong>链式操作</strong>，即像样例中给的那样连续施加 3 个方法。这得益于 Mobject 的这些方法都返回自身，
+也就是 <code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">self</span></code>，有兴趣的读者可以仔细研究一下源码</p>
+<dl class="py method">
+<dt id="manimlib.mobject.mobject._AnimationBuilder.build">
+<code class="sig-name descname">build</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.mobject._AnimationBuilder.build" title="永久链接至目标">¶</a></dt>
+<dd><p>在动画播放之前，<code class="xref py py-func docutils literal notranslate"><span class="pre">prepare_animation()</span></code>
+会先自动调用 <code class="docutils literal notranslate"><span class="pre">build()</span></code> 方法，将方法编译为 <strong>动画实例</strong></p>
+<p>将一系列在 <code class="docutils literal notranslate"><span class="pre">.animate</span></code> 之后的方法合并为一个 <code class="docutils literal notranslate"><span class="pre">MoveToTarget</span></code>，并返回这个
+<code class="docutils literal notranslate"><span class="pre">MoveToTraget</span></code> 的动画实例。也就是说，可以用下面的代码来播放动画，也可以将动画转变为更新</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 直接用 play 方法播放</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">mob</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">PI</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
+
+<span class="c1"># 播放动画</span>
+<span class="n">anim</span> <span class="o">=</span> <span class="n">mob</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">PI</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">build</span><span class="p">()</span> <span class="c1"># 此处有无 .build() 均可</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">anim</span><span class="p">)</span>
+
+<span class="c1"># 将动画实例用一个变量保存，并将动画转变为更新</span>
+<span class="n">anim</span> <span class="o">=</span> <span class="n">mob</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">PI</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">build</span><span class="p">()</span>
+<span class="n">turn_animation_into_updater</span><span class="p">(</span><span class="n">anim</span><span class="p">)</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">mob</span><span class="p">)</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
 </dd></dl>
-</section>
-</section>
+</dd></dl>
+</div>
+</div>
 
       </article>
       <footer>

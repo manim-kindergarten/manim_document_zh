@@ -1,16 +1,15 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="数学物件 mobject" href="../mobject/index.html" /><link rel="prev" title="相机部分 camera" href="index.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="数学物件 mobject" href="../mobject/index.html" /><link rel="prev" title="相机部分 camera" href="index.html" />
 
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>Camera - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?52a6bf467077006b70de469f">
-    <link rel="stylesheet" href="../../_static/pygments.css?52a6bf467077006b70de469f">
+    <link rel="stylesheet" href="../../_static/styles/default.css?4b4ab7948fe9ea6568e61aff">
+    <link rel="stylesheet" href="../../_static/pygments.css?4b4ab7948fe9ea6568e61aff">
     
 <style>
   :root {
@@ -29,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?52a6bf467077006b70de469f"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?4b4ab7948fe9ea6568e61aff"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -90,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -99,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -183,7 +182,7 @@
 </ul>
 </li>
 </ul>
-<p><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -201,9 +200,9 @@
         <label class="toc-overlay-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <section id="camera">
+        <div class="section" id="camera">
 <h1>Camera<a class="headerlink" href="#camera" title="永久链接至标题">¶</a></h1>
-<section id="cameraframe">
+<div class="section" id="cameraframe">
 <h2>CameraFrame<a class="headerlink" href="#cameraframe" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.camera.camera.CameraFrame">
@@ -302,8 +301,8 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
 </pre></div>
 </div>
-</div></section>
-<section id="id1">
+</div></div>
+<div class="section" id="id1">
 <h2>Camera<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.camera.camera.Camera">
@@ -386,7 +385,15 @@
 <dl class="py method">
 <dt id="manimlib.camera.camera.Camera.get_render_group">
 <code class="sig-name descname">get_render_group</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">shader_wrapper</span></em>, <em class="sig-param"><span class="n">single_use</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.Camera.get_render_group" title="永久链接至目标">¶</a></dt>
-<dd><p>获取渲染</p>
+<dd><p>获取渲染所包含的成员</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">vbo</span></code> : vertex data buffer</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ibo</span></code> : vertex index data buffer</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">vao</span></code> : vertex array</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">prog</span></code> : shader program</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">shader_wrapper</span></code> : 材质包装</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">single_use</span></code> : 单次使用</p></li>
+</ul>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.camera.camera.Camera.get_render_group_list">
@@ -456,8 +463,8 @@
 <dd><p>设置着色器的 <code class="docutils literal notranslate"><span class="pre">uniform</span></code> 变量</p>
 </dd></dl>
 </dd></dl>
-</section>
-<section id="threedcamera">
+</div>
+<div class="section" id="threedcamera">
 <h2>ThreeDCamera<a class="headerlink" href="#threedcamera" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.camera.camera.ThreeDCamera">
@@ -472,8 +479,8 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">anti_alias_width</span></code> : 抗锯齿</p></li>
 </ul>
 </dd></dl>
-</section>
-</section>
+</div>
+</div>
 
       </article>
       <footer>

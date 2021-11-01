@@ -1,16 +1,15 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="命令行参数和配置" href="configuration.html" /><link rel="prev" title="安装指南" href="installation.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="命令行参数和配置" href="configuration.html" /><link rel="prev" title="安装指南" href="installation.html" />
 
     <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>快速入门 - ManimGL  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?ad98d187741ce206b2817a9e">
-    <link rel="stylesheet" href="../_static/pygments.css?ad98d187741ce206b2817a9e">
+    <link rel="stylesheet" href="../_static/styles/default.css?484a4881e440d51bfa844ddb">
+    <link rel="stylesheet" href="../_static/pygments.css?484a4881e440d51bfa844ddb">
     
 <style>
   :root {
@@ -29,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?ad98d187741ce206b2817a9e"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?484a4881e440d51bfa844ddb"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -90,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="installation.html">安装指南</a></li>
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">快速入门</a></li>
@@ -99,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="structure.html">Manim 结构</a></li>
 </ul>
-<p><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../documentation/constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../documentation/custom_config.html">默认配置 custom_config</a></li>
@@ -183,7 +182,7 @@
 </ul>
 </li>
 </ul>
-<p><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development/contributing.html">贡献</a></li>
@@ -201,7 +200,7 @@
         <label class="toc-overlay-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <section id="id1">
+        <div class="section" id="id1">
 <h1>快速入门<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
 <p>在按照 <a class="reference internal" href="installation.html"><span class="doc">安装指南</span></a> 页面中的指导安装好 manim 的环境后，你可以尝试从头开始自己制作一个场景。</p>
 <p>首先，根据如下结构创建一个新的 <code class="docutils literal notranslate"><span class="pre">.py</span></code> 文件（如 <code class="docutils literal notranslate"><span class="pre">start.py</span></code> ）：</p>
@@ -254,7 +253,7 @@
 <p>这时将没有窗口弹出，当程序运行结束后，会自动打开这张渲染得到的图片
 （默认位于同级目录的子目录 <code class="docutils literal notranslate"><span class="pre">images/</span></code> 中）：</p>
 <img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/quickstart/SquareToCircle.png" class="align-center" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/quickstart/SquareToCircle.png"/>
-<section id="id2">
+<div class="section" id="id2">
 <h2>制作图片<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <p>接下来我们来详细看看每一行都有什么作用：</p>
 <p><strong>Line 1</strong>:</p>
@@ -294,8 +293,8 @@
 </pre></div>
 </div>
 <p>通过 <a class="reference internal" href="../documentation/scene/scene.html#manimlib.scene.scene.Scene" title="manimlib.scene.scene.Scene"><code class="xref py py-class docutils literal notranslate"><span class="pre">Scene</span></code></a> 的 <a class="reference internal" href="../documentation/scene/scene.html#manimlib.scene.scene.Scene.add" title="manimlib.scene.scene.Scene.add"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add()</span></code></a> 方法，将这个圆添加到画面上。</p>
-</section>
-<section id="id3">
+</div>
+<div class="section" id="id3">
 <h2>添加动画<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
 <p>下面我们改变一些代码，添加一些动画来制作视频而不是仅仅只有图片。</p>
 <div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
@@ -358,8 +357,8 @@
 <p>播放将 <code class="docutils literal notranslate"><span class="pre">square</span></code> 变化为 <code class="docutils literal notranslate"><span class="pre">circle</span></code> 的动画。<code class="docutils literal notranslate"><span class="pre">ReplacementTransform(A,</span> <span class="pre">B)</span></code>
 表示把A转换为B的图案并替代B</p>
 <p><strong>Line 13</strong>: 同Line 11，停顿1s</p>
-</section>
-<section id="id4">
+</div>
+<div class="section" id="id4">
 <h2>启用交互<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
 <p>支持交互是新版本的新特性，可以在代码的末尾加上如下一行来启用交互：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">embed</span><span class="p">()</span>
@@ -391,13 +390,13 @@
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>manimgl
 </pre></div>
 </div>
-</section>
-<section id="id5">
+</div>
+<div class="section" id="id5">
 <h2>成功入门<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
 <p>在看完上述内容后，你已经了解如何使用 manim 了，下面你可以看一些例子，在 <a class="reference internal" href="example_scenes.html"><span class="doc">样例学习</span></a> 页面中。
 但在这之前，你最好先了解一下 manim 的 <a class="reference internal" href="configuration.html"><span class="doc">命令行参数和配置</span></a>。</p>
-</section>
-</section>
+</div>
+</div>
 
       </article>
       <footer>

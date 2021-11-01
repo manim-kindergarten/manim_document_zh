@@ -1,16 +1,15 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Frame" href="frame.html" /><link rel="prev" title="Changing" href="changing.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Frame" href="frame.html" /><link rel="prev" title="Changing" href="changing.html" />
 
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>CoordinateSystems - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?720695f72c8d7119cae13eb0">
-    <link rel="stylesheet" href="../../_static/pygments.css?720695f72c8d7119cae13eb0">
+    <link rel="stylesheet" href="../../_static/styles/default.css?1965351fc5625708499626fb">
+    <link rel="stylesheet" href="../../_static/pygments.css?1965351fc5625708499626fb">
     
 <style>
   :root {
@@ -29,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?720695f72c8d7119cae13eb0"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?1965351fc5625708499626fb"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -90,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -99,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -183,7 +182,7 @@
 </ul>
 </li>
 </ul>
-<p><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -201,13 +200,14 @@
         <label class="toc-overlay-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <section id="coordinatesystems">
+        <div class="section" id="coordinatesystems">
 <h1>CoordinateSystems<a class="headerlink" href="#coordinatesystems" title="永久链接至标题">¶</a></h1>
 <div class="admonition- admonition">
 <p class="admonition-title">声明</p>
 <p>坐标系在新版中改动幅度较大，整体用法基本不变，一些参数定义更加规范化</p>
 </div>
-<section id="coordinatesystem">
+<p>坐标轴上的数(TODO)</p>
+<div class="section" id="coordinatesystem">
 <h2>CoordinateSystem<a class="headerlink" href="#coordinatesystem" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.coordinate_systems.CoordinateSystem">
@@ -246,6 +246,9 @@
 <dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.get_graph">
 <code class="sig-name descname">get_graph</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span></em>, <em class="sig-param"><span class="n">x_range</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.get_graph" title="永久链接至目标">¶</a></dt>
 <dd><p>绘制函数图像，并且自动移动到坐标轴的相对位置，使用 <code class="docutils literal notranslate"><span class="pre">ParametricCurve</span></code></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">x_range=[x_min,</span> <span class="pre">x_max,</span> <span class="pre">dx]</span></code> : 图像定义域</p></li>
+</ul>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.get_graph_label">
@@ -275,7 +278,7 @@
 <dl class="py method">
 <dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.get_riemann_rectangles">
 <code class="sig-name descname">get_riemann_rectangles</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">graph</span></em>, <em class="sig-param"><span class="n">x_range</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">dx</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">input_sample_type</span><span class="o">=</span><span class="default_value">'left'</span></em>, <em class="sig-param"><span class="n">stroke_width</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">stroke_color</span><span class="o">=</span><span class="default_value">'#000000'</span></em>, <em class="sig-param"><span class="n">fill_opacity</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">colors</span><span class="o">=</span><span class="default_value">'#58C4DD', '#83C167'</span></em>, <em class="sig-param"><span class="n">show_signed_area</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.get_riemann_rectangles" title="永久链接至目标">¶</a></dt>
-<dd><p>绘制矩形填充图像下方的区域</p>
+<dd><p>绘制一系列矩形填充图像下方的区域</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">x_range</span> <span class="pre">=</span> <span class="pre">[x_min,</span> <span class="pre">x_max,</span> <span class="pre">dx]</span></code> 可以指定范围，其中 <code class="docutils literal notranslate"><span class="pre">dx</span></code> 为分割精度</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">input_sample_type</span></code> 指定矩形的左上角、上边缘中心、右上角抵在图像上</p></li>
@@ -304,7 +307,7 @@
 <dl class="py method">
 <dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.input_to_graph_point">
 <code class="sig-name descname">input_to_graph_point</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">graph</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.CoordinateSystem.input_to_graph_point" title="永久链接至目标">¶</a></dt>
-<dd><p>传入一个 x，返回图像上以该 x 为横坐标的点的绝对坐标</p>
+<dd><p>传入一个 x 和一条参数曲线，返回图像上以该 x 为横坐标的点的绝对坐标</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.mobject.coordinate_systems.CoordinateSystem.p2c">
@@ -322,15 +325,15 @@
 <dd><p>获取横坐标为 x 的点处切线的斜率</p>
 </dd></dl>
 </dd></dl>
-</section>
-<section id="axes">
+</div>
+<div class="section" id="axes">
 <h2>Axes<a class="headerlink" href="#axes" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.coordinate_systems.Axes">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.coordinate_systems.</code><code class="sig-name descname">Axes</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x_range</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">y_range</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.Axes" title="永久链接至目标">¶</a></dt>
-<dd><p>xOy 二维坐标系，由两条 <code class="docutils literal notranslate"><span class="pre">NumberLine</span></code> 组成，因此可以在一些参数中使用 <code class="docutils literal notranslate"><span class="pre">NumberLine</span></code> 的参数列表</p>
+<dd><p>xOy 二维坐标系，由两条 <code class="docutils literal notranslate"><span class="pre">NumberLine</span></code> 组成</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">x_axis_config</span></code> 中放入 x 轴的参数，格式为一个字典</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">x_axis_config</span></code> 中放入 x 轴的参数，注意每一个坐标轴都是一个 <code class="docutils literal notranslate"><span class="pre">NumberLine</span></code>，所以其中的参数列表详见 <a class="reference internal" href="number_line.html#manimlib.mobject.number_line.NumberLine" title="manimlib.mobject.number_line.NumberLine"><code class="xref py py-class docutils literal notranslate"><span class="pre">NumberLine</span></code></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">y_axis_config</span></code> 中放入 y 轴的参数，同上</p></li>
 <li><dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">axis_config</span></code></dt><dd><ul>
@@ -340,6 +343,10 @@
 </dd>
 </dl>
 </li>
+</ul>
+<p>另外，给坐标轴设置颜色最好使用 <code class="docutils literal notranslate"><span class="pre">set_color</span></code> 方法，因为 <code class="docutils literal notranslate"><span class="pre">color</span></code> 参数需要在
+<code class="docutils literal notranslate"><span class="pre">x_axis_config</span></code> 和 <code class="docutils literal notranslate"><span class="pre">y_axis_config</span></code> 中给出才有效</p>
+<ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">x_range</span></code> 和 <code class="docutils literal notranslate"><span class="pre">y_range</span></code> 控制坐标轴范围和分割精度
 格式为 <code class="docutils literal notranslate"><span class="pre">x_range=[x_min,</span> <span class="pre">x_max,</span> <span class="pre">dx]</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">width</span></code> 和 <code class="docutils literal notranslate"><span class="pre">height</span></code> 控制坐标轴的宽度和高度</p></li>
@@ -352,7 +359,7 @@
 <dl class="py method">
 <dt id="manimlib.mobject.coordinate_systems.Axes.coords_to_point">
 <code class="sig-name descname">coords_to_point</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">coords</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.Axes.coords_to_point" title="永久链接至目标">¶</a></dt>
-<dd><p>输入坐标轴上的二维坐标，返回场景的绝对坐标，(x, y) -&gt; array[x’, y’, 0]</p>
+<dd><p>输入坐标轴上的二维坐标，返回场景的绝对坐标，(x, y) -&gt; array([x’, y’, 0])</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.mobject.coordinate_systems.Axes.get_all_ranges">
@@ -367,11 +374,11 @@
 <dl class="py method">
 <dt id="manimlib.mobject.coordinate_systems.Axes.point_to_coords">
 <code class="sig-name descname">point_to_coords</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.Axes.point_to_coords" title="永久链接至目标">¶</a></dt>
-<dd><p>输入场景的绝对坐标，返回坐标轴上的二维坐标，array[x, y, 0] -&gt; (x’, y’)</p>
+<dd><p>输入场景的绝对坐标，返回坐标轴上的二维坐标，array([x, y, 0]) -&gt; (x’, y’)</p>
 </dd></dl>
 </dd></dl>
-</section>
-<section id="threedaxes">
+</div>
+<div class="section" id="threedaxes">
 <h2>ThreeDAxes<a class="headerlink" href="#threedaxes" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.coordinate_systems.ThreeDAxes">
@@ -387,8 +394,8 @@
 <dd><p>获取 x 和 y 的范围</p>
 </dd></dl>
 </dd></dl>
-</section>
-<section id="numberplane">
+</div>
+<div class="section" id="numberplane">
 <h2>NumberPlane<a class="headerlink" href="#numberplane" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.coordinate_systems.NumberPlane">
@@ -407,16 +414,16 @@
 <dl class="py method">
 <dt id="manimlib.mobject.coordinate_systems.NumberPlane.get_vector">
 <code class="sig-name descname">get_vector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">coords</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.NumberPlane.get_vector" title="永久链接至目标">¶</a></dt>
-<dd><p>输入一个坐标轴的相对坐标，绘制一个【从原点到该点的向量】</p>
+<dd><p>输入一个二维坐标，绘制一个【从坐标轴原点到该点的向量】</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.mobject.coordinate_systems.NumberPlane.prepare_for_nonlinear_transform">
 <code class="sig-name descname">prepare_for_nonlinear_transform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">num_inserted_curves</span><span class="o">=</span><span class="default_value">50</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.coordinate_systems.NumberPlane.prepare_for_nonlinear_transform" title="永久链接至目标">¶</a></dt>
-<dd><p>将坐标系的每一条线进行分割，以适配即将应用的非线性变换</p>
+<dd><p>将坐标系的每一条线进行分割，以适配即将施加的非线性变换</p>
 </dd></dl>
 </dd></dl>
-</section>
-<section id="complexplane">
+</div>
+<div class="section" id="complexplane">
 <h2>ComplexPlane<a class="headerlink" href="#complexplane" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.coordinate_systems.ComplexPlane">
@@ -453,8 +460,8 @@
 <dd><p>输入一个绝对坐标，返回复平面上该点对应的复数</p>
 </dd></dl>
 </dd></dl>
-</section>
-</section>
+</div>
+</div>
 
       </article>
       <footer>

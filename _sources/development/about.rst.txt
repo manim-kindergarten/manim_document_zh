@@ -23,6 +23,6 @@ Manim 是一个数学动画引擎。你可以使用它来制作像 3Blue1Brown �
 本文档基于 `3b1b/manim <https://github.com/3b1b/manim>`_ 中的 master 分支，即 ManimGL。
 由 `鹤翔万里 <https://github.com/TonyCrane>`_、 `widcardw <https://github.com/widcardw>`_ 制作，目前还在完善中。
 
-其中Sphinx的 ``manim_example_ext`` 扩展参考于 `ManimCommunity 的文档 <https://docs.manim.community/>`_。
+其中 Sphinx 的 ``manim_example_ext`` 扩展参考于 `ManimCommunity 的文档 <https://docs.manim.community/>`_。
 
 如果你想为 manim 或本文档做出贡献，请见：:doc:`contributing`

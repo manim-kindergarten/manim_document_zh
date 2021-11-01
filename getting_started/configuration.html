@@ -1,16 +1,15 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="样例学习" href="example_scenes.html" /><link rel="prev" title="快速入门" href="quickstart.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="样例学习" href="example_scenes.html" /><link rel="prev" title="快速入门" href="quickstart.html" />
 
     <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>命令行参数和配置 - ManimGL  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?bb39b0efa10e521694f436cf">
-    <link rel="stylesheet" href="../_static/pygments.css?bb39b0efa10e521694f436cf">
+    <link rel="stylesheet" href="../_static/styles/default.css?1ba65f6fb2f9c8f35cf9bd14">
+    <link rel="stylesheet" href="../_static/pygments.css?1ba65f6fb2f9c8f35cf9bd14">
     
 <style>
   :root {
@@ -29,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?bb39b0efa10e521694f436cf"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?1ba65f6fb2f9c8f35cf9bd14"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -90,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">快速入门</a></li>
@@ -99,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="structure.html">Manim 结构</a></li>
 </ul>
-<p><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../documentation/constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../documentation/custom_config.html">默认配置 custom_config</a></li>
@@ -183,7 +182,7 @@
 </ul>
 </li>
 </ul>
-<p><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development/contributing.html">贡献</a></li>
@@ -201,9 +200,9 @@
         <label class="toc-overlay-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <section id="id1">
+        <div class="section" id="id1">
 <h1>命令行参数和配置<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
-<section id="id2">
+<div class="section" id="id2">
 <h2>命令行界面<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <p>使用 manim 运行一个动画，需要进入到与 <code class="docutils literal notranslate"><span class="pre">manimlib/</span></code> 文件夹同级的目录中，并向命令行中输入如下格式的命令：</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>manimgl &lt;code&gt;.py &lt;Scene&gt; &lt;flags&gt;
@@ -216,7 +215,7 @@ manim-render &lt;code&gt;.py &lt;Scene&gt; &lt;flags&gt;
 <li><p><code class="docutils literal notranslate"><span class="pre">&lt;Scene&gt;</span></code> : 你想要渲染的场景，或者一些场景。如果没有写或者写错，若文件中只有一个 Scene，会直接渲染这个类，否则会列出所有让你选择</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&lt;flags&gt;</span></code> : 传入的选项</p></li>
 </ul>
-<section id="id3">
+<div class="section" id="id3">
 <h3>一些常用的选项<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">-w</span></code> 把场景写入文件</p></li>
@@ -229,8 +228,8 @@ manim-render &lt;code&gt;.py &lt;Scene&gt; &lt;flags&gt;
 <li><p><code class="docutils literal notranslate"><span class="pre">-n</span> <span class="pre">&lt;number&gt;</span></code> 跳到场景中第 <code class="docutils literal notranslate"><span class="pre">n</span></code> 个动画</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">-f</span></code> 打开窗口全屏</p></li>
 </ul>
-</section>
-<section id="id4">
+</div>
+<div class="section" id="id4">
 <h3>所有支持的选项<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
 <div class="table-wrapper"><table class="docutils align-default">
 <colgroup>
@@ -351,9 +350,9 @@ manim-render &lt;code&gt;.py &lt;Scene&gt; &lt;flags&gt;
 </tr>
 </tbody>
 </table></div>
-</section>
-</section>
-<section id="id5">
+</div>
+</div>
+<div class="section" id="id5">
 <h2>个性化默认值<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
 <p>为了进行更多配置（关于目录等）并且永久更改默认值（不必每次都在命令中添加 flags），
 可以修改/新建 <code class="docutils literal notranslate"><span class="pre">custom_config.yml</span></code> ，其中各选项含义见： <a class="reference internal" href="../documentation/custom_config.html"><span class="doc">默认配置 custom_config</span></a> 。</p>
@@ -372,8 +371,8 @@ manim-render &lt;code&gt;.py &lt;Scene&gt; &lt;flags&gt;
 </div>
 <p>进入 <code class="docutils literal notranslate"><span class="pre">project/</span></code> 文件夹中，运行 <code class="docutils literal notranslate"><span class="pre">manimgl</span> <span class="pre">code.py</span> <span class="pre">&lt;Scene&gt;</span></code> 的时候，
 会用 <code class="docutils literal notranslate"><span class="pre">project/</span></code> 文件夹下的 <code class="docutils literal notranslate"><span class="pre">custom_config.yml</span></code> 覆盖 <code class="docutils literal notranslate"><span class="pre">manim/default_config.yml</span></code>。</p>
-</section>
-</section>
+</div>
+</div>
 
       </article>
       <footer>

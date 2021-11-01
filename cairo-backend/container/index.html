@@ -1,16 +1,15 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="动画部分animation" href="../animation/index.html" /><link rel="prev" title="常量部分constants" href="../constants.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="author" title="关于这些文档" href="../about.html" /><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="next" title="动画部分animation" href="../animation/index.html" /><link rel="prev" title="常量部分constants" href="../constants.html" />
 
     <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>属性容器container - manim  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?9ed797be7be3ceac44c20546">
-    <link rel="stylesheet" href="../_static/pygments.css?9ed797be7be3ceac44c20546">
+    <link rel="stylesheet" href="../_static/styles/default.css?f2db530c4c12e18d45716b7d">
+    <link rel="stylesheet" href="../_static/pygments.css?f2db530c4c12e18d45716b7d">
     
 <style>
   :root {
@@ -29,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?9ed797be7be3ceac44c20546"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?f2db530c4c12e18d45716b7d"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -90,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p><span class="caption-text">入门教程向</span></p>
+  <p class="caption"><span class="caption-text">入门教程向</span></p>
 <ul>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../installation/index.html">安装指南</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../installation/linux.html">Linux</a></li>
@@ -114,7 +113,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../homework/index.html">练习部分(TODO)</a></li>
 </ul>
-<p><span class="caption-text">进阶文档向</span></p>
+<p class="caption"><span class="caption-text">进阶文档向</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分constants</a></li>
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">属性容器container</a></li>
@@ -203,7 +202,7 @@
 </ul>
 </li>
 </ul>
-<p><span class="caption-text">杂项</span></p>
+<p class="caption"><span class="caption-text">杂项</span></p>
 <ul>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../manim_sandbox/index.html">manim_sandbox中的自定义类</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label for="toctree-checkbox-11"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../manim_sandbox/functions.html">自定义工具函数</a></li>
@@ -227,13 +226,13 @@
         <label class="toc-overlay-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <section id="container">
+        <div class="section" id="container">
 <h1>属性容器container<a class="headerlink" href="#container" title="永久链接至标题">¶</a></h1>
 <p>目前 <code class="xref py py-class docutils literal notranslate"><span class="pre">Container</span></code> 只是 <code class="xref py py-class docutils literal notranslate"><span class="pre">Scene</span></code> 和
 <a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> 的抽象基类（父类），在 <code class="docutils literal notranslate"><span class="pre">__init__</span></code>
 中实现了对CONFIG字典转化为属性的处理。</p>
 <p>还规定了需要子类实现 <code class="docutils literal notranslate"><span class="pre">add</span></code> 方法和 <code class="docutils literal notranslate"><span class="pre">remove</span></code> 方法</p>
-<section id="id1">
+<div class="section" id="id1">
 <h2>Container<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.container.container.Container">
@@ -256,8 +255,8 @@
 <code class="sig-prename descclassname">Container.</code><code class="sig-name descname">remove</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">items</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.container.container.Container.remove" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>需要子类实现</p>
-</section>
-</section>
+</div>
+</div>
 
       </article>
       <footer>
