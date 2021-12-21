@@ -223,7 +223,7 @@ ShrinkToCenter
                   Text("Text").scale(2)
               )
           mobjects.scale(1.5)
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           self.play(
               *[ShrinkToCenter(mob) for mob in mobjects]

@@ -19,7 +19,7 @@ FocusOn
               Dot(),
               Tex("x")
           )
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           mobject_or_coord = [
               *mobjects,                    # Mobjects: Dot and "x"
@@ -51,7 +51,7 @@ Indicate
   
           VGroup(formula,dot)\
                              .scale(3)\
-                             .arrange_submobjects(DOWN,buff=3)
+                             .arrange(DOWN,buff=3)
   
           self.add(formula,dot)
   
@@ -74,7 +74,7 @@ Flash
               Dot(),
               Tex("x")
           ).scale(2)
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           mobject_or_coord = [
               *mobjects,                    # Mobjects: Dot and "x"
@@ -104,7 +104,7 @@ CircleIndicate
               Dot(),
               Tex("x")
           ).scale(2)
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           self.add(mobjects)
           self.wait(0.2)
@@ -133,7 +133,7 @@ ShowCreationThenDestruction
                   Text("Text").scale(2)
               )
           mobjects.scale(1.5)
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           self.play(
               *[ShowCreationThenDestruction(mob) for mob in mobjects]
@@ -159,7 +159,7 @@ ShowCreationThenFadeOut
                   Text("Text").scale(2)
               )
           mobjects.scale(1.5)
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           self.play(
               *[ShowCreationThenFadeOut(mob) for mob in mobjects]
@@ -190,7 +190,7 @@ ShowPassingFlashAround
                   Text("Text").scale(2)
               )
           mobjects.scale(1.5)
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           self.add(mobjects)
   
@@ -216,7 +216,7 @@ ShowCreationThenDestructionAround
                   Text("Text").scale(2)
               )
           mobjects.scale(1.5)
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           self.add(mobjects)
   
@@ -244,7 +244,7 @@ ShowCreationThenFadeAround
                   Text("Text").scale(2)
               )
           mobjects.scale(1.5)
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           self.add(mobjects)
   
@@ -272,7 +272,7 @@ ApplyWave
                   Text("Text").scale(2)
               )
           mobjects.scale(1.5)
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           self.add(mobjects)
   
@@ -300,7 +300,7 @@ WiggleOutThenIn
                   Text("Text").scale(2)
               )
           mobjects.scale(1.5)
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           self.add(mobjects)
   
@@ -328,7 +328,7 @@ TurnInsideOut
                   Text("Text").scale(2)
               )
           mobjects.scale(1.5)
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           self.add(mobjects)
   

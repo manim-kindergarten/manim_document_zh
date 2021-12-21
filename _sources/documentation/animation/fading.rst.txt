@@ -27,7 +27,7 @@ FadeOut
                   Text("Text").scale(2)
               )
           mobjects.scale(1.5)
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           self.add(mobjects)
           self.wait(0.3)
@@ -54,7 +54,7 @@ FadeIn
                   TexText("Text").scale(2)
               )
           mobjects.scale(1.5)
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           self.play(
               *[FadeIn(mob) for mob in mobjects]
@@ -73,7 +73,7 @@ FadeIn
                   TexText("Text").scale(2)
               )
           mobjects.scale(1.5)
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           directions=[UP,LEFT,DOWN,RIGHT]
   
@@ -95,7 +95,7 @@ FadeIn
                   TexText("Text").scale(2)
               )
           mobjects.scale(1.5)
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           directions=[UP,LEFT,DOWN,RIGHT]
   
@@ -120,7 +120,7 @@ FadeIn
                   TexText("Text").scale(2)
               )
           mobjects.scale(1.5)
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           scale_factors=[0.3,0.8,1,1.3,1.8]
   
@@ -154,7 +154,7 @@ FadeInFromPoint
               TexText("Text").scale(2)
           )
           mobjects.scale(1.5)
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           self.wait()
           self.play(

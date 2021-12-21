@@ -17,7 +17,7 @@ AnimationGroup
                 Text("Text").scale(2)
             )
             mobjects.scale(1.5)
-            mobjects.arrange_submobjects(RIGHT,buff=2)
+            mobjects.arrange(RIGHT,buff=2)
     
             self.wait()
             anims = AnimationGroup(
@@ -43,7 +43,7 @@ Succession
                 Text("Text").scale(2)
             )
             mobjects.scale(1.5)
-            mobjects.arrange_submobjects(RIGHT,buff=2)
+            mobjects.arrange(RIGHT,buff=2)
     
             self.add(mobjects)
             self.wait()
@@ -69,7 +69,7 @@ LaggedStart
                 Text("Text").scale(2)
             )
             mobjects.scale(1.5)
-            mobjects.arrange_submobjects(RIGHT,buff=2)
+            mobjects.arrange(RIGHT,buff=2)
     
             self.add(mobjects)
             self.wait()
@@ -96,7 +96,7 @@ LaggedStartMap
               Text("Text").scale(2)
           )
           mobjects.scale(1.5)
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           self.add(mobjects)
           self.wait()

@@ -26,7 +26,7 @@ Homotopy
           mobjects=VGroup(
               Text("Text").scale(3),
               Square(),
-          ).arrange_submobjects(RIGHT,buff=2)
+          ).arrange(RIGHT,buff=2)
   
           self.add(mobjects)
           self.play(
@@ -58,7 +58,7 @@ PhaseFlow
           mobjects=VGroup(
               Text("Text").scale(3),
               Square(),
-          ).arrange_submobjects(RIGHT,buff=2)
+          ).arrange(RIGHT,buff=2)
   
           self.play(
               *[PhaseFlow(

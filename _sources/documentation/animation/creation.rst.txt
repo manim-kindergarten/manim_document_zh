@@ -29,7 +29,7 @@ ShowCreation
                   Text("Text").scale(2)
               )
           mobjects.scale(1.5)
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           self.play(
               *[ShowCreation(mob) for mob in mobjects]
@@ -53,7 +53,7 @@ Uncreate
                   Text("Text").scale(2)
               )
           mobjects.scale(1.5)
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           self.add(mobjects)
   
@@ -80,7 +80,7 @@ DrawBorderThenFill
                   Text("Text").scale(2)
               )
           vmobjects.scale(1.5)
-          vmobjects.arrange_submobjects(RIGHT,buff=2)
+          vmobjects.arrange(RIGHT,buff=2)
   
           self.play(
               *[DrawBorderThenFill(mob) for mob in vmobjects]
@@ -104,7 +104,7 @@ Write
                   Text("Text").scale(2)
               )
           mobjects.scale(1.5)
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           self.play(
               *[Write(mob) for mob in mobjects]

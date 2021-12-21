@@ -21,7 +21,7 @@ GrowFromPoint
                   Circle(fill_opacity=1),
                   Text("Text").scale(2)
               )
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           directions=[UP,LEFT,DOWN,RIGHT]
   
@@ -48,7 +48,7 @@ GrowFromCenter
                   Text("Text").scale(2)
               )
           mobjects.scale(1.5)
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           self.play(
               *[GrowFromCenter(mob) for mob in mobjects]
@@ -71,7 +71,7 @@ GrowFromEdge
                   Circle(fill_opacity=1),
                   Text("Text").scale(2)
               )
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           directions=[UP,LEFT,DOWN,RIGHT]
   
@@ -97,7 +97,7 @@ GrowArrow
                   Vector(RIGHT*2)
               )
           mobjects.scale(3)
-          mobjects.arrange_submobjects(DOWN,buff=2)
+          mobjects.arrange(DOWN,buff=2)
   
           self.play(
               *[GrowArrow(mob)for mob in mobjects]
@@ -121,7 +121,7 @@ SpinInFromNothing
                   TexText("Text").scale(2)
               )
           mobjects.scale(1.5)
-          mobjects.arrange_submobjects(RIGHT,buff=2)
+          mobjects.arrange(RIGHT,buff=2)
   
           self.play(
               *[SpinInFromNothing(mob) for mob in mobjects]
