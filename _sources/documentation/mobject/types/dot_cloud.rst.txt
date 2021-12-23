@@ -10,3 +10,9 @@ TrueDot
 *****************
 .. autoclass:: manimlib.mobject.types.dot_cloud.TrueDot
     :members:
+
+
+GlowDot 
+*****************
+.. autoclass:: manimlib.mobject.types.dot_cloud.GlowDot
+    :members:

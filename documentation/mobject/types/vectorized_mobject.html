@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../../_static/styles/default.css?3c0b91964483579ee7841ade">
-    <link rel="stylesheet" href="../../../_static/pygments.css?3c0b91964483579ee7841ade">
+    <link rel="stylesheet" href="../../../_static/styles/default.css?8ed50d2b1bb72ca6131a4ecb">
+    <link rel="stylesheet" href="../../../_static/pygments.css?8ed50d2b1bb72ca6131a4ecb">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
         <script src="../../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?3c0b91964483579ee7841ade"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?8ed50d2b1bb72ca6131a4ecb"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -402,12 +402,17 @@
 <dl class="py method">
 <dt id="manimlib.mobject.types.vectorized_mobject.VMobject.point_from_proportion">
 <code class="sig-name descname">point_from_proportion</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">alpha</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.point_from_proportion" title="永久链接至目标">¶</a></dt>
-<dd><p>在整条路径上占比为 alpha 处的点</p>
+<dd><p>在整条路径上占比为 <code class="docutils literal notranslate"><span class="pre">alpha</span></code> 处的点</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.mobject.types.vectorized_mobject.VMobject.pointwise_become_partial">
 <code class="sig-name descname">pointwise_become_partial</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vmobject</span></em>, <em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.pointwise_become_partial" title="永久链接至目标">¶</a></dt>
 <dd><p>返回 vmobject 上百分比从 a 到 b 的部分曲线的拷贝</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.quick_point_from_proportion">
+<code class="sig-name descname">quick_point_from_proportion</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">alpha</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.quick_point_from_proportion" title="永久链接至目标">¶</a></dt>
+<dd><p>在整条路径上占比为 alpha 处的点</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.mobject.types.vectorized_mobject.VMobject.refresh_triangulation">
@@ -466,7 +471,7 @@
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_style">
-<code class="sig-name descname">set_style</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fill_color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fill_opacity</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fill_rgba</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">stroke_color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">stroke_opacity</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">stroke_rgba</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">stroke_width</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">stroke_background</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">gloss</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">shadow</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_style" title="永久链接至目标">¶</a></dt>
+<code class="sig-name descname">set_style</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fill_color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fill_opacity</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fill_rgba</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">stroke_color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">stroke_opacity</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">stroke_rgba</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">stroke_width</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">stroke_background</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">reflectiveness</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">gloss</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">shadow</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_style" title="永久链接至目标">¶</a></dt>
 <dd><p>整体设置样式</p>
 </dd></dl>
 <dl class="py method">

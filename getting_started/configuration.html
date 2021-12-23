@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?66a01d887570e52df38c25cf">
-    <link rel="stylesheet" href="../_static/pygments.css?66a01d887570e52df38c25cf">
+    <link rel="stylesheet" href="../_static/styles/default.css?c3ed33d9cc4f25bc24cb0451">
+    <link rel="stylesheet" href="../_static/pygments.css?c3ed33d9cc4f25bc24cb0451">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?66a01d887570e52df38c25cf"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?c3ed33d9cc4f25bc24cb0451"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -320,31 +320,35 @@ manim-render &lt;code&gt;.py &lt;Scene&gt; &lt;flags&gt;
 <td><p><code class="docutils literal notranslate"><span class="pre">-n</span></code></p></td>
 <td><p>后面接两个数(逗号隔开)仅渲染一部分动画，如”3,6”</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--resolution</span> <span class="pre">RESOLUTION</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--embed</span> <span class="pre">LINENO</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-e</span></code></p></td>
+<td><p>传入一个行号，在行号位置处插入 <code class="docutils literal notranslate"><span class="pre">self.embed()</span></code> 后运行</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--resolution</span> <span class="pre">RESOLUTION</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-r</span></code></p></td>
 <td><p>分辨率，传入格式为”WxH”, 如”1920x1080”</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--frame_rate</span> <span class="pre">FRAME_RATE</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--frame_rate</span> <span class="pre">FRAME_RATE</span></code></p></td>
 <td></td>
 <td><p>视频帧率（整数）</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--color</span> <span class="pre">COLOR</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--color</span> <span class="pre">COLOR</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-c</span></code></p></td>
 <td><p>背景颜色</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--leave_progress_bars</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--leave_progress_bars</span></code></p></td>
 <td></td>
 <td><p>保持进度条留在终端中</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--video_dir</span> <span class="pre">VIDEO_DIR</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--video_dir</span> <span class="pre">VIDEO_DIR</span></code></p></td>
 <td></td>
 <td><p>存放视频的目录</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--config_file</span> <span class="pre">CONFIG_FILE</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--config_file</span> <span class="pre">CONFIG_FILE</span></code></p></td>
 <td></td>
 <td><p>使用指定的配置文件</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--log-level</span> <span class="pre">LOG_LEVEL</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--log-level</span> <span class="pre">LOG_LEVEL</span></code></p></td>
 <td></td>
 <td><p>输出日志的等级</p></td>
 </tr>

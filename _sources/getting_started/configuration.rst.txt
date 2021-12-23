@@ -53,6 +53,7 @@
 ``--config``                                                          进入自动配置指南
 ``--file_name FILE_NAME``                                             给输出文件重命名
 ``--start_at_animation_number START_AT_ANIMATION_NUMBER``  ``-n``     后面接两个数(逗号隔开)仅渲染一部分动画，如"3,6"
+``--embed LINENO``                                         ``-e``     传入一个行号，在行号位置处插入 ``self.embed()`` 后运行
 ``--resolution RESOLUTION``                                ``-r``     分辨率，传入格式为"WxH", 如"1920x1080"
 ``--frame_rate FRAME_RATE``                                           视频帧率（整数）
 ``--color COLOR``                                          ``-c``     背景颜色

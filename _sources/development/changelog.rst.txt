@@ -4,17 +4,83 @@
 尚未发布
 ----------
 
-BUG 修复 
+Bug 修复
+^^^^^^^^^^
+- `f1996f8 <https://github.com/3b1b/manim/pull/1697/commits/f1996f8479f9e33d626b3b66e9eb6995ce231d86>`__: 临时修复了 ``Lightbulb``
+
+新特性
+^^^^^^^^^^^^
+- `#1694 <https://github.com/3b1b/manim/pull/1694>`__: 允许 ``BarChart`` 为 x 轴创建刻度
+
+重构 
+^^^^^^^^
+- `5aa8d15 <https://github.com/3b1b/manim/pull/1697/commits/5aa8d15d85797f68a8f169ca69fd90d441a3abbe>`__: 在声音合并时使用 ``FFMPEG_BIN`` 代替 ``"ffmpeg"``
+
+
+v1.3.0
+------
+
+Bug 修复 
 ^^^^^^^^^^
 
-- `#1655 <https://github.com/3b1b/manim/pull/1655>`__: 修复浮点数计算精度丢失造成的 ``CameraFrame`` 在调用 ``rotate`` 方法时报错的问题
 - `#1653 <https://github.com/3b1b/manim/pull/1653>`__: 修复 ``Mobject.stretch_to_fit_depth``
+- `#1655 <https://github.com/3b1b/manim/pull/1655>`__: 修复旋转相机的 bug
+- `c73d507 <https://github.com/3b1b/manim/pull/1688/commits/c73d507c76af5c8602d4118bc7538ba04c03ebae>`__: 修复 ``SurfaceMesh``
+- `82bd02d <https://github.com/3b1b/manim/pull/1688/commits/82bd02d21fbd89b71baa21e077e143f440df9014>`__: 修复 ``angle_between_vectors`` 和 ``rotation_between_vectors``
+- `a717314 <https://github.com/3b1b/manim/pull/1688/commits/a7173142bf93fd309def0cc10f3c56f5e6972332>`__: 修复 ``VMobject.fade``
+- `fbc329d <https://github.com/3b1b/manim/pull/1688/commits/fbc329d7ce3b11821d47adf6052d932f7eff724a>`__: 修复 ``angle_between_vectors``
+- `bcd0990 <https://github.com/3b1b/manim/pull/1688/commits/bcd09906bea5eaaa5352e7bee8f3153f434cf606>`__: 修复 ``ShowSubmobjectsOneByOne``
+- `7023548 <https://github.com/3b1b/manim/pull/1691/commits/7023548ec62c4adb2f371aab6a8c7f62deb7c33c>`__: 修复 ``TransformMatchingParts``
+
 
 新特性
 ^^^^^^^^^^^^
 
 - `e10f850 <https://github.com/3b1b/manim/commit/e10f850d0d9f971931cc85d44befe67dc842af6d>`__: 添加命令行参数 ``--log-level`` 以指定日志级别
+- `#1667 <https://github.com/3b1b/manim/pull/1667>`__: 为 ``Mobject`` 添加运算符 (``+`` 和 ``*``)
+- `#1675 <https://github.com/3b1b/manim/pull/1675>`__: 在 ``manimlib/mobject/boolean_ops.py`` 中为 ``VMobject`` 添加四种布尔运算 
 
+  - ``Union(*vmobjects, **kwargs)``
+  - ``Difference(subject, clip, **kwargs)`` 
+  - ``Intersection(*vmobjects, **kwargs)`` 
+  - ``Exclusion(*vmobjects, **kwargs)`` 
+- `81c3ae3 <https://github.com/3b1b/manim/pull/1688/commits/81c3ae30372e288dc772633dbd17def6e603753e>`__: 添加 ``reflectiveness``
+- `2c7689e <https://github.com/3b1b/manim/pull/1688/commits/2c7689ed9e81229ce87c648f97f26267956c0bc9>`__: 在 ``DotCloud`` 上启用 ``glow_factor``
+- `d065e19 <https://github.com/3b1b/manim/pull/1688/commits/d065e1973d1d6ebd2bece81ce4bdf0c2fff7c772>`__: 添加 ``-e`` 选项，可以从命令行插入代码进入交互模式
+- `0e78027 <https://github.com/3b1b/manim/pull/1688/commits/0e78027186a976f7e5fa8d586f586bf6e6baab8d>`__: 针对弧形改进 ``point_from_proportion`` 
+- `781a993 <https://github.com/3b1b/manim/pull/1688/commits/781a9934fda6ba11f22ba32e8ccddcb3ba78592e>`__: 添加设置黑色背景线条的缩写 ``set_backstroke``
+- `0b898a5 <https://github.com/3b1b/manim/pull/1688/commits/0b898a5594203668ed9cad38b490ab49ba233bd4>`__: 添加 ``Suface.always_sort_to_camera``
+- `e899604 <https://github.com/3b1b/manim/pull/1688/commits/e899604a2d05f78202fcb3b9824ec34647237eae>`__: 添加获取相机欧拉角的方法
+- `407c53f <https://github.com/3b1b/manim/pull/1688/commits/407c53f97c061bfd8a53beacd88af4c786f9e9ee>`__: 改进 ``rotation_between_vectors``
+- `49743da <https://github.com/3b1b/manim/pull/1688/commits/49743daf3244bfa11a427040bdde8e2bb79589e8>`__: 添加 ``Mobject.insert_submobject`` 方法
+- `9dd1f47 <https://github.com/3b1b/manim/pull/1688/commits/9dd1f47dabca1580d6102e34e44574b0cba556e7>`__: 为整个场景的渲染创建全局进度条
+- `264f7b1 <https://github.com/3b1b/manim/pull/1691/commits/264f7b11726e9e736f0fe472f66e38539f74e848>`__: 添加 ``Circle.get_radius``
+- `83841ae <https://github.com/3b1b/manim/pull/1691/commits/83841ae41568a9c9dff44cd163106c19a74ac281>`__: 添加 ``Dodecahedron``
+- `a1d5147 <https://github.com/3b1b/manim/pull/1691/commits/a1d51474ea1ce3b7aa3efbe4c5e221be70ee2f5b>`__: 添加 ``GlowDot``
+- `#1678 <https://github.com/3b1b/manim/pull/1678>`__: 添加 ``MTex`` , 具体见 `#1678 <https://github.com/3b1b/manim/pull/1678>`__
+
+重构
+^^^^^^^^
+
+- `#1662 <https://github.com/3b1b/manim/pull/1662>`__: 重构 SVG 对于 ``A`` 指令的处理
+- `#1662 <https://github.com/3b1b/manim/pull/1662>`__: 重构 ``SingleStringTex.balance_braces``
+- `8b454fb <https://github.com/3b1b/manim/pull/1688/commits/8b454fbe9335a7011e947093230b07a74ba9c653>`__: 微调牛顿分形的 ``saturation_factor``
+- `317a5d6 <https://github.com/3b1b/manim/pull/1688/commits/317a5d6226475b6b54a78db7116c373ef84ea923>`__: 支持设置默认全屏预览
+- `e764da3 <https://github.com/3b1b/manim/pull/1688/commits/e764da3c3adc5ae2a4ce877b340d2b6abcddc2fc>`__: 对于图上的点使用 ``quick_point_from_proportion``
+- `d2182b9 <https://github.com/3b1b/manim/pull/1688/commits/d2182b9112300558b6c074cefd685f97c10b3898>`__: 使 ``Line.set_length`` 返回 self
+- `eea3c6b <https://github.com/3b1b/manim/pull/1688/commits/eea3c6b29438f9e9325329c4355e76b9f635e97a>`__: 更好的使 ``SurfaceMesh`` 与关联的面对齐
+- `ee1594a <https://github.com/3b1b/manim/pull/1688/commits/ee1594a3cb7a79b8fc361e4c4397a88c7d20c7e3>`__: 为 ``FlashAround`` 同步 ``fix_in_frame`` 状态
+- `ba23fbe <https://github.com/3b1b/manim/pull/1688/commits/ba23fbe71e4a038201cd7df1d200514ed1c13bc2>`__: 使 ``Mobject.is_fixed_in_frame`` 保持和 uniforms 更新
+- `98b0d26 <https://github.com/3b1b/manim/pull/1691/commits/98b0d266d2475926a606331923cca3dc1dea97ad>`__: 使 ``skip_animations`` 和 ``start_at_animation_number`` 可以同时使用
+- `f8e6e7d <https://github.com/3b1b/manim/pull/1691/commits/f8e6e7df3ceb6f3d845ced4b690a85b35e0b8d00>`__: 优化全局进度条
+- `8f1dfab <https://github.com/3b1b/manim/pull/1691/commits/8f1dfabff04a8456f5c4df75b0f97d50b2755003>`__: 使 ``VectorizedPoint`` 调用两个父类的 ``__init__``
+- `758f329 <https://github.com/3b1b/manim/pull/1691/commits/758f329a06a0c198b27a48c577575d94554305bf>`__: 在检查是否刷新三角剖分时使用点集的拷贝
+
+
+依赖
+^^^^^^^^^^^^
+
+- `#1675 <https://github.com/3b1b/manim/pull/1675>`__: 添加 python 包依赖 `skia-pathops <https://github.com/fonttools/skia-pathops>`__
 
 v1.2.0
 ------

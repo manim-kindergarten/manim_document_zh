@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../../_static/styles/default.css?3ae6a3a4ddb2e8a3fcc80c26">
-    <link rel="stylesheet" href="../../../_static/pygments.css?3ae6a3a4ddb2e8a3fcc80c26">
+    <link rel="stylesheet" href="../../../_static/styles/default.css?9424181dd0cde401cc4bc30e">
+    <link rel="stylesheet" href="../../../_static/pygments.css?9424181dd0cde401cc4bc30e">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
         <script src="../../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?3ae6a3a4ddb2e8a3fcc80c26"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?9424181dd0cde401cc4bc30e"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -231,7 +231,7 @@
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.mobject.types.dot_cloud.DotCloud.make_3d">
-<code class="sig-name descname">make_3d</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">gloss</span><span class="o">=</span><span class="default_value">0.5</span></em>, <em class="sig-param"><span class="n">shadow</span><span class="o">=</span><span class="default_value">0.2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.dot_cloud.DotCloud.make_3d" title="永久链接至目标">¶</a></dt>
+<code class="sig-name descname">make_3d</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">reflectiveness</span><span class="o">=</span><span class="default_value">0.5</span></em>, <em class="sig-param"><span class="n">shadow</span><span class="o">=</span><span class="default_value">0.2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.dot_cloud.DotCloud.make_3d" title="永久链接至目标">¶</a></dt>
 <dd><p>给点集添加光泽</p>
 </dd></dl>
 <dl class="py method">
@@ -260,11 +260,21 @@
 <h2>TrueDot<a class="headerlink" href="#truedot" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.types.dot_cloud.TrueDot">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.dot_cloud.</code><code class="sig-name descname">TrueDot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">center</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="n">radius</span><span class="o">=</span><span class="default_value">0.05</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.dot_cloud.TrueDot" title="永久链接至目标">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.dot_cloud.</code><code class="sig-name descname">TrueDot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">center</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.dot_cloud.TrueDot" title="永久链接至目标">¶</a></dt>
 <dd><p>一个单点</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">center</span></code> : 点的中心</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">radius</span></code> : 点的半径</p></li>
+</ul>
+</dd></dl>
+</div>
+<div class="section" id="glowdot">
+<h2>GlowDot<a class="headerlink" href="#glowdot" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.types.dot_cloud.GlowDot">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.dot_cloud.</code><code class="sig-name descname">GlowDot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">center</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.dot_cloud.GlowDot" title="永久链接至目标">¶</a></dt>
+<dd><p>带光泽的点，<code class="docutils literal notranslate"><span class="pre">glow_factor</span></code> 表示光泽</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">center</span></code> : 点的中心</p></li>
 </ul>
 </dd></dl>
 </div>
@@ -319,6 +329,7 @@
 <li><a class="reference internal" href="#">Dot Cloud</a><ul>
 <li><a class="reference internal" href="#dotcloud">DotCloud</a></li>
 <li><a class="reference internal" href="#truedot">TrueDot</a></li>
+<li><a class="reference internal" href="#glowdot">GlowDot</a></li>
 </ul>
 </li>
 </ul>
