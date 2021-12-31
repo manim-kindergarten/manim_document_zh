@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?914f50b53ea4447a75b11a5a">
-    <link rel="stylesheet" href="../../_static/pygments.css?914f50b53ea4447a75b11a5a">
+    <link rel="stylesheet" href="../../_static/styles/default.css?2273094897980603c88fcade">
+    <link rel="stylesheet" href="../../_static/pygments.css?2273094897980603c88fcade">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?914f50b53ea4447a75b11a5a"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?2273094897980603c88fcade"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -138,6 +138,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/text_mobject.html">Text</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/boolean_ops.html">BooleanOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mobject/changing.html">Changing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mobject/coordinate_systems.html">CoordinateSystems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../mobject/frame.html">Frame</a></li>
@@ -236,7 +237,8 @@
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">vec3</span> <span class="pre">unit_normal</span></code> : 单位法线</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">vec3</span> <span class="pre">light_coords</span></code> : 光源坐标</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">float</span> <span class="pre">gloss</span></code> : 光泽</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">float</span> <span class="pre">reflectiveness</span></code> : 反光度（光源照射到的地方会更亮）</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">float</span> <span class="pre">gloss</span></code> : 光泽（由物件反射到相机的光）</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">float</span> <span class="pre">shadow</span></code> : 阴影</p></li>
 </ul>
 <p>下面的代码可以将一个正方形从左到右渐变上色</p>

@@ -16,6 +16,7 @@ Tex
 MK做了一个关于常用 :class:`~manimlib.mobject.svg.tex_mobject.Tex` 和 :class:`~manimlib.mobject.svg.tex_mobject.TexText` 的视频（该视频适用于旧版，但新版也能凑合着看）：
 `〔manim教程〕第四讲 SVG、图片与文字  <https://www.bilibili.com/video/BV1CC4y1H7kp>`__
 
+另外，`凡人忆拾 <https://github.com/YishiMichael>`__ 正在写 ``MTex`` 类，针对 ``Tex`` 类的上色做了相当多的优化，目前还在测试期间，可以先尝试下载他的分支体验一下，待 Grant 合并分支后，我们将会把这一部分文档一并更新。
 
 SingleStringTex
 **********************

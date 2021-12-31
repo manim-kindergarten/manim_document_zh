@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?1de1d6a7f182449eaacbaf05">
-    <link rel="stylesheet" href="../../_static/pygments.css?1de1d6a7f182449eaacbaf05">
+    <link rel="stylesheet" href="../../_static/styles/default.css?5e62ccbda3ce73c7a68aa0e3">
+    <link rel="stylesheet" href="../../_static/pygments.css?5e62ccbda3ce73c7a68aa0e3">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?1de1d6a7f182449eaacbaf05"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?5e62ccbda3ce73c7a68aa0e3"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -138,6 +138,7 @@
 <li class="toctree-l3"><a class="reference internal" href="svg/text_mobject.html">Text</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="boolean_ops.html">BooleanOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="changing.html">Changing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="coordinate_systems.html">CoordinateSystems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="frame.html">Frame</a></li>
@@ -353,6 +354,11 @@
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">Circle</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Circle" title="永久链接至目标">¶</a></dt>
 <dd><p>圆</p>
 <p>参数同 <code class="docutils literal notranslate"><span class="pre">Arc</span></code> ，半径使用 <code class="docutils literal notranslate"><span class="pre">radius</span></code> (来自 <code class="docutils literal notranslate"><span class="pre">Arc</span></code> )</p>
+<dl class="py method">
+<dt id="manimlib.mobject.geometry.Circle.get_radius">
+<code class="sig-name descname">get_radius</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Circle.get_radius" title="永久链接至目标">¶</a></dt>
+<dd><p>获取圆的半径</p>
+</dd></dl>
 <dl class="py method">
 <dt id="manimlib.mobject.geometry.Circle.point_at_angle">
 <code class="sig-name descname">point_at_angle</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">angle</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Circle.point_at_angle" title="永久链接至目标">¶</a></dt>
@@ -573,7 +579,7 @@
 <dl class="py method">
 <dt id="manimlib.mobject.geometry.Arrow.set_stroke">
 <code class="sig-name descname">set_stroke</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">width</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Arrow.set_stroke" title="永久链接至目标">¶</a></dt>
-<dd><p>设置轮廓线</p>
+<dd><p>设置轮廓线（轮廓线浮于填充色上方）</p>
 </dd></dl>
 </dd></dl>
 </div>

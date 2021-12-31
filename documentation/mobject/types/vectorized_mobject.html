@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../../_static/styles/default.css?8ed50d2b1bb72ca6131a4ecb">
-    <link rel="stylesheet" href="../../../_static/pygments.css?8ed50d2b1bb72ca6131a4ecb">
+    <link rel="stylesheet" href="../../../_static/styles/default.css?6c45778e9968252dd8ca8c1f">
+    <link rel="stylesheet" href="../../../_static/pygments.css?6c45778e9968252dd8ca8c1f">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
         <script src="../../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?8ed50d2b1bb72ca6131a4ecb"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?6c45778e9968252dd8ca8c1f"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -138,6 +138,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../svg/text_mobject.html">Text</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../boolean_ops.html">BooleanOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../changing.html">Changing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../coordinate_systems.html">CoordinateSystems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../frame.html">Frame</a></li>
@@ -402,7 +403,7 @@
 <dl class="py method">
 <dt id="manimlib.mobject.types.vectorized_mobject.VMobject.point_from_proportion">
 <code class="sig-name descname">point_from_proportion</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">alpha</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.point_from_proportion" title="永久链接至目标">¶</a></dt>
-<dd><p>在整条路径上占比为 <code class="docutils literal notranslate"><span class="pre">alpha</span></code> 处的点</p>
+<dd><p>在整条路径上占比为 alpha 处的点</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.mobject.types.vectorized_mobject.VMobject.pointwise_become_partial">
@@ -413,6 +414,7 @@
 <dt id="manimlib.mobject.types.vectorized_mobject.VMobject.quick_point_from_proportion">
 <code class="sig-name descname">quick_point_from_proportion</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">alpha</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.quick_point_from_proportion" title="永久链接至目标">¶</a></dt>
 <dd><p>在整条路径上占比为 alpha 处的点</p>
+<p>这个方法建立在假设所有弧线长度相同的条件下，因此可能有一些误差，但是性能更好</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.mobject.types.vectorized_mobject.VMobject.refresh_triangulation">
@@ -423,6 +425,11 @@
 <dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_anchors_and_handles">
 <code class="sig-name descname">set_anchors_and_handles</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">anchors1</span></em>, <em class="sig-param"><span class="n">handles</span></em>, <em class="sig-param"><span class="n">anchors2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_anchors_and_handles" title="永久链接至目标">¶</a></dt>
 <dd><p>设置二阶贝塞尔曲线的锚点和手柄</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_backstroke">
+<code class="sig-name descname">set_backstroke</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">'#000000'</span></em>, <em class="sig-param"><span class="n">width</span><span class="o">=</span><span class="default_value">3</span></em>, <em class="sig-param"><span class="n">background</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_backstroke" title="永久链接至目标">¶</a></dt>
+<dd><p>设置背景轮廓线（轮廓线衬于填充色下方）</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_color">
@@ -467,7 +474,7 @@
 <dl class="py method">
 <dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_stroke">
 <code class="sig-name descname">set_stroke</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">width</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">opacity</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">background</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_stroke" title="永久链接至目标">¶</a></dt>
-<dd><p>设置轮廓线</p>
+<dd><p>设置轮廓线（轮廓线浮于填充色上方）</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_style">

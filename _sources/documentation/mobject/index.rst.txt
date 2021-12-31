@@ -21,6 +21,7 @@
 
    types/index
    svg/index
+   boolean_ops
    changing
    coordinate_systems
    frame

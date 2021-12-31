@@ -38,7 +38,9 @@ glsl 中的变量
 
 - ``vec3 light_coords`` : 光源坐标
 
-- ``float gloss`` : 光泽
+- ``float reflectiveness`` : 反光度（光源照射到的地方会更亮）
+
+- ``float gloss`` : 光泽（由物件反射到相机的光）
 
 - ``float shadow`` : 阴影
 

@@ -46,6 +46,11 @@ VCube
 .. autoclass:: manimlib.mobject.three_dimensions.VCube
     :members:
 
+Dodecahedron
+*****************
+.. autoclass:: manimlib.mobject.three_dimensions.Dodecahedron
+    :members:
+
 Prism
 *****************
 .. autoclass:: manimlib.mobject.three_dimensions.Prism

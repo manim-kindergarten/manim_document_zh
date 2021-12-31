@@ -1,15 +1,15 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="ValueTracker" href="value_tracker.html" /><link rel="prev" title="ShapeMatchers" href="shape_matchers.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Changing" href="changing.html" /><link rel="prev" title="Text" href="svg/text_mobject.html" />
 
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
-        <title>ThreeDimensions - ManimGL  文档</title>
+        <title>BooleanOps - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?3b34d9622a5f1665691a9755">
-    <link rel="stylesheet" href="../../_static/pygments.css?3b34d9622a5f1665691a9755">
+    <link rel="stylesheet" href="../../_static/styles/default.css?6c82934f7025d37685e9bb96">
+    <link rel="stylesheet" href="../../_static/pygments.css?6c82934f7025d37685e9bb96">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?3b34d9622a5f1665691a9755"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?6c82934f7025d37685e9bb96"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -138,7 +138,7 @@
 <li class="toctree-l3"><a class="reference internal" href="svg/text_mobject.html">Text</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="boolean_ops.html">BooleanOps</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">BooleanOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="changing.html">Changing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="coordinate_systems.html">CoordinateSystems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="frame.html">Frame</a></li>
@@ -152,7 +152,7 @@
 <li class="toctree-l2"><a class="reference internal" href="numbers.html">Numbers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="probability.html">Probability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="shape_matchers.html">ShapeMatchers</a></li>
-<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">ThreeDimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="three_dimensions.html">ThreeDimensions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="value_tracker.html">ValueTracker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="vector_field.html">VectorField</a></li>
 </ul>
@@ -201,156 +201,19 @@
         <label class="toc-overlay-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <div class="section" id="threedimensions">
-<h1>ThreeDimensions<a class="headerlink" href="#threedimensions" title="永久链接至标题">¶</a></h1>
-<div class="section" id="surfacemesh">
-<h2>SurfaceMesh<a class="headerlink" href="#surfacemesh" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.mobject.three_dimensions.SurfaceMesh">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.three_dimensions.</code><code class="sig-name descname">SurfaceMesh</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">uv_surface</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.three_dimensions.SurfaceMesh" title="永久链接至目标">¶</a></dt>
-<dd><p>表面网格</p>
-<p>传入一个关于 <code class="docutils literal notranslate"><span class="pre">u,</span> <span class="pre">v</span></code> 的参数方程</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">resolution</span></code> : 分割精度</p></li>
-</ul>
-</dd></dl>
+        <div class="section" id="booleanops">
+<h1>BooleanOps<a class="headerlink" href="#booleanops" title="永久链接至标题">¶</a></h1>
+<div class="admonition- admonition">
+<p class="admonition-title">声明</p>
+<p>该部分从 ManimCommunity 借鉴得来</p>
 </div>
-<div class="section" id="sphere">
-<h2>Sphere<a class="headerlink" href="#sphere" title="永久链接至标题">¶</a></h2>
+<div class="section" id="union">
+<h2>Union<a class="headerlink" href="#union" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.three_dimensions.Sphere">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.three_dimensions.</code><code class="sig-name descname">Sphere</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.three_dimensions.Sphere" title="永久链接至目标">¶</a></dt>
-<dd><p>球</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">radius</span></code> : 半径</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">resolution</span></code> : 分割精度</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">u_range</span></code> : u 范围</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">v_range</span></code> : v 范围</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">resolution</span></code> : 分割精度</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">color</span></code> : 颜色</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">opacity</span></code> : 透明度</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">gloss</span></code> : 光泽</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">shadow</span></code> : 阴影</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">opacity</span></code> : 透明度</p></li>
-</ul>
-</dd></dl>
-</div>
-<div class="section" id="torus">
-<h2>Torus<a class="headerlink" href="#torus" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.mobject.three_dimensions.Torus">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.three_dimensions.</code><code class="sig-name descname">Torus</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.three_dimensions.Torus" title="永久链接至目标">¶</a></dt>
-<dd><p>环面</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">r1</span></code> : 外半径</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">r2</span></code> : 内半径</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">u_range</span></code> : u 范围</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">v_range</span></code> : v 范围</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">resolution</span></code> : 分割精度</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">color</span></code> : 颜色</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">opacity</span></code> : 透明度</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">gloss</span></code> : 光泽</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">shadow</span></code> : 阴影</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">opacity</span></code> : 透明度</p></li>
-</ul>
-</dd></dl>
-</div>
-<div class="section" id="cylinder">
-<h2>Cylinder<a class="headerlink" href="#cylinder" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.mobject.three_dimensions.Cylinder">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.three_dimensions.</code><code class="sig-name descname">Cylinder</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.three_dimensions.Cylinder" title="永久链接至目标">¶</a></dt>
-<dd><p>圆柱</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">height</span></code> : 高度</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">radius</span></code> : 底面半径</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">u_range</span></code> : u 范围</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">v_range</span></code> : v 范围</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">resolution</span></code> : 分割精度</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">color</span></code> : 颜色</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">opacity</span></code> : 透明度</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">gloss</span></code> : 光泽</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">shadow</span></code> : 阴影</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">opacity</span></code> : 透明度</p></li>
-</ul>
-</dd></dl>
-</div>
-<div class="section" id="line3d">
-<h2>Line3D<a class="headerlink" href="#line3d" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.mobject.three_dimensions.Line3D">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.three_dimensions.</code><code class="sig-name descname">Line3D</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start</span></em>, <em class="sig-param"><span class="n">end</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.three_dimensions.Line3D" title="永久链接至目标">¶</a></dt>
-<dd><p>3D 直线</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">start</span></code> : 起始</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">end</span></code> : 终止</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">width</span></code> : 线宽</p></li>
-</ul>
-</dd></dl>
-</div>
-<div class="section" id="disk3d">
-<h2>Disk3D<a class="headerlink" href="#disk3d" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.mobject.three_dimensions.Disk3D">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.three_dimensions.</code><code class="sig-name descname">Disk3D</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.three_dimensions.Disk3D" title="永久链接至目标">¶</a></dt>
-<dd><p>圆盘</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">radius</span></code> : 半径</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">u_range</span></code> : u 范围</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">v_range</span></code> : v 范围</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">resolution</span></code> : 分割精度</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">color</span></code> : 颜色</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">opacity</span></code> : 透明度</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">gloss</span></code> : 光泽</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">shadow</span></code> : 阴影</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">opacity</span></code> : 透明度</p></li>
-</ul>
-</dd></dl>
-</div>
-<div class="section" id="square3d">
-<h2>Square3D<a class="headerlink" href="#square3d" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.mobject.three_dimensions.Square3D">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.three_dimensions.</code><code class="sig-name descname">Square3D</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.three_dimensions.Square3D" title="永久链接至目标">¶</a></dt>
-<dd><p>3D 正方形</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">side_length</span></code> : 边长</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">u_range</span></code> : u 范围</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">v_range</span></code> : v 范围</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">resolution</span></code> : 分割精度</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">color</span></code> : 颜色</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">opacity</span></code> : 透明度</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">gloss</span></code> : 光泽</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">shadow</span></code> : 阴影</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">opacity</span></code> : 透明度</p></li>
-</ul>
-</dd></dl>
-</div>
-<div class="section" id="cube">
-<h2>Cube<a class="headerlink" href="#cube" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.mobject.three_dimensions.Cube">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.three_dimensions.</code><code class="sig-name descname">Cube</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">parametric_surfaces</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.three_dimensions.Cube" title="永久链接至目标">¶</a></dt>
-<dd><p>立方体</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">side_length</span></code> : 边长</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">u_range</span></code> : u 范围</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">v_range</span></code> : v 范围</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">resolution</span></code> : 分割精度</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">color</span></code> : 颜色</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">opacity</span></code> : 透明度</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">gloss</span></code> : 光泽</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">shadow</span></code> : 阴影</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">opacity</span></code> : 透明度</p></li>
-</ul>
-</dd></dl>
-</div>
-<div class="section" id="vcube">
-<h2>VCube<a class="headerlink" href="#vcube" title="永久链接至标题">¶</a></h2>
-<dl class="py class">
-<dt id="manimlib.mobject.three_dimensions.VCube">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.three_dimensions.</code><code class="sig-name descname">VCube</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">side_length</span><span class="o">=</span><span class="default_value">2</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.three_dimensions.VCube" title="永久链接至目标">¶</a></dt>
-<dd><p>立方体，使用 2D 正方形绘制</p>
+<dt id="manimlib.mobject.boolean_ops.Union">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.boolean_ops.</code><code class="sig-name descname">Union</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">vmobjects</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.boolean_ops.Union" title="永久链接至目标">¶</a></dt>
+<dd><p>并集</p>
+<p>传入两个及以上 <code class="docutils literal notranslate"><span class="pre">VMobject</span></code>，返回它们并集的外轮廓</p>
 <p>初始化样式，VMobject 的样式有以下</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">fill</span></code> 填充样式</p>
@@ -371,13 +234,24 @@
 </ul>
 <p>其中，opacity, width 等属性均可以为一个列表，在渲染时会按照列表对其进行补间</p>
 </dd></dl>
+<div class="manim-example"><img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/UnionExample.png" class="align-center" id="unionexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/UnionExample.png"/>
+<h5 class="example-header">UnionExample<a class="headerlink" href="#unionexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">UnionExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">cir1</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">LEFT</span> <span class="o">*</span> <span class="mf">1.5</span><span class="p">)</span>
+        <span class="n">cir2</span> <span class="o">=</span> <span class="n">cir1</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">RIGHT</span> <span class="o">*</span> <span class="mf">1.5</span><span class="p">)</span>
+        <span class="n">u</span> <span class="o">=</span> <span class="n">Union</span><span class="p">(</span><span class="n">cir1</span><span class="p">,</span> <span class="n">cir2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">YELLOW</span><span class="p">,</span> <span class="n">fill_opacity</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">cir1</span><span class="p">,</span> <span class="n">cir2</span><span class="p">,</span> <span class="n">u</span><span class="p">)</span>
+</pre></div>
 </div>
-<div class="section" id="dodecahedron">
-<h2>Dodecahedron<a class="headerlink" href="#dodecahedron" title="永久链接至标题">¶</a></h2>
+</div></div>
+<div class="section" id="difference">
+<h2>Difference<a class="headerlink" href="#difference" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.three_dimensions.Dodecahedron">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.three_dimensions.</code><code class="sig-name descname">Dodecahedron</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">vmobjects</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.three_dimensions.Dodecahedron" title="永久链接至目标">¶</a></dt>
-<dd><p>十二面体</p>
+<dt id="manimlib.mobject.boolean_ops.Difference">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.boolean_ops.</code><code class="sig-name descname">Difference</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">subject</span></em>, <em class="sig-param"><span class="n">clip</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.boolean_ops.Difference" title="永久链接至目标">¶</a></dt>
+<dd><p>差集</p>
+<p>传入 submobject 和 clip，返回 submobject 裁去 clip 部分的轮廓线</p>
 <p>初始化样式，VMobject 的样式有以下</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">fill</span></code> 填充样式</p>
@@ -398,48 +272,118 @@
 </ul>
 <p>其中，opacity, width 等属性均可以为一个列表，在渲染时会按照列表对其进行补间</p>
 </dd></dl>
+<div class="manim-example"><img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/DifferenceExample.png" class="align-center" id="differenceexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/DifferenceExample.png"/>
+<h5 class="example-header">DifferenceExample<a class="headerlink" href="#differenceexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">DifferenceExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">cir1</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">LEFT</span> <span class="o">*</span> <span class="mf">1.5</span><span class="p">)</span>
+        <span class="n">cir2</span> <span class="o">=</span> <span class="n">cir1</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">RIGHT</span> <span class="o">*</span> <span class="mf">1.5</span><span class="p">)</span>
+        <span class="n">d</span> <span class="o">=</span> <span class="n">Difference</span><span class="p">(</span><span class="n">cir1</span><span class="p">,</span> <span class="n">cir2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">YELLOW</span><span class="p">,</span> <span class="n">fill_opacity</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">cir1</span><span class="p">,</span> <span class="n">cir2</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span>
+</pre></div>
 </div>
-<div class="section" id="prism">
-<h2>Prism<a class="headerlink" href="#prism" title="永久链接至标题">¶</a></h2>
+</div></div>
+<div class="section" id="intersection">
+<h2>Intersection<a class="headerlink" href="#intersection" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.three_dimensions.Prism">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.three_dimensions.</code><code class="sig-name descname">Prism</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">parametric_surfaces</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.three_dimensions.Prism" title="永久链接至目标">¶</a></dt>
-<dd><p>四棱柱（数组 dimensions 为每维上的长度）</p>
+<dt id="manimlib.mobject.boolean_ops.Intersection">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.boolean_ops.</code><code class="sig-name descname">Intersection</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">vmobjects</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.boolean_ops.Intersection" title="永久链接至目标">¶</a></dt>
+<dd><p>交集</p>
+<p>传入两个及以上 <code class="docutils literal notranslate"><span class="pre">VMobject</span></code>，返回它们交集的外轮廓</p>
+<p>初始化样式，VMobject 的样式有以下</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">u_range</span></code> : u 范围</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">v_range</span></code> : v 范围</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">resolution</span></code> : 分割精度</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">color</span></code> : 颜色</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">opacity</span></code> : 透明度</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">gloss</span></code> : 光泽</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">shadow</span></code> : 阴影</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">opacity</span></code> : 透明度</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">fill</span></code> 填充样式</p>
+<ul>
+<li><p>颜色: <code class="docutils literal notranslate"><span class="pre">fill_color</span></code> 或 <code class="docutils literal notranslate"><span class="pre">color</span></code></p></li>
+<li><p>不透明度: <code class="docutils literal notranslate"><span class="pre">fill_opacity</span></code></p></li>
 </ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stroke</span></code> 线条样式</p>
+<ul>
+<li><p>颜色: <code class="docutils literal notranslate"><span class="pre">stroke_color</span></code> 或 <code class="docutils literal notranslate"><span class="pre">color</span></code></p></li>
+<li><p>宽度: <code class="docutils literal notranslate"><span class="pre">stroke_width</span></code></p></li>
+<li><p>不透明度: <code class="docutils literal notranslate"><span class="pre">stroke_opacity</span></code></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gloss</span></code> 光泽</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">shadow</span></code> 阴影</p></li>
+</ul>
+<p>其中，opacity, width 等属性均可以为一个列表，在渲染时会按照列表对其进行补间</p>
 </dd></dl>
+<div class="manim-example"><img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/IntersectionExample.png" class="align-center" id="intersectionexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/IntersectionExample.png"/>
+<h5 class="example-header">IntersectionExample<a class="headerlink" href="#intersectionexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">IntersectionExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">cir1</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">LEFT</span> <span class="o">*</span> <span class="mf">1.5</span><span class="p">)</span>
+        <span class="n">cir2</span> <span class="o">=</span> <span class="n">cir1</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">RIGHT</span> <span class="o">*</span> <span class="mf">1.5</span><span class="p">)</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="n">Intersection</span><span class="p">(</span><span class="n">cir1</span><span class="p">,</span> <span class="n">cir2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">YELLOW</span><span class="p">,</span> <span class="n">fill_opacity</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">cir1</span><span class="p">,</span> <span class="n">cir2</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+</pre></div>
 </div>
+</div></div>
+<div class="section" id="exclusion">
+<h2>Exclusion<a class="headerlink" href="#exclusion" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.boolean_ops.Exclusion">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.boolean_ops.</code><code class="sig-name descname">Exclusion</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">vmobjects</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.boolean_ops.Exclusion" title="永久链接至目标">¶</a></dt>
+<dd><p>补集</p>
+<p>传入两个及以上 <code class="docutils literal notranslate"><span class="pre">VMobject</span></code>，返回它们经过 <code class="docutils literal notranslate"><span class="pre">XOR</span></code> 运算后图形的的外轮廓</p>
+<p>初始化样式，VMobject 的样式有以下</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">fill</span></code> 填充样式</p>
+<ul>
+<li><p>颜色: <code class="docutils literal notranslate"><span class="pre">fill_color</span></code> 或 <code class="docutils literal notranslate"><span class="pre">color</span></code></p></li>
+<li><p>不透明度: <code class="docutils literal notranslate"><span class="pre">fill_opacity</span></code></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stroke</span></code> 线条样式</p>
+<ul>
+<li><p>颜色: <code class="docutils literal notranslate"><span class="pre">stroke_color</span></code> 或 <code class="docutils literal notranslate"><span class="pre">color</span></code></p></li>
+<li><p>宽度: <code class="docutils literal notranslate"><span class="pre">stroke_width</span></code></p></li>
+<li><p>不透明度: <code class="docutils literal notranslate"><span class="pre">stroke_opacity</span></code></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gloss</span></code> 光泽</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">shadow</span></code> 阴影</p></li>
+</ul>
+<p>其中，opacity, width 等属性均可以为一个列表，在渲染时会按照列表对其进行补间</p>
+</dd></dl>
+<div class="manim-example"><img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/ExclusionExample.png" class="align-center" id="exclusionexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/ExclusionExample.png"/>
+<h5 class="example-header">ExclusionExample<a class="headerlink" href="#exclusionexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ExclusionExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">cirs</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span>
+            <span class="n">Circle</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="mf">1.5</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+                <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">i</span> <span class="o">/</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">TAU</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">i</span> <span class="o">/</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">TAU</span><span class="p">),</span> <span class="mi">0</span>
+            <span class="p">]))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+        <span class="p">])</span>
+        <span class="n">e</span> <span class="o">=</span> <span class="n">Exclusion</span><span class="p">(</span><span class="o">*</span><span class="n">cirs</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">YELLOW</span><span class="p">,</span> <span class="n">fill_opacity</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">cirs</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></div>
 </div>
 
       </article>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="value_tracker.html">
+          <a class="next-page" href="changing.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">ValueTracker</div>
+                <div class="title">Changing</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="shape_matchers.html">
+          <a class="prev-page" href="svg/text_mobject.html">
               <svg><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">ShapeMatchers</div>
+                <div class="title">Text</div>
                 
               </div>
             </a>
@@ -465,18 +409,11 @@
         </div>
         <div class="toc-tree">
           <ul>
-<li><a class="reference internal" href="#">ThreeDimensions</a><ul>
-<li><a class="reference internal" href="#surfacemesh">SurfaceMesh</a></li>
-<li><a class="reference internal" href="#sphere">Sphere</a></li>
-<li><a class="reference internal" href="#torus">Torus</a></li>
-<li><a class="reference internal" href="#cylinder">Cylinder</a></li>
-<li><a class="reference internal" href="#line3d">Line3D</a></li>
-<li><a class="reference internal" href="#disk3d">Disk3D</a></li>
-<li><a class="reference internal" href="#square3d">Square3D</a></li>
-<li><a class="reference internal" href="#cube">Cube</a></li>
-<li><a class="reference internal" href="#vcube">VCube</a></li>
-<li><a class="reference internal" href="#dodecahedron">Dodecahedron</a></li>
-<li><a class="reference internal" href="#prism">Prism</a></li>
+<li><a class="reference internal" href="#">BooleanOps</a><ul>
+<li><a class="reference internal" href="#union">Union</a></li>
+<li><a class="reference internal" href="#difference">Difference</a></li>
+<li><a class="reference internal" href="#intersection">Intersection</a></li>
+<li><a class="reference internal" href="#exclusion">Exclusion</a></li>
 </ul>
 </li>
 </ul>
