@@ -1,20 +1,87 @@
 变更
 ===========
 
-尚未发布
-----------
+v1.5.0
+------
 
 Bug 修复
 ^^^^^^^^^^
-- `f1996f8 <https://github.com/3b1b/manim/pull/1697/commits/f1996f8479f9e33d626b3b66e9eb6995ce231d86>`__: 临时修复了 ``Lightbulb``
+- 修复了 ``Write`` 作用于空物件的 bug (`#1740 <https://github.com/3b1b/manim/pull/1740>`__)
+
 
 新特性
 ^^^^^^^^^^^^
-- `#1694 <https://github.com/3b1b/manim/pull/1694>`__: 允许 ``BarChart`` 为 x 轴创建刻度
+- 添加 ``TransformMatchingMTex`` 以适配 ``MTex`` 类 (`#1725 <https://github.com/3b1b/manim/pull/1725>`__)
+- 添加 ``ImplicitFunction`` (`#1727 <https://github.com/3b1b/manim/pull/1727>`__)
+- 添加 ``Polyline`` (`#1731 <https://github.com/3b1b/manim/pull/1731>`__)
+- 允许 ``Mobject.set_points`` 方法接受一个空的列表，添加 ``Mobject.add_point`` 方法 (`#1739 <https://github.com/3b1b/manim/pull/1739/commits/a64259158538eae6043566aaf3d3329ff4ac394b>`__)
+- 添加 ``Scene.refresh_locked_data`` 方法 (`#1739 <https://github.com/3b1b/manim/pull/1739/commits/33d2894c167c577a15fdadbaf26488ff1f5bff87>`__)
+- 添加「演讲模式」，使用 ``-p`` 命令行参数 (`#1739 <https://github.com/3b1b/manim/pull/1739/commits/9a9cc8bdacb7541b7cd4a52ad705abc21f3e27fe>`__ and `#1742 <https://github.com/3b1b/manim/pull/1742>`__)
+- 允许在交互过程中按 ``ctrl+shift+e`` 进行嵌入 (`#1739 <https://github.com/3b1b/manim/pull/1739/commits/9df12fcb7d8360e51cd7021d6877ca1a5c31835e>`__ and `#1746 <https://github.com/3b1b/manim/pull/1746>`__)
+- 添加 ``Mobject.set_min_width/height/depth`` 方法 (`#1739 <https://github.com/3b1b/manim/pull/1739/commits/2798d15591a0375ae6bb9135473e6f5328267323>`__)
+- 允许 ``Mobject.match_coord/x/y/z`` 接受一个点 (`#1739 <https://github.com/3b1b/manim/pull/1739/commits/29a4d3e82ba94c007c996b2d1d0f923941452698>`__)
+- 给 ``DecimalNumber`` 添加了 ``text_config`` 参数 (`#1744 <https://github.com/3b1b/manim/pull/1744>`__)
+
+
+重构
+^^^^^^^^
+- 重构 ``MTex`` (`#1725 <https://github.com/3b1b/manim/pull/1725>`__)
+- 用 svg 元素重构了 ``SVGMobject`` (`#1731 <https://github.com/3b1b/manim/pull/1731>`__)
+- 确保 ``ParametricCurve`` 至少含有一个坐标点 (`#1739 <https://github.com/3b1b/manim/pull/1739/commits/2488b9e866fb1ecb842a27dd9f4956ec167e3dee>`__)
+- ``Axes`` 坐标系默认无箭头 (`#1739 <https://github.com/3b1b/manim/pull/1739/commits/6c6d387a210756c38feca7d34838aa9ac99bb58a>`__)
+- 编译 tex 字符串时不再在命令行显示 (`#1739 <https://github.com/3b1b/manim/pull/1739/commits/58e06e8f6b7c5059ff315d51fd0018fec5cfbb05>`__)
+- 重新组织 SVGMobject (`#1745 <https://github.com/3b1b/manim/pull/1745>`__)
+
+
+依赖
+^^^^^^^^^^^^
+- 添加 ``isosurfaces`` 的依赖 (`#1727 <https://github.com/3b1b/manim/pull/1727>`__)
+- 移除 ``argparse`` 的依赖，因为这个模块成为了 python 内置模块 (`#1728 <https://github.com/3b1b/manim/pull/1728>`__)
+- 移除 ``pyreadline`` 依赖 (`#1728 <https://github.com/3b1b/manim/pull/1728>`__)
+- 移除 ``cssselect2`` 依赖 (`#1731 <https://github.com/3b1b/manim/pull/1731>`__)
+- 添加 ``svgelements`` 依赖 (`#1731 <https://github.com/3b1b/manim/pull/1731>`__)
+
+
+v1.4.1
+------
+
+修复 BUG
+^^^^^^^^^^
+- 暂时修复了 BooleanOps 的填充色 BUG  (`#1724 <https://github.com/3b1b/manim/pull/1724>`__)
+- 从 ``collections.abc`` 引入 ``Iterable`` 而不是从 ``collections`` 引入，因为后者在 python 3.9 之后被废弃 (`d2e0811 <https://github.com/3b1b/manim/commit/d2e0811285f7908e71a65e664fec88b1af1c6144>`__)
+
+v1.4.0
+------
+
+修复 BUG
+^^^^^^^^^^
+- 暂时修复了 ``Lightbulb`` (`f1996f8 <https://github.com/3b1b/manim/pull/1697/commits/f1996f8479f9e33d626b3b66e9eb6995ce231d86>`__)
+- 修复了 ``SVGMobject`` 的一些 BUG (`#1712 <https://github.com/3b1b/manim/pull/1712>`__)
+- 修复了 SVG 路径字符串解析器的一些 BUG (`#1717 <https://github.com/3b1b/manim/pull/1717>`__)
+- 修复了 ``MTex`` 的一些 BUG (`#1720 <https://github.com/3b1b/manim/pull/1720>`__)
+
+新特性
+^^^^^^^^^^^^
+- 添加了一个选项，使得能够在 ``BarChart`` 添加 x 坐标轴的刻度 (`#1694 <https://github.com/3b1b/manim/pull/1694>`__)
+- 添加 ``Brace`` 的配置参数 ``lable_buff`` (`#1704 <https://github.com/3b1b/manim/pull/1704>`__)
+- 添加 SVG 的变化方法 ``rotate skewX skewY``  (`#1712 <https://github.com/3b1b/manim/pull/1712>`__)
+- 添加 ``SVGMobject`` 的样式支持 (`#1717 <https://github.com/3b1b/manim/pull/1717>`__)
+- 添加 SVG 的 <style> 元素解析器 (`#1719 <https://github.com/3b1b/manim/pull/1719>`__)
+- 添加 ``SVGMobject`` 的 <line> 元素解析器 (`#1719 <https://github.com/3b1b/manim/pull/1719>`__)
 
 重构 
 ^^^^^^^^
-- `5aa8d15 <https://github.com/3b1b/manim/pull/1697/commits/5aa8d15d85797f68a8f169ca69fd90d441a3abbe>`__: 在声音合并时使用 ``FFMPEG_BIN`` 代替 ``"ffmpeg"``
+- 在音频支持上使用 ``FFMPEG_BIN`` 代替 ``"ffmpeg"`` (`5aa8d15 <https://github.com/3b1b/manim/pull/1697/commits/5aa8d15d85797f68a8f169ca69fd90d441a3abbe>`__)
+- 将 ``CoordinateSystem.get_axes`` 和 ``.get_all_ranges`` 方法装饰为抽象方法 (`#1709 <https://github.com/3b1b/manim/pull/1709>`__)
+- 重构 SVG 路径解析器 (`#1712 <https://github.com/3b1b/manim/pull/1712>`__)
+- 允许 ``Mobject.scale`` 接受可迭代的 ``scale_factor`` 参数 (`#1712 <https://github.com/3b1b/manim/pull/1712>`__)
+- 重构 ``MTex`` (`#1716 <https://github.com/3b1b/manim/pull/1716>`__)
+- 完善了初始化配置的提示 (``manimgl --config``) (`#1721 <https://github.com/3b1b/manim/pull/1721>`__)
+- 重构 ``MTex`` (`#1723 <https://github.com/3b1b/manim/pull/1723>`__)
+
+依赖
+^^^^^^^^^^^^
+- 添加 `cssselect2 <https://github.com/Kozea/cssselect2>`__ (`#1719 <https://github.com/3b1b/manim/pull/1719>`__)
 
 
 v1.3.0

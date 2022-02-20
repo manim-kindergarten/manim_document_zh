@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?b2ffcd3c8b0c680e8201d7b5">
-    <link rel="stylesheet" href="../_static/pygments.css?b2ffcd3c8b0c680e8201d7b5">
+    <link rel="stylesheet" href="../_static/styles/default.css?6e8043bec34ea08aa9df2146">
+    <link rel="stylesheet" href="../_static/pygments.css?6e8043bec34ea08aa9df2146">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?b2ffcd3c8b0c680e8201d7b5"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?6e8043bec34ea08aa9df2146"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -203,31 +203,106 @@
         </label>
         <div class="section" id="id1">
 <h1>变更<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
-<div class="section" id="id2">
-<h2>尚未发布<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<div class="section" id="v1-5-0">
+<h2>v1.5.0<a class="headerlink" href="#v1-5-0" title="永久链接至标题">¶</a></h2>
 <div class="section" id="bug">
 <h3>Bug 修复<a class="headerlink" href="#bug" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/3b1b/manim/pull/1697/commits/f1996f8479f9e33d626b3b66e9eb6995ce231d86">f1996f8</a>: 临时修复了 <code class="docutils literal notranslate"><span class="pre">Lightbulb</span></code></p></li>
+<li><p>修复了 <code class="docutils literal notranslate"><span class="pre">Write</span></code> 作用于空物件的 bug (<a class="reference external" href="https://github.com/3b1b/manim/pull/1740">#1740</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h3>新特性<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+<ul class="simple">
+<li><p>添加 <code class="docutils literal notranslate"><span class="pre">TransformMatchingMTex</span></code> 以适配 <code class="docutils literal notranslate"><span class="pre">MTex</span></code> 类 (<a class="reference external" href="https://github.com/3b1b/manim/pull/1725">#1725</a>)</p></li>
+<li><p>添加 <code class="docutils literal notranslate"><span class="pre">ImplicitFunction</span></code> (<a class="reference external" href="https://github.com/3b1b/manim/pull/1727">#1727</a>)</p></li>
+<li><p>添加 <code class="docutils literal notranslate"><span class="pre">Polyline</span></code> (<a class="reference external" href="https://github.com/3b1b/manim/pull/1731">#1731</a>)</p></li>
+<li><p>允许 <code class="docutils literal notranslate"><span class="pre">Mobject.set_points</span></code> 方法接受一个空的列表，添加 <code class="docutils literal notranslate"><span class="pre">Mobject.add_point</span></code> 方法 (<a class="reference external" href="https://github.com/3b1b/manim/pull/1739/commits/a64259158538eae6043566aaf3d3329ff4ac394b">#1739</a>)</p></li>
+<li><p>添加 <code class="docutils literal notranslate"><span class="pre">Scene.refresh_locked_data</span></code> 方法 (<a class="reference external" href="https://github.com/3b1b/manim/pull/1739/commits/33d2894c167c577a15fdadbaf26488ff1f5bff87">#1739</a>)</p></li>
+<li><p>添加「演讲模式」，使用 <code class="docutils literal notranslate"><span class="pre">-p</span></code> 命令行参数 (<a class="reference external" href="https://github.com/3b1b/manim/pull/1739/commits/9a9cc8bdacb7541b7cd4a52ad705abc21f3e27fe">#1739</a> and <a class="reference external" href="https://github.com/3b1b/manim/pull/1742">#1742</a>)</p></li>
+<li><p>允许在交互过程中按 <code class="docutils literal notranslate"><span class="pre">ctrl+shift+e</span></code> 进行嵌入 (<a class="reference external" href="https://github.com/3b1b/manim/pull/1739/commits/9df12fcb7d8360e51cd7021d6877ca1a5c31835e">#1739</a> and <a class="reference external" href="https://github.com/3b1b/manim/pull/1746">#1746</a>)</p></li>
+<li><p>添加 <code class="docutils literal notranslate"><span class="pre">Mobject.set_min_width/height/depth</span></code> 方法 (<a class="reference external" href="https://github.com/3b1b/manim/pull/1739/commits/2798d15591a0375ae6bb9135473e6f5328267323">#1739</a>)</p></li>
+<li><p>允许 <code class="docutils literal notranslate"><span class="pre">Mobject.match_coord/x/y/z</span></code> 接受一个点 (<a class="reference external" href="https://github.com/3b1b/manim/pull/1739/commits/29a4d3e82ba94c007c996b2d1d0f923941452698">#1739</a>)</p></li>
+<li><p>给 <code class="docutils literal notranslate"><span class="pre">DecimalNumber</span></code> 添加了 <code class="docutils literal notranslate"><span class="pre">text_config</span></code> 参数 (<a class="reference external" href="https://github.com/3b1b/manim/pull/1744">#1744</a>)</p></li>
 </ul>
 </div>
 <div class="section" id="id3">
-<h3>新特性<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
+<h3>重构<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/3b1b/manim/pull/1694">#1694</a>: 允许 <code class="docutils literal notranslate"><span class="pre">BarChart</span></code> 为 x 轴创建刻度</p></li>
+<li><p>重构 <code class="docutils literal notranslate"><span class="pre">MTex</span></code> (<a class="reference external" href="https://github.com/3b1b/manim/pull/1725">#1725</a>)</p></li>
+<li><p>用 svg 元素重构了 <code class="docutils literal notranslate"><span class="pre">SVGMobject</span></code> (<a class="reference external" href="https://github.com/3b1b/manim/pull/1731">#1731</a>)</p></li>
+<li><p>确保 <code class="docutils literal notranslate"><span class="pre">ParametricCurve</span></code> 至少含有一个坐标点 (<a class="reference external" href="https://github.com/3b1b/manim/pull/1739/commits/2488b9e866fb1ecb842a27dd9f4956ec167e3dee">#1739</a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Axes</span></code> 坐标系默认无箭头 (<a class="reference external" href="https://github.com/3b1b/manim/pull/1739/commits/6c6d387a210756c38feca7d34838aa9ac99bb58a">#1739</a>)</p></li>
+<li><p>编译 tex 字符串时不再在命令行显示 (<a class="reference external" href="https://github.com/3b1b/manim/pull/1739/commits/58e06e8f6b7c5059ff315d51fd0018fec5cfbb05">#1739</a>)</p></li>
+<li><p>重新组织 SVGMobject (<a class="reference external" href="https://github.com/3b1b/manim/pull/1745">#1745</a>)</p></li>
 </ul>
 </div>
 <div class="section" id="id4">
-<h3>重构<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<h3>依赖<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/3b1b/manim/pull/1697/commits/5aa8d15d85797f68a8f169ca69fd90d441a3abbe">5aa8d15</a>: 在声音合并时使用 <code class="docutils literal notranslate"><span class="pre">FFMPEG_BIN</span></code> 代替 <code class="docutils literal notranslate"><span class="pre">"ffmpeg"</span></code></p></li>
+<li><p>添加 <code class="docutils literal notranslate"><span class="pre">isosurfaces</span></code> 的依赖 (<a class="reference external" href="https://github.com/3b1b/manim/pull/1727">#1727</a>)</p></li>
+<li><p>移除 <code class="docutils literal notranslate"><span class="pre">argparse</span></code> 的依赖，因为这个模块成为了 python 内置模块 (<a class="reference external" href="https://github.com/3b1b/manim/pull/1728">#1728</a>)</p></li>
+<li><p>移除 <code class="docutils literal notranslate"><span class="pre">pyreadline</span></code> 依赖 (<a class="reference external" href="https://github.com/3b1b/manim/pull/1728">#1728</a>)</p></li>
+<li><p>移除 <code class="docutils literal notranslate"><span class="pre">cssselect2</span></code> 依赖 (<a class="reference external" href="https://github.com/3b1b/manim/pull/1731">#1731</a>)</p></li>
+<li><p>添加 <code class="docutils literal notranslate"><span class="pre">svgelements</span></code> 依赖 (<a class="reference external" href="https://github.com/3b1b/manim/pull/1731">#1731</a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="v1-4-1">
+<h2>v1.4.1<a class="headerlink" href="#v1-4-1" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id5">
+<h3>修复 BUG<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
+<ul class="simple">
+<li><p>暂时修复了 BooleanOps 的填充色 BUG  (<a class="reference external" href="https://github.com/3b1b/manim/pull/1724">#1724</a>)</p></li>
+<li><p>从 <code class="docutils literal notranslate"><span class="pre">collections.abc</span></code> 引入 <code class="docutils literal notranslate"><span class="pre">Iterable</span></code> 而不是从 <code class="docutils literal notranslate"><span class="pre">collections</span></code> 引入，因为后者在 python 3.9 之后被废弃 (<a class="reference external" href="https://github.com/3b1b/manim/commit/d2e0811285f7908e71a65e664fec88b1af1c6144">d2e0811</a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="v1-4-0">
+<h2>v1.4.0<a class="headerlink" href="#v1-4-0" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id6">
+<h3>修复 BUG<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
+<ul class="simple">
+<li><p>暂时修复了 <code class="docutils literal notranslate"><span class="pre">Lightbulb</span></code> (<a class="reference external" href="https://github.com/3b1b/manim/pull/1697/commits/f1996f8479f9e33d626b3b66e9eb6995ce231d86">f1996f8</a>)</p></li>
+<li><p>修复了 <code class="docutils literal notranslate"><span class="pre">SVGMobject</span></code> 的一些 BUG (<a class="reference external" href="https://github.com/3b1b/manim/pull/1712">#1712</a>)</p></li>
+<li><p>修复了 SVG 路径字符串解析器的一些 BUG (<a class="reference external" href="https://github.com/3b1b/manim/pull/1717">#1717</a>)</p></li>
+<li><p>修复了 <code class="docutils literal notranslate"><span class="pre">MTex</span></code> 的一些 BUG (<a class="reference external" href="https://github.com/3b1b/manim/pull/1720">#1720</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h3>新特性<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h3>
+<ul class="simple">
+<li><p>添加了一个选项，使得能够在 <code class="docutils literal notranslate"><span class="pre">BarChart</span></code> 添加 x 坐标轴的刻度 (<a class="reference external" href="https://github.com/3b1b/manim/pull/1694">#1694</a>)</p></li>
+<li><p>添加 <code class="docutils literal notranslate"><span class="pre">Brace</span></code> 的配置参数 <code class="docutils literal notranslate"><span class="pre">lable_buff</span></code> (<a class="reference external" href="https://github.com/3b1b/manim/pull/1704">#1704</a>)</p></li>
+<li><p>添加 SVG 的变化方法 <code class="docutils literal notranslate"><span class="pre">rotate</span> <span class="pre">skewX</span> <span class="pre">skewY</span></code>  (<a class="reference external" href="https://github.com/3b1b/manim/pull/1712">#1712</a>)</p></li>
+<li><p>添加 <code class="docutils literal notranslate"><span class="pre">SVGMobject</span></code> 的样式支持 (<a class="reference external" href="https://github.com/3b1b/manim/pull/1717">#1717</a>)</p></li>
+<li><p>添加 SVG 的 &lt;style&gt; 元素解析器 (<a class="reference external" href="https://github.com/3b1b/manim/pull/1719">#1719</a>)</p></li>
+<li><p>添加 <code class="docutils literal notranslate"><span class="pre">SVGMobject</span></code> 的 &lt;line&gt; 元素解析器 (<a class="reference external" href="https://github.com/3b1b/manim/pull/1719">#1719</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h3>重构<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h3>
+<ul class="simple">
+<li><p>在音频支持上使用 <code class="docutils literal notranslate"><span class="pre">FFMPEG_BIN</span></code> 代替 <code class="docutils literal notranslate"><span class="pre">"ffmpeg"</span></code> (<a class="reference external" href="https://github.com/3b1b/manim/pull/1697/commits/5aa8d15d85797f68a8f169ca69fd90d441a3abbe">5aa8d15</a>)</p></li>
+<li><p>将 <code class="docutils literal notranslate"><span class="pre">CoordinateSystem.get_axes</span></code> 和 <code class="docutils literal notranslate"><span class="pre">.get_all_ranges</span></code> 方法装饰为抽象方法 (<a class="reference external" href="https://github.com/3b1b/manim/pull/1709">#1709</a>)</p></li>
+<li><p>重构 SVG 路径解析器 (<a class="reference external" href="https://github.com/3b1b/manim/pull/1712">#1712</a>)</p></li>
+<li><p>允许 <code class="docutils literal notranslate"><span class="pre">Mobject.scale</span></code> 接受可迭代的 <code class="docutils literal notranslate"><span class="pre">scale_factor</span></code> 参数 (<a class="reference external" href="https://github.com/3b1b/manim/pull/1712">#1712</a>)</p></li>
+<li><p>重构 <code class="docutils literal notranslate"><span class="pre">MTex</span></code> (<a class="reference external" href="https://github.com/3b1b/manim/pull/1716">#1716</a>)</p></li>
+<li><p>完善了初始化配置的提示 (<code class="docutils literal notranslate"><span class="pre">manimgl</span> <span class="pre">--config</span></code>) (<a class="reference external" href="https://github.com/3b1b/manim/pull/1721">#1721</a>)</p></li>
+<li><p>重构 <code class="docutils literal notranslate"><span class="pre">MTex</span></code> (<a class="reference external" href="https://github.com/3b1b/manim/pull/1723">#1723</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h3>依赖<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h3>
+<ul class="simple">
+<li><p>添加 <a class="reference external" href="https://github.com/Kozea/cssselect2">cssselect2</a> (<a class="reference external" href="https://github.com/3b1b/manim/pull/1719">#1719</a>)</p></li>
 </ul>
 </div>
 </div>
 <div class="section" id="v1-3-0">
 <h2>v1.3.0<a class="headerlink" href="#v1-3-0" title="永久链接至标题">¶</a></h2>
-<div class="section" id="id5">
-<h3>Bug 修复<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id10">
+<h3>Bug 修复<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/3b1b/manim/pull/1653">#1653</a>: 修复 <code class="docutils literal notranslate"><span class="pre">Mobject.stretch_to_fit_depth</span></code></p></li>
 <li><p><a class="reference external" href="https://github.com/3b1b/manim/pull/1655">#1655</a>: 修复旋转相机的 bug</p></li>
@@ -239,8 +314,8 @@
 <li><p><a class="reference external" href="https://github.com/3b1b/manim/pull/1691/commits/7023548ec62c4adb2f371aab6a8c7f62deb7c33c">7023548</a>: 修复 <code class="docutils literal notranslate"><span class="pre">TransformMatchingParts</span></code></p></li>
 </ul>
 </div>
-<div class="section" id="id6">
-<h3>新特性<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id11">
+<h3>新特性<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/3b1b/manim/commit/e10f850d0d9f971931cc85d44befe67dc842af6d">e10f850</a>: 添加命令行参数 <code class="docutils literal notranslate"><span class="pre">--log-level</span></code> 以指定日志级别</p></li>
 <li><p><a class="reference external" href="https://github.com/3b1b/manim/pull/1667">#1667</a>: 为 <code class="docutils literal notranslate"><span class="pre">Mobject</span></code> 添加运算符 (<code class="docutils literal notranslate"><span class="pre">+</span></code> 和 <code class="docutils literal notranslate"><span class="pre">*</span></code>)</p></li>
@@ -268,8 +343,8 @@
 <li><p><a class="reference external" href="https://github.com/3b1b/manim/pull/1678">#1678</a>: 添加 <code class="docutils literal notranslate"><span class="pre">MTex</span></code> , 具体见 <a class="reference external" href="https://github.com/3b1b/manim/pull/1678">#1678</a></p></li>
 </ul>
 </div>
-<div class="section" id="id7">
-<h3>重构<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id12">
+<h3>重构<a class="headerlink" href="#id12" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/3b1b/manim/pull/1662">#1662</a>: 重构 SVG 对于 <code class="docutils literal notranslate"><span class="pre">A</span></code> 指令的处理</p></li>
 <li><p><a class="reference external" href="https://github.com/3b1b/manim/pull/1662">#1662</a>: 重构 <code class="docutils literal notranslate"><span class="pre">SingleStringTex.balance_braces</span></code></p></li>
@@ -286,8 +361,8 @@
 <li><p><a class="reference external" href="https://github.com/3b1b/manim/pull/1691/commits/758f329a06a0c198b27a48c577575d94554305bf">758f329</a>: 在检查是否刷新三角剖分时使用点集的拷贝</p></li>
 </ul>
 </div>
-<div class="section" id="id8">
-<h3>依赖<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id13">
+<h3>依赖<a class="headerlink" href="#id13" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/3b1b/manim/pull/1675">#1675</a>: 添加 python 包依赖 <a class="reference external" href="https://github.com/fonttools/skia-pathops">skia-pathops</a></p></li>
 </ul>
@@ -295,8 +370,8 @@
 </div>
 <div class="section" id="v1-2-0">
 <h2>v1.2.0<a class="headerlink" href="#v1-2-0" title="永久链接至标题">¶</a></h2>
-<div class="section" id="id9">
-<h3>BUG 修复<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id14">
+<h3>BUG 修复<a class="headerlink" href="#id14" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/3b1b/manim/pull/1592">#1592</a>: 修复 3D <code class="docutils literal notranslate"><span class="pre">put_start_and_end_on</span></code></p></li>
 <li><p><a class="reference external" href="https://github.com/3b1b/manim/pull/1601">#1601</a>: 修复 <code class="docutils literal notranslate"><span class="pre">DecimalNumber</span></code> 在缩放大小时的问题</p></li>
@@ -312,8 +387,8 @@
 <li><p><a class="reference external" href="https://github.com/3b1b/manim/commit/7732d2f0ee10449c5731499396d4911c03e89648">7732d2f</a>: 修复 <code class="docutils literal notranslate"><span class="pre">ComplexPlane</span></code> -i 显示 bug</p></li>
 </ul>
 </div>
-<div class="section" id="id10">
-<h3>新特性<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id15">
+<h3>新特性<a class="headerlink" href="#id15" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/3b1b/manim/pull/1598">#1598</a>: <code class="docutils literal notranslate"><span class="pre">SVGMobject</span></code> 支持椭圆弧命令 <code class="docutils literal notranslate"><span class="pre">A</span></code></p></li>
 <li><p><a class="reference external" href="https://github.com/3b1b/manim/pull/1607">#1607</a>: 新增 <a class="reference internal" href="../documentation/animation/indication.html#manimlib.animation.indication.FlashyFadeIn" title="manimlib.animation.indication.FlashyFadeIn"><code class="xref py py-class docutils literal notranslate"><span class="pre">FlashyFadeIn</span></code></a></p></li>
@@ -335,8 +410,8 @@
 <li><p><a class="reference external" href="https://github.com/3b1b/manim/commit/6cdbe0d67a11ab14a6d84840a114ae6d3af10168">6cdbe0d</a>: <code class="docutils literal notranslate"><span class="pre">ImageMoject</span></code> 保存图像的文件路径</p></li>
 </ul>
 </div>
-<div class="section" id="id11">
-<h3>重构<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id16">
+<h3>重构<a class="headerlink" href="#id16" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/3b1b/manim/pull/1601">#1601</a>: <code class="docutils literal notranslate"><span class="pre">Mobject.scale</span></code> 改为更简单的实现</p></li>
 <li><p><a class="reference external" href="https://github.com/3b1b/manim/commit/b667db2d311a11cbbca2a6ff511d2c3cf1675486">b667db2</a>: 简化 <code class="docutils literal notranslate"><span class="pre">Square</span></code></p></li>
@@ -356,8 +431,8 @@
 </div>
 <div class="section" id="v1-1-0">
 <h2>v1.1.0<a class="headerlink" href="#v1-1-0" title="永久链接至标题">¶</a></h2>
-<div class="section" id="id12">
-<h3>Bug 修复<a class="headerlink" href="#id12" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id17">
+<h3>Bug 修复<a class="headerlink" href="#id17" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
 <li><p>修复了当 <code class="docutils literal notranslate"><span class="pre">length=0</span></code> 时 <a class="reference internal" href="../documentation/utils/iterables.html#manimlib.utils.iterables.resize_with_interpolation" title="manimlib.utils.iterables.resize_with_interpolation"><code class="xref py py-func docutils literal notranslate"><span class="pre">resize_with_interpolation()</span></code></a> 的bug</p></li>
 <li><p>修复了 <a class="reference internal" href="../documentation/mobject/geometry.html#manimlib.mobject.geometry.Elbow" title="manimlib.mobject.geometry.Elbow"><code class="xref py py-class docutils literal notranslate"><span class="pre">Elbow</span></code></a> 中 <code class="docutils literal notranslate"><span class="pre">__init__</span></code> 的错误用法</p></li>
@@ -368,8 +443,8 @@
 <li><p>修复了 <code class="docutils literal notranslate"><span class="pre">example_scenes.py</span></code> 中的 <code class="docutils literal notranslate"><span class="pre">AnimatingMethods</span></code></p></li>
 </ul>
 </div>
-<div class="section" id="id13">
-<h3>新特性<a class="headerlink" href="#id13" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id18">
+<h3>新特性<a class="headerlink" href="#id18" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
 <li><p>新增了 <code class="xref py py-class docutils literal notranslate"><span class="pre">VShowPassingFlash</span></code></p></li>
 <li><p>新增了 <code class="docutils literal notranslate"><span class="pre">COLORMAP_3B1B</span></code></p></li>
@@ -444,28 +519,40 @@
         <div class="toc-tree">
           <ul>
 <li><a class="reference internal" href="#">变更</a><ul>
-<li><a class="reference internal" href="#id2">尚未发布</a><ul>
+<li><a class="reference internal" href="#v1-5-0">v1.5.0</a><ul>
 <li><a class="reference internal" href="#bug">Bug 修复</a></li>
-<li><a class="reference internal" href="#id3">新特性</a></li>
-<li><a class="reference internal" href="#id4">重构</a></li>
+<li><a class="reference internal" href="#id2">新特性</a></li>
+<li><a class="reference internal" href="#id3">重构</a></li>
+<li><a class="reference internal" href="#id4">依赖</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#v1-4-1">v1.4.1</a><ul>
+<li><a class="reference internal" href="#id5">修复 BUG</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#v1-4-0">v1.4.0</a><ul>
+<li><a class="reference internal" href="#id6">修复 BUG</a></li>
+<li><a class="reference internal" href="#id7">新特性</a></li>
+<li><a class="reference internal" href="#id8">重构</a></li>
+<li><a class="reference internal" href="#id9">依赖</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#v1-3-0">v1.3.0</a><ul>
-<li><a class="reference internal" href="#id5">Bug 修复</a></li>
-<li><a class="reference internal" href="#id6">新特性</a></li>
-<li><a class="reference internal" href="#id7">重构</a></li>
-<li><a class="reference internal" href="#id8">依赖</a></li>
+<li><a class="reference internal" href="#id10">Bug 修复</a></li>
+<li><a class="reference internal" href="#id11">新特性</a></li>
+<li><a class="reference internal" href="#id12">重构</a></li>
+<li><a class="reference internal" href="#id13">依赖</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#v1-2-0">v1.2.0</a><ul>
-<li><a class="reference internal" href="#id9">BUG 修复</a></li>
-<li><a class="reference internal" href="#id10">新特性</a></li>
-<li><a class="reference internal" href="#id11">重构</a></li>
+<li><a class="reference internal" href="#id14">BUG 修复</a></li>
+<li><a class="reference internal" href="#id15">新特性</a></li>
+<li><a class="reference internal" href="#id16">重构</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#v1-1-0">v1.1.0</a><ul>
-<li><a class="reference internal" href="#id12">Bug 修复</a></li>
-<li><a class="reference internal" href="#id13">新特性</a></li>
+<li><a class="reference internal" href="#id17">Bug 修复</a></li>
+<li><a class="reference internal" href="#id18">新特性</a></li>
 </ul>
 </li>
 </ul>

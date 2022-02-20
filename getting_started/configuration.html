@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?31e0e992118d3e36c1146184">
-    <link rel="stylesheet" href="../_static/pygments.css?31e0e992118d3e36c1146184">
+    <link rel="stylesheet" href="../_static/styles/default.css?73bc969b090a6af11cc8d416">
+    <link rel="stylesheet" href="../_static/pygments.css?73bc969b090a6af11cc8d416">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?31e0e992118d3e36c1146184"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?73bc969b090a6af11cc8d416"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -245,41 +245,41 @@ manim-render &lt;code&gt;.py &lt;Scene&gt; &lt;flags&gt;
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--version</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">-v</span></code></p></td>
-<td><p>显示 ManimGL 的版本</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--help</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--help</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-h</span></code></p></td>
 <td><p>显示提示信息并退出</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--write_file</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--write_file</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-w</span></code></p></td>
 <td><p>把场景渲染成视频文件</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--skip_animations</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--skip_animations</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-s</span></code></p></td>
 <td><p>跳到最后一帧</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--low_quality</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--low_quality</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-l</span></code></p></td>
 <td><p>使用低质量渲染(默认 480p15)</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--medium_quality</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--medium_quality</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-m</span></code></p></td>
 <td><p>使用中等质量渲染(默认 720p30)</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--hd</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--hd</span></code></p></td>
 <td></td>
 <td><p>使用高质量渲染(默认 1080p30)</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--uhd</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--uhd</span></code></p></td>
 <td></td>
 <td><p>使用 4K 质量渲染</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--full_screen</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--full_screen</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-f</span></code></p></td>
 <td><p>全屏呈现窗口</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--presenter_mode</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-p</span></code></p></td>
+<td><p>场景将会在 wait 时暂停，等待用户按下空格或右方向键时继续播放（即幻灯片效果）</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--save_pngs</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-g</span></code></p></td>
@@ -348,10 +348,6 @@ manim-render &lt;code&gt;.py &lt;Scene&gt; &lt;flags&gt;
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--config_file</span> <span class="pre">CONFIG_FILE</span></code></p></td>
 <td></td>
 <td><p>使用指定的配置文件</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--log-level</span> <span class="pre">LOG_LEVEL</span></code></p></td>
-<td></td>
-<td><p>输出日志的等级</p></td>
 </tr>
 </tbody>
 </table></div>
