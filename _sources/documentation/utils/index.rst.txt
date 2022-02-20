@@ -23,5 +23,4 @@
    simple_functions
    sounds
    space_ops
-   strings
    tex_file_writing

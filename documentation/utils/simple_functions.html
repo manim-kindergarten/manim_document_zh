@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?e1b12d08343269197df0b430">
-    <link rel="stylesheet" href="../../_static/pygments.css?e1b12d08343269197df0b430">
+    <link rel="stylesheet" href="../../_static/styles/default.css?0ba2a4dc69ebff72edf07e2b">
+    <link rel="stylesheet" href="../../_static/pygments.css?0ba2a4dc69ebff72edf07e2b">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?e1b12d08343269197df0b430"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?0ba2a4dc69ebff72edf07e2b"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -133,6 +133,7 @@
 <li class="toctree-l2 has-children"><a class="reference internal" href="../mobject/svg/index.html">svg</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label for="toctree-checkbox-5"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/brace.html">Brace</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/drawings.html">Drawings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/mtex_mobject.html">MTex</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/svg_mobject.html">SVGMobject</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/tex_mobject.html">Tex</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/text_mobject.html">Text</a></li>
@@ -178,7 +179,6 @@
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Simple_functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sounds.html">Sounds</a></li>
 <li class="toctree-l2"><a class="reference internal" href="space_ops.html">Space_ops</a></li>
-<li class="toctree-l2"><a class="reference internal" href="strings.html">Strings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tex_file_writing.html">Tex_file_writing</a></li>
 </ul>
 </li>
@@ -211,13 +211,11 @@
 <dd></dd></dl>
 <p>sigmoid 函数， <code class="docutils literal notranslate"><span class="pre">1/(1+e^(-x))</span></code></p>
 <hr class="docutils"/>
-<p>计算 <span class="math notranslate nohighlight">\(C^k_n\)</span> ，并使用缓存</p>
-<hr class="docutils"/>
 <dl class="py function">
-<dt id="manimlib.utils.simple_functions.choose">
-<code class="sig-prename descclassname">manimlib.utils.simple_functions.</code><code class="sig-name descname">choose</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em>, <em class="sig-param"><span class="n">k</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.simple_functions.choose" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.utils.simple_functions.gen_choose">
+<code class="sig-prename descclassname">manimlib.utils.simple_functions.</code><code class="sig-name descname">gen_choose</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em>, <em class="sig-param"><span class="n">r</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.simple_functions.gen_choose" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
-<p>计算 <span class="math notranslate nohighlight">\(C^k_n\)</span> ， 若 <code class="docutils literal notranslate"><span class="pre">use_cache=True</span></code> 则使用缓存，否则直接计算</p>
+<p>计算 <span class="math notranslate nohighlight">\(C^k_n\)</span></p>
 <hr class="docutils"/>
 <dl class="py function">
 <dt id="manimlib.utils.simple_functions.get_num_args">
@@ -230,8 +228,6 @@
 <code class="sig-prename descclassname">manimlib.utils.simple_functions.</code><code class="sig-name descname">get_parameters</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.simple_functions.get_parameters" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>获取 function 的参数</p>
-<hr class="docutils"/>
-<p>将 ndarray 中小于 min 的值全设为 min，大于 max 的值全设为 max，并返回</p>
 <hr class="docutils"/>
 <dl class="py function">
 <dt id="manimlib.utils.simple_functions.fdiv">

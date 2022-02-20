@@ -1,7 +1,7 @@
 Text
 ============
 
-:class:`~manimlib.mobject.svg.text_mobject.Text` 使用 ``cairo`` 来生成文字的svg，
+:class:`~manimlib.mobject.svg.text_mobject.Text` 使用 ``ManimPango`` 来生成文字的svg，
 所以它不需要 ``LaTeX`` 环境，而且可以方便地更改字体，但是不能够书写公式。
 需要更改字体，而且要使用公式的，可以尝试cigar666编写的 `MyText <https://github.com/manim-kindergarten/manim_sandbox/blob/master/utils/mobjects/MyText.py>`_
 

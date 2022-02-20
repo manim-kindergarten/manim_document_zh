@@ -18,6 +18,8 @@ SVGMobject
 - 和绘图相关的元素目前只支持 ``path,rect,circle,ellipse,polygon,polyline``，不支持 ``text,line`` 等其他元素
 - 自己制作svg，推荐使用 ``Adobe Illustrator`` ，并直接选择存储为（不选导出）
 
-VMobjectFromSVGPathstring
+
+VMobjectFromSVGPath
 *************************
-.. autoclass:: manimlib.mobject.svg.svg_mobject.VMobjectFromSVGPathstring
+.. autoclass:: manimlib.mobject.svg.svg_mobject.VMobjectFromSVGPath
+

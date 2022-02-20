@@ -1,15 +1,15 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../../genindex.html" /><link rel="search" title="搜索" href="../../../search.html" /><link rel="next" title="Tex" href="tex_mobject.html" /><link rel="prev" title="Drawings" href="drawings.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../../genindex.html" /><link rel="search" title="搜索" href="../../../search.html" /><link rel="next" title="Tex" href="tex_mobject.html" /><link rel="prev" title="MTex" href="mtex_mobject.html" />
 
     <link rel="shortcut icon" href="../../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>SVGMobject - ManimGL  文档</title>
       <link rel="stylesheet" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../../_static/styles/default.css?cf1793e9e716dbda6a26eccd">
-    <link rel="stylesheet" href="../../../_static/pygments.css?cf1793e9e716dbda6a26eccd">
+    <link rel="stylesheet" href="../../../_static/styles/default.css?007e394dabd9df8027f18659">
+    <link rel="stylesheet" href="../../../_static/pygments.css?007e394dabd9df8027f18659">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
         <script src="../../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?cf1793e9e716dbda6a26eccd"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?007e394dabd9df8027f18659"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -133,6 +133,7 @@
 <li class="toctree-l2 current has-children"><a class="reference internal" href="index.html">svg</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label for="toctree-checkbox-5"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="brace.html">Brace</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drawings.html">Drawings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mtex_mobject.html">MTex</a></li>
 <li class="toctree-l3 current current-page"><a class="current reference internal" href="#">SVGMobject</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tex_mobject.html">Tex</a></li>
 <li class="toctree-l3"><a class="reference internal" href="text_mobject.html">Text</a></li>
@@ -178,7 +179,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../../utils/simple_functions.html">Simple_functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../utils/sounds.html">Sounds</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../utils/space_ops.html">Space_ops</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../utils/strings.html">Strings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../utils/tex_file_writing.html">Tex_file_writing</a></li>
 </ul>
 </li>
@@ -241,8 +241,32 @@
 <li><p>自己制作svg，推荐使用 <code class="docutils literal notranslate"><span class="pre">Adobe</span> <span class="pre">Illustrator</span></code> ，并直接选择存储为（不选导出）</p></li>
 </ul>
 </div>
-<div class="section" id="vmobjectfromsvgpathstring">
-<h2>VMobjectFromSVGPathstring<a class="headerlink" href="#vmobjectfromsvgpathstring" title="永久链接至标题">¶</a></h2>
+<div class="section" id="vmobjectfromsvgpath">
+<h2>VMobjectFromSVGPath<a class="headerlink" href="#vmobjectfromsvgpath" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.mobject.svg.svg_mobject.VMobjectFromSVGPath">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.svg_mobject.</code><code class="sig-name descname">VMobjectFromSVGPath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path_obj</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.svg_mobject.VMobjectFromSVGPath" title="永久链接至目标">¶</a></dt>
+<dd><p>传入svg的path元素的字符串，得到一个由其生成的VMobject，即只处理path</p>
+<p>初始化样式，VMobject 的样式有以下</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">fill</span></code> 填充样式</p>
+<ul>
+<li><p>颜色: <code class="docutils literal notranslate"><span class="pre">fill_color</span></code> 或 <code class="docutils literal notranslate"><span class="pre">color</span></code></p></li>
+<li><p>不透明度: <code class="docutils literal notranslate"><span class="pre">fill_opacity</span></code></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stroke</span></code> 线条样式</p>
+<ul>
+<li><p>颜色: <code class="docutils literal notranslate"><span class="pre">stroke_color</span></code> 或 <code class="docutils literal notranslate"><span class="pre">color</span></code></p></li>
+<li><p>宽度: <code class="docutils literal notranslate"><span class="pre">stroke_width</span></code></p></li>
+<li><p>不透明度: <code class="docutils literal notranslate"><span class="pre">stroke_opacity</span></code></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gloss</span></code> 光泽</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">shadow</span></code> 阴影</p></li>
+</ul>
+<p>其中，opacity, width 等属性均可以为一个列表，在渲染时会按照列表对其进行补间</p>
+</dd></dl>
 </div>
 </div>
 
@@ -259,14 +283,14 @@
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="drawings.html">
+          <a class="prev-page" href="mtex_mobject.html">
               <svg><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Drawings</div>
+                <div class="title">MTex</div>
                 
               </div>
             </a>
@@ -294,7 +318,7 @@
           <ul>
 <li><a class="reference internal" href="#">SVGMobject</a><ul>
 <li><a class="reference internal" href="#id1">SVGMobject</a></li>
-<li><a class="reference internal" href="#vmobjectfromsvgpathstring">VMobjectFromSVGPathstring</a></li>
+<li><a class="reference internal" href="#vmobjectfromsvgpath">VMobjectFromSVGPath</a></li>
 </ul>
 </li>
 </ul>

@@ -47,7 +47,7 @@ v1.4.1
 
 修复 BUG
 ^^^^^^^^^^
-- 暂时修复了 BooleanOps 的填充色 BUG  (`#1724 <https://github.com/3b1b/manim/pull/1724>`__)
+- 暂时修复了 ``BooleanOps`` 的填充色 BUG  (`#1724 <https://github.com/3b1b/manim/pull/1724>`__)
 - 从 ``collections.abc`` 引入 ``Iterable`` 而不是从 ``collections`` 引入，因为后者在 python 3.9 之后被废弃 (`d2e0811 <https://github.com/3b1b/manim/commit/d2e0811285f7908e71a65e664fec88b1af1c6144>`__)
 
 v1.4.0

@@ -91,9 +91,3 @@ Color
 
 在 COLOR_MAP 中随机选取颜色
 
------
-
-.. autofunction:: manimlib.utils.color.get_shaded_rgb(rgb, point, unit_normal_vect, light_source)
-
-获取从光源 light_source 到 point 着色的 RGB
-
