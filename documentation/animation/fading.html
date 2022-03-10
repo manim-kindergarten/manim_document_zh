@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?afb3b61d0b8cf729b83e523d">
-    <link rel="stylesheet" href="../../_static/pygments.css?afb3b61d0b8cf729b83e523d">
+    <link rel="stylesheet" href="../../_static/styles/default.css?a2d4342b1cbf09ce2d335412">
+    <link rel="stylesheet" href="../../_static/pygments.css?a2d4342b1cbf09ce2d335412">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?afb3b61d0b8cf729b83e523d"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?a2d4342b1cbf09ce2d335412"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -223,15 +223,15 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">shift</span></code> : 移动向量</p></li>
 </ul>
 </dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="fadeoutexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FadeOutExample.mp4"></video><h5 class="example-header">FadeOutExample<a class="headerlink" href="#fadeoutexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeOutExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="fadeoutexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FadeOutExample.mp4"></video><h5 class="example-header">FadeOutExample<a class="headerlink" href="#fadeoutexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeOutExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
-                <span class="n">Circle</span><span class="p">(),</span>
-                <span class="n">Circle</span><span class="p">(</span><span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
-                <span class="n">Text</span><span class="p">(</span><span class="s2">"Text"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-            <span class="p">)</span>
+            <span class="n">Circle</span><span class="p">(),</span>
+            <span class="n">Circle</span><span class="p">(</span><span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+            <span class="n">Text</span><span class="p">(</span><span class="s2">"Text"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+        <span class="p">)</span>
         <span class="n">mobjects</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span>
-        <span class="n">mobjects</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">mobjects</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span> <span class="n">buff</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">mobjects</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)</span>
@@ -255,15 +255,15 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">shift</span></code> : 移动向量</p></li>
 </ul>
 </dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="fadeinexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FadeInExample.mp4"></video><h5 class="example-header">FadeInExample<a class="headerlink" href="#fadeinexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeInExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="fadeinexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FadeInExample.mp4"></video><h5 class="example-header">FadeInExample<a class="headerlink" href="#fadeinexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeInExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
-                <span class="n">Circle</span><span class="p">(),</span>
-                <span class="n">Circle</span><span class="p">(</span><span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
-                <span class="n">TexText</span><span class="p">(</span><span class="s2">"Text"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-            <span class="p">)</span>
+            <span class="n">Circle</span><span class="p">(),</span>
+            <span class="n">Circle</span><span class="p">(</span><span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+            <span class="n">Text</span><span class="p">(</span><span class="s2">"Text"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+        <span class="p">)</span>
         <span class="n">mobjects</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span>
-        <span class="n">mobjects</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">mobjects</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span> <span class="n">buff</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
             <span class="o">*</span><span class="p">[</span><span class="n">FadeIn</span><span class="p">(</span><span class="n">mob</span><span class="p">)</span> <span class="k">for</span> <span class="n">mob</span> <span class="ow">in</span> <span class="n">mobjects</span><span class="p">]</span>
@@ -272,69 +272,70 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </pre></div>
 </div>
-</div><div class="manim-example"><video autoplay="" class="manim-video" controls="" id="fadeinfromexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FadeInFromExample.mp4"></video><h5 class="example-header">FadeInFromExample<a class="headerlink" href="#fadeinfromexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeInFromExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+</div><div class="manim-example"><video class="manim-video" controls="" id="fadeinfromexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FadeInFromExample.mp4"></video><h5 class="example-header">FadeInFromExample<a class="headerlink" href="#fadeinfromexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeInFromExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
-                <span class="n">Circle</span><span class="p">(),</span>
-                <span class="n">Circle</span><span class="p">(</span><span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
-                <span class="n">TexText</span><span class="p">(</span><span class="s2">"Text"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-            <span class="p">)</span>
+            <span class="n">Circle</span><span class="p">(),</span>
+            <span class="n">Circle</span><span class="p">(</span><span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+            <span class="n">Text</span><span class="p">(</span><span class="s2">"Text"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+        <span class="p">)</span>
         <span class="n">mobjects</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span>
-        <span class="n">mobjects</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">mobjects</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span> <span class="n">buff</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 
-        <span class="n">directions</span><span class="o">=</span><span class="p">[</span><span class="n">UP</span><span class="p">,</span><span class="n">LEFT</span><span class="p">,</span><span class="n">DOWN</span><span class="p">,</span><span class="n">RIGHT</span><span class="p">]</span>
+        <span class="n">directions</span> <span class="o">=</span> <span class="p">[</span><span class="n">UP</span><span class="p">,</span> <span class="n">LEFT</span><span class="p">,</span> <span class="n">DOWN</span><span class="p">,</span> <span class="n">RIGHT</span><span class="p">]</span>
 
         <span class="k">for</span> <span class="n">direction</span> <span class="ow">in</span> <span class="n">directions</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
-                <span class="o">*</span><span class="p">[</span><span class="n">FadeIn</span><span class="p">(</span><span class="n">mob</span><span class="p">,</span><span class="n">shift</span><span class="o">=</span><span class="n">direction</span><span class="p">)</span> <span class="k">for</span> <span class="n">mob</span> <span class="ow">in</span> <span class="n">mobjects</span><span class="p">]</span>
+                <span class="o">*</span><span class="p">[</span><span class="n">FadeIn</span><span class="p">(</span><span class="n">mob</span><span class="p">,</span> <span class="n">shift</span><span class="o">=</span><span class="n">direction</span><span class="p">)</span> <span class="k">for</span> <span class="n">mob</span> <span class="ow">in</span> <span class="n">mobjects</span><span class="p">]</span>
             <span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </pre></div>
 </div>
-</div><div class="manim-example"><video autoplay="" class="manim-video" controls="" id="fadeoutandshiftexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FadeOutAndShiftExample.mp4"></video><h5 class="example-header">FadeOutAndShiftExample<a class="headerlink" href="#fadeoutandshiftexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeOutAndShiftExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+</div><div class="manim-example"><video class="manim-video" controls="" id="fadeoutandshiftexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FadeOutAndShiftExample.mp4"></video><h5 class="example-header">FadeOutAndShiftExample<a class="headerlink" href="#fadeoutandshiftexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeOutAndShiftExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
-                <span class="n">Circle</span><span class="p">(),</span>
-                <span class="n">Circle</span><span class="p">(</span><span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
-                <span class="n">TexText</span><span class="p">(</span><span class="s2">"Text"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-            <span class="p">)</span>
+            <span class="n">Circle</span><span class="p">(),</span>
+            <span class="n">Circle</span><span class="p">(</span><span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+            <span class="n">Text</span><span class="p">(</span><span class="s2">"Text"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+        <span class="p">)</span>
         <span class="n">mobjects</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span>
-        <span class="n">mobjects</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">mobjects</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span> <span class="n">buff</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 
-        <span class="n">directions</span><span class="o">=</span><span class="p">[</span><span class="n">UP</span><span class="p">,</span><span class="n">LEFT</span><span class="p">,</span><span class="n">DOWN</span><span class="p">,</span><span class="n">RIGHT</span><span class="p">]</span>
+        <span class="n">directions</span> <span class="o">=</span> <span class="p">[</span><span class="n">UP</span><span class="p">,</span> <span class="n">LEFT</span><span class="p">,</span> <span class="n">DOWN</span><span class="p">,</span> <span class="n">RIGHT</span><span class="p">]</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">mobjects</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)</span>
 
         <span class="k">for</span> <span class="n">direction</span> <span class="ow">in</span> <span class="n">directions</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
-                <span class="o">*</span><span class="p">[</span><span class="n">FadeOut</span><span class="p">(</span><span class="n">mob</span><span class="p">,</span><span class="n">shift</span><span class="o">=</span><span class="n">direction</span><span class="p">)</span> <span class="k">for</span> <span class="n">mob</span> <span class="ow">in</span> <span class="n">mobjects</span><span class="p">]</span>
+                <span class="o">*</span><span class="p">[</span><span class="n">FadeOut</span><span class="p">(</span><span class="n">mob</span><span class="p">,</span> <span class="n">shift</span><span class="o">=</span><span class="n">direction</span><span class="p">)</span> <span class="k">for</span> <span class="n">mob</span> <span class="ow">in</span> <span class="n">mobjects</span><span class="p">]</span>
             <span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </pre></div>
 </div>
-</div><div class="manim-example"><video autoplay="" class="manim-video" controls="" id="fadeinfromlargeexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FadeInFromLargeExample.mp4"></video><h5 class="example-header">FadeInFromLargeExample<a class="headerlink" href="#fadeinfromlargeexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeInFromLargeExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+</div><div class="manim-example"><video class="manim-video" controls="" id="fadeinfromlargeexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FadeInFromLargeExample.mp4"></video><h5 class="example-header">FadeInFromLargeExample<a class="headerlink" href="#fadeinfromlargeexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeInFromLargeExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
-                <span class="n">Circle</span><span class="p">(),</span>
-                <span class="n">Circle</span><span class="p">(</span><span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
-                <span class="n">TexText</span><span class="p">(</span><span class="s2">"Text"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-            <span class="p">)</span>
+            <span class="n">Circle</span><span class="p">(),</span>
+            <span class="n">Circle</span><span class="p">(</span><span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+            <span class="n">Text</span><span class="p">(</span><span class="s2">"Text"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+        <span class="p">)</span>
         <span class="n">mobjects</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span>
-        <span class="n">mobjects</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">mobjects</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span> <span class="n">buff</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 
-        <span class="n">scale_factors</span><span class="o">=</span><span class="p">[</span><span class="mf">0.3</span><span class="p">,</span><span class="mf">0.8</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mf">1.3</span><span class="p">,</span><span class="mf">1.8</span><span class="p">]</span>
+        <span class="n">scale_factors</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">]</span>
 
         <span class="k">for</span> <span class="n">scale_factor</span> <span class="ow">in</span> <span class="n">scale_factors</span><span class="p">:</span>
-            <span class="n">t_scale_factor</span> <span class="o">=</span> <span class="n">TexText</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\\</span><span class="s2">tt scale</span><span class="se">\\</span><span class="s2">_factor = </span><span class="si">{</span><span class="n">scale_factor</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+            <span class="n">t_scale_factor</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">"scale_factor = </span><span class="si">{</span><span class="n">scale_factor</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="s2">"monospace"</span><span class="p">)</span>
             <span class="n">t_scale_factor</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
 
             <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">t_scale_factor</span><span class="p">)</span>
 
             <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
-                <span class="o">*</span><span class="p">[</span><span class="n">FadeIn</span><span class="p">(</span><span class="n">mob</span><span class="p">,</span><span class="n">scale</span><span class="o">=</span><span class="n">scale_factor</span><span class="p">)</span> <span class="k">for</span> <span class="n">mob</span> <span class="ow">in</span> <span class="n">mobjects</span><span class="p">]</span>
+                <span class="o">*</span><span class="p">[</span><span class="n">FadeIn</span><span class="p">(</span><span class="n">mob</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">scale_factor</span><span class="p">)</span> <span class="k">for</span> <span class="n">mob</span> <span class="ow">in</span> <span class="n">mobjects</span><span class="p">]</span>
             <span class="p">)</span>
 
             <span class="bp">self</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">t_scale_factor</span><span class="p">)</span>
@@ -350,15 +351,15 @@
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.fading.</code><code class="sig-name descname">FadeInFromPoint</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">point</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.FadeInFromPoint" title="永久链接至目标">¶</a></dt>
 <dd><p>从传入的一个坐标点淡入</p>
 </dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="fadeinfrompointexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/FadeInFromPointExample.mp4"></video><h5 class="example-header">FadeInFromPointExample<a class="headerlink" href="#fadeinfrompointexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeInFromPointExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="fadeinfrompointexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FadeInFromPointExample.mp4"></video><h5 class="example-header">FadeInFromPointExample<a class="headerlink" href="#fadeinfrompointexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeInFromPointExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
             <span class="n">Circle</span><span class="p">(),</span>
             <span class="n">Circle</span><span class="p">(</span><span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
-            <span class="n">TexText</span><span class="p">(</span><span class="s2">"Text"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+            <span class="n">Text</span><span class="p">(</span><span class="s2">"Text"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
         <span class="p">)</span>
         <span class="n">mobjects</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span>
-        <span class="n">mobjects</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">mobjects</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span> <span class="n">buff</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
@@ -375,7 +376,25 @@
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.fading.</code><code class="sig-name descname">FadeOutToPoint</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">point</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.FadeOutToPoint" title="永久链接至目标">¶</a></dt>
 <dd><p>淡出到指定的坐标点</p>
 </dd></dl>
+<div class="manim-example"><video class="manim-video" controls="" id="fadeouttopointexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FadeOutToPointExample.mp4"></video><h5 class="example-header">FadeOutToPointExample<a class="headerlink" href="#fadeouttopointexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeOutToPointExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
+            <span class="n">Circle</span><span class="p">(),</span>
+            <span class="n">Circle</span><span class="p">(</span><span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+            <span class="n">Text</span><span class="p">(</span><span class="s2">"Text"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="n">mobjects</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span>
+        <span class="n">mobjects</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span> <span class="n">buff</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">mobjects</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
+            <span class="o">*</span><span class="p">[</span><span class="n">FadeOutToPoint</span><span class="p">(</span><span class="n">mob</span><span class="p">,</span> <span class="n">DOWN</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span> <span class="k">for</span> <span class="n">mob</span> <span class="ow">in</span> <span class="n">mobjects</span><span class="p">]</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
 </div>
+</div></div>
 <div class="section" id="fadetransform">
 <h2>FadeTransform<a class="headerlink" href="#fadetransform" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
@@ -383,7 +402,17 @@
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.fading.</code><code class="sig-name descname">FadeTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">target_mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.FadeTransform" title="永久链接至目标">¶</a></dt>
 <dd><p>渐变</p>
 </dd></dl>
+<div class="manim-example"><video class="manim-video" controls="" id="fadetransformexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FadeTransformExample.mp4"></video><h5 class="example-header">FadeTransformExample<a class="headerlink" href="#fadetransformexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeTransformExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">m_a</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">BLUE</span><span class="p">,</span> <span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">m_b</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Rectangle"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">m_a</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">FadeTransform</span><span class="p">(</span><span class="n">m_a</span><span class="p">,</span> <span class="n">m_b</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
 </div>
+</div></div>
 <div class="section" id="fadetransformpieces">
 <h2>FadeTransformPieces<a class="headerlink" href="#fadetransformpieces" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
@@ -391,13 +420,27 @@
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.fading.</code><code class="sig-name descname">FadeTransformPieces</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">target_mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.FadeTransformPieces" title="永久链接至目标">¶</a></dt>
 <dd><p>子物件分别渐变为目标</p>
 </dd></dl>
+<div class="manim-example"><video class="manim-video" controls="" id="fadetransformpiecesexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FadeTransformPiecesExample.mp4"></video><h5 class="example-header">FadeTransformPiecesExample<a class="headerlink" href="#fadetransformpiecesexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeTransformPiecesExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">m_a</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span>
+            <span class="n">Circle</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">move_to</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">-</span><span class="mf">0.5</span><span class="p">)</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+        <span class="p">])</span>
+        <span class="n">m_b</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Circle"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">m_a</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">FadeTransformPieces</span><span class="p">(</span><span class="n">m_a</span><span class="p">,</span> <span class="n">m_b</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
 </div>
+</div></div>
 <div class="section" id="vfadein">
 <h2>VFadeIn<a class="headerlink" href="#vfadein" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.animation.fading.VFadeIn">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.fading.</code><code class="sig-name descname">VFadeIn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.VFadeIn" title="永久链接至目标">¶</a></dt>
-<dd><p>VFadeIn and VFadeOut only work for VMobjects,</p>
+<dd><p>淡入</p>
 </dd></dl>
 </div>
 <div class="section" id="vfadeout">
@@ -405,7 +448,8 @@
 <dl class="py class">
 <dt id="manimlib.animation.fading.VFadeOut">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.fading.</code><code class="sig-name descname">VFadeOut</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.VFadeOut" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
+<dd><p>淡出</p>
+</dd></dl>
 </div>
 <div class="section" id="vfadeinthenout">
 <h2>VFadeInThenOut<a class="headerlink" href="#vfadeinthenout" title="永久链接至标题">¶</a></h2>

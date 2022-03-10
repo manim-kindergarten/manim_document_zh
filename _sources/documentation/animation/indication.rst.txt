@@ -11,7 +11,7 @@ FocusOn
     :members:
     
 .. manim-example:: FocusOnExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FocusOnExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FocusOnExample.mp4
 
   class FocusOnExample(Scene):
       def construct(self):
@@ -41,23 +41,23 @@ Indicate
     :members:
     
 .. manim-example:: IndicateExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/IndicateExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/IndicateExample.mp4
 
   class IndicateExample(Scene):
       def construct(self):
-          #                     0    1   2
-          formula = Tex("f(","x",")")
+          #              0     1    2
+          formula = Tex("f(", "x", ")")
           dot = Dot()
-  
-          VGroup(formula,dot)\
-                             .scale(3)\
-                             .arrange(DOWN,buff=3)
-  
-          self.add(formula,dot)
-  
-          for mob in [formula[1],dot]:
+
+          VGroup(formula, dot)\
+              .scale(3)\
+              .arrange(DOWN, buff=3)
+
+          self.add(formula, dot)
+
+          for mob in [formula[1], dot]:
               self.play(Indicate(mob))
-  
+
           self.wait(0.3)
 
 Flash
@@ -66,7 +66,7 @@ Flash
     :members:
     
 .. manim-example:: FlashExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FlashExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FlashExample.mp4
 
   class FlashExample(Scene):
       def construct(self):
@@ -74,20 +74,20 @@ Flash
               Dot(),
               Tex("x")
           ).scale(2)
-          mobjects.arrange(RIGHT,buff=2)
-  
+          mobjects.arrange(RIGHT, buff=2)
+
           mobject_or_coord = [
               *mobjects,                    # Mobjects: Dot and "x"
               mobjects.get_right()+RIGHT*2  # Coord
           ]
-  
-          colors=[GRAY,RED,BLUE]
-  
+
+          colors = [GREY, RED, BLUE]
+
           self.add(mobjects)
-  
-          for obj,color in zip(mobject_or_coord,colors):
-              self.play(Flash(obj,color=color,flash_radius=0.5))
-  
+
+          for obj, color in zip(mobject_or_coord, colors):
+              self.play(Flash(obj, color=color, flash_radius=0.5))
+
           self.wait(0.3)
 
 CircleIndicate
@@ -96,7 +96,7 @@ CircleIndicate
     :members:
     
 .. manim-example:: CircleIndicateExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/CircleIndicateExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/CircleIndicateExample.mp4
 
   class CircleIndicateExample(Scene):
       def construct(self):
@@ -123,25 +123,23 @@ ShowCreationThenDestruction
     :members:
     
 .. manim-example:: ShowCreationThenDestructionExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/ShowCreationThenDestructionExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ShowCreationThenDestructionExample.mp4
 
   class ShowCreationThenDestructionExample(Scene):
       def construct(self):
           mobjects = VGroup(
-                  Circle(),
-                  Circle(fill_opacity=1),
-                  Text("Text").scale(2)
-              )
+              Circle(),
+              Circle(fill_opacity=1),
+              Text("Text").scale(2)
+          )
           mobjects.scale(1.5)
-          mobjects.arrange(RIGHT,buff=2)
-  
+          mobjects.arrange(RIGHT, buff=2)
+
           self.play(
               *[ShowCreationThenDestruction(mob) for mob in mobjects]
           )
-  
+
           self.wait()
-  
-          self.wait(0.3)
 
 ShowCreationThenFadeOut
 ****************************
@@ -149,25 +147,23 @@ ShowCreationThenFadeOut
     :members:
     
 .. manim-example:: ShowCreationThenFadeOutExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/ShowCreationThenFadeOutExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ShowCreationThenFadeOutExample.mp4
 
   class ShowCreationThenFadeOutExample(Scene):
       def construct(self):
           mobjects = VGroup(
-                  Circle(),
-                  Circle(fill_opacity=1),
-                  Text("Text").scale(2)
-              )
+              Circle(),
+              Circle(fill_opacity=1),
+              Text("Text").scale(2)
+          )
           mobjects.scale(1.5)
-          mobjects.arrange(RIGHT,buff=2)
-  
+          mobjects.arrange(RIGHT, buff=2)
+
           self.play(
               *[ShowCreationThenFadeOut(mob) for mob in mobjects]
           )
-  
+
           self.wait()
-  
-          self.wait(0.3)
 
 AnimationOnSurroundingRectangle
 *****************************************
@@ -180,24 +176,25 @@ ShowPassingFlashAround
     :members:
     
 .. manim-example:: ShowPassingFlashAroundExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/ShowPassingFlashAroundExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ShowPassingFlashAroundExample.mp4
 
   class ShowPassingFlashAroundExample(Scene):
+      # 目前有显示不全的 bug
       def construct(self):
           mobjects = VGroup(
-                  Circle(),
-                  Circle(fill_opacity=1),
-                  Text("Text").scale(2)
-              )
+              Circle(),
+              Circle(fill_opacity=1),
+              Text("Text").scale(2)
+          )
           mobjects.scale(1.5)
-          mobjects.arrange(RIGHT,buff=2)
-  
+          mobjects.arrange(RIGHT, buff=2)
+
           self.add(mobjects)
-  
+
           self.play(
               *[ShowPassingFlashAround(mob) for mob in mobjects]
           )
-  
+
           self.wait()
 
 ShowCreationThenDestructionAround
@@ -206,27 +203,25 @@ ShowCreationThenDestructionAround
     :members:
     
 .. manim-example:: ShowCreationThenDestructionAroundExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/ShowCreationThenDestructionAroundExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ShowCreationThenDestructionAroundExample.mp4
 
   class ShowCreationThenDestructionAroundExample(Scene):
       def construct(self):
           mobjects = VGroup(
-                  Circle(),
-                  Circle(fill_opacity=1),
-                  Text("Text").scale(2)
-              )
+              Circle(),
+              Circle(fill_opacity=1),
+              Text("Text").scale(2)
+          )
           mobjects.scale(1.5)
-          mobjects.arrange(RIGHT,buff=2)
-  
+          mobjects.arrange(RIGHT, buff=2)
+
           self.add(mobjects)
-  
+
           self.play(
               *[ShowCreationThenDestructionAround(mob) for mob in mobjects]
           )
-  
+
           self.wait()
-  
-          self.wait(0.3)
 
 ShowCreationThenFadeAround
 **********************************
@@ -234,27 +229,25 @@ ShowCreationThenFadeAround
     :members:
     
 .. manim-example:: ShowCreationThenFadeAroundExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/ShowCreationThenFadeAroundExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ShowCreationThenFadeAroundExample.mp4
 
   class ShowCreationThenFadeAroundExample(Scene):
       def construct(self):
           mobjects = VGroup(
-                  Circle(),
-                  Circle(fill_opacity=1),
-                  Text("Text").scale(2)
-              )
+              Circle(),
+              Circle(fill_opacity=1),
+              Text("Text").scale(2)
+          )
           mobjects.scale(1.5)
-          mobjects.arrange(RIGHT,buff=2)
-  
+          mobjects.arrange(RIGHT, buff=2)
+
           self.add(mobjects)
-  
+
           self.play(
               *[ShowCreationThenFadeAround(mob) for mob in mobjects]
           )
-  
+
           self.wait()
-  
-          self.wait(0.3)
 
 ApplyWave
 ***********************
@@ -262,27 +255,25 @@ ApplyWave
     :members:
     
 .. manim-example:: ApplyWaveExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/ApplyWaveExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ApplyWaveExample.mp4
 
   class ApplyWaveExample(Scene):
       def construct(self):
           mobjects = VGroup(
-                  Circle(),
-                  Circle(fill_opacity=1),
-                  Text("Text").scale(2)
-              )
+              Circle(),
+              Circle(fill_opacity=1),
+              Text("Text").scale(2)
+          )
           mobjects.scale(1.5)
-          mobjects.arrange(RIGHT,buff=2)
-  
+          mobjects.arrange(RIGHT, buff=2)
+
           self.add(mobjects)
-  
+
           self.play(
               *[ApplyWave(mob) for mob in mobjects]
           )
-  
+
           self.wait()
-  
-          self.wait(0.3)
 
 WiggleOutThenIn
 ***********************
@@ -290,27 +281,25 @@ WiggleOutThenIn
     :members:
     
 .. manim-example:: WiggleOutThenInExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/WiggleOutThenInExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/WiggleOutThenInExample.mp4
 
   class WiggleOutThenInExample(Scene):
       def construct(self):
           mobjects = VGroup(
-                  Circle(),
-                  Circle(fill_opacity=1),
-                  Text("Text").scale(2)
-              )
+              Circle(),
+              Circle(fill_opacity=1),
+              Text("Text").scale(2)
+          )
           mobjects.scale(1.5)
-          mobjects.arrange(RIGHT,buff=2)
-  
+          mobjects.arrange(RIGHT, buff=2)
+
           self.add(mobjects)
-  
+
           self.play(
               *[WiggleOutThenIn(mob) for mob in mobjects]
           )
-  
+
           self.wait()
-  
-          self.wait(0.3)
 
 TurnInsideOut
 ***********************
@@ -318,27 +307,26 @@ TurnInsideOut
     :members:
     
 .. manim-example:: TurnInsideOutExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/TurnInsideOutExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/TurnInsideOutExample.mp4
 
   class TurnInsideOutExample(Scene):
+      # 对文字使用会造成非常大的问题
       def construct(self):
           mobjects = VGroup(
-                  Circle(),
-                  Circle(fill_opacity=1),
-                  Text("Text").scale(2)
-              )
+              Circle(),
+              Circle(fill_opacity=1),
+              Text("Text").scale(2)
+          )
           mobjects.scale(1.5)
-          mobjects.arrange(RIGHT,buff=2)
-  
+          mobjects.arrange(RIGHT, buff=2)
+
           self.add(mobjects)
-  
+
           self.play(
               *[TurnInsideOut(mob) for mob in mobjects]
           )
-  
+
           self.wait()
-  
-          self.wait(0.3)
 
 FlashyFadeIn
 ***********************

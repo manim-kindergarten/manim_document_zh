@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../../_static/styles/default.css?6fd784a738b95400880291a6">
-    <link rel="stylesheet" href="../../../_static/pygments.css?6fd784a738b95400880291a6">
+    <link rel="stylesheet" href="../../../_static/styles/default.css?9ebe6f53b22cf09802f60445">
+    <link rel="stylesheet" href="../../../_static/pygments.css?9ebe6f53b22cf09802f60445">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
         <script src="../../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?6fd784a738b95400880291a6"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?9ebe6f53b22cf09802f60445"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -276,6 +276,12 @@
 <p>在 manimgl 中并不包含，但可以通过一些方式引入。</p>
 </div>
 <p>由 Fran 编写，继承自 MTex，基于 mathjax 生成公式，可以通过链接查看使用方法 <a class="reference external" href="https://github.com/manim-kindergarten/manimgl-mathjax.git">https://github.com/manim-kindergarten/manimgl-mathjax.git</a></p>
+<p>由于该类基于 mathjax 生成公式，因此相比 LaTeX，该类会有更快的生成速度。同时对于公式的需求没有那么高的情况下，甚至可以不用安装 LaTeX，所以力推 <code class="docutils literal notranslate"><span class="pre">JTex</span></code>。但这个类目前还有一些小问题需要完善：</p>
+<ul class="simple">
+<li><p>不能在其中使用中文</p></li>
+<li><p>由于该类还在开发过程中，因此可能会有一些渲染上的 bug</p></li>
+<li><p>由于继承了 MTex，而 <code class="docutils literal notranslate"><span class="pre">TransfromMatchingMTex</span></code> 还需要完善，所以公式的对应变换还需要一段时间来修复</p></li>
+</ul>
 </div>
 </div>
 

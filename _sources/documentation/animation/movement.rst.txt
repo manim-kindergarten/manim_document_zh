@@ -13,7 +13,7 @@ Homotopy
     :members:
     
 .. manim-example:: HomotopyExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/HomotopyExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/HomotopyExample.mp4
 
   class HomotopyExample(Scene):
       def construct(self):
@@ -22,16 +22,16 @@ Homotopy
               tau = interpolate(5, -5, t) + norm/FRAME_X_RADIUS
               alpha = sigmoid(tau)
               return [x, y + 0.5*np.sin(2*np.pi*alpha)-t*SMALL_BUFF/2, z]
-  
-          mobjects=VGroup(
+
+          mobjects = VGroup(
               Text("Text").scale(3),
               Square(),
-          ).arrange(RIGHT,buff=2)
-  
+          ).arrange(RIGHT, buff=2)
+
           self.add(mobjects)
           self.play(
               *[Homotopy(
-                  plane_wave_homotopy, 
+                  plane_wave_homotopy,
                   mob
               ) for mob in mobjects]
           )
@@ -42,31 +42,53 @@ ComplexHomotopy
 .. autoclass:: manimlib.animation.movement.ComplexHomotopy
     :members:
 
+.. manim-example:: ComplexHomotopyExample
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ComplexHomotopyExample.mp4
+
+  class ComplexHomotopyExample(Scene):
+      def construct(self):
+          def complex_func(z: complex, t: float) -> complex:
+              return interpolate(z, z**3, t)
+
+          mobjects = VGroup(
+              Text("Text"),
+              Square(side_length=1),
+          ).arrange(RIGHT, buff=2)
+
+          self.add(mobjects)
+          self.play(
+              *[ComplexHomotopy(
+                  complex_func,
+                  mob
+              ) for mob in mobjects]
+          )
+          self.wait(0.3)
+
 PhaseFlow
 ***********************
 .. autoclass:: manimlib.animation.movement.PhaseFlow
     :members:
     
 .. manim-example:: PhaseFlowExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/PhaseFlowExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/PhaseFlowExample.mp4
 
   class PhaseFlowExample(Scene):
       def construct(self):
           def func(t):
               return t*0.5*RIGHT
-  
+
           mobjects=VGroup(
               Text("Text").scale(3),
               Square(),
           ).arrange(RIGHT,buff=2)
-  
+
           self.play(
               *[PhaseFlow(
                   func, mob,
                   run_time = 2,
               )for mob in mobjects]
           )
-  
+
           self.wait()
 
 MoveAlongPath
@@ -75,7 +97,7 @@ MoveAlongPath
     :members:
     
 .. manim-example:: MoveAlongPathExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/MoveAlongPathExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/MoveAlongPathExample.mp4
 
   class MoveAlongPathExample(Scene):
       def construct(self):
@@ -83,7 +105,7 @@ MoveAlongPath
           line.move_to(ORIGIN)
           dot=Dot()
           dot.move_to(line.get_start())
-  
+
           self.add(line,dot)
           self.play(
               MoveAlongPath(dot,line)

@@ -29,4 +29,8 @@ JTex
 
 由 Fran 编写，继承自 MTex，基于 mathjax 生成公式，可以通过链接查看使用方法 `<https://github.com/manim-kindergarten/manimgl-mathjax.git>`__
 
+由于该类基于 mathjax 生成公式，因此相比 LaTeX，该类会有更快的生成速度。同时对于公式的需求没有那么高的情况下，甚至可以不用安装 LaTeX，所以力推 ``JTex``。但这个类目前还有一些小问题需要完善：
 
+- 不能在其中使用中文
+- 由于该类还在开发过程中，因此可能会有一些渲染上的 bug
+- 由于继承了 MTex，而 ``TransfromMatchingMTex`` 还需要完善，所以公式的对应变换还需要一段时间来修复

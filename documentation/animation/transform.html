@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?5d08b705b56a5b5348ee461c">
-    <link rel="stylesheet" href="../../_static/pygments.css?5d08b705b56a5b5348ee461c">
+    <link rel="stylesheet" href="../../_static/styles/default.css?f315236fecccb1c9a58c7cb0">
+    <link rel="stylesheet" href="../../_static/pygments.css?f315236fecccb1c9a58c7cb0">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?5d08b705b56a5b5348ee461c"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?f315236fecccb1c9a58c7cb0"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -203,13 +203,17 @@
         </label>
         <div class="section" id="transform">
 <h1>Transform<a class="headerlink" href="#transform" title="永久链接至标题">¶</a></h1>
+<div class="admonition- admonition">
+<p class="admonition-title">注意</p>
+<p>只要读者看到这一部分的动画，就会知道 <code class="docutils literal notranslate"><span class="pre">Transform</span></code> 对文字是有多么炸裂。因此对于文字的动画，建议还是使用其他的方式。</p>
+</div>
 <div class="section" id="id1">
 <h2>Transform<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.animation.transform.Transform">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">Transform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">target_mobject</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.Transform" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="transformexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/TransformExample.mp4"></video><h5 class="example-header">TransformExample<a class="headerlink" href="#transformexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TransformExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="transformexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/TransformExample.mp4"></video><h5 class="example-header">TransformExample<a class="headerlink" href="#transformexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TransformExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">A</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Text-A"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
         <span class="n">B</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Text-B"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
@@ -230,7 +234,7 @@
 <dt id="manimlib.animation.transform.ReplacementTransform">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">ReplacementTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">target_mobject</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.ReplacementTransform" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="replacementtransformexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ReplacementTransformExample.mp4"></video><h5 class="example-header">ReplacementTransformExample<a class="headerlink" href="#replacementtransformexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ReplacementTransformExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="replacementtransformexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ReplacementTransformExample.mp4"></video><h5 class="example-header">ReplacementTransformExample<a class="headerlink" href="#replacementtransformexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ReplacementTransformExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">A</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Text-A"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
         <span class="n">B</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Text-B"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
@@ -266,7 +270,7 @@
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">TransformFromCopy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">target_mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.TransformFromCopy" title="永久链接至目标">¶</a></dt>
 <dd><p>Performs a reversed Transform</p>
 </dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="transformfromcopyexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/TransformFromCopyExample.mp4"></video><h5 class="example-header">TransformFromCopyExample<a class="headerlink" href="#transformfromcopyexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TransformFromCopyExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="transformfromcopyexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/TransformFromCopyExample.mp4"></video><h5 class="example-header">TransformFromCopyExample<a class="headerlink" href="#transformfromcopyexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TransformFromCopyExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">A</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Text-A"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
         <span class="n">B</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Text-B"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">UP</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
@@ -284,7 +288,7 @@
 <dt id="manimlib.animation.transform.ClockwiseTransform">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">ClockwiseTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">target_mobject</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.ClockwiseTransform" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="clockwisetransformexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ClockwiseTransformExample.mp4"></video><h5 class="example-header">ClockwiseTransformExample<a class="headerlink" href="#clockwisetransformexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ClockwiseTransformExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="clockwisetransformexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ClockwiseTransformExample.mp4"></video><h5 class="example-header">ClockwiseTransformExample<a class="headerlink" href="#clockwisetransformexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ClockwiseTransformExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">A</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Text-A"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
         <span class="n">B</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Text-B"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">UP</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
@@ -302,7 +306,7 @@
 <dt id="manimlib.animation.transform.CounterclockwiseTransform">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">CounterclockwiseTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">target_mobject</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.CounterclockwiseTransform" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="counterclockwisetransformexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/CounterclockwiseTransformExample.mp4"></video><h5 class="example-header">CounterclockwiseTransformExample<a class="headerlink" href="#counterclockwisetransformexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CounterclockwiseTransformExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="counterclockwisetransformexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/CounterclockwiseTransformExample.mp4"></video><h5 class="example-header">CounterclockwiseTransformExample<a class="headerlink" href="#counterclockwisetransformexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CounterclockwiseTransformExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">A</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Text-A"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
         <span class="n">B</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Text-B"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">UP</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
@@ -320,7 +324,7 @@
 <dt id="manimlib.animation.transform.MoveToTarget">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">MoveToTarget</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.MoveToTarget" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="movetotargetexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/MoveToTargetExample.mp4"></video><h5 class="example-header">MoveToTargetExample<a class="headerlink" href="#movetotargetexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MoveToTargetExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="movetotargetexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/MoveToTargetExample.mp4"></video><h5 class="example-header">MoveToTargetExample<a class="headerlink" href="#movetotargetexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MoveToTargetExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">A</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Text-A"</span><span class="p">)</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">LEFT</span><span class="p">)</span>
         <span class="n">A</span><span class="o">.</span><span class="n">generate_target</span><span class="p">()</span>  <span class="c1"># copyA自身形成A的target属性</span>
@@ -334,17 +338,18 @@
 </div>
 </div><p>另外，直接使用 <code class="docutils literal notranslate"><span class="pre">self.play(mob.method,</span> <span class="pre">...)</span></code> 相当于给mob创建target，然后根据method
 操作target。并且这样能对同一个mobject多次操作。当然，也可以用 <code class="docutils literal notranslate"><span class="pre">self.play(mob.animate.shift(UP).scale(2))</span></code> 进行链式操作（而 <code class="docutils literal notranslate"><span class="pre">ApplyMethod</span></code> 不可以，见下）</p>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="selfplayexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/SelfPlayExample.mp4"></video><h5 class="example-header">SelfPlayExample<a class="headerlink" href="#selfplayexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SelfPlayExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="selfplayexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/SelfPlayExample.mp4"></video><h5 class="example-header">SelfPlayExample<a class="headerlink" href="#selfplayexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SelfPlayExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">A</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span><span class="s2">"Text-A"</span><span class="p">)</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">LEFT</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
-            <span class="n">A</span><span class="o">.</span><span class="n">scale</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span>
-            <span class="n">A</span><span class="o">.</span><span class="n">shift</span><span class="p">,</span> <span class="n">RIGHT</span><span class="o">*</span><span class="mi">7</span><span class="o">+</span><span class="n">UP</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span>
-        <span class="p">)</span>
         <span class="c1"># self.play(</span>
+        <span class="c1">#     A.scale, 3,</span>
+        <span class="c1">#     A.shift, RIGHT*7+UP*2,</span>
+        <span class="c1"># )</span>
+        <span class="c1"># 上面为旧版用法，在 Manim Community 引入 animate 方法后，我们更青睐下面的方法</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
               <span class="n">A</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">RIGHT</span><span class="o">*</span><span class="mi">7</span><span class="o">+</span><span class="n">UP</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
         <span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
@@ -362,7 +367,7 @@ as the last arg, as a dict, since **kwargs is for
 configuration of the transform itself</p>
 <p>Relies on the fact that mobject methods return the mobject</p>
 </dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="applymethodexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ApplyMethodExample.mp4"></video><h5 class="example-header">ApplyMethodExample<a class="headerlink" href="#applymethodexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ApplyMethodExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="applymethodexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ApplyMethodExample.mp4"></video><h5 class="example-header">ApplyMethodExample<a class="headerlink" href="#applymethodexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ApplyMethodExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">A</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Text-A"</span><span class="p">)</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">LEFT</span><span class="p">)</span>
 
@@ -388,7 +393,23 @@ as the last arg, as a dict, since **kwargs is for
 configuration of the transform itself</p>
 <p>Relies on the fact that mobject methods return the mobject</p>
 </dd></dl>
+<div class="manim-example"><video class="manim-video" controls="" id="applypointwisefunctionexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ApplyPointwiseFunctionExample.mp4"></video><h5 class="example-header">ApplyPointwiseFunctionExample<a class="headerlink" href="#applypointwisefunctionexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ApplyPointwiseFunctionExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">def</span> <span class="nf">trans</span><span class="p">(</span><span class="n">p</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+                <span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span>
+                <span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span>
+                <span class="n">p</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+            <span class="p">])</span>
+        <span class="n">plane</span> <span class="o">=</span> <span class="n">NumberPlane</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">plane</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+        <span class="n">plane</span><span class="o">.</span><span class="n">prepare_for_nonlinear_transform</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ApplyPointwiseFunction</span><span class="p">(</span><span class="n">trans</span><span class="p">,</span> <span class="n">plane</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
 </div>
+</div></div>
 <div class="section" id="applypointwisefunctiontocenter">
 <h2>ApplyPointwiseFunctionToCenter<a class="headerlink" href="#applypointwisefunctiontocenter" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
@@ -436,15 +457,15 @@ as the last arg, as a dict, since **kwargs is for
 configuration of the transform itself</p>
 <p>Relies on the fact that mobject methods return the mobject</p>
 </dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="shrinktocenterexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/ShrinkToCenterExample.mp4"></video><h5 class="example-header">ShrinkToCenterExample<a class="headerlink" href="#shrinktocenterexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ShrinkToCenterExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="shrinktocenterexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ShrinkToCenterExample.mp4"></video><h5 class="example-header">ShrinkToCenterExample<a class="headerlink" href="#shrinktocenterexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ShrinkToCenterExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
-                <span class="n">Square</span><span class="p">(),</span>
-                <span class="n">RegularPolygon</span><span class="p">(</span><span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
-                <span class="n">Text</span><span class="p">(</span><span class="s2">"Text"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-            <span class="p">)</span>
+            <span class="n">Square</span><span class="p">(),</span>
+            <span class="n">RegularPolygon</span><span class="p">(</span><span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">GREEN</span><span class="p">),</span>
+            <span class="n">Text</span><span class="p">(</span><span class="s2">"Text"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+        <span class="p">)</span>
         <span class="n">mobjects</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span>
-        <span class="n">mobjects</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">mobjects</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span> <span class="n">buff</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
             <span class="o">*</span><span class="p">[</span><span class="n">ShrinkToCenter</span><span class="p">(</span><span class="n">mob</span><span class="p">)</span> <span class="k">for</span> <span class="n">mob</span> <span class="ow">in</span> <span class="n">mobjects</span><span class="p">]</span>
@@ -465,7 +486,7 @@ as the last arg, as a dict, since **kwargs is for
 configuration of the transform itself</p>
 <p>Relies on the fact that mobject methods return the mobject</p>
 </dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="restoreexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/RestoreExample.mp4"></video><h5 class="example-header">RestoreExample<a class="headerlink" href="#restoreexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">RestoreExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="restoreexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/RestoreExample.mp4"></video><h5 class="example-header">RestoreExample<a class="headerlink" href="#restoreexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">RestoreExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">A</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Text-A"</span><span class="p">)</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">LEFT</span><span class="p">)</span>
         <span class="n">A</span><span class="o">.</span><span class="n">save_state</span><span class="p">()</span>  <span class="c1"># 记录下现在状态，restore会回到此时</span>
@@ -484,7 +505,7 @@ configuration of the transform itself</p>
 <dt id="manimlib.animation.transform.ApplyFunction">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">ApplyFunction</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span></em>, <em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.ApplyFunction" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="applyfunctionexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ApplyFunctionExample.mp4"></video><h5 class="example-header">ApplyFunctionExample<a class="headerlink" href="#applyfunctionexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ApplyFunctionExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="applyfunctionexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ApplyFunctionExample.mp4"></video><h5 class="example-header">ApplyFunctionExample<a class="headerlink" href="#applyfunctionexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ApplyFunctionExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">A</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Text-A"</span><span class="p">)</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">LEFT</span><span class="p">)</span>
         <span class="k">def</span> <span class="nf">function</span><span class="p">(</span><span class="n">mob</span><span class="p">):</span>
@@ -509,7 +530,7 @@ as the last arg, as a dict, since **kwargs is for
 configuration of the transform itself</p>
 <p>Relies on the fact that mobject methods return the mobject</p>
 </dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="applymatrixexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ApplyMatrixExample.mp4"></video><h5 class="example-header">ApplyMatrixExample<a class="headerlink" href="#applymatrixexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ApplyMatrixExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="applymatrixexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ApplyMatrixExample.mp4"></video><h5 class="example-header">ApplyMatrixExample<a class="headerlink" href="#applymatrixexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ApplyMatrixExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">A</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Text-A"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
         <span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
@@ -536,14 +557,28 @@ as the last arg, as a dict, since **kwargs is for
 configuration of the transform itself</p>
 <p>Relies on the fact that mobject methods return the mobject</p>
 </dd></dl>
+<div class="manim-example"><video class="manim-video" controls="" id="applycomplexfunctionexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ApplyComplexFunctionExample.mp4"></video><h5 class="example-header">ApplyComplexFunctionExample<a class="headerlink" href="#applycomplexfunctionexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ApplyComplexFunctionExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">A</span> <span class="o">=</span> <span class="n">NumberPlane</span><span class="p">()</span>
+        <span class="n">A</span><span class="o">.</span><span class="n">prepare_for_nonlinear_transform</span><span class="p">()</span>
+
+        <span class="k">def</span> <span class="nf">complex_func</span><span class="p">(</span><span class="n">z</span><span class="p">:</span> <span class="nb">complex</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">complex</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">z</span><span class="o">**</span><span class="mi">3</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ApplyComplexFunction</span><span class="p">(</span><span class="n">complex_func</span><span class="p">,</span> <span class="n">A</span><span class="p">),</span> <span class="n">run_time</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
 </div>
+</div></div>
 <div class="section" id="cyclicreplace">
 <h2>CyclicReplace<a class="headerlink" href="#cyclicreplace" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.animation.transform.CyclicReplace">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">CyclicReplace</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">mobjects</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.CyclicReplace" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="cyclicreplaceexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/CyclicReplaceExample.mp4"></video><h5 class="example-header">CyclicReplaceExample<a class="headerlink" href="#cyclicreplaceexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CyclicReplaceExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="cyclicreplaceexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/CyclicReplaceExample.mp4"></video><h5 class="example-header">CyclicReplaceExample<a class="headerlink" href="#cyclicreplaceexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CyclicReplaceExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">A</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Text-A"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
         <span class="n">B</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Text-B"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
@@ -562,6 +597,7 @@ configuration of the transform itself</p>
 <dt id="manimlib.animation.transform.Swap">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform.</code><code class="sig-name descname">Swap</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">mobjects</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform.Swap" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
+<p>与上面的 <code class="docutils literal notranslate"><span class="pre">CyclicReplace</span></code> 一样</p>
 </div>
 <div class="section" id="transformanimations">
 <h2>TransformAnimations<a class="headerlink" href="#transformanimations" title="永久链接至标题">¶</a></h2>

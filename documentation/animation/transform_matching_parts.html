@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?7e8a273a995ee64afa4e4e93">
-    <link rel="stylesheet" href="../../_static/pygments.css?7e8a273a995ee64afa4e4e93">
+    <link rel="stylesheet" href="../../_static/styles/default.css?a52690f95d55897f690d95ae">
+    <link rel="stylesheet" href="../../_static/pygments.css?a52690f95d55897f690d95ae">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?7e8a273a995ee64afa4e4e93"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?a52690f95d55897f690d95ae"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -217,13 +217,43 @@
 <dt id="manimlib.animation.transform_matching_parts.TransformMatchingShapes">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform_matching_parts.</code><code class="sig-name descname">TransformMatchingShapes</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">target_mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform_matching_parts.TransformMatchingShapes" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
+<div class="manim-example"><video class="manim-video" controls="" id="transformmatchingshapesexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/TransformMatchingShapesExample.mp4"></video><h5 class="example-header">TransformMatchingShapesExample<a class="headerlink" href="#transformmatchingshapesexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TransformMatchingShapesExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"the morse code"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">b</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"here some dots"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">TransformMatchingShapes</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">path_arc</span><span class="o">=</span><span class="n">PI</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">TransformMatchingShapes</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">path_arc</span><span class="o">=</span><span class="n">PI</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
 </div>
+</div></div>
 <div class="section" id="transformmatchingtex">
 <h2>TransformMatchingTex<a class="headerlink" href="#transformmatchingtex" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.animation.transform_matching_parts.TransformMatchingTex">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform_matching_parts.</code><code class="sig-name descname">TransformMatchingTex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">target_mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform_matching_parts.TransformMatchingTex" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
+<div class="manim-example"><video class="manim-video" controls="" id="transformmatchingtexexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/TransformMatchingTexExample.mp4"></video><h5 class="example-header">TransformMatchingTexExample<a class="headerlink" href="#transformmatchingtexexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TransformMatchingTexExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">Tex</span><span class="p">(</span><span class="s2">"A"</span><span class="p">,</span> <span class="s2">"^2"</span><span class="p">,</span> <span class="s2">"="</span><span class="p">,</span> <span class="s2">"B^2+C^2"</span><span class="p">)</span>
+        <span class="n">b</span> <span class="o">=</span> <span class="n">Tex</span><span class="p">(</span><span class="s2">"A"</span><span class="p">,</span> <span class="s2">"="</span><span class="p">,</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">sqrt{"</span><span class="p">,</span> <span class="s2">"B^2+C^2"</span><span class="p">,</span> <span class="s2">"}"</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">TransformMatchingTex</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">key_map</span><span class="o">=</span><span class="p">{</span><span class="s2">"^2"</span><span class="p">:</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">sqrt{"</span><span class="p">}))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+</div></div>
+<div class="section" id="transformmatchingmtex">
+<h2>TransformMatchingMTex<a class="headerlink" href="#transformmatchingmtex" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.animation.transform_matching_parts.TransformMatchingMTex">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform_matching_parts.</code><code class="sig-name descname">TransformMatchingMTex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">source_mobject</span></em>, <em class="sig-param"><span class="n">target_mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform_matching_parts.TransformMatchingMTex" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+<p>等待忆拾修复中……</p>
 </div>
 </div>
 
@@ -277,6 +307,7 @@
 <li><a class="reference internal" href="#transformmatchingparts">TransformMatchingParts</a></li>
 <li><a class="reference internal" href="#transformmatchingshapes">TransformMatchingShapes</a></li>
 <li><a class="reference internal" href="#transformmatchingtex">TransformMatchingTex</a></li>
+<li><a class="reference internal" href="#transformmatchingmtex">TransformMatchingMTex</a></li>
 </ul>
 </li>
 </ul>

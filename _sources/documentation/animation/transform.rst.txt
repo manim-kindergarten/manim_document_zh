@@ -1,13 +1,18 @@
 Transform
 ==========
 
+.. admonition:: 注意
+
+    只要读者看到这一部分的动画，就会知道 ``Transform`` 对文字是有多么炸裂。因此对于文字的动画，建议还是使用其他的方式。
+
+
 Transform
 *****************
 .. autoclass:: manimlib.animation.transform.Transform
     :members:
     
 .. manim-example:: TransformExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/TransformExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/TransformExample.mp4
 
   class TransformExample(Scene):
       def construct(self):
@@ -29,7 +34,7 @@ ReplacementTransform
     :members:
     
 .. manim-example:: ReplacementTransformExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ReplacementTransformExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ReplacementTransformExample.mp4
 
   class ReplacementTransformExample(Scene):
       def construct(self):
@@ -68,7 +73,7 @@ TransformFromCopy
     :members:
     
 .. manim-example:: TransformFromCopyExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/TransformFromCopyExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/TransformFromCopyExample.mp4
 
   class TransformFromCopyExample(Scene):
       def construct(self):
@@ -87,7 +92,7 @@ ClockwiseTransform
     :members:
     
 .. manim-example:: ClockwiseTransformExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ClockwiseTransformExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ClockwiseTransformExample.mp4
 
   class ClockwiseTransformExample(Scene):
       def construct(self):
@@ -106,7 +111,7 @@ CounterclockwiseTransform
     :members:
     
 .. manim-example:: CounterclockwiseTransformExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/CounterclockwiseTransformExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/CounterclockwiseTransformExample.mp4
 
   class CounterclockwiseTransformExample(Scene):
       def construct(self):
@@ -125,7 +130,7 @@ MoveToTarget
     :members:
     
 .. manim-example:: MoveToTargetExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/MoveToTargetExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/MoveToTargetExample.mp4
 
   class MoveToTargetExample(Scene):
       def construct(self):
@@ -142,7 +147,7 @@ MoveToTarget
 操作target。并且这样能对同一个mobject多次操作。当然，也可以用 ``self.play(mob.animate.shift(UP).scale(2))`` 进行链式操作（而 ``ApplyMethod`` 不可以，见下）
 
 .. manim-example:: SelfPlayExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/SelfPlayExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/SelfPlayExample.mp4
 
   class SelfPlayExample(Scene):
       def construct(self):
@@ -150,11 +155,12 @@ MoveToTarget
   
           self.add(A)
           self.wait()
-          self.play(
-              A.scale, 3,
-              A.shift, RIGHT*7+UP*2,
-          )
           # self.play(
+          #     A.scale, 3,
+          #     A.shift, RIGHT*7+UP*2,
+          # )
+          # 上面为旧版用法，在 Manim Community 引入 animate 方法后，我们更青睐下面的方法
+          self.play(
                 A.animate.scale(3).shift(RIGHT*7+UP*2)
           )
           self.wait()
@@ -166,7 +172,7 @@ ApplyMethod
     :members:
     
 .. manim-example:: ApplyMethodExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ApplyMethodExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ApplyMethodExample.mp4
 
   class ApplyMethodExample(Scene):
       def construct(self):
@@ -187,6 +193,25 @@ ApplyPointwiseFunction
 **********************
 .. autoclass:: manimlib.animation.transform.ApplyPointwiseFunction
     :members:
+
+.. manim-example:: ApplyPointwiseFunctionExample
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ApplyPointwiseFunctionExample.mp4
+
+
+  class ApplyPointwiseFunctionExample(Scene):
+      def construct(self):
+          def trans(p: np.ndarray) -> np.ndarray:
+              return np.array([
+                  p[0] + np.sin(p[1]),
+                  p[1] + np.sin(p[0]),
+                  p[2]
+              ])
+          plane = NumberPlane()
+          self.add(plane)
+          self.wait()
+          plane.prepare_for_nonlinear_transform()
+          self.play(ApplyPointwiseFunction(trans, plane))
+          self.wait()
 
 
 ApplyPointwiseFunctionToCenter
@@ -213,22 +238,22 @@ ShrinkToCenter
     :members:
     
 .. manim-example:: ShrinkToCenterExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/ShrinkToCenterExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ShrinkToCenterExample.mp4
 
   class ShrinkToCenterExample(Scene):
       def construct(self):
           mobjects = VGroup(
-                  Square(),
-                  RegularPolygon(fill_opacity=1),
-                  Text("Text").scale(2)
-              )
+              Square(),
+              RegularPolygon(fill_opacity=1, color=GREEN),
+              Text("Text").scale(2)
+          )
           mobjects.scale(1.5)
-          mobjects.arrange(RIGHT,buff=2)
-  
+          mobjects.arrange(RIGHT, buff=2)
+
           self.play(
               *[ShrinkToCenter(mob) for mob in mobjects]
           )
-  
+
           self.wait()
 
 
@@ -238,7 +263,7 @@ Restore
     :members:
     
 .. manim-example:: RestoreExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/RestoreExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/RestoreExample.mp4
 
   class RestoreExample(Scene):
       def construct(self):
@@ -258,7 +283,7 @@ ApplyFunction
     :members:
     
 .. manim-example:: ApplyFunctionExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ApplyFunctionExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ApplyFunctionExample.mp4
 
   class ApplyFunctionExample(Scene):
       def construct(self):
@@ -279,7 +304,7 @@ ApplyMatrix
     :members:
     
 .. manim-example:: ApplyMatrixExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ApplyMatrixExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ApplyMatrixExample.mp4
 
   class ApplyMatrixExample(Scene):
       def construct(self):
@@ -301,6 +326,21 @@ ApplyComplexFunction
 .. autoclass:: manimlib.animation.transform.ApplyComplexFunction
     :members:
 
+.. manim-example:: ApplyComplexFunctionExample
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ApplyComplexFunctionExample.mp4
+
+  class ApplyComplexFunctionExample(Scene):
+      def construct(self):
+          A = NumberPlane()
+          A.prepare_for_nonlinear_transform()
+
+          def complex_func(z: complex) -> complex:
+              return z**3
+
+          self.add(A)
+          self.wait()
+          self.play(ApplyComplexFunction(complex_func, A), run_time=3)
+          self.wait()
 
 CyclicReplace
 *****************
@@ -308,7 +348,7 @@ CyclicReplace
     :members:
     
 .. manim-example:: CyclicReplaceExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/CyclicReplaceExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/CyclicReplaceExample.mp4
 
   class CyclicReplaceExample(Scene):
       def construct(self):
@@ -326,6 +366,8 @@ Swap
 *****************
 .. autoclass:: manimlib.animation.transform.Swap
     :members:
+
+与上面的 ``CyclicReplace`` 一样
 
 
 TransformAnimations

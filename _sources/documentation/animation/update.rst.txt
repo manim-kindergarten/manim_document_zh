@@ -7,7 +7,7 @@ UpdateFromFunc
     :members:
     
 .. manim-example:: UpdateFromFuncExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/UpdateFromFuncExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/UpdateFromFuncExample.mp4
 
   class UpdateFromFuncExample(Scene):
       def construct(self):
@@ -31,21 +31,26 @@ UpdateFromAlphaFunc
     :members:
     
 .. manim-example:: UpdateFromAlphaFuncExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/UpdateFromAlphaFuncExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/UpdateFromAlphaFuncExample.mp4
 
   class UpdateFromAlphaFuncExample(Scene):
       def construct(self):
-          square = Square().to_edge(UP)
-          mobject = Text("Text").scale(2)
-          mobject.next_to(square, RIGHT, buff=0.05)
+          circle = Circle(radius=2).to_edge(UP)
+          mobject = Text("Text")
+          mobject.move_to(circle.get_start())
+          mobject.save_state()
+
           def update_func(mob, alpha):
-              mob.next_to(square, RIGHT, buff=0.05 + alpha)
-  
-          self.add(square, mobject)
+              mob.restore()
+              mob.move_to(circle.point_from_proportion(alpha))
+              mob.rotate(TAU * alpha)
+
+          self.add(circle, mobject)
           self.wait()
           self.play(
-              square.to_edge, DOWN,
-              UpdateFromAlphaFunc(mobject, update_func)
+              circle.animate.to_edge(DOWN),
+              UpdateFromAlphaFunc(mobject, update_func),
+              run_time=3
           )
           self.wait()
 
@@ -56,7 +61,7 @@ MaintainPositionRelativeTo
     :members:
     
 .. manim-example:: MaintainPositionRelativeToExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/MaintainPositionRelativeToExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/MaintainPositionRelativeToExample.mp4
 
   class MaintainPositionRelativeToExample(Scene):
       def construct(self):

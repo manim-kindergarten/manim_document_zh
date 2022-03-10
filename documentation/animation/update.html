@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?712e668988332ce827845734">
-    <link rel="stylesheet" href="../../_static/pygments.css?712e668988332ce827845734">
+    <link rel="stylesheet" href="../../_static/styles/default.css?c937adb4a10b88871a5b1129">
+    <link rel="stylesheet" href="../../_static/pygments.css?c937adb4a10b88871a5b1129">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?712e668988332ce827845734"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?c937adb4a10b88871a5b1129"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -212,7 +212,7 @@
 to be used when the state of one mobject is dependent
 on another simultaneously animated mobject</p>
 </dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="updatefromfuncexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/UpdateFromFuncExample.mp4"></video><h5 class="example-header">UpdateFromFuncExample<a class="headerlink" href="#updatefromfuncexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">UpdateFromFuncExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="updatefromfuncexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/UpdateFromFuncExample.mp4"></video><h5 class="example-header">UpdateFromFuncExample<a class="headerlink" href="#updatefromfuncexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">UpdateFromFuncExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">square</span> <span class="o">=</span> <span class="n">Square</span><span class="p">()</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
         <span class="n">mobject</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Text"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">square</span><span class="p">,</span> <span class="n">RIGHT</span><span class="p">)</span>
@@ -235,19 +235,24 @@ on another simultaneously animated mobject</p>
 <dt id="manimlib.animation.update.UpdateFromAlphaFunc">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.update.</code><code class="sig-name descname">UpdateFromAlphaFunc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">update_function</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.update.UpdateFromAlphaFunc" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="updatefromalphafuncexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/UpdateFromAlphaFuncExample.mp4"></video><h5 class="example-header">UpdateFromAlphaFuncExample<a class="headerlink" href="#updatefromalphafuncexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">UpdateFromAlphaFuncExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="updatefromalphafuncexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/UpdateFromAlphaFuncExample.mp4"></video><h5 class="example-header">UpdateFromAlphaFuncExample<a class="headerlink" href="#updatefromalphafuncexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">UpdateFromAlphaFuncExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">square</span> <span class="o">=</span> <span class="n">Square</span><span class="p">()</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
-        <span class="n">mobject</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Text"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-        <span class="n">mobject</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">square</span><span class="p">,</span> <span class="n">RIGHT</span><span class="p">,</span> <span class="n">buff</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span>
-        <span class="k">def</span> <span class="nf">update_func</span><span class="p">(</span><span class="n">mob</span><span class="p">,</span> <span class="n">alpha</span><span class="p">):</span>
-            <span class="n">mob</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">square</span><span class="p">,</span> <span class="n">RIGHT</span><span class="p">,</span> <span class="n">buff</span><span class="o">=</span><span class="mf">0.05</span> <span class="o">+</span> <span class="n">alpha</span><span class="p">)</span>
+        <span class="n">circle</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
+        <span class="n">mobject</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Text"</span><span class="p">)</span>
+        <span class="n">mobject</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">circle</span><span class="o">.</span><span class="n">get_start</span><span class="p">())</span>
+        <span class="n">mobject</span><span class="o">.</span><span class="n">save_state</span><span class="p">()</span>
 
-        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">square</span><span class="p">,</span> <span class="n">mobject</span><span class="p">)</span>
+        <span class="k">def</span> <span class="nf">update_func</span><span class="p">(</span><span class="n">mob</span><span class="p">,</span> <span class="n">alpha</span><span class="p">):</span>
+            <span class="n">mob</span><span class="o">.</span><span class="n">restore</span><span class="p">()</span>
+            <span class="n">mob</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">circle</span><span class="o">.</span><span class="n">point_from_proportion</span><span class="p">(</span><span class="n">alpha</span><span class="p">))</span>
+            <span class="n">mob</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">TAU</span> <span class="o">*</span> <span class="n">alpha</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">circle</span><span class="p">,</span> <span class="n">mobject</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
-            <span class="n">square</span><span class="o">.</span><span class="n">to_edge</span><span class="p">,</span> <span class="n">DOWN</span><span class="p">,</span>
-            <span class="n">UpdateFromAlphaFunc</span><span class="p">(</span><span class="n">mobject</span><span class="p">,</span> <span class="n">update_func</span><span class="p">)</span>
+            <span class="n">circle</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">DOWN</span><span class="p">),</span>
+            <span class="n">UpdateFromAlphaFunc</span><span class="p">(</span><span class="n">mobject</span><span class="p">,</span> <span class="n">update_func</span><span class="p">),</span>
+            <span class="n">run_time</span><span class="o">=</span><span class="mi">3</span>
         <span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </pre></div>
@@ -259,7 +264,7 @@ on another simultaneously animated mobject</p>
 <dt id="manimlib.animation.update.MaintainPositionRelativeTo">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.update.</code><code class="sig-name descname">MaintainPositionRelativeTo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">tracked_mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.update.MaintainPositionRelativeTo" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="maintainpositionrelativetoexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/MaintainPositionRelativeToExample.mp4"></video><h5 class="example-header">MaintainPositionRelativeToExample<a class="headerlink" href="#maintainpositionrelativetoexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MaintainPositionRelativeToExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="maintainpositionrelativetoexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/MaintainPositionRelativeToExample.mp4"></video><h5 class="example-header">MaintainPositionRelativeToExample<a class="headerlink" href="#maintainpositionrelativetoexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MaintainPositionRelativeToExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">square</span> <span class="o">=</span> <span class="n">Square</span><span class="p">()</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
         <span class="n">mobject</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Text"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>

@@ -17,25 +17,25 @@ FadeOut
     :members:
     
 .. manim-example:: FadeOutExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FadeOutExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FadeOutExample.mp4
 
   class FadeOutExample(Scene):
       def construct(self):
           mobjects = VGroup(
-                  Circle(),
-                  Circle(fill_opacity=1),
-                  Text("Text").scale(2)
-              )
+              Circle(),
+              Circle(fill_opacity=1),
+              Text("Text").scale(2)
+          )
           mobjects.scale(1.5)
-          mobjects.arrange(RIGHT,buff=2)
-  
+          mobjects.arrange(RIGHT, buff=2)
+
           self.add(mobjects)
           self.wait(0.3)
-  
+
           self.play(
               *[FadeOut(mob) for mob in mobjects]
           )
-  
+
           self.wait()
 
 FadeIn
@@ -44,98 +44,99 @@ FadeIn
     :members:
     
 .. manim-example:: FadeInExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FadeInExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FadeInExample.mp4
 
   class FadeInExample(Scene):
       def construct(self):
           mobjects = VGroup(
-                  Circle(),
-                  Circle(fill_opacity=1),
-                  TexText("Text").scale(2)
-              )
+              Circle(),
+              Circle(fill_opacity=1),
+              Text("Text").scale(2)
+          )
           mobjects.scale(1.5)
-          mobjects.arrange(RIGHT,buff=2)
-  
+          mobjects.arrange(RIGHT, buff=2)
+
           self.play(
               *[FadeIn(mob) for mob in mobjects]
           )
-  
+
           self.wait()
     
 .. manim-example:: FadeInFromExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FadeInFromExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FadeInFromExample.mp4
 
   class FadeInFromExample(Scene):
       def construct(self):
           mobjects = VGroup(
-                  Circle(),
-                  Circle(fill_opacity=1),
-                  TexText("Text").scale(2)
-              )
+              Circle(),
+              Circle(fill_opacity=1),
+              Text("Text").scale(2)
+          )
           mobjects.scale(1.5)
-          mobjects.arrange(RIGHT,buff=2)
-  
-          directions=[UP,LEFT,DOWN,RIGHT]
-  
+          mobjects.arrange(RIGHT, buff=2)
+
+          directions = [UP, LEFT, DOWN, RIGHT]
+
           for direction in directions:
               self.play(
-                  *[FadeIn(mob,shift=direction) for mob in mobjects]
+                  *[FadeIn(mob, shift=direction) for mob in mobjects]
               )
-  
+
           self.wait()
 
 .. manim-example:: FadeOutAndShiftExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FadeOutAndShiftExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FadeOutAndShiftExample.mp4
 
   class FadeOutAndShiftExample(Scene):
       def construct(self):
           mobjects = VGroup(
-                  Circle(),
-                  Circle(fill_opacity=1),
-                  TexText("Text").scale(2)
-              )
+              Circle(),
+              Circle(fill_opacity=1),
+              Text("Text").scale(2)
+          )
           mobjects.scale(1.5)
-          mobjects.arrange(RIGHT,buff=2)
-  
-          directions=[UP,LEFT,DOWN,RIGHT]
-  
+          mobjects.arrange(RIGHT, buff=2)
+
+          directions = [UP, LEFT, DOWN, RIGHT]
+
           self.add(mobjects)
           self.wait(0.3)
-  
+
           for direction in directions:
               self.play(
-                  *[FadeOut(mob,shift=direction) for mob in mobjects]
+                  *[FadeOut(mob, shift=direction) for mob in mobjects]
               )
-  
+
           self.wait()
 
 .. manim-example:: FadeInFromLargeExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FadeInFromLargeExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FadeInFromLargeExample.mp4
 
   class FadeInFromLargeExample(Scene):
       def construct(self):
           mobjects = VGroup(
-                  Circle(),
-                  Circle(fill_opacity=1),
-                  TexText("Text").scale(2)
-              )
+              Circle(),
+              Circle(fill_opacity=1),
+              Text("Text").scale(2)
+          )
           mobjects.scale(1.5)
-          mobjects.arrange(RIGHT,buff=2)
-  
-          scale_factors=[0.3,0.8,1,1.3,1.8]
-  
+          mobjects.arrange(RIGHT, buff=2)
+
+          scale_factors = [0.3, 0.8, 1, 1.3, 1.8]
+
           for scale_factor in scale_factors:
-              t_scale_factor = TexText(f"\\tt scale\\_factor = {scale_factor}")
+              t_scale_factor = Text(
+                  f"scale_factor = {scale_factor}", font="monospace")
               t_scale_factor.to_edge(UP)
-  
+
               self.add(t_scale_factor)
-  
+
               self.play(
-                  *[FadeIn(mob,scale=scale_factor) for mob in mobjects]
+                  *[FadeIn(mob, scale=scale_factor) for mob in mobjects]
               )
-  
+
               self.remove(t_scale_factor)
-  
+
           self.wait(0.3)
 
 FadeInFromPoint
@@ -144,18 +145,18 @@ FadeInFromPoint
     :members:
     
 .. manim-example:: FadeInFromPointExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/FadeInFromPointExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FadeInFromPointExample.mp4
 
   class FadeInFromPointExample(Scene):
       def construct(self):
           mobjects = VGroup(
               Circle(),
               Circle(fill_opacity=1),
-              TexText("Text").scale(2)
+              Text("Text").scale(2)
           )
           mobjects.scale(1.5)
-          mobjects.arrange(RIGHT,buff=2)
-  
+          mobjects.arrange(RIGHT, buff=2)
+
           self.wait()
           self.play(
               *[FadeInFromPoint(mob, UP*3) for mob in mobjects]
@@ -167,15 +168,65 @@ FadeOutToPoint
 .. autoclass:: manimlib.animation.fading.FadeOutToPoint
     :members:
 
+.. manim-example:: FadeOutToPointExample
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FadeOutToPointExample.mp4
+
+  class FadeOutToPointExample(Scene):
+      def construct(self):
+          mobjects = VGroup(
+              Circle(),
+              Circle(fill_opacity=1),
+              Text("Text").scale(2)
+          )
+          mobjects.scale(1.5)
+          mobjects.arrange(RIGHT, buff=2)
+
+          self.add(mobjects)
+          self.wait()
+          self.play(
+              *[FadeOutToPoint(mob, DOWN*3) for mob in mobjects]
+          )
+          self.wait()
+
 FadeTransform
 *********************
 .. autoclass:: manimlib.animation.fading.FadeTransform
     :members:
 
+.. manim-example:: FadeTransformExample
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FadeTransformExample.mp4
+
+  class FadeTransformExample(Scene):
+      def construct(self):
+          m_a = Rectangle(width=6, height=2, color=BLUE, fill_opacity=1)
+          m_b = Text("Rectangle").scale(3)
+          self.add(m_a)
+          self.wait()
+          self.play(FadeTransform(m_a, m_b))
+          self.wait()
+
+
 FadeTransformPieces
 *********************
 .. autoclass:: manimlib.animation.fading.FadeTransformPieces
     :members:
+
+.. manim-example:: FadeTransformPiecesExample
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FadeTransformPiecesExample.mp4
+
+
+  class FadeTransformPiecesExample(Scene):
+      def construct(self):
+          m_a = VGroup(*[
+              Circle(radius=0.4)
+              .move_to((np.random.random(3)-0.5) * 3)
+              for i in range(6)
+          ])
+          m_b = Text("Circle").scale(3)
+          self.add(m_a)
+          self.wait()
+          self.play(FadeTransformPieces(m_a, m_b))
+          self.wait()
 
 VFadeIn
 *****************

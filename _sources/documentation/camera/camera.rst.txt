@@ -1,6 +1,10 @@
 Camera
 =============
 
+.. admonition:: 注意
+
+    本部分涉及到很多关于 OpenGL 的编写，例如 vertex array object, vertex buffer object, texture 等内容。由于编者对这部分也不是很熟悉，也希望有专业的同学来一起完善这部分内容。
+
 CameraFrame
 *************
 .. autoclass:: manimlib.camera.camera.CameraFrame
