@@ -10,6 +10,9 @@
     - `<https://thebookofshaders.com/>`_ 
     - `<https://shadertoy.com/>`_ 
     - `<https://smoothstep.io/>`_
+    - `<https://learnopengl-cn.github.io/>`_
+
+    由于笔者的能力有限，如果发现文档中有任何错误或不当之处，欢迎来 manim-kindergarten 提交 pull request
 
 
 set_color_by_code
@@ -61,3 +64,19 @@ glsl 中的变量
             # hex_to_rgb 会将 16 进制颜色字符串转变为 RGB 三元列表，其值范围均为 [0,1]
             # 利用 tuple 将它们用圆括号括起来，翻译后的字符串就变为（这里仅展示一部分）
             # vec3 blue = vec3(0.345, 0.769, 0.867);
+
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 目录
+
+   Preliminary_knowledge
+   inserts/index
+   image
+   quadratic_bezier_fill
+   quadratic_bezier_stroke
+   surface
+   textured_surface
+   true_dot
+

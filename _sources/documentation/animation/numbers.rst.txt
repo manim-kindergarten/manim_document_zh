@@ -7,7 +7,7 @@ ChangingDecimal
     :members:
     
 .. manim-example:: ChangingDecimalExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ChangingDecimalExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/ChangingDecimalExample.mp4
 
   class ChangingDecimalExample(Scene):
       def construct(self):
@@ -27,7 +27,7 @@ ChangeDecimalToValue
     :members:
     
 .. manim-example:: ChangeDecimalToValueExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ChangeDecimalToValueExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/ChangeDecimalToValueExample.mp4
 
   class ChangeDecimalToValueExample(Scene):
       def construct(self):
@@ -44,7 +44,7 @@ CountInFrom
     :members:
 
 .. manim-example:: ChangeDecimalToValueExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/CountInFromExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/CountInFromExample.mp4
 
   class CountInFromExample(Scene):
       def construct(self):

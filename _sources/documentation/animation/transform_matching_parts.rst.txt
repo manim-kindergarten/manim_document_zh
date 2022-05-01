@@ -15,7 +15,7 @@ TransformMatchingShapes
     :members:
 
 .. manim-example:: TransformMatchingShapesExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/TransformMatchingShapesExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/TransformMatchingShapesExample.mp4
 
   class TransformMatchingShapesExample(Scene):
       def construct(self):
@@ -34,7 +34,7 @@ TransformMatchingTex
     :members:
 
 .. manim-example:: TransformMatchingTexExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/TransformMatchingTexExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/TransformMatchingTexExample.mp4
 
   class TransformMatchingTexExample(Scene):
       def construct(self):
@@ -45,9 +45,3 @@ TransformMatchingTex
           self.play(TransformMatchingTex(a, b, key_map={"^2": "\\sqrt{"}))
           self.wait()
 
-TransformMatchingMTex
-***************************
-.. autoclass:: manimlib.animation.transform_matching_parts.TransformMatchingMTex
-    :members:
-
-等待忆拾修复中……

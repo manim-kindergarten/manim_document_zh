@@ -7,7 +7,7 @@ AnimationGroup
     :members:
 
 .. manim-example:: AnimationGroupExample
-    :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/AnimationGroupExample.mp4
+    :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/AnimationGroupExample.mp4
 
     class AnimationGroupExample(Scene):
         def construct(self):
@@ -33,7 +33,7 @@ Succession
     :members:
 
 .. manim-example:: SuccessionExample
-    :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/SuccessionExample.mp4
+    :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/SuccessionExample.mp4
 
     class SuccessionExample(Scene):
         def construct(self):
@@ -59,7 +59,7 @@ LaggedStart
     :members:
 
 .. manim-example:: LaggedStartExample
-    :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/LaggedStartExample.mp4
+    :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/LaggedStartExample.mp4
 
     class LaggedStartExample(Scene):
         def construct(self):
@@ -86,7 +86,7 @@ LaggedStartMap
     :members:
 
 .. manim-example:: LaggedStartMapExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/LaggedStartMapExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/LaggedStartMapExample.mp4
 
   class LaggedStartMapExample(Scene):
       def construct(self):

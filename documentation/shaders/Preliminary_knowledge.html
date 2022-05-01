@@ -1,0 +1,367 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Inserts" href="inserts/index.html" /><link rel="prev" title="着色代码 shaders (TODO)" href="index.html" />
+
+    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-4.4.0, furo 2020.10.05.beta9"/>
+        <title>OpenGL 预备知识 - ManimGL  文档</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/default.css" />
+    <link rel="stylesheet" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
+    <link rel="stylesheet" href="../../_static/styles/default.css?29e3d347d1e37687c3944340">
+    <link rel="stylesheet" href="../../_static/pygments.css?29e3d347d1e37687c3944340">
+    
+<style>
+  :root {
+    --color-code-background: #f8f8f8;
+    --color-code-foreground: #000000;
+  
+  }
+</style>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
+      <script src="../../_static/underscore.js"></script>
+      
+        <script src="../../_static/doctools.js" defer></script>
+      
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/translations.js"></script><script src="../../_static/scripts/main.js?29e3d347d1e37687c3944340"></script></head>
+  <body dir="">
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke-width="1.5" stroke="#101010" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z"/>
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+
+<div class="page">
+  <header class="mobile-header">
+    <label class="header-left nav-overlay-icon" for="__navigation">
+      <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+    </label>
+    <div class="header-center"><div class="brand">ManimGL  文档</div></div>
+    <div class="header-right"></div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand centered" href="../../index.html">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="../../_static/Logo_white.png" alt="Logo"/>
+  </div>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html">
+  <input class="sidebar-search" placeholder="Search" name="q">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form><div class="sidebar-tree sidebar-scroll">
+  <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/configuration.html">命令行参数和配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/example_scenes.html">样例学习</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">进阶文档</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../animation/index.html">动画部分 animation</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../animation/creation.html">Creation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/fading.html">Fading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/growing.html">Growing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/indication.html">Indication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/movement.html">Movement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/numbers.html">Numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/rotation.html">Rotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/transform.html">Transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/transform_matching_parts.html">Transform Matching Parts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/update.html">Update</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/composition.html">Composition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../animation/specialized.html">Specialized</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../camera/index.html">相机部分 camera</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label for="toctree-checkbox-2"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../camera/camera.html">Camera</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../mobject/index.html">数学物件 mobject</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../mobject/types/index.html">types</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label for="toctree-checkbox-4"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/types/dot_cloud.html">Dot Cloud</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/types/image_mobject.html">Image Mobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/types/point_cloud_mobject.html">Point Cloud Mobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/types/surface.html">Surface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/types/vectorized_mobject.html">Vectorized Mobject</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../mobject/svg/index.html">svg</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label for="toctree-checkbox-5"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/brace.html">Brace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/drawings.html">Drawings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/mtex_mobject.html">MTex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/svg_mobject.html">SVGMobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/tex_mobject.html">Tex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/text_mobject.html">Text</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/boolean_ops.html">BooleanOps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/changing.html">Changing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/coordinate_systems.html">CoordinateSystems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/frame.html">Frame</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/geometry.html">Geometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/interactive.html">Interactive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/matrix.html">Matrix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/mobject.html">Mobject</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/mobject_update_utils.html">MobjectUpdateUtils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/number_line.html">NumberLine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/numbers.html">Numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/probability.html">Probability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/shape_matchers.html">ShapeMatchers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/three_dimensions.html">ThreeDimensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/value_tracker.html">ValueTracker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mobject/vector_field.html">VectorField</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../scene/index.html">场景部分 scene</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label for="toctree-checkbox-6"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scene/scene.html">Scene</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/scene_file_writer.html">SceneFileWriter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/three_d_scene.html">ThreeDScene</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/sample_space_scene.html">SampleSpaceScene(TODO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scene/vector_space_scene.html">VectorScene</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">着色代码 shaders (TODO)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">OpenGL 预备知识</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inserts/index.html">Inserts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image.html">image 贴图</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quadratic_bezier_fill.html">二阶贝塞尔曲线填充色 Quadratic bezier fill</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quadratic_bezier_stroke.html">二阶贝塞尔曲线轮廓线着色 Quadratic bezier stroke</a></li>
+<li class="toctree-l2"><a class="reference internal" href="surface.html">曲面着色 Surface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="textured_surface.html">曲面贴图 Textured surface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="true_dot.html">True dot</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../utils/index.html">工具函数 utils</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label for="toctree-checkbox-8"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../utils/bezier.html">Bezier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/color.html">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/config_ops.html">CONFIG_ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/file_ops.html">FILE_ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/images.html">Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/iterables.html">Iterables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/paths.html">Paths</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/rate_functions.html">Rate_functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/simple_functions.html">Simple_functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/sounds.html">Sounds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/space_ops.html">Space_ops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/tex_file_writing.html">Tex_file_writing</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">开发相关</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/about.html">关于</a></li>
+</ul>
+
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <main class="main">
+    <div class="content">
+      <article role="main">
+        <label class="toc-overlay-icon" for="__toc">
+          <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        </label>
+        <div class="section" id="opengl">
+<span id="id1"></span><h1>OpenGL 预备知识<a class="headerlink" href="#opengl" title="永久链接至标题">¶</a></h1>
+<div class="admonition- admonition">
+<p class="admonition-title">注意</p>
+<p>本部分为 shader 学习的一些预备知识，读者需要对这一部分有所了解，才能得以继续深入。</p>
+</div>
+<div class="section" id="id2">
+<h2>OpenGL 运行流程<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/OpenGL-sequence.svg" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/OpenGL-sequence.svg"/></div>
+<div class="section" id="glsl">
+<h2>GLSL 函数<a class="headerlink" href="#glsl" title="永久链接至标题">¶</a></h2>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv410smoothstep7genType7genType7genType">
+<span id="_CPPv310smoothstep7genType7genType7genType"></span><span id="_CPPv210smoothstep7genType7genType7genType"></span><span id="smoothstep__genType.genType.genType"></span><span class="n"><span class="pre">genType</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">smoothstep</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">genType</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">edge_0</span></span>, <span class="n"><span class="pre">genType</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">edge_1</span></span>, <span class="n"><span class="pre">genType</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv410smoothstep7genType7genType7genType" title="永久链接至目标">¶</a><br/></dt>
+<dd><ul class="simple">
+<li><p>当 <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&lt;=</span> <span class="pre">edge_0</span></code> 时返回 0.0</p></li>
+<li><p>当 <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&gt;=</span> <span class="pre">edge_1</span></code> 时返回 1.0</p></li>
+<li><p>当 <code class="docutils literal notranslate"><span class="pre">edge_0</span> <span class="pre">&lt;</span> <span class="pre">x</span> <span class="pre">&lt;</span> <span class="pre">edge_1</span></code> 时形成一个从 0 到 1 的平滑插值</p></li>
+</ul>
+<img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/functions/smoothstep1.svg" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/functions/smoothstep1.svg"/><p>特别的，当 <code class="docutils literal notranslate"><span class="pre">egde_0</span> <span class="pre">&gt;</span> <span class="pre">edge_1</span></code> 时，图像会翻转，即满足下面的情况</p>
+<ul class="simple">
+<li><p>当 <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&lt;=</span> <span class="pre">edge_1</span></code> 时返回 1.0</p></li>
+<li><p>当 <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&gt;=</span> <span class="pre">edge_0</span></code> 时返回 0.0</p></li>
+<li><p>当 <code class="docutils literal notranslate"><span class="pre">edge_1</span> <span class="pre">&lt;</span> <span class="pre">x</span> <span class="pre">&lt;</span> <span class="pre">edge_0</span></code> 时形成一个从 1 到 0 的平滑插值</p></li>
+</ul>
+<img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/functions/smoothstep2.svg" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/functions/smoothstep2.svg"/></dd></dl>
+<hr class="docutils"/>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv43mix7genType7genTypef">
+<span id="_CPPv33mix7genType7genTypef"></span><span id="_CPPv23mix7genType7genTypef"></span><span id="mix__genType.genType.float"></span><span class="n"><span class="pre">genType</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mix</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">genType</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span>, <span class="n"><span class="pre">genType</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">a</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv43mix7genType7genTypef" title="永久链接至目标">¶</a><br/></dt>
+<dd><ul class="simple">
+<li><p>返回值为 <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">*</span> <span class="pre">(1</span> <span class="pre">-</span> <span class="pre">a)</span> <span class="pre">+</span> <span class="pre">y</span> <span class="pre">*</span> <span class="pre">a</span></code>，即为 <code class="docutils literal notranslate"><span class="pre">x</span></code> 到 <code class="docutils literal notranslate"><span class="pre">y</span></code> 的插值</p></li>
+</ul>
+</dd></dl>
+<hr class="docutils"/>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv45clamp7genType7genType7genType">
+<span id="_CPPv35clamp7genType7genType7genType"></span><span id="_CPPv25clamp7genType7genType7genType"></span><span id="clamp__genType.genType.genType"></span><span class="n"><span class="pre">genType</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">clamp</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">genType</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span>, <span class="n"><span class="pre">genType</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">minVal</span></span>, <span class="n"><span class="pre">genType</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">maxVal</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv45clamp7genType7genType7genType" title="永久链接至目标">¶</a><br/></dt>
+<dd><p>将自变量 <code class="docutils literal notranslate"><span class="pre">x</span></code> 限制在给定的范围内，即有</p>
+<ul class="simple">
+<li><p>当 <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&lt;</span> <span class="pre">minVal</span></code> 时返回 <code class="docutils literal notranslate"><span class="pre">minVal</span></code></p></li>
+<li><p>当 <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&gt;</span> <span class="pre">maxVal</span></code> 时返回 <code class="docutils literal notranslate"><span class="pre">maxVal</span></code></p></li>
+<li><p>当 <code class="docutils literal notranslate"><span class="pre">minVal</span> <span class="pre">&lt;</span> <span class="pre">x</span> <span class="pre">&lt;</span> <span class="pre">maxVal</span></code> 时返回 <code class="docutils literal notranslate"><span class="pre">x</span></code></p></li>
+</ul>
+</dd></dl>
+</div>
+<hr class="docutils"/>
+<div class="section" id="id3">
+<h2>一些概念<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<div class="section" id="sdf">
+<h3>sdf 符号距离函数<a class="headerlink" href="#sdf" title="永久链接至标题">¶</a></h3>
+<p>对一个圆上色，我们可能会这么考虑：当半径小于等于 radius 时，就对它上色，其他不上色。此时，也就有了伪代码</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">length</span><span class="p">(</span><span class="n">point</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">radius</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// 圆内着色</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// 圆外不着色</span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>但是当有更加复杂的图形时，这样就会形成相当复杂的 if-else 树，这样不仅代码不美观，性能上也较差。因此我们寻求更加高效的方案：sdf</p>
+<p>同样是画圆，我们这样定义</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">float</span><span class="w"> </span><span class="nf">sdfCircle</span><span class="p">(</span><span class="n">vec2</span><span class="w"> </span><span class="n">point</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">radius</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">length</span><span class="p">(</span><span class="n">p</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">radius</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>此时我们仔细分析一下</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>在圆内的点，返回的结果均小于 0</p></li>
+<li><p>在圆上的点，返回值为 0</p></li>
+<li><p>在圆外的点，返回值均大于 0</p></li>
+</ul>
+</div></blockquote>
+<p>此时， 0 就成了一个分界点，我们可以使用一些其他的函数来进一步处理，即可得到理想的效果了。我们使用上面提到的 smoothstep 函数</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">float</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">smoothstep</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span><span class="w"> </span><span class="mf">0.</span><span class="p">,</span><span class="w"> </span><span class="n">sdfCircle</span><span class="p">(</span><span class="n">coords</span><span class="p">,</span><span class="w"> </span><span class="mf">0.5</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>这一步得到 <code class="docutils literal notranslate"><span class="pre">f</span></code> ，它的结果为：当点在圆内，则返回 1 ，在圆外，则返回 0，可以得到一个近似的圆的坐标集</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mix</span><span class="p">(</span><span class="n">color</span><span class="p">,</span><span class="w"> </span><span class="n">vec3</span><span class="p">(</span><span class="mf">1.</span><span class="p">,</span><span class="w"> </span><span class="mf">1.</span><span class="p">,</span><span class="w"> </span><span class="mf">0.</span><span class="p">),</span><span class="w"> </span><span class="n">f</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+<p>这一步中，将原有的片段颜色和圆的颜色（黄色）混合，混合的依据就是 <code class="docutils literal notranslate"><span class="pre">f</span></code>，值为 0 的像素，使用原有的颜色，值为 1 的像素，使用圆的颜色。</p>
+<p>这样我们就可以在坐标系中画一个圆。</p>
+</div>
+</div>
+</div>
+
+      </article>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="inserts/index.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Inserts</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="index.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">着色代码 shaders (TODO)</div>
+                
+              </div>
+            </a>
+        </div>
+
+        <div class="related-information">
+          <span class="copyright">版权所有 &copy; 2020-2021 Manim Kindergarten Team</span> |
+          Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using
+          <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+          <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            目录
+          </span>
+        </div>
+        <div class="toc-tree">
+          <ul>
+<li><a class="reference internal" href="#">OpenGL 预备知识</a><ul>
+<li><a class="reference internal" href="#id2">OpenGL 运行流程</a></li>
+<li><a class="reference internal" href="#glsl">GLSL 函数</a></li>
+<li><a class="reference internal" href="#id3">一些概念</a><ul>
+<li><a class="reference internal" href="#sdf">sdf 符号距离函数</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+      
+      
+    </aside>
+  </main>
+</div>
+  </body>
+</html>

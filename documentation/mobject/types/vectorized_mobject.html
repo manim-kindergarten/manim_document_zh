@@ -3,13 +3,15 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../../genindex.html" /><link rel="search" title="搜索" href="../../../search.html" /><link rel="next" title="svg" href="../svg/index.html" /><link rel="prev" title="Surface" href="surface.html" />
 
-    <link rel="shortcut icon" href="../../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../../../_static/mk.png"/><meta name="generator" content="sphinx-4.4.0, furo 2020.10.05.beta9"/>
         <title>Vectorized Mobject - ManimGL  文档</title>
-      <link rel="stylesheet" href="../../../_static/copybutton.css" />
+      <link rel="stylesheet" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/default.css" />
+    <link rel="stylesheet" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../../_static/styles/default.css?7f6e136afc36952dccb93de2">
-    <link rel="stylesheet" href="../../../_static/pygments.css?7f6e136afc36952dccb93de2">
+    <link rel="stylesheet" href="../../../_static/styles/default.css?6d2ba591c2c24f81286257b8">
+    <link rel="stylesheet" href="../../../_static/pygments.css?6d2ba591c2c24f81286257b8">
     
 <style>
   :root {
@@ -18,17 +20,15 @@
   
   }
 </style>
-    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script><script src="../../../_static/jquery.js"></script>
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/documentation_options.js"></script><script src="../../../_static/jquery.js"></script>
       <script src="../../../_static/underscore.js"></script>
       
         <script src="../../../_static/doctools.js" defer></script>
       
-        <script src="../../../_static/language_data.js" defer></script>
-      
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
-        <script src="../../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?7f6e136afc36952dccb93de2"></script></head>
+        <script src="../../../_static/translations.js"></script><script src="../../../_static/scripts/main.js?6d2ba591c2c24f81286257b8"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -89,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p class="caption"><span class="caption-text">入门教程</span></p>
+  <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../getting_started/quickstart.html">快速入门</a></li>
@@ -98,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p class="caption"><span class="caption-text">进阶文档</span></p>
+<p class="caption" role="heading"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../custom_config.html">默认配置 custom_config</a></li>
@@ -166,8 +166,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../../scene/vector_space_scene.html">VectorScene</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../shaders/index.html">着色代码 shaders (TODO)</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../utils/index.html">工具函数 utils</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../shaders/index.html">着色代码 shaders (TODO)</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../shaders/Preliminary_knowledge.html">OpenGL 预备知识</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../shaders/inserts/index.html">Inserts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../shaders/image.html">image 贴图</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../shaders/quadratic_bezier_fill.html">二阶贝塞尔曲线填充色 Quadratic bezier fill</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../shaders/quadratic_bezier_stroke.html">二阶贝塞尔曲线轮廓线着色 Quadratic bezier stroke</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../shaders/surface.html">曲面着色 Surface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../shaders/textured_surface.html">曲面贴图 Textured surface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../shaders/true_dot.html">True dot</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../utils/index.html">工具函数 utils</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label for="toctree-checkbox-8"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../utils/bezier.html">Bezier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../utils/color.html">Color</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../utils/config_ops.html">CONFIG_ops</a></li>
@@ -183,7 +193,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption"><span class="caption-text">开发相关</span></p>
+<p class="caption" role="heading"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../development/contributing.html">贡献</a></li>
@@ -208,8 +218,8 @@
 <div class="section" id="vmobject">
 <h2>VMobject<a class="headerlink" href="#vmobject" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.vectorized_mobject.</code><code class="sig-name descname">VMobject</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.types.vectorized_mobject.</span></span><span class="sig-name descname"><span class="pre">VMobject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject" title="永久链接至目标">¶</a></dt>
 <dd><p>初始化样式，VMobject 的样式有以下</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">fill</span></code> 填充样式</p>
@@ -230,38 +240,38 @@
 </ul>
 <p>其中，opacity, width 等属性均可以为一个列表，在渲染时会按照列表对其进行补间</p>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.add_cubic_bezier_curve_to">
-<code class="sig-name descname">add_cubic_bezier_curve_to</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">handle1</span></em>, <em class="sig-param"><span class="n">handle2</span></em>, <em class="sig-param"><span class="n">anchor</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.add_cubic_bezier_curve_to" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.add_cubic_bezier_curve_to">
+<span class="sig-name descname"><span class="pre">add_cubic_bezier_curve_to</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">handle1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">npt.ArrayLike</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handle2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">npt.ArrayLike</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anchor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">npt.ArrayLike</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.add_cubic_bezier_curve_to" title="永久链接至目标">¶</a></dt>
 <dd><p>添加一条三阶贝塞尔曲线（可能不准）</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.add_line_to">
-<code class="sig-name descname">add_line_to</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.add_line_to" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.add_line_to">
+<span class="sig-name descname"><span class="pre">add_line_to</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.add_line_to" title="永久链接至目标">¶</a></dt>
 <dd><p>添加一条直线</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.add_quadratic_bezier_curve_to">
-<code class="sig-name descname">add_quadratic_bezier_curve_to</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">handle</span></em>, <em class="sig-param"><span class="n">anchor</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.add_quadratic_bezier_curve_to" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.add_quadratic_bezier_curve_to">
+<span class="sig-name descname"><span class="pre">add_quadratic_bezier_curve_to</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">handle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anchor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.add_quadratic_bezier_curve_to" title="永久链接至目标">¶</a></dt>
 <dd><p>添加一条二阶贝塞尔曲线</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.add_smooth_curve_to">
-<code class="sig-name descname">add_smooth_curve_to</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.add_smooth_curve_to" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.add_smooth_curve_to">
+<span class="sig-name descname"><span class="pre">add_smooth_curve_to</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.add_smooth_curve_to" title="永久链接至目标">¶</a></dt>
 <dd><p>添加一条平滑的曲线</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.align_points">
-<code class="sig-name descname">align_points</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vmobject</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.align_points" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.align_points">
+<span class="sig-name descname"><span class="pre">align_points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vmobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#manimlib.mobject.types.vectorized_mobject.VMobject" title="manimlib.mobject.types.vectorized_mobject.VMobject"><span class="pre">manimlib.mobject.types.vectorized_mobject.VMobject</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.align_points" title="永久链接至目标">¶</a></dt>
 <dd><p>对齐锚点，主要用于 Transform 的内部实现</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.apply_function">
-<code class="sig-name descname">apply_function</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span></em>, <em class="sig-param"><span class="n">make_smooth</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.apply_function" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.apply_function">
+<span class="sig-name descname"><span class="pre">apply_function</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">np.ndarray</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">np.ndarray</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">make_smooth</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.apply_function" title="永久链接至目标">¶</a></dt>
 <dd><p>对物件执行 function 函数</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.change_anchor_mode">
-<code class="sig-name descname">change_anchor_mode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mode</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.change_anchor_mode" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.change_anchor_mode">
+<span class="sig-name descname"><span class="pre">change_anchor_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.change_anchor_mode" title="永久链接至目标">¶</a></dt>
 <dd><p>改变曲线连接模式</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">jagged</span></code> : 折线</p></li>
@@ -270,220 +280,220 @@
 </ul>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.close_path">
-<code class="sig-name descname">close_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.close_path" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.close_path">
+<span class="sig-name descname"><span class="pre">close_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.close_path" title="永久链接至目标">¶</a></dt>
 <dd><p>用直线闭合该曲线</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.consider_points_equals">
-<code class="sig-name descname">consider_points_equals</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">p0</span></em>, <em class="sig-param"><span class="n">p1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.consider_points_equals" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.consider_points_equals">
+<span class="sig-name descname"><span class="pre">consider_points_equals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.consider_points_equals" title="永久链接至目标">¶</a></dt>
 <dd><p>判断两点是否大致重合</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.fade">
-<code class="sig-name descname">fade</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">darkness</span><span class="o">=</span><span class="default_value">0.5</span></em>, <em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.fade" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.fade">
+<span class="sig-name descname"><span class="pre">fade</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">darkness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recurse</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.fade" title="永久链接至目标">¶</a></dt>
 <dd><p>变暗</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.flip">
-<code class="sig-name descname">flip</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.flip" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.flip">
+<span class="sig-name descname"><span class="pre">flip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">array([0.,</span> <span class="pre">1.,</span> <span class="pre">0.])</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.flip" title="永久链接至目标">¶</a></dt>
 <dd><p>绕 axis 轴翻转</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.get_anchors_and_handles">
-<code class="sig-name descname">get_anchors_and_handles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_anchors_and_handles" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.get_anchors_and_handles">
+<span class="sig-name descname"><span class="pre">get_anchors_and_handles</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">np.ndarray</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_anchors_and_handles" title="永久链接至目标">¶</a></dt>
 <dd><p>获取二阶贝塞尔曲线的锚点和手柄</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.get_area_vector">
-<code class="sig-name descname">get_area_vector</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_area_vector" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.get_area_vector">
+<span class="sig-name descname"><span class="pre">get_area_vector</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_area_vector" title="永久链接至目标">¶</a></dt>
 <dd><p>返回一个向量，其长度为锚点形成的多边形所围成的面积，根据右手定则指向垂直于该多边形的方向。</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.get_color">
-<code class="sig-name descname">get_color</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_color" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.get_color">
+<span class="sig-name descname"><span class="pre">get_color</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_color" title="永久链接至目标">¶</a></dt>
 <dd><p>获取颜色</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.get_fill_color">
-<code class="sig-name descname">get_fill_color</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_fill_color" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.get_fill_color">
+<span class="sig-name descname"><span class="pre">get_fill_color</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_fill_color" title="永久链接至目标">¶</a></dt>
 <dd><p>获取填充色</p>
 <p>如果是渐变染色,则只会返回颜色列表的第一个</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.get_fill_opacity">
-<code class="sig-name descname">get_fill_opacity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_fill_opacity" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.get_fill_opacity">
+<span class="sig-name descname"><span class="pre">get_fill_opacity</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_fill_opacity" title="永久链接至目标">¶</a></dt>
 <dd><p>获取透明度</p>
 <p>如果是渐变透明度,则只会返回透明度列表的第一个</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.get_last_point">
-<code class="sig-name descname">get_last_point</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_last_point" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.get_last_point">
+<span class="sig-name descname"><span class="pre">get_last_point</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_last_point" title="永久链接至目标">¶</a></dt>
 <dd><p>获取路径最后一个锚点</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.get_nth_curve_function">
-<code class="sig-name descname">get_nth_curve_function</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_nth_curve_function" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.get_nth_curve_function">
+<span class="sig-name descname"><span class="pre">get_nth_curve_function</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">np.ndarray</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_nth_curve_function" title="永久链接至目标">¶</a></dt>
 <dd><p>获取组成曲线的第 n 条贝塞尔曲线函数</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.get_nth_curve_points">
-<code class="sig-name descname">get_nth_curve_points</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_nth_curve_points" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.get_nth_curve_points">
+<span class="sig-name descname"><span class="pre">get_nth_curve_points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_nth_curve_points" title="永久链接至目标">¶</a></dt>
 <dd><p>获取组成曲线的第 n 条贝塞尔曲线的锚点</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.get_num_curves">
-<code class="sig-name descname">get_num_curves</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_num_curves" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.get_num_curves">
+<span class="sig-name descname"><span class="pre">get_num_curves</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_num_curves" title="永久链接至目标">¶</a></dt>
 <dd><p>获取组成曲线的贝塞尔曲线数量</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.get_opacity">
-<code class="sig-name descname">get_opacity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_opacity" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.get_opacity">
+<span class="sig-name descname"><span class="pre">get_opacity</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_opacity" title="永久链接至目标">¶</a></dt>
 <dd><p>获取透明度</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.get_shader_wrapper_list">
-<code class="sig-name descname">get_shader_wrapper_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_shader_wrapper_list" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.get_shader_wrapper_list">
+<span class="sig-name descname"><span class="pre">get_shader_wrapper_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">ShaderWrapper</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_shader_wrapper_list" title="永久链接至目标">¶</a></dt>
 <dd><p>获取 shader 包装列表</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.get_style">
-<code class="sig-name descname">get_style</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_style" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.get_style">
+<span class="sig-name descname"><span class="pre">get_style</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_style" title="永久链接至目标">¶</a></dt>
 <dd><p>获取样式字典</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.get_subcurve">
-<code class="sig-name descname">get_subcurve</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_subcurve" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.get_subcurve">
+<span class="sig-name descname"><span class="pre">get_subcurve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference internal" href="#manimlib.mobject.types.vectorized_mobject.VMobject" title="manimlib.mobject.types.vectorized_mobject.VMobject"><span class="pre">manimlib.mobject.types.vectorized_mobject.VMobject</span></a></span></span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_subcurve" title="永久链接至目标">¶</a></dt>
 <dd><p>获取路径上百分比为 a 到 b 的部分</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.get_unit_normal">
-<code class="sig-name descname">get_unit_normal</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">recompute</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_unit_normal" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.get_unit_normal">
+<span class="sig-name descname"><span class="pre">get_unit_normal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">recompute</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.get_unit_normal" title="永久链接至目标">¶</a></dt>
 <dd><p>获取单位法向量</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.insert_n_curves">
-<code class="sig-name descname">insert_n_curves</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em>, <em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.insert_n_curves" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.insert_n_curves">
+<span class="sig-name descname"><span class="pre">insert_n_curves</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recurse</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.insert_n_curves" title="永久链接至目标">¶</a></dt>
 <dd><p>将物件切割成 n 个小段的拼接，常用于复杂函数变换</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.interpolate">
-<code class="sig-name descname">interpolate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject1</span></em>, <em class="sig-param"><span class="n">mobject2</span></em>, <em class="sig-param"><span class="n">alpha</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.interpolate" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.interpolate">
+<span class="sig-name descname"><span class="pre">interpolate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobject1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#manimlib.mobject.types.vectorized_mobject.VMobject" title="manimlib.mobject.types.vectorized_mobject.VMobject"><span class="pre">manimlib.mobject.types.vectorized_mobject.VMobject</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">mobject2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#manimlib.mobject.types.vectorized_mobject.VMobject" title="manimlib.mobject.types.vectorized_mobject.VMobject"><span class="pre">manimlib.mobject.types.vectorized_mobject.VMobject</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.interpolate" title="永久链接至目标">¶</a></dt>
 <dd><p>mobject1 到 mobject2 百分比为 alpha 的补间</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.is_closed">
-<code class="sig-name descname">is_closed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.is_closed" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.is_closed">
+<span class="sig-name descname"><span class="pre">is_closed</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.is_closed" title="永久链接至目标">¶</a></dt>
 <dd><p>判断曲线是否闭合</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.make_approximately_smooth">
-<code class="sig-name descname">make_approximately_smooth</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.make_approximately_smooth" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.make_approximately_smooth">
+<span class="sig-name descname"><span class="pre">make_approximately_smooth</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.make_approximately_smooth" title="永久链接至目标">¶</a></dt>
 <dd><p>使曲线变得大致平滑</p>
 <p>这个方法不像 <code class="docutils literal notranslate"><span class="pre">make_smooth</span></code>，本方法不会使锚点数量加倍，与此同时带来了无法达到完美平滑的问题</p>
 <p>但是这个方法在锚点采样间隔较小时会有比较好的效果，所以有时会更实用</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.make_jagged">
-<code class="sig-name descname">make_jagged</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.make_jagged" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.make_jagged">
+<span class="sig-name descname"><span class="pre">make_jagged</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.make_jagged" title="永久链接至目标">¶</a></dt>
 <dd><p>使曲线模式变为折线</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.make_smooth">
-<code class="sig-name descname">make_smooth</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.make_smooth" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.make_smooth">
+<span class="sig-name descname"><span class="pre">make_smooth</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.make_smooth" title="永久链接至目标">¶</a></dt>
 <dd><p>使曲线变平滑</p>
 <p>这个方法会使得锚点数量加倍，所以 <strong>不要重复使用</strong>，否则锚点数量会 <strong>指数爆炸</strong></p>
 <p>同时，应用 Transform 时有可能会出现奇怪的曲线</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.match_style">
-<code class="sig-name descname">match_style</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vmobject</span></em>, <em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.match_style" title="永久链接至目标">¶</a></dt>
-<dd><p>将自身样式与 <code class="docutils literal notranslate"><span class="pre">vmobject</span></code> 匹配</p>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.match_style">
+<span class="sig-name descname"><span class="pre">match_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vmobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#manimlib.mobject.types.vectorized_mobject.VMobject" title="manimlib.mobject.types.vectorized_mobject.VMobject"><span class="pre">manimlib.mobject.types.vectorized_mobject.VMobject</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">recurse</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.match_style" title="永久链接至目标">¶</a></dt>
+<dd><p>将自身样式与传入的 <code class="docutils literal notranslate"><span class="pre">vmobject</span></code> 匹配</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.point_from_proportion">
-<code class="sig-name descname">point_from_proportion</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">alpha</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.point_from_proportion" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.point_from_proportion">
+<span class="sig-name descname"><span class="pre">point_from_proportion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.point_from_proportion" title="永久链接至目标">¶</a></dt>
 <dd><p>在整条路径上占比为 alpha 处的点</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.pointwise_become_partial">
-<code class="sig-name descname">pointwise_become_partial</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vmobject</span></em>, <em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.pointwise_become_partial" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.pointwise_become_partial">
+<span class="sig-name descname"><span class="pre">pointwise_become_partial</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vmobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#manimlib.mobject.types.vectorized_mobject.VMobject" title="manimlib.mobject.types.vectorized_mobject.VMobject"><span class="pre">manimlib.mobject.types.vectorized_mobject.VMobject</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.pointwise_become_partial" title="永久链接至目标">¶</a></dt>
 <dd><p>返回 vmobject 上百分比从 a 到 b 的部分曲线的拷贝</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.quick_point_from_proportion">
-<code class="sig-name descname">quick_point_from_proportion</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">alpha</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.quick_point_from_proportion" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.quick_point_from_proportion">
+<span class="sig-name descname"><span class="pre">quick_point_from_proportion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.quick_point_from_proportion" title="永久链接至目标">¶</a></dt>
 <dd><p>在整条路径上占比为 alpha 处的点</p>
 <p>这个方法建立在假设所有弧线长度相同的条件下，因此可能有一些误差，但是性能更好</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.refresh_triangulation">
-<code class="sig-name descname">refresh_triangulation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.refresh_triangulation" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.refresh_triangulation">
+<span class="sig-name descname"><span class="pre">refresh_triangulation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.refresh_triangulation" title="永久链接至目标">¶</a></dt>
 <dd><p>重置三角剖分</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_anchors_and_handles">
-<code class="sig-name descname">set_anchors_and_handles</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">anchors1</span></em>, <em class="sig-param"><span class="n">handles</span></em>, <em class="sig-param"><span class="n">anchors2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_anchors_and_handles" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.set_anchors_and_handles">
+<span class="sig-name descname"><span class="pre">set_anchors_and_handles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">anchors1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handles</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anchors2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_anchors_and_handles" title="永久链接至目标">¶</a></dt>
 <dd><p>设置二阶贝塞尔曲线的锚点和手柄</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_backstroke">
-<code class="sig-name descname">set_backstroke</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">'#000000'</span></em>, <em class="sig-param"><span class="n">width</span><span class="o">=</span><span class="default_value">3</span></em>, <em class="sig-param"><span class="n">background</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_backstroke" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.set_backstroke">
+<span class="sig-name descname"><span class="pre">set_backstroke</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ManimColor</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">ManimColor</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'#000000'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">background</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_backstroke" title="永久链接至目标">¶</a></dt>
 <dd><p>设置背景轮廓线（轮廓线衬于填充色下方）</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_color">
-<code class="sig-name descname">set_color</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span></em>, <em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_color" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.set_color">
+<span class="sig-name descname"><span class="pre">set_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ManimColor</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">ManimColor</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">opacity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recurse</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_color" title="永久链接至目标">¶</a></dt>
 <dd><p>设置颜色</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_data">
-<code class="sig-name descname">set_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_data" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.set_data">
+<span class="sig-name descname"><span class="pre">set_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_data" title="永久链接至目标">¶</a></dt>
 <dd><p>设置成员数据，以字典形式传入</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_fill">
-<code class="sig-name descname">set_fill</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">opacity</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_fill" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.set_fill">
+<span class="sig-name descname"><span class="pre">set_fill</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ManimColor</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">ManimColor</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">opacity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recurse</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_fill" title="永久链接至目标">¶</a></dt>
 <dd><p>设置填充色</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_opacity">
-<code class="sig-name descname">set_opacity</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">opacity</span></em>, <em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_opacity" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.set_opacity">
+<span class="sig-name descname"><span class="pre">set_opacity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">opacity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recurse</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_opacity" title="永久链接至目标">¶</a></dt>
 <dd><p>设置透明度</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_points">
-<code class="sig-name descname">set_points</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">points</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_points" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.set_points">
+<span class="sig-name descname"><span class="pre">set_points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">npt.ArrayLike</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_points" title="永久链接至目标">¶</a></dt>
 <dd><p>设置物件的锚点，传入的数组必须为 Nx3</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_points_as_corners">
-<code class="sig-name descname">set_points_as_corners</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">points</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_points_as_corners" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.set_points_as_corners">
+<span class="sig-name descname"><span class="pre">set_points_as_corners</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">np.ndarray</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_points_as_corners" title="永久链接至目标">¶</a></dt>
 <dd><p>传入一个 Nx3 的数组，绘制顺序连接的折线</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_points_smoothly">
-<code class="sig-name descname">set_points_smoothly</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">points</span></em>, <em class="sig-param"><span class="n">true_smooth</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_points_smoothly" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.set_points_smoothly">
+<span class="sig-name descname"><span class="pre">set_points_smoothly</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">np.ndarray</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">true_smooth</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_points_smoothly" title="永久链接至目标">¶</a></dt>
 <dd><p>用平滑的曲线连接传入的系列点</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_rgba_array">
-<code class="sig-name descname">set_rgba_array</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rgba_array</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_rgba_array" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.set_rgba_array">
+<span class="sig-name descname"><span class="pre">set_rgba_array</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rgba_array</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">npt.ArrayLike</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recurse</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_rgba_array" title="永久链接至目标">¶</a></dt>
 <dd><p>将 rgbas 成员变量设置为指定的值</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_stroke">
-<code class="sig-name descname">set_stroke</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">width</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">opacity</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">background</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_stroke" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.set_stroke">
+<span class="sig-name descname"><span class="pre">set_stroke</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ManimColor</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">ManimColor</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">opacity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">background</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recurse</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_stroke" title="永久链接至目标">¶</a></dt>
 <dd><p>设置轮廓线（轮廓线浮于填充色上方）</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.set_style">
-<code class="sig-name descname">set_style</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fill_color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fill_opacity</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fill_rgba</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">stroke_color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">stroke_opacity</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">stroke_rgba</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">stroke_width</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">stroke_background</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">reflectiveness</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">gloss</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">shadow</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_style" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.set_style">
+<span class="sig-name descname"><span class="pre">set_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fill_color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ManimColor</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">ManimColor</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fill_opacity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fill_rgba</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">npt.ArrayLike</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stroke_color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ManimColor</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">ManimColor</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stroke_opacity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stroke_rgba</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">npt.ArrayLike</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stroke_width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stroke_background</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reflectiveness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gloss</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shadow</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recurse</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.set_style" title="永久链接至目标">¶</a></dt>
 <dd><p>整体设置样式</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.types.vectorized_mobject.VMobject.start_new_path">
-<code class="sig-name descname">start_new_path</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.start_new_path" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VMobject.start_new_path">
+<span class="sig-name descname"><span class="pre">start_new_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VMobject.start_new_path" title="永久链接至目标">¶</a></dt>
 <dd><p>开启一个新的路径</p>
 </dd></dl>
 </dd></dl>
@@ -491,8 +501,8 @@
 <div class="section" id="vgroup">
 <h2>VGroup<a class="headerlink" href="#vgroup" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.types.vectorized_mobject.VGroup">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.vectorized_mobject.</code><code class="sig-name descname">VGroup</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">vmobjects</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VGroup" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VGroup">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.types.vectorized_mobject.</span></span><span class="sig-name descname"><span class="pre">VGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">vmobjects</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#manimlib.mobject.types.vectorized_mobject.VMobject" title="manimlib.mobject.types.vectorized_mobject.VMobject"><span class="pre">manimlib.mobject.types.vectorized_mobject.VMobject</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VGroup" title="永久链接至目标">¶</a></dt>
 <dd><p>和 <code class="docutils literal notranslate"><span class="pre">VMobject</span></code> 相同，主要用作包含一些子物体（必须都是 VMobject）</p>
 <p>初始化样式，VMobject 的样式有以下</p>
 <ul class="simple">
@@ -518,8 +528,8 @@
 <div class="section" id="vectorizedpoint">
 <h2>VectorizedPoint<a class="headerlink" href="#vectorizedpoint" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.types.vectorized_mobject.VectorizedPoint">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.vectorized_mobject.</code><code class="sig-name descname">VectorizedPoint</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">location</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VectorizedPoint" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.VectorizedPoint">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.types.vectorized_mobject.</span></span><span class="sig-name descname"><span class="pre">VectorizedPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">location</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">array([0.,</span> <span class="pre">0.,</span> <span class="pre">0.])</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.VectorizedPoint" title="永久链接至目标">¶</a></dt>
 <dd><p>以 VMobject 形式存在的单个点</p>
 <p>似乎仅用于表示坐标</p>
 </dd></dl>
@@ -527,8 +537,8 @@
 <div class="section" id="curvesassubmobjects">
 <h2>CurvesAsSubmobjects<a class="headerlink" href="#curvesassubmobjects" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.types.vectorized_mobject.CurvesAsSubmobjects">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.vectorized_mobject.</code><code class="sig-name descname">CurvesAsSubmobjects</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vmobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.CurvesAsSubmobjects" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.CurvesAsSubmobjects">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.types.vectorized_mobject.</span></span><span class="sig-name descname"><span class="pre">CurvesAsSubmobjects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vmobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#manimlib.mobject.types.vectorized_mobject.VMobject" title="manimlib.mobject.types.vectorized_mobject.VMobject"><span class="pre">manimlib.mobject.types.vectorized_mobject.VMobject</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.CurvesAsSubmobjects" title="永久链接至目标">¶</a></dt>
 <dd><p>传入一个 VMobject 实例（物体），将其所有段曲线作为子物体（一个子物体为一条曲线）</p>
 <p>初始化样式，VMobject 的样式有以下</p>
 <ul class="simple">
@@ -554,8 +564,8 @@
 <div class="section" id="dashedvmobject">
 <h2>DashedVMobject<a class="headerlink" href="#dashedvmobject" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.types.vectorized_mobject.DashedVMobject">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.vectorized_mobject.</code><code class="sig-name descname">DashedVMobject</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vmobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.DashedVMobject" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.types.vectorized_mobject.DashedVMobject">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.types.vectorized_mobject.</span></span><span class="sig-name descname"><span class="pre">DashedVMobject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vmobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#manimlib.mobject.types.vectorized_mobject.VMobject" title="manimlib.mobject.types.vectorized_mobject.VMobject"><span class="pre">manimlib.mobject.types.vectorized_mobject.VMobject</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.vectorized_mobject.DashedVMobject" title="永久链接至目标">¶</a></dt>
 <dd><p>传入一个 VMobject 实例（物体），将其所有曲线全部设为虚线</p>
 <ul class="simple">
 <li><p>传入 <code class="docutils literal notranslate"><span class="pre">num_dashed</span></code> 表示分为多少段虚线</p></li>

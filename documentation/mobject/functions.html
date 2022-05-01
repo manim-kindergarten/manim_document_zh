@@ -3,13 +3,15 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Geometry" href="geometry.html" /><link rel="prev" title="Frame" href="frame.html" />
 
-    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-4.4.0, furo 2020.10.05.beta9"/>
         <title>Functions - ManimGL  文档</title>
-      <link rel="stylesheet" href="../../_static/copybutton.css" />
+      <link rel="stylesheet" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/default.css" />
+    <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?5bb947c531b9d987e5a0abd8">
-    <link rel="stylesheet" href="../../_static/pygments.css?5bb947c531b9d987e5a0abd8">
+    <link rel="stylesheet" href="../../_static/styles/default.css?856f75cca3313a63777ae2ab">
+    <link rel="stylesheet" href="../../_static/pygments.css?856f75cca3313a63777ae2ab">
     
 <style>
   :root {
@@ -18,17 +20,15 @@
   
   }
 </style>
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
       <script src="../../_static/underscore.js"></script>
       
         <script src="../../_static/doctools.js" defer></script>
       
-        <script src="../../_static/language_data.js" defer></script>
-      
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
-        <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?5bb947c531b9d987e5a0abd8"></script></head>
+        <script src="../../_static/translations.js"></script><script src="../../_static/scripts/main.js?856f75cca3313a63777ae2ab"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -89,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p class="caption"><span class="caption-text">入门教程</span></p>
+  <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -98,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p class="caption"><span class="caption-text">进阶文档</span></p>
+<p class="caption" role="heading"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -166,8 +166,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../scene/vector_space_scene.html">VectorScene</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../shaders/index.html">着色代码 shaders (TODO)</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../utils/index.html">工具函数 utils</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../shaders/index.html">着色代码 shaders (TODO)</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/Preliminary_knowledge.html">OpenGL 预备知识</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/inserts/index.html">Inserts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/image.html">image 贴图</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/quadratic_bezier_fill.html">二阶贝塞尔曲线填充色 Quadratic bezier fill</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/quadratic_bezier_stroke.html">二阶贝塞尔曲线轮廓线着色 Quadratic bezier stroke</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/surface.html">曲面着色 Surface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/textured_surface.html">曲面贴图 Textured surface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/true_dot.html">True dot</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../utils/index.html">工具函数 utils</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label for="toctree-checkbox-8"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../utils/bezier.html">Bezier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../utils/color.html">Color</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../utils/config_ops.html">CONFIG_ops</a></li>
@@ -183,7 +193,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption"><span class="caption-text">开发相关</span></p>
+<p class="caption" role="heading"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -206,8 +216,8 @@
 <div class="section" id="parametriccurve">
 <h2>ParametricCurve<a class="headerlink" href="#parametriccurve" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.functions.ParametricCurve">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.functions.</code><code class="sig-name descname">ParametricCurve</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t_func</span></em>, <em class="sig-param"><span class="n">t_range</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.functions.ParametricCurve" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.functions.ParametricCurve">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.functions.</span></span><span class="sig-name descname"><span class="pre">ParametricCurve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t_func</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">np.ndarray</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t_range</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.functions.ParametricCurve" title="永久链接至目标">¶</a></dt>
 <dd><p>参数曲线</p>
 <p>传入 <code class="docutils literal notranslate"><span class="pre">function</span></code> 函数，自变量为参数 <code class="docutils literal notranslate"><span class="pre">t</span></code> ，返回值为一个三维点坐标</p>
 <ul class="simple">
@@ -215,8 +225,8 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">discontinuities</span></code> : 间断点列表（在这个列表中的值所对应的点将会是图像的间断点）</p></li>
 </ul>
 <dl class="py method">
-<dt id="manimlib.mobject.functions.ParametricCurve.get_point_from_function">
-<code class="sig-name descname">get_point_from_function</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.functions.ParametricCurve.get_point_from_function" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.functions.ParametricCurve.get_point_from_function">
+<span class="sig-name descname"><span class="pre">get_point_from_function</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.functions.ParametricCurve.get_point_from_function" title="永久链接至目标">¶</a></dt>
 <dd><p>获取 t 值对应的点坐标</p>
 </dd></dl>
 </dd></dl>
@@ -224,23 +234,13 @@
 <div class="section" id="functiongraph">
 <h2>FunctionGraph<a class="headerlink" href="#functiongraph" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.functions.FunctionGraph">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.functions.</code><code class="sig-name descname">FunctionGraph</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span></em>, <em class="sig-param"><span class="n">x_range</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.functions.FunctionGraph" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.functions.FunctionGraph">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.functions.</span></span><span class="sig-name descname"><span class="pre">FunctionGraph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_range</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.functions.FunctionGraph" title="永久链接至目标">¶</a></dt>
 <dd><p>y-x 函数图像</p>
 <p>传入 <code class="docutils literal notranslate"><span class="pre">function</span></code> 函数，自变量为 x ，返回值为 y</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">x_range=[x_mix,</span> <span class="pre">x_max,</span> <span class="pre">dx]</span></code> 为自变量 x 的取值范围和步进</p></li>
 </ul>
-<dl class="py method">
-<dt id="manimlib.mobject.functions.FunctionGraph.get_function">
-<code class="sig-name descname">get_function</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.functions.FunctionGraph.get_function" title="永久链接至目标">¶</a></dt>
-<dd><p>返回 y-x 函数</p>
-</dd></dl>
-<dl class="py method">
-<dt id="manimlib.mobject.functions.FunctionGraph.get_point_from_function">
-<code class="sig-name descname">get_point_from_function</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.functions.FunctionGraph.get_point_from_function" title="永久链接至目标">¶</a></dt>
-<dd><p>给出一个横坐标 x ，返回图像上横坐标为 x 的点坐标</p>
-</dd></dl>
 </dd></dl>
 </div>
 </div>

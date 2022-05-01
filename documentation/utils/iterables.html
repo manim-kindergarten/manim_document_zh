@@ -3,13 +3,15 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Paths" href="paths.html" /><link rel="prev" title="Images" href="images.html" />
 
-    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-4.4.0, furo 2020.10.05.beta9"/>
         <title>Iterables - ManimGL  文档</title>
-      <link rel="stylesheet" href="../../_static/copybutton.css" />
+      <link rel="stylesheet" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/default.css" />
+    <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?f5a47cef0a756b46f370ea89">
-    <link rel="stylesheet" href="../../_static/pygments.css?f5a47cef0a756b46f370ea89">
+    <link rel="stylesheet" href="../../_static/styles/default.css?091e68b88480dad28183f748">
+    <link rel="stylesheet" href="../../_static/pygments.css?091e68b88480dad28183f748">
     
 <style>
   :root {
@@ -18,17 +20,15 @@
   
   }
 </style>
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
       <script src="../../_static/underscore.js"></script>
       
         <script src="../../_static/doctools.js" defer></script>
       
-        <script src="../../_static/language_data.js" defer></script>
-      
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
-        <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?f5a47cef0a756b46f370ea89"></script></head>
+        <script src="../../_static/translations.js"></script><script src="../../_static/scripts/main.js?091e68b88480dad28183f748"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -89,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p class="caption"><span class="caption-text">入门教程</span></p>
+  <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -98,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p class="caption"><span class="caption-text">进阶文档</span></p>
+<p class="caption" role="heading"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -166,8 +166,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../scene/vector_space_scene.html">VectorScene</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../shaders/index.html">着色代码 shaders (TODO)</a></li>
-<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">工具函数 utils</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../shaders/index.html">着色代码 shaders (TODO)</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/Preliminary_knowledge.html">OpenGL 预备知识</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/inserts/index.html">Inserts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/image.html">image 贴图</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/quadratic_bezier_fill.html">二阶贝塞尔曲线填充色 Quadratic bezier fill</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/quadratic_bezier_stroke.html">二阶贝塞尔曲线轮廓线着色 Quadratic bezier stroke</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/surface.html">曲面着色 Surface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/textured_surface.html">曲面贴图 Textured surface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/true_dot.html">True dot</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">工具函数 utils</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label for="toctree-checkbox-8"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="bezier.html">Bezier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="color.html">Color</a></li>
 <li class="toctree-l2"><a class="reference internal" href="config_ops.html">CONFIG_ops</a></li>
@@ -183,7 +193,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption"><span class="caption-text">开发相关</span></p>
+<p class="caption" role="heading"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -206,48 +216,42 @@
 <p><code class="docutils literal notranslate"><span class="pre">manimlib/utils/iterables.py</span></code> 这个文件中主要实现了和列表字典处理有关的函数</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt id="manimlib.utils.iterables.remove_list_redundancies">
-<code class="sig-prename descclassname">manimlib.utils.iterables.</code><code class="sig-name descname">remove_list_redundancies</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">l</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.iterables.remove_list_redundancies" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.utils.iterables.remove_list_redundancies">
+<span class="sig-prename descclassname"><span class="pre">manimlib.utils.iterables.</span></span><span class="sig-name descname"><span class="pre">remove_list_redundancies</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#manimlib.utils.iterables.remove_list_redundancies" title="永久链接至目标">¶</a></dt>
 <dd><p>Used instead of list(set(l)) to maintain order
 Keeps the last occurrence of each element</p>
 </dd></dl>
 <p>对列表 l 去重，保留重复元素最后一次出现</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt id="manimlib.utils.iterables.list_update">
-<code class="sig-prename descclassname">manimlib.utils.iterables.</code><code class="sig-name descname">list_update</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">l1</span></em>, <em class="sig-param"><span class="n">l2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.iterables.list_update" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.utils.iterables.list_update">
+<span class="sig-prename descclassname"><span class="pre">manimlib.utils.iterables.</span></span><span class="sig-name descname"><span class="pre">list_update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#manimlib.utils.iterables.list_update" title="永久链接至目标">¶</a></dt>
 <dd><p>Used instead of list(set(l1).update(l2)) to maintain order,
 making sure duplicates are removed from l1, not l2.</p>
 </dd></dl>
 <p>从 l1 中删除 l2 中重复项，再与 l2 合并</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt id="manimlib.utils.iterables.list_difference_update">
-<code class="sig-prename descclassname">manimlib.utils.iterables.</code><code class="sig-name descname">list_difference_update</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">l1</span></em>, <em class="sig-param"><span class="n">l2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.iterables.list_difference_update" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.utils.iterables.list_difference_update">
+<span class="sig-prename descclassname"><span class="pre">manimlib.utils.iterables.</span></span><span class="sig-name descname"><span class="pre">list_difference_update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#manimlib.utils.iterables.list_difference_update" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>返回两列表中不同的项的列表</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt id="manimlib.utils.iterables.all_elements_are_instances">
-<code class="sig-prename descclassname">manimlib.utils.iterables.</code><code class="sig-name descname">all_elements_are_instances</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">iterable</span></em>, <em class="sig-param"><span class="n">Class</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.iterables.all_elements_are_instances" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
-<p>iterable 列表中的所有元素是否都为Class类</p>
-<hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.utils.iterables.adjacent_n_tuples">
-<code class="sig-prename descclassname">manimlib.utils.iterables.</code><code class="sig-name descname">adjacent_n_tuples</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">objects</span></em>, <em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.iterables.adjacent_n_tuples" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.utils.iterables.adjacent_n_tuples">
+<span class="sig-prename descclassname"><span class="pre">manimlib.utils.iterables.</span></span><span class="sig-name descname"><span class="pre">adjacent_n_tuples</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">objects</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">zip</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">T</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#manimlib.utils.iterables.adjacent_n_tuples" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>objects 的相邻 n 元组（返回zip）</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt id="manimlib.utils.iterables.adjacent_pairs">
-<code class="sig-prename descclassname">manimlib.utils.iterables.</code><code class="sig-name descname">adjacent_pairs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">objects</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.iterables.adjacent_pairs" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.utils.iterables.adjacent_pairs">
+<span class="sig-prename descclassname"><span class="pre">manimlib.utils.iterables.</span></span><span class="sig-name descname"><span class="pre">adjacent_pairs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">objects</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">zip</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">T</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#manimlib.utils.iterables.adjacent_pairs" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>objects 相邻对</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt id="manimlib.utils.iterables.batch_by_property">
-<code class="sig-prename descclassname">manimlib.utils.iterables.</code><code class="sig-name descname">batch_by_property</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">items</span></em>, <em class="sig-param"><span class="n">property_func</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.iterables.batch_by_property" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.utils.iterables.batch_by_property">
+<span class="sig-prename descclassname"><span class="pre">manimlib.utils.iterables.</span></span><span class="sig-name descname"><span class="pre">batch_by_property</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">items</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">property_func</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">S</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">S</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#manimlib.utils.iterables.batch_by_property" title="永久链接至目标">¶</a></dt>
 <dd><p>Takes in a list, and returns a list of tuples, (batch, prop)
 such that all items in a batch have the same output when
 put into property_func, and such that chaining all these
@@ -261,8 +265,8 @@ preserved)</p>
 </div>
 <hr class="docutils"/>
 <dl class="py function">
-<dt id="manimlib.utils.iterables.listify">
-<code class="sig-prename descclassname">manimlib.utils.iterables.</code><code class="sig-name descname">listify</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.iterables.listify" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.utils.iterables.listify">
+<span class="sig-prename descclassname"><span class="pre">manimlib.utils.iterables.</span></span><span class="sig-name descname"><span class="pre">listify</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="headerlink" href="#manimlib.utils.iterables.listify" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>根据 obj 返回列表</p>
 <ul class="simple">
@@ -272,8 +276,8 @@ preserved)</p>
 </ul>
 <hr class="docutils"/>
 <dl class="py function">
-<dt id="manimlib.utils.iterables.resize_array">
-<code class="sig-prename descclassname">manimlib.utils.iterables.</code><code class="sig-name descname">resize_array</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nparray</span></em>, <em class="sig-param"><span class="n">length</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.iterables.resize_array" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.utils.iterables.resize_array">
+<span class="sig-prename descclassname"><span class="pre">manimlib.utils.iterables.</span></span><span class="sig-name descname"><span class="pre">resize_array</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nparray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.utils.iterables.resize_array" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>重置数组长度</p>
 <ul class="simple">
@@ -283,8 +287,8 @@ preserved)</p>
 </ul>
 <hr class="docutils"/>
 <dl class="py function">
-<dt id="manimlib.utils.iterables.resize_preserving_order">
-<code class="sig-prename descclassname">manimlib.utils.iterables.</code><code class="sig-name descname">resize_preserving_order</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nparray</span></em>, <em class="sig-param"><span class="n">length</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.iterables.resize_preserving_order" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.utils.iterables.resize_preserving_order">
+<span class="sig-prename descclassname"><span class="pre">manimlib.utils.iterables.</span></span><span class="sig-name descname"><span class="pre">resize_preserving_order</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nparray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.utils.iterables.resize_preserving_order" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>重置数组长度，但保留原有的序列</p>
 <ul class="simple">
@@ -295,34 +299,22 @@ preserved)</p>
 </ul>
 <hr class="docutils"/>
 <dl class="py function">
-<dt id="manimlib.utils.iterables.resize_with_interpolation">
-<code class="sig-prename descclassname">manimlib.utils.iterables.</code><code class="sig-name descname">resize_with_interpolation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nparray</span></em>, <em class="sig-param"><span class="n">length</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.iterables.resize_with_interpolation" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.utils.iterables.resize_with_interpolation">
+<span class="sig-prename descclassname"><span class="pre">manimlib.utils.iterables.</span></span><span class="sig-name descname"><span class="pre">resize_with_interpolation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nparray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.utils.iterables.resize_with_interpolation" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>重置数组长度，并对中间元素进行线性插值，插值起止点分别为数组的首尾元素</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt id="manimlib.utils.iterables.make_even">
-<code class="sig-prename descclassname">manimlib.utils.iterables.</code><code class="sig-name descname">make_even</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">iterable_1</span></em>, <em class="sig-param"><span class="n">iterable_2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.iterables.make_even" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.utils.iterables.make_even">
+<span class="sig-prename descclassname"><span class="pre">manimlib.utils.iterables.</span></span><span class="sig-name descname"><span class="pre">make_even</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable_1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iterable_2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">S</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">S</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#manimlib.utils.iterables.make_even" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>将 iterable_1 和 iterable_2 调成一样的长度，不足的伸缩调整</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt id="manimlib.utils.iterables.make_even_by_cycling">
-<code class="sig-prename descclassname">manimlib.utils.iterables.</code><code class="sig-name descname">make_even_by_cycling</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">iterable_1</span></em>, <em class="sig-param"><span class="n">iterable_2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.iterables.make_even_by_cycling" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.utils.iterables.hash_obj">
+<span class="sig-prename descclassname"><span class="pre">manimlib.utils.iterables.</span></span><span class="sig-name descname"><span class="pre">hash_obj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#manimlib.utils.iterables.hash_obj" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
-<p>将 iterable_1 和 iterable_2 调成一样的长度，不足的循环使用</p>
-<hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.utils.iterables.remove_nones">
-<code class="sig-prename descclassname">manimlib.utils.iterables.</code><code class="sig-name descname">remove_nones</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sequence</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.iterables.remove_nones" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
-<p>将 sequence 中的 None 去除掉，并返回</p>
-<hr class="docutils"/>
-<dl class="py function">
-<dt id="manimlib.utils.iterables.concatenate_lists">
-<code class="sig-prename descclassname">manimlib.utils.iterables.</code><code class="sig-name descname">concatenate_lists</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">list_of_lists</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.iterables.concatenate_lists" title="永久链接至目标">¶</a></dt>
-<dd></dd></dl>
-<p>串联列表 list_of</p>
+<p>获取 object 的哈希值</p>
 </div>
 
       </article>

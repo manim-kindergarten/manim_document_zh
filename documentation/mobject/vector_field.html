@@ -3,13 +3,15 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="场景部分 scene" href="../scene/index.html" /><link rel="prev" title="ValueTracker" href="value_tracker.html" />
 
-    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-4.4.0, furo 2020.10.05.beta9"/>
         <title>VectorField - ManimGL  文档</title>
-      <link rel="stylesheet" href="../../_static/copybutton.css" />
+      <link rel="stylesheet" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/default.css" />
+    <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?74e133a007dfe6d9543e567d">
-    <link rel="stylesheet" href="../../_static/pygments.css?74e133a007dfe6d9543e567d">
+    <link rel="stylesheet" href="../../_static/styles/default.css?68381e0d8f98469e8bdb0374">
+    <link rel="stylesheet" href="../../_static/pygments.css?68381e0d8f98469e8bdb0374">
     
 <style>
   :root {
@@ -18,17 +20,15 @@
   
   }
 </style>
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
       <script src="../../_static/underscore.js"></script>
       
         <script src="../../_static/doctools.js" defer></script>
       
-        <script src="../../_static/language_data.js" defer></script>
-      
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
-        <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?74e133a007dfe6d9543e567d"></script></head>
+        <script src="../../_static/translations.js"></script><script src="../../_static/scripts/main.js?68381e0d8f98469e8bdb0374"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -89,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p class="caption"><span class="caption-text">入门教程</span></p>
+  <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -98,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p class="caption"><span class="caption-text">进阶文档</span></p>
+<p class="caption" role="heading"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -166,8 +166,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../scene/vector_space_scene.html">VectorScene</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../shaders/index.html">着色代码 shaders (TODO)</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../utils/index.html">工具函数 utils</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../shaders/index.html">着色代码 shaders (TODO)</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/Preliminary_knowledge.html">OpenGL 预备知识</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/inserts/index.html">Inserts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/image.html">image 贴图</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/quadratic_bezier_fill.html">二阶贝塞尔曲线填充色 Quadratic bezier fill</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/quadratic_bezier_stroke.html">二阶贝塞尔曲线轮廓线着色 Quadratic bezier stroke</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/surface.html">曲面着色 Surface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/textured_surface.html">曲面贴图 Textured surface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/true_dot.html">True dot</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../utils/index.html">工具函数 utils</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label for="toctree-checkbox-8"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../utils/bezier.html">Bezier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../utils/color.html">Color</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../utils/config_ops.html">CONFIG_ops</a></li>
@@ -183,7 +193,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption"><span class="caption-text">开发相关</span></p>
+<p class="caption" role="heading"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -206,8 +216,8 @@
 <div class="section" id="id1">
 <h2>VectorField<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.vector_field.VectorField">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.vector_field.</code><code class="sig-name descname">VectorField</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">func</span></em>, <em class="sig-param"><span class="n">coordinate_system</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.vector_field.VectorField" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.vector_field.VectorField">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.vector_field.</span></span><span class="sig-name descname"><span class="pre">VectorField</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coordinate_system</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="coordinate_systems.html#manimlib.mobject.coordinate_systems.CoordinateSystem" title="manimlib.mobject.coordinate_systems.CoordinateSystem"><span class="pre">CoordinateSystem</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.vector_field.VectorField" title="永久链接至目标">¶</a></dt>
 <dd><p>向量场</p>
 <p>传入的 <code class="docutils literal notranslate"><span class="pre">func</span></code> 自变量为 x 和 y，返回值为与 x 和 y 相关的二元组</p>
 <p>向量将会被绘制在 <code class="docutils literal notranslate"><span class="pre">coordinate_system</span></code> 中</p>
@@ -223,8 +233,8 @@
 <div class="section" id="streamlines">
 <h2>StreamLines<a class="headerlink" href="#streamlines" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.vector_field.StreamLines">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.vector_field.</code><code class="sig-name descname">StreamLines</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">func</span></em>, <em class="sig-param"><span class="n">coordinate_system</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.vector_field.StreamLines" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.vector_field.StreamLines">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.vector_field.</span></span><span class="sig-name descname"><span class="pre">StreamLines</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coordinate_system</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="coordinate_systems.html#manimlib.mobject.coordinate_systems.CoordinateSystem" title="manimlib.mobject.coordinate_systems.CoordinateSystem"><span class="pre">CoordinateSystem</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.vector_field.StreamLines" title="永久链接至目标">¶</a></dt>
 <dd><p>流线</p>
 <p>传入的 <code class="docutils literal notranslate"><span class="pre">func</span></code> 自变量为 x 和 y，返回值为与 x 和 y 相关的二元组</p>
 <p>随机生成一系列起点，并且根据 func 流动形成图形，绘制在 <code class="docutils literal notranslate"><span class="pre">coordinate_system</span></code> 中</p>
@@ -243,8 +253,8 @@
 <div class="section" id="animatedstreamlines">
 <h2>AnimatedStreamLines<a class="headerlink" href="#animatedstreamlines" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.vector_field.AnimatedStreamLines">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.vector_field.</code><code class="sig-name descname">AnimatedStreamLines</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">stream_lines</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.vector_field.AnimatedStreamLines" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.vector_field.AnimatedStreamLines">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.vector_field.</span></span><span class="sig-name descname"><span class="pre">AnimatedStreamLines</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stream_lines</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#manimlib.mobject.vector_field.StreamLines" title="manimlib.mobject.vector_field.StreamLines"><span class="pre">manimlib.mobject.vector_field.StreamLines</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.vector_field.AnimatedStreamLines" title="永久链接至目标">¶</a></dt>
 <dd><p>自动实现流动效果的物体（利用 <code class="docutils literal notranslate"><span class="pre">StreamLines</span></code> 和转化为 <code class="docutils literal notranslate"><span class="pre">updater</span></code> 的动画）</p>
 <p>传入的 <code class="docutils literal notranslate"><span class="pre">stream_lines</span></code> 为一个 <code class="docutils literal notranslate"><span class="pre">StreamLines</span></code> 实例</p>
 <ul class="simple">
@@ -253,12 +263,12 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">line_anim_config</span></code> : 对每条线执行动画的属性设置</p></li>
 </ul>
 <dl class="py method">
-<dt id="manimlib.mobject.vector_field.AnimatedStreamLines.update">
-<code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.vector_field.AnimatedStreamLines.update" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.vector_field.AnimatedStreamLines.update">
+<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.mobject.vector_field.AnimatedStreamLines.update" title="永久链接至目标">¶</a></dt>
 <dd><p>更新物件状态，为 <strong>动画 (Animation)</strong> 、 <strong>更新 (updater)</strong> 调用</p>
 </dd></dl>
 </dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="animatedstreamlinesexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/AnimatedStreamLinesExample.mp4"></video><h5 class="example-header">AnimatedStreamLinesExample<a class="headerlink" href="#animatedstreamlinesexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">AnimatedStreamLinesExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="animatedstreamlinesexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/AnimatedStreamLinesExample.mp4"></video><h5 class="example-header">AnimatedStreamLinesExample<a class="headerlink" href="#animatedstreamlinesexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">AnimatedStreamLinesExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">coord</span> <span class="o">=</span> <span class="n">Axes</span><span class="p">(</span><span class="n">x_range</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">width</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span>
                      <span class="n">y_range</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">height</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
@@ -273,7 +283,7 @@
 </pre></div>
 </div>
 </div><p>这里附上 GZTime 写的一个示例，读者可以自己尝试渲染一下</p>
-<div class="manim-example"><img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FuncFlow.jpg" class="align-center" id="animatedstreamlinesexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/FuncFlow.jpg"/>
+<div class="manim-example"><img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/FuncFlow.jpg" class="align-center" id="animatedstreamlinesexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/FuncFlow.jpg"/>
 <h5 class="example-header">AnimatedStreamLinesExample<a class="headerlink" href="#animatedstreamlinesexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib</span> <span class="kn">import</span> <span class="o">*</span>
 
 

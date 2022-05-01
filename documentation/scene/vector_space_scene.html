@@ -3,13 +3,15 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="着色代码 shaders (TODO)" href="../shaders/index.html" /><link rel="prev" title="SampleSpaceScene(TODO)" href="sample_space_scene.html" />
 
-    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-4.4.0, furo 2020.10.05.beta9"/>
         <title>VectorScene - ManimGL  文档</title>
-      <link rel="stylesheet" href="../../_static/copybutton.css" />
+      <link rel="stylesheet" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/default.css" />
+    <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?72fc23ee1a5e84b39f3b2c60">
-    <link rel="stylesheet" href="../../_static/pygments.css?72fc23ee1a5e84b39f3b2c60">
+    <link rel="stylesheet" href="../../_static/styles/default.css?a2c9582801618569957618c7">
+    <link rel="stylesheet" href="../../_static/pygments.css?a2c9582801618569957618c7">
     
 <style>
   :root {
@@ -18,17 +20,16 @@
   
   }
 </style>
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
       <script src="../../_static/underscore.js"></script>
       
         <script src="../../_static/doctools.js" defer></script>
       
-        <script src="../../_static/language_data.js" defer></script>
-      
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?72fc23ee1a5e84b39f3b2c60"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?a2c9582801618569957618c7"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -89,7 +90,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p class="caption"><span class="caption-text">入门教程</span></p>
+  <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -98,7 +99,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p class="caption"><span class="caption-text">进阶文档</span></p>
+<p class="caption" role="heading"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -166,8 +167,18 @@
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">VectorScene</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../shaders/index.html">着色代码 shaders (TODO)</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../utils/index.html">工具函数 utils</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../shaders/index.html">着色代码 shaders (TODO)</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/Preliminary_knowledge.html">OpenGL 预备知识</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/inserts/index.html">Inserts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/image.html">image 贴图</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/quadratic_bezier_fill.html">二阶贝塞尔曲线填充色 Quadratic bezier fill</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/quadratic_bezier_stroke.html">二阶贝塞尔曲线轮廓线着色 Quadratic bezier stroke</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/surface.html">曲面着色 Surface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/textured_surface.html">曲面贴图 Textured surface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/true_dot.html">True dot</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../utils/index.html">工具函数 utils</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label for="toctree-checkbox-8"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../utils/bezier.html">Bezier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../utils/color.html">Color</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../utils/config_ops.html">CONFIG_ops</a></li>
@@ -183,7 +194,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption"><span class="caption-text">开发相关</span></p>
+<p class="caption" role="heading"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -206,8 +217,8 @@
 <div class="section" id="id1">
 <h2>VectorScene<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.scene.vector_space_scene.VectorScene">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.scene.vector_space_scene.</code><code class="sig-name descname">VectorScene</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.vector_space_scene.VectorScene">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.scene.vector_space_scene.</span></span><span class="sig-name descname"><span class="pre">VectorScene</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene" title="永久链接至目标">¶</a></dt>
 <dd><p>向量场场景</p>
 <p>但似乎与新版有些脱节了，在未来的版本可能会大改</p>
 <ul class="simple">
@@ -219,68 +230,68 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">preview</span></code> : 是否为预览</p></li>
 </ul>
 <dl class="py method">
-<dt id="manimlib.scene.vector_space_scene.VectorScene.add_axes">
-<code class="sig-name descname">add_axes</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">animate</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">'#FFFFFF'</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.add_axes" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.vector_space_scene.VectorScene.add_axes">
+<span class="sig-name descname"><span class="pre">add_axes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">animate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'#FFFFFF'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.add_axes" title="永久链接至目标">¶</a></dt>
 <dd><p>添加 Axes</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.scene.vector_space_scene.VectorScene.add_plane">
-<code class="sig-name descname">add_plane</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">animate</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.add_plane" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.vector_space_scene.VectorScene.add_plane">
+<span class="sig-name descname"><span class="pre">add_plane</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">animate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.add_plane" title="永久链接至目标">¶</a></dt>
 <dd><p>添加 NumberPlane</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.scene.vector_space_scene.VectorScene.add_vector">
-<code class="sig-name descname">add_vector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vector</span></em>, <em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">'#FFFF00'</span></em>, <em class="sig-param"><span class="n">animate</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.add_vector" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.vector_space_scene.VectorScene.add_vector">
+<span class="sig-name descname"><span class="pre">add_vector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vector</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'#FFFF00'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">animate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.add_vector" title="永久链接至目标">¶</a></dt>
 <dd><p>动态绘制一个向量</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.scene.vector_space_scene.VectorScene.coords_to_vector">
-<code class="sig-name descname">coords_to_vector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vector</span></em>, <em class="sig-param"><span class="n">coords_start</span><span class="o">=</span><span class="default_value">array([2.0, 2.0, 0.0])</span></em>, <em class="sig-param"><span class="n">clean_up</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.coords_to_vector" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.vector_space_scene.VectorScene.coords_to_vector">
+<span class="sig-name descname"><span class="pre">coords_to_vector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vector</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coords_start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">array([2.,</span> <span class="pre">2.,</span> <span class="pre">0.])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clean_up</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.coords_to_vector" title="永久链接至目标">¶</a></dt>
 <dd><p>怀疑有一点小问题，应该稍微把这里的 Matrix 改一改，读者可以自己尝试一下</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.scene.vector_space_scene.VectorScene.get_basis_vector_labels">
-<code class="sig-name descname">get_basis_vector_labels</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.get_basis_vector_labels" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.vector_space_scene.VectorScene.get_basis_vector_labels">
+<span class="sig-name descname"><span class="pre">get_basis_vector_labels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.get_basis_vector_labels" title="永久链接至目标">¶</a></dt>
 <dd><p>返回两个单位向量的文本描述 <span class="math notranslate nohighlight">\(\hat{\imath}\)</span> , <span class="math notranslate nohighlight">\(\hat{\jmath}\)</span></p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.scene.vector_space_scene.VectorScene.get_basis_vectors">
-<code class="sig-name descname">get_basis_vectors</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">i_hat_color</span><span class="o">=</span><span class="default_value">'#83C167'</span></em>, <em class="sig-param"><span class="n">j_hat_color</span><span class="o">=</span><span class="default_value">'#FC6255'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.get_basis_vectors" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.vector_space_scene.VectorScene.get_basis_vectors">
+<span class="sig-name descname"><span class="pre">get_basis_vectors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i_hat_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'#83C167'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">j_hat_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'#FC6255'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.get_basis_vectors" title="永久链接至目标">¶</a></dt>
 <dd><p>返回两个单位向量的组合</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.scene.vector_space_scene.VectorScene.get_vector">
-<code class="sig-name descname">get_vector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">numerical_vector</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.get_vector" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.vector_space_scene.VectorScene.get_vector">
+<span class="sig-name descname"><span class="pre">get_vector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numerical_vector</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.get_vector" title="永久链接至目标">¶</a></dt>
 <dd><p>返回一个从原点到目标点的 <code class="docutils literal notranslate"><span class="pre">Arrow</span></code> 实例</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.scene.vector_space_scene.VectorScene.get_vector_label">
-<code class="sig-name descname">get_vector_label</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vector</span></em>, <em class="sig-param"><span class="n">label</span></em>, <em class="sig-param"><span class="n">at_tip</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">'left'</span></em>, <em class="sig-param"><span class="n">rotate</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">label_scale_factor</span><span class="o">=</span><span class="default_value">0.8</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.get_vector_label" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.vector_space_scene.VectorScene.get_vector_label">
+<span class="sig-name descname"><span class="pre">get_vector_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vector</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">at_tip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'left'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rotate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_scale_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.8</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.get_vector_label" title="永久链接至目标">¶</a></dt>
 <dd><p>返回向量文本描述</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.scene.vector_space_scene.VectorScene.label_vector">
-<code class="sig-name descname">label_vector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vector</span></em>, <em class="sig-param"><span class="n">label</span></em>, <em class="sig-param"><span class="n">animate</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.label_vector" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.vector_space_scene.VectorScene.label_vector">
+<span class="sig-name descname"><span class="pre">label_vector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vector</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">animate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.label_vector" title="永久链接至目标">¶</a></dt>
 <dd><p>播放向量文本描述动画</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.scene.vector_space_scene.VectorScene.lock_in_faded_grid">
-<code class="sig-name descname">lock_in_faded_grid</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dimness</span><span class="o">=</span><span class="default_value">0.7</span></em>, <em class="sig-param"><span class="n">axes_dimness</span><span class="o">=</span><span class="default_value">0.5</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.lock_in_faded_grid" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.vector_space_scene.VectorScene.lock_in_faded_grid">
+<span class="sig-name descname"><span class="pre">lock_in_faded_grid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dimness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.7</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axes_dimness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.lock_in_faded_grid" title="永久链接至目标">¶</a></dt>
 <dd><p>添加默认坐标系，并锁定背景</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.scene.vector_space_scene.VectorScene.show_ghost_movement">
-<code class="sig-name descname">show_ghost_movement</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vector</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.show_ghost_movement" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.vector_space_scene.VectorScene.show_ghost_movement">
+<span class="sig-name descname"><span class="pre">show_ghost_movement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vector</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.show_ghost_movement" title="永久链接至目标">¶</a></dt>
 <dd><p>应该把 VMobject 改成 VGroup，显示一系列点集按照 vector 方向移动的轨迹</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.scene.vector_space_scene.VectorScene.vector_to_coords">
-<code class="sig-name descname">vector_to_coords</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vector</span></em>, <em class="sig-param"><span class="n">integer_labels</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">clean_up</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.vector_to_coords" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.vector_space_scene.VectorScene.vector_to_coords">
+<span class="sig-name descname"><span class="pre">vector_to_coords</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vector</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">integer_labels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clean_up</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.vector_to_coords" title="永久链接至目标">¶</a></dt>
 <dd><p>怀疑有一点小问题，应该稍微改一改，读者可以自己尝试一下</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.scene.vector_space_scene.VectorScene.write_vector_coordinates">
-<code class="sig-name descname">write_vector_coordinates</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vector</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.write_vector_coordinates" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.vector_space_scene.VectorScene.write_vector_coordinates">
+<span class="sig-name descname"><span class="pre">write_vector_coordinates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vector</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.VectorScene.write_vector_coordinates" title="永久链接至目标">¶</a></dt>
 <dd><p>动态绘制坐标系</p>
 </dd></dl>
 </dd></dl>
@@ -288,8 +299,8 @@
 <div class="section" id="lineartransformationscene">
 <h2>LinearTransformationScene<a class="headerlink" href="#lineartransformationscene" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.scene.vector_space_scene.LinearTransformationScene">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.scene.vector_space_scene.</code><code class="sig-name descname">LinearTransformationScene</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.LinearTransformationScene" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.vector_space_scene.LinearTransformationScene">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.scene.vector_space_scene.</span></span><span class="sig-name descname"><span class="pre">LinearTransformationScene</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.LinearTransformationScene" title="永久链接至目标">¶</a></dt>
 <dd><p>线性变换的向量场景</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">window_config</span></code> : 窗口参数</p></li>
@@ -300,28 +311,28 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">preview</span></code> : 是否为预览</p></li>
 </ul>
 <dl class="py method">
-<dt id="manimlib.scene.vector_space_scene.LinearTransformationScene.add_unit_square">
-<code class="sig-name descname">add_unit_square</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">animate</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.LinearTransformationScene.add_unit_square" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.vector_space_scene.LinearTransformationScene.add_unit_square">
+<span class="sig-name descname"><span class="pre">add_unit_square</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">animate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.LinearTransformationScene.add_unit_square" title="永久链接至目标">¶</a></dt>
 <dd><p>添加单位正方形</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.scene.vector_space_scene.LinearTransformationScene.add_vector">
-<code class="sig-name descname">add_vector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vector</span></em>, <em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">'#FFFF00'</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.LinearTransformationScene.add_vector" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.vector_space_scene.LinearTransformationScene.add_vector">
+<span class="sig-name descname"><span class="pre">add_vector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vector</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'#FFFF00'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.LinearTransformationScene.add_vector" title="永久链接至目标">¶</a></dt>
 <dd><p>添加向量</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.scene.vector_space_scene.LinearTransformationScene.get_matrix_transformation">
-<code class="sig-name descname">get_matrix_transformation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">matrix</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.LinearTransformationScene.get_matrix_transformation" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.vector_space_scene.LinearTransformationScene.get_matrix_transformation">
+<span class="sig-name descname"><span class="pre">get_matrix_transformation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">matrix</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.LinearTransformationScene.get_matrix_transformation" title="永久链接至目标">¶</a></dt>
 <dd><p>获取矩阵变换</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.scene.vector_space_scene.LinearTransformationScene.setup">
-<code class="sig-name descname">setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.LinearTransformationScene.setup" title="永久链接至目标">¶</a></dt>
-<dd><p>在 <code class="docutils literal notranslate"><span class="pre">construct</span></code> 被调用前执行</p>
+<dt class="sig sig-object py" id="manimlib.scene.vector_space_scene.LinearTransformationScene.setup">
+<span class="sig-name descname"><span class="pre">setup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.LinearTransformationScene.setup" title="永久链接至目标">¶</a></dt>
+<dd><p>在 <code class="docutils literal notranslate"><span class="pre">construct</span></code> 被调用前执行，在子类中重写</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.scene.vector_space_scene.LinearTransformationScene.write_vector_coordinates">
-<code class="sig-name descname">write_vector_coordinates</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vector</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.LinearTransformationScene.write_vector_coordinates" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.vector_space_scene.LinearTransformationScene.write_vector_coordinates">
+<span class="sig-name descname"><span class="pre">write_vector_coordinates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vector</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.vector_space_scene.LinearTransformationScene.write_vector_coordinates" title="永久链接至目标">¶</a></dt>
 <dd><p>动态绘制坐标系</p>
 </dd></dl>
 </dd></dl>

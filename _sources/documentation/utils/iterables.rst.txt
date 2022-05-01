@@ -24,12 +24,6 @@ Iterables
 
 -----
 
-.. autofunction:: manimlib.utils.iterables.all_elements_are_instances
-
-iterable 列表中的所有元素是否都为Class类
-
------
-
 .. autofunction:: manimlib.utils.iterables.adjacent_n_tuples
 
 objects 的相邻 n 元组（返回zip）
@@ -93,18 +87,6 @@ objects 相邻对
 
 -----
 
-.. autofunction:: manimlib.utils.iterables.make_even_by_cycling
+.. autofunction:: manimlib.utils.iterables.hash_obj
 
-将 iterable_1 和 iterable_2 调成一样的长度，不足的循环使用
-
------
-
-.. autofunction:: manimlib.utils.iterables.remove_nones
-
-将 sequence 中的 None 去除掉，并返回
-
------
-
-.. autofunction:: manimlib.utils.iterables.concatenate_lists
-
-串联列表 list_of
+获取 object 的哈希值

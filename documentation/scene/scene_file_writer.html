@@ -3,13 +3,15 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="ThreeDScene" href="three_d_scene.html" /><link rel="prev" title="Scene" href="scene.html" />
 
-    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-4.4.0, furo 2020.10.05.beta9"/>
         <title>SceneFileWriter - ManimGL  文档</title>
-      <link rel="stylesheet" href="../../_static/copybutton.css" />
+      <link rel="stylesheet" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/default.css" />
+    <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?2a4e24d7dcbb93920f1effe6">
-    <link rel="stylesheet" href="../../_static/pygments.css?2a4e24d7dcbb93920f1effe6">
+    <link rel="stylesheet" href="../../_static/styles/default.css?2420d15e60d87dc74ec953a3">
+    <link rel="stylesheet" href="../../_static/pygments.css?2420d15e60d87dc74ec953a3">
     
 <style>
   :root {
@@ -18,17 +20,15 @@
   
   }
 </style>
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
       <script src="../../_static/underscore.js"></script>
       
         <script src="../../_static/doctools.js" defer></script>
       
-        <script src="../../_static/language_data.js" defer></script>
-      
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
-        <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?2a4e24d7dcbb93920f1effe6"></script></head>
+        <script src="../../_static/translations.js"></script><script src="../../_static/scripts/main.js?2420d15e60d87dc74ec953a3"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -89,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p class="caption"><span class="caption-text">入门教程</span></p>
+  <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -98,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p class="caption"><span class="caption-text">进阶文档</span></p>
+<p class="caption" role="heading"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -166,8 +166,18 @@
 <li class="toctree-l2"><a class="reference internal" href="vector_space_scene.html">VectorScene</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../shaders/index.html">着色代码 shaders (TODO)</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../utils/index.html">工具函数 utils</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../shaders/index.html">着色代码 shaders (TODO)</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/Preliminary_knowledge.html">OpenGL 预备知识</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/inserts/index.html">Inserts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/image.html">image 贴图</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/quadratic_bezier_fill.html">二阶贝塞尔曲线填充色 Quadratic bezier fill</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/quadratic_bezier_stroke.html">二阶贝塞尔曲线轮廓线着色 Quadratic bezier stroke</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/surface.html">曲面着色 Surface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/textured_surface.html">曲面贴图 Textured surface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/true_dot.html">True dot</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../utils/index.html">工具函数 utils</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label for="toctree-checkbox-8"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../utils/bezier.html">Bezier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../utils/color.html">Color</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../utils/config_ops.html">CONFIG_ops</a></li>
@@ -183,7 +193,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption"><span class="caption-text">开发相关</span></p>
+<p class="caption" role="heading"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -206,47 +216,47 @@
 <div class="section" id="id1">
 <h2>SceneFileWriter<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.scene.scene_file_writer.SceneFileWriter">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.scene.scene_file_writer.</code><code class="sig-name descname">SceneFileWriter</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">scene</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.scene_file_writer.SceneFileWriter" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.scene_file_writer.SceneFileWriter">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.scene.scene_file_writer.</span></span><span class="sig-name descname"><span class="pre">SceneFileWriter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scene</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.scene_file_writer.SceneFileWriter" title="永久链接至目标">¶</a></dt>
 <dd><p>将场景写入文件</p>
 <dl class="py method">
-<dt id="manimlib.scene.scene_file_writer.SceneFileWriter.add_sound">
-<code class="sig-name descname">add_sound</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sound_file</span></em>, <em class="sig-param"><span class="n">time</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">gain</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.scene_file_writer.SceneFileWriter.add_sound" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.scene_file_writer.SceneFileWriter.add_sound">
+<span class="sig-name descname"><span class="pre">add_sound</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sound_file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gain</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gain_to_background</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.scene.scene_file_writer.SceneFileWriter.add_sound" title="永久链接至目标">¶</a></dt>
 <dd><p>添加声音</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.scene.scene_file_writer.SceneFileWriter.add_sound_to_video">
-<code class="sig-name descname">add_sound_to_video</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.scene_file_writer.SceneFileWriter.add_sound_to_video" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.scene_file_writer.SceneFileWriter.add_sound_to_video">
+<span class="sig-name descname"><span class="pre">add_sound_to_video</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.scene.scene_file_writer.SceneFileWriter.add_sound_to_video" title="永久链接至目标">¶</a></dt>
 <dd><p>将声音合并入视频</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.scene.scene_file_writer.SceneFileWriter.close_movie_pipe">
-<code class="sig-name descname">close_movie_pipe</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.scene_file_writer.SceneFileWriter.close_movie_pipe" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.scene_file_writer.SceneFileWriter.close_movie_pipe">
+<span class="sig-name descname"><span class="pre">close_movie_pipe</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.scene.scene_file_writer.SceneFileWriter.close_movie_pipe" title="永久链接至目标">¶</a></dt>
 <dd><p>关闭视频管道</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.scene.scene_file_writer.SceneFileWriter.combine_movie_files">
-<code class="sig-name descname">combine_movie_files</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.scene_file_writer.SceneFileWriter.combine_movie_files" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.scene_file_writer.SceneFileWriter.combine_movie_files">
+<span class="sig-name descname"><span class="pre">combine_movie_files</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.scene.scene_file_writer.SceneFileWriter.combine_movie_files" title="永久链接至目标">¶</a></dt>
 <dd><p>拼接视频</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.scene.scene_file_writer.SceneFileWriter.open_file">
-<code class="sig-name descname">open_file</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.scene_file_writer.SceneFileWriter.open_file" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.scene_file_writer.SceneFileWriter.open_file">
+<span class="sig-name descname"><span class="pre">open_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.scene.scene_file_writer.SceneFileWriter.open_file" title="永久链接至目标">¶</a></dt>
 <dd><p>写入完成后打开文件</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.scene.scene_file_writer.SceneFileWriter.open_movie_pipe">
-<code class="sig-name descname">open_movie_pipe</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.scene_file_writer.SceneFileWriter.open_movie_pipe" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.scene_file_writer.SceneFileWriter.open_movie_pipe">
+<span class="sig-name descname"><span class="pre">open_movie_pipe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.scene.scene_file_writer.SceneFileWriter.open_movie_pipe" title="永久链接至目标">¶</a></dt>
 <dd><p>开启视频管道</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.scene.scene_file_writer.SceneFileWriter.save_final_image">
-<code class="sig-name descname">save_final_image</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">image</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.scene_file_writer.SceneFileWriter.save_final_image" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.scene_file_writer.SceneFileWriter.save_final_image">
+<span class="sig-name descname"><span class="pre">save_final_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Image</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.scene.scene_file_writer.SceneFileWriter.save_final_image" title="永久链接至目标">¶</a></dt>
 <dd><p>保存视频最后一帧画面</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.scene.scene_file_writer.SceneFileWriter.write_frame">
-<code class="sig-name descname">write_frame</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">camera</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.scene.scene_file_writer.SceneFileWriter.write_frame" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.scene.scene_file_writer.SceneFileWriter.write_frame">
+<span class="sig-name descname"><span class="pre">write_frame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">camera</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../camera/camera.html#manimlib.camera.camera.Camera" title="manimlib.camera.camera.Camera"><span class="pre">Camera</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.scene.scene_file_writer.SceneFileWriter.write_frame" title="永久链接至目标">¶</a></dt>
 <dd><p>写入视频帧</p>
 </dd></dl>
 </dd></dl>

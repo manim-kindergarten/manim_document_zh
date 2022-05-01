@@ -13,7 +13,7 @@ Homotopy
     :members:
     
 .. manim-example:: HomotopyExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/HomotopyExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/HomotopyExample.mp4
 
   class HomotopyExample(Scene):
       def construct(self):
@@ -43,7 +43,7 @@ ComplexHomotopy
     :members:
 
 .. manim-example:: ComplexHomotopyExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/ComplexHomotopyExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/ComplexHomotopyExample.mp4
 
   class ComplexHomotopyExample(Scene):
       def construct(self):
@@ -70,7 +70,7 @@ PhaseFlow
     :members:
     
 .. manim-example:: PhaseFlowExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/PhaseFlowExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/PhaseFlowExample.mp4
 
   class PhaseFlowExample(Scene):
       def construct(self):
@@ -97,7 +97,7 @@ MoveAlongPath
     :members:
     
 .. manim-example:: MoveAlongPathExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/MoveAlongPathExample.mp4
+  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/MoveAlongPathExample.mp4
 
   class MoveAlongPathExample(Scene):
       def construct(self):

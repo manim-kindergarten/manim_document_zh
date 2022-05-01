@@ -96,8 +96,6 @@ manim 使用三维坐标，并且用 ``ndarray`` 的类型
 
 .. code-block:: python
 
-    START_X = 30
-    START_Y = 20
     NORMAL = "NORMAL"
     ITALIC = "ITALIC"
     OBLIQUE = "OBLIQUE"

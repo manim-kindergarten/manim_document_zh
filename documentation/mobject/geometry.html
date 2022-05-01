@@ -3,13 +3,15 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Interactive" href="interactive.html" /><link rel="prev" title="Functions" href="functions.html" />
 
-    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-4.4.0, furo 2020.10.05.beta9"/>
         <title>Geometry - ManimGL  文档</title>
-      <link rel="stylesheet" href="../../_static/copybutton.css" />
+      <link rel="stylesheet" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/default.css" />
+    <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?0ad4478b1c80faa077680e27">
-    <link rel="stylesheet" href="../../_static/pygments.css?0ad4478b1c80faa077680e27">
+    <link rel="stylesheet" href="../../_static/styles/default.css?7b2db28b0452498f776d0fa6">
+    <link rel="stylesheet" href="../../_static/pygments.css?7b2db28b0452498f776d0fa6">
     
 <style>
   :root {
@@ -18,17 +20,15 @@
   
   }
 </style>
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
       <script src="../../_static/underscore.js"></script>
       
         <script src="../../_static/doctools.js" defer></script>
       
-        <script src="../../_static/language_data.js" defer></script>
-      
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
-        <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?0ad4478b1c80faa077680e27"></script></head>
+        <script src="../../_static/translations.js"></script><script src="../../_static/scripts/main.js?7b2db28b0452498f776d0fa6"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -89,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p class="caption"><span class="caption-text">入门教程</span></p>
+  <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -98,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p class="caption"><span class="caption-text">进阶文档</span></p>
+<p class="caption" role="heading"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -166,8 +166,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../scene/vector_space_scene.html">VectorScene</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../shaders/index.html">着色代码 shaders (TODO)</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../utils/index.html">工具函数 utils</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../shaders/index.html">着色代码 shaders (TODO)</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label for="toctree-checkbox-7"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/Preliminary_knowledge.html">OpenGL 预备知识</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/inserts/index.html">Inserts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/image.html">image 贴图</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/quadratic_bezier_fill.html">二阶贝塞尔曲线填充色 Quadratic bezier fill</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/quadratic_bezier_stroke.html">二阶贝塞尔曲线轮廓线着色 Quadratic bezier stroke</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/surface.html">曲面着色 Surface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/textured_surface.html">曲面贴图 Textured surface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/true_dot.html">True dot</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../utils/index.html">工具函数 utils</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label for="toctree-checkbox-8"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../utils/bezier.html">Bezier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../utils/color.html">Color</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../utils/config_ops.html">CONFIG_ops</a></li>
@@ -183,7 +193,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption"><span class="caption-text">开发相关</span></p>
+<p class="caption" role="heading"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -206,8 +216,8 @@
 <div class="section" id="tipablevmobject">
 <h2>TipableVMobject<a class="headerlink" href="#tipablevmobject" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.TipableVMobject">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">TipableVMobject</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.TipableVMobject" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.TipableVMobject">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">TipableVMobject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.TipableVMobject" title="永久链接至目标">¶</a></dt>
 <dd><p>可以带箭头的物体（实现了和箭头 tip 有关的方法）</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">tip_config</span></code> 字典中传入与箭头相关的参数，最终会将这个字典中的参数传入 <code class="docutils literal notranslate"><span class="pre">ArrowTip</span></code> 类来生成箭头。
@@ -233,8 +243,8 @@
 </ul>
 <p>其中，opacity, width 等属性均可以为一个列表，在渲染时会按照列表对其进行补间</p>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.TipableVMobject.add_tip">
-<code class="sig-name descname">add_tip</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">at_start</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.TipableVMobject.add_tip" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.TipableVMobject.add_tip">
+<span class="sig-name descname"><span class="pre">add_tip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">at_start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.TipableVMobject.add_tip" title="永久链接至目标">¶</a></dt>
 <dd><p>添加箭头</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">at_start</span></code> : <code class="docutils literal notranslate"><span class="pre">True</span></code> 时在开头添加箭头，反之在结尾（默认为 <code class="docutils literal notranslate"><span class="pre">False</span></code> 在末尾）</p></li>
@@ -242,43 +252,43 @@
 </ul>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.TipableVMobject.create_tip">
-<code class="sig-name descname">create_tip</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">at_start</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.TipableVMobject.create_tip" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.TipableVMobject.create_tip">
+<span class="sig-name descname"><span class="pre">create_tip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">at_start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference internal" href="#manimlib.mobject.geometry.ArrowTip" title="manimlib.mobject.geometry.ArrowTip"><span class="pre">manimlib.mobject.geometry.ArrowTip</span></a></span></span><a class="headerlink" href="#manimlib.mobject.geometry.TipableVMobject.create_tip" title="永久链接至目标">¶</a></dt>
 <dd><p>返回箭头，参数同 <code class="docutils literal notranslate"><span class="pre">add_tip</span></code></p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.TipableVMobject.get_end">
-<code class="sig-name descname">get_end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.TipableVMobject.get_end" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.TipableVMobject.get_end">
+<span class="sig-name descname"><span class="pre">get_end</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.geometry.TipableVMobject.get_end" title="永久链接至目标">¶</a></dt>
 <dd><p>获取物件结束点</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.TipableVMobject.get_length">
-<code class="sig-name descname">get_length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.TipableVMobject.get_length" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.TipableVMobject.get_length">
+<span class="sig-name descname"><span class="pre">get_length</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#manimlib.mobject.geometry.TipableVMobject.get_length" title="永久链接至目标">¶</a></dt>
 <dd><p>获取起止点之间的直线距离</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.TipableVMobject.get_start">
-<code class="sig-name descname">get_start</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.TipableVMobject.get_start" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.TipableVMobject.get_start">
+<span class="sig-name descname"><span class="pre">get_start</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.geometry.TipableVMobject.get_start" title="永久链接至目标">¶</a></dt>
 <dd><p>获取物件起始点</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.TipableVMobject.get_tip">
-<code class="sig-name descname">get_tip</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.TipableVMobject.get_tip" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.TipableVMobject.get_tip">
+<span class="sig-name descname"><span class="pre">get_tip</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference internal" href="#manimlib.mobject.geometry.ArrowTip" title="manimlib.mobject.geometry.ArrowTip"><span class="pre">manimlib.mobject.geometry.ArrowTip</span></a></span></span><a class="headerlink" href="#manimlib.mobject.geometry.TipableVMobject.get_tip" title="永久链接至目标">¶</a></dt>
 <dd><p>返回第一个 tip，如果没有则抛出异常</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.TipableVMobject.get_tips">
-<code class="sig-name descname">get_tips</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.TipableVMobject.get_tips" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.TipableVMobject.get_tips">
+<span class="sig-name descname"><span class="pre">get_tips</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference internal" href="types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VGroup" title="manimlib.mobject.types.vectorized_mobject.VGroup"><span class="pre">manimlib.mobject.types.vectorized_mobject.VGroup</span></a></span></span><a class="headerlink" href="#manimlib.mobject.geometry.TipableVMobject.get_tips" title="永久链接至目标">¶</a></dt>
 <dd><p>返回一个包含首尾 tips 的 <code class="docutils literal notranslate"><span class="pre">VGroup</span></code>，没有则为空</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.TipableVMobject.get_unpositioned_tip">
-<code class="sig-name descname">get_unpositioned_tip</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.TipableVMobject.get_unpositioned_tip" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.TipableVMobject.get_unpositioned_tip">
+<span class="sig-name descname"><span class="pre">get_unpositioned_tip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference internal" href="#manimlib.mobject.geometry.ArrowTip" title="manimlib.mobject.geometry.ArrowTip"><span class="pre">manimlib.mobject.geometry.ArrowTip</span></a></span></span><a class="headerlink" href="#manimlib.mobject.geometry.TipableVMobject.get_unpositioned_tip" title="永久链接至目标">¶</a></dt>
 <dd><p>返回没有定位的箭头，参数只有 <code class="docutils literal notranslate"><span class="pre">tip_config</span></code></p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.TipableVMobject.pop_tips">
-<code class="sig-name descname">pop_tips</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.TipableVMobject.pop_tips" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.TipableVMobject.pop_tips">
+<span class="sig-name descname"><span class="pre">pop_tips</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference internal" href="types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VGroup" title="manimlib.mobject.types.vectorized_mobject.VGroup"><span class="pre">manimlib.mobject.types.vectorized_mobject.VGroup</span></a></span></span><a class="headerlink" href="#manimlib.mobject.geometry.TipableVMobject.pop_tips" title="永久链接至目标">¶</a></dt>
 <dd><p>删除并返回 tips</p>
 </dd></dl>
 </dd></dl>
@@ -286,8 +296,8 @@
 <div class="section" id="arc">
 <h2>Arc<a class="headerlink" href="#arc" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.Arc">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">Arc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start_angle</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">angle</span><span class="o">=</span><span class="default_value">1.5707963267948966</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Arc" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Arc">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">Arc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.5707963267948966</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Arc" title="永久链接至目标">¶</a></dt>
 <dd><p>圆弧</p>
 <p>传入 <code class="docutils literal notranslate"><span class="pre">start_angle</span></code> 表示起始的角度，<code class="docutils literal notranslate"><span class="pre">angle</span></code> 表示圆心角</p>
 <ul class="simple">
@@ -296,23 +306,23 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">arc_center</span></code> : 圆弧的中心</p></li>
 </ul>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.Arc.get_arc_center">
-<code class="sig-name descname">get_arc_center</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Arc.get_arc_center" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Arc.get_arc_center">
+<span class="sig-name descname"><span class="pre">get_arc_center</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.geometry.Arc.get_arc_center" title="永久链接至目标">¶</a></dt>
 <dd><p>获取圆弧圆心</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.Arc.get_start_angle">
-<code class="sig-name descname">get_start_angle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Arc.get_start_angle" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Arc.get_start_angle">
+<span class="sig-name descname"><span class="pre">get_start_angle</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#manimlib.mobject.geometry.Arc.get_start_angle" title="永久链接至目标">¶</a></dt>
 <dd><p>获取起始角度</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.Arc.get_stop_angle">
-<code class="sig-name descname">get_stop_angle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Arc.get_stop_angle" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Arc.get_stop_angle">
+<span class="sig-name descname"><span class="pre">get_stop_angle</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#manimlib.mobject.geometry.Arc.get_stop_angle" title="永久链接至目标">¶</a></dt>
 <dd><p>获取终止角度</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.Arc.move_arc_center_to">
-<code class="sig-name descname">move_arc_center_to</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Arc.move_arc_center_to" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Arc.move_arc_center_to">
+<span class="sig-name descname"><span class="pre">move_arc_center_to</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Arc.move_arc_center_to" title="永久链接至目标">¶</a></dt>
 <dd><p>将圆弧圆心移动到 <code class="docutils literal notranslate"><span class="pre">point</span></code> 的位置</p>
 </dd></dl>
 </dd></dl>
@@ -320,9 +330,9 @@
 <div class="section" id="arcbetweenpoints">
 <h2>ArcBetweenPoints<a class="headerlink" href="#arcbetweenpoints" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.ArcBetweenPoints">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">ArcBetweenPoints</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start</span></em>, <em class="sig-param"><span class="n">end</span></em>, <em class="sig-param"><span class="n">angle</span><span class="o">=</span><span class="default_value">1.5707963267948966</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.ArcBetweenPoints" title="永久链接至目标">¶</a></dt>
-<dd><p>在两点之间的圆弧</p>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.ArcBetweenPoints">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">ArcBetweenPoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.5707963267948966</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.ArcBetweenPoints" title="永久链接至目标">¶</a></dt>
+<dd><p>两点之间的圆弧</p>
 <p>传入 <code class="docutils literal notranslate"><span class="pre">start</span></code>, <code class="docutils literal notranslate"><span class="pre">end</span></code> 表示起点终点，<code class="docutils literal notranslate"><span class="pre">angle</span></code> 表示圆心角</p>
 <p>其余关键字参数同 Arc</p>
 </dd></dl>
@@ -330,8 +340,8 @@
 <div class="section" id="curvedarrow">
 <h2>CurvedArrow<a class="headerlink" href="#curvedarrow" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.CurvedArrow">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">CurvedArrow</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start_point</span></em>, <em class="sig-param"><span class="n">end_point</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.CurvedArrow" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.CurvedArrow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">CurvedArrow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.CurvedArrow" title="永久链接至目标">¶</a></dt>
 <dd><p>弯曲的单向箭头</p>
 <p>从 <code class="docutils literal notranslate"><span class="pre">start_point</span></code> 到 <code class="docutils literal notranslate"><span class="pre">end_point</span></code> 的弯曲箭头，圆心角为90°</p>
 <p>其余关键字参数同 <code class="docutils literal notranslate"><span class="pre">Arc</span></code></p>
@@ -340,8 +350,8 @@
 <div class="section" id="curveddoublearrow">
 <h2>CurvedDoubleArrow<a class="headerlink" href="#curveddoublearrow" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.CurvedDoubleArrow">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">CurvedDoubleArrow</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start_point</span></em>, <em class="sig-param"><span class="n">end_point</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.CurvedDoubleArrow" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.CurvedDoubleArrow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">CurvedDoubleArrow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.CurvedDoubleArrow" title="永久链接至目标">¶</a></dt>
 <dd><p>弯曲的双向箭头</p>
 <p>从 <code class="docutils literal notranslate"><span class="pre">start_point</span></code> 到 <code class="docutils literal notranslate"><span class="pre">end_point</span></code> 的弯曲双向箭头，圆心角为90°</p>
 <p>其余关键字参数同 <code class="docutils literal notranslate"><span class="pre">Arc</span></code></p>
@@ -350,23 +360,23 @@
 <div class="section" id="circle">
 <h2>Circle<a class="headerlink" href="#circle" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.Circle">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">Circle</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Circle" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Circle">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">Circle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Circle" title="永久链接至目标">¶</a></dt>
 <dd><p>圆</p>
 <p>参数同 <code class="docutils literal notranslate"><span class="pre">Arc</span></code> ，半径使用 <code class="docutils literal notranslate"><span class="pre">radius</span></code> (来自 <code class="docutils literal notranslate"><span class="pre">Arc</span></code> )</p>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.Circle.get_radius">
-<code class="sig-name descname">get_radius</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Circle.get_radius" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Circle.get_radius">
+<span class="sig-name descname"><span class="pre">get_radius</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#manimlib.mobject.geometry.Circle.get_radius" title="永久链接至目标">¶</a></dt>
 <dd><p>获取圆的半径</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.Circle.point_at_angle">
-<code class="sig-name descname">point_at_angle</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">angle</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Circle.point_at_angle" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Circle.point_at_angle">
+<span class="sig-name descname"><span class="pre">point_at_angle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.geometry.Circle.point_at_angle" title="永久链接至目标">¶</a></dt>
 <dd><p>返回圆上距离起点（默认在x轴）角度为 <code class="docutils literal notranslate"><span class="pre">angle</span></code> 的点</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.Circle.surround">
-<code class="sig-name descname">surround</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span></em>, <em class="sig-param"><span class="n">dim_to_match</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">stretch</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">buff</span><span class="o">=</span><span class="default_value">0.25</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Circle.surround" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Circle.surround">
+<span class="sig-name descname"><span class="pre">surround</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">manimlib.mobject.mobject.Mobject</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">dim_to_match</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stretch</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">buff</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.25</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Circle.surround" title="永久链接至目标">¶</a></dt>
 <dd><p>让圆环绕住物体（dim_to_match和stretch无效，始终为圆）</p>
 </dd></dl>
 </dd></dl>
@@ -374,8 +384,8 @@
 <div class="section" id="dot">
 <h2>Dot<a class="headerlink" href="#dot" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.Dot">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">Dot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Dot" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Dot">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">Dot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">array([0.,</span> <span class="pre">0.,</span> <span class="pre">0.])</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Dot" title="永久链接至目标">¶</a></dt>
 <dd><p>点（半径默认为0.08）</p>
 <p>传入参数 <code class="docutils literal notranslate"><span class="pre">point</span></code> 表示点的位置，其余同 <code class="docutils literal notranslate"><span class="pre">Arc</span></code></p>
 </dd></dl>
@@ -383,8 +393,8 @@
 <div class="section" id="smalldot">
 <h2>SmallDot<a class="headerlink" href="#smalldot" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.SmallDot">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">SmallDot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span><span class="o">=</span><span class="default_value">array([0.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.SmallDot" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.SmallDot">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">SmallDot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">array([0.,</span> <span class="pre">0.,</span> <span class="pre">0.])</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.SmallDot" title="永久链接至目标">¶</a></dt>
 <dd><p>小点（半径默认为0.04）</p>
 <p>传入参数 <code class="docutils literal notranslate"><span class="pre">point</span></code> 表示点的位置，其余同 <code class="docutils literal notranslate"><span class="pre">Arc</span></code></p>
 </dd></dl>
@@ -392,8 +402,8 @@
 <div class="section" id="ellipse">
 <h2>Ellipse<a class="headerlink" href="#ellipse" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.Ellipse">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">Ellipse</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Ellipse" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Ellipse">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">Ellipse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Ellipse" title="永久链接至目标">¶</a></dt>
 <dd><p>椭圆</p>
 <p>宽度为 <code class="docutils literal notranslate"><span class="pre">width</span></code>，高度为 <code class="docutils literal notranslate"><span class="pre">height</span></code></p>
 </dd></dl>
@@ -401,8 +411,8 @@
 <div class="section" id="annularsector">
 <h2>AnnularSector<a class="headerlink" href="#annularsector" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.AnnularSector">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">AnnularSector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start_angle</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">angle</span><span class="o">=</span><span class="default_value">1.5707963267948966</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.AnnularSector" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.AnnularSector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">AnnularSector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.5707963267948966</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.AnnularSector" title="永久链接至目标">¶</a></dt>
 <dd><p>扇环</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">inner_radius</span></code> : 内圆半径</p></li>
@@ -420,8 +430,8 @@
 <div class="section" id="sector">
 <h2>Sector<a class="headerlink" href="#sector" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.Sector">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">Sector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start_angle</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">angle</span><span class="o">=</span><span class="default_value">1.5707963267948966</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Sector" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Sector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">Sector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.5707963267948966</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Sector" title="永久链接至目标">¶</a></dt>
 <dd><p>扇形</p>
 <p>即内圆半径为 0 的扇环</p>
 <p>传入 <code class="docutils literal notranslate"><span class="pre">start_angle</span></code> 表示起始的角度，<code class="docutils literal notranslate"><span class="pre">angle</span></code> 表示圆心角</p>
@@ -435,8 +445,8 @@
 <div class="section" id="annulus">
 <h2>Annulus<a class="headerlink" href="#annulus" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.Annulus">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">Annulus</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Annulus" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Annulus">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">Annulus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Annulus" title="永久链接至目标">¶</a></dt>
 <dd><p>圆环</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">inner_radius</span></code> : 内圆半径</p></li>
@@ -449,8 +459,8 @@
 <div class="section" id="line">
 <h2>Line<a class="headerlink" href="#line" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.Line">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">Line</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start</span><span class="o">=</span><span class="default_value">array([- 1.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="n">end</span><span class="o">=</span><span class="default_value">array([1.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Line" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Line">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">Line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">array([-</span> <span class="pre">1.,</span> <span class="pre">0.,</span> <span class="pre">0.])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">array([1.,</span> <span class="pre">0.,</span> <span class="pre">0.])</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Line" title="永久链接至目标">¶</a></dt>
 <dd><p>直线</p>
 <p>传入 <code class="docutils literal notranslate"><span class="pre">start,</span> <span class="pre">end</span></code> 为线段起点终点</p>
 <ul class="simple">
@@ -458,53 +468,53 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">path_arc</span></code> : 如果有此关键字参数，则使用 <code class="docutils literal notranslate"><span class="pre">ArcBetweemPoints</span></code>，<code class="docutils literal notranslate"><span class="pre">path_arc</span></code> 表示角度</p></li>
 </ul>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.Line.get_angle">
-<code class="sig-name descname">get_angle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Line.get_angle" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Line.get_angle">
+<span class="sig-name descname"><span class="pre">get_angle</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#manimlib.mobject.geometry.Line.get_angle" title="永久链接至目标">¶</a></dt>
 <dd><p>获取直线倾斜角</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.Line.get_projection">
-<code class="sig-name descname">get_projection</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Line.get_projection" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Line.get_projection">
+<span class="sig-name descname"><span class="pre">get_projection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.geometry.Line.get_projection" title="永久链接至目标">¶</a></dt>
 <dd><p>返回点在直线上的投影</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.Line.get_slope">
-<code class="sig-name descname">get_slope</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Line.get_slope" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Line.get_slope">
+<span class="sig-name descname"><span class="pre">get_slope</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#manimlib.mobject.geometry.Line.get_slope" title="永久链接至目标">¶</a></dt>
 <dd><p>获取直线斜率</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.Line.get_unit_vector">
-<code class="sig-name descname">get_unit_vector</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Line.get_unit_vector" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Line.get_unit_vector">
+<span class="sig-name descname"><span class="pre">get_unit_vector</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.geometry.Line.get_unit_vector" title="永久链接至目标">¶</a></dt>
 <dd><p>获取直线方向上的单位向量</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.Line.get_vector">
-<code class="sig-name descname">get_vector</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Line.get_vector" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Line.get_vector">
+<span class="sig-name descname"><span class="pre">get_vector</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.geometry.Line.get_vector" title="永久链接至目标">¶</a></dt>
 <dd><p>获取直线的方向向量</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.Line.pointify">
-<code class="sig-name descname">pointify</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mob_or_point</span></em>, <em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Line.pointify" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Line.pointify">
+<span class="sig-name descname"><span class="pre">pointify</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mob_or_point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">Mobject</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">np.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">np.ndarray</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">np.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.geometry.Line.pointify" title="永久链接至目标">¶</a></dt>
 <dd><p>将一个参数传递给 Line (或子类) 并将其转换为一个 3D 点。</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.Line.put_start_and_end_on">
-<code class="sig-name descname">put_start_and_end_on</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start</span></em>, <em class="sig-param"><span class="n">end</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Line.put_start_and_end_on" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Line.put_start_and_end_on">
+<span class="sig-name descname"><span class="pre">put_start_and_end_on</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Line.put_start_and_end_on" title="永久链接至目标">¶</a></dt>
 <dd><p>把直线的首尾放在 <code class="docutils literal notranslate"><span class="pre">start,</span> <span class="pre">end</span></code> 上</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.Line.set_angle">
-<code class="sig-name descname">set_angle</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">angle</span></em>, <em class="sig-param"><span class="n">about_point</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Line.set_angle" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Line.set_angle">
+<span class="sig-name descname"><span class="pre">set_angle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">about_point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">np.ndarray</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Line.set_angle" title="永久链接至目标">¶</a></dt>
 <dd><p>设置直线倾斜角为 <code class="docutils literal notranslate"><span class="pre">angle</span></code></p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.Line.set_length">
-<code class="sig-name descname">set_length</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">length</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Line.set_length" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Line.set_length">
+<span class="sig-name descname"><span class="pre">set_length</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Line.set_length" title="永久链接至目标">¶</a></dt>
 <dd><p>缩放到 <code class="docutils literal notranslate"><span class="pre">length</span></code> 长度</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.Line.set_path_arc">
-<code class="sig-name descname">set_path_arc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">new_value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Line.set_path_arc" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Line.set_path_arc">
+<span class="sig-name descname"><span class="pre">set_path_arc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">new_value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.mobject.geometry.Line.set_path_arc" title="永久链接至目标">¶</a></dt>
 <dd><p>设置 <code class="docutils literal notranslate"><span class="pre">path_arc</span></code></p>
 </dd></dl>
 </dd></dl>
@@ -512,21 +522,21 @@
 <div class="section" id="dashedline">
 <h2>DashedLine<a class="headerlink" href="#dashedline" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.DashedLine">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">DashedLine</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.DashedLine" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.DashedLine">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">DashedLine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.DashedLine" title="永久链接至目标">¶</a></dt>
 <dd><p>虚线</p>
 <p>使用 <code class="docutils literal notranslate"><span class="pre">DashedVMobject</span></code></p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">dash_length</span></code> : 每段虚线的长度，默认为0.05</p></li>
 </ul>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.DashedLine.get_end">
-<code class="sig-name descname">get_end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.DashedLine.get_end" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.DashedLine.get_end">
+<span class="sig-name descname"><span class="pre">get_end</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.geometry.DashedLine.get_end" title="永久链接至目标">¶</a></dt>
 <dd><p>获取物件结束点</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.DashedLine.get_start">
-<code class="sig-name descname">get_start</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.DashedLine.get_start" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.DashedLine.get_start">
+<span class="sig-name descname"><span class="pre">get_start</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.geometry.DashedLine.get_start" title="永久链接至目标">¶</a></dt>
 <dd><p>获取物件起始点</p>
 </dd></dl>
 </dd></dl>
@@ -534,8 +544,8 @@
 <div class="section" id="tangentline">
 <h2>TangentLine<a class="headerlink" href="#tangentline" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.TangentLine">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">TangentLine</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vmob</span></em>, <em class="sig-param"><span class="n">alpha</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.TangentLine" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.TangentLine">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">TangentLine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vmob</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VMobject" title="manimlib.mobject.types.vectorized_mobject.VMobject"><span class="pre">manimlib.mobject.types.vectorized_mobject.VMobject</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.TangentLine" title="永久链接至目标">¶</a></dt>
 <dd><p>切线</p>
 <p>传入 <code class="docutils literal notranslate"><span class="pre">vmob</span></code> 表示需要做切线的物体，<code class="docutils literal notranslate"><span class="pre">alpha</span></code> 表示切点在 <code class="docutils literal notranslate"><span class="pre">vmob</span></code> 上的比例</p>
 <ul class="simple">
@@ -547,8 +557,8 @@
 <div class="section" id="elbow">
 <h2>Elbow<a class="headerlink" href="#elbow" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.Elbow">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">Elbow</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Elbow" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Elbow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">Elbow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Elbow" title="永久链接至目标">¶</a></dt>
 <dd><p>折线（一般用作直角符号）</p>
 <p><code class="docutils literal notranslate"><span class="pre">width</span></code> 表示宽度，<code class="docutils literal notranslate"><span class="pre">angle</span></code> 表示角度</p>
 </dd></dl>
@@ -556,8 +566,8 @@
 <div class="section" id="arrow">
 <h2>Arrow<a class="headerlink" href="#arrow" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.Arrow">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">Arrow</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start</span><span class="o">=</span><span class="default_value">array([- 1.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="n">end</span><span class="o">=</span><span class="default_value">array([1.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Arrow" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Arrow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">Arrow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">array([-</span> <span class="pre">1.,</span> <span class="pre">0.,</span> <span class="pre">0.])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">array([1.,</span> <span class="pre">0.,</span> <span class="pre">0.])</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Arrow" title="永久链接至目标">¶</a></dt>
 <dd><p>带箭头的直线，箭头大小自动</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">buff</span></code> : 默认为0.25</p></li>
@@ -572,13 +582,13 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">path_arc</span></code> : 如果有此关键字参数，则使用 <code class="docutils literal notranslate"><span class="pre">ArcBetweemPoints</span></code>，<code class="docutils literal notranslate"><span class="pre">path_arc</span></code> 表示角度</p></li>
 </ul>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.Arrow.reset_tip">
-<code class="sig-name descname">reset_tip</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Arrow.reset_tip" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Arrow.reset_tip">
+<span class="sig-name descname"><span class="pre">reset_tip</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Arrow.reset_tip" title="永久链接至目标">¶</a></dt>
 <dd><p>重置箭头</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.Arrow.set_stroke">
-<code class="sig-name descname">set_stroke</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">width</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Arrow.set_stroke" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Arrow.set_stroke">
+<span class="sig-name descname"><span class="pre">set_stroke</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ManimColor</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">ManimColor</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Arrow.set_stroke" title="永久链接至目标">¶</a></dt>
 <dd><p>设置轮廓线（轮廓线浮于填充色上方）</p>
 </dd></dl>
 </dd></dl>
@@ -586,8 +596,8 @@
 <div class="section" id="fillarrow">
 <h2>FillArrow<a class="headerlink" href="#fillarrow" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.FillArrow">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">FillArrow</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start</span><span class="o">=</span><span class="default_value">array([- 1.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="n">end</span><span class="o">=</span><span class="default_value">array([1.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.FillArrow" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.FillArrow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">FillArrow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">array([-</span> <span class="pre">1.,</span> <span class="pre">0.,</span> <span class="pre">0.])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">array([1.,</span> <span class="pre">0.,</span> <span class="pre">0.])</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.FillArrow" title="永久链接至目标">¶</a></dt>
 <dd><p>箭头，其本质是一个七边形</p>
 <p>传入 <code class="docutils literal notranslate"><span class="pre">start,</span> <span class="pre">end</span></code> 为线段起点终点</p>
 <ul class="simple">
@@ -595,28 +605,28 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">path_arc</span></code> : 如果有此关键字参数，则使用 <code class="docutils literal notranslate"><span class="pre">ArcBetweemPoints</span></code>，<code class="docutils literal notranslate"><span class="pre">path_arc</span></code> 表示角度</p></li>
 </ul>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.FillArrow.get_end">
-<code class="sig-name descname">get_end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.FillArrow.get_end" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.FillArrow.get_end">
+<span class="sig-name descname"><span class="pre">get_end</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.geometry.FillArrow.get_end" title="永久链接至目标">¶</a></dt>
 <dd><p>获取物件结束点</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.FillArrow.get_start">
-<code class="sig-name descname">get_start</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.FillArrow.get_start" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.FillArrow.get_start">
+<span class="sig-name descname"><span class="pre">get_start</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.geometry.FillArrow.get_start" title="永久链接至目标">¶</a></dt>
 <dd><p>获取物件起始点</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.FillArrow.put_start_and_end_on">
-<code class="sig-name descname">put_start_and_end_on</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start</span></em>, <em class="sig-param"><span class="n">end</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.FillArrow.put_start_and_end_on" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.FillArrow.put_start_and_end_on">
+<span class="sig-name descname"><span class="pre">put_start_and_end_on</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.FillArrow.put_start_and_end_on" title="永久链接至目标">¶</a></dt>
 <dd><p>把直线的首尾放在 <code class="docutils literal notranslate"><span class="pre">start,</span> <span class="pre">end</span></code> 上</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.FillArrow.scale">
-<code class="sig-name descname">scale</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.FillArrow.scale" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.FillArrow.scale">
+<span class="sig-name descname"><span class="pre">scale</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.FillArrow.scale" title="永久链接至目标">¶</a></dt>
 <dd><p>缩放箭头，自动调节箭头大小和线条宽度</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.FillArrow.set_path_arc">
-<code class="sig-name descname">set_path_arc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path_arc</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.FillArrow.set_path_arc" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.FillArrow.set_path_arc">
+<span class="sig-name descname"><span class="pre">set_path_arc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_arc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.FillArrow.set_path_arc" title="永久链接至目标">¶</a></dt>
 <dd><p>设置 <code class="docutils literal notranslate"><span class="pre">path_arc</span></code></p>
 </dd></dl>
 </dd></dl>
@@ -624,8 +634,8 @@
 <div class="section" id="vector">
 <h2>Vector<a class="headerlink" href="#vector" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.Vector">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">Vector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">direction</span><span class="o">=</span><span class="default_value">array([1.0, 0.0, 0.0])</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Vector" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Vector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">Vector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">array([1.,</span> <span class="pre">0.,</span> <span class="pre">0.])</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Vector" title="永久链接至目标">¶</a></dt>
 <dd><p>向量</p>
 <p>即起点为ORIGIN的箭头，终点为 <code class="docutils literal notranslate"><span class="pre">direction</span></code></p>
 <ul class="simple">
@@ -636,8 +646,8 @@
 <div class="section" id="doublearrow">
 <h2>DoubleArrow<a class="headerlink" href="#doublearrow" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.DoubleArrow">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">DoubleArrow</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.DoubleArrow" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.DoubleArrow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">DoubleArrow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.DoubleArrow" title="永久链接至目标">¶</a></dt>
 <dd><p>双向直箭头</p>
 <p>参数和 <code class="docutils literal notranslate"><span class="pre">Arrow</span></code> 一致</p>
 </dd></dl>
@@ -645,8 +655,8 @@
 <div class="section" id="cubicbezier">
 <h2>CubicBezier<a class="headerlink" href="#cubicbezier" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.CubicBezier">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">CubicBezier</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a0</span></em>, <em class="sig-param"><span class="n">h0</span></em>, <em class="sig-param"><span class="n">h1</span></em>, <em class="sig-param"><span class="n">a1</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.CubicBezier" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.CubicBezier">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">CubicBezier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.CubicBezier" title="永久链接至目标">¶</a></dt>
 <dd><p>三阶贝塞尔曲线</p>
 <p><cite>测试中发现这个三阶贝塞尔曲线不准</cite></p>
 <p>传入 <code class="docutils literal notranslate"><span class="pre">points</span></code> 表示构成贝塞尔曲线的点集</p>
@@ -655,18 +665,18 @@
 <div class="section" id="polygon">
 <h2>Polygon<a class="headerlink" href="#polygon" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.Polygon">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">Polygon</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">vertices</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Polygon" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Polygon">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">Polygon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">vertices</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Polygon" title="永久链接至目标">¶</a></dt>
 <dd><p>多边形</p>
 <p>传入多个 <code class="docutils literal notranslate"><span class="pre">vertices</span></code> (点坐标)表示顶点</p>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.Polygon.get_vertices">
-<code class="sig-name descname">get_vertices</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Polygon.get_vertices" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Polygon.get_vertices">
+<span class="sig-name descname"><span class="pre">get_vertices</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">np.ndarray</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#manimlib.mobject.geometry.Polygon.get_vertices" title="永久链接至目标">¶</a></dt>
 <dd><p>获取所有顶点</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.Polygon.round_corners">
-<code class="sig-name descname">round_corners</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">radius</span><span class="o">=</span><span class="default_value">0.5</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Polygon.round_corners" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Polygon.round_corners">
+<span class="sig-name descname"><span class="pre">round_corners</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Polygon.round_corners" title="永久链接至目标">¶</a></dt>
 <dd><p>形成圆角（圆角半径为 <code class="docutils literal notranslate"><span class="pre">radius</span></code>）</p>
 </dd></dl>
 </dd></dl>
@@ -674,8 +684,8 @@
 <div class="section" id="regularpolygon">
 <h2>RegularPolygon<a class="headerlink" href="#regularpolygon" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.RegularPolygon">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">RegularPolygon</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span><span class="o">=</span><span class="default_value">6</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.RegularPolygon" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.RegularPolygon">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">RegularPolygon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">6</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.RegularPolygon" title="永久链接至目标">¶</a></dt>
 <dd><p>正多边形</p>
 <p>传入数字 <code class="docutils literal notranslate"><span class="pre">n</span></code> 表示边数</p>
 </dd></dl>
@@ -683,8 +693,8 @@
 <div class="section" id="triangle">
 <h2>Triangle<a class="headerlink" href="#triangle" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.Triangle">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">Triangle</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Triangle" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Triangle">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">Triangle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Triangle" title="永久链接至目标">¶</a></dt>
 <dd><p>正三角形</p>
 <p>使用 <code class="docutils literal notranslate"><span class="pre">RegularPolygon</span></code></p>
 </dd></dl>
@@ -692,8 +702,8 @@
 <div class="section" id="arrowtip">
 <h2>ArrowTip<a class="headerlink" href="#arrowtip" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.ArrowTip">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">ArrowTip</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.ArrowTip" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.ArrowTip">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">ArrowTip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.ArrowTip" title="永久链接至目标">¶</a></dt>
 <dd><p>箭头标志</p>
 <p>箭头大小不自动，需要手动设置</p>
 <ul class="simple">
@@ -710,13 +720,13 @@
 </li>
 </ul>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.ArrowTip.get_base">
-<code class="sig-name descname">get_base</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.ArrowTip.get_base" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.ArrowTip.get_base">
+<span class="sig-name descname"><span class="pre">get_base</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.geometry.ArrowTip.get_base" title="永久链接至目标">¶</a></dt>
 <dd><p>获取箭头尾部的点</p>
 </dd></dl>
 <dl class="py method">
-<dt id="manimlib.mobject.geometry.ArrowTip.get_tip_point">
-<code class="sig-name descname">get_tip_point</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.ArrowTip.get_tip_point" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.ArrowTip.get_tip_point">
+<span class="sig-name descname"><span class="pre">get_tip_point</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.geometry.ArrowTip.get_tip_point" title="永久链接至目标">¶</a></dt>
 <dd><p>获取箭头首部的点</p>
 </dd></dl>
 </dd></dl>
@@ -724,8 +734,8 @@
 <div class="section" id="rectangle">
 <h2>Rectangle<a class="headerlink" href="#rectangle" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.Rectangle">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">Rectangle</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">width</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">height</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Rectangle" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Rectangle">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">Rectangle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Rectangle" title="永久链接至目标">¶</a></dt>
 <dd><p>矩形</p>
 <p>使用 <code class="docutils literal notranslate"><span class="pre">Polygon</span></code></p>
 <ul class="simple">
@@ -737,8 +747,8 @@
 <div class="section" id="square">
 <h2>Square<a class="headerlink" href="#square" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.Square">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">Square</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">side_length</span><span class="o">=</span><span class="default_value">2.0</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Square" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.Square">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">Square</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">side_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2.0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.Square" title="永久链接至目标">¶</a></dt>
 <dd><p>正方形</p>
 <p><code class="docutils literal notranslate"><span class="pre">side_length</span></code> 是正方形边长</p>
 </dd></dl>
@@ -746,8 +756,8 @@
 <div class="section" id="roundedrectangle">
 <h2>RoundedRectangle<a class="headerlink" href="#roundedrectangle" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.geometry.RoundedRectangle">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.geometry.</code><code class="sig-name descname">RoundedRectangle</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.RoundedRectangle" title="永久链接至目标">¶</a></dt>
+<dt class="sig sig-object py" id="manimlib.mobject.geometry.RoundedRectangle">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.geometry.</span></span><span class="sig-name descname"><span class="pre">RoundedRectangle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.geometry.RoundedRectangle" title="永久链接至目标">¶</a></dt>
 <dd><p>圆角矩形</p>
 <p>调用了 <code class="docutils literal notranslate"><span class="pre">round_corners</span></code> 的 <code class="docutils literal notranslate"><span class="pre">Rectangle</span></code></p>
 <ul class="simple">
