@@ -80,11 +80,15 @@ finalize color
 
 .. cpp:function:: vec4 add_light(vec4 color, vec3 point, vec3 unit_normal, vec3 light_coords, vec3 cam_coords, float reflectiveness, float gloss, float shadow)
 
+    给原本的片段添加光照
+
 -----------------
 
 .. cpp:function:: vec4 finalize_color(vec4 color, vec3 point, vec3 unit_normal, vec3 light_coords, vec3 cam_coords, float reflectiveness, float gloss, float shadow)
 
     - 可插入 color function
+
+    调用了 ``add_light``，确定最终输出的颜色
 
 -----------------
 

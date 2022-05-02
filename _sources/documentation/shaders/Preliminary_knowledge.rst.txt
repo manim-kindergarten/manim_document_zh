@@ -19,6 +19,8 @@ OpenGL 运行流程
 GLSL 函数
 ********************
 
+这些函数主要用于片段着色
+
 .. cpp:function:: genType smoothstep(genType edge_0, genType edge_1, genType x)
 
     - 当 ``x <= edge_0`` 时返回 0.0
