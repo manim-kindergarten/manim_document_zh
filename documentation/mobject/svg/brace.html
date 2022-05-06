@@ -3,15 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../../genindex.html" /><link rel="search" title="搜索" href="../../../search.html" /><link rel="next" title="Drawings" href="drawings.html" /><link rel="prev" title="svg" href="index.html" />
 
-    <link rel="shortcut icon" href="../../../_static/mk.png"/><meta name="generator" content="sphinx-4.4.0, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>Brace - ManimGL  文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../../_static/default.css" />
-    <link rel="stylesheet" href="../../../_static/copybutton.css" />
+      <link rel="stylesheet" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../../_static/styles/default.css?fa375fa03fd534581ffb09ac">
-    <link rel="stylesheet" href="../../../_static/pygments.css?fa375fa03fd534581ffb09ac">
+    <link rel="stylesheet" href="../../../_static/styles/default.css?27a117ae4f24ac50f8d1257e">
+    <link rel="stylesheet" href="../../../_static/pygments.css?27a117ae4f24ac50f8d1257e">
     
 <style>
   :root {
@@ -20,15 +18,17 @@
   
   }
 </style>
-    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/documentation_options.js"></script><script src="../../../_static/jquery.js"></script>
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script><script src="../../../_static/jquery.js"></script>
       <script src="../../../_static/underscore.js"></script>
       
         <script src="../../../_static/doctools.js" defer></script>
       
+        <script src="../../../_static/language_data.js" defer></script>
+      
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
-        <script src="../../../_static/translations.js"></script><script src="../../../_static/scripts/main.js?fa375fa03fd534581ffb09ac"></script></head>
+        <script src="../../../_static/translations.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?27a117ae4f24ac50f8d1257e"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -89,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../getting_started/quickstart.html">快速入门</a></li>
@@ -98,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../custom_config.html">默认配置 custom_config</a></li>
@@ -193,7 +193,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../development/contributing.html">贡献</a></li>
@@ -218,34 +218,34 @@
 <div class="section" id="id1">
 <h2>Brace<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.svg.brace.Brace">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.svg.brace.</span></span><span class="sig-name descname"><span class="pre">Brace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">Mobject</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">np.ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">array([0.,</span> <span class="pre">-</span> <span class="pre">1.,</span> <span class="pre">0.])</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.brace.Brace" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.svg.brace.Brace">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.brace.</code><code class="sig-name descname">Brace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="n">direction</span><span class="p">:</span> <span class="n">np.ndarray</span> <span class="o">=</span> <span class="default_value">array([0., - 1., 0.])</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.brace.Brace" title="永久链接至目标">¶</a></dt>
 <dd><p>大括号</p>
 <p>传入 <code class="docutils literal notranslate"><span class="pre">mobject</span></code> 表示大括号包起来的物体</p>
 <p><code class="docutils literal notranslate"><span class="pre">direction</span></code> 表示大括号指向的方位（从哪个方向括住物体）</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.svg.brace.Brace.get_direction">
-<span class="sig-name descname"><span class="pre">get_direction</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.svg.brace.Brace.get_direction" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.svg.brace.Brace.get_direction">
+<code class="sig-name descname">get_direction</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → numpy.ndarray<a class="headerlink" href="#manimlib.mobject.svg.brace.Brace.get_direction" title="永久链接至目标">¶</a></dt>
 <dd><p>获取大括号的方向</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.svg.brace.Brace.get_tex">
-<span class="sig-name descname"><span class="pre">get_tex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">tex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference internal" href="tex_mobject.html#manimlib.mobject.svg.tex_mobject.Tex" title="manimlib.mobject.svg.tex_mobject.Tex"><span class="pre">manimlib.mobject.svg.tex_mobject.Tex</span></a></span></span><a class="headerlink" href="#manimlib.mobject.svg.brace.Brace.get_tex" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.svg.brace.Brace.get_tex">
+<code class="sig-name descname">get_tex</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">tex</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span> → <a class="reference internal" href="tex_mobject.html#manimlib.mobject.svg.tex_mobject.Tex" title="manimlib.mobject.svg.tex_mobject.Tex">manimlib.mobject.svg.tex_mobject.Tex</a><a class="headerlink" href="#manimlib.mobject.svg.brace.Brace.get_tex" title="永久链接至目标">¶</a></dt>
 <dd><p>返回放到了大括号尖端位置的 Tex</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.svg.brace.Brace.get_text">
-<span class="sig-name descname"><span class="pre">get_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference internal" href="text_mobject.html#manimlib.mobject.svg.text_mobject.Text" title="manimlib.mobject.svg.text_mobject.Text"><span class="pre">manimlib.mobject.svg.text_mobject.Text</span></a></span></span><a class="headerlink" href="#manimlib.mobject.svg.brace.Brace.get_text" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.svg.brace.Brace.get_text">
+<code class="sig-name descname">get_text</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span> → <a class="reference internal" href="text_mobject.html#manimlib.mobject.svg.text_mobject.Text" title="manimlib.mobject.svg.text_mobject.Text">manimlib.mobject.svg.text_mobject.Text</a><a class="headerlink" href="#manimlib.mobject.svg.brace.Brace.get_text" title="永久链接至目标">¶</a></dt>
 <dd><p>返回放到了大括号尖端位置的 Text</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.svg.brace.Brace.get_tip">
-<span class="sig-name descname"><span class="pre">get_tip</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.svg.brace.Brace.get_tip" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.svg.brace.Brace.get_tip">
+<code class="sig-name descname">get_tip</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → numpy.ndarray<a class="headerlink" href="#manimlib.mobject.svg.brace.Brace.get_tip" title="永久链接至目标">¶</a></dt>
 <dd><p>获取大括号尖端位置的点</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.svg.brace.Brace.put_at_tip">
-<span class="sig-name descname"><span class="pre">put_at_tip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mob</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">Mobject</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_next_to</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.brace.Brace.put_at_tip" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.svg.brace.Brace.put_at_tip">
+<code class="sig-name descname">put_at_tip</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mob</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="n">use_next_to</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.brace.Brace.put_at_tip" title="永久链接至目标">¶</a></dt>
 <dd><p>把 <code class="docutils literal notranslate"><span class="pre">mob</span></code> 放在大括号尖端指向的位置</p>
 </dd></dl>
 </dd></dl>
@@ -253,30 +253,30 @@
 <div class="section" id="bracelabel">
 <h2>BraceLabel<a class="headerlink" href="#bracelabel" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.svg.brace.BraceLabel">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.svg.brace.</span></span><span class="sig-name descname"><span class="pre">BraceLabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VMobject" title="manimlib.mobject.types.vectorized_mobject.VMobject"><span class="pre">VMobject</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VMobject" title="manimlib.mobject.types.vectorized_mobject.VMobject"><span class="pre">VMobject</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">brace_direction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">np.ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">array([0.,</span> <span class="pre">-</span> <span class="pre">1.,</span> <span class="pre">0.])</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.brace.BraceLabel" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.svg.brace.BraceLabel">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.brace.</code><code class="sig-name descname">BraceLabel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span><span class="p">:</span> <span class="n">VMobject | list[VMobject]</span></em>, <em class="sig-param"><span class="n">text</span><span class="p">:</span> <span class="n">str | Iterable[str]</span></em>, <em class="sig-param"><span class="n">brace_direction</span><span class="p">:</span> <span class="n">np.ndarray</span> <span class="o">=</span> <span class="default_value">array([0., - 1., 0.])</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.brace.BraceLabel" title="永久链接至目标">¶</a></dt>
 <dd><p>带有 <code class="docutils literal notranslate"><span class="pre">Tex</span></code> 作为 label 的大括号</p>
 <p>传入 <code class="docutils literal notranslate"><span class="pre">obj</span></code> 为大括号括住的物体，<code class="docutils literal notranslate"><span class="pre">brace_direction</span></code> 为大括号的方向</p>
 <p><code class="docutils literal notranslate"><span class="pre">text</span></code> 为大括号上面标注的文字
 Brace[0] 为大括号，Brace[1] 为文字</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.svg.brace.BraceLabel.change_brace_label">
-<span class="sig-name descname"><span class="pre">change_brace_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VMobject" title="manimlib.mobject.types.vectorized_mobject.VMobject"><span class="pre">VMobject</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VMobject" title="manimlib.mobject.types.vectorized_mobject.VMobject"><span class="pre">VMobject</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.brace.BraceLabel.change_brace_label" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.svg.brace.BraceLabel.change_brace_label">
+<code class="sig-name descname">change_brace_label</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span><span class="p">:</span> <span class="n">VMobject | list[VMobject]</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">text</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.brace.BraceLabel.change_brace_label" title="永久链接至目标">¶</a></dt>
 <dd><p>更改括起来的物体的文字</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.svg.brace.BraceLabel.change_label">
-<span class="sig-name descname"><span class="pre">change_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.brace.BraceLabel.change_label" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.svg.brace.BraceLabel.change_label">
+<code class="sig-name descname">change_label</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">text</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.brace.BraceLabel.change_label" title="永久链接至目标">¶</a></dt>
 <dd><p>更改标注的文字</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.svg.brace.BraceLabel.creation_anim">
-<span class="sig-name descname"><span class="pre">creation_anim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label_anim:</span> <span class="pre">Animation</span> <span class="pre">=</span> <span class="pre">&lt;class</span> <span class="pre">'manimlib.animation.fading.FadeIn'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">brace_anim:</span> <span class="pre">Animation</span> <span class="pre">=</span> <span class="pre">&lt;class</span> <span class="pre">'manimlib.animation.growing.GrowFromCenter'&gt;</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference internal" href="../../animation/composition.html#manimlib.animation.composition.AnimationGroup" title="manimlib.animation.composition.AnimationGroup"><span class="pre">AnimationGroup</span></a></span></span><a class="headerlink" href="#manimlib.mobject.svg.brace.BraceLabel.creation_anim" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.svg.brace.BraceLabel.creation_anim">
+<code class="sig-name descname">creation_anim</code><span class="sig-paren">(</span><em class="sig-param">label_anim: Animation = &lt;class 'manimlib.animation.fading.FadeIn'&gt;</em>, <em class="sig-param">brace_anim: Animation = &lt;class 'manimlib.animation.growing.GrowFromCenter'&gt;</em><span class="sig-paren">)</span> → AnimationGroup<a class="headerlink" href="#manimlib.mobject.svg.brace.BraceLabel.creation_anim" title="永久链接至目标">¶</a></dt>
 <dd><p>返回创建 label 的动画 (AnimationGroup)</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.svg.brace.BraceLabel.shift_brace">
-<span class="sig-name descname"><span class="pre">shift_brace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VMobject" title="manimlib.mobject.types.vectorized_mobject.VMobject"><span class="pre">VMobject</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VMobject" title="manimlib.mobject.types.vectorized_mobject.VMobject"><span class="pre">VMobject</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.brace.BraceLabel.shift_brace" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.svg.brace.BraceLabel.shift_brace">
+<code class="sig-name descname">shift_brace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span><span class="p">:</span> <span class="n">VMobject | list[VMobject]</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.brace.BraceLabel.shift_brace" title="永久链接至目标">¶</a></dt>
 <dd><p>更改括起来的物体</p>
 </dd></dl>
 </dd></dl>
@@ -284,8 +284,8 @@ Brace[0] 为大括号，Brace[1] 为文字</p>
 <div class="section" id="bracetext">
 <h2>BraceText<a class="headerlink" href="#bracetext" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.svg.brace.BraceText">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.svg.brace.</span></span><span class="sig-name descname"><span class="pre">BraceText</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VMobject" title="manimlib.mobject.types.vectorized_mobject.VMobject"><span class="pre">VMobject</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VMobject" title="manimlib.mobject.types.vectorized_mobject.VMobject"><span class="pre">VMobject</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">brace_direction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">np.ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">array([0.,</span> <span class="pre">-</span> <span class="pre">1.,</span> <span class="pre">0.])</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.brace.BraceText" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.svg.brace.BraceText">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.brace.</code><code class="sig-name descname">BraceText</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span><span class="p">:</span> <span class="n">VMobject | list[VMobject]</span></em>, <em class="sig-param"><span class="n">text</span><span class="p">:</span> <span class="n">str | Iterable[str]</span></em>, <em class="sig-param"><span class="n">brace_direction</span><span class="p">:</span> <span class="n">np.ndarray</span> <span class="o">=</span> <span class="default_value">array([0., - 1., 0.])</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.brace.BraceText" title="永久链接至目标">¶</a></dt>
 <dd><p>带有 <code class="docutils literal notranslate"><span class="pre">TexText</span></code> 作为 label 的大括号</p>
 <p>传入 <code class="docutils literal notranslate"><span class="pre">obj</span></code> 为大括号括住的物体，<code class="docutils literal notranslate"><span class="pre">brace_direction</span></code> 为大括号的方向</p>
 <p><code class="docutils literal notranslate"><span class="pre">text</span></code> 为大括号上面标注的文字

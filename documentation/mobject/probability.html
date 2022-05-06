@@ -3,15 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="ShapeMatchers" href="shape_matchers.html" /><link rel="prev" title="Numbers" href="numbers.html" />
 
-    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-4.4.0, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>Probability - ManimGL  文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/default.css" />
-    <link rel="stylesheet" href="../../_static/copybutton.css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?ef38bef9b420d939e19ea569">
-    <link rel="stylesheet" href="../../_static/pygments.css?ef38bef9b420d939e19ea569">
+    <link rel="stylesheet" href="../../_static/styles/default.css?aed7fc2ec071b5d7702f635b">
+    <link rel="stylesheet" href="../../_static/pygments.css?aed7fc2ec071b5d7702f635b">
     
 <style>
   :root {
@@ -20,15 +18,17 @@
   
   }
 </style>
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
       <script src="../../_static/underscore.js"></script>
       
         <script src="../../_static/doctools.js" defer></script>
       
+        <script src="../../_static/language_data.js" defer></script>
+      
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
-        <script src="../../_static/translations.js"></script><script src="../../_static/scripts/main.js?ef38bef9b420d939e19ea569"></script></head>
+        <script src="../../_static/translations.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?aed7fc2ec071b5d7702f635b"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -89,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -98,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -193,7 +193,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -216,8 +216,8 @@
 <div class="section" id="samplespace">
 <h2>SampleSpace<a class="headerlink" href="#samplespace" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.probability.SampleSpace">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.probability.</span></span><span class="sig-name descname"><span class="pre">SampleSpace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.probability.SampleSpace" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.probability.SampleSpace">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.probability.</code><code class="sig-name descname">SampleSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">width</span><span class="p">:</span> <span class="n">float | None</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">height</span><span class="p">:</span> <span class="n">float | None</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.probability.SampleSpace" title="永久链接至目标">¶</a></dt>
 <dd><p>用于可视化概率的样本空间</p>
 <p>主体是一个 3*3 的矩形</p>
 <p>使用 <code class="docutils literal notranslate"><span class="pre">Polygon</span></code></p>
@@ -226,43 +226,43 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">width</span></code> : 矩形宽度</p></li>
 </ul>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.probability.SampleSpace.add_braces_and_labels">
-<span class="sig-name descname"><span class="pre">add_braces_and_labels</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.mobject.probability.SampleSpace.add_braces_and_labels" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.probability.SampleSpace.add_braces_and_labels">
+<code class="sig-name descname">add_braces_and_labels</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → None<a class="headerlink" href="#manimlib.mobject.probability.SampleSpace.add_braces_and_labels" title="永久链接至目标">¶</a></dt>
 <dd><p>调用 <code class="docutils literal notranslate"><span class="pre">get_..._braces_and_labels</span></code> 后将其自动添加到场景中</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.probability.SampleSpace.add_title">
-<span class="sig-name descname"><span class="pre">add_title</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Sample</span> <span class="pre">space'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">buff</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.25</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.mobject.probability.SampleSpace.add_title" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.probability.SampleSpace.add_title">
+<code class="sig-name descname">add_title</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">title</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'Sample space'</span></em>, <em class="sig-param"><span class="n">buff</span><span class="p">:</span> <span class="n">float</span> <span class="o">=</span> <span class="default_value">0.25</span></em><span class="sig-paren">)</span> → None<a class="headerlink" href="#manimlib.mobject.probability.SampleSpace.add_title" title="永久链接至目标">¶</a></dt>
 <dd><p>添加标题 title</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.probability.SampleSpace.complete_p_list">
-<span class="sig-name descname"><span class="pre">complete_p_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#manimlib.mobject.probability.SampleSpace.complete_p_list" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.probability.SampleSpace.complete_p_list">
+<code class="sig-name descname">complete_p_list</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">p_list</span><span class="p">:</span> <span class="n">list<span class="p">[</span>float<span class="p">]</span></span></em><span class="sig-paren">)</span> → list<span class="p">[</span>float<span class="p">]</span><a class="headerlink" href="#manimlib.mobject.probability.SampleSpace.complete_p_list" title="永久链接至目标">¶</a></dt>
 <dd><p>将概率列表 <code class="docutils literal notranslate"><span class="pre">p_list</span></code> 补齐（如果不足，则添加一个概率 <code class="docutils literal notranslate"><span class="pre">1-sum(p_list)</span></code>），返回补齐后的列表</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.probability.SampleSpace.divide_horizontally">
-<span class="sig-name descname"><span class="pre">divide_horizontally</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.mobject.probability.SampleSpace.divide_horizontally" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.probability.SampleSpace.divide_horizontally">
+<code class="sig-name descname">divide_horizontally</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span> → None<a class="headerlink" href="#manimlib.mobject.probability.SampleSpace.divide_horizontally" title="永久链接至目标">¶</a></dt>
 <dd><p>根据概率列表 <code class="docutils literal notranslate"><span class="pre">p_list</span></code> 水平分割的 <code class="docutils literal notranslate"><span class="pre">VGroup</span></code>，上色为 <code class="docutils literal notranslate"><span class="pre">colors</span></code></p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.probability.SampleSpace.divide_vertically">
-<span class="sig-name descname"><span class="pre">divide_vertically</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.mobject.probability.SampleSpace.divide_vertically" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.probability.SampleSpace.divide_vertically">
+<code class="sig-name descname">divide_vertically</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span> → None<a class="headerlink" href="#manimlib.mobject.probability.SampleSpace.divide_vertically" title="永久链接至目标">¶</a></dt>
 <dd><p>根据概率列表 <code class="docutils literal notranslate"><span class="pre">p_list</span></code> 竖直分割的 <code class="docutils literal notranslate"><span class="pre">VGroup</span></code>，上色为 <code class="docutils literal notranslate"><span class="pre">colors</span></code></p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.probability.SampleSpace.get_bottom_braces_and_labels">
-<span class="sig-name descname"><span class="pre">get_bottom_braces_and_labels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">labels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference internal" href="types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VGroup" title="manimlib.mobject.types.vectorized_mobject.VGroup"><span class="pre">manimlib.mobject.types.vectorized_mobject.VGroup</span></a></span></span><a class="headerlink" href="#manimlib.mobject.probability.SampleSpace.get_bottom_braces_and_labels" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.probability.SampleSpace.get_bottom_braces_and_labels">
+<code class="sig-name descname">get_bottom_braces_and_labels</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">labels</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span> → <a class="reference internal" href="types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VGroup" title="manimlib.mobject.types.vectorized_mobject.VGroup">manimlib.mobject.types.vectorized_mobject.VGroup</a><a class="headerlink" href="#manimlib.mobject.probability.SampleSpace.get_bottom_braces_and_labels" title="永久链接至目标">¶</a></dt>
 <dd><p>获取底边的大括号和标签（<code class="docutils literal notranslate"><span class="pre">VGroup(braces,</span> <span class="pre">labels)</span></code>），适用于调用 <code class="docutils literal notranslate"><span class="pre">divide_vertically</span></code> 后的</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.probability.SampleSpace.get_side_braces_and_labels">
-<span class="sig-name descname"><span class="pre">get_side_braces_and_labels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">labels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">np.ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">array([-</span> <span class="pre">1.,</span> <span class="pre">0.,</span> <span class="pre">0.])</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference internal" href="types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VGroup" title="manimlib.mobject.types.vectorized_mobject.VGroup"><span class="pre">VGroup</span></a></span></span><a class="headerlink" href="#manimlib.mobject.probability.SampleSpace.get_side_braces_and_labels" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.probability.SampleSpace.get_side_braces_and_labels">
+<code class="sig-name descname">get_side_braces_and_labels</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">labels</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">direction</span><span class="p">:</span> <span class="n">np.ndarray</span> <span class="o">=</span> <span class="default_value">array([- 1., 0., 0.])</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span> → VGroup<a class="headerlink" href="#manimlib.mobject.probability.SampleSpace.get_side_braces_and_labels" title="永久链接至目标">¶</a></dt>
 <dd><p>获取侧边的大括号和标签（<code class="docutils literal notranslate"><span class="pre">VGroup(braces,</span> <span class="pre">labels)</span></code>），适用于调用 <code class="docutils literal notranslate"><span class="pre">divide_horizontally</span></code> 后的</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.probability.SampleSpace.get_top_braces_and_labels">
-<span class="sig-name descname"><span class="pre">get_top_braces_and_labels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">labels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference internal" href="types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VGroup" title="manimlib.mobject.types.vectorized_mobject.VGroup"><span class="pre">manimlib.mobject.types.vectorized_mobject.VGroup</span></a></span></span><a class="headerlink" href="#manimlib.mobject.probability.SampleSpace.get_top_braces_and_labels" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.probability.SampleSpace.get_top_braces_and_labels">
+<code class="sig-name descname">get_top_braces_and_labels</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">labels</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span> → <a class="reference internal" href="types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VGroup" title="manimlib.mobject.types.vectorized_mobject.VGroup">manimlib.mobject.types.vectorized_mobject.VGroup</a><a class="headerlink" href="#manimlib.mobject.probability.SampleSpace.get_top_braces_and_labels" title="永久链接至目标">¶</a></dt>
 <dd><p>获取上边的大括号和标签（<code class="docutils literal notranslate"><span class="pre">VGroup(braces,</span> <span class="pre">labels)</span></code>），适用于调用 <code class="docutils literal notranslate"><span class="pre">divide_vertically</span></code> 后的</p>
 </dd></dl>
 </dd></dl>
@@ -270,8 +270,8 @@
 <div class="section" id="barchart">
 <h2>BarChart<a class="headerlink" href="#barchart" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.probability.BarChart">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.probability.</span></span><span class="sig-name descname"><span class="pre">BarChart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">values</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.probability.BarChart" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.probability.BarChart">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.probability.</code><code class="sig-name descname">BarChart</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span><span class="p">:</span> <span class="n">Iterable<span class="p">[</span>float<span class="p">]</span></span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.probability.BarChart" title="永久链接至目标">¶</a></dt>
 <dd><p>柱状图</p>
 <p>传入 values 列表表示所有值</p>
 <ul class="simple">
@@ -285,8 +285,8 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">bar_names</span></code> : 每条下方的文字</p></li>
 </ul>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.probability.BarChart.change_bar_values">
-<span class="sig-name descname"><span class="pre">change_bar_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">values</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.mobject.probability.BarChart.change_bar_values" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.probability.BarChart.change_bar_values">
+<code class="sig-name descname">change_bar_values</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">values</span><span class="p">:</span> <span class="n">Iterable<span class="p">[</span>float<span class="p">]</span></span></em><span class="sig-paren">)</span> → None<a class="headerlink" href="#manimlib.mobject.probability.BarChart.change_bar_values" title="永久链接至目标">¶</a></dt>
 <dd><p>更改所有数据，传入新的 <code class="docutils literal notranslate"><span class="pre">values</span></code> 列表</p>
 </dd></dl>
 </dd></dl>

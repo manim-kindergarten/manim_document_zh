@@ -3,15 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="数学物件 mobject" href="../mobject/index.html" /><link rel="prev" title="相机部分 camera" href="index.html" />
 
-    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-4.4.0, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>Camera - ManimGL  文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/default.css" />
-    <link rel="stylesheet" href="../../_static/copybutton.css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?9d63aa680d2d6ecdeb8cf903">
-    <link rel="stylesheet" href="../../_static/pygments.css?9d63aa680d2d6ecdeb8cf903">
+    <link rel="stylesheet" href="../../_static/styles/default.css?bf341d22ff8add8e26788ff8">
+    <link rel="stylesheet" href="../../_static/pygments.css?bf341d22ff8add8e26788ff8">
     
 <style>
   :root {
@@ -20,15 +18,17 @@
   
   }
 </style>
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
       <script src="../../_static/underscore.js"></script>
       
         <script src="../../_static/doctools.js" defer></script>
       
+        <script src="../../_static/language_data.js" defer></script>
+      
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
-        <script src="../../_static/translations.js"></script><script src="../../_static/scripts/main.js?9d63aa680d2d6ecdeb8cf903"></script></head>
+        <script src="../../_static/translations.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?bf341d22ff8add8e26788ff8"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -89,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -98,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -193,7 +193,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -220,42 +220,42 @@
 <div class="section" id="cameraframe">
 <h2>CameraFrame<a class="headerlink" href="#cameraframe" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.camera.camera.CameraFrame">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.camera.camera.</span></span><span class="sig-name descname"><span class="pre">CameraFrame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.CameraFrame">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.camera.camera.</code><code class="sig-name descname">CameraFrame</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame" title="永久链接至目标">¶</a></dt>
 <dd><p>相机所拍摄到的帧</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.CameraFrame.get_center">
-<span class="sig-name descname"><span class="pre">get_center</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.get_center" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.CameraFrame.get_center">
+<code class="sig-name descname">get_center</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → numpy.ndarray<a class="headerlink" href="#manimlib.camera.camera.CameraFrame.get_center" title="永久链接至目标">¶</a></dt>
 <dd><p>获取物件中心坐标</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.CameraFrame.get_height">
-<span class="sig-name descname"><span class="pre">get_height</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.get_height" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.CameraFrame.get_height">
+<code class="sig-name descname">get_height</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → float<a class="headerlink" href="#manimlib.camera.camera.CameraFrame.get_height" title="永久链接至目标">¶</a></dt>
 <dd><p>获取物件高度</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.CameraFrame.get_shape">
-<span class="sig-name descname"><span class="pre">get_shape</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.get_shape" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.CameraFrame.get_shape">
+<code class="sig-name descname">get_shape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.get_shape" title="永久链接至目标">¶</a></dt>
 <dd><p>获取相机宽高</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.CameraFrame.get_width">
-<span class="sig-name descname"><span class="pre">get_width</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.get_width" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.CameraFrame.get_width">
+<code class="sig-name descname">get_width</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → float<a class="headerlink" href="#manimlib.camera.camera.CameraFrame.get_width" title="永久链接至目标">¶</a></dt>
 <dd><p>获取物件宽度</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.CameraFrame.reorient">
-<span class="sig-name descname"><span class="pre">reorient</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">theta_degrees</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phi_degrees</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma_degrees</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.reorient" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.CameraFrame.reorient">
+<code class="sig-name descname">reorient</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">theta_degrees</span><span class="p">:</span> <span class="n">float | None</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">phi_degrees</span><span class="p">:</span> <span class="n">float | None</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">gamma_degrees</span><span class="p">:</span> <span class="n">float | None</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.reorient" title="永久链接至目标">¶</a></dt>
 <dd><p>set_euler_angles 的另一种写法</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.CameraFrame.rotate">
-<span class="sig-name descname"><span class="pre">rotate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">array([0.,</span> <span class="pre">0.,</span> <span class="pre">1.])</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.rotate" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.CameraFrame.rotate">
+<code class="sig-name descname">rotate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">angle</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">axis</span><span class="p">:</span> <span class="n">numpy.ndarray</span> <span class="o">=</span> <span class="default_value">array([0., 0., 1.])</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.rotate" title="永久链接至目标">¶</a></dt>
 <dd><p>以 <code class="docutils literal notranslate"><span class="pre">axis</span></code> 为方向，<code class="docutils literal notranslate"><span class="pre">angle</span></code> 为角度旋转，<code class="docutils literal notranslate"><span class="pre">kwargs</span></code> 中可传入 <code class="docutils literal notranslate"><span class="pre">about_point</span></code></p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.CameraFrame.to_default_state">
-<span class="sig-name descname"><span class="pre">to_default_state</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.to_default_state" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.CameraFrame.to_default_state">
+<code class="sig-name descname">to_default_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.to_default_state" title="永久链接至目标">¶</a></dt>
 <dd><p>相机恢复到默认位置</p>
 </dd></dl>
 </dd></dl>
@@ -290,8 +290,8 @@
 <div class="section" id="id1">
 <h2>Camera<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.camera.camera.Camera">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.camera.camera.</span></span><span class="sig-name descname"><span class="pre">Camera</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ctx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">moderngl.Context</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.Camera" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.Camera">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.camera.camera.</code><code class="sig-name descname">Camera</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ctx</span><span class="p">:</span> <span class="n">moderngl.Context | None</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.Camera" title="永久链接至目标">¶</a></dt>
 <dd><p>摄像机</p>
 <p><cite>widcardw 在线瞎写，因为看不懂</cite></p>
 <ul class="simple">
@@ -303,73 +303,73 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">anti_alias_width</span></code> : 抗锯齿</p></li>
 </ul>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.Camera.capture">
-<span class="sig-name descname"><span class="pre">capture</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">mobjects</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">manimlib.mobject.mobject.Mobject</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.camera.camera.Camera.capture" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.Camera.capture">
+<code class="sig-name descname">capture</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">mobjects</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject">manimlib.mobject.mobject.Mobject</a></span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span> → None<a class="headerlink" href="#manimlib.camera.camera.Camera.capture" title="永久链接至目标">¶</a></dt>
 <dd><p>捕获 mobjects 中的物体</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.Camera.clear">
-<span class="sig-name descname"><span class="pre">clear</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.camera.camera.Camera.clear" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.Camera.clear">
+<code class="sig-name descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → None<a class="headerlink" href="#manimlib.camera.camera.Camera.clear" title="永久链接至目标">¶</a></dt>
 <dd><p>清空帧缓冲</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.Camera.get_fbo">
-<span class="sig-name descname"><span class="pre">get_fbo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ctx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">moderngl.context.Context</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">samples</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">moderngl.framebuffer.Framebuffer</span></span></span><a class="headerlink" href="#manimlib.camera.camera.Camera.get_fbo" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.Camera.get_fbo">
+<code class="sig-name descname">get_fbo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ctx</span><span class="p">:</span> <span class="n">moderngl.context.Context</span></em>, <em class="sig-param"><span class="n">samples</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">0</span></em><span class="sig-paren">)</span> → moderngl.framebuffer.Framebuffer<a class="headerlink" href="#manimlib.camera.camera.Camera.get_fbo" title="永久链接至目标">¶</a></dt>
 <dd><p>获取帧缓冲</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.Camera.get_frame_center">
-<span class="sig-name descname"><span class="pre">get_frame_center</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.camera.camera.Camera.get_frame_center" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.Camera.get_frame_center">
+<code class="sig-name descname">get_frame_center</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → numpy.ndarray<a class="headerlink" href="#manimlib.camera.camera.Camera.get_frame_center" title="永久链接至目标">¶</a></dt>
 <dd><p>获取相机帧中心</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.Camera.get_frame_height">
-<span class="sig-name descname"><span class="pre">get_frame_height</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#manimlib.camera.camera.Camera.get_frame_height" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.Camera.get_frame_height">
+<code class="sig-name descname">get_frame_height</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → float<a class="headerlink" href="#manimlib.camera.camera.Camera.get_frame_height" title="永久链接至目标">¶</a></dt>
 <dd><p>获取相机帧高度</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.Camera.get_frame_shape">
-<span class="sig-name descname"><span class="pre">get_frame_shape</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#manimlib.camera.camera.Camera.get_frame_shape" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.Camera.get_frame_shape">
+<code class="sig-name descname">get_frame_shape</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → tuple<span class="p">[</span>float<span class="p">, </span>float<span class="p">]</span><a class="headerlink" href="#manimlib.camera.camera.Camera.get_frame_shape" title="永久链接至目标">¶</a></dt>
 <dd><p>获取相机帧宽高</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.Camera.get_frame_width">
-<span class="sig-name descname"><span class="pre">get_frame_width</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#manimlib.camera.camera.Camera.get_frame_width" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.Camera.get_frame_width">
+<code class="sig-name descname">get_frame_width</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → float<a class="headerlink" href="#manimlib.camera.camera.Camera.get_frame_width" title="永久链接至目标">¶</a></dt>
 <dd><p>获取相机帧宽度</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.Camera.get_image">
-<span class="sig-name descname"><span class="pre">get_image</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">PIL.Image.Image</span></span></span><a class="headerlink" href="#manimlib.camera.camera.Camera.get_image" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.Camera.get_image">
+<code class="sig-name descname">get_image</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → PIL.Image.Image<a class="headerlink" href="#manimlib.camera.camera.Camera.get_image" title="永久链接至目标">¶</a></dt>
 <dd><p>获取当前帧图片</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.Camera.get_pixel_array">
-<span class="sig-name descname"><span class="pre">get_pixel_array</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.camera.camera.Camera.get_pixel_array" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.Camera.get_pixel_array">
+<code class="sig-name descname">get_pixel_array</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → numpy.ndarray<a class="headerlink" href="#manimlib.camera.camera.Camera.get_pixel_array" title="永久链接至目标">¶</a></dt>
 <dd><p>获取当前帧 RGB 像素矩阵</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.Camera.get_pixel_height">
-<span class="sig-name descname"><span class="pre">get_pixel_height</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#manimlib.camera.camera.Camera.get_pixel_height" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.Camera.get_pixel_height">
+<code class="sig-name descname">get_pixel_height</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → int<a class="headerlink" href="#manimlib.camera.camera.Camera.get_pixel_height" title="永久链接至目标">¶</a></dt>
 <dd><p>获取画面像素高度</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.Camera.get_pixel_shape">
-<span class="sig-name descname"><span class="pre">get_pixel_shape</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#manimlib.camera.camera.Camera.get_pixel_shape" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.Camera.get_pixel_shape">
+<code class="sig-name descname">get_pixel_shape</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → tuple<span class="p">[</span>int<span class="p">, </span>int<span class="p">]</span><a class="headerlink" href="#manimlib.camera.camera.Camera.get_pixel_shape" title="永久链接至目标">¶</a></dt>
 <dd><p>获取画面像素大小</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.Camera.get_pixel_width">
-<span class="sig-name descname"><span class="pre">get_pixel_width</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#manimlib.camera.camera.Camera.get_pixel_width" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.Camera.get_pixel_width">
+<code class="sig-name descname">get_pixel_width</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → int<a class="headerlink" href="#manimlib.camera.camera.Camera.get_pixel_width" title="永久链接至目标">¶</a></dt>
 <dd><p>获取画面像素宽度</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.Camera.get_raw_fbo_data">
-<span class="sig-name descname"><span class="pre">get_raw_fbo_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dtype</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'f1'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">bytes</span></span></span><a class="headerlink" href="#manimlib.camera.camera.Camera.get_raw_fbo_data" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.Camera.get_raw_fbo_data">
+<code class="sig-name descname">get_raw_fbo_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dtype</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'f1'</span></em><span class="sig-paren">)</span> → bytes<a class="headerlink" href="#manimlib.camera.camera.Camera.get_raw_fbo_data" title="永久链接至目标">¶</a></dt>
 <dd><p>获取源缓冲数据</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.Camera.get_render_group">
-<span class="sig-name descname"><span class="pre">get_render_group</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shader_wrapper</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ShaderWrapper</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">single_use</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#manimlib.camera.camera.Camera.get_render_group" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.Camera.get_render_group">
+<code class="sig-name descname">get_render_group</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">shader_wrapper</span><span class="p">:</span> <span class="n">ShaderWrapper</span></em>, <em class="sig-param"><span class="n">single_use</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">True</span></em><span class="sig-paren">)</span> → dict<span class="p">[</span>str<span class="p">]</span><a class="headerlink" href="#manimlib.camera.camera.Camera.get_render_group" title="永久链接至目标">¶</a></dt>
 <dd><p>获取渲染所包含的成员</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">vbo</span></code> : vertex data buffer</p></li>
@@ -381,49 +381,49 @@
 </ul>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.Camera.get_texture">
-<span class="sig-name descname"><span class="pre">get_texture</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">moderngl.texture.Texture</span></span></span><a class="headerlink" href="#manimlib.camera.camera.Camera.get_texture" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.Camera.get_texture">
+<code class="sig-name descname">get_texture</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → moderngl.texture.Texture<a class="headerlink" href="#manimlib.camera.camera.Camera.get_texture" title="永久链接至目标">¶</a></dt>
 <dd><p>获取贴图资源</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.Camera.get_texture_id">
-<span class="sig-name descname"><span class="pre">get_texture_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#manimlib.camera.camera.Camera.get_texture_id" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.Camera.get_texture_id">
+<code class="sig-name descname">get_texture_id</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> → int<a class="headerlink" href="#manimlib.camera.camera.Camera.get_texture_id" title="永久链接至目标">¶</a></dt>
 <dd><p>获取资源 id</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.Camera.refresh_perspective_uniforms">
-<span class="sig-name descname"><span class="pre">refresh_perspective_uniforms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.camera.camera.Camera.refresh_perspective_uniforms" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.Camera.refresh_perspective_uniforms">
+<code class="sig-name descname">refresh_perspective_uniforms</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → None<a class="headerlink" href="#manimlib.camera.camera.Camera.refresh_perspective_uniforms" title="永久链接至目标">¶</a></dt>
 <dd><p>更新透视变量</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.Camera.release_render_group">
-<span class="sig-name descname"><span class="pre">release_render_group</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">render_group</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.camera.camera.Camera.release_render_group" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.Camera.release_render_group">
+<code class="sig-name descname">release_render_group</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">render_group</span><span class="p">:</span> <span class="n">dict<span class="p">[</span>str<span class="p">]</span></span></em><span class="sig-paren">)</span> → None<a class="headerlink" href="#manimlib.camera.camera.Camera.release_render_group" title="永久链接至目标">¶</a></dt>
 <dd><p>释放渲染</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.Camera.release_texture">
-<span class="sig-name descname"><span class="pre">release_texture</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.Camera.release_texture" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.Camera.release_texture">
+<code class="sig-name descname">release_texture</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.Camera.release_texture" title="永久链接至目标">¶</a></dt>
 <dd><p>释放资源</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.Camera.render">
-<span class="sig-name descname"><span class="pre">render</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">render_group</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.camera.camera.Camera.render" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.Camera.render">
+<code class="sig-name descname">render</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">render_group</span><span class="p">:</span> <span class="n">dict<span class="p">[</span>str<span class="p">]</span></span></em><span class="sig-paren">)</span> → None<a class="headerlink" href="#manimlib.camera.camera.Camera.render" title="永久链接至目标">¶</a></dt>
 <dd><p>渲染</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.Camera.reset_pixel_shape">
-<span class="sig-name descname"><span class="pre">reset_pixel_shape</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">new_width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_height</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.camera.camera.Camera.reset_pixel_shape" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.Camera.reset_pixel_shape">
+<code class="sig-name descname">reset_pixel_shape</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">new_width</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">new_height</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> → None<a class="headerlink" href="#manimlib.camera.camera.Camera.reset_pixel_shape" title="永久链接至目标">¶</a></dt>
 <dd><p>重置像素宽高</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.Camera.resize_frame_shape">
-<span class="sig-name descname"><span class="pre">resize_frame_shape</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fixed_dimension</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.camera.camera.Camera.resize_frame_shape" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.Camera.resize_frame_shape">
+<code class="sig-name descname">resize_frame_shape</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fixed_dimension</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">False</span></em><span class="sig-paren">)</span> → None<a class="headerlink" href="#manimlib.camera.camera.Camera.resize_frame_shape" title="永久链接至目标">¶</a></dt>
 <dd><p>重置帧大小以匹配画面像素比</p>
 <p><code class="docutils literal notranslate"><span class="pre">fixed_dimension</span></code> 控制高度不变宽度变化，或宽度不变高度变化</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.camera.camera.Camera.set_shader_uniforms">
-<span class="sig-name descname"><span class="pre">set_shader_uniforms</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shader</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">moderngl.Program</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shader_wrapper</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ShaderWrapper</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.camera.camera.Camera.set_shader_uniforms" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.Camera.set_shader_uniforms">
+<code class="sig-name descname">set_shader_uniforms</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">shader</span><span class="p">:</span> <span class="n">moderngl.Program</span></em>, <em class="sig-param"><span class="n">shader_wrapper</span><span class="p">:</span> <span class="n">ShaderWrapper</span></em><span class="sig-paren">)</span> → None<a class="headerlink" href="#manimlib.camera.camera.Camera.set_shader_uniforms" title="永久链接至目标">¶</a></dt>
 <dd><p>设置着色器的 <code class="docutils literal notranslate"><span class="pre">uniform</span></code> 变量</p>
 </dd></dl>
 </dd></dl>
@@ -431,8 +431,8 @@
 <div class="section" id="threedcamera">
 <h2>ThreeDCamera<a class="headerlink" href="#threedcamera" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.camera.camera.ThreeDCamera">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.camera.camera.</span></span><span class="sig-name descname"><span class="pre">ThreeDCamera</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ctx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">moderngl.Context</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.ThreeDCamera" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.camera.camera.ThreeDCamera">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.camera.camera.</code><code class="sig-name descname">ThreeDCamera</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ctx</span><span class="p">:</span> <span class="n">moderngl.Context | None</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.ThreeDCamera" title="永久链接至目标">¶</a></dt>
 <dd><p>仅用于保证旧版场景不崩溃</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">frame_config</span></code> : 相机帧参数</p></li>

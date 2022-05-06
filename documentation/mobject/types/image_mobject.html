@@ -3,15 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../../genindex.html" /><link rel="search" title="搜索" href="../../../search.html" /><link rel="next" title="Point Cloud Mobject" href="point_cloud_mobject.html" /><link rel="prev" title="Dot Cloud" href="dot_cloud.html" />
 
-    <link rel="shortcut icon" href="../../../_static/mk.png"/><meta name="generator" content="sphinx-4.4.0, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>Image Mobject - ManimGL  文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../../_static/default.css" />
-    <link rel="stylesheet" href="../../../_static/copybutton.css" />
+      <link rel="stylesheet" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../../_static/styles/default.css?2839fe9fec098e4c7aa996cf">
-    <link rel="stylesheet" href="../../../_static/pygments.css?2839fe9fec098e4c7aa996cf">
+    <link rel="stylesheet" href="../../../_static/styles/default.css?f2f5d24ec533e2c7453ec1cf">
+    <link rel="stylesheet" href="../../../_static/pygments.css?f2f5d24ec533e2c7453ec1cf">
     
 <style>
   :root {
@@ -20,15 +18,17 @@
   
   }
 </style>
-    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/documentation_options.js"></script><script src="../../../_static/jquery.js"></script>
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script><script src="../../../_static/jquery.js"></script>
       <script src="../../../_static/underscore.js"></script>
       
         <script src="../../../_static/doctools.js" defer></script>
       
+        <script src="../../../_static/language_data.js" defer></script>
+      
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
-        <script src="../../../_static/translations.js"></script><script src="../../../_static/scripts/main.js?2839fe9fec098e4c7aa996cf"></script></head>
+        <script src="../../../_static/translations.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?f2f5d24ec533e2c7453ec1cf"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -89,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../getting_started/quickstart.html">快速入门</a></li>
@@ -98,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../custom_config.html">默认配置 custom_config</a></li>
@@ -193,7 +193,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../development/contributing.html">贡献</a></li>
@@ -216,28 +216,28 @@
 <div class="section" id="imagemobject">
 <h2>ImageMobject<a class="headerlink" href="#imagemobject" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.types.image_mobject.ImageMobject">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.types.image_mobject.</span></span><span class="sig-name descname"><span class="pre">ImageMobject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.image_mobject.ImageMobject" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.types.image_mobject.ImageMobject">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.image_mobject.</code><code class="sig-name descname">ImageMobject</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.image_mobject.ImageMobject" title="永久链接至目标">¶</a></dt>
 <dd><p>图片物件</p>
 <p>初始化输入的 <code class="docutils literal notranslate"><span class="pre">filename</span></code> 指向了图片文件的位置</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.types.image_mobject.ImageMobject.get_shader_data">
-<span class="sig-name descname"><span class="pre">get_shader_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.types.image_mobject.ImageMobject.get_shader_data" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.types.image_mobject.ImageMobject.get_shader_data">
+<code class="sig-name descname">get_shader_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → numpy.ndarray<a class="headerlink" href="#manimlib.mobject.types.image_mobject.ImageMobject.get_shader_data" title="永久链接至目标">¶</a></dt>
 <dd><p>获取 shader 数据</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.types.image_mobject.ImageMobject.point_to_rgb">
-<span class="sig-name descname"><span class="pre">point_to_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.types.image_mobject.ImageMobject.point_to_rgb" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.types.image_mobject.ImageMobject.point_to_rgb">
+<code class="sig-name descname">point_to_rgb</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span><span class="p">:</span> <span class="n">numpy.ndarray</span></em><span class="sig-paren">)</span> → numpy.ndarray<a class="headerlink" href="#manimlib.mobject.types.image_mobject.ImageMobject.point_to_rgb" title="永久链接至目标">¶</a></dt>
 <dd><p>传入坐标，返回坐标对应点的 RGB 值</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.types.image_mobject.ImageMobject.set_color">
-<span class="sig-name descname"><span class="pre">set_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">opacity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recurse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.image_mobject.ImageMobject.set_color" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.types.image_mobject.ImageMobject.set_color">
+<code class="sig-name descname">set_color</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span></em>, <em class="sig-param"><span class="n">opacity</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">recurse</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.image_mobject.ImageMobject.set_color" title="永久链接至目标">¶</a></dt>
 <dd><p>设置颜色</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.types.image_mobject.ImageMobject.set_opacity">
-<span class="sig-name descname"><span class="pre">set_opacity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">opacity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recurse</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.image_mobject.ImageMobject.set_opacity" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.types.image_mobject.ImageMobject.set_opacity">
+<code class="sig-name descname">set_opacity</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">opacity</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">recurse</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.image_mobject.ImageMobject.set_opacity" title="永久链接至目标">¶</a></dt>
 <dd><p>设置透明度</p>
 </dd></dl>
 </dd></dl>

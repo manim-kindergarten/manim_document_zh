@@ -3,15 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Mobject" href="mobject.html" /><link rel="prev" title="Interactive" href="interactive.html" />
 
-    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-4.4.0, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>Matrix - ManimGL  文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/default.css" />
-    <link rel="stylesheet" href="../../_static/copybutton.css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?cf0dc5a234ee7a2cf0059626">
-    <link rel="stylesheet" href="../../_static/pygments.css?cf0dc5a234ee7a2cf0059626">
+    <link rel="stylesheet" href="../../_static/styles/default.css?07f20c1337fa31fa83d9926d">
+    <link rel="stylesheet" href="../../_static/pygments.css?07f20c1337fa31fa83d9926d">
     
 <style>
   :root {
@@ -20,15 +18,17 @@
   
   }
 </style>
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
       <script src="../../_static/underscore.js"></script>
       
         <script src="../../_static/doctools.js" defer></script>
       
+        <script src="../../_static/language_data.js" defer></script>
+      
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
-        <script src="../../_static/translations.js"></script><script src="../../_static/scripts/main.js?cf0dc5a234ee7a2cf0059626"></script></head>
+        <script src="../../_static/translations.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?07f20c1337fa31fa83d9926d"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -89,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -98,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -193,7 +193,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -216,8 +216,8 @@
 <div class="section" id="id1">
 <h2>Matrix<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.matrix.Matrix">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.matrix.</span></span><span class="sig-name descname"><span class="pre">Matrix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">matrix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">npt.ArrayLike</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.matrix.Matrix" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.matrix.Matrix">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.matrix.</code><code class="sig-name descname">Matrix</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">matrix</span><span class="p">:</span> <span class="n">npt.ArrayLike</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.matrix.Matrix" title="永久链接至目标">¶</a></dt>
 <dd><p>矩阵（元素套用 <code class="docutils literal notranslate"><span class="pre">Tex</span></code>）</p>
 <p>传入的 <code class="docutils literal notranslate"><span class="pre">matrix</span></code> 可以是二维数组，也可以是二维 <code class="docutils literal notranslate"><span class="pre">ndarray</span></code>
 数组中的元素会套在 <code class="docutils literal notranslate"><span class="pre">Tex</span></code> 中</p>
@@ -237,13 +237,13 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">Matrix[2]</span></code> 为右括号（]）</p></li>
 </ul>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.matrix.Matrix.get_entries">
-<span class="sig-name descname"><span class="pre">get_entries</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference internal" href="types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VGroup" title="manimlib.mobject.types.vectorized_mobject.VGroup"><span class="pre">manimlib.mobject.types.vectorized_mobject.VGroup</span></a></span></span><a class="headerlink" href="#manimlib.mobject.matrix.Matrix.get_entries" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.matrix.Matrix.get_entries">
+<code class="sig-name descname">get_entries</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → <a class="reference internal" href="types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VGroup" title="manimlib.mobject.types.vectorized_mobject.VGroup">manimlib.mobject.types.vectorized_mobject.VGroup</a><a class="headerlink" href="#manimlib.mobject.matrix.Matrix.get_entries" title="永久链接至目标">¶</a></dt>
 <dd><p>获取所有元素（VGroup），同 <code class="docutils literal notranslate"><span class="pre">Matrix.elements</span></code></p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.matrix.Matrix.set_column_colors">
-<span class="sig-name descname"><span class="pre">set_column_colors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">colors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ManimColor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.matrix.Matrix.set_column_colors" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.matrix.Matrix.set_column_colors">
+<code class="sig-name descname">set_column_colors</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">colors</span><span class="p">:</span> <span class="n">ManimColor</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.matrix.Matrix.set_column_colors" title="永久链接至目标">¶</a></dt>
 <dd><p>设置每列的颜色，传入多个 <code class="docutils literal notranslate"><span class="pre">colors</span></code> 表示每列颜色</p>
 </dd></dl>
 </dd></dl>
@@ -251,8 +251,8 @@
 <div class="section" id="decimalmatrix">
 <h2>DecimalMatrix<a class="headerlink" href="#decimalmatrix" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.matrix.DecimalMatrix">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.matrix.</span></span><span class="sig-name descname"><span class="pre">DecimalMatrix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">matrix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">npt.ArrayLike</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.matrix.DecimalMatrix" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.matrix.DecimalMatrix">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.matrix.</code><code class="sig-name descname">DecimalMatrix</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">matrix</span><span class="p">:</span> <span class="n">npt.ArrayLike</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.matrix.DecimalMatrix" title="永久链接至目标">¶</a></dt>
 <dd><p>数字矩阵（元素套用 <code class="docutils literal notranslate"><span class="pre">DecimalNumber</span></code>）</p>
 <p>传入的 <code class="docutils literal notranslate"><span class="pre">matrix</span></code> 可以是二维数组，也可以是二维 <code class="docutils literal notranslate"><span class="pre">ndarray</span></code>
 数组中的元素会套在 <code class="docutils literal notranslate"><span class="pre">Tex</span></code> 中</p>
@@ -276,8 +276,8 @@
 <div class="section" id="integermatrix">
 <h2>IntegerMatrix<a class="headerlink" href="#integermatrix" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.matrix.IntegerMatrix">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.matrix.</span></span><span class="sig-name descname"><span class="pre">IntegerMatrix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">matrix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">npt.ArrayLike</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.matrix.IntegerMatrix" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.matrix.IntegerMatrix">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.matrix.</code><code class="sig-name descname">IntegerMatrix</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">matrix</span><span class="p">:</span> <span class="n">npt.ArrayLike</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.matrix.IntegerMatrix" title="永久链接至目标">¶</a></dt>
 <dd><p>整数矩阵（元素套用 <code class="docutils literal notranslate"><span class="pre">Integer</span></code>）</p>
 <p>传入的 <code class="docutils literal notranslate"><span class="pre">matrix</span></code> 可以是二维数组，也可以是二维 <code class="docutils literal notranslate"><span class="pre">ndarray</span></code>
 数组中的元素会套在 <code class="docutils literal notranslate"><span class="pre">Tex</span></code> 中</p>
@@ -301,8 +301,8 @@
 <div class="section" id="mobjectmatrix">
 <h2>MobjectMatrix<a class="headerlink" href="#mobjectmatrix" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.matrix.MobjectMatrix">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.matrix.</span></span><span class="sig-name descname"><span class="pre">MobjectMatrix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">matrix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">npt.ArrayLike</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.matrix.MobjectMatrix" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.matrix.MobjectMatrix">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.matrix.</code><code class="sig-name descname">MobjectMatrix</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">matrix</span><span class="p">:</span> <span class="n">npt.ArrayLike</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.matrix.MobjectMatrix" title="永久链接至目标">¶</a></dt>
 <dd><p>由物体构成的矩阵（直接由物体构成矩阵）</p>
 <p>传入的 <code class="docutils literal notranslate"><span class="pre">matrix</span></code> 可以是二维数组，也可以是二维 <code class="docutils literal notranslate"><span class="pre">ndarray</span></code>
 数组中的元素会套在 <code class="docutils literal notranslate"><span class="pre">Tex</span></code> 中</p>
@@ -324,8 +324,8 @@
 </dd></dl>
 <hr class="docutils"/>
 <dl class="py function">
-<dt class="sig sig-object py" id="manimlib.mobject.matrix.get_det_text">
-<span class="sig-prename descclassname"><span class="pre">manimlib.mobject.matrix.</span></span><span class="sig-name descname"><span class="pre">get_det_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">matrix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#manimlib.mobject.matrix.Matrix" title="manimlib.mobject.matrix.Matrix"><span class="pre">Matrix</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">determinant</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">background_rect</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial_scale_factor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference internal" href="types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VGroup" title="manimlib.mobject.types.vectorized_mobject.VGroup"><span class="pre">VGroup</span></a></span></span><a class="headerlink" href="#manimlib.mobject.matrix.get_det_text" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.matrix.get_det_text">
+<code class="sig-prename descclassname">manimlib.mobject.matrix.</code><code class="sig-name descname">get_det_text</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">matrix</span><span class="p">:</span> <span class="n">Matrix</span></em>, <em class="sig-param"><span class="n">determinant</span><span class="p">:</span> <span class="n">int | str | None</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">background_rect</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">False</span></em>, <em class="sig-param"><span class="n">initial_scale_factor</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">2</span></em><span class="sig-paren">)</span> → VGroup<a class="headerlink" href="#manimlib.mobject.matrix.get_det_text" title="永久链接至目标">¶</a></dt>
 <dd><p>获取行列式的其余文字（det(matrix)=determinant）</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">matrix</span></code> : 为要求行列式的矩阵</p></li>

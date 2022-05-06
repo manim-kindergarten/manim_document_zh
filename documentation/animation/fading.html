@@ -3,15 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Growing" href="growing.html" /><link rel="prev" title="Creation" href="creation.html" />
 
-    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-4.4.0, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>Fading - ManimGL  文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/default.css" />
-    <link rel="stylesheet" href="../../_static/copybutton.css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?d49ffd6351583a5743db7220">
-    <link rel="stylesheet" href="../../_static/pygments.css?d49ffd6351583a5743db7220">
+    <link rel="stylesheet" href="../../_static/styles/default.css?b82e2b20a5dd7cc4a10048a7">
+    <link rel="stylesheet" href="../../_static/pygments.css?b82e2b20a5dd7cc4a10048a7">
     
 <style>
   :root {
@@ -20,15 +18,17 @@
   
   }
 </style>
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
       <script src="../../_static/underscore.js"></script>
       
         <script src="../../_static/doctools.js" defer></script>
       
+        <script src="../../_static/language_data.js" defer></script>
+      
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
-        <script src="../../_static/translations.js"></script><script src="../../_static/scripts/main.js?d49ffd6351583a5743db7220"></script></head>
+        <script src="../../_static/translations.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?b82e2b20a5dd7cc4a10048a7"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -89,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -98,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -193,7 +193,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -225,8 +225,8 @@
 <div class="section" id="fadeout">
 <h2>FadeOut<a class="headerlink" href="#fadeout" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.animation.fading.FadeOut">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.animation.fading.</span></span><span class="sig-name descname"><span class="pre">FadeOut</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">Mobject</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">np.ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">array([0.,</span> <span class="pre">0.,</span> <span class="pre">0.])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.FadeOut" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.animation.fading.FadeOut">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.fading.</code><code class="sig-name descname">FadeOut</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="n">shift</span><span class="p">:</span> <span class="n">np.ndarray</span> <span class="o">=</span> <span class="default_value">array([0., 0., 0.])</span></em>, <em class="sig-param"><span class="n">scale</span><span class="p">:</span> <span class="n">float</span> <span class="o">=</span> <span class="default_value">1</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.FadeOut" title="永久链接至目标">¶</a></dt>
 <dd><p>淡出</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">scale</span></code> : 缩放倍数</p></li>
@@ -257,8 +257,8 @@
 <div class="section" id="fadein">
 <h2>FadeIn<a class="headerlink" href="#fadein" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.animation.fading.FadeIn">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.animation.fading.</span></span><span class="sig-name descname"><span class="pre">FadeIn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">Mobject</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">np.ndarray</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">array([0.,</span> <span class="pre">0.,</span> <span class="pre">0.])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.FadeIn" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.animation.fading.FadeIn">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.fading.</code><code class="sig-name descname">FadeIn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="n">shift</span><span class="p">:</span> <span class="n">np.ndarray</span> <span class="o">=</span> <span class="default_value">array([0., 0., 0.])</span></em>, <em class="sig-param"><span class="n">scale</span><span class="p">:</span> <span class="n">float</span> <span class="o">=</span> <span class="default_value">1</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.FadeIn" title="永久链接至目标">¶</a></dt>
 <dd><p>淡入</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">scale</span></code> : 缩放倍数</p></li>
@@ -357,8 +357,8 @@
 <div class="section" id="fadeinfrompoint">
 <h2>FadeInFromPoint<a class="headerlink" href="#fadeinfrompoint" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.animation.fading.FadeInFromPoint">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.animation.fading.</span></span><span class="sig-name descname"><span class="pre">FadeInFromPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">Mobject</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">np.ndarray</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.FadeInFromPoint" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.animation.fading.FadeInFromPoint">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.fading.</code><code class="sig-name descname">FadeInFromPoint</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="n">point</span><span class="p">:</span> <span class="n">np.ndarray</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.FadeInFromPoint" title="永久链接至目标">¶</a></dt>
 <dd><p>从传入的一个坐标点淡入</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">scale</span></code> : 缩放倍数</p></li>
@@ -386,8 +386,8 @@
 <div class="section" id="fadeouttopoint">
 <h2>FadeOutToPoint<a class="headerlink" href="#fadeouttopoint" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.animation.fading.FadeOutToPoint">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.animation.fading.</span></span><span class="sig-name descname"><span class="pre">FadeOutToPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">Mobject</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">np.ndarray</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.FadeOutToPoint" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.animation.fading.FadeOutToPoint">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.fading.</code><code class="sig-name descname">FadeOutToPoint</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="n">point</span><span class="p">:</span> <span class="n">np.ndarray</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.FadeOutToPoint" title="永久链接至目标">¶</a></dt>
 <dd><p>淡出到指定的坐标点</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">scale</span></code> : 缩放倍数</p></li>
@@ -416,12 +416,12 @@
 <div class="section" id="fadetransform">
 <h2>FadeTransform<a class="headerlink" href="#fadetransform" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.animation.fading.FadeTransform">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.animation.fading.</span></span><span class="sig-name descname"><span class="pre">FadeTransform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">Mobject</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_mobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">Mobject</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.FadeTransform" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.animation.fading.FadeTransform">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.fading.</code><code class="sig-name descname">FadeTransform</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="n">target_mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.FadeTransform" title="永久链接至目标">¶</a></dt>
 <dd><p>渐变</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.animation.fading.FadeTransform.get_all_mobjects">
-<span class="sig-name descname"><span class="pre">get_all_mobjects</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">Mobject</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#manimlib.animation.fading.FadeTransform.get_all_mobjects" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.animation.fading.FadeTransform.get_all_mobjects">
+<code class="sig-name descname">get_all_mobjects</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → list<span class="p">[</span>Mobject<span class="p">]</span><a class="headerlink" href="#manimlib.animation.fading.FadeTransform.get_all_mobjects" title="永久链接至目标">¶</a></dt>
 <dd><p>Ordering must match the ording of arguments to interpolate_submobject</p>
 </dd></dl>
 </dd></dl>
@@ -439,8 +439,8 @@
 <div class="section" id="fadetransformpieces">
 <h2>FadeTransformPieces<a class="headerlink" href="#fadetransformpieces" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.animation.fading.FadeTransformPieces">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.animation.fading.</span></span><span class="sig-name descname"><span class="pre">FadeTransformPieces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">Mobject</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_mobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">Mobject</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.FadeTransformPieces" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.animation.fading.FadeTransformPieces">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.fading.</code><code class="sig-name descname">FadeTransformPieces</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="n">target_mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.FadeTransformPieces" title="永久链接至目标">¶</a></dt>
 <dd><p>子物件分别渐变为目标</p>
 </dd></dl>
 <div class="manim-example"><video class="manim-video" controls="" id="fadetransformpiecesexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/FadeTransformPiecesExample.mp4"></video><h5 class="example-header">FadeTransformPiecesExample<a class="headerlink" href="#fadetransformpiecesexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeTransformPiecesExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
@@ -461,24 +461,24 @@
 <div class="section" id="vfadein">
 <h2>VFadeIn<a class="headerlink" href="#vfadein" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.animation.fading.VFadeIn">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.animation.fading.</span></span><span class="sig-name descname"><span class="pre">VFadeIn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">manimlib.mobject.mobject.Mobject</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.VFadeIn" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.animation.fading.VFadeIn">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.fading.</code><code class="sig-name descname">VFadeIn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject">manimlib.mobject.mobject.Mobject</a></span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.VFadeIn" title="永久链接至目标">¶</a></dt>
 <dd><p>淡入</p>
 </dd></dl>
 </div>
 <div class="section" id="vfadeout">
 <h2>VFadeOut<a class="headerlink" href="#vfadeout" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.animation.fading.VFadeOut">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.animation.fading.</span></span><span class="sig-name descname"><span class="pre">VFadeOut</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">manimlib.mobject.mobject.Mobject</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.VFadeOut" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.animation.fading.VFadeOut">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.fading.</code><code class="sig-name descname">VFadeOut</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject">manimlib.mobject.mobject.Mobject</a></span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.VFadeOut" title="永久链接至目标">¶</a></dt>
 <dd><p>淡出</p>
 </dd></dl>
 </div>
 <div class="section" id="vfadeinthenout">
 <h2>VFadeInThenOut<a class="headerlink" href="#vfadeinthenout" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.animation.fading.VFadeInThenOut">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.animation.fading.</span></span><span class="sig-name descname"><span class="pre">VFadeInThenOut</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">manimlib.mobject.mobject.Mobject</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.VFadeInThenOut" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.animation.fading.VFadeInThenOut">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.fading.</code><code class="sig-name descname">VFadeInThenOut</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject">manimlib.mobject.mobject.Mobject</a></span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.VFadeInThenOut" title="永久链接至目标">¶</a></dt>
 <dd><p>淡入后淡出</p>
 </dd></dl>
 <p><strong>Fade和VFade的区别</strong>：</p>

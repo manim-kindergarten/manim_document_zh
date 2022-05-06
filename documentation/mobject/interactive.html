@@ -3,15 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Matrix" href="matrix.html" /><link rel="prev" title="Geometry" href="geometry.html" />
 
-    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-4.4.0, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>Interactive - ManimGL  文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/default.css" />
-    <link rel="stylesheet" href="../../_static/copybutton.css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?6cf18f6517f06354b7bf4b8d">
-    <link rel="stylesheet" href="../../_static/pygments.css?6cf18f6517f06354b7bf4b8d">
+    <link rel="stylesheet" href="../../_static/styles/default.css?8a5a18d992d7930e9418fb70">
+    <link rel="stylesheet" href="../../_static/pygments.css?8a5a18d992d7930e9418fb70">
     
 <style>
   :root {
@@ -20,15 +18,17 @@
   
   }
 </style>
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
       <script src="../../_static/underscore.js"></script>
       
         <script src="../../_static/doctools.js" defer></script>
       
+        <script src="../../_static/language_data.js" defer></script>
+      
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
-        <script src="../../_static/translations.js"></script><script src="../../_static/scripts/main.js?6cf18f6517f06354b7bf4b8d"></script></head>
+        <script src="../../_static/translations.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?8a5a18d992d7930e9418fb70"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -89,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -98,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -193,7 +193,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -216,8 +216,8 @@
 <div class="section" id="motionmobject">
 <h2>MotionMobject<a class="headerlink" href="#motionmobject" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.interactive.MotionMobject">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.interactive.</span></span><span class="sig-name descname"><span class="pre">MotionMobject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">manimlib.mobject.mobject.Mobject</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.MotionMobject" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.interactive.MotionMobject">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.interactive.</code><code class="sig-name descname">MotionMobject</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n"><a class="reference internal" href="mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject">manimlib.mobject.mobject.Mobject</a></span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.MotionMobject" title="永久链接至目标">¶</a></dt>
 <dd><p>可以用鼠标拖拽移动的物件</p>
 <p>传入一个 <code class="docutils literal notranslate"><span class="pre">mobject</span></code> 将这个物件封装成可以用鼠标拖动的</p>
 </dd></dl>
@@ -225,8 +225,8 @@
 <div class="section" id="button">
 <h2>Button<a class="headerlink" href="#button" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.interactive.Button">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.interactive.</span></span><span class="sig-name descname"><span class="pre">Button</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">Mobject</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_click</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">Mobject</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.Button" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.interactive.Button">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.interactive.</code><code class="sig-name descname">Button</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="n">on_click</span><span class="p">:</span> <span class="n">Callable<span class="p">[</span><span class="p">[</span>Mobject<span class="p">]</span><span class="p">]</span></span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.Button" title="永久链接至目标">¶</a></dt>
 <dd><p>按钮</p>
 <p>传入一个 <code class="docutils literal notranslate"><span class="pre">mobject</span></code>，并注册一个 <code class="docutils literal notranslate"><span class="pre">on_click</span></code> 方法</p>
 <p><code class="docutils literal notranslate"><span class="pre">on_click</span></code> 方法的参数列表中包含一个 <code class="docutils literal notranslate"><span class="pre">mobject</span></code>，该响应函数需要使用者自行定义</p>
@@ -235,13 +235,13 @@
 <div class="section" id="controlmobject">
 <h2>ControlMobject<a class="headerlink" href="#controlmobject" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.interactive.ControlMobject">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.interactive.</span></span><span class="sig-name descname"><span class="pre">ControlMobject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">mobjects</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">manimlib.mobject.mobject.Mobject</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.ControlMobject" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.interactive.ControlMobject">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.interactive.</code><code class="sig-name descname">ControlMobject</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">mobjects</span><span class="p">:</span> <span class="n"><a class="reference internal" href="mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject">manimlib.mobject.mobject.Mobject</a></span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.ControlMobject" title="永久链接至目标">¶</a></dt>
 <dd><p>变量控制器（以下几个类的基类）</p>
 <p><code class="docutils literal notranslate"><span class="pre">value</span></code> 作为实例的成员变量，<code class="docutils literal notranslate"><span class="pre">mobjects</span></code> 作为窗口中可以看到的物件</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.interactive.ControlMobject.set_value">
-<span class="sig-name descname"><span class="pre">set_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.ControlMobject.set_value" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.interactive.ControlMobject.set_value">
+<code class="sig-name descname">set_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n">float</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.ControlMobject.set_value" title="永久链接至目标">¶</a></dt>
 <dd><p>设置变量控制器的值</p>
 </dd></dl>
 </dd></dl>
@@ -249,8 +249,8 @@
 <div class="section" id="enabledisablebutton">
 <h2>EnableDisableButton<a class="headerlink" href="#enabledisablebutton" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.interactive.EnableDisableButton">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.interactive.</span></span><span class="sig-name descname"><span class="pre">EnableDisableButton</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.EnableDisableButton" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.interactive.EnableDisableButton">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.interactive.</code><code class="sig-name descname">EnableDisableButton</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.EnableDisableButton" title="永久链接至目标">¶</a></dt>
 <dd><p>启用/禁用按钮</p>
 <p>传入一个 <code class="docutils literal notranslate"><span class="pre">boolean</span></code> 值，作为它的变量；以矩形为按钮</p>
 <ul class="simple">
@@ -271,8 +271,8 @@
 <div class="section" id="checkbox">
 <h2>Checkbox<a class="headerlink" href="#checkbox" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.interactive.Checkbox">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.interactive.</span></span><span class="sig-name descname"><span class="pre">Checkbox</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.Checkbox" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.interactive.Checkbox">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.interactive.</code><code class="sig-name descname">Checkbox</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.Checkbox" title="永久链接至目标">¶</a></dt>
 <dd><p>复选框</p>
 <p>功能与 启用/禁用按钮 类似</p>
 <ul class="simple">
@@ -284,8 +284,8 @@
 <div class="section" id="linearnumberslider">
 <h2>LinearNumberSlider<a class="headerlink" href="#linearnumberslider" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.interactive.LinearNumberSlider">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.interactive.</span></span><span class="sig-name descname"><span class="pre">LinearNumberSlider</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.LinearNumberSlider" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.interactive.LinearNumberSlider">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.interactive.</code><code class="sig-name descname">LinearNumberSlider</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n">float</span> <span class="o">=</span> <span class="default_value">0</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.LinearNumberSlider" title="永久链接至目标">¶</a></dt>
 <dd><p>线性滑动条</p>
 <p>传入一个初始值，其他在参数中给出</p>
 <ul class="simple">
@@ -300,28 +300,28 @@
 <div class="section" id="colorsliders">
 <h2>ColorSliders<a class="headerlink" href="#colorsliders" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.interactive.ColorSliders">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.interactive.</span></span><span class="sig-name descname"><span class="pre">ColorSliders</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.ColorSliders" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.interactive.ColorSliders">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.interactive.</code><code class="sig-name descname">ColorSliders</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.ColorSliders" title="永久链接至目标">¶</a></dt>
 <dd><p>RGBA 颜色滑动条</p>
 <p>创建后包含 RGBA 四个滑动条，分别对应 RGBA 值</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.interactive.ColorSliders.get_picked_color">
-<span class="sig-name descname"><span class="pre">get_picked_color</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#manimlib.mobject.interactive.ColorSliders.get_picked_color" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.interactive.ColorSliders.get_picked_color">
+<code class="sig-name descname">get_picked_color</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → str<a class="headerlink" href="#manimlib.mobject.interactive.ColorSliders.get_picked_color" title="永久链接至目标">¶</a></dt>
 <dd><p>获取当前选色器颜色的 16 进制（不包含透明度）</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.interactive.ColorSliders.get_picked_opacity">
-<span class="sig-name descname"><span class="pre">get_picked_opacity</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#manimlib.mobject.interactive.ColorSliders.get_picked_opacity" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.interactive.ColorSliders.get_picked_opacity">
+<code class="sig-name descname">get_picked_opacity</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → float<a class="headerlink" href="#manimlib.mobject.interactive.ColorSliders.get_picked_opacity" title="永久链接至目标">¶</a></dt>
 <dd><p>获取当前选色器颜色透明度</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.interactive.ColorSliders.get_value">
-<span class="sig-name descname"><span class="pre">get_value</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">np.ndarary</span></span></span><a class="headerlink" href="#manimlib.mobject.interactive.ColorSliders.get_value" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.interactive.ColorSliders.get_value">
+<code class="sig-name descname">get_value</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → np.ndarary<a class="headerlink" href="#manimlib.mobject.interactive.ColorSliders.get_value" title="永久链接至目标">¶</a></dt>
 <dd><p>获取 RGBA 值</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.interactive.ColorSliders.set_value">
-<span class="sig-name descname"><span class="pre">set_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.ColorSliders.set_value" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.interactive.ColorSliders.set_value">
+<code class="sig-name descname">set_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">r</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">g</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">b</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">a</span><span class="p">:</span> <span class="n">float</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.ColorSliders.set_value" title="永久链接至目标">¶</a></dt>
 <dd><p>设置 RGBA 值</p>
 </dd></dl>
 </dd></dl>
@@ -329,8 +329,8 @@
 <div class="section" id="textbox">
 <h2>Textbox<a class="headerlink" href="#textbox" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.interactive.Textbox">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.interactive.</span></span><span class="sig-name descname"><span class="pre">Textbox</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.Textbox" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.interactive.Textbox">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.interactive.</code><code class="sig-name descname">Textbox</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">''</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.Textbox" title="永久链接至目标">¶</a></dt>
 <dd><p>文本框</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">box_kwargs</span></code> : 文本框外框参数</p></li>
@@ -338,8 +338,8 @@
 </ul>
 <p>注意：初值不要为空字符串</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.interactive.Textbox.on_key_press">
-<span class="sig-name descname"><span class="pre">on_key_press</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mob</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">Mobject</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">event_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.mobject.interactive.Textbox.on_key_press" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.interactive.Textbox.on_key_press">
+<code class="sig-name descname">on_key_press</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mob</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="n">event_data</span><span class="p">:</span> <span class="n">dict<span class="p">[</span>str<span class="p">, </span>int<span class="p">]</span></span></em><span class="sig-paren">)</span> → bool | None<a class="headerlink" href="#manimlib.mobject.interactive.Textbox.on_key_press" title="永久链接至目标">¶</a></dt>
 <dd><p>键盘按下响应</p>
 </dd></dl>
 </dd></dl>
@@ -347,8 +347,8 @@
 <div class="section" id="controlpanel">
 <h2>ControlPanel<a class="headerlink" href="#controlpanel" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.interactive.ControlPanel">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.interactive.</span></span><span class="sig-name descname"><span class="pre">ControlPanel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">controls</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#manimlib.mobject.interactive.ControlMobject" title="manimlib.mobject.interactive.ControlMobject"><span class="pre">manimlib.mobject.interactive.ControlMobject</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.ControlPanel" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.interactive.ControlPanel">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.interactive.</code><code class="sig-name descname">ControlPanel</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">controls</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#manimlib.mobject.interactive.ControlMobject" title="manimlib.mobject.interactive.ControlMobject">manimlib.mobject.interactive.ControlMobject</a></span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.ControlPanel" title="永久链接至目标">¶</a></dt>
 <dd><p>控制面板</p>
 <p>传入一些变量控制器，将它们放在控制面板上</p>
 <p>这样整个控制面板就像一个“抽屉”，panel 为抽屉本体，opener 为抽屉的把手</p>
@@ -382,23 +382,23 @@
 </li>
 </ul>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.interactive.ControlPanel.add_controls">
-<span class="sig-name descname"><span class="pre">add_controls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">new_controls</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#manimlib.mobject.interactive.ControlMobject" title="manimlib.mobject.interactive.ControlMobject"><span class="pre">manimlib.mobject.interactive.ControlMobject</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.mobject.interactive.ControlPanel.add_controls" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.interactive.ControlPanel.add_controls">
+<code class="sig-name descname">add_controls</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">new_controls</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#manimlib.mobject.interactive.ControlMobject" title="manimlib.mobject.interactive.ControlMobject">manimlib.mobject.interactive.ControlMobject</a></span></em><span class="sig-paren">)</span> → None<a class="headerlink" href="#manimlib.mobject.interactive.ControlPanel.add_controls" title="永久链接至目标">¶</a></dt>
 <dd><p>添加新控制器</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.interactive.ControlPanel.close_panel">
-<span class="sig-name descname"><span class="pre">close_panel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.ControlPanel.close_panel" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.interactive.ControlPanel.close_panel">
+<code class="sig-name descname">close_panel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.ControlPanel.close_panel" title="永久链接至目标">¶</a></dt>
 <dd><p>关闭控制面板</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.interactive.ControlPanel.open_panel">
-<span class="sig-name descname"><span class="pre">open_panel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.ControlPanel.open_panel" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.interactive.ControlPanel.open_panel">
+<code class="sig-name descname">open_panel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.interactive.ControlPanel.open_panel" title="永久链接至目标">¶</a></dt>
 <dd><p>打开控制面板</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.interactive.ControlPanel.remove_controls">
-<span class="sig-name descname"><span class="pre">remove_controls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">controls_to_remove</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#manimlib.mobject.interactive.ControlMobject" title="manimlib.mobject.interactive.ControlMobject"><span class="pre">manimlib.mobject.interactive.ControlMobject</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.mobject.interactive.ControlPanel.remove_controls" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.interactive.ControlPanel.remove_controls">
+<code class="sig-name descname">remove_controls</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">controls_to_remove</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#manimlib.mobject.interactive.ControlMobject" title="manimlib.mobject.interactive.ControlMobject">manimlib.mobject.interactive.ControlMobject</a></span></em><span class="sig-paren">)</span> → None<a class="headerlink" href="#manimlib.mobject.interactive.ControlPanel.remove_controls" title="永久链接至目标">¶</a></dt>
 <dd><p>移除控制器</p>
 </dd></dl>
 </dd></dl>

@@ -3,15 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Inserts" href="inserts/index.html" /><link rel="prev" title="着色代码 shaders (TODO)" href="index.html" />
 
-    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-4.4.0, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>OpenGL 预备知识 - ManimGL  文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/default.css" />
-    <link rel="stylesheet" href="../../_static/copybutton.css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?156ac1d5c1aa0a45a789572c">
-    <link rel="stylesheet" href="../../_static/pygments.css?156ac1d5c1aa0a45a789572c">
+    <link rel="stylesheet" href="../../_static/styles/default.css?03708c62f661e9b38edc2d28">
+    <link rel="stylesheet" href="../../_static/pygments.css?03708c62f661e9b38edc2d28">
     
 <style>
   :root {
@@ -20,15 +18,17 @@
   
   }
 </style>
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
       <script src="../../_static/underscore.js"></script>
       
         <script src="../../_static/doctools.js" defer></script>
       
+        <script src="../../_static/language_data.js" defer></script>
+      
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
-        <script src="../../_static/translations.js"></script><script src="../../_static/scripts/main.js?156ac1d5c1aa0a45a789572c"></script></head>
+        <script src="../../_static/translations.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?03708c62f661e9b38edc2d28"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -89,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -98,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -193,7 +193,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -224,8 +224,8 @@
 <h2>GLSL 函数<a class="headerlink" href="#glsl" title="永久链接至标题">¶</a></h2>
 <p>这些函数主要用于片段着色</p>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv410smoothstep7genType7genType7genType">
-<span id="_CPPv310smoothstep7genType7genType7genType"></span><span id="_CPPv210smoothstep7genType7genType7genType"></span><span id="smoothstep__genType.genType.genType"></span><span class="n"><span class="pre">genType</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">smoothstep</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">genType</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">edge_0</span></span>, <span class="n"><span class="pre">genType</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">edge_1</span></span>, <span class="n"><span class="pre">genType</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv410smoothstep7genType7genType7genType" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv410smoothstep7genType7genType7genType">
+<span id="_CPPv310smoothstep7genType7genType7genType"></span><span id="_CPPv210smoothstep7genType7genType7genType"></span><span id="smoothstep__genType.genType.genType"></span>genType <code class="sig-name descname">smoothstep</code><span class="sig-paren">(</span>genType <em>edge_0</em>, genType <em>edge_1</em>, genType <em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv410smoothstep7genType7genType7genType" title="永久链接至目标">¶</a><br/></dt>
 <dd><ul class="simple">
 <li><p>当 <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&lt;=</span> <span class="pre">edge_0</span></code> 时返回 0.0</p></li>
 <li><p>当 <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&gt;=</span> <span class="pre">edge_1</span></code> 时返回 1.0</p></li>
@@ -240,16 +240,16 @@
 <img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/functions/smoothstep2.svg" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/functions/smoothstep2.svg"/></dd></dl>
 <hr class="docutils"/>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv43mix7genType7genTypef">
-<span id="_CPPv33mix7genType7genTypef"></span><span id="_CPPv23mix7genType7genTypef"></span><span id="mix__genType.genType.float"></span><span class="n"><span class="pre">genType</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mix</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">genType</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span>, <span class="n"><span class="pre">genType</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">a</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv43mix7genType7genTypef" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv43mix7genType7genTypef">
+<span id="_CPPv33mix7genType7genTypef"></span><span id="_CPPv23mix7genType7genTypef"></span><span id="mix__genType.genType.float"></span>genType <code class="sig-name descname">mix</code><span class="sig-paren">(</span>genType <em>x</em>, genType <em>y</em>, float <em>a</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv43mix7genType7genTypef" title="永久链接至目标">¶</a><br/></dt>
 <dd><ul class="simple">
 <li><p>返回值为 <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">*</span> <span class="pre">(1</span> <span class="pre">-</span> <span class="pre">a)</span> <span class="pre">+</span> <span class="pre">y</span> <span class="pre">*</span> <span class="pre">a</span></code>，即为 <code class="docutils literal notranslate"><span class="pre">x</span></code> 到 <code class="docutils literal notranslate"><span class="pre">y</span></code> 的插值</p></li>
 </ul>
 </dd></dl>
 <hr class="docutils"/>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv45clamp7genType7genType7genType">
-<span id="_CPPv35clamp7genType7genType7genType"></span><span id="_CPPv25clamp7genType7genType7genType"></span><span id="clamp__genType.genType.genType"></span><span class="n"><span class="pre">genType</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">clamp</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">genType</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span>, <span class="n"><span class="pre">genType</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">minVal</span></span>, <span class="n"><span class="pre">genType</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">maxVal</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv45clamp7genType7genType7genType" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv45clamp7genType7genType7genType">
+<span id="_CPPv35clamp7genType7genType7genType"></span><span id="_CPPv25clamp7genType7genType7genType"></span><span id="clamp__genType.genType.genType"></span>genType <code class="sig-name descname">clamp</code><span class="sig-paren">(</span>genType <em>x</em>, genType <em>minVal</em>, genType <em>maxVal</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv45clamp7genType7genType7genType" title="永久链接至目标">¶</a><br/></dt>
 <dd><p>将自变量 <code class="docutils literal notranslate"><span class="pre">x</span></code> 限制在给定的范围内，即有</p>
 <ul class="simple">
 <li><p>当 <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&lt;</span> <span class="pre">minVal</span></code> 时返回 <code class="docutils literal notranslate"><span class="pre">minVal</span></code></p></li>
@@ -279,13 +279,11 @@
 </pre></div>
 </div>
 <p>此时我们仔细分析一下</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p>在圆内的点，返回的结果均小于 0</p></li>
 <li><p>在圆上的点，返回值为 0</p></li>
 <li><p>在圆外的点，返回值均大于 0</p></li>
 </ul>
-</div></blockquote>
 <p>此时， 0 就成了一个分界点，我们可以使用一些其他的函数来进一步处理，即可得到理想的效果了。我们使用上面提到的 smoothstep 函数</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">float</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">smoothstep</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span><span class="w"> </span><span class="mf">0.</span><span class="p">,</span><span class="w"> </span><span class="n">sdfCircle</span><span class="p">(</span><span class="n">coords</span><span class="p">,</span><span class="w"> </span><span class="mf">0.5</span><span class="p">))</span><span class="w"></span>
 </pre></div>

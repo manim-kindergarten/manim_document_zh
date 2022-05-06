@@ -3,15 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="Composition" href="composition.html" /><link rel="prev" title="Transform Matching Parts" href="transform_matching_parts.html" />
 
-    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-4.4.0, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>Update - ManimGL  文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/default.css" />
-    <link rel="stylesheet" href="../../_static/copybutton.css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?3e293b8a07e31c862b36dd31">
-    <link rel="stylesheet" href="../../_static/pygments.css?3e293b8a07e31c862b36dd31">
+    <link rel="stylesheet" href="../../_static/styles/default.css?1581e9068c18b57df8213a50">
+    <link rel="stylesheet" href="../../_static/pygments.css?1581e9068c18b57df8213a50">
     
 <style>
   :root {
@@ -20,15 +18,17 @@
   
   }
 </style>
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
       <script src="../../_static/underscore.js"></script>
       
         <script src="../../_static/doctools.js" defer></script>
       
+        <script src="../../_static/language_data.js" defer></script>
+      
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
-        <script src="../../_static/translations.js"></script><script src="../../_static/scripts/main.js?3e293b8a07e31c862b36dd31"></script></head>
+        <script src="../../_static/translations.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?1581e9068c18b57df8213a50"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -89,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -98,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -193,7 +193,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -216,8 +216,8 @@
 <div class="section" id="updatefromfunc">
 <h2>UpdateFromFunc<a class="headerlink" href="#updatefromfunc" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.animation.update.UpdateFromFunc">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.animation.update.</span></span><span class="sig-name descname"><span class="pre">UpdateFromFunc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">Mobject</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">update_function</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">Mobject</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.update.UpdateFromFunc" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.animation.update.UpdateFromFunc">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.update.</code><code class="sig-name descname">UpdateFromFunc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="n">update_function</span><span class="p">:</span> <span class="n">Callable<span class="p">[</span><span class="p">[</span>Mobject<span class="p">]</span><span class="p">]</span></span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.update.UpdateFromFunc" title="永久链接至目标">¶</a></dt>
 <dd><p>update_function of the form func(mobject), presumably
 to be used when the state of one mobject is dependent
 on another simultaneously animated mobject</p>
@@ -242,8 +242,8 @@ on another simultaneously animated mobject</p>
 <div class="section" id="updatefromalphafunc">
 <h2>UpdateFromAlphaFunc<a class="headerlink" href="#updatefromalphafunc" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.animation.update.UpdateFromAlphaFunc">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.animation.update.</span></span><span class="sig-name descname"><span class="pre">UpdateFromAlphaFunc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">Mobject</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">update_function</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">Mobject</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.update.UpdateFromAlphaFunc" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.animation.update.UpdateFromAlphaFunc">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.update.</code><code class="sig-name descname">UpdateFromAlphaFunc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="n">update_function</span><span class="p">:</span> <span class="n">Callable<span class="p">[</span><span class="p">[</span>Mobject<span class="p">]</span><span class="p">]</span></span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.update.UpdateFromAlphaFunc" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <div class="manim-example"><video class="manim-video" controls="" id="updatefromalphafuncexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/UpdateFromAlphaFuncExample.mp4"></video><h5 class="example-header">UpdateFromAlphaFuncExample<a class="headerlink" href="#updatefromalphafuncexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">UpdateFromAlphaFuncExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -271,8 +271,8 @@ on another simultaneously animated mobject</p>
 <div class="section" id="maintainpositionrelativeto">
 <h2>MaintainPositionRelativeTo<a class="headerlink" href="#maintainpositionrelativeto" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.animation.update.MaintainPositionRelativeTo">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.animation.update.</span></span><span class="sig-name descname"><span class="pre">MaintainPositionRelativeTo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">Mobject</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">tracked_mobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><span class="pre">Mobject</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.update.MaintainPositionRelativeTo" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.animation.update.MaintainPositionRelativeTo">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.update.</code><code class="sig-name descname">MaintainPositionRelativeTo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="n">tracked_mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.update.MaintainPositionRelativeTo" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <div class="manim-example"><video class="manim-video" controls="" id="maintainpositionrelativetoexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/MaintainPositionRelativeToExample.mp4"></video><h5 class="example-header">MaintainPositionRelativeToExample<a class="headerlink" href="#maintainpositionrelativetoexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MaintainPositionRelativeToExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>

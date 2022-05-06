@@ -3,15 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="CONFIG_ops" href="config_ops.html" /><link rel="prev" title="Bezier" href="bezier.html" />
 
-    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-4.4.0, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>Color - ManimGL  文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/default.css" />
-    <link rel="stylesheet" href="../../_static/copybutton.css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?11857cbeba228dd5b8e3e1da">
-    <link rel="stylesheet" href="../../_static/pygments.css?11857cbeba228dd5b8e3e1da">
+    <link rel="stylesheet" href="../../_static/styles/default.css?c57022391321cfe7232bd47e">
+    <link rel="stylesheet" href="../../_static/pygments.css?c57022391321cfe7232bd47e">
     
 <style>
   :root {
@@ -20,15 +18,17 @@
   
   }
 </style>
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
       <script src="../../_static/underscore.js"></script>
       
         <script src="../../_static/doctools.js" defer></script>
       
+        <script src="../../_static/language_data.js" defer></script>
+      
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
-        <script src="../../_static/translations.js"></script><script src="../../_static/scripts/main.js?11857cbeba228dd5b8e3e1da"></script></head>
+        <script src="../../_static/translations.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?c57022391321cfe7232bd47e"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -89,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -98,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -193,7 +193,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -218,86 +218,86 @@
 <a class="reference external" href="https://www.bilibili.com/video/BV1vZ4y1x7hT">〔manim 教程〕第三讲 颜色的表示、运算与设置</a></p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt class="sig sig-object py" id="manimlib.utils.color.color_to_rgb">
-<span class="sig-prename descclassname"><span class="pre">manimlib.utils.color.</span></span><span class="sig-name descname"><span class="pre">color_to_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ManimColor</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">np.ndarray</span></span></span><a class="headerlink" href="#manimlib.utils.color.color_to_rgb" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.utils.color.color_to_rgb">
+<code class="sig-prename descclassname">manimlib.utils.color.</code><code class="sig-name descname">color_to_rgb</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span><span class="p">:</span> <span class="n">ManimColor</span></em><span class="sig-paren">)</span> → np.ndarray<a class="headerlink" href="#manimlib.utils.color.color_to_rgb" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>将颜色转换为 RGB 值，color 可以为字符串(例“#66CCFF”)，也可以为 Color 类</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt class="sig sig-object py" id="manimlib.utils.color.color_to_rgba">
-<span class="sig-prename descclassname"><span class="pre">manimlib.utils.color.</span></span><span class="sig-name descname"><span class="pre">color_to_rgba</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ManimColor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">np.ndarray</span></span></span><a class="headerlink" href="#manimlib.utils.color.color_to_rgba" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.utils.color.color_to_rgba">
+<code class="sig-prename descclassname">manimlib.utils.color.</code><code class="sig-name descname">color_to_rgba</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span><span class="p">:</span> <span class="n">ManimColor</span></em>, <em class="sig-param"><span class="n">alpha</span><span class="p">:</span> <span class="n">float</span> <span class="o">=</span> <span class="default_value">1.0</span></em><span class="sig-paren">)</span> → np.ndarray<a class="headerlink" href="#manimlib.utils.color.color_to_rgba" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>将颜色转换为 RGB 加上 alpha 透明度</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt class="sig sig-object py" id="manimlib.utils.color.rgb_to_color">
-<span class="sig-prename descclassname"><span class="pre">manimlib.utils.color.</span></span><span class="sig-name descname"><span class="pre">rgb_to_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rgb</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">Color</span></span></span><a class="headerlink" href="#manimlib.utils.color.rgb_to_color" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.utils.color.rgb_to_color">
+<code class="sig-prename descclassname">manimlib.utils.color.</code><code class="sig-name descname">rgb_to_color</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rgb</span><span class="p">:</span> <span class="n">Iterable<span class="p">[</span>float<span class="p">]</span></span></em><span class="sig-paren">)</span> → Color<a class="headerlink" href="#manimlib.utils.color.rgb_to_color" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>将 RGB 颜色转换为 Color 类</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt class="sig sig-object py" id="manimlib.utils.color.rgba_to_color">
-<span class="sig-prename descclassname"><span class="pre">manimlib.utils.color.</span></span><span class="sig-name descname"><span class="pre">rgba_to_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rgba</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">Color</span></span></span><a class="headerlink" href="#manimlib.utils.color.rgba_to_color" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.utils.color.rgba_to_color">
+<code class="sig-prename descclassname">manimlib.utils.color.</code><code class="sig-name descname">rgba_to_color</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rgba</span><span class="p">:</span> <span class="n">Iterable<span class="p">[</span>float<span class="p">]</span></span></em><span class="sig-paren">)</span> → Color<a class="headerlink" href="#manimlib.utils.color.rgba_to_color" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>将 RGBA 前三个数 RGB 转换为 Color 类</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt class="sig sig-object py" id="manimlib.utils.color.rgb_to_hex">
-<span class="sig-prename descclassname"><span class="pre">manimlib.utils.color.</span></span><span class="sig-name descname"><span class="pre">rgb_to_hex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rgb</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#manimlib.utils.color.rgb_to_hex" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.utils.color.rgb_to_hex">
+<code class="sig-prename descclassname">manimlib.utils.color.</code><code class="sig-name descname">rgb_to_hex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rgb</span><span class="p">:</span> <span class="n">Iterable<span class="p">[</span>float<span class="p">]</span></span></em><span class="sig-paren">)</span> → str<a class="headerlink" href="#manimlib.utils.color.rgb_to_hex" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>将 RGB 转换为十六进制字符串表示</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt class="sig sig-object py" id="manimlib.utils.color.hex_to_rgb">
-<span class="sig-prename descclassname"><span class="pre">manimlib.utils.color.</span></span><span class="sig-name descname"><span class="pre">hex_to_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hex_code</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.utils.color.hex_to_rgb" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.utils.color.hex_to_rgb">
+<code class="sig-prename descclassname">manimlib.utils.color.</code><code class="sig-name descname">hex_to_rgb</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hex_code</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> → numpy.ndarray<a class="headerlink" href="#manimlib.utils.color.hex_to_rgb" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>将十六进制字符串转换为 RGB</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt class="sig sig-object py" id="manimlib.utils.color.invert_color">
-<span class="sig-prename descclassname"><span class="pre">manimlib.utils.color.</span></span><span class="sig-name descname"><span class="pre">invert_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ManimColor</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">Color</span></span></span><a class="headerlink" href="#manimlib.utils.color.invert_color" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.utils.color.invert_color">
+<code class="sig-prename descclassname">manimlib.utils.color.</code><code class="sig-name descname">invert_color</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span><span class="p">:</span> <span class="n">ManimColor</span></em><span class="sig-paren">)</span> → Color<a class="headerlink" href="#manimlib.utils.color.invert_color" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>返回 color 的反色</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt class="sig sig-object py" id="manimlib.utils.color.color_to_int_rgb">
-<span class="sig-prename descclassname"><span class="pre">manimlib.utils.color.</span></span><span class="sig-name descname"><span class="pre">color_to_int_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ManimColor</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">np.ndarray</span></span></span><a class="headerlink" href="#manimlib.utils.color.color_to_int_rgb" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.utils.color.color_to_int_rgb">
+<code class="sig-prename descclassname">manimlib.utils.color.</code><code class="sig-name descname">color_to_int_rgb</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span><span class="p">:</span> <span class="n">ManimColor</span></em><span class="sig-paren">)</span> → np.ndarray<a class="headerlink" href="#manimlib.utils.color.color_to_int_rgb" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>将颜色转化为整数 RGB</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt class="sig sig-object py" id="manimlib.utils.color.color_to_int_rgba">
-<span class="sig-prename descclassname"><span class="pre">manimlib.utils.color.</span></span><span class="sig-name descname"><span class="pre">color_to_int_rgba</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ManimColor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">opacity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">np.ndarray</span></span></span><a class="headerlink" href="#manimlib.utils.color.color_to_int_rgba" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.utils.color.color_to_int_rgba">
+<code class="sig-prename descclassname">manimlib.utils.color.</code><code class="sig-name descname">color_to_int_rgba</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span><span class="p">:</span> <span class="n">ManimColor</span></em>, <em class="sig-param"><span class="n">opacity</span><span class="p">:</span> <span class="n">float</span> <span class="o">=</span> <span class="default_value">1.0</span></em><span class="sig-paren">)</span> → np.ndarray<a class="headerlink" href="#manimlib.utils.color.color_to_int_rgba" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>将颜色转化为整数 RGBA</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt class="sig sig-object py" id="manimlib.utils.color.color_gradient">
-<span class="sig-prename descclassname"><span class="pre">manimlib.utils.color.</span></span><span class="sig-name descname"><span class="pre">color_gradient</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reference_colors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">ManimColor</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length_of_output</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">Color</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#manimlib.utils.color.color_gradient" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.utils.color.color_gradient">
+<code class="sig-prename descclassname">manimlib.utils.color.</code><code class="sig-name descname">color_gradient</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">reference_colors</span><span class="p">:</span> <span class="n">Iterable<span class="p">[</span>ManimColor<span class="p">]</span></span></em>, <em class="sig-param"><span class="n">length_of_output</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> → list<span class="p">[</span>Color<span class="p">]</span><a class="headerlink" href="#manimlib.utils.color.color_gradient" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>返回长度为 length_of_output 的颜色梯度数组</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt class="sig sig-object py" id="manimlib.utils.color.interpolate_color">
-<span class="sig-prename descclassname"><span class="pre">manimlib.utils.color.</span></span><span class="sig-name descname"><span class="pre">interpolate_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ManimColor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ManimColor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">Color</span></span></span><a class="headerlink" href="#manimlib.utils.color.interpolate_color" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.utils.color.interpolate_color">
+<code class="sig-prename descclassname">manimlib.utils.color.</code><code class="sig-name descname">interpolate_color</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color1</span><span class="p">:</span> <span class="n">ManimColor</span></em>, <em class="sig-param"><span class="n">color2</span><span class="p">:</span> <span class="n">ManimColor</span></em>, <em class="sig-param"><span class="n">alpha</span><span class="p">:</span> <span class="n">float</span></em><span class="sig-paren">)</span> → Color<a class="headerlink" href="#manimlib.utils.color.interpolate_color" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>在 color1 和 color2 之间插值，返回 Color 类表示的颜色</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt class="sig sig-object py" id="manimlib.utils.color.average_color">
-<span class="sig-prename descclassname"><span class="pre">manimlib.utils.color.</span></span><span class="sig-name descname"><span class="pre">average_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">colors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ManimColor</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">Color</span></span></span><a class="headerlink" href="#manimlib.utils.color.average_color" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.utils.color.average_color">
+<code class="sig-prename descclassname">manimlib.utils.color.</code><code class="sig-name descname">average_color</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">colors</span><span class="p">:</span> <span class="n">ManimColor</span></em><span class="sig-paren">)</span> → Color<a class="headerlink" href="#manimlib.utils.color.average_color" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>返回 colors 的平均颜色</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt class="sig sig-object py" id="manimlib.utils.color.random_bright_color">
-<span class="sig-prename descclassname"><span class="pre">manimlib.utils.color.</span></span><span class="sig-name descname"><span class="pre">random_bright_color</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">colour.Color</span></span></span><a class="headerlink" href="#manimlib.utils.color.random_bright_color" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.utils.color.random_bright_color">
+<code class="sig-prename descclassname">manimlib.utils.color.</code><code class="sig-name descname">random_bright_color</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → colour.Color<a class="headerlink" href="#manimlib.utils.color.random_bright_color" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>随机亮色</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt class="sig sig-object py" id="manimlib.utils.color.random_color">
-<span class="sig-prename descclassname"><span class="pre">manimlib.utils.color.</span></span><span class="sig-name descname"><span class="pre">random_color</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">colour.Color</span></span></span><a class="headerlink" href="#manimlib.utils.color.random_color" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.utils.color.random_color">
+<code class="sig-prename descclassname">manimlib.utils.color.</code><code class="sig-name descname">random_color</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → colour.Color<a class="headerlink" href="#manimlib.utils.color.random_color" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>在 COLOR_MAP 中随机选取颜色</p>
 </div>

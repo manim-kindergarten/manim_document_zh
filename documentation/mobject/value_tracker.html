@@ -3,15 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="VectorField" href="vector_field.html" /><link rel="prev" title="ThreeDimensions" href="three_dimensions.html" />
 
-    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-4.4.0, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>ValueTracker - ManimGL  文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/default.css" />
-    <link rel="stylesheet" href="../../_static/copybutton.css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?eb54848e99bc2f0b682ab910">
-    <link rel="stylesheet" href="../../_static/pygments.css?eb54848e99bc2f0b682ab910">
+    <link rel="stylesheet" href="../../_static/styles/default.css?3b91ab6fcd613b029786e824">
+    <link rel="stylesheet" href="../../_static/pygments.css?3b91ab6fcd613b029786e824">
     
 <style>
   :root {
@@ -20,15 +18,17 @@
   
   }
 </style>
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
       <script src="../../_static/underscore.js"></script>
       
         <script src="../../_static/doctools.js" defer></script>
       
+        <script src="../../_static/language_data.js" defer></script>
+      
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
-        <script src="../../_static/translations.js"></script><script src="../../_static/scripts/main.js?eb54848e99bc2f0b682ab910"></script></head>
+        <script src="../../_static/translations.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?3b91ab6fcd613b029786e824"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -89,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -98,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -193,7 +193,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -216,23 +216,23 @@
 <div class="section" id="id1">
 <h2>ValueTracker<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.value_tracker.ValueTracker">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.value_tracker.</span></span><span class="sig-name descname"><span class="pre">ValueTracker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">complex</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.value_tracker.ValueTracker" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.value_tracker.ValueTracker">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.value_tracker.</code><code class="sig-name descname">ValueTracker</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n">float | complex</span> <span class="o">=</span> <span class="default_value">0</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.value_tracker.ValueTracker" title="永久链接至目标">¶</a></dt>
 <dd><p>记录一个数值（不在画面中显示）</p>
 <p>传入的 <code class="docutils literal notranslate"><span class="pre">value</span></code> 为初始数值</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.value_tracker.ValueTracker.get_value">
-<span class="sig-name descname"><span class="pre">get_value</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">complex</span></span></span><a class="headerlink" href="#manimlib.mobject.value_tracker.ValueTracker.get_value" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.value_tracker.ValueTracker.get_value">
+<code class="sig-name descname">get_value</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → float | complex<a class="headerlink" href="#manimlib.mobject.value_tracker.ValueTracker.get_value" title="永久链接至目标">¶</a></dt>
 <dd><p>获取当前值</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.value_tracker.ValueTracker.increment_value">
-<span class="sig-name descname"><span class="pre">increment_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d_value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">complex</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#manimlib.mobject.value_tracker.ValueTracker.increment_value" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.value_tracker.ValueTracker.increment_value">
+<code class="sig-name descname">increment_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">d_value</span><span class="p">:</span> <span class="n">float | complex</span></em><span class="sig-paren">)</span> → None<a class="headerlink" href="#manimlib.mobject.value_tracker.ValueTracker.increment_value" title="永久链接至目标">¶</a></dt>
 <dd><p>将值增加 <code class="docutils literal notranslate"><span class="pre">d_value</span></code></p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.value_tracker.ValueTracker.set_value">
-<span class="sig-name descname"><span class="pre">set_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">complex</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.value_tracker.ValueTracker.set_value" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.value_tracker.ValueTracker.set_value">
+<code class="sig-name descname">set_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n">float | complex</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.value_tracker.ValueTracker.set_value" title="永久链接至目标">¶</a></dt>
 <dd><p>将值设为 <code class="docutils literal notranslate"><span class="pre">value</span></code></p>
 </dd></dl>
 </dd></dl>
@@ -240,18 +240,18 @@
 <div class="section" id="exponentialvaluetracker">
 <h2>ExponentialValueTracker<a class="headerlink" href="#exponentialvaluetracker" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.value_tracker.ExponentialValueTracker">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.value_tracker.</span></span><span class="sig-name descname"><span class="pre">ExponentialValueTracker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">complex</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.value_tracker.ExponentialValueTracker" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.value_tracker.ExponentialValueTracker">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.value_tracker.</code><code class="sig-name descname">ExponentialValueTracker</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n">float | complex</span> <span class="o">=</span> <span class="default_value">0</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.value_tracker.ExponentialValueTracker" title="永久链接至目标">¶</a></dt>
 <dd><p>以指数形式变化的存值器</p>
 <p>传入的 <code class="docutils literal notranslate"><span class="pre">value</span></code> 为初始数值</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.value_tracker.ExponentialValueTracker.get_value">
-<span class="sig-name descname"><span class="pre">get_value</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">complex</span></span></span><a class="headerlink" href="#manimlib.mobject.value_tracker.ExponentialValueTracker.get_value" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.value_tracker.ExponentialValueTracker.get_value">
+<code class="sig-name descname">get_value</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → float | complex<a class="headerlink" href="#manimlib.mobject.value_tracker.ExponentialValueTracker.get_value" title="永久链接至目标">¶</a></dt>
 <dd><p>获取当前存的值</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.value_tracker.ExponentialValueTracker.set_value">
-<span class="sig-name descname"><span class="pre">set_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">complex</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.value_tracker.ExponentialValueTracker.set_value" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.value_tracker.ExponentialValueTracker.set_value">
+<code class="sig-name descname">set_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n">float | complex</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.value_tracker.ExponentialValueTracker.set_value" title="永久链接至目标">¶</a></dt>
 <dd><p>将值设为 <code class="docutils literal notranslate"><span class="pre">value</span></code></p>
 </dd></dl>
 </dd></dl>
@@ -259,8 +259,8 @@
 <div class="section" id="complexvaluetracker">
 <h2>ComplexValueTracker<a class="headerlink" href="#complexvaluetracker" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.value_tracker.ComplexValueTracker">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.value_tracker.</span></span><span class="sig-name descname"><span class="pre">ComplexValueTracker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">complex</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.value_tracker.ComplexValueTracker" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.value_tracker.ComplexValueTracker">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.value_tracker.</code><code class="sig-name descname">ComplexValueTracker</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n">float | complex</span> <span class="o">=</span> <span class="default_value">0</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.value_tracker.ComplexValueTracker" title="永久链接至目标">¶</a></dt>
 <dd><p>记录一个复数数值</p>
 <p>传入的 <code class="docutils literal notranslate"><span class="pre">value</span></code> 为初始数值</p>
 </dd></dl>

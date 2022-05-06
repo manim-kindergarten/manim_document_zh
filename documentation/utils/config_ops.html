@@ -3,15 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../genindex.html" /><link rel="search" title="搜索" href="../../search.html" /><link rel="next" title="FILE_ops" href="file_ops.html" /><link rel="prev" title="Color" href="color.html" />
 
-    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-4.4.0, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>CONFIG_ops - ManimGL  文档</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/default.css" />
-    <link rel="stylesheet" href="../../_static/copybutton.css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?4c6ed9058bf146f0e3be8936">
-    <link rel="stylesheet" href="../../_static/pygments.css?4c6ed9058bf146f0e3be8936">
+    <link rel="stylesheet" href="../../_static/styles/default.css?71480eba3d232952008f6a4d">
+    <link rel="stylesheet" href="../../_static/pygments.css?71480eba3d232952008f6a4d">
     
 <style>
   :root {
@@ -20,15 +18,17 @@
   
   }
 </style>
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script><script src="../../_static/jquery.js"></script>
       <script src="../../_static/underscore.js"></script>
       
         <script src="../../_static/doctools.js" defer></script>
       
+        <script src="../../_static/language_data.js" defer></script>
+      
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
-        <script src="../../_static/translations.js"></script><script src="../../_static/scripts/main.js?4c6ed9058bf146f0e3be8936"></script></head>
+        <script src="../../_static/translations.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?71480eba3d232952008f6a4d"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -89,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">快速入门</a></li>
@@ -98,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
@@ -193,7 +193,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">贡献</a></li>
@@ -216,20 +216,20 @@
 <p><code class="docutils literal notranslate"><span class="pre">manimlib/utils/config_ops.py</span></code> 这个文件中主要实现了处理CONFIG字典和类的属性有关的函数</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt class="sig sig-object py" id="manimlib.utils.config_ops.get_all_descendent_classes">
-<span class="sig-prename descclassname"><span class="pre">manimlib.utils.config_ops.</span></span><span class="sig-name descname"><span class="pre">get_all_descendent_classes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Class</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.config_ops.get_all_descendent_classes" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.utils.config_ops.get_all_descendent_classes">
+<code class="sig-prename descclassname">manimlib.utils.config_ops.</code><code class="sig-name descname">get_all_descendent_classes</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Class</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.config_ops.get_all_descendent_classes" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>获取类 Class 的全部子类</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt class="sig sig-object py" id="manimlib.utils.config_ops.filtered_locals">
-<span class="sig-prename descclassname"><span class="pre">manimlib.utils.config_ops.</span></span><span class="sig-name descname"><span class="pre">filtered_locals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">caller_locals</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.config_ops.filtered_locals" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.utils.config_ops.filtered_locals">
+<code class="sig-prename descclassname">manimlib.utils.config_ops.</code><code class="sig-name descname">filtered_locals</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">caller_locals</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.config_ops.filtered_locals" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>将 caller_locals 字典中去掉 <code class="docutils literal notranslate"><span class="pre">self,</span> <span class="pre">kwargs</span></code> 两个键值对</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt class="sig sig-object py" id="manimlib.utils.config_ops.digest_config">
-<span class="sig-prename descclassname"><span class="pre">manimlib.utils.config_ops.</span></span><span class="sig-name descname"><span class="pre">digest_config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kwargs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caller_locals</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.config_ops.digest_config" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.utils.config_ops.digest_config">
+<code class="sig-prename descclassname">manimlib.utils.config_ops.</code><code class="sig-name descname">digest_config</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em>, <em class="sig-param"><span class="n">kwargs</span></em>, <em class="sig-param"><span class="n">caller_locals</span><span class="o">=</span><span class="default_value">{}</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.config_ops.digest_config" title="永久链接至目标">¶</a></dt>
 <dd><p>Sets init args and CONFIG values as local variables</p>
 <p>The purpose of this function is to ensure that all
 configuration of any object is inheritable, able to
@@ -242,8 +242,8 @@ as an attribute of the object.</p>
 </ul>
 <hr class="docutils"/>
 <dl class="py function">
-<dt class="sig sig-object py" id="manimlib.utils.config_ops.merge_dicts_recursively">
-<span class="sig-prename descclassname"><span class="pre">manimlib.utils.config_ops.</span></span><span class="sig-name descname"><span class="pre">merge_dicts_recursively</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">dicts</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.config_ops.merge_dicts_recursively" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.utils.config_ops.merge_dicts_recursively">
+<code class="sig-prename descclassname">manimlib.utils.config_ops.</code><code class="sig-name descname">merge_dicts_recursively</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">dicts</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.config_ops.merge_dicts_recursively" title="永久链接至目标">¶</a></dt>
 <dd><p>Creates a dict whose keyset is the union of all the
 input dictionaries.  The value for each key is based
 on the first dict in the list with that key.</p>
@@ -257,16 +257,16 @@ on the first dict in the list with that key.</p>
 </div>
 <hr class="docutils"/>
 <dl class="py function">
-<dt class="sig sig-object py" id="manimlib.utils.config_ops.soft_dict_update">
-<span class="sig-prename descclassname"><span class="pre">manimlib.utils.config_ops.</span></span><span class="sig-name descname"><span class="pre">soft_dict_update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.config_ops.soft_dict_update" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.utils.config_ops.soft_dict_update">
+<code class="sig-prename descclassname">manimlib.utils.config_ops.</code><code class="sig-name descname">soft_dict_update</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">d1</span></em>, <em class="sig-param"><span class="n">d2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.config_ops.soft_dict_update" title="永久链接至目标">¶</a></dt>
 <dd><p>Adds key values pairs of d2 to d1 only when d1 doesn’t
 already have that key</p>
 </dd></dl>
 <p>合并字典，仅当 d1 没有该键时，才将 d2 的键值对添加到d1中</p>
 <hr class="docutils"/>
 <dl class="py function">
-<dt class="sig sig-object py" id="manimlib.utils.config_ops.digest_locals">
-<span class="sig-prename descclassname"><span class="pre">manimlib.utils.config_ops.</span></span><span class="sig-name descname"><span class="pre">digest_locals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.config_ops.digest_locals" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.utils.config_ops.digest_locals">
+<code class="sig-prename descclassname">manimlib.utils.config_ops.</code><code class="sig-name descname">digest_locals</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em>, <em class="sig-param"><span class="n">keys</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.utils.config_ops.digest_locals" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 <p>把当前局部变量设为属性</p>
 </div>

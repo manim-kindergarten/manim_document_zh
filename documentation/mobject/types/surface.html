@@ -3,15 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../../genindex.html" /><link rel="search" title="搜索" href="../../../search.html" /><link rel="next" title="Vectorized Mobject" href="vectorized_mobject.html" /><link rel="prev" title="Point Cloud Mobject" href="point_cloud_mobject.html" />
 
-    <link rel="shortcut icon" href="../../../_static/mk.png"/><meta name="generator" content="sphinx-4.4.0, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>Surface - ManimGL  文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../../_static/default.css" />
-    <link rel="stylesheet" href="../../../_static/copybutton.css" />
+      <link rel="stylesheet" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../../_static/styles/default.css?ac6ddc22d532a2e31924b809">
-    <link rel="stylesheet" href="../../../_static/pygments.css?ac6ddc22d532a2e31924b809">
+    <link rel="stylesheet" href="../../../_static/styles/default.css?6ed4cbba3dfc48020cda8aad">
+    <link rel="stylesheet" href="../../../_static/pygments.css?6ed4cbba3dfc48020cda8aad">
     
 <style>
   :root {
@@ -20,15 +18,17 @@
   
   }
 </style>
-    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/documentation_options.js"></script><script src="../../../_static/jquery.js"></script>
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script><script src="../../../_static/jquery.js"></script>
       <script src="../../../_static/underscore.js"></script>
       
         <script src="../../../_static/doctools.js" defer></script>
       
+        <script src="../../../_static/language_data.js" defer></script>
+      
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
-        <script src="../../../_static/translations.js"></script><script src="../../../_static/scripts/main.js?ac6ddc22d532a2e31924b809"></script></head>
+        <script src="../../../_static/translations.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?6ed4cbba3dfc48020cda8aad"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -89,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../getting_started/quickstart.html">快速入门</a></li>
@@ -98,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../custom_config.html">默认配置 custom_config</a></li>
@@ -193,7 +193,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../development/contributing.html">贡献</a></li>
@@ -216,8 +216,8 @@
 <div class="section" id="id1">
 <h2>Surface<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.types.surface.Surface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.types.surface.</span></span><span class="sig-name descname"><span class="pre">Surface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.surface.Surface" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.types.surface.Surface">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.surface.</code><code class="sig-name descname">Surface</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.surface.Surface" title="永久链接至目标">¶</a></dt>
 <dd><p>曲面（基类）</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">u_range</span></code> : u 范围</p></li>
@@ -230,23 +230,23 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">opacity</span></code> : 透明度</p></li>
 </ul>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.types.surface.Surface.get_partial_points_array">
-<span class="sig-name descname"><span class="pre">get_partial_points_array</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">np.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">npt.ArrayLike</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">np.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.types.surface.Surface.get_partial_points_array" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.types.surface.Surface.get_partial_points_array">
+<code class="sig-name descname">get_partial_points_array</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">points</span><span class="p">:</span> <span class="n">np.ndarray</span></em>, <em class="sig-param"><span class="n">a</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">b</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">resolution</span><span class="p">:</span> <span class="n">npt.ArrayLike</span></em>, <em class="sig-param"><span class="n">axis</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> → np.ndarray<a class="headerlink" href="#manimlib.mobject.types.surface.Surface.get_partial_points_array" title="永久链接至目标">¶</a></dt>
 <dd><p>获取百分比从 a 到 b 的部分点集</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.types.surface.Surface.get_shader_data">
-<span class="sig-name descname"><span class="pre">get_shader_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.types.surface.Surface.get_shader_data" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.types.surface.Surface.get_shader_data">
+<code class="sig-name descname">get_shader_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → numpy.ndarray<a class="headerlink" href="#manimlib.mobject.types.surface.Surface.get_shader_data" title="永久链接至目标">¶</a></dt>
 <dd><p>获取 shader 数据</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.types.surface.Surface.get_unit_normals">
-<span class="sig-name descname"><span class="pre">get_unit_normals</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span></span></span><a class="headerlink" href="#manimlib.mobject.types.surface.Surface.get_unit_normals" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.types.surface.Surface.get_unit_normals">
+<code class="sig-name descname">get_unit_normals</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → numpy.ndarray<a class="headerlink" href="#manimlib.mobject.types.surface.Surface.get_unit_normals" title="永久链接至目标">¶</a></dt>
 <dd><p>获取每个分割面的法向量</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.types.surface.Surface.pointwise_become_partial">
-<span class="sig-name descname"><span class="pre">pointwise_become_partial</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">smobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#manimlib.mobject.types.surface.Surface" title="manimlib.mobject.types.surface.Surface"><span class="pre">Surface</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">np.ndarray</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.surface.Surface.pointwise_become_partial" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.types.surface.Surface.pointwise_become_partial">
+<code class="sig-name descname">pointwise_become_partial</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">smobject</span><span class="p">:</span> <span class="n">Surfac</span></em>, <em class="sig-param"><span class="n">a</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">b</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">axis</span><span class="p">:</span> <span class="n">np.ndarray | None</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.surface.Surface.pointwise_become_partial" title="永久链接至目标">¶</a></dt>
 <dd><p>生成一个曲面百分比从 a 到 b 的物件</p>
 </dd></dl>
 </dd></dl>
@@ -254,8 +254,8 @@
 <div class="section" id="parametricsurface">
 <h2>ParametricSurface<a class="headerlink" href="#parametricsurface" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.types.surface.ParametricSurface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.types.surface.</span></span><span class="sig-name descname"><span class="pre">ParametricSurface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">uv_func</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u_range</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(0,</span> <span class="pre">1)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v_range</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(0,</span> <span class="pre">1)</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.surface.ParametricSurface" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.types.surface.ParametricSurface">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.surface.</code><code class="sig-name descname">ParametricSurface</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">uv_func</span><span class="p">:</span> <span class="n">Callable<span class="p">[</span><span class="p">[</span>float<span class="p">, </span>float<span class="p">]</span><span class="p">, </span>Iterable<span class="p">[</span>float<span class="p">]</span><span class="p">]</span></span></em>, <em class="sig-param"><span class="n">u_range</span><span class="p">:</span> <span class="n">tuple<span class="p">[</span>float<span class="p">, </span>float<span class="p">]</span></span> <span class="o">=</span> <span class="default_value">(0, 1)</span></em>, <em class="sig-param"><span class="n">v_range</span><span class="p">:</span> <span class="n">tuple<span class="p">[</span>float<span class="p">, </span>float<span class="p">]</span></span> <span class="o">=</span> <span class="default_value">(0, 1)</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.surface.ParametricSurface" title="永久链接至目标">¶</a></dt>
 <dd><p>参数曲面</p>
 <p>传入 func 为自变量为参数 u,v ，返回值为一个点的函数</p>
 <ul class="simple">
@@ -267,8 +267,8 @@
 <div class="section" id="sgroup">
 <h2>SGroup<a class="headerlink" href="#sgroup" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.types.surface.SGroup">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.types.surface.</span></span><span class="sig-name descname"><span class="pre">SGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">parametric_surfaces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#manimlib.mobject.types.surface.Surface" title="manimlib.mobject.types.surface.Surface"><span class="pre">manimlib.mobject.types.surface.Surface</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.surface.SGroup" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.types.surface.SGroup">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.surface.</code><code class="sig-name descname">SGroup</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">parametric_surfaces</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#manimlib.mobject.types.surface.Surface" title="manimlib.mobject.types.surface.Surface">manimlib.mobject.types.surface.Surface</a></span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.surface.SGroup" title="永久链接至目标">¶</a></dt>
 <dd><p>参数曲面集合，相当于 <code class="docutils literal notranslate"><span class="pre">Group</span></code></p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">u_range</span></code> : u 范围</p></li>
@@ -285,8 +285,8 @@
 <div class="section" id="texturedsurface">
 <h2>TexturedSurface<a class="headerlink" href="#texturedsurface" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="manimlib.mobject.types.surface.TexturedSurface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">manimlib.mobject.types.surface.</span></span><span class="sig-name descname"><span class="pre">TexturedSurface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">uv_surface</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#manimlib.mobject.types.surface.Surface" title="manimlib.mobject.types.surface.Surface"><span class="pre">Surface</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">image_file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dark_image_file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.surface.TexturedSurface" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.types.surface.TexturedSurface">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.types.surface.</code><code class="sig-name descname">TexturedSurface</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">uv_surface</span><span class="p">:</span> <span class="n">Surface</span></em>, <em class="sig-param"><span class="n">image_file</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">dark_image_file</span><span class="p">:</span> <span class="n">str | None</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.surface.TexturedSurface" title="永久链接至目标">¶</a></dt>
 <dd><p>带有贴图的曲面</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">uv_surface</span></code> : 曲面（类型必须为 <code class="docutils literal notranslate"><span class="pre">Surface</span></code> ）</p></li>
@@ -298,13 +298,13 @@
 <li><p>相机默认有一个光源，坐标位置在 <code class="docutils literal notranslate"><span class="pre">[-10,</span> <span class="pre">10,</span> <span class="pre">10]</span></code>，光源能够直接照射到的部分贴图为受光面，不能直接照射到的为背光面</p></li>
 </ul>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.types.surface.TexturedSurface.pointwise_become_partial">
-<span class="sig-name descname"><span class="pre">pointwise_become_partial</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tsmobject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#manimlib.mobject.types.surface.TexturedSurface" title="manimlib.mobject.types.surface.TexturedSurface"><span class="pre">TexturedSurface</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.surface.TexturedSurface.pointwise_become_partial" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.types.surface.TexturedSurface.pointwise_become_partial">
+<code class="sig-name descname">pointwise_become_partial</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tsmobject</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#manimlib.mobject.types.surface.TexturedSurface" title="manimlib.mobject.types.surface.TexturedSurface">TexturedSurface</a></span></em>, <em class="sig-param"><span class="n">a</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">b</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">axis</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.surface.TexturedSurface.pointwise_become_partial" title="永久链接至目标">¶</a></dt>
 <dd><p>生成一个曲面百分比从 a 到 b 的物件</p>
 </dd></dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="manimlib.mobject.types.surface.TexturedSurface.set_opacity">
-<span class="sig-name descname"><span class="pre">set_opacity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">opacity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recurse</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.surface.TexturedSurface.set_opacity" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.types.surface.TexturedSurface.set_opacity">
+<code class="sig-name descname">set_opacity</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">opacity</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">recurse</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.types.surface.TexturedSurface.set_opacity" title="永久链接至目标">¶</a></dt>
 <dd><p>设置透明度</p>
 </dd></dl>
 </dd></dl>

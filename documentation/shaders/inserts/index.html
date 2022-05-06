@@ -3,15 +3,13 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../../genindex.html" /><link rel="search" title="搜索" href="../../../search.html" /><link rel="next" title="image 贴图" href="../image.html" /><link rel="prev" title="OpenGL 预备知识" href="../Preliminary_knowledge.html" />
 
-    <link rel="shortcut icon" href="../../../_static/mk.png"/><meta name="generator" content="sphinx-4.4.0, furo 2020.10.05.beta9"/>
+    <link rel="shortcut icon" href="../../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>Inserts - ManimGL  文档</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../../_static/default.css" />
-    <link rel="stylesheet" href="../../../_static/copybutton.css" />
+      <link rel="stylesheet" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../../_static/styles/default.css?b6c2616c2217c1e4e49491f9">
-    <link rel="stylesheet" href="../../../_static/pygments.css?b6c2616c2217c1e4e49491f9">
+    <link rel="stylesheet" href="../../../_static/styles/default.css?84ad4b1ef1902ac88beda92e">
+    <link rel="stylesheet" href="../../../_static/pygments.css?84ad4b1ef1902ac88beda92e">
     
 <style>
   :root {
@@ -20,16 +18,17 @@
   
   }
 </style>
-    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/documentation_options.js"></script><script src="../../../_static/jquery.js"></script>
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script><script src="../../../_static/jquery.js"></script>
       <script src="../../../_static/underscore.js"></script>
       
         <script src="../../../_static/doctools.js" defer></script>
       
+        <script src="../../../_static/language_data.js" defer></script>
+      
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
         <script src="../../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?b6c2616c2217c1e4e49491f9"></script></head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?84ad4b1ef1902ac88beda92e"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -90,7 +89,7 @@
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form><div class="sidebar-tree sidebar-scroll">
-  <p class="caption" role="heading"><span class="caption-text">入门教程</span></p>
+  <p class="caption"><span class="caption-text">入门教程</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installation.html">安装指南</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../getting_started/quickstart.html">快速入门</a></li>
@@ -99,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../getting_started/config.html">CONFIG 字典用法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../getting_started/structure.html">Manim 结构</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">进阶文档</span></p>
+<p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../constants.html">常量部分 constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../custom_config.html">默认配置 custom_config</a></li>
@@ -194,7 +193,7 @@
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">开发相关</span></p>
+<p class="caption"><span class="caption-text">开发相关</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../development/changelog.html">变更</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../development/contributing.html">贡献</a></li>
@@ -214,7 +213,8 @@
         </label>
         <div class="section" id="inserts">
 <h1>Inserts<a class="headerlink" href="#inserts" title="永久链接至标题">¶</a></h1>
-<p>在 C++ 中，OpenGL 着色器中没有类似 <code class="docutils literal notranslate"><span class="pre">#include</span></code> 的替代品。虽然有其他选择，但是很多不好，特别是如果目标是在着色器文件中共享代码，这种方式不是很好。
+<p>OpenGL 3.3 着色器中没有类似 C++ <code class="docutils literal notranslate"><span class="pre">#include</span></code> 的替代品， 4.6 版本有类似 <code class="docutils literal notranslate"><span class="pre">#include</span></code> 的方法 ，但这个版本并不支持全平台。
+虽然有其他选择，但是很多都不尽如人意，特别是如果目标是在着色器文件中共享代码，这种方式不是很好。
 因此，manim 目前的方式是使用 <code class="docutils literal notranslate"><span class="pre">#INSERT</span> <span class="pre">&lt;file_name&gt;</span></code> 的方式来将 <code class="docutils literal notranslate"><span class="pre">insert</span></code> 目录下的代码插入到对应的文件中。</p>
 <p>这个文件的函数包含了对 uniform 变量的引用，通过这种插入的方式将 uniform 变量引入到 glsl 代码上下文中。简言之，相当于在 glsl 中使用了 <code class="docutils literal notranslate"><span class="pre">#include</span></code>。</p>
 <div class="section" id="add-light">
@@ -225,16 +225,16 @@
 </ul>
 <hr class="docutils"/>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv49add_light4vec44vec34vec34vec3ff">
-<span id="_CPPv39add_light4vec44vec34vec34vec3ff"></span><span id="_CPPv29add_light4vec44vec34vec34vec3ff"></span><span id="add_light__vec4.vec3.vec3.vec3.float.float"></span><span class="n"><span class="pre">vec4</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">add_light</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec4</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">point</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">unit_normal</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">light_coords</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">gloss</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">shadow</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv49add_light4vec44vec34vec34vec3ff" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv49add_light4vec44vec34vec34vec3ff">
+<span id="_CPPv39add_light4vec44vec34vec34vec3ff"></span><span id="_CPPv29add_light4vec44vec34vec34vec3ff"></span><span id="add_light__vec4.vec3.vec3.vec3.float.float"></span>vec4 <code class="sig-name descname">add_light</code><span class="sig-paren">(</span>vec4 <em>color</em>, vec3 <em>point</em>, vec3 <em>unit_normal</em>, vec3 <em>light_coords</em>, float <em>gloss</em>, float <em>shadow</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv49add_light4vec44vec34vec34vec3ff" title="永久链接至目标">¶</a><br/></dt>
 <dd><ul class="simple">
 <li><p>可插入 color function</p></li>
 </ul>
 </dd></dl>
 <hr class="docutils"/>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv414finalize_color4vec44vec34vec34vec3ff">
-<span id="_CPPv314finalize_color4vec44vec34vec34vec3ff"></span><span id="_CPPv214finalize_color4vec44vec34vec34vec3ff"></span><span id="finalize_color__vec4.vec3.vec3.vec3.float.float"></span><span class="n"><span class="pre">vec4</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">finalize_color</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec4</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">point</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">unit_normal</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">light_coords</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">gloss</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">shadow</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414finalize_color4vec44vec34vec34vec3ff" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv414finalize_color4vec44vec34vec34vec3ff">
+<span id="_CPPv314finalize_color4vec44vec34vec34vec3ff"></span><span id="_CPPv214finalize_color4vec44vec34vec34vec3ff"></span><span id="finalize_color__vec4.vec3.vec3.vec3.float.float"></span>vec4 <code class="sig-name descname">finalize_color</code><span class="sig-paren">(</span>vec4 <em>color</em>, vec3 <em>point</em>, vec3 <em>unit_normal</em>, vec3 <em>light_coords</em>, float <em>gloss</em>, float <em>shadow</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414finalize_color4vec44vec34vec34vec3ff" title="永久链接至目标">¶</a><br/></dt>
 <dd></dd></dl>
 </div>
 <hr class="docutils"/>
@@ -285,20 +285,20 @@
 <h2>complex functions<a class="headerlink" href="#complex-functions" title="永久链接至标题">¶</a></h2>
 <p>复数运算</p>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv412complex_mult4vec24vec2">
-<span id="_CPPv312complex_mult4vec24vec2"></span><span id="_CPPv212complex_mult4vec24vec2"></span><span id="complex_mult__vec2.vec2"></span><span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">complex_mult</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">z</span></span>, <span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">w</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv412complex_mult4vec24vec2" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv412complex_mult4vec24vec2">
+<span id="_CPPv312complex_mult4vec24vec2"></span><span id="_CPPv212complex_mult4vec24vec2"></span><span id="complex_mult__vec2.vec2"></span>vec2 <code class="sig-name descname">complex_mult</code><span class="sig-paren">(</span>vec2 <em>z</em>, vec2 <em>w</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv412complex_mult4vec24vec2" title="永久链接至目标">¶</a><br/></dt>
 <dd><p>复数相乘</p>
 </dd></dl>
 <hr class="docutils"/>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv411complex_div4vec24vec2">
-<span id="_CPPv311complex_div4vec24vec2"></span><span id="_CPPv211complex_div4vec24vec2"></span><span id="complex_div__vec2.vec2"></span><span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">complex_div</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">z</span></span>, <span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">w</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv411complex_div4vec24vec2" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv411complex_div4vec24vec2">
+<span id="_CPPv311complex_div4vec24vec2"></span><span id="_CPPv211complex_div4vec24vec2"></span><span id="complex_div__vec2.vec2"></span>vec2 <code class="sig-name descname">complex_div</code><span class="sig-paren">(</span>vec2 <em>z</em>, vec2 <em>w</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv411complex_div4vec24vec2" title="永久链接至目标">¶</a><br/></dt>
 <dd><p>复数相除</p>
 </dd></dl>
 <hr class="docutils"/>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv411complex_pow4vec2i">
-<span id="_CPPv311complex_pow4vec2i"></span><span id="_CPPv211complex_pow4vec2i"></span><span id="complex_pow__vec2.i"></span><span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">complex_pow</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">z</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv411complex_pow4vec2i" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv411complex_pow4vec2i">
+<span id="_CPPv311complex_pow4vec2i"></span><span id="_CPPv211complex_pow4vec2i"></span><span id="complex_pow__vec2.i"></span>vec2 <code class="sig-name descname">complex_pow</code><span class="sig-paren">(</span>vec2 <em>z</em>, int <em>n</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv411complex_pow4vec2i" title="永久链接至目标">¶</a><br/></dt>
 <dd><p>复数幂次</p>
 </dd></dl>
 </div>
@@ -307,20 +307,20 @@
 <h2>finalize color<a class="headerlink" href="#finalize-color" title="永久链接至标题">¶</a></h2>
 <p>确定颜色</p>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv414float_to_colorfffAL9E_4vec3">
-<span id="_CPPv314float_to_colorfffAL9E_4vec3"></span><span id="_CPPv214float_to_colorfffA9_4vec3"></span><span id="float_to_color__float.float.float.vec3A"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">float_to_color</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">value</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_val</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_val</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">colormap_data</span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">9</span></span><span class="p"><span class="pre">]</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414float_to_colorfffAL9E_4vec3" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv414float_to_colorfffAL9E_4vec3">
+<span id="_CPPv314float_to_colorfffAL9E_4vec3"></span><span id="_CPPv214float_to_colorfffA9_4vec3"></span><span id="float_to_color__float.float.float.vec3A"></span>vec3 <code class="sig-name descname">float_to_color</code><span class="sig-paren">(</span>float <em>value</em>, float <em>min_val</em>, float <em>max_val</em>, vec3 <em>colormap_data</em>[9]<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414float_to_colorfffAL9E_4vec3" title="永久链接至目标">¶</a><br/></dt>
 <dd><p>将输入的浮点数值在给定范围 <code class="docutils literal notranslate"><span class="pre">[min_val,</span> <span class="pre">max_bal]</span></code> 内映射到 color_map 上，返回的是颜色的 rgb 值</p>
 </dd></dl>
 <hr class="docutils"/>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv49add_light4vec44vec34vec34vec34vec3fff">
-<span id="_CPPv39add_light4vec44vec34vec34vec34vec3fff"></span><span id="_CPPv29add_light4vec44vec34vec34vec34vec3fff"></span><span id="add_light__vec4.vec3.vec3.vec3.vec3.float.float.float"></span><span class="n"><span class="pre">vec4</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">add_light</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec4</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">point</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">unit_normal</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">light_coords</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cam_coords</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">reflectiveness</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">gloss</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">shadow</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv49add_light4vec44vec34vec34vec34vec3fff" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv49add_light4vec44vec34vec34vec34vec3fff">
+<span id="_CPPv39add_light4vec44vec34vec34vec34vec3fff"></span><span id="_CPPv29add_light4vec44vec34vec34vec34vec3fff"></span><span id="add_light__vec4.vec3.vec3.vec3.vec3.float.float.float"></span>vec4 <code class="sig-name descname">add_light</code><span class="sig-paren">(</span>vec4 <em>color</em>, vec3 <em>point</em>, vec3 <em>unit_normal</em>, vec3 <em>light_coords</em>, vec3 <em>cam_coords</em>, float <em>reflectiveness</em>, float <em>gloss</em>, float <em>shadow</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv49add_light4vec44vec34vec34vec34vec3fff" title="永久链接至目标">¶</a><br/></dt>
 <dd><p>给原本的片段添加光照</p>
 </dd></dl>
 <hr class="docutils"/>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv414finalize_color4vec44vec34vec34vec34vec3fff">
-<span id="_CPPv314finalize_color4vec44vec34vec34vec34vec3fff"></span><span id="_CPPv214finalize_color4vec44vec34vec34vec34vec3fff"></span><span id="finalize_color__vec4.vec3.vec3.vec3.vec3.float.float.float"></span><span class="n"><span class="pre">vec4</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">finalize_color</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec4</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">color</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">point</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">unit_normal</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">light_coords</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cam_coords</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">reflectiveness</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">gloss</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">shadow</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414finalize_color4vec44vec34vec34vec34vec3fff" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv414finalize_color4vec44vec34vec34vec34vec3fff">
+<span id="_CPPv314finalize_color4vec44vec34vec34vec34vec3fff"></span><span id="_CPPv214finalize_color4vec44vec34vec34vec34vec3fff"></span><span id="finalize_color__vec4.vec3.vec3.vec3.vec3.float.float.float"></span>vec4 <code class="sig-name descname">finalize_color</code><span class="sig-paren">(</span>vec4 <em>color</em>, vec3 <em>point</em>, vec3 <em>unit_normal</em>, vec3 <em>light_coords</em>, vec3 <em>cam_coords</em>, float <em>reflectiveness</em>, float <em>gloss</em>, float <em>shadow</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414finalize_color4vec44vec34vec34vec34vec3fff" title="永久链接至目标">¶</a><br/></dt>
 <dd><ul class="simple">
 <li><p>可插入 color function</p></li>
 </ul>
@@ -331,20 +331,20 @@
 <div class="section" id="get-gl-position">
 <h2>get gl Position<a class="headerlink" href="#get-gl-position" title="永久链接至标题">¶</a></h2>
 <dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv419DEFAULT_FRAME_SHAPE">
-<span id="_CPPv319DEFAULT_FRAME_SHAPE"></span><span id="_CPPv219DEFAULT_FRAME_SHAPE"></span><span id="DEFAULT_FRAME_SHAPE__vec2C"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DEFAULT_FRAME_SHAPE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">vec2</span></span><span class="p"><span class="pre">(</span></span><span class="m"><span class="pre">8.0</span></span><span class="w"> </span><span class="o"><span class="pre">*</span></span><span class="w"> </span><span class="m"><span class="pre">16.0</span></span><span class="w"> </span><span class="o"><span class="pre">/</span></span><span class="w"> </span><span class="m"><span class="pre">9.0</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">8.0</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv419DEFAULT_FRAME_SHAPE" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv419DEFAULT_FRAME_SHAPE">
+<span id="_CPPv319DEFAULT_FRAME_SHAPE"></span><span id="_CPPv219DEFAULT_FRAME_SHAPE"></span><span id="DEFAULT_FRAME_SHAPE__vec2C"></span><em class="property">const</em> vec2 <code class="sig-name descname">DEFAULT_FRAME_SHAPE</code> = vec2(8.0 * 16.0 / 9.0, 8.0)<a class="headerlink" href="#_CPPv419DEFAULT_FRAME_SHAPE" title="永久链接至目标">¶</a><br/></dt>
 <dd><p>默认帧大小</p>
 </dd></dl>
 <hr class="docutils"/>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv424perspective_scale_factorff">
-<span id="_CPPv324perspective_scale_factorff"></span><span id="_CPPv224perspective_scale_factorff"></span><span id="perspective_scale_factor__float.float"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">perspective_scale_factor</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">z</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">focal_distance</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv424perspective_scale_factorff" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv424perspective_scale_factorff">
+<span id="_CPPv324perspective_scale_factorff"></span><span id="_CPPv224perspective_scale_factorff"></span><span id="perspective_scale_factor__float.float"></span>float <code class="sig-name descname">perspective_scale_factor</code><span class="sig-paren">(</span>float <em>z</em>, float <em>focal_distance</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv424perspective_scale_factorff" title="永久链接至目标">¶</a><br/></dt>
 <dd><p>透视缩放倍率</p>
 </dd></dl>
 <hr class="docutils"/>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv415get_gl_Position4vec3">
-<span id="_CPPv315get_gl_Position4vec3"></span><span id="_CPPv215get_gl_Position4vec3"></span><span id="get_gl_Position__vec3"></span><span class="n"><span class="pre">vec4</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_gl_Position</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">point</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv415get_gl_Position4vec3" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv415get_gl_Position4vec3">
+<span id="_CPPv315get_gl_Position4vec3"></span><span id="_CPPv215get_gl_Position4vec3"></span><span id="get_gl_Position__vec3"></span>vec4 <code class="sig-name descname">get_gl_Position</code><span class="sig-paren">(</span>vec3 <em>point</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv415get_gl_Position4vec3" title="永久链接至目标">¶</a><br/></dt>
 <dd><p>将 manim 的坐标转换到 OpenGL 中的坐标</p>
 </dd></dl>
 </div>
@@ -352,8 +352,8 @@
 <div class="section" id="get-rotated-surface-unit-normal-vector">
 <h2>get rotated surface unit normal vector<a class="headerlink" href="#get-rotated-surface-unit-normal-vector" title="永久链接至标题">¶</a></h2>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv438get_rotated_surface_unit_normal_vector4vec34vec34vec3">
-<span id="_CPPv338get_rotated_surface_unit_normal_vector4vec34vec34vec3"></span><span id="_CPPv238get_rotated_surface_unit_normal_vector4vec34vec34vec3"></span><span id="get_rotated_surface_unit_normal_vector__vec3.vec3.vec3"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_rotated_surface_unit_normal_vector</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">point</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">du_point</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dv_point</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv438get_rotated_surface_unit_normal_vector4vec34vec34vec3" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv438get_rotated_surface_unit_normal_vector4vec34vec34vec3">
+<span id="_CPPv338get_rotated_surface_unit_normal_vector4vec34vec34vec3"></span><span id="_CPPv238get_rotated_surface_unit_normal_vector4vec34vec34vec3"></span><span id="get_rotated_surface_unit_normal_vector__vec3.vec3.vec3"></span>vec3 <code class="sig-name descname">get_rotated_surface_unit_normal_vector</code><span class="sig-paren">(</span>vec3 <em>point</em>, vec3 <em>du_point</em>, vec3 <em>dv_point</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv438get_rotated_surface_unit_normal_vector4vec34vec34vec3" title="永久链接至目标">¶</a><br/></dt>
 <dd><p>获取旋转的曲面单位法向量</p>
 </dd></dl>
 </div>
@@ -361,8 +361,8 @@
 <div class="section" id="get-unit-normal">
 <h2>get unit normal<a class="headerlink" href="#get-unit-normal" title="永久链接至标题">¶</a></h2>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv415get_unit_normalAL3E_4vec3">
-<span id="_CPPv315get_unit_normalAL3E_4vec3"></span><span id="_CPPv215get_unit_normalA3_4vec3"></span><span id="get_unit_normal__vec3A"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_unit_normal</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">points</span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">3</span></span><span class="p"><span class="pre">]</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv415get_unit_normalAL3E_4vec3" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv415get_unit_normalAL3E_4vec3">
+<span id="_CPPv315get_unit_normalAL3E_4vec3"></span><span id="_CPPv215get_unit_normalA3_4vec3"></span><span id="get_unit_normal__vec3A"></span>vec3 <code class="sig-name descname">get_unit_normal</code><span class="sig-paren">(</span>vec3 <em>points</em>[3]<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv415get_unit_normalAL3E_4vec3" title="永久链接至目标">¶</a><br/></dt>
 <dd><p>根据平面上的三个点，获取该平面的单位法向量</p>
 </dd></dl>
 </div>
@@ -370,14 +370,14 @@
 <div class="section" id="position-point-into-frame">
 <h2>position point into frame<a class="headerlink" href="#position-point-into-frame" title="永久链接至标题">¶</a></h2>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv423rotate_point_into_frame4vec3">
-<span id="_CPPv323rotate_point_into_frame4vec3"></span><span id="_CPPv223rotate_point_into_frame4vec3"></span><span id="rotate_point_into_frame__vec3"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rotate_point_into_frame</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">point</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv423rotate_point_into_frame4vec3" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv423rotate_point_into_frame4vec3">
+<span id="_CPPv323rotate_point_into_frame4vec3"></span><span id="_CPPv223rotate_point_into_frame4vec3"></span><span id="rotate_point_into_frame__vec3"></span>vec3 <code class="sig-name descname">rotate_point_into_frame</code><span class="sig-paren">(</span>vec3 <em>point</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv423rotate_point_into_frame4vec3" title="永久链接至目标">¶</a><br/></dt>
 <dd><p>将坐标映射到相机旋转下的点坐标</p>
 </dd></dl>
 <hr class="docutils"/>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv425position_point_into_frame4vec3">
-<span id="_CPPv325position_point_into_frame4vec3"></span><span id="_CPPv225position_point_into_frame4vec3"></span><span id="position_point_into_frame__vec3"></span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">position_point_into_frame</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">point</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv425position_point_into_frame4vec3" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv425position_point_into_frame4vec3">
+<span id="_CPPv325position_point_into_frame4vec3"></span><span id="_CPPv225position_point_into_frame4vec3"></span><span id="position_point_into_frame__vec3"></span>vec3 <code class="sig-name descname">position_point_into_frame</code><span class="sig-paren">(</span>vec3 <em>point</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv425position_point_into_frame4vec3" title="永久链接至目标">¶</a><br/></dt>
 <dd><p>调用了上面的方法，将点放到帧中</p>
 </dd></dl>
 </div>
@@ -385,21 +385,21 @@
 <div class="section" id="quadratic-bezier-distance">
 <h2>quadratic bezier distance<a class="headerlink" href="#quadratic-bezier-distance" title="永久链接至标题">¶</a></h2>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv46bezierf4vec2">
-<span id="_CPPv36bezierf4vec2"></span><span id="_CPPv26bezierf4vec2"></span><span id="bezier__float.vec2"></span><span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bezier</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span>, <span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">b2</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv46bezierf4vec2" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv46bezierf4vec2">
+<span id="_CPPv36bezierf4vec2"></span><span id="_CPPv26bezierf4vec2"></span><span id="bezier__float.vec2"></span>vec2 <code class="sig-name descname">bezier</code><span class="sig-paren">(</span>float <em>t</em>, vec2 <em>b2</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv46bezierf4vec2" title="永久链接至目标">¶</a><br/></dt>
 <dd><p>假设 <code class="docutils literal notranslate"><span class="pre">b0</span> <span class="pre">=</span> <span class="pre">(0,</span> <span class="pre">0)</span></code> , <code class="docutils literal notranslate"><span class="pre">b1</span> <span class="pre">=</span> <span class="pre">(1,</span> <span class="pre">0)</span></code> , <code class="docutils literal notranslate"><span class="pre">b2</span> <span class="pre">=</span> <span class="pre">(x,</span> <span class="pre">y)</span></code> ，返回 b0, b1, b2 之间的二阶贝塞尔插值。
 即有 <span class="math notranslate nohighlight">\(\begin{bmatrix} 2t(1-t)+t^2 x \\ t^2 y \end{bmatrix}\)</span></p>
 </dd></dl>
 <hr class="docutils"/>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv49cube_rootf">
-<span id="_CPPv39cube_rootf"></span><span id="_CPPv29cube_rootf"></span><span id="cube_root__float"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cube_root</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv49cube_rootf" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv49cube_rootf">
+<span id="_CPPv39cube_rootf"></span><span id="_CPPv29cube_rootf"></span><span id="cube_root__float"></span>float <code class="sig-name descname">cube_root</code><span class="sig-paren">(</span>float <em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv49cube_rootf" title="永久链接至目标">¶</a><br/></dt>
 <dd><p>计算立方根</p>
 </dd></dl>
 <hr class="docutils"/>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv411cubic_solveffffAL3E_f">
-<span id="_CPPv311cubic_solveffffAL3E_f"></span><span id="_CPPv211cubic_solveffffA3_f"></span><span id="cubic_solve__float.float.float.float.floatA"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cubic_solve</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">a</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">b</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">c</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">d</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">roots</span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">3</span></span><span class="p"><span class="pre">]</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv411cubic_solveffffAL3E_f" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv411cubic_solveffffAL3E_f">
+<span id="_CPPv311cubic_solveffffAL3E_f"></span><span id="_CPPv211cubic_solveffffA3_f"></span><span id="cubic_solve__float.float.float.float.floatA"></span>int <code class="sig-name descname">cubic_solve</code><span class="sig-paren">(</span>float <em>a</em>, float <em>b</em>, float <em>c</em>, float <em>d</em>, float <em>roots</em>[3]<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv411cubic_solveffffAL3E_f" title="永久链接至目标">¶</a><br/></dt>
 <dd><ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">roots[3]</span></code> 为输出参数</p></li>
 </ul>
@@ -407,20 +407,20 @@
 </dd></dl>
 <hr class="docutils"/>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv412dist_to_line4vec24vec2">
-<span id="_CPPv312dist_to_line4vec24vec2"></span><span id="_CPPv212dist_to_line4vec24vec2"></span><span id="dist_to_line__vec2.vec2"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dist_to_line</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">p</span></span>, <span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">b2</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv412dist_to_line4vec24vec2" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv412dist_to_line4vec24vec2">
+<span id="_CPPv312dist_to_line4vec24vec2"></span><span id="_CPPv212dist_to_line4vec24vec2"></span><span id="dist_to_line__vec2.vec2"></span>float <code class="sig-name descname">dist_to_line</code><span class="sig-paren">(</span>vec2 <em>p</em>, vec2 <em>b2</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv412dist_to_line4vec24vec2" title="永久链接至目标">¶</a><br/></dt>
 <dd><p>点到线段的距离</p>
 </dd></dl>
 <hr class="docutils"/>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv422dist_to_point_on_curve4vec2f4vec2">
-<span id="_CPPv322dist_to_point_on_curve4vec2f4vec2"></span><span id="_CPPv222dist_to_point_on_curve4vec2f4vec2"></span><span id="dist_to_point_on_curve__vec2.float.vec2"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dist_to_point_on_curve</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">p</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span>, <span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">b2</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv422dist_to_point_on_curve4vec2f4vec2" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv422dist_to_point_on_curve4vec2f4vec2">
+<span id="_CPPv322dist_to_point_on_curve4vec2f4vec2"></span><span id="_CPPv222dist_to_point_on_curve4vec2f4vec2"></span><span id="dist_to_point_on_curve__vec2.float.vec2"></span>float <code class="sig-name descname">dist_to_point_on_curve</code><span class="sig-paren">(</span>vec2 <em>p</em>, float <em>t</em>, vec2 <em>b2</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv422dist_to_point_on_curve4vec2f4vec2" title="永久链接至目标">¶</a><br/></dt>
 <dd><p>点到贝塞尔曲线上某一点的距离</p>
 </dd></dl>
 <hr class="docutils"/>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv417min_dist_to_curve4vec24vec2f">
-<span id="_CPPv317min_dist_to_curve4vec24vec2f"></span><span id="_CPPv217min_dist_to_curve4vec24vec2f"></span><span id="min_dist_to_curve__vec2.vec2.float"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">min_dist_to_curve</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">p</span></span>, <span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">b2</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">degree</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417min_dist_to_curve4vec24vec2f" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv417min_dist_to_curve4vec24vec2f">
+<span id="_CPPv317min_dist_to_curve4vec24vec2f"></span><span id="_CPPv217min_dist_to_curve4vec24vec2f"></span><span id="min_dist_to_curve__vec2.vec2.float"></span>float <code class="sig-name descname">min_dist_to_curve</code><span class="sig-paren">(</span>vec2 <em>p</em>, vec2 <em>b2</em>, float <em>degree</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv417min_dist_to_curve4vec24vec2f" title="永久链接至目标">¶</a><br/></dt>
 <dd><p>点到贝塞尔曲线上的最小距离</p>
 </dd></dl>
 </div>
@@ -428,26 +428,26 @@
 <div class="section" id="quadratic-bezier-geometry-functions">
 <h2>quadratic bezier geometry functions<a class="headerlink" href="#quadratic-bezier-geometry-functions" title="永久链接至标题">¶</a></h2>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv47cross2d4vec24vec2">
-<span id="_CPPv37cross2d4vec24vec2"></span><span id="_CPPv27cross2d4vec24vec2"></span><span id="cross2d__vec2.vec2"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cross2d</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">v</span></span>, <span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">w</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv47cross2d4vec24vec2" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv47cross2d4vec24vec2">
+<span id="_CPPv37cross2d4vec24vec2"></span><span id="_CPPv27cross2d4vec24vec2"></span><span id="cross2d__vec2.vec2"></span>float <code class="sig-name descname">cross2d</code><span class="sig-paren">(</span>vec2 <em>v</em>, vec2 <em>w</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv47cross2d4vec24vec2" title="永久链接至目标">¶</a><br/></dt>
 <dd><p>二维向量点乘</p>
 </dd></dl>
 <hr class="docutils"/>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv412get_xy_to_uv4vec24vec2">
-<span id="_CPPv312get_xy_to_uv4vec24vec2"></span><span id="_CPPv212get_xy_to_uv4vec24vec2"></span><span id="get_xy_to_uv__vec2.vec2"></span><span class="n"><span class="pre">mat3</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_xy_to_uv</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">b0</span></span>, <span class="n"><span class="pre">vec2</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">b1</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv412get_xy_to_uv4vec24vec2" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv412get_xy_to_uv4vec24vec2">
+<span id="_CPPv312get_xy_to_uv4vec24vec2"></span><span id="_CPPv212get_xy_to_uv4vec24vec2"></span><span id="get_xy_to_uv__vec2.vec2"></span>mat3 <code class="sig-name descname">get_xy_to_uv</code><span class="sig-paren">(</span>vec2 <em>b0</em>, vec2 <em>b1</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv412get_xy_to_uv4vec24vec2" title="永久链接至目标">¶</a><br/></dt>
 <dd><p>从 manim 坐标系变换映射到 uv 变换</p>
 </dd></dl>
 <hr class="docutils"/>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv413get_xyz_to_uv4vec34vec34vec3">
-<span id="_CPPv313get_xyz_to_uv4vec34vec34vec3"></span><span id="_CPPv213get_xyz_to_uv4vec34vec34vec3"></span><span id="get_xyz_to_uv__vec3.vec3.vec3"></span><span class="n"><span class="pre">mat4</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_xyz_to_uv</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">b0</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">b1</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">unit_normal</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413get_xyz_to_uv4vec34vec34vec3" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv413get_xyz_to_uv4vec34vec34vec3">
+<span id="_CPPv313get_xyz_to_uv4vec34vec34vec3"></span><span id="_CPPv213get_xyz_to_uv4vec34vec34vec3"></span><span id="get_xyz_to_uv__vec3.vec3.vec3"></span>mat4 <code class="sig-name descname">get_xyz_to_uv</code><span class="sig-paren">(</span>vec3 <em>b0</em>, vec3 <em>b1</em>, vec3 <em>unit_normal</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413get_xyz_to_uv4vec34vec34vec3" title="永久链接至目标">¶</a><br/></dt>
 <dd><p>将正交矩阵转换为定义好的 uv 空间使 b0 变成 [0,0], b1 变成 [1,0]</p>
 </dd></dl>
 <hr class="docutils"/>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv426get_reduced_control_pointsAL3E_4vec3AL3E_4vec3">
-<span id="_CPPv326get_reduced_control_pointsAL3E_4vec3AL3E_4vec3"></span><span id="_CPPv226get_reduced_control_pointsA3_4vec3A3_4vec3"></span><span id="get_reduced_control_points__vec3A.vec3A"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_reduced_control_points</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">points</span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">3</span></span><span class="p"><span class="pre">]</span></span>, <span class="n"><span class="pre">vec3</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">new_points</span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">3</span></span><span class="p"><span class="pre">]</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv426get_reduced_control_pointsAL3E_4vec3AL3E_4vec3" title="永久链接至目标">¶</a><br/></dt>
+<dt id="_CPPv426get_reduced_control_pointsAL3E_4vec3AL3E_4vec3">
+<span id="_CPPv326get_reduced_control_pointsAL3E_4vec3AL3E_4vec3"></span><span id="_CPPv226get_reduced_control_pointsA3_4vec3A3_4vec3"></span><span id="get_reduced_control_points__vec3A.vec3A"></span>float <code class="sig-name descname">get_reduced_control_points</code><span class="sig-paren">(</span>vec3 <em>points</em>[3], vec3 <em>new_points</em>[3]<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv426get_reduced_control_pointsAL3E_4vec3AL3E_4vec3" title="永久链接至目标">¶</a><br/></dt>
 <dd><ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">points[3]</span></code> 为输入参数</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">new_points[3]</span></code> 为输出参数</p></li>
