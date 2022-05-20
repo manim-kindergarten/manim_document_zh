@@ -7,4 +7,4 @@ rate_func 是以 [0,1] 为定义域的函数，可看作定义物体变换/运�
 
 这个文件中的 rate_functions 图像如下
 
-.. image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/rate_functions.png
+.. image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/rate_functions.png

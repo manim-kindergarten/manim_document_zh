@@ -6,10 +6,10 @@
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>BooleanOps - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?4b28edc73acad00d1c073ba1">
-    <link rel="stylesheet" href="../../_static/pygments.css?4b28edc73acad00d1c073ba1">
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
+    <link rel="stylesheet" href="../../_static/styles/default.css?c4a6654534071cb8e4b8b3eb">
+    <link rel="stylesheet" href="../../_static/pygments.css?c4a6654534071cb8e4b8b3eb">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?4b28edc73acad00d1c073ba1"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?c4a6654534071cb8e4b8b3eb"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -134,6 +134,7 @@
 <li class="toctree-l3"><a class="reference internal" href="svg/brace.html">Brace</a></li>
 <li class="toctree-l3"><a class="reference internal" href="svg/drawings.html">Drawings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="svg/mtex_mobject.html">MTex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="svg/string_mobject.html">StringMobject</a></li>
 <li class="toctree-l3"><a class="reference internal" href="svg/svg_mobject.html">SVGMobject</a></li>
 <li class="toctree-l3"><a class="reference internal" href="svg/tex_mobject.html">Tex</a></li>
 <li class="toctree-l3"><a class="reference internal" href="svg/text_mobject.html">Text</a></li>
@@ -244,7 +245,7 @@
 </ul>
 <p>其中，opacity, width 等属性均可以为一个列表，在渲染时会按照列表对其进行补间</p>
 </dd></dl>
-<div class="manim-example"><img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/UnionExample.png" class="align-center" id="unionexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/UnionExample.png"/>
+<div class="manim-example"><img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/boolean_ops/UnionExample.png" class="align-center" id="unionexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/boolean_ops/UnionExample.png"/>
 <h5 class="example-header">UnionExample<a class="headerlink" href="#unionexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">UnionExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">cir1</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">LEFT</span> <span class="o">*</span> <span class="mf">1.5</span><span class="p">)</span>
@@ -282,7 +283,7 @@
 </ul>
 <p>其中，opacity, width 等属性均可以为一个列表，在渲染时会按照列表对其进行补间</p>
 </dd></dl>
-<div class="manim-example"><img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/DifferenceExample.png" class="align-center" id="differenceexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/DifferenceExample.png"/>
+<div class="manim-example"><img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/boolean_ops/DifferenceExample.png" class="align-center" id="differenceexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/boolean_ops/DifferenceExample.png"/>
 <h5 class="example-header">DifferenceExample<a class="headerlink" href="#differenceexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">DifferenceExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">cir1</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">LEFT</span> <span class="o">*</span> <span class="mf">1.5</span><span class="p">)</span>
@@ -320,7 +321,7 @@
 </ul>
 <p>其中，opacity, width 等属性均可以为一个列表，在渲染时会按照列表对其进行补间</p>
 </dd></dl>
-<div class="manim-example"><img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/IntersectionExample.png" class="align-center" id="intersectionexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/IntersectionExample.png"/>
+<div class="manim-example"><img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/boolean_ops/IntersectionExample.png" class="align-center" id="intersectionexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/boolean_ops/IntersectionExample.png"/>
 <h5 class="example-header">IntersectionExample<a class="headerlink" href="#intersectionexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">IntersectionExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">cir1</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">LEFT</span> <span class="o">*</span> <span class="mf">1.5</span><span class="p">)</span>
@@ -358,7 +359,7 @@
 </ul>
 <p>其中，opacity, width 等属性均可以为一个列表，在渲染时会按照列表对其进行补间</p>
 </dd></dl>
-<div class="manim-example"><img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/ExclusionExample.png" class="align-center" id="exclusionexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/ExclusionExample.png"/>
+<div class="manim-example"><img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/boolean_ops/ExclusionExample.png" class="align-center" id="exclusionexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/boolean_ops/ExclusionExample.png"/>
 <h5 class="example-header">ExclusionExample<a class="headerlink" href="#exclusionexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ExclusionExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">cirs</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span>

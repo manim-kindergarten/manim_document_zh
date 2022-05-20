@@ -72,7 +72,7 @@ out         ``vec2``         ``uv_b2``                      uv 坐标下的顶�
     - ``points`` 为输入参数
     - ``flat_point`` 为输出参数
 
-    似乎是透视投影
+    透视投影变换
 
 .. cpp:function:: float angle_between_vectors(vec2 v1, vec2 v2)
 
@@ -96,20 +96,22 @@ out         ``vec2``         ``uv_b2``                      uv 坐标下的顶�
 
     寻找贝塞尔曲线边界的角，可以作为三角扇形发出（直接翻译真的看不懂）
 
-    - 当图形的边为直线时，生成的角落是一个四边形
-    - 当图形的边为曲线时，生成的角落为五边形
+    - 当图形的边为直线时，生成的图元是一个四边形
+    - 当图形的边为曲线时，生成的图元为五边形
 
 .. cpp:function:: void set_adjascent_info(vec2 c0, vec2 tangent, int degree, vec2 adj[3], float bevel, float angle)
 
     - ``bevel`` 和 ``angle`` 为输出参数
 
+    计算邻边角度，并判断是否需要添加斜边来弥补缺失的接合处
+
 .. cpp:function:: void find_joint_info(vec2 controls[3], vec2 prev[3], vec2 next[3], int degree)
+
+    根据前驱曲线和后继曲线来计算出合适的接合处
 
 
 着色器功能
 ---------------------
-
-
 
 
 Fragment shader
@@ -168,7 +170,7 @@ out         ``vec4``        ``frag_color``              片段颜色
     我们想要的效果是，曲线从首部到尾部的宽度都是均匀的，而只使用三角形来覆盖它，就会导致首部和尾部有一小块没有被覆盖到。
     因此，我们还需要对这条底边进行扩展，变成一个五边形，这样就能完全覆盖这条曲线了。
 
-    .. image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/curve_stroke_primitive.png
+    .. image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/curve_stroke_primitive.png
 
     另外，还有一些处理逻辑，是根据上一段曲线和下一段曲线来推测曲线之间的转接点图元，这部分也被包含在了图元处理中。
     由于它的处理逻辑较为复杂，在此不过多阐述（绝对是因为笔者看不懂）
@@ -184,7 +186,7 @@ out         ``vec4``        ``frag_color``              片段颜色
 
 此处使用的依然是 sdf 符号距离函数，计算出在线宽范围内的片段，将片段之外的部分透明度都设置为 0，也就完成了着色的操作。
 
-.. image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/curve_stroke_shader.png
+.. image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/curve_stroke_shader.png
 
 除此以外，就是一些曲线转接处的细节，此处不过多阐述。
 
@@ -192,4 +194,4 @@ out         ``vec4``        ``frag_color``              片段颜色
 流程图
 ***********************
 
-.. image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/quadratic_bezier_stroke_shader.svg
+.. image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/quadratic_bezier_stroke_shader.svg

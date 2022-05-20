@@ -1,7 +1,7 @@
 SVGMobject
-==================
+==========
 
-:class:`~manimlib.mobject.svg.svg_mobject.SVGMobject` 用于解析输入的SVG文件，并生成一个
+:class:`~manimlib.mobject.svg.svg_mobject.SVGMobject` 通过第三方库 ``svgelements`` 解析输入的 SVG 文件，并生成一个
 :class:`~manimlib.mobject.types.vectorized_mobject.VMobject`。由于其方法都比较内部，
 主要是根据SVG的元素来生成点集，这里就不列出文档字符串了。
 
@@ -15,11 +15,10 @@ SVGMobject
 **关于传入SVG**：
 
 - 使用相对于运行位置的相对路径，或使用绝对路径，或把图片放在 ``assets/svg_images`` 文件夹中
-- 和绘图相关的元素目前只支持 ``path,rect,circle,ellipse,polygon,polyline``，不支持 ``text,line`` 等其他元素
+- 和绘图相关的元素目前只支持 ``path, line, rect, circle, ellipse, polygon, polyline``，不支持 ``text`` 等其他元素
 - 自己制作svg，推荐使用 ``Adobe Illustrator`` ，并直接选择存储为（不选导出）
 
 
 VMobjectFromSVGPath
-*************************
+*******************
 .. autoclass:: manimlib.mobject.svg.svg_mobject.VMobjectFromSVGPath
-

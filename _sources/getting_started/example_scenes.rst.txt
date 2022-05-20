@@ -8,7 +8,7 @@
 -----------------------------------
 
 .. manim-example:: InteractiveDevelopment
-    :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/InteractiveDevelopment.mp4
+    :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/InteractiveDevelopment.mp4
 
     from manimlib import *
 
@@ -57,7 +57,7 @@
 ----------------------------
 
 .. manim-example:: AnimatingMethods
-    :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/AnimatingMethods.mp4
+    :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/AnimatingMethods.mp4
 
     class AnimatingMethods(Scene):
         def construct(self):
@@ -109,7 +109,7 @@
 ----------------------
 
 .. manim-example:: TextExample
-    :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/TextExample.mp4
+    :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/TextExample.mp4
 
     class TextExample(Scene):
         def construct(self):
@@ -166,7 +166,7 @@
 -----------------------------
 
 .. manim-example:: TexTransformExample
-   :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/TexTransformExample.mp4
+   :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/TexTransformExample.mp4
 
     class TexTransformExample(Scene):
         def construct(self):
@@ -270,7 +270,7 @@
 --------------------------
 
 .. manim-example:: UpdatersExample
-   :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/UpdatersExample.mp4
+   :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/UpdatersExample.mp4
 
     class UpdatersExample(Scene):
         def construct(self):
@@ -334,7 +334,7 @@
 ----------------------------------
 
 .. manim-example:: CoordinateSystemExample
-    :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/CoordinateSystemExample.mp4
+    :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/CoordinateSystemExample.mp4
 
     class CoordinateSystemExample(Scene):
         def construct(self):
@@ -406,7 +406,7 @@
 ---------------------
 
 .. manim-example:: GraphExample
-    :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/GraphExample.mp4
+    :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/GraphExample.mp4
 
     class GraphExample(Scene):
         def construct(self):
@@ -488,7 +488,7 @@
 ------------------------
 
 .. manim-example:: SurfaceExample
-   :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/SurfaceExample.mp4
+   :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/SurfaceExample.mp4
 
     class SurfaceExample(Scene):
         CONFIG = {
@@ -586,7 +586,7 @@
 -----------------------------
 
 .. manim-example:: OpeningManimExample
-   :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/OpeningManimExample.mp4
+   :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/OpeningManimExample.mp4
 
     class OpeningManimExample(Scene):
         def construct(self):

@@ -6,10 +6,10 @@
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>Update - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?1581e9068c18b57df8213a50">
-    <link rel="stylesheet" href="../../_static/pygments.css?1581e9068c18b57df8213a50">
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
+    <link rel="stylesheet" href="../../_static/styles/default.css?3626ecb148cb70d4339471c3">
+    <link rel="stylesheet" href="../../_static/pygments.css?3626ecb148cb70d4339471c3">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?1581e9068c18b57df8213a50"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?3626ecb148cb70d4339471c3"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -134,6 +134,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/brace.html">Brace</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/drawings.html">Drawings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/mtex_mobject.html">MTex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/string_mobject.html">StringMobject</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/svg_mobject.html">SVGMobject</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/tex_mobject.html">Tex</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/text_mobject.html">Text</a></li>
@@ -222,7 +223,7 @@
 to be used when the state of one mobject is dependent
 on another simultaneously animated mobject</p>
 </dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="updatefromfuncexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/UpdateFromFuncExample.mp4"></video><h5 class="example-header">UpdateFromFuncExample<a class="headerlink" href="#updatefromfuncexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">UpdateFromFuncExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="updatefromfuncexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/UpdateFromFuncExample.mp4"></video><h5 class="example-header">UpdateFromFuncExample<a class="headerlink" href="#updatefromfuncexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">UpdateFromFuncExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">square</span> <span class="o">=</span> <span class="n">Square</span><span class="p">()</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
         <span class="n">mobject</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Text"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">square</span><span class="p">,</span> <span class="n">RIGHT</span><span class="p">)</span>
@@ -245,7 +246,7 @@ on another simultaneously animated mobject</p>
 <dt id="manimlib.animation.update.UpdateFromAlphaFunc">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.update.</code><code class="sig-name descname">UpdateFromAlphaFunc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="n">update_function</span><span class="p">:</span> <span class="n">Callable<span class="p">[</span><span class="p">[</span>Mobject<span class="p">]</span><span class="p">]</span></span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.update.UpdateFromAlphaFunc" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="updatefromalphafuncexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/UpdateFromAlphaFuncExample.mp4"></video><h5 class="example-header">UpdateFromAlphaFuncExample<a class="headerlink" href="#updatefromalphafuncexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">UpdateFromAlphaFuncExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="updatefromalphafuncexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/UpdateFromAlphaFuncExample.mp4"></video><h5 class="example-header">UpdateFromAlphaFuncExample<a class="headerlink" href="#updatefromalphafuncexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">UpdateFromAlphaFuncExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">circle</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
         <span class="n">mobject</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Text"</span><span class="p">)</span>
@@ -274,7 +275,7 @@ on another simultaneously animated mobject</p>
 <dt id="manimlib.animation.update.MaintainPositionRelativeTo">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.update.</code><code class="sig-name descname">MaintainPositionRelativeTo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="n">tracked_mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.update.MaintainPositionRelativeTo" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="maintainpositionrelativetoexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/MaintainPositionRelativeToExample.mp4"></video><h5 class="example-header">MaintainPositionRelativeToExample<a class="headerlink" href="#maintainpositionrelativetoexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MaintainPositionRelativeToExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="maintainpositionrelativetoexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/MaintainPositionRelativeToExample.mp4"></video><h5 class="example-header">MaintainPositionRelativeToExample<a class="headerlink" href="#maintainpositionrelativetoexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MaintainPositionRelativeToExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">square</span> <span class="o">=</span> <span class="n">Square</span><span class="p">()</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
         <span class="n">mobject</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Text"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>

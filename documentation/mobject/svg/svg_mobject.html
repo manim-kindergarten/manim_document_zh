@@ -1,15 +1,15 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../../genindex.html" /><link rel="search" title="搜索" href="../../../search.html" /><link rel="next" title="Tex" href="tex_mobject.html" /><link rel="prev" title="MTex" href="mtex_mobject.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../../genindex.html" /><link rel="search" title="搜索" href="../../../search.html" /><link rel="next" title="Tex" href="tex_mobject.html" /><link rel="prev" title="StringMobject" href="string_mobject.html" />
 
     <link rel="shortcut icon" href="../../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>SVGMobject - ManimGL  文档</title>
       <link rel="stylesheet" href="../../../_static/copybutton.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../../_static/styles/default.css?8ffdd466848315643c76dfe9">
-    <link rel="stylesheet" href="../../../_static/pygments.css?8ffdd466848315643c76dfe9">
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
+    <link rel="stylesheet" href="../../../_static/styles/default.css?70fbfc26ae36196e12ecf535">
+    <link rel="stylesheet" href="../../../_static/pygments.css?70fbfc26ae36196e12ecf535">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
         <script src="../../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?8ffdd466848315643c76dfe9"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?70fbfc26ae36196e12ecf535"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -134,6 +134,7 @@
 <li class="toctree-l3"><a class="reference internal" href="brace.html">Brace</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drawings.html">Drawings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mtex_mobject.html">MTex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="string_mobject.html">StringMobject</a></li>
 <li class="toctree-l3 current current-page"><a class="current reference internal" href="#">SVGMobject</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tex_mobject.html">Tex</a></li>
 <li class="toctree-l3"><a class="reference internal" href="text_mobject.html">Text</a></li>
@@ -213,7 +214,7 @@
         </label>
         <div class="section" id="svgmobject">
 <h1>SVGMobject<a class="headerlink" href="#svgmobject" title="永久链接至标题">¶</a></h1>
-<p><a class="reference internal" href="#manimlib.mobject.svg.svg_mobject.SVGMobject" title="manimlib.mobject.svg.svg_mobject.SVGMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">SVGMobject</span></code></a> 用于解析输入的SVG文件，并生成一个
+<p><a class="reference internal" href="#manimlib.mobject.svg.svg_mobject.SVGMobject" title="manimlib.mobject.svg.svg_mobject.SVGMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">SVGMobject</span></code></a> 通过第三方库 <code class="docutils literal notranslate"><span class="pre">svgelements</span></code> 解析输入的 SVG 文件，并生成一个
 <a class="reference internal" href="../types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VMobject" title="manimlib.mobject.types.vectorized_mobject.VMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">VMobject</span></code></a>。由于其方法都比较内部，
 主要是根据SVG的元素来生成点集，这里就不列出文档字符串了。</p>
 <p>MK做了一个关于常用 <a class="reference internal" href="#manimlib.mobject.svg.svg_mobject.SVGMobject" title="manimlib.mobject.svg.svg_mobject.SVGMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">SVGMobject</span></code></a> 的的视频：
@@ -247,7 +248,7 @@
 <p><strong>关于传入SVG</strong>：</p>
 <ul class="simple">
 <li><p>使用相对于运行位置的相对路径，或使用绝对路径，或把图片放在 <code class="docutils literal notranslate"><span class="pre">assets/svg_images</span></code> 文件夹中</p></li>
-<li><p>和绘图相关的元素目前只支持 <code class="docutils literal notranslate"><span class="pre">path,rect,circle,ellipse,polygon,polyline</span></code>，不支持 <code class="docutils literal notranslate"><span class="pre">text,line</span></code> 等其他元素</p></li>
+<li><p>和绘图相关的元素目前只支持 <code class="docutils literal notranslate"><span class="pre">path,</span> <span class="pre">line,</span> <span class="pre">rect,</span> <span class="pre">circle,</span> <span class="pre">ellipse,</span> <span class="pre">polygon,</span> <span class="pre">polyline</span></code>，不支持 <code class="docutils literal notranslate"><span class="pre">text</span></code> 等其他元素</p></li>
 <li><p>自己制作svg，推荐使用 <code class="docutils literal notranslate"><span class="pre">Adobe</span> <span class="pre">Illustrator</span></code> ，并直接选择存储为（不选导出）</p></li>
 </ul>
 </div>
@@ -293,14 +294,14 @@
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="mtex_mobject.html">
+          <a class="prev-page" href="string_mobject.html">
               <svg><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">MTex</div>
+                <div class="title">StringMobject</div>
                 
               </div>
             </a>

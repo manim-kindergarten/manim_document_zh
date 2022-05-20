@@ -6,10 +6,10 @@
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>OpenGL 预备知识 - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?03708c62f661e9b38edc2d28">
-    <link rel="stylesheet" href="../../_static/pygments.css?03708c62f661e9b38edc2d28">
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
+    <link rel="stylesheet" href="../../_static/styles/default.css?d1b0f634a7ed96c7b269971f">
+    <link rel="stylesheet" href="../../_static/pygments.css?d1b0f634a7ed96c7b269971f">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?03708c62f661e9b38edc2d28"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?d1b0f634a7ed96c7b269971f"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -134,6 +134,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/brace.html">Brace</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/drawings.html">Drawings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/mtex_mobject.html">MTex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/string_mobject.html">StringMobject</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/svg_mobject.html">SVGMobject</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/tex_mobject.html">Tex</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/text_mobject.html">Text</a></li>
@@ -219,7 +220,7 @@
 </div>
 <div class="section" id="id2">
 <h2>OpenGL 运行流程<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
-<img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/OpenGL-sequence.svg" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/OpenGL-sequence.svg"/></div>
+<img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/OpenGL-sequence.svg" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/OpenGL-sequence.svg"/></div>
 <div class="section" id="glsl">
 <h2>GLSL 函数<a class="headerlink" href="#glsl" title="永久链接至标题">¶</a></h2>
 <p>这些函数主要用于片段着色</p>
@@ -231,13 +232,13 @@
 <li><p>当 <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&gt;=</span> <span class="pre">edge_1</span></code> 时返回 1.0</p></li>
 <li><p>当 <code class="docutils literal notranslate"><span class="pre">edge_0</span> <span class="pre">&lt;</span> <span class="pre">x</span> <span class="pre">&lt;</span> <span class="pre">edge_1</span></code> 时形成一个从 0 到 1 的平滑插值</p></li>
 </ul>
-<img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/functions/smoothstep1.svg" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/functions/smoothstep1.svg"/><p>特别的，当 <code class="docutils literal notranslate"><span class="pre">egde_0</span> <span class="pre">&gt;</span> <span class="pre">edge_1</span></code> 时，图像会翻转，即满足下面的情况</p>
+<img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/functions/smoothstep1.svg" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/functions/smoothstep1.svg"/><p>特别的，当 <code class="docutils literal notranslate"><span class="pre">egde_0</span> <span class="pre">&gt;</span> <span class="pre">edge_1</span></code> 时，图像会翻转，即满足下面的情况</p>
 <ul class="simple">
 <li><p>当 <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&lt;=</span> <span class="pre">edge_1</span></code> 时返回 1.0</p></li>
 <li><p>当 <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&gt;=</span> <span class="pre">edge_0</span></code> 时返回 0.0</p></li>
 <li><p>当 <code class="docutils literal notranslate"><span class="pre">edge_1</span> <span class="pre">&lt;</span> <span class="pre">x</span> <span class="pre">&lt;</span> <span class="pre">edge_0</span></code> 时形成一个从 1 到 0 的平滑插值</p></li>
 </ul>
-<img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/functions/smoothstep2.svg" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/functions/smoothstep2.svg"/></dd></dl>
+<img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/functions/smoothstep2.svg" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/functions/smoothstep2.svg"/></dd></dl>
 <hr class="docutils"/>
 <dl class="cpp function">
 <dt id="_CPPv43mix7genType7genTypef">
@@ -274,18 +275,18 @@
 <p>但是当有更加复杂的图形时，这样就会形成相当复杂的 if-else 树，这样不仅代码不美观，性能上也较差。因此我们寻求更加高效的方案：sdf</p>
 <p>同样是画圆，我们这样定义</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">float</span><span class="w"> </span><span class="nf">sdfCircle</span><span class="p">(</span><span class="n">vec2</span><span class="w"> </span><span class="n">point</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">radius</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">length</span><span class="p">(</span><span class="n">p</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">radius</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">radius</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">length</span><span class="p">(</span><span class="n">p</span><span class="p">);</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>此时我们仔细分析一下</p>
 <ul class="simple">
-<li><p>在圆内的点，返回的结果均小于 0</p></li>
+<li><p>在圆内的点，返回的结果均大于 0</p></li>
 <li><p>在圆上的点，返回值为 0</p></li>
-<li><p>在圆外的点，返回值均大于 0</p></li>
+<li><p>在圆外的点，返回值均小于 0</p></li>
 </ul>
 <p>此时， 0 就成了一个分界点，我们可以使用一些其他的函数来进一步处理，即可得到理想的效果了。我们使用上面提到的 smoothstep 函数</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">float</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">smoothstep</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span><span class="w"> </span><span class="mf">0.</span><span class="p">,</span><span class="w"> </span><span class="n">sdfCircle</span><span class="p">(</span><span class="n">coords</span><span class="p">,</span><span class="w"> </span><span class="mf">0.5</span><span class="p">))</span><span class="w"></span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">float</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">smoothstep</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span><span class="w"> </span><span class="mf">0.01</span><span class="p">,</span><span class="w"> </span><span class="n">sdfCircle</span><span class="p">(</span><span class="n">coords</span><span class="p">,</span><span class="w"> </span><span class="mf">0.5</span><span class="p">))</span><span class="w"></span>
 </pre></div>
 </div>
 <p>这一步得到 <code class="docutils literal notranslate"><span class="pre">f</span></code> ，它的结果为：当点在圆内，则返回 1 ，在圆外，则返回 0，可以得到一个近似的圆的坐标集</p>

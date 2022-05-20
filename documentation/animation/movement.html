@@ -6,10 +6,10 @@
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>Movement - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?a0e1a454cd85f933746cb3c8">
-    <link rel="stylesheet" href="../../_static/pygments.css?a0e1a454cd85f933746cb3c8">
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
+    <link rel="stylesheet" href="../../_static/styles/default.css?1f2cf6930f583110a70d510d">
+    <link rel="stylesheet" href="../../_static/pygments.css?1f2cf6930f583110a70d510d">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?a0e1a454cd85f933746cb3c8"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?1f2cf6930f583110a70d510d"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -134,6 +134,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/brace.html">Brace</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/drawings.html">Drawings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/mtex_mobject.html">MTex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/string_mobject.html">StringMobject</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/svg_mobject.html">SVGMobject</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/tex_mobject.html">Tex</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/text_mobject.html">Text</a></li>
@@ -225,7 +226,7 @@
 <dd><p>Homotopy is a function from
 (x, y, z, t) to (x’, y’, z’)</p>
 </dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="homotopyexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/HomotopyExample.mp4"></video><h5 class="example-header">HomotopyExample<a class="headerlink" href="#homotopyexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">HomotopyExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="homotopyexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/HomotopyExample.mp4"></video><h5 class="example-header">HomotopyExample<a class="headerlink" href="#homotopyexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">HomotopyExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">def</span> <span class="nf">plane_wave_homotopy</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
             <span class="n">norm</span> <span class="o">=</span> <span class="n">get_norm</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">])</span>
@@ -258,7 +259,7 @@
 are complex numbers and t is time, this animates
 the state over time</p>
 </dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="complexhomotopyexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/ComplexHomotopyExample.mp4"></video><h5 class="example-header">ComplexHomotopyExample<a class="headerlink" href="#complexhomotopyexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ComplexHomotopyExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="complexhomotopyexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/ComplexHomotopyExample.mp4"></video><h5 class="example-header">ComplexHomotopyExample<a class="headerlink" href="#complexhomotopyexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ComplexHomotopyExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">def</span> <span class="nf">complex_func</span><span class="p">(</span><span class="n">z</span><span class="p">:</span> <span class="nb">complex</span><span class="p">,</span> <span class="n">t</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">complex</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">interpolate</span><span class="p">(</span><span class="n">z</span><span class="p">,</span> <span class="n">z</span><span class="o">**</span><span class="mi">3</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
@@ -285,7 +286,7 @@ the state over time</p>
 <dt id="manimlib.animation.movement.PhaseFlow">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.movement.</code><code class="sig-name descname">PhaseFlow</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span><span class="p">:</span> <span class="n">Callable<span class="p">[</span><span class="p">[</span>np.ndarray<span class="p">]</span><span class="p">, </span>np.ndarray<span class="p">]</span></span></em>, <em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.movement.PhaseFlow" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="phaseflowexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/PhaseFlowExample.mp4"></video><h5 class="example-header">PhaseFlowExample<a class="headerlink" href="#phaseflowexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">PhaseFlowExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="phaseflowexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/PhaseFlowExample.mp4"></video><h5 class="example-header">PhaseFlowExample<a class="headerlink" href="#phaseflowexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">PhaseFlowExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
             <span class="k">return</span> <span class="n">t</span><span class="o">*</span><span class="mf">0.5</span><span class="o">*</span><span class="n">RIGHT</span>
@@ -312,7 +313,7 @@ the state over time</p>
 <dt id="manimlib.animation.movement.MoveAlongPath">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.movement.</code><code class="sig-name descname">MoveAlongPath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="n">path</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.movement.MoveAlongPath" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="movealongpathexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/MoveAlongPathExample.mp4"></video><h5 class="example-header">MoveAlongPathExample<a class="headerlink" href="#movealongpathexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MoveAlongPathExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="movealongpathexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/MoveAlongPathExample.mp4"></video><h5 class="example-header">MoveAlongPathExample<a class="headerlink" href="#movealongpathexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MoveAlongPathExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">line</span><span class="o">=</span><span class="n">Line</span><span class="p">(</span><span class="n">ORIGIN</span><span class="p">,</span><span class="n">RIGHT</span><span class="o">*</span><span class="n">FRAME_WIDTH</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
         <span class="n">line</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">ORIGIN</span><span class="p">)</span>

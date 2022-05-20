@@ -6,10 +6,10 @@
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>Transform Matching Parts - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?5a6d94acad08f5e5de701ecd">
-    <link rel="stylesheet" href="../../_static/pygments.css?5a6d94acad08f5e5de701ecd">
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
+    <link rel="stylesheet" href="../../_static/styles/default.css?27ddeab0592cec152a5f6bf0">
+    <link rel="stylesheet" href="../../_static/pygments.css?27ddeab0592cec152a5f6bf0">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?5a6d94acad08f5e5de701ecd"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?27ddeab0592cec152a5f6bf0"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -134,6 +134,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/brace.html">Brace</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/drawings.html">Drawings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/mtex_mobject.html">MTex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/string_mobject.html">StringMobject</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/svg_mobject.html">SVGMobject</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/tex_mobject.html">Tex</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/text_mobject.html">Text</a></li>
@@ -227,7 +228,7 @@
 <dt id="manimlib.animation.transform_matching_parts.TransformMatchingShapes">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform_matching_parts.</code><code class="sig-name descname">TransformMatchingShapes</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject">manimlib.mobject.mobject.Mobject</a></span></em>, <em class="sig-param"><span class="n">target_mobject</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject">manimlib.mobject.mobject.Mobject</a></span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform_matching_parts.TransformMatchingShapes" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="transformmatchingshapesexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/TransformMatchingShapesExample.mp4"></video><h5 class="example-header">TransformMatchingShapesExample<a class="headerlink" href="#transformmatchingshapesexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TransformMatchingShapesExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="transformmatchingshapesexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/TransformMatchingShapesExample.mp4"></video><h5 class="example-header">TransformMatchingShapesExample<a class="headerlink" href="#transformmatchingshapesexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TransformMatchingShapesExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">a</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"the morse code"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
         <span class="n">b</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"here some dots"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -246,13 +247,58 @@
 <dt id="manimlib.animation.transform_matching_parts.TransformMatchingTex">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform_matching_parts.</code><code class="sig-name descname">TransformMatchingTex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject">manimlib.mobject.mobject.Mobject</a></span></em>, <em class="sig-param"><span class="n">target_mobject</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject">manimlib.mobject.mobject.Mobject</a></span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform_matching_parts.TransformMatchingTex" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="transformmatchingtexexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/TransformMatchingTexExample.mp4"></video><h5 class="example-header">TransformMatchingTexExample<a class="headerlink" href="#transformmatchingtexexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TransformMatchingTexExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="transformmatchingtexexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/TransformMatchingTexExample.mp4"></video><h5 class="example-header">TransformMatchingTexExample<a class="headerlink" href="#transformmatchingtexexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TransformMatchingTexExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">a</span> <span class="o">=</span> <span class="n">Tex</span><span class="p">(</span><span class="s2">"A"</span><span class="p">,</span> <span class="s2">"^2"</span><span class="p">,</span> <span class="s2">"="</span><span class="p">,</span> <span class="s2">"B^2+C^2"</span><span class="p">)</span>
         <span class="n">b</span> <span class="o">=</span> <span class="n">Tex</span><span class="p">(</span><span class="s2">"A"</span><span class="p">,</span> <span class="s2">"="</span><span class="p">,</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">sqrt{"</span><span class="p">,</span> <span class="s2">"B^2+C^2"</span><span class="p">,</span> <span class="s2">"}"</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">TransformMatchingTex</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">key_map</span><span class="o">=</span><span class="p">{</span><span class="s2">"^2"</span><span class="p">:</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">sqrt{"</span><span class="p">}))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+</div></div>
+<div class="section" id="transformmatchingstrings">
+<h2>TransformMatchingStrings<a class="headerlink" href="#transformmatchingstrings" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="manimlib.animation.transform_matching_parts.TransformMatchingStrings">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.transform_matching_parts.</code><code class="sig-name descname">TransformMatchingStrings</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">source</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../mobject/svg/string_mobject.html#manimlib.mobject.svg.string_mobject.StringMobject" title="manimlib.mobject.svg.string_mobject.StringMobject">manimlib.mobject.svg.string_mobject.StringMobject</a></span></em>, <em class="sig-param"><span class="n">target</span><span class="p">:</span> <span class="n"><a class="reference internal" href="../mobject/svg/string_mobject.html#manimlib.mobject.svg.string_mobject.StringMobject" title="manimlib.mobject.svg.string_mobject.StringMobject">manimlib.mobject.svg.string_mobject.StringMobject</a></span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.transform_matching_parts.TransformMatchingStrings" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+<div class="manim-example"><video class="manim-video" controls="" id="transformmatchingstringsexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/TransformMatchingStringsExample.mp4"></video><h5 class="example-header">TransformMatchingStringsExample<a class="headerlink" href="#transformmatchingstringsexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TransformMatchingStringsExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">kw</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">"isolate"</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">"</span><span class="se">\\</span><span class="s2">int_</span><span class="si">{0}</span><span class="s2">^{</span><span class="se">\\</span><span class="s2">infty} </span><span class="se">\\</span><span class="s2">mathrm</span><span class="si">{e}</span><span class="s2">^{- t}"</span><span class="p">,</span>
+                <span class="s2">"</span><span class="se">\\</span><span class="s2">mathrm</span><span class="si">{d}</span><span class="s2"> t"</span><span class="p">,</span>
+                <span class="s2">"c_</span><span class="si">{0}</span><span class="s2">"</span><span class="p">,</span>
+                <span class="s2">"c_</span><span class="si">{1}</span><span class="s2"> t"</span><span class="p">,</span>
+                <span class="s2">"c_</span><span class="si">{2}</span><span class="s2"> t^</span><span class="si">{2}</span><span class="s2">"</span><span class="p">,</span>
+                <span class="s2">"c_</span><span class="si">{n}</span><span class="s2"> t^</span><span class="si">{n}</span><span class="s2">"</span>
+            <span class="p">],</span>
+            <span class="s2">"tex_to_color_map"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">"</span><span class="se">\\</span><span class="s2">mathrm</span><span class="si">{e}</span><span class="s2">"</span><span class="p">:</span> <span class="n">MAROON_A</span><span class="p">,</span>
+                <span class="s2">"c_</span><span class="si">{0}</span><span class="s2">"</span><span class="p">:</span> <span class="n">BLUE</span><span class="p">,</span>
+                <span class="s2">"c_</span><span class="si">{1}</span><span class="s2">"</span><span class="p">:</span> <span class="n">BLUE</span><span class="p">,</span>
+                <span class="s2">"c_</span><span class="si">{2}</span><span class="s2">"</span><span class="p">:</span> <span class="n">BLUE</span><span class="p">,</span>
+                <span class="s2">"c_</span><span class="si">{n}</span><span class="s2">"</span><span class="p">:</span> <span class="n">BLUE</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="n">explicit_formula</span> <span class="o">=</span> <span class="n">MTex</span><span class="p">(</span>
+            <span class="s2">"</span><span class="se">\\</span><span class="s2">int_</span><span class="si">{0}</span><span class="s2">^{</span><span class="se">\\</span><span class="s2">infty} </span><span class="se">\\</span><span class="s2">mathrm</span><span class="si">{e}</span><span class="s2">^{- t}"</span>
+            <span class="s2">" </span><span class="se">\\</span><span class="s2">left( c_</span><span class="si">{0}</span><span class="s2"> + c_</span><span class="si">{1}</span><span class="s2"> t + c_</span><span class="si">{2}</span><span class="s2"> t^</span><span class="si">{2}</span><span class="s2"> + </span><span class="se">\\</span><span class="s2">cdots + c_</span><span class="si">{n}</span><span class="s2"> t^</span><span class="si">{n}</span><span class="s2"> </span><span class="se">\\</span><span class="s2">right) </span><span class="se">\\</span><span class="s2">mathrm</span><span class="si">{d}</span><span class="s2"> t"</span><span class="p">,</span>
+            <span class="o">**</span><span class="n">kw</span>
+        <span class="p">)</span>
+        <span class="n">expanded_formula</span> <span class="o">=</span> <span class="n">MTex</span><span class="p">(</span>
+            <span class="s2">"</span><span class="se">\\</span><span class="s2">int_</span><span class="si">{0}</span><span class="s2">^{</span><span class="se">\\</span><span class="s2">infty} </span><span class="se">\\</span><span class="s2">mathrm</span><span class="si">{e}</span><span class="s2">^{- t} c_</span><span class="si">{0}</span><span class="s2"> </span><span class="se">\\</span><span class="s2">mathrm</span><span class="si">{d}</span><span class="s2"> t"</span>
+            <span class="s2">" + </span><span class="se">\\</span><span class="s2">int_</span><span class="si">{0}</span><span class="s2">^{</span><span class="se">\\</span><span class="s2">infty} </span><span class="se">\\</span><span class="s2">mathrm</span><span class="si">{e}</span><span class="s2">^{- t} c_</span><span class="si">{1}</span><span class="s2"> t </span><span class="se">\\</span><span class="s2">mathrm</span><span class="si">{d}</span><span class="s2"> t"</span>
+            <span class="s2">" + </span><span class="se">\\</span><span class="s2">int_</span><span class="si">{0}</span><span class="s2">^{</span><span class="se">\\</span><span class="s2">infty} </span><span class="se">\\</span><span class="s2">mathrm</span><span class="si">{e}</span><span class="s2">^{- t} c_</span><span class="si">{2}</span><span class="s2"> t^</span><span class="si">{2}</span><span class="s2"> </span><span class="se">\\</span><span class="s2">mathrm</span><span class="si">{d}</span><span class="s2"> t"</span>
+            <span class="s2">" + </span><span class="se">\\</span><span class="s2">cdots"</span>
+            <span class="s2">" + </span><span class="se">\\</span><span class="s2">int_</span><span class="si">{0}</span><span class="s2">^{</span><span class="se">\\</span><span class="s2">infty} </span><span class="se">\\</span><span class="s2">mathrm</span><span class="si">{e}</span><span class="s2">^{- t} c_</span><span class="si">{n}</span><span class="s2"> t^</span><span class="si">{n}</span><span class="s2"> </span><span class="se">\\</span><span class="s2">mathrm</span><span class="si">{d}</span><span class="s2"> t"</span><span class="p">,</span>
+            <span class="o">**</span><span class="n">kw</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">0.8</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">explicit_formula</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">TransformMatchingStrings</span><span class="p">(</span><span class="n">explicit_formula</span><span class="p">,</span> <span class="n">expanded_formula</span><span class="p">),</span> <span class="n">run_time</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -309,6 +355,7 @@
 <li><a class="reference internal" href="#transformmatchingparts">TransformMatchingParts</a></li>
 <li><a class="reference internal" href="#transformmatchingshapes">TransformMatchingShapes</a></li>
 <li><a class="reference internal" href="#transformmatchingtex">TransformMatchingTex</a></li>
+<li><a class="reference internal" href="#transformmatchingstrings">TransformMatchingStrings</a></li>
 </ul>
 </li>
 </ul>

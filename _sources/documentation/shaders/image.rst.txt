@@ -36,5 +36,5 @@ uniform     ``sampler2D``    ``Texture``              材质
 程序大致流程
 ***********************
 
-.. image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/image_shader.svg
+.. image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/image_shader.svg
 

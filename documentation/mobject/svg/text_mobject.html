@@ -6,10 +6,10 @@
     <link rel="shortcut icon" href="../../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>Text - ManimGL  文档</title>
       <link rel="stylesheet" href="../../../_static/copybutton.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../../_static/styles/default.css?b04be8fb9642ec62b1a19d84">
-    <link rel="stylesheet" href="../../../_static/pygments.css?b04be8fb9642ec62b1a19d84">
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
+    <link rel="stylesheet" href="../../../_static/styles/default.css?447c91eac18762ceda4d881f">
+    <link rel="stylesheet" href="../../../_static/pygments.css?447c91eac18762ceda4d881f">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
         <script src="../../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?b04be8fb9642ec62b1a19d84"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?447c91eac18762ceda4d881f"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -134,6 +134,7 @@
 <li class="toctree-l3"><a class="reference internal" href="brace.html">Brace</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drawings.html">Drawings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mtex_mobject.html">MTex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="string_mobject.html">StringMobject</a></li>
 <li class="toctree-l3"><a class="reference internal" href="svg_mobject.html">SVGMobject</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tex_mobject.html">Tex</a></li>
 <li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Text</a></li>
@@ -213,19 +214,86 @@
         </label>
         <div class="section" id="text">
 <h1>Text<a class="headerlink" href="#text" title="永久链接至标题">¶</a></h1>
-<p><a class="reference internal" href="#manimlib.mobject.svg.text_mobject.Text" title="manimlib.mobject.svg.text_mobject.Text"><code class="xref py py-class docutils literal notranslate"><span class="pre">Text</span></code></a> 使用 <code class="docutils literal notranslate"><span class="pre">ManimPango</span></code> 来生成文字的svg，
-所以它不需要 <code class="docutils literal notranslate"><span class="pre">LaTeX</span></code> 环境，而且可以方便地更改字体，但是不能够书写公式。
-需要更改字体，而且要使用公式的，可以尝试cigar666编写的 <a class="reference external" href="https://github.com/manim-kindergarten/manim_sandbox/blob/master/utils/mobjects/MyText.py">MyText</a></p>
-<p>MK 做了一个关于常用 <a class="reference internal" href="#manimlib.mobject.svg.text_mobject.Text" title="manimlib.mobject.svg.text_mobject.Text"><code class="xref py py-class docutils literal notranslate"><span class="pre">Text</span></code></a> 的视频：
-<a class="reference external" href="https://www.bilibili.com/video/BV1CC4y1H7kp">〔manim教程〕第四讲 SVG、图片与文字</a></p>
-<p>由于这个类的作者 XiaoYoung 写了中文的文档，这里就不放出文档字符串了，下方给出原版文档</p>
-<div class="section" id="id1">
-<h2>Text<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p><a class="reference internal" href="#manimlib.mobject.svg.text_mobject.MarkupText" title="manimlib.mobject.svg.text_mobject.MarkupText"><code class="xref py py-class docutils literal notranslate"><span class="pre">MarkupText</span></code></a> 与 <a class="reference internal" href="#manimlib.mobject.svg.text_mobject.MarkupText" title="manimlib.mobject.svg.text_mobject.MarkupText"><code class="xref py py-class docutils literal notranslate"><span class="pre">MarkupText</span></code></a> 使用 <code class="docutils literal notranslate"><span class="pre">ManimPango</span></code>
+来生成文字的 svg ，所以它不需要 <code class="docutils literal notranslate"><span class="pre">LaTeX</span></code> 环境，而且可以方便地更改字体，但是不能够书写公式。该类继承自 <a class="reference internal" href="string_mobject.html#manimlib.mobject.svg.string_mobject.StringMobject" title="manimlib.mobject.svg.string_mobject.StringMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringMobject</span></code></a> ，
+因而支持 <a class="reference internal" href="../../animation/transform_matching_parts.html#manimlib.animation.transform_matching_parts.TransformMatchingStrings" title="manimlib.animation.transform_matching_parts.TransformMatchingStrings"><code class="xref py py-class docutils literal notranslate"><span class="pre">TransformMatchingStrings</span></code></a> 动画。</p>
+<p>关于 Pango 提供的若干 markup 标签，详情参阅 <a class="reference external" href="https://docs.gtk.org/Pango/pango_markup.html">Pango Markup</a></p>
+<p><a class="reference internal" href="#manimlib.mobject.svg.text_mobject.MarkupText" title="manimlib.mobject.svg.text_mobject.MarkupText"><code class="xref py py-class docutils literal notranslate"><span class="pre">MarkupText</span></code></a> 提供的参数有：
+-  <code class="docutils literal notranslate"><span class="pre">is_markup:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">True</span></code>: 决定是否解析 Pango markup 标签。 <a class="reference internal" href="#manimlib.mobject.svg.text_mobject.Text" title="manimlib.mobject.svg.text_mobject.Text"><code class="xref py py-class docutils literal notranslate"><span class="pre">Text</span></code></a> 类中该参数默认为 <code class="docutils literal notranslate"><span class="pre">False</span></code>。
+-  <code class="docutils literal notranslate"><span class="pre">font_size:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">48</span></code>: 全局字号。
+-  <code class="docutils literal notranslate"><span class="pre">lsh:</span> <span class="pre">float</span> <span class="pre">|</span> <span class="pre">None</span> <span class="pre">=</span> <span class="pre">None</span></code>: 行间距倍数，<code class="docutils literal notranslate"><span class="pre">line_spacing_height</span></code> 的缩写。默认状态下视作 <code class="docutils literal notranslate"><span class="pre">0.6</span></code>。
+-  <code class="docutils literal notranslate"><span class="pre">justify:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></code>: 决定是否调整空格宽度使得段落左右侧同时对齐。
+-  <code class="docutils literal notranslate"><span class="pre">indent:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">0</span></code>: 段首缩排。
+-  <code class="docutils literal notranslate"><span class="pre">alignment:</span> <span class="pre">"LEFT"</span> <span class="pre">|</span> <span class="pre">"CENTER"</span> <span class="pre">|</span> <span class="pre">"RIGHT"</span> <span class="pre">=</span> <span class="pre">"LEFT"</span></code>: 段落对齐方向。
+-  <code class="docutils literal notranslate"><span class="pre">line_width:</span> <span class="pre">float</span> <span class="pre">|</span> <span class="pre">None</span> <span class="pre">=</span> <span class="pre">None</span></code>: 段落宽度，即自动折行宽度，使用 manim 长度单位。默认状态下不折行。
+-  <code class="docutils literal notranslate"><span class="pre">font:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">""</span></code>: 全局字体。
+-  <code class="docutils literal notranslate"><span class="pre">slant:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">"NORMAL"</span></code>: 全局倾斜样式。
+-  <code class="docutils literal notranslate"><span class="pre">weight:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">"NORMAL"</span></code>: 全局字重样式。
+-  <code class="docutils literal notranslate"><span class="pre">gradient:</span> <span class="pre">Iterable[ManimColor]</span> <span class="pre">|</span> <span class="pre">None</span> <span class="pre">=</span> <span class="pre">None</span></code>: 全局渐变色。
+-  <code class="docutils literal notranslate"><span class="pre">t2c:</span> <span class="pre">dict[Selector,</span> <span class="pre">ManimColor]</span> <span class="pre">=</span> <span class="pre">{}</span></code>: 局部颜色，<code class="docutils literal notranslate"><span class="pre">text2color</span></code> 的缩写。
+-  <code class="docutils literal notranslate"><span class="pre">t2f:</span> <span class="pre">dict[Selector,</span> <span class="pre">ManimColor]</span> <span class="pre">=</span> <span class="pre">{}</span></code>: 局部字体，<code class="docutils literal notranslate"><span class="pre">text2font</span></code> 的缩写。
+-  <code class="docutils literal notranslate"><span class="pre">t2s:</span> <span class="pre">dict[Selector,</span> <span class="pre">ManimColor]</span> <span class="pre">=</span> <span class="pre">{}</span></code>: 局部倾斜样式，<code class="docutils literal notranslate"><span class="pre">text2slant</span></code> 的缩写。
+-  <code class="docutils literal notranslate"><span class="pre">t2w:</span> <span class="pre">dict[Selector,</span> <span class="pre">ManimColor]</span> <span class="pre">=</span> <span class="pre">{}</span></code>: 局部字重样式，<code class="docutils literal notranslate"><span class="pre">text2weight</span></code> 的缩写。
+-  <code class="docutils literal notranslate"><span class="pre">global_config:</span> <span class="pre">dict[str,</span> <span class="pre">str]</span> <span class="pre">=</span> <span class="pre">{}</span></code>: 其它全局设置。
+-  <code class="docutils literal notranslate"><span class="pre">local_configs:</span> <span class="pre">dict[Selector,</span> <span class="pre">dict[str,</span> <span class="pre">str]]</span> <span class="pre">=</span> <span class="pre">{}</span></code>: 其它局部设置。
+-  <code class="docutils literal notranslate"><span class="pre">isolate:</span> <span class="pre">Selector</span> <span class="pre">=</span> <span class="pre">(re.compile(r"[a-zA-Z]+"),</span> <span class="pre">re.compile(r"\S+"))</span></code>: 预指定子串。
+-  <code class="docutils literal notranslate"><span class="pre">base_color:</span> <span class="pre">ManimColor</span> <span class="pre">=</span> <span class="pre">WHITE</span></code>: 全局颜色。</p>
+<p>该类指定子串的可选方式有（<code class="docutils literal notranslate"><span class="pre">Selector</span></code> 类型可参阅 <a class="reference internal" href="string_mobject.html#manimlib.mobject.svg.string_mobject.StringMobject" title="manimlib.mobject.svg.string_mobject.StringMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringMobject</span></code></a> ）：</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">isolate</span></code> 参数（<code class="docutils literal notranslate"><span class="pre">Selector</span></code> 类型）；</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">t2c,</span> <span class="pre">t2f,</span> <span class="pre">t2s,</span> <span class="pre">t2w,</span> <span class="pre">local_configs</span></code> 字典的键（<code class="docutils literal notranslate"><span class="pre">Selector</span></code> 类型）；</p></li>
+<li><p>Pango markup 标签内部的内容（<a class="reference internal" href="#manimlib.mobject.svg.text_mobject.Text" title="manimlib.mobject.svg.text_mobject.Text"><code class="xref py py-class docutils literal notranslate"><span class="pre">Text</span></code></a> 不支持这种方式）。</p></li>
+</ul>
+<p>一些示例如下：</p>
+<div class="manim-example"><img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/svg/text/TextExample.png" class="align-center" id="textexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/svg/text/TextExample.png"/>
+<h5 class="example-header">TextExample<a class="headerlink" href="#textexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">class</span> <span class="nc">TextExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s1">'Hello, world!'</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div class="manim-example"><img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/svg/text/TextSlice.png" class="align-center" id="textslice" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/svg/text/TextSlice.png"/>
+<h5 class="example-header">TextSlice<a class="headerlink" href="#textslice">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">class</span> <span class="nc">TextSlice</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span>
+            <span class="s1">'Google'</span><span class="p">,</span>
+            <span class="n">t2c</span><span class="o">=</span><span class="p">{</span>
+                <span class="p">(</span><span class="kc">None</span><span class="p">,</span><span class="mi">1</span><span class="p">):</span><span class="s1">'#3174f0'</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">):</span><span class="s1">'#e53125'</span><span class="p">,</span>
+                <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">):</span><span class="s1">'#fbb003'</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">):</span><span class="s1">'#3174f0'</span><span class="p">,</span>
+                <span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">):</span><span class="s1">'#269a43'</span><span class="p">,</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="kc">None</span><span class="p">):</span><span class="s1">'#e53125'</span><span class="p">,</span>
+            <span class="p">}</span>
+            <span class="c1"># 注：当前可能还有 bug，None 和数值不能比较</span>
+            <span class="c1"># 可暂时将这里的 None 改为 0 或字符串的长度</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div class="manim-example"><img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/svg/text/MultilingualTextExample.png" class="align-center" id="textutf8" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/svg/text/MultilingualTextExample.png"/>
+<h5 class="example-header">TextUTF8<a class="headerlink" href="#textutf8">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">script</span> <span class="o">=</span> <span class="s1">'''</span>
+<span class="s1">Hello</span>
+<span class="s1">你好</span>
+<span class="s1">こんにちは</span>
+<span class="s1">안녕하세요</span>
+<span class="s1">'''</span>
+
+<span class="k">class</span> <span class="nc">MultilingualTextExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="n">script</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="s1">'Source Han Sans'</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div class="section" id="markuptext">
+<h2>MarkupText<a class="headerlink" href="#markuptext" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.svg.text_mobject.Text">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.text_mobject.</code><code class="sig-name descname">Text</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.text_mobject.Text" title="永久链接至目标">¶</a></dt>
-<dd><p>文字类</p>
-<p>初始化样式，VMobject 的样式有以下</p>
+<dt id="manimlib.mobject.svg.text_mobject.MarkupText">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.text_mobject.</code><code class="sig-name descname">MarkupText</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.text_mobject.MarkupText" title="永久链接至目标">¶</a></dt>
+<dd><p>初始化样式，VMobject 的样式有以下</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">fill</span></code> 填充样式</p>
 <ul>
@@ -244,22 +312,33 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">shadow</span></code> 阴影</p></li>
 </ul>
 <p>其中，opacity, width 等属性均可以为一个列表，在渲染时会按照列表对其进行补间</p>
+<dl class="py method">
+<dt id="manimlib.mobject.svg.text_mobject.MarkupText.get_part_by_text">
+<code class="sig-name descname">get_part_by_text</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">selector</span><span class="p">:</span> <span class="n">Selector</span></em><span class="sig-paren">)</span> → VGroup<a class="headerlink" href="#manimlib.mobject.svg.text_mobject.MarkupText.get_part_by_text" title="永久链接至目标">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">select_part</span></code> 的别名</p>
 </dd></dl>
-<div class="manim-example"><img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image1.png" class="align-center" id="textdemo" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image1.png"/>
-<h5 class="example-header">TextDemo<a class="headerlink" href="#textdemo">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
-
-<span class="k">class</span> <span class="nc">Demo</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">text</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s1">'Hello, world!'</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Write</span><span class="p">(</span><span class="n">text</span><span class="p">))</span>
-</pre></div>
+<dl class="py method">
+<dt id="manimlib.mobject.svg.text_mobject.MarkupText.get_parts_by_text">
+<code class="sig-name descname">get_parts_by_text</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">selector</span><span class="p">:</span> <span class="n">Selector</span></em><span class="sig-paren">)</span> → VGroup<a class="headerlink" href="#manimlib.mobject.svg.text_mobject.MarkupText.get_parts_by_text" title="永久链接至目标">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">select_parts</span></code> 的别名</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.svg.text_mobject.MarkupText.set_color_by_text">
+<code class="sig-name descname">set_color_by_text</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">selector</span><span class="p">:</span> <span class="n">Selector</span></em>, <em class="sig-param"><span class="n">color</span><span class="p">:</span> <span class="n">ManimColor</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.text_mobject.MarkupText.set_color_by_text" title="永久链接至目标">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">set_parts_color</span></code> 的别名</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.svg.text_mobject.MarkupText.set_color_by_text_to_color_map">
+<code class="sig-name descname">set_color_by_text_to_color_map</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color_map</span><span class="p">:</span> <span class="n">dict<span class="p">[</span>Selector<span class="p">, </span>ManimColor<span class="p">]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.text_mobject.MarkupText.set_color_by_text_to_color_map" title="永久链接至目标">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">set_parts_color_by_dict</span></code> 的别名</p>
+</dd></dl>
+</dd></dl>
 </div>
-</div></div>
-<div class="section" id="markuptext">
-<h2>MarkupText<a class="headerlink" href="#markuptext" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id1">
+<h2>Text<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
-<dt id="manimlib.mobject.svg.text_mobject.MarkupText">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.text_mobject.</code><code class="sig-name descname">MarkupText</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.text_mobject.MarkupText" title="永久链接至目标">¶</a></dt>
+<dt id="manimlib.mobject.svg.text_mobject.Text">
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.svg.text_mobject.</code><code class="sig-name descname">Text</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.text_mobject.Text" title="永久链接至目标">¶</a></dt>
 <dd><p>初始化样式，VMobject 的样式有以下</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">fill</span></code> 填充样式</p>
@@ -306,270 +385,6 @@
 </ul>
 <p>其中，opacity, width 等属性均可以为一个列表，在渲染时会按照列表对其进行补间</p>
 </dd></dl>
-<p><strong>以下为 Text 类的说明</strong>：</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span></code>:</p>
-<ul>
-<li><p>接收一个<code class="docutils literal notranslate"><span class="pre">str</span></code>，如<code class="docutils literal notranslate"><span class="pre">'Hello,</span> <span class="pre">world!'</span></code></p></li>
-<li><p>不支持LaTex语法</p></li>
-<li><p>如果只有一行，字符串前后的空格会被忽略(指不会产生长度，但是这些空格会被计算，可以用下标访问)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\t</span></code>默认会被替换为4个空格，可以通过调整tab_width改变这一行为</p></li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">color</span></code>:</p>
-<ul>
-<li><p>接收一个<code class="docutils literal notranslate"><span class="pre">str</span></code>，如<code class="docutils literal notranslate"><span class="pre">'#FFFFFF'</span></code></p></li>
-<li><p>或者是定义在<code class="docutils literal notranslate"><span class="pre">constants.py</span></code>里的颜色常量，如<code class="docutils literal notranslate"><span class="pre">BLUE</span></code></p></li>
-<li><p>Demo</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello',</span> <span class="pre">color=BLUE)</span></code> <img alt="color" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image2.png"/></p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">t2c</span></code>:</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text2color</span></code>的缩写</p></li>
-<li><p>接收一个<code class="docutils literal notranslate"><span class="pre">dict</span></code>，如<code class="docutils literal notranslate"><span class="pre">{'text':</span> <span class="pre">color}</span></code></p></li>
-<li><p>或者切片模式，如<code class="docutils literal notranslate"><span class="pre">{'[1:4]':</span> <span class="pre">color}</span></code></p></li>
-<li><p>Demo</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello,</span> <span class="pre">world!',</span> <span class="pre">t2c={'world':BLUE})</span></code> <img alt="t2c" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image3.png"/></p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">gradient</span></code>:</p>
-<ul>
-<li><p>接收一个<code class="docutils literal notranslate"><span class="pre">tuple</span></code>，如<code class="docutils literal notranslate"><span class="pre">(BLUE,</span> <span class="pre">GREEN,</span> <span class="pre">'#FFFFFF')</span></code></p></li>
-<li><p>Demo</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello',</span> <span class="pre">gradient=(BLUE,</span> <span class="pre">GREEN))</span></code> <img alt="gradient" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image4.png"/></p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">t2g</span></code>:</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text2gradient</span></code>的缩写</p></li>
-<li><p>接收一个<code class="docutils literal notranslate"><span class="pre">dict</span></code>，如<code class="docutils literal notranslate"><span class="pre">{'text':</span> <span class="pre">(BLUE,</span> <span class="pre">GREEN,</span> <span class="pre">'#FFFFFF')}</span></code></p></li>
-<li><p>或者切片模式，如<code class="docutils literal notranslate"><span class="pre">{'[1:4]':</span> <span class="pre">(BLUE,</span> <span class="pre">GREEN,</span> <span class="pre">'#FFFFFF')}</span></code></p></li>
-<li><p>Demo</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello,</span> <span class="pre">world!',</span> <span class="pre">t2g={'world':(BLUE,</span> <span class="pre">GREEN)})</span></code> <img alt="t2g" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image5.png"/></p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">font</span></code>:</p>
-<ul>
-<li><dl class="simple">
-<dt>接收一个<code class="docutils literal notranslate"><span class="pre">str</span></code>,</dt><dd><p>如<code class="docutils literal notranslate"><span class="pre">'Source</span> <span class="pre">Han</span> <span class="pre">Sans'</span></code>，请确保字体名正确</p>
-</dd>
-</dl>
-</li>
-<li><p>不支持直接读取给定的字体文件路径，必须先将字体安装到系统中才能使用</p></li>
-<li><p>Demo</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello',</span> <span class="pre">font='Source</span> <span class="pre">Han</span> <span class="pre">Sans')</span></code> <img alt="font" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image6.png"/></p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">t2f</span></code>:</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text2font</span></code>的缩写</p></li>
-<li><p>接收一个<code class="docutils literal notranslate"><span class="pre">dict</span></code>，如<code class="docutils literal notranslate"><span class="pre">{'text':</span> <span class="pre">'Source</span> <span class="pre">Han</span> <span class="pre">Sans'}</span></code></p></li>
-<li><p>或者切片模式，如<code class="docutils literal notranslate"><span class="pre">{'[1:4]':</span> <span class="pre">'Source</span> <span class="pre">Han</span> <span class="pre">Sans'}</span></code></p></li>
-<li><p>Demo</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello,</span> <span class="pre">world!',</span> <span class="pre">t2f={'world':'Forte'})</span></code> <img alt="t2f" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image7.png"/></p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">slant</span></code>:</p>
-<ul>
-<li><p>斜体选项: <code class="docutils literal notranslate"><span class="pre">NORMAL</span></code>或者<code class="docutils literal notranslate"><span class="pre">ITALIC</span></code></p></li>
-<li><p>其实还有一个<code class="docutils literal notranslate"><span class="pre">OBLIQUE</span></code>，但是貌似效果跟<code class="docutils literal notranslate"><span class="pre">ITALIC</span></code>一样</p></li>
-<li><p>Demo</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello',</span> <span class="pre">slant=ITALIC)</span></code> <img alt="slant" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image8.png"/></p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">t2s</span></code>:</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text2slant</span></code>的缩写</p></li>
-<li><p>接收一个<code class="docutils literal notranslate"><span class="pre">dict</span></code>，如<code class="docutils literal notranslate"><span class="pre">{'text':</span> <span class="pre">ITALIC}</span></code></p></li>
-<li><p>或者切片模式，如<code class="docutils literal notranslate"><span class="pre">{'[1:4]':</span> <span class="pre">ITALIC}</span></code></p></li>
-<li><p>Demo</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello,</span> <span class="pre">world!',</span> <span class="pre">t2s={'world':ITALIC})</span></code> <img alt="t2s" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image9.png"/></p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">weight</span></code>:</p>
-<ul>
-<li><p>字重(粗细)选项: <code class="docutils literal notranslate"><span class="pre">NORMAL</span></code>或者<code class="docutils literal notranslate"><span class="pre">BOLD</span></code></p></li>
-<li><p>目前只支持调用<code class="docutils literal notranslate"><span class="pre">NORMAL</span></code>和<code class="docutils literal notranslate"><span class="pre">BOLD</span></code>是因为底层的包不支持其它选项</p></li>
-<li><p>如果想用Light、Condensed等选项可以在调用字体的时候声明，如<code class="docutils literal notranslate"><span class="pre">'Open</span> <span class="pre">Sans</span> <span class="pre">Light'</span></code></p></li>
-<li><dl class="simple">
-<dt>更多有关Light等选项的问题，可以参考:</dt><dd><p><a class="reference external" href="https://github.com/3b1b/manim/issues/884">https://github.com/3b1b/manim/issues/884</a></p>
-</dd>
-</dl>
-</li>
-<li><p>Demo</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello',</span> <span class="pre">weight=BOLD)</span></code> <img alt="weight" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image10.png"/></p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">t2w</span></code>:</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text2weight</span></code>的缩写</p></li>
-<li><p>接收一个<code class="docutils literal notranslate"><span class="pre">dict</span></code>，如<code class="docutils literal notranslate"><span class="pre">{'text':</span> <span class="pre">BOLD}</span></code></p></li>
-<li><p>或者切片模式，如<code class="docutils literal notranslate"><span class="pre">{'[1:4]':</span> <span class="pre">BOLD}</span></code></p></li>
-<li><p>Demo</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello,</span> <span class="pre">world!',</span> <span class="pre">t2w={'world':BOLD})</span></code> <img alt="t2w" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image11.png"/></p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">size</span></code>:</p>
-<ul>
-<li><p>不建议使用</p></li>
-<li><p>接收一个数且该数要大于0.1</p></li>
-<li><p>不是线性的，因为<code class="docutils literal notranslate"><span class="pre">SVGMobject</span></code>的缩放逻辑有点迷</p></li>
-<li><p>如果小于0.1可能会出现锯齿</p></li>
-<li><p>目前与MUnit没有关联，所以玄学调参</p></li>
-<li><p>如果需要精确控制大小，建议使用<code class="docutils literal notranslate"><span class="pre">.scale()</span></code></p></li>
-<li><p>Demo</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello',</span> <span class="pre">size=5)</span></code> <img alt="size" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image12.png"/></p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">lsh</span></code>:</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">line_spacing_height</span></code>的缩写</p></li>
-<li><p>不建议使用</p></li>
-<li><p>默认与<code class="docutils literal notranslate"><span class="pre">size</span></code>相等</p></li>
-<li><p>非线性(存疑)</p></li>
-<li><p>与MUnit没有关联</p></li>
-<li><p>Demo</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">Text('Hello\nWorld',</span> <span class="pre">lsh=1.5)</span></code> <img alt="lsh" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image13.png"/></p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>其它:</p>
-<ul>
-<li><p>还有一些从<code class="docutils literal notranslate"><span class="pre">Mobject</span></code>继承来的参数也可以使用</p></li>
-<li><p>如: <code class="docutils literal notranslate"><span class="pre">fill_color</span></code>、<code class="docutils literal notranslate"><span class="pre">fill_opacity</span></code>、<code class="docutils literal notranslate"><span class="pre">stroke_color</span></code>、<code class="docutils literal notranslate"><span class="pre">stroke_width</span></code></p></li>
-</ul>
-</li>
-</ul>
-<p><strong>CONFIG中属性</strong>：</p>
-<ul class="simple">
-<li><p>Mobjcet:</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">color</span></code>: 默认为<code class="docutils literal notranslate"><span class="pre">WHITE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">heigth</span></code>: 默认为<code class="docutils literal notranslate"><span class="pre">None</span></code></p></li>
-</ul>
-</li>
-<li><p>Text:</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">font</span></code>: 默认为<code class="docutils literal notranslate"><span class="pre">''</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">gradient</span></code>: 默认为<code class="docutils literal notranslate"><span class="pre">None</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">lsh</span></code>: 默认为<code class="docutils literal notranslate"><span class="pre">-1</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">size</span></code>: 默认为<code class="docutils literal notranslate"><span class="pre">1</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">slant</span></code>: 默认为<code class="docutils literal notranslate"><span class="pre">NORMAL</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">weight</span></code>: 默认为<code class="docutils literal notranslate"><span class="pre">NORMAL</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">t2c</span></code>: 默认为<code class="docutils literal notranslate"><span class="pre">{}</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">t2f</span></code>: 默认为<code class="docutils literal notranslate"><span class="pre">{}</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">t2g</span></code>: 默认为<code class="docutils literal notranslate"><span class="pre">{}</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">t2s</span></code>: 默认为<code class="docutils literal notranslate"><span class="pre">{}</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">t2w</span></code>: 默认为<code class="docutils literal notranslate"><span class="pre">{}</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">tab_width</span></code>: 默认为<code class="docutils literal notranslate"><span class="pre">4</span></code></p></li>
-</ul>
-</li>
-</ul>
-<p><strong>方法</strong>：</p>
-<ul class="simple">
-<li><p>Mobject:</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">set_color(self,</span> <span class="pre">color)</span></code>:</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text.set_color(BLUE)</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">text[7:12].set_color(BLUE)</span></code></p></li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">set_color_by_gradient(self,</span> <span class="pre">gradient)</span></code>:</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text.set_color_by_gradient(BLUE,</span> <span class="pre">GREEN)</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">text[7:12].set_color_by_gradient(BLUE,</span> <span class="pre">GREEN)</span></code></p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>Text:</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">set_color_by_t2c(self,</span> <span class="pre">t2c)</span></code>:</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text.set_color_by_t2c({'world':BLUE})</span></code></p></li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">set_color_by_t2g(self,</span> <span class="pre">t2g)</span></code>:</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text.set_color_by_t2g({'world':(BLUE,</span> <span class="pre">GREEN)})</span></code></p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><strong>其它</strong>：</p>
-<ul>
-<li><p>切片模式:</p>
-<div class="manim-example"><img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image14.png" class="align-center" id="textslice" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image14.png"/>
-<h5 class="example-header">TextSlice<a class="headerlink" href="#textslice">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span>
-    <span class="s1">'Google'</span><span class="p">,</span>
-    <span class="n">t2c</span><span class="o">=</span><span class="p">{</span>
-        <span class="s1">'[:1]'</span><span class="p">:</span><span class="s1">'#3174f0'</span><span class="p">,</span> <span class="s1">'[1:2]'</span><span class="p">:</span><span class="s1">'#e53125'</span><span class="p">,</span>
-        <span class="s1">'[2:3]'</span><span class="p">:</span><span class="s1">'#fbb003'</span><span class="p">,</span> <span class="s1">'[3:4]'</span><span class="p">:</span><span class="s1">'#3174f0'</span><span class="p">,</span>
-        <span class="s1">'[4:5]'</span><span class="p">:</span><span class="s1">'#269a43'</span><span class="p">,</span> <span class="s1">'[5:]'</span><span class="p">:</span><span class="s1">'#e53125'</span><span class="p">,</span>
-    <span class="p">}</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-</div></li>
-<li><p>UTF-8:</p>
-<div class="manim-example"><img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image15.png" class="align-center" id="textutf8" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/Text/image15.png"/>
-<h5 class="example-header">TextUTF8<a class="headerlink" href="#textutf8">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
-
-<span class="n">script</span> <span class="o">=</span> <span class="s1">'''</span>
-<span class="s1">Hello</span>
-<span class="s1">你好</span>
-<span class="s1">こんにちは</span>
-<span class="s1">안녕하세요</span>
-<span class="s1">'''</span>
-
-<span class="k">class</span> <span class="nc">Demo</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">text</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="n">script</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="s1">'Source Han Sans'</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Write</span><span class="p">(</span><span class="n">text</span><span class="p">))</span>
-</pre></div>
-</div>
-</div></li>
-<li><p>目前对GBK(中日韩)文字的支持没有太大问题</p></li>
-<li><p>但是对于其它文字，如印度语、阿拉伯语的显示有很大问题</p></li>
-</ul>
 </div>
 </div>
 
@@ -620,8 +435,8 @@
         <div class="toc-tree">
           <ul>
 <li><a class="reference internal" href="#">Text</a><ul>
-<li><a class="reference internal" href="#id1">Text</a></li>
 <li><a class="reference internal" href="#markuptext">MarkupText</a></li>
+<li><a class="reference internal" href="#id1">Text</a></li>
 <li><a class="reference internal" href="#code">Code</a></li>
 </ul>
 </li>

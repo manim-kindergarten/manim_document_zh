@@ -12,7 +12,7 @@ GrowFromPoint
     :members:
     
 .. manim-example:: GrowFromPointExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/GrowFromPointExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/GrowFromPointExample.mp4
 
   class GrowFromPointExample(Scene):
       def construct(self):
@@ -38,7 +38,7 @@ GrowFromCenter
     :members:
     
 .. manim-example:: GrowFromCenterExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/GrowFromCenterExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/GrowFromCenterExample.mp4
 
   class GrowFromCenterExample(Scene):
       def construct(self):
@@ -62,7 +62,7 @@ GrowFromEdge
     :members:
     
 .. manim-example:: GrowFromEdgeExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/GrowFromEdgeExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/GrowFromEdgeExample.mp4
 
   class GrowFromEdgeExample(Scene):
       def construct(self):
@@ -88,7 +88,7 @@ GrowArrow
     :members:
     
 .. manim-example:: GrowArrowExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/GrowArrowExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/GrowArrowExample.mp4
 
   class GrowArrowExample(Scene):
       def construct(self):
@@ -111,7 +111,7 @@ SpinInFromNothing
     :members:
     
 .. manim-example:: SpinInFromNothingExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/SpinInFromNothingExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/SpinInFromNothingExample.mp4
 
   class SpinInFromNothingExample(Scene):
       def construct(self):

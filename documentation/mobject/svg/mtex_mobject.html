@@ -1,15 +1,15 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../../genindex.html" /><link rel="search" title="搜索" href="../../../search.html" /><link rel="next" title="SVGMobject" href="svg_mobject.html" /><link rel="prev" title="Drawings" href="drawings.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="索引" href="../../../genindex.html" /><link rel="search" title="搜索" href="../../../search.html" /><link rel="next" title="StringMobject" href="string_mobject.html" /><link rel="prev" title="Drawings" href="drawings.html" />
 
     <link rel="shortcut icon" href="../../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>MTex - ManimGL  文档</title>
       <link rel="stylesheet" href="../../../_static/copybutton.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../../_static/styles/default.css?a3770b3774e3fb55fd76474c">
-    <link rel="stylesheet" href="../../../_static/pygments.css?a3770b3774e3fb55fd76474c">
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
+    <link rel="stylesheet" href="../../../_static/styles/default.css?c2d9efe10b600a56d715466c">
+    <link rel="stylesheet" href="../../../_static/pygments.css?c2d9efe10b600a56d715466c">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
         <script src="../../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?a3770b3774e3fb55fd76474c"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?c2d9efe10b600a56d715466c"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -134,6 +134,7 @@
 <li class="toctree-l3"><a class="reference internal" href="brace.html">Brace</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drawings.html">Drawings</a></li>
 <li class="toctree-l3 current current-page"><a class="current reference internal" href="#">MTex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="string_mobject.html">StringMobject</a></li>
 <li class="toctree-l3"><a class="reference internal" href="svg_mobject.html">SVGMobject</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tex_mobject.html">Tex</a></li>
 <li class="toctree-l3"><a class="reference internal" href="text_mobject.html">Text</a></li>
@@ -213,9 +214,36 @@
         </label>
         <div class="section" id="mtex">
 <h1>MTex<a class="headerlink" href="#mtex" title="永久链接至标题">¶</a></h1>
-<p>该类由凡人忆拾编写和完善，使用 <code class="docutils literal notranslate"><span class="pre">latex/xelatex</span></code> 生成公式。不同的是，<code class="docutils literal notranslate"><span class="pre">MTex</span></code> 能够更加方便的给 Tex 上色。</p>
-<p>由于该类并非继承 <code class="docutils literal notranslate"><span class="pre">Tex</span></code> ，所以 <code class="docutils literal notranslate"><span class="pre">TransfromMatchingTex</span></code> 方法会出一些问题，因此这个类还在完善中。</p>
-<div class="section" id="id1">
+<p>该类由凡人忆拾编写和完善，使用 <code class="docutils literal notranslate"><span class="pre">latex/xelatex</span></code> 生成公式。该类继承自 <a class="reference internal" href="string_mobject.html#manimlib.mobject.svg.string_mobject.StringMobject" title="manimlib.mobject.svg.string_mobject.StringMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringMobject</span></code></a> ，
+因而支持 <a class="reference internal" href="../../animation/transform_matching_parts.html#manimlib.animation.transform_matching_parts.TransformMatchingStrings" title="manimlib.animation.transform_matching_parts.TransformMatchingStrings"><code class="xref py py-class docutils literal notranslate"><span class="pre">TransformMatchingStrings</span></code></a> 动画。</p>
+<p><a class="reference internal" href="#manimlib.mobject.svg.mtex_mobject.MTex" title="manimlib.mobject.svg.mtex_mobject.MTex"><code class="xref py py-class docutils literal notranslate"><span class="pre">MTex</span></code></a> 提供的参数有：
+-  <code class="docutils literal notranslate"><span class="pre">font_size:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">48</span></code>: 全局字号。
+-  <code class="docutils literal notranslate"><span class="pre">alignment:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">"\\centering"</span></code>: 对齐方向。
+-  <code class="docutils literal notranslate"><span class="pre">tex_environment:</span> <span class="pre">str</span> <span class="pre">|</span> <span class="pre">tuple[str,</span> <span class="pre">str]</span> <span class="pre">|</span> <span class="pre">None</span> <span class="pre">=</span> <span class="pre">"align*"</span></code>: tex 环境。 <a class="reference internal" href="#manimlib.mobject.svg.mtex_mobject.MTexText" title="manimlib.mobject.svg.mtex_mobject.MTexText"><code class="xref py py-class docutils literal notranslate"><span class="pre">MTexText</span></code></a> 类中该参数默认为 <code class="docutils literal notranslate"><span class="pre">None</span></code>。
+-  <code class="docutils literal notranslate"><span class="pre">tex_to_color_map:</span> <span class="pre">dict[Selector,</span> <span class="pre">ManimColor]</span> <span class="pre">=</span> <span class="pre">{}</span></code>: 局部颜色。
+-  <code class="docutils literal notranslate"><span class="pre">isolate:</span> <span class="pre">Selector</span> <span class="pre">=</span> <span class="pre">()</span></code>: 预指定子串。
+-  <code class="docutils literal notranslate"><span class="pre">base_color:</span> <span class="pre">ManimColor</span> <span class="pre">=</span> <span class="pre">WHITE</span></code>: 全局颜色。</p>
+<p>该类指定子串的可选方式有（<code class="docutils literal notranslate"><span class="pre">Selector</span></code> 类型可参阅 <a class="reference internal" href="string_mobject.html#manimlib.mobject.svg.string_mobject.StringMobject" title="manimlib.mobject.svg.string_mobject.StringMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringMobject</span></code></a> ）：</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">isolate</span></code> 参数（<code class="docutils literal notranslate"><span class="pre">Selector</span></code> 类型）；</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tex_to_color_map</span></code> 字典的键（<code class="docutils literal notranslate"><span class="pre">Selector</span></code> 类型）；</p></li>
+<li><p>双大括号内部的内容。</p></li>
+</ul>
+<p>下面给出用不同方式指定子串的示例：</p>
+<div class="manim-example"><img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/svg/mtex/MTexSpecifySubstrings.png" class="align-center" id="mtexspecifysubstrings" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/svg/mtex/MTexSpecifySubstrings.png"/>
+<h5 class="example-header">MTexSpecifySubstrings<a class="headerlink" href="#mtexspecifysubstrings">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MTexSpecifySubstrings</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">tex</span> <span class="o">=</span> <span class="n">MTex</span><span class="p">(</span><span class="s2">"</span><span class="se">\\</span><span class="s2">sqrt{{s}}"</span><span class="p">)</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
+        <span class="n">tex</span><span class="o">.</span><span class="n">select_part</span><span class="p">(</span><span class="s2">"s"</span><span class="p">)</span><span class="o">.</span><span class="n">set_fill</span><span class="p">(</span><span class="n">TEAL</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">tex</span><span class="p">)</span>
+        <span class="n">poly</span> <span class="o">=</span> <span class="n">MTex</span><span class="p">(</span>
+            <span class="s2">"p(x) = a_0 x^0 + a_1 x^1 + </span><span class="se">\\</span><span class="s2">cdots + a_{n-1} x^{n-1} + a_n x^n"</span><span class="p">,</span>
+            <span class="n">tex_to_color_map</span><span class="o">=</span><span class="p">{</span><span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">"a_(.+?) x\^\1"</span><span class="p">):</span> <span class="n">ORANGE</span><span class="p">}</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">poly</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div class="section" id="id1">
 <h2>MTex<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.svg.mtex_mobject.MTex">
@@ -240,14 +268,24 @@
 </ul>
 <p>其中，opacity, width 等属性均可以为一个列表，在渲染时会按照列表对其进行补间</p>
 <dl class="py method">
+<dt id="manimlib.mobject.svg.mtex_mobject.MTex.get_part_by_tex">
+<code class="sig-name descname">get_part_by_tex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">selector</span><span class="p">:</span> <span class="n">Selector</span></em><span class="sig-paren">)</span> → VGroup<a class="headerlink" href="#manimlib.mobject.svg.mtex_mobject.MTex.get_part_by_tex" title="永久链接至目标">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">select_part</span></code> 的别名</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.mobject.svg.mtex_mobject.MTex.get_parts_by_tex">
+<code class="sig-name descname">get_parts_by_tex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">selector</span><span class="p">:</span> <span class="n">Selector</span></em><span class="sig-paren">)</span> → VGroup<a class="headerlink" href="#manimlib.mobject.svg.mtex_mobject.MTex.get_parts_by_tex" title="永久链接至目标">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">select_parts</span></code> 的别名</p>
+</dd></dl>
+<dl class="py method">
 <dt id="manimlib.mobject.svg.mtex_mobject.MTex.set_color_by_tex">
-<code class="sig-name descname">set_color_by_tex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tex</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">color</span><span class="p">:</span> <span class="n">ManimColor</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.mtex_mobject.MTex.set_color_by_tex" title="永久链接至目标">¶</a></dt>
-<dd><p>根据 tex 字符串设置颜色</p>
+<code class="sig-name descname">set_color_by_tex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">selector</span><span class="p">:</span> <span class="n">Selector</span></em>, <em class="sig-param"><span class="n">color</span><span class="p">:</span> <span class="n">ManimColor</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.mtex_mobject.MTex.set_color_by_tex" title="永久链接至目标">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">set_parts_color</span></code> 的别名</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.mobject.svg.mtex_mobject.MTex.set_color_by_tex_to_color_map">
-<code class="sig-name descname">set_color_by_tex_to_color_map</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tex_to_color_map</span><span class="p">:</span> <span class="n">dict<span class="p">[</span>str<span class="p">, </span>ManimColor<span class="p">]</span></span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.mtex_mobject.MTex.set_color_by_tex_to_color_map" title="永久链接至目标">¶</a></dt>
-<dd><p>根据 <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">tex:</span> <span class="pre">color</span> <span class="pre">}</span></code> 字典设置颜色</p>
+<code class="sig-name descname">set_color_by_tex_to_color_map</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color_map</span><span class="p">:</span> <span class="n">dict<span class="p">[</span>Selector<span class="p">, </span>ManimColor<span class="p">]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.svg.mtex_mobject.MTex.set_color_by_tex_to_color_map" title="永久链接至目标">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">set_parts_color_by_dict</span></code> 的别名</p>
 </dd></dl>
 </dd></dl>
 </div>
@@ -285,12 +323,7 @@
 <p>在 manimgl 中并不包含，但可以通过一些方式引入。</p>
 </div>
 <p>由 Fran 编写，继承自 MTex，基于 mathjax 生成公式，可以通过链接查看使用方法 <a class="reference external" href="https://github.com/manim-kindergarten/manimgl-mathjax.git">https://github.com/manim-kindergarten/manimgl-mathjax.git</a></p>
-<p>由于该类基于 mathjax 生成公式，因此相比 LaTeX，该类会有更快的生成速度。同时对于公式的需求没有那么高的情况下，甚至可以不用安装 LaTeX，所以力推 <code class="docutils literal notranslate"><span class="pre">JTex</span></code>。但这个类目前还有一些小问题需要完善：</p>
-<ul class="simple">
-<li><p>不能在其中使用中文</p></li>
-<li><p>由于该类还在开发过程中，因此可能会有一些渲染上的 bug</p></li>
-<li><p>由于继承了 MTex，而 <code class="docutils literal notranslate"><span class="pre">TransfromMatchingMTex</span></code> 还需要完善，所以公式的对应变换还需要一段时间来修复</p></li>
-</ul>
+<p>由于该类基于 mathjax 生成公式，因此相比 LaTeX，该类会有更快的生成速度。同时对于公式的需求没有那么高的情况下，甚至可以不用安装 LaTeX，所以力推 <code class="docutils literal notranslate"><span class="pre">JTex</span></code>。但这个类并不支持中文。</p>
 </div>
 </div>
 
@@ -298,12 +331,12 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="svg_mobject.html">
+          <a class="next-page" href="string_mobject.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">SVGMobject</div>
+                <div class="title">StringMobject</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>

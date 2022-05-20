@@ -13,7 +13,7 @@ CameraFrame
 在 ``manimgl`` 版本，你可以通过改变 ``CameraFrame`` 的属性来控制相机所拍摄到的画面，也就是说，旋转、缩放画面大小都可以用这种方式来完成。
 
 .. manim-example:: MoveCameraExample
-    :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/MoveCameraExample.mp4
+    :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/MoveCameraExample.mp4
 
     class MoveCameraExample(Scene):
         def setup(self):

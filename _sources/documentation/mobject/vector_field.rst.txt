@@ -17,7 +17,7 @@ AnimatedStreamLines
     :members:
 
 .. manim-example:: AnimatedStreamLinesExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/AnimatedStreamLinesExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/AnimatedStreamLinesExample.mp4
 
    class AnimatedStreamLinesExample(Scene):
        def construct(self):
@@ -36,7 +36,7 @@ AnimatedStreamLines
 这里附上 GZTime 写的一个示例，读者可以自己尝试渲染一下
 
 .. manim-example:: AnimatedStreamLinesExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/FuncFlow.jpg
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/FuncFlow.jpg
 
    from manimlib import *
    

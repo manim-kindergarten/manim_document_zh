@@ -6,10 +6,10 @@
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>Fading - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?b82e2b20a5dd7cc4a10048a7">
-    <link rel="stylesheet" href="../../_static/pygments.css?b82e2b20a5dd7cc4a10048a7">
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
+    <link rel="stylesheet" href="../../_static/styles/default.css?8807d837025d74ea83105457">
+    <link rel="stylesheet" href="../../_static/pygments.css?8807d837025d74ea83105457">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?b82e2b20a5dd7cc4a10048a7"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?8807d837025d74ea83105457"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -134,6 +134,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/brace.html">Brace</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/drawings.html">Drawings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/mtex_mobject.html">MTex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/string_mobject.html">StringMobject</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/svg_mobject.html">SVGMobject</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/tex_mobject.html">Tex</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/text_mobject.html">Text</a></li>
@@ -233,7 +234,7 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">shift</span></code> : 移动向量</p></li>
 </ul>
 </dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="fadeoutexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/FadeOutExample.mp4"></video><h5 class="example-header">FadeOutExample<a class="headerlink" href="#fadeoutexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeOutExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="fadeoutexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/FadeOutExample.mp4"></video><h5 class="example-header">FadeOutExample<a class="headerlink" href="#fadeoutexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeOutExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
             <span class="n">Circle</span><span class="p">(),</span>
@@ -265,7 +266,7 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">shift</span></code> : 移动向量</p></li>
 </ul>
 </dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="fadeinexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/FadeInExample.mp4"></video><h5 class="example-header">FadeInExample<a class="headerlink" href="#fadeinexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeInExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="fadeinexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/FadeInExample.mp4"></video><h5 class="example-header">FadeInExample<a class="headerlink" href="#fadeinexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeInExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
             <span class="n">Circle</span><span class="p">(),</span>
@@ -282,7 +283,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </pre></div>
 </div>
-</div><div class="manim-example"><video class="manim-video" controls="" id="fadeinfromexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/FadeInFromExample.mp4"></video><h5 class="example-header">FadeInFromExample<a class="headerlink" href="#fadeinfromexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeInFromExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+</div><div class="manim-example"><video class="manim-video" controls="" id="fadeinfromexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/FadeInFromExample.mp4"></video><h5 class="example-header">FadeInFromExample<a class="headerlink" href="#fadeinfromexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeInFromExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
             <span class="n">Circle</span><span class="p">(),</span>
@@ -302,7 +303,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </pre></div>
 </div>
-</div><div class="manim-example"><video class="manim-video" controls="" id="fadeoutandshiftexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/FadeOutAndShiftExample.mp4"></video><h5 class="example-header">FadeOutAndShiftExample<a class="headerlink" href="#fadeoutandshiftexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeOutAndShiftExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+</div><div class="manim-example"><video class="manim-video" controls="" id="fadeoutandshiftexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/FadeOutAndShiftExample.mp4"></video><h5 class="example-header">FadeOutAndShiftExample<a class="headerlink" href="#fadeoutandshiftexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeOutAndShiftExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
             <span class="n">Circle</span><span class="p">(),</span>
@@ -325,7 +326,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </pre></div>
 </div>
-</div><div class="manim-example"><video class="manim-video" controls="" id="fadeinfromlargeexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/FadeInFromLargeExample.mp4"></video><h5 class="example-header">FadeInFromLargeExample<a class="headerlink" href="#fadeinfromlargeexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeInFromLargeExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+</div><div class="manim-example"><video class="manim-video" controls="" id="fadeinfromlargeexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/FadeInFromLargeExample.mp4"></video><h5 class="example-header">FadeInFromLargeExample<a class="headerlink" href="#fadeinfromlargeexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeInFromLargeExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
             <span class="n">Circle</span><span class="p">(),</span>
@@ -365,7 +366,7 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">shift</span></code> : 移动向量</p></li>
 </ul>
 </dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="fadeinfrompointexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/FadeInFromPointExample.mp4"></video><h5 class="example-header">FadeInFromPointExample<a class="headerlink" href="#fadeinfrompointexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeInFromPointExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="fadeinfrompointexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/FadeInFromPointExample.mp4"></video><h5 class="example-header">FadeInFromPointExample<a class="headerlink" href="#fadeinfrompointexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeInFromPointExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
             <span class="n">Circle</span><span class="p">(),</span>
@@ -394,7 +395,7 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">shift</span></code> : 移动向量</p></li>
 </ul>
 </dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="fadeouttopointexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/FadeOutToPointExample.mp4"></video><h5 class="example-header">FadeOutToPointExample<a class="headerlink" href="#fadeouttopointexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeOutToPointExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="fadeouttopointexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/FadeOutToPointExample.mp4"></video><h5 class="example-header">FadeOutToPointExample<a class="headerlink" href="#fadeouttopointexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeOutToPointExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
             <span class="n">Circle</span><span class="p">(),</span>
@@ -425,7 +426,7 @@
 <dd><p>Ordering must match the ording of arguments to interpolate_submobject</p>
 </dd></dl>
 </dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="fadetransformexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/FadeTransformExample.mp4"></video><h5 class="example-header">FadeTransformExample<a class="headerlink" href="#fadetransformexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeTransformExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="fadetransformexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/FadeTransformExample.mp4"></video><h5 class="example-header">FadeTransformExample<a class="headerlink" href="#fadetransformexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeTransformExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">m_a</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">BLUE</span><span class="p">,</span> <span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
         <span class="n">m_b</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="s2">"Rectangle"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
@@ -443,7 +444,7 @@
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.fading.</code><code class="sig-name descname">FadeTransformPieces</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="n">target_mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.fading.FadeTransformPieces" title="永久链接至目标">¶</a></dt>
 <dd><p>子物件分别渐变为目标</p>
 </dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="fadetransformpiecesexample" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/FadeTransformPiecesExample.mp4"></video><h5 class="example-header">FadeTransformPiecesExample<a class="headerlink" href="#fadetransformpiecesexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeTransformPiecesExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="fadetransformpiecesexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/FadeTransformPiecesExample.mp4"></video><h5 class="example-header">FadeTransformPiecesExample<a class="headerlink" href="#fadetransformpiecesexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FadeTransformPiecesExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">m_a</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="o">*</span><span class="p">[</span>
             <span class="n">Circle</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span>
@@ -482,7 +483,7 @@
 <dd><p>淡入后淡出</p>
 </dd></dl>
 <p><strong>Fade和VFade的区别</strong>：</p>
-<video autoplay="" class="manim-video" controls="" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/FadeAndVFade.mp4"></video><p><code class="docutils literal notranslate"><span class="pre">FadeIn</span></code> 的边从细变粗，从暗变亮。 <code class="docutils literal notranslate"><span class="pre">VFadeIn</span></code> 的边始终是正常粗细，从暗变亮。</p>
+<video autoplay="" class="manim-video" controls="" loop="" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/FadeAndVFade.mp4"></video><p><code class="docutils literal notranslate"><span class="pre">FadeIn</span></code> 的边从细变粗，从暗变亮。 <code class="docutils literal notranslate"><span class="pre">VFadeIn</span></code> 的边始终是正常粗细，从暗变亮。</p>
 <p><code class="docutils literal notranslate"><span class="pre">FadeOut</span></code> 和 <code class="docutils literal notranslate"><span class="pre">VFadeOut</span></code> 无区别</p>
 </div>
 </div>

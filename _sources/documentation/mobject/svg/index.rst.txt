@@ -19,6 +19,7 @@ svg
    brace
    drawings
    mtex_mobject
+   string_mobject
    svg_mobject
    tex_mobject
    text_mobject

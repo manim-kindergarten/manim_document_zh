@@ -6,10 +6,10 @@
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>二阶贝塞尔曲线轮廓线着色 Quadratic bezier stroke - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?09898de0ad03884bb0e7aedd">
-    <link rel="stylesheet" href="../../_static/pygments.css?09898de0ad03884bb0e7aedd">
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
+    <link rel="stylesheet" href="../../_static/styles/default.css?bb25b615002f5e831937f464">
+    <link rel="stylesheet" href="../../_static/pygments.css?bb25b615002f5e831937f464">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?09898de0ad03884bb0e7aedd"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?bb25b615002f5e831937f464"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -134,6 +134,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/brace.html">Brace</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/drawings.html">Drawings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/mtex_mobject.html">MTex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mobject/svg/string_mobject.html">StringMobject</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/svg_mobject.html">SVGMobject</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/tex_mobject.html">Tex</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../mobject/svg/text_mobject.html">Text</a></li>
@@ -429,7 +430,7 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">points</span></code> 为输入参数</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">flat_point</span></code> 为输出参数</p></li>
 </ul>
-<p>似乎是透视投影</p>
+<p>透视投影变换</p>
 </dd></dl>
 <dl class="cpp function">
 <dt id="_CPPv421angle_between_vectors4vec24vec2">
@@ -460,8 +461,8 @@
 </ul>
 <p>寻找贝塞尔曲线边界的角，可以作为三角扇形发出（直接翻译真的看不懂）</p>
 <ul class="simple">
-<li><p>当图形的边为直线时，生成的角落是一个四边形</p></li>
-<li><p>当图形的边为曲线时，生成的角落为五边形</p></li>
+<li><p>当图形的边为直线时，生成的图元是一个四边形</p></li>
+<li><p>当图形的边为曲线时，生成的图元为五边形</p></li>
 </ul>
 </dd></dl>
 <dl class="cpp function">
@@ -470,11 +471,13 @@
 <dd><ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">bevel</span></code> 和 <code class="docutils literal notranslate"><span class="pre">angle</span></code> 为输出参数</p></li>
 </ul>
+<p>计算邻边角度，并判断是否需要添加斜边来弥补缺失的接合处</p>
 </dd></dl>
 <dl class="cpp function">
 <dt id="_CPPv415find_joint_infoAL3E_4vec2AL3E_4vec2AL3E_4vec2i">
 <span id="_CPPv315find_joint_infoAL3E_4vec2AL3E_4vec2AL3E_4vec2i"></span><span id="_CPPv215find_joint_infoA3_4vec2A3_4vec2A3_4vec2i"></span><span id="find_joint_info__vec2A.vec2A.vec2A.i"></span>void <code class="sig-name descname">find_joint_info</code><span class="sig-paren">(</span>vec2 <em>controls</em>[3], vec2 <em>prev</em>[3], vec2 <em>next</em>[3], int <em>degree</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv415find_joint_infoAL3E_4vec2AL3E_4vec2AL3E_4vec2i" title="永久链接至目标">¶</a><br/></dt>
-<dd></dd></dl>
+<dd><p>根据前驱曲线和后继曲线来计算出合适的接合处</p>
+</dd></dl>
 </div>
 <div class="section" id="id5">
 <h3>着色器功能<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
@@ -589,7 +592,7 @@
 <p>于是我们首先会想到用三角形，因为前面贝塞尔曲线填充也提到过用三角形来覆盖弓形。但仔细思考，这样还有什么漏洞？</p>
 <p>我们想要的效果是，曲线从首部到尾部的宽度都是均匀的，而只使用三角形来覆盖它，就会导致首部和尾部有一小块没有被覆盖到。
 因此，我们还需要对这条底边进行扩展，变成一个五边形，这样就能完全覆盖这条曲线了。</p>
-<img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/curve_stroke_primitive.png" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/curve_stroke_primitive.png"/>
+<img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/curve_stroke_primitive.png" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/curve_stroke_primitive.png"/>
 <p>另外，还有一些处理逻辑，是根据上一段曲线和下一段曲线来推测曲线之间的转接点图元，这部分也被包含在了图元处理中。
 由于它的处理逻辑较为复杂，在此不过多阐述（绝对是因为笔者看不懂）</p>
 </li>
@@ -601,13 +604,13 @@
 <p>从几何着色器传来的一系列图元，我们依然是无脑地，直接将传来的颜色涂在片段上。这样曲线就已经上色完成了。而接下来要做的处理，
 和之前讨论过的曲线填充方法类似，只需将不需要的片段擦去即可。</p>
 <p>此处使用的依然是 sdf 符号距离函数，计算出在线宽范围内的片段，将片段之外的部分透明度都设置为 0，也就完成了着色的操作。</p>
-<img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/curve_stroke_shader.png" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/curve_stroke_shader.png"/>
+<img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/curve_stroke_shader.png" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/curve_stroke_shader.png"/>
 <p>除此以外，就是一些曲线转接处的细节，此处不过多阐述。</p>
 </div>
 </div>
 <div class="section" id="id11">
 <h2>流程图<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h2>
-<img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/quadratic_bezier_stroke_shader.svg" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/quadratic_bezier_stroke_shader.svg"/></div>
+<img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/quadratic_bezier_stroke_shader.svg" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/quadratic_bezier_stroke_shader.svg"/></div>
 </div>
 
       </article>

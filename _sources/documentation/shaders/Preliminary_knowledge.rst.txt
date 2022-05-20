@@ -12,7 +12,7 @@ OpenGL 预备知识
 OpenGL 运行流程
 ********************
 
-.. image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/OpenGL-sequence.svg
+.. image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/OpenGL-sequence.svg
 
 
 
@@ -27,7 +27,7 @@ GLSL 函数
     - 当 ``x >= edge_1`` 时返回 1.0
     - 当 ``edge_0 < x < edge_1`` 时形成一个从 0 到 1 的平滑插值
 
-    .. image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/functions/smoothstep1.svg
+    .. image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/functions/smoothstep1.svg
 
     特别的，当 ``egde_0 > edge_1`` 时，图像会翻转，即满足下面的情况
 
@@ -35,7 +35,7 @@ GLSL 函数
     - 当 ``x >= edge_0`` 时返回 0.0
     - 当 ``edge_1 < x < edge_0`` 时形成一个从 1 到 0 的平滑插值
 
-    .. image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/functions/smoothstep2.svg
+    .. image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/functions/smoothstep2.svg
 
 --------------------
 
@@ -80,20 +80,20 @@ sdf 符号距离函数
 .. code-block:: cpp
 
     float sdfCircle(vec2 point, float radius) {
-        return length(p) - radius;
+        return radius - length(p);
     }
 
 此时我们仔细分析一下
 
--   在圆内的点，返回的结果均小于 0
+-   在圆内的点，返回的结果均大于 0
 -   在圆上的点，返回值为 0
--   在圆外的点，返回值均大于 0
+-   在圆外的点，返回值均小于 0
 
 此时， 0 就成了一个分界点，我们可以使用一些其他的函数来进一步处理，即可得到理想的效果了。我们使用上面提到的 smoothstep 函数
 
 .. code-block:: cpp
 
-    float f = smoothstep(0.01, 0., sdfCircle(coords, 0.5))
+    float f = smoothstep(0., 0.01, sdfCircle(coords, 0.5))
 
 这一步得到 ``f`` ，它的结果为：当点在圆内，则返回 1 ，在圆外，则返回 0，可以得到一个近似的圆的坐标集
 
