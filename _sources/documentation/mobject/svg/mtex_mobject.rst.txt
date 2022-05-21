@@ -5,12 +5,13 @@ MTex
 因而支持 :class:`~manimlib.animation.transform_matching_parts.TransformMatchingStrings` 动画。
 
 :class:`~manimlib.mobject.svg.mtex_mobject.MTex` 提供的参数有：
--  ``font_size: float = 48``: 全局字号。
--  ``alignment: str = "\\centering"``: 对齐方向。
--  ``tex_environment: str | tuple[str, str] | None = "align*"``: tex 环境。 :class:`~manimlib.mobject.svg.mtex_mobject.MTexText` 类中该参数默认为 ``None``。
--  ``tex_to_color_map: dict[Selector, ManimColor] = {}``: 局部颜色。
--  ``isolate: Selector = ()``: 预指定子串。
--  ``base_color: ManimColor = WHITE``: 全局颜色。
+
+- ``font_size: float = 48``: 全局字号。
+- ``alignment: str = "\\centering"``: 对齐方向。
+- ``tex_environment: str | tuple[str, str] | None = "align*"``: tex 环境。 :class:`~manimlib.mobject.svg.mtex_mobject.MTexText` 类中该参数默认为 ``None``。
+- ``tex_to_color_map: dict[Selector, ManimColor] = {}``: 局部颜色。
+- ``isolate: Selector = ()``: 预指定子串。
+- ``base_color: ManimColor = WHITE``: 全局颜色。
 
 该类指定子串的可选方式有（``Selector`` 类型可参阅 :class:`~manimlib.mobject.svg.string_mobject.StringMobject` ）：
 

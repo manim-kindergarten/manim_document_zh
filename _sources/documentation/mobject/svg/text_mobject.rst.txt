@@ -8,6 +8,7 @@ Text
 关于 Pango 提供的若干 markup 标签，详情参阅 `Pango Markup <https://docs.gtk.org/Pango/pango_markup.html>`__
 
 :class:`~manimlib.mobject.svg.text_mobject.MarkupText` 提供的参数有：
+
 -  ``is_markup: bool = True``: 决定是否解析 Pango markup 标签。 :class:`~manimlib.mobject.svg.text_mobject.Text` 类中该参数默认为 ``False``。
 -  ``font_size: float = 48``: 全局字号。
 -  ``lsh: float | None = None``: 行间距倍数，``line_spacing_height`` 的缩写。默认状态下视作 ``0.6``。

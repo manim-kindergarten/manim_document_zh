@@ -11,7 +11,7 @@ Broadcast
     :members:
 
 .. manim-example:: BroadcastExample
-    :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/BroadcastExample.mp4
+    :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/specialized/BroadcastExample.mp4
 
     class BroadcastExample(Scene):
         def construct(self):

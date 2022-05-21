@@ -7,7 +7,7 @@ UpdateFromFunc
     :members:
     
 .. manim-example:: UpdateFromFuncExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/UpdateFromFuncExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/update/UpdateFromFuncExample.mp4
 
   class UpdateFromFuncExample(Scene):
       def construct(self):
@@ -31,7 +31,7 @@ UpdateFromAlphaFunc
     :members:
     
 .. manim-example:: UpdateFromAlphaFuncExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/UpdateFromAlphaFuncExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/update/UpdateFromAlphaFuncExample.mp4
 
   class UpdateFromAlphaFuncExample(Scene):
       def construct(self):
@@ -61,7 +61,7 @@ MaintainPositionRelativeTo
     :members:
     
 .. manim-example:: MaintainPositionRelativeToExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/MaintainPositionRelativeToExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/update/MaintainPositionRelativeToExample.mp4
 
   class MaintainPositionRelativeToExample(Scene):
       def construct(self):

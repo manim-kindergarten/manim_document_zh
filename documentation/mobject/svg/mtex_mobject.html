@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../../_static/styles/default.css?5389d3f27993b3e47b841134">
-    <link rel="stylesheet" href="../../../_static/pygments.css?5389d3f27993b3e47b841134">
+    <link rel="stylesheet" href="../../../_static/styles/default.css?c649d631ad34df5c8aeef6dd">
+    <link rel="stylesheet" href="../../../_static/pygments.css?c649d631ad34df5c8aeef6dd">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../../_static/clipboard.min.js"></script>
         <script src="../../../_static/copybutton.js"></script>
         <script src="../../../_static/translations.js"></script>
-        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?5389d3f27993b3e47b841134"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../../_static/scripts/main.js?c649d631ad34df5c8aeef6dd"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -216,13 +216,15 @@
 <h1>MTex<a class="headerlink" href="#mtex" title="永久链接至标题">¶</a></h1>
 <p>该类由凡人忆拾编写和完善，使用 <code class="docutils literal notranslate"><span class="pre">latex/xelatex</span></code> 生成公式。该类继承自 <a class="reference internal" href="string_mobject.html#manimlib.mobject.svg.string_mobject.StringMobject" title="manimlib.mobject.svg.string_mobject.StringMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringMobject</span></code></a> ，
 因而支持 <a class="reference internal" href="../../animation/transform_matching_parts.html#manimlib.animation.transform_matching_parts.TransformMatchingStrings" title="manimlib.animation.transform_matching_parts.TransformMatchingStrings"><code class="xref py py-class docutils literal notranslate"><span class="pre">TransformMatchingStrings</span></code></a> 动画。</p>
-<p><a class="reference internal" href="#manimlib.mobject.svg.mtex_mobject.MTex" title="manimlib.mobject.svg.mtex_mobject.MTex"><code class="xref py py-class docutils literal notranslate"><span class="pre">MTex</span></code></a> 提供的参数有：
--  <code class="docutils literal notranslate"><span class="pre">font_size:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">48</span></code>: 全局字号。
--  <code class="docutils literal notranslate"><span class="pre">alignment:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">"\\centering"</span></code>: 对齐方向。
--  <code class="docutils literal notranslate"><span class="pre">tex_environment:</span> <span class="pre">str</span> <span class="pre">|</span> <span class="pre">tuple[str,</span> <span class="pre">str]</span> <span class="pre">|</span> <span class="pre">None</span> <span class="pre">=</span> <span class="pre">"align*"</span></code>: tex 环境。 <a class="reference internal" href="#manimlib.mobject.svg.mtex_mobject.MTexText" title="manimlib.mobject.svg.mtex_mobject.MTexText"><code class="xref py py-class docutils literal notranslate"><span class="pre">MTexText</span></code></a> 类中该参数默认为 <code class="docutils literal notranslate"><span class="pre">None</span></code>。
--  <code class="docutils literal notranslate"><span class="pre">tex_to_color_map:</span> <span class="pre">dict[Selector,</span> <span class="pre">ManimColor]</span> <span class="pre">=</span> <span class="pre">{}</span></code>: 局部颜色。
--  <code class="docutils literal notranslate"><span class="pre">isolate:</span> <span class="pre">Selector</span> <span class="pre">=</span> <span class="pre">()</span></code>: 预指定子串。
--  <code class="docutils literal notranslate"><span class="pre">base_color:</span> <span class="pre">ManimColor</span> <span class="pre">=</span> <span class="pre">WHITE</span></code>: 全局颜色。</p>
+<p><a class="reference internal" href="#manimlib.mobject.svg.mtex_mobject.MTex" title="manimlib.mobject.svg.mtex_mobject.MTex"><code class="xref py py-class docutils literal notranslate"><span class="pre">MTex</span></code></a> 提供的参数有：</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">font_size:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">48</span></code>: 全局字号。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">alignment:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">"\\centering"</span></code>: 对齐方向。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tex_environment:</span> <span class="pre">str</span> <span class="pre">|</span> <span class="pre">tuple[str,</span> <span class="pre">str]</span> <span class="pre">|</span> <span class="pre">None</span> <span class="pre">=</span> <span class="pre">"align*"</span></code>: tex 环境。 <a class="reference internal" href="#manimlib.mobject.svg.mtex_mobject.MTexText" title="manimlib.mobject.svg.mtex_mobject.MTexText"><code class="xref py py-class docutils literal notranslate"><span class="pre">MTexText</span></code></a> 类中该参数默认为 <code class="docutils literal notranslate"><span class="pre">None</span></code>。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tex_to_color_map:</span> <span class="pre">dict[Selector,</span> <span class="pre">ManimColor]</span> <span class="pre">=</span> <span class="pre">{}</span></code>: 局部颜色。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">isolate:</span> <span class="pre">Selector</span> <span class="pre">=</span> <span class="pre">()</span></code>: 预指定子串。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">base_color:</span> <span class="pre">ManimColor</span> <span class="pre">=</span> <span class="pre">WHITE</span></code>: 全局颜色。</p></li>
+</ul>
 <p>该类指定子串的可选方式有（<code class="docutils literal notranslate"><span class="pre">Selector</span></code> 类型可参阅 <a class="reference internal" href="string_mobject.html#manimlib.mobject.svg.string_mobject.StringMobject" title="manimlib.mobject.svg.string_mobject.StringMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringMobject</span></code></a> ）：</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">isolate</span></code> 参数（<code class="docutils literal notranslate"><span class="pre">Selector</span></code> 类型）；</p></li>

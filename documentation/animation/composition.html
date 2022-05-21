@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?9f5591afb5d3258fc5a9d791">
-    <link rel="stylesheet" href="../../_static/pygments.css?9f5591afb5d3258fc5a9d791">
+    <link rel="stylesheet" href="../../_static/styles/default.css?a2d0ee1a72a94270a268419e">
+    <link rel="stylesheet" href="../../_static/pygments.css?a2d0ee1a72a94270a268419e">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?9f5591afb5d3258fc5a9d791"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?a2d0ee1a72a94270a268419e"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -242,7 +242,7 @@ suspended during the animation, this will do
 nothing to self.mobject.</p>
 </dd></dl>
 </dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="animationgroupexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/AnimationGroupExample.mp4"></video><h5 class="example-header">AnimationGroupExample<a class="headerlink" href="#animationgroupexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">AnimationGroupExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="animationgroupexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/composition/AnimationGroupExample.mp4"></video><h5 class="example-header">AnimationGroupExample<a class="headerlink" href="#animationgroupexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">AnimationGroupExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
             <span class="n">Circle</span><span class="p">(),</span>
@@ -279,7 +279,7 @@ suspended during the animation, this will do
 nothing to self.mobject.</p>
 </dd></dl>
 </dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="successionexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/SuccessionExample.mp4"></video><h5 class="example-header">SuccessionExample<a class="headerlink" href="#successionexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SuccessionExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="successionexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/composition/SuccessionExample.mp4"></video><h5 class="example-header">SuccessionExample<a class="headerlink" href="#successionexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SuccessionExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
             <span class="n">Circle</span><span class="p">(),</span>
@@ -306,7 +306,7 @@ nothing to self.mobject.</p>
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.composition.</code><code class="sig-name descname">LaggedStart</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">animations</span><span class="p">:</span> <span class="n"><a class="reference internal" href="index.html#manimlib.animation.animation.Animation" title="manimlib.animation.animation.Animation">manimlib.animation.animation.Animation</a></span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.composition.LaggedStart" title="永久链接至目标">¶</a></dt>
 <dd><p>可以统一控制 <code class="docutils literal notranslate"><span class="pre">lag_ratio</span></code> 的动画组</p>
 </dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="laggedstartexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/LaggedStartExample.mp4"></video><h5 class="example-header">LaggedStartExample<a class="headerlink" href="#laggedstartexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">LaggedStartExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="laggedstartexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/composition/LaggedStartExample.mp4"></video><h5 class="example-header">LaggedStartExample<a class="headerlink" href="#laggedstartexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">LaggedStartExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
             <span class="n">Circle</span><span class="p">(),</span>
@@ -333,7 +333,7 @@ nothing to self.mobject.</p>
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.composition.</code><code class="sig-name descname">LaggedStartMap</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">AnimationClass</span><span class="p">:</span> <span class="n">type</span></em>, <em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="n">arg_creator</span><span class="p">:</span> <span class="n">Callable[[Mobject], tuple] | None</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.composition.LaggedStartMap" title="永久链接至目标">¶</a></dt>
 <dd><p>统一控制 <strong>动画类</strong>、 <code class="docutils literal notranslate"><span class="pre">mobjects</span></code>、 <code class="docutils literal notranslate"><span class="pre">lag_ratio</span></code> 的动画组</p>
 </dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="laggedstartmapexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/LaggedStartMapExample.mp4"></video><h5 class="example-header">LaggedStartMapExample<a class="headerlink" href="#laggedstartmapexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">LaggedStartMapExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="laggedstartmapexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/composition/LaggedStartMapExample.mp4"></video><h5 class="example-header">LaggedStartMapExample<a class="headerlink" href="#laggedstartmapexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">LaggedStartMapExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
             <span class="n">Circle</span><span class="p">(),</span>

@@ -14,7 +14,7 @@ Rotating
     :members:
     
 .. manim-example:: RotatingExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/RotatingExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/rotation/RotatingExample.mp4
 
   class RotatingExample(Scene):
       def construct(self):
@@ -45,7 +45,7 @@ Rotate
     :members:
     
 .. manim-example:: RotateExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/RotateExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/rotation/RotateExample.mp4
 
   class RotateExample(Scene):
       def construct(self):
