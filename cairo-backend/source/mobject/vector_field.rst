@@ -17,7 +17,7 @@ ShowPassingFlashWithThinningStrokeWidth
     :members:
     
 .. manim-example:: ShowPassingFlashWithThinningStrokeWidthExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ShowPassingFlashWithThinningStrokeWidthExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ShowPassingFlashWithThinningStrokeWidthExample.mp4
 
    class ShowPassingFlashWithThinningStrokeWidthExample(Scene):
        def construct(self):

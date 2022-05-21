@@ -14,7 +14,7 @@ FadeOut
     :members:
     
 .. manim-example:: FadeOutExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FadeOutExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FadeOutExample.mp4
 
   class FadeOutExample(Scene):
       def construct(self):
@@ -41,7 +41,7 @@ FadeIn
     :members:
     
 .. manim-example:: FadeInExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FadeInExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FadeInExample.mp4
 
   class FadeInExample(Scene):
       def construct(self):
@@ -65,7 +65,7 @@ FadeInFrom
     :members:
     
 .. manim-example:: FadeInFromExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FadeInFromExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FadeInFromExample.mp4
 
   class FadeInFromExample(Scene):
       def construct(self):
@@ -92,7 +92,7 @@ FadeInFromDown
     :members:
     
 .. manim-example:: FadeInFromDownExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FadeInFromDownExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FadeInFromDownExample.mp4
 
   class FadeInFromDownExample(Scene):
       def construct(self):
@@ -116,7 +116,7 @@ FadeOutAndShift
     :members:
     
 .. manim-example:: FadeOutAndShiftExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FadeOutAndShiftExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FadeOutAndShiftExample.mp4
 
   class FadeOutAndShiftExample(Scene):
       def construct(self):
@@ -146,7 +146,7 @@ FadeOutAndShiftDown
     :members:
     
 .. manim-example:: FadeOutAndShiftDownExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FadeOutAndShiftDownExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FadeOutAndShiftDownExample.mp4
 
   class FadeOutAndShiftDownExample(Scene):
       def construct(self):
@@ -170,7 +170,7 @@ FadeInFromPoint
     :members:
     
 .. manim-example:: FadeInFromPointExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/FadeInFromPointExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/FadeInFromPointExample.mp4
 
   class FadeInFromPointExample(Scene):
       def construct(self):
@@ -195,7 +195,7 @@ FadeInFromLarge
     :members:
     
 .. manim-example:: FadeInFromLargeExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FadeInFromLargeExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FadeInFromLargeExample.mp4
 
   class FadeInFromLargeExample(Scene):
       def construct(self):
@@ -243,7 +243,7 @@ VFadeInThenOut
 
 .. raw:: html
 
-    <video class="manim-video" controls loop autoplay src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/FadeAndVFade.mp4"></video>
+    <video class="manim-video" controls loop autoplay src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/FadeAndVFade.mp4"></video>
 
 ``FadeIn`` 的边从细变粗，从暗变亮。 ``VFadeIn`` 的边始终是正常粗细，从暗变亮。
 

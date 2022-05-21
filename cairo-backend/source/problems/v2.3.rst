@@ -404,7 +404,7 @@ Q9: 怎么控制物体移动或者\ ``Transform``\ 的速率
 
 使用\ ``rate_func``\ ，一些\ ``manim``\ 中已经定义的在群文件中有视频
 
-.. image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/rate_functions.png
+.. image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/rate_functions.png
 
 Q10: 数学符号/公式 用LaTeX怎么打
 --------------------------------
@@ -618,6 +618,6 @@ Q19: 有没有什么好的场景例子供学习
 .. [18]
    ``from_3b1b``\ \ 文件夹中
 
-.. |imagepd1| image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/CommonProblems/pd1.png
-.. |imagepd2| image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/CommonProblems/pd2.png
-.. |imagegif| image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/CommonProblems/gif.png
+.. |imagepd1| image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/CommonProblems/pd1.png
+.. |imagepd2| image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/CommonProblems/pd2.png
+.. |imagegif| image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/CommonProblems/gif.png

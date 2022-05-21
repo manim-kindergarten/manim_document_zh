@@ -1,4 +1,4 @@
-[![manim_document_zh](https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/DocumentHeader.png)](https://github.com/manim-kindergarten/manim_document_zh)
+[![manim_document_zh](https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/DocumentHeader.png)](https://github.com/manim-kindergarten/manim_document_zh)
 
 ![docs](https://github.com/manim-kindergarten/manim_document_zh/workflows/docs/badge.svg)
 [![GPL License](https://img.shields.io/github/license/manim-kindergarten/manim_document_zh)](https://choosealicense.com/licenses/gpl-3.0/)

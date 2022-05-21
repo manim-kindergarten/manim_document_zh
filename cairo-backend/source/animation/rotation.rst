@@ -14,7 +14,7 @@ Rotating
     :members:
     
 .. manim-example:: RotatingExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/RotatingExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/RotatingExample.mp4
 
   class RotatingExample(Scene):
       def construct(self):
@@ -45,7 +45,7 @@ Rotate
     :members:
     
 .. manim-example:: RotateExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/RotateExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/RotateExample.mp4
 
   class RotateExample(Scene):
       def construct(self):
@@ -75,7 +75,7 @@ Rotate
 
 .. raw:: html
 
-  <video class="manim-video" controls loop autoplay src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/RotateAndRotating.mp4"></video>
+  <video class="manim-video" controls loop autoplay src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/RotateAndRotating.mp4"></video>
 
 
 ``Rotate`` 目前是 ``Transform`` 的子类，即带有 ``path_arc`` 的 ``Transform`` ，所有会有扭曲
