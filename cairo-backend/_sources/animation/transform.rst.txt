@@ -7,7 +7,7 @@ Transform
     :members:
     
 .. manim-example:: TransformExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/TransformExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/TransformExample.mp4
 
   class TransformExample(Scene):
       def construct(self):
@@ -29,7 +29,7 @@ ReplacementTransform
     :members:
     
 .. manim-example:: ReplacementTransformExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ReplacementTransformExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ReplacementTransformExample.mp4
 
   class ReplacementTransformExample(Scene):
       def construct(self):
@@ -68,7 +68,7 @@ TransformFromCopy
     :members:
     
 .. manim-example:: TransformFromCopyExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/TransformFromCopyExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/TransformFromCopyExample.mp4
 
   class TransformFromCopyExample(Scene):
       def construct(self):
@@ -87,7 +87,7 @@ ClockwiseTransform
     :members:
     
 .. manim-example:: ClockwiseTransformExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ClockwiseTransformExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ClockwiseTransformExample.mp4
 
   class ClockwiseTransformExample(Scene):
       def construct(self):
@@ -106,7 +106,7 @@ CounterclockwiseTransform
     :members:
     
 .. manim-example:: CounterclockwiseTransformExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/CounterclockwiseTransformExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/CounterclockwiseTransformExample.mp4
 
   class CounterclockwiseTransformExample(Scene):
       def construct(self):
@@ -125,7 +125,7 @@ MoveToTarget
     :members:
     
 .. manim-example:: MoveToTargetExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/MoveToTargetExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/MoveToTargetExample.mp4
 
   class MoveToTargetExample(Scene):
       def construct(self):
@@ -142,7 +142,7 @@ MoveToTarget
 操作target。并且这样能对同一个mobject多次操作（而 ``ApplyMethod`` 不可以，见下）
 
 .. manim-example:: SelfPlayExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/SelfPlayExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/SelfPlayExample.mp4
 
   class SelfPlayExample(Scene):
       def construct(self):
@@ -163,7 +163,7 @@ ApplyMethod
     :members:
     
 .. manim-example:: ApplyMethodExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ApplyMethodExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ApplyMethodExample.mp4
 
   class ApplyMethodExample(Scene):
       def construct(self):
@@ -210,7 +210,7 @@ ShrinkToCenter
     :members:
     
 .. manim-example:: ShrinkToCenterExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/ShrinkToCenterExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/ShrinkToCenterExample.mp4
 
   class ShrinkToCenterExample(Scene):
       def construct(self):
@@ -235,7 +235,7 @@ Restore
     :members:
     
 .. manim-example:: RestoreExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/RestoreExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/RestoreExample.mp4
 
   class RestoreExample(Scene):
       def construct(self):
@@ -255,7 +255,7 @@ ApplyFunction
     :members:
     
 .. manim-example:: ApplyFunctionExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ApplyFunctionExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ApplyFunctionExample.mp4
 
   class ApplyFunctionExample(Scene):
       def construct(self):
@@ -276,7 +276,7 @@ ApplyMatrix
     :members:
     
 .. manim-example:: ApplyMatrixExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ApplyMatrixExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ApplyMatrixExample.mp4
 
   class ApplyMatrixExample(Scene):
       def construct(self):
@@ -305,7 +305,7 @@ CyclicReplace
     :members:
     
 .. manim-example:: CyclicReplaceExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/CyclicReplaceExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/CyclicReplaceExample.mp4
 
   class CyclicReplaceExample(Scene):
       def construct(self):

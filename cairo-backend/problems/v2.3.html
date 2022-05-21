@@ -6,10 +6,10 @@
     <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>安装问题 - manim  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/custom.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?f81cc33ed9b33c518946c20b">
-    <link rel="stylesheet" href="../_static/pygments.css?f81cc33ed9b33c518946c20b">
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/custom.css" />
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/colors.css" />
+    <link rel="stylesheet" href="../_static/styles/default.css?18728590b71c95dd1dde885e">
+    <link rel="stylesheet" href="../_static/pygments.css?18728590b71c95dd1dde885e">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?f81cc33ed9b33c518946c20b"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?18728590b71c95dd1dde885e"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -601,7 +601,7 @@ b+a
 <div class="section" id="q9-transform">
 <h2>Q9: 怎么控制物体移动或者<code class="docutils literal notranslate"><span class="pre">Transform</span></code>的速率<a class="headerlink" href="#q9-transform" title="永久链接至标题">¶</a></h2>
 <p>使用<code class="docutils literal notranslate"><span class="pre">rate_func</span></code>，一些<code class="docutils literal notranslate"><span class="pre">manim</span></code>中已经定义的在群文件中有视频</p>
-<img alt="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/rate_functions.png" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/rate_functions.png"/>
+<img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/rate_functions.png" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/rate_functions.png"/>
 </div>
 <div class="section" id="q10-latex">
 <h2>Q10: 数学符号/公式 用LaTeX怎么打<a class="headerlink" href="#q10-latex" title="永久链接至标题">¶</a></h2>
@@ -673,14 +673,14 @@ b+a
 <h2>Q15: 如何解决二维画面中的图层问题<a class="headerlink" href="#q15" title="永久链接至标题">¶</a></h2>
 <p>可以使用<code class="docutils literal notranslate"><span class="pre">pdcxs</span></code>添加的<code class="docutils literal notranslate"><span class="pre">plot_depth</span></code>，具体更改见下图 <a class="footnote-reference brackets" href="#id38" id="id20">13</a></p>
 <p><code class="docutils literal notranslate"><span class="pre">MK</span> <span class="pre">fork</span></code>的版本已经做了修改：<a class="reference external" href="https://github.com/manim-kindergarten/manim">https://github.com/manim-kindergarten/manim</a></p>
-<p><img alt="imagepd1" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/CommonProblems/pd1.png"/></p>
-<p><img alt="imagepd2" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/CommonProblems/pd2.png"/></p>
+<p><img alt="imagepd1" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/CommonProblems/pd1.png"/></p>
+<p><img alt="imagepd2" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/CommonProblems/pd2.png"/></p>
 </div>
 <div class="section" id="q16-gif">
 <h2>Q16: 如何导出<code class="docutils literal notranslate"><span class="pre">gif</span></code>文件<a class="headerlink" href="#q16-gif" title="永久链接至标题">¶</a></h2>
 <p>在新版本中，<code class="docutils literal notranslate"><span class="pre">manim</span></code>导出<code class="docutils literal notranslate"><span class="pre">gif</span></code>已经失效，可以导出<code class="docutils literal notranslate"><span class="pre">mp4</span></code>，后用<code class="docutils literal notranslate"><span class="pre">ffmpeg</span></code>转换。也可以按照下图修改源码</p>
 <p><code class="docutils literal notranslate"><span class="pre">MK</span> <span class="pre">fork</span></code>的版本已经做了修改：<a class="reference external" href="https://github.com/manim-kindergarten/manim">https://github.com/manim-kindergarten/manim</a></p>
-<p><img alt="imagegif" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/CommonProblems/gif.png"/></p>
+<p><img alt="imagegif" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/CommonProblems/gif.png"/></p>
 <p>改过后，在输入命令时加上<code class="docutils literal notranslate"><span class="pre">-i</span></code>选项，就能导出<code class="docutils literal notranslate"><span class="pre">gif</span></code>了</p>
 </div>
 <div class="section" id="q17">

@@ -1,7 +1,7 @@
 manim cairo-backend版本 教程文档
 ==================================================
 
-.. image:: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/DocumentHeader.png
+.. image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/DocumentHeader.png
 
 这些文档基于 `3b1b/manim存储库 <https://github.com/3b1b/manim>`_ 的cairo-backend分支（旧版），你可以通过提交pr来为文档做出贡献，详见 `贡献规则及编写指南页面 <https://docs.manim.org.cn/contribution>`__
 

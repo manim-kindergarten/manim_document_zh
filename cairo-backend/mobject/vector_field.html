@@ -6,10 +6,10 @@
     <link rel="shortcut icon" href="../_static/mk.png"/><meta name="generator" content="sphinx-3.0.3, furo 2020.10.05.beta9"/>
         <title>VectorField - manim  文档</title>
       <link rel="stylesheet" href="../_static/copybutton.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/custom.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?9cbba31344c3ecf255286345">
-    <link rel="stylesheet" href="../_static/pygments.css?9cbba31344c3ecf255286345">
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/custom.css" />
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/colors.css" />
+    <link rel="stylesheet" href="../_static/styles/default.css?1e94c93ef84afa3477ded0e6">
+    <link rel="stylesheet" href="../_static/pygments.css?1e94c93ef84afa3477ded0e6">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?9cbba31344c3ecf255286345"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?1e94c93ef84afa3477ded0e6"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -283,7 +283,7 @@
 <dd><p>通过改变线条宽度来实现流动效果</p>
 <p>传入的 <code class="docutils literal notranslate"><span class="pre">vmobject</span></code> 表示需要显示流动效果的物体（一般是 <code class="docutils literal notranslate"><span class="pre">StreamLines</span></code>）</p>
 </dd></dl>
-<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="showpassingflashwiththinningstrokewidthexample" loop="" src="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ShowPassingFlashWithThinningStrokeWidthExample.mp4"></video><h5 class="example-header">ShowPassingFlashWithThinningStrokeWidthExample<a class="headerlink" href="#showpassingflashwiththinningstrokewidthexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ShowPassingFlashWithThinningStrokeWidthExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video autoplay="" class="manim-video" controls="" id="showpassingflashwiththinningstrokewidthexample" loop="" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/ShowPassingFlashWithThinningStrokeWidthExample.mp4"></video><h5 class="example-header">ShowPassingFlashWithThinningStrokeWidthExample<a class="headerlink" href="#showpassingflashwiththinningstrokewidthexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ShowPassingFlashWithThinningStrokeWidthExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">sl</span> <span class="o">=</span> <span class="n">StreamLines</span><span class="p">(</span>
             <span class="k">lambda</span> <span class="n">p</span><span class="p">:</span> <span class="n">rotate_vector</span><span class="p">(</span><span class="n">p</span> <span class="o">/</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">90</span> <span class="o">*</span> <span class="n">DEGREES</span><span class="p">)</span>

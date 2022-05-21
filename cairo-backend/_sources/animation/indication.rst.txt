@@ -11,7 +11,7 @@ FocusOn
     :members:
     
 .. manim-example:: FocusOnExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FocusOnExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FocusOnExample.mp4
 
   class FocusOnExample(Scene):
       def construct(self):
@@ -41,7 +41,7 @@ Indicate
     :members:
     
 .. manim-example:: IndicateExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/IndicateExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/IndicateExample.mp4
 
   class IndicateExample(Scene):
       def construct(self):
@@ -66,7 +66,7 @@ Flash
     :members:
     
 .. manim-example:: FlashExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FlashExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/FlashExample.mp4
 
   class FlashExample(Scene):
       def construct(self):
@@ -96,7 +96,7 @@ CircleIndicate
     :members:
     
 .. manim-example:: CircleIndicateExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/CircleIndicateExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/CircleIndicateExample.mp4
 
   class CircleIndicateExample(Scene):
       def construct(self):
@@ -123,7 +123,7 @@ ShowCreationThenDestruction
     :members:
     
 .. manim-example:: ShowCreationThenDestructionExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/ShowCreationThenDestructionExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/ShowCreationThenDestructionExample.mp4
 
   class ShowCreationThenDestructionExample(Scene):
       def construct(self):
@@ -149,7 +149,7 @@ ShowCreationThenFadeOut
     :members:
     
 .. manim-example:: ShowCreationThenFadeOutExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/ShowCreationThenFadeOutExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/ShowCreationThenFadeOutExample.mp4
 
   class ShowCreationThenFadeOutExample(Scene):
       def construct(self):
@@ -180,7 +180,7 @@ ShowPassingFlashAround
     :members:
     
 .. manim-example:: ShowPassingFlashAroundExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/ShowPassingFlashAroundExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/ShowPassingFlashAroundExample.mp4
 
   class ShowPassingFlashAroundExample(Scene):
       def construct(self):
@@ -206,7 +206,7 @@ ShowCreationThenDestructionAround
     :members:
     
 .. manim-example:: ShowCreationThenDestructionAroundExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/ShowCreationThenDestructionAroundExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/ShowCreationThenDestructionAroundExample.mp4
 
   class ShowCreationThenDestructionAroundExample(Scene):
       def construct(self):
@@ -234,7 +234,7 @@ ShowCreationThenFadeAround
     :members:
     
 .. manim-example:: ShowCreationThenFadeAroundExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/ShowCreationThenFadeAroundExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/ShowCreationThenFadeAroundExample.mp4
 
   class ShowCreationThenFadeAroundExample(Scene):
       def construct(self):
@@ -262,7 +262,7 @@ ApplyWave
     :members:
     
 .. manim-example:: ApplyWaveExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/ApplyWaveExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/ApplyWaveExample.mp4
 
   class ApplyWaveExample(Scene):
       def construct(self):
@@ -290,7 +290,7 @@ WiggleOutThenIn
     :members:
     
 .. manim-example:: WiggleOutThenInExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/WiggleOutThenInExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/WiggleOutThenInExample.mp4
 
   class WiggleOutThenInExample(Scene):
       def construct(self):
@@ -318,7 +318,7 @@ TurnInsideOut
     :members:
     
 .. manim-example:: TurnInsideOutExample
-  :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/TurnInsideOutExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/manim_3fed/TurnInsideOutExample.mp4
 
   class TurnInsideOutExample(Scene):
       def construct(self):
