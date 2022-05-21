@@ -15,7 +15,7 @@ TransformMatchingShapes
     :members:
 
 .. manim-example:: TransformMatchingShapesExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/tranform_matching_parts/TransformMatchingShapesExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/transform_matching_parts/TransformMatchingShapesExample.mp4
 
   class TransformMatchingShapesExample(Scene):
       def construct(self):
@@ -34,7 +34,7 @@ TransformMatchingTex
     :members:
 
 .. manim-example:: TransformMatchingTexExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/tranform_matching_parts/TransformMatchingTexExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/transform_matching_parts/TransformMatchingTexExample.mp4
 
   class TransformMatchingTexExample(Scene):
       def construct(self):
@@ -51,7 +51,7 @@ TransformMatchingStrings
     :members:
 
 .. manim-example:: TransformMatchingStringsExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/tranform_matching_parts/TransformMatchingStringsExample.mp4
+  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/transform_matching_parts/TransformMatchingStringsExample.mp4
 
   class TransformMatchingStringsExample(Scene):
       def construct(self):
