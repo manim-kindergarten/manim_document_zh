@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?fa6247824b0819b9815b20a4">
-    <link rel="stylesheet" href="../../_static/pygments.css?fa6247824b0819b9815b20a4">
+    <link rel="stylesheet" href="../../_static/styles/default.css?ab1147cf93218954fbdddb05">
+    <link rel="stylesheet" href="../../_static/pygments.css?ab1147cf93218954fbdddb05">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?fa6247824b0819b9815b20a4"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?ab1147cf93218954fbdddb05"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -227,32 +227,122 @@
 <dl class="py method">
 <dt id="manimlib.camera.camera.CameraFrame.get_center">
 <code class="sig-name descname">get_center</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → numpy.ndarray<a class="headerlink" href="#manimlib.camera.camera.CameraFrame.get_center" title="永久链接至目标">¶</a></dt>
-<dd><p>获取物件中心坐标</p>
+<dd><p>获取相机的中心坐标</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.camera.camera.CameraFrame.get_euler_angles">
+<code class="sig-name descname">get_euler_angles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.get_euler_angles" title="永久链接至目标">¶</a></dt>
+<dd><p>获取相机的欧拉角</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.camera.camera.CameraFrame.get_field_of_view">
+<code class="sig-name descname">get_field_of_view</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → float<a class="headerlink" href="#manimlib.camera.camera.CameraFrame.get_field_of_view" title="永久链接至目标">¶</a></dt>
+<dd><p>获取相机的视野</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.camera.camera.CameraFrame.get_focal_distance">
+<code class="sig-name descname">get_focal_distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → float<a class="headerlink" href="#manimlib.camera.camera.CameraFrame.get_focal_distance" title="永久链接至目标">¶</a></dt>
+<dd><p>获取相机的焦距</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.camera.camera.CameraFrame.get_gamma">
+<code class="sig-name descname">get_gamma</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.get_gamma" title="永久链接至目标">¶</a></dt>
+<dd><p>获取相机的欧拉角的 gamma 值</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.camera.camera.CameraFrame.get_height">
 <code class="sig-name descname">get_height</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → float<a class="headerlink" href="#manimlib.camera.camera.CameraFrame.get_height" title="永久链接至目标">¶</a></dt>
-<dd><p>获取物件高度</p>
+<dd><p>获取相机的高度</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.camera.camera.CameraFrame.get_implied_camera_location">
+<code class="sig-name descname">get_implied_camera_location</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → numpy.ndarray<a class="headerlink" href="#manimlib.camera.camera.CameraFrame.get_implied_camera_location" title="永久链接至目标">¶</a></dt>
+<dd><p>获取相机的位置</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.camera.camera.CameraFrame.get_orientation">
+<code class="sig-name descname">get_orientation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.get_orientation" title="永久链接至目标">¶</a></dt>
+<dd><p>获取相机旋转</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.camera.camera.CameraFrame.get_phi">
+<code class="sig-name descname">get_phi</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.get_phi" title="永久链接至目标">¶</a></dt>
+<dd><p>获取相机的欧拉角的 phi 值</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.camera.camera.CameraFrame.get_shape">
 <code class="sig-name descname">get_shape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.get_shape" title="永久链接至目标">¶</a></dt>
-<dd><p>获取相机宽高</p>
+<dd><p>获取相机帧宽高</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.camera.camera.CameraFrame.get_theta">
+<code class="sig-name descname">get_theta</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.get_theta" title="永久链接至目标">¶</a></dt>
+<dd><p>获取相机的欧拉角的 theta 值</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.camera.camera.CameraFrame.get_width">
 <code class="sig-name descname">get_width</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → float<a class="headerlink" href="#manimlib.camera.camera.CameraFrame.get_width" title="永久链接至目标">¶</a></dt>
-<dd><p>获取物件宽度</p>
+<dd><p>获取相机的宽度</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.camera.camera.CameraFrame.increment_gamma">
+<code class="sig-name descname">increment_gamma</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dgamma</span><span class="p">:</span> <span class="n">float</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.increment_gamma" title="永久链接至目标">¶</a></dt>
+<dd><p>增加相机的欧拉角的 gamma 值</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.camera.camera.CameraFrame.increment_phi">
+<code class="sig-name descname">increment_phi</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dphi</span><span class="p">:</span> <span class="n">float</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.increment_phi" title="永久链接至目标">¶</a></dt>
+<dd><p>增加相机的欧拉角的 phi 值</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.camera.camera.CameraFrame.increment_theta">
+<code class="sig-name descname">increment_theta</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dtheta</span><span class="p">:</span> <span class="n">float</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.increment_theta" title="永久链接至目标">¶</a></dt>
+<dd><p>增加相机的欧拉角的 theta 值</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.camera.camera.CameraFrame.reorient">
 <code class="sig-name descname">reorient</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">theta_degrees</span><span class="p">:</span> <span class="n">float | None</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">phi_degrees</span><span class="p">:</span> <span class="n">float | None</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">gamma_degrees</span><span class="p">:</span> <span class="n">float | None</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.reorient" title="永久链接至目标">¶</a></dt>
-<dd><p>set_euler_angles 的另一种写法</p>
+<dd><p>设置相机的欧拉角, set_euler_angles 的另一种写法</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.camera.camera.CameraFrame.rotate">
 <code class="sig-name descname">rotate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">angle</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">axis</span><span class="p">:</span> <span class="n">numpy.ndarray</span> <span class="o">=</span> <span class="default_value">array([0., 0., 1.])</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.rotate" title="永久链接至目标">¶</a></dt>
 <dd><p>以 <code class="docutils literal notranslate"><span class="pre">axis</span></code> 为方向，<code class="docutils literal notranslate"><span class="pre">angle</span></code> 为角度旋转，<code class="docutils literal notranslate"><span class="pre">kwargs</span></code> 中可传入 <code class="docutils literal notranslate"><span class="pre">about_point</span></code></p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.camera.camera.CameraFrame.set_euler_angles">
+<code class="sig-name descname">set_euler_angles</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">theta</span><span class="p">:</span> <span class="n">float | None</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">phi</span><span class="p">:</span> <span class="n">float | None</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">gamma</span><span class="p">:</span> <span class="n">float | None</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">units</span><span class="p">:</span> <span class="n">float</span> <span class="o">=</span> <span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.set_euler_angles" title="永久链接至目标">¶</a></dt>
+<dd><p>设置相机的欧拉角</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.camera.camera.CameraFrame.set_field_of_view">
+<code class="sig-name descname">set_field_of_view</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">field_of_view</span><span class="p">:</span> <span class="n">float</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.set_field_of_view" title="永久链接至目标">¶</a></dt>
+<dd><p>设置相机的视野</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.camera.camera.CameraFrame.set_focal_distance">
+<code class="sig-name descname">set_focal_distance</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">focal_distance</span><span class="p">:</span> <span class="n">float</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.set_focal_distance" title="永久链接至目标">¶</a></dt>
+<dd><p>设置相机的焦距</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.camera.camera.CameraFrame.set_gamma">
+<code class="sig-name descname">set_gamma</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">gamma</span><span class="p">:</span> <span class="n">float</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.set_gamma" title="永久链接至目标">¶</a></dt>
+<dd><p>设置相机的欧拉角的 gamma 值</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.camera.camera.CameraFrame.set_orientation">
+<code class="sig-name descname">set_orientation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rotation</span><span class="p">:</span> <span class="n">scipy.spatial.transform._rotation.Rotation</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.set_orientation" title="永久链接至目标">¶</a></dt>
+<dd><p>设置相机旋转（使用四元数）</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.camera.camera.CameraFrame.set_phi">
+<code class="sig-name descname">set_phi</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">phi</span><span class="p">:</span> <span class="n">float</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.set_phi" title="永久链接至目标">¶</a></dt>
+<dd><p>设置相机的欧拉角的 phi 值</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.camera.camera.CameraFrame.set_theta">
+<code class="sig-name descname">set_theta</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">theta</span><span class="p">:</span> <span class="n">float</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.CameraFrame.set_theta" title="永久链接至目标">¶</a></dt>
+<dd><p>设置相机的欧拉角的 theta 值</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.camera.camera.CameraFrame.to_default_state">
@@ -263,11 +353,13 @@
 <p>在 <code class="docutils literal notranslate"><span class="pre">manimgl</span></code> 版本，你可以通过改变 <code class="docutils literal notranslate"><span class="pre">CameraFrame</span></code> 的属性来控制相机所拍摄到的画面，也就是说，旋转、缩放画面大小都可以用这种方式来完成。</p>
 <div class="manim-example"><video class="manim-video" controls="" id="movecameraexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/camera/MoveCameraExample.mp4"></video><h5 class="example-header">MoveCameraExample<a class="headerlink" href="#movecameraexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MoveCameraExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">setup</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># 初始化坐标系</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">plane</span> <span class="o">=</span> <span class="n">NumberPlane</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">plane</span><span class="o">.</span><span class="n">add_coordinate_labels</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">plane</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">t_func</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
+        <span class="c1"># 螺线参数方程</span>
         <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span>
         <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
             <span class="n">a</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="o">/</span> <span class="n">t</span><span class="p">,</span>
@@ -276,15 +368,34 @@
         <span class="p">])</span>
 
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># 获取相机帧的引用</span>
         <span class="n">frame</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">camera</span><span class="o">.</span><span class="n">frame</span>
+        <span class="c1"># 创建螺线</span>
         <span class="n">curve</span> <span class="o">=</span> <span class="n">ParametricCurve</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">t_func</span><span class="p">,</span> <span class="n">t_range</span><span class="o">=</span><span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">YELLOW</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">curve</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
-            <span class="n">curve</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">set_stroke</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mf">0.3</span><span class="p">),</span>
-            <span class="n">frame</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">set_width</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">PI</span> <span class="o">/</span> <span class="mi">2</span><span class="p">),</span>
+            <span class="n">curve</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">set_stroke</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mf">0.3</span><span class="p">),</span>       <span class="c1"># 设置螺线粗细</span>
+            <span class="n">frame</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">set_width</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">PI</span> <span class="o">/</span> <span class="mi">2</span><span class="p">),</span> <span class="c1"># 旋转缩放相机帧</span>
             <span class="n">run_time</span><span class="o">=</span><span class="mi">3</span>
         <span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div class="manim-example"><video class="manim-video" controls="" id="reorientcameraexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/camera/ReorientCameraExample.mp4"></video><h5 class="example-header">ReorientCameraExample<a class="headerlink" href="#reorientcameraexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ReorientCameraExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">setup</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># 初始化场景</span>
+        <span class="n">axes</span> <span class="o">=</span> <span class="n">ThreeDAxes</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">axes</span><span class="p">)</span>
+        <span class="n">sphere</span> <span class="o">=</span> <span class="n">Sphere</span><span class="p">()</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">axes</span><span class="o">.</span><span class="n">coords_to_point</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">sphere</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="c1"># 获取相机帧的引用</span>
+        <span class="n">camera</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">camera</span><span class="o">.</span><span class="n">frame</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+        <span class="c1"># 使用四元数旋转（欧拉旋转经常会检测到万向节锁死）</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">camera</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">set_orientation</span><span class="p">(</span><span class="n">Rotation</span><span class="p">([</span><span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">])))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </pre></div>
 </div>
 </div></div>
@@ -294,7 +405,6 @@
 <dt id="manimlib.camera.camera.Camera">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.camera.camera.</code><code class="sig-name descname">Camera</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ctx</span><span class="p">:</span> <span class="n">moderngl.Context | None</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.camera.camera.Camera" title="永久链接至目标">¶</a></dt>
 <dd><p>摄像机</p>
-<p><cite>widcardw 在线瞎写，因为看不懂</cite></p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">frame_config</span></code> : 相机帧参数</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">pixel_width</span></code> : 像素宽度，默认 1920</p></li>
@@ -342,6 +452,11 @@
 <dt id="manimlib.camera.camera.Camera.get_image">
 <code class="sig-name descname">get_image</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → PIL.Image.Image<a class="headerlink" href="#manimlib.camera.camera.Camera.get_image" title="永久链接至目标">¶</a></dt>
 <dd><p>获取当前帧图片</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.camera.camera.Camera.get_location">
+<code class="sig-name descname">get_location</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → tuple<span class="p">[</span>float<span class="p">, </span>float<span class="p">, </span>float<span class="p">]</span><a class="headerlink" href="#manimlib.camera.camera.Camera.get_location" title="永久链接至目标">¶</a></dt>
+<dd><p>获取相机位置</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.camera.camera.Camera.get_pixel_array">
@@ -392,6 +507,16 @@
 <dd><p>获取资源 id</p>
 </dd></dl>
 <dl class="py method">
+<dt id="manimlib.camera.camera.Camera.init_context">
+<code class="sig-name descname">init_context</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ctx</span><span class="p">:</span> <span class="n">moderngl.Context | None</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span> → None<a class="headerlink" href="#manimlib.camera.camera.Camera.init_context" title="永久链接至目标">¶</a></dt>
+<dd><p>初始化上下文</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.camera.camera.Camera.init_frame">
+<code class="sig-name descname">init_frame</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → None<a class="headerlink" href="#manimlib.camera.camera.Camera.init_frame" title="永久链接至目标">¶</a></dt>
+<dd><p>初始化相机帧</p>
+</dd></dl>
+<dl class="py method">
 <dt id="manimlib.camera.camera.Camera.refresh_perspective_uniforms">
 <code class="sig-name descname">refresh_perspective_uniforms</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → None<a class="headerlink" href="#manimlib.camera.camera.Camera.refresh_perspective_uniforms" title="永久链接至目标">¶</a></dt>
 <dd><p>更新透视变量</p>
@@ -421,6 +546,16 @@
 <code class="sig-name descname">resize_frame_shape</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fixed_dimension</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">False</span></em><span class="sig-paren">)</span> → None<a class="headerlink" href="#manimlib.camera.camera.Camera.resize_frame_shape" title="永久链接至目标">¶</a></dt>
 <dd><p>重置帧大小以匹配画面像素比</p>
 <p><code class="docutils literal notranslate"><span class="pre">fixed_dimension</span></code> 控制高度不变宽度变化，或宽度不变高度变化</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.camera.camera.Camera.set_ctx_blending">
+<code class="sig-name descname">set_ctx_blending</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">enable</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">True</span></em><span class="sig-paren">)</span> → None<a class="headerlink" href="#manimlib.camera.camera.Camera.set_ctx_blending" title="永久链接至目标">¶</a></dt>
+<dd><p>设置上下文混合</p>
+</dd></dl>
+<dl class="py method">
+<dt id="manimlib.camera.camera.Camera.set_ctx_depth_test">
+<code class="sig-name descname">set_ctx_depth_test</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">enable</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">True</span></em><span class="sig-paren">)</span> → None<a class="headerlink" href="#manimlib.camera.camera.Camera.set_ctx_depth_test" title="永久链接至目标">¶</a></dt>
+<dd><p>设置上下文深度测试</p>
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.camera.camera.Camera.set_shader_uniforms">

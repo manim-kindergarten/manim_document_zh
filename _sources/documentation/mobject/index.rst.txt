@@ -9,7 +9,7 @@
 
 :class:`~manimlib.mobject.mobject.Mobject` 类似为抽象基类，它的直接子类只有：
 
-- :class:`~manimlib.mobject.types.vectorized_mobject.VMobject` 使用贝塞尔曲线作为轮廓
+- :class:`~manimlib.mobject.types.vectorized_mobject.VMobject` 使用贝塞尔曲线作为轮廓（可以添加参数配置，详情请点击进入查看）
 - :class:`~manimlib.mobject.types.point_cloud_mobject.PMobject` 点集构成物体
 - :class:`~manimlib.mobject.types.image_mobject.ImageMobject` 图片类
 - :class:`~manimlib.mobject.value_tracker.ValueTracker` 只记录数值，不在屏幕上显示
