@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?e7be7d2b4c4b1d02061d46b2">
-    <link rel="stylesheet" href="../../_static/pygments.css?e7be7d2b4c4b1d02061d46b2">
+    <link rel="stylesheet" href="../../_static/styles/default.css?74874bd60bd7f902b794fdb3">
+    <link rel="stylesheet" href="../../_static/pygments.css?74874bd60bd7f902b794fdb3">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?e7be7d2b4c4b1d02061d46b2"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?74874bd60bd7f902b794fdb3"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -101,7 +101,7 @@
 <p class="caption"><span class="caption-text">进阶文档</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../constants.html">常量部分 constants</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../custom_config.html">默认配置 custom_config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom_config.html">自定义配置 custom_config</a></li>
 <li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">动画部分 animation</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="creation.html">Creation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="fading.html">Fading</a></li>
@@ -223,30 +223,23 @@
 <dl class="py class">
 <dt id="manimlib.animation.movement.Homotopy">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.movement.</code><code class="sig-name descname">Homotopy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">homotopy</span><span class="p">:</span> <span class="n">Callable<span class="p">[</span><span class="p">[</span>float<span class="p">, </span>float<span class="p">, </span>float<span class="p">, </span>float<span class="p">]</span><span class="p">, </span>Sequence<span class="p">[</span>float<span class="p">]</span><span class="p">]</span></span></em>, <em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.movement.Homotopy" title="永久链接至目标">¶</a></dt>
-<dd><p>Homotopy is a function from
-(x, y, z, t) to (x’, y’, z’)</p>
+<dd><p>homotopy 是一个从 (x, y, z, t) 到 (x’, y’, z’) 的函数。
+t 的取值范围是 [0, 1]，
+让 mobject 根据 homotopy 计算的每个点坐标进行变换。
+例子中 t = 0 时 mob 是边长为 0 的正方形，
+t = 1 时是边长为 2 的正方形。
+与 Transform 类似，区别在于 Transform 锚点运动轨迹是直线，
+Homotopy 锚点运动轨迹是根据传入的 homotopy 计算的。</p>
 </dd></dl>
 <div class="manim-example"><video class="manim-video" controls="" id="homotopyexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/movement/HomotopyExample.mp4"></video><h5 class="example-header">HomotopyExample<a class="headerlink" href="#homotopyexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">HomotopyExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">def</span> <span class="nf">plane_wave_homotopy</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
-            <span class="n">norm</span> <span class="o">=</span> <span class="n">get_norm</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">])</span>
-            <span class="n">tau</span> <span class="o">=</span> <span class="n">interpolate</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span> <span class="o">+</span> <span class="n">norm</span><span class="o">/</span><span class="n">FRAME_X_RADIUS</span>
-            <span class="n">alpha</span> <span class="o">=</span> <span class="n">sigmoid</span><span class="p">(</span><span class="n">tau</span><span class="p">)</span>
-            <span class="k">return</span> <span class="p">[</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">alpha</span><span class="p">)</span><span class="o">-</span><span class="n">t</span><span class="o">*</span><span class="n">SMALL_BUFF</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">z</span><span class="p">]</span>
+        <span class="k">def</span> <span class="nf">homotopy_fun</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
+            <span class="k">return</span> <span class="p">[</span><span class="n">x</span> <span class="o">*</span> <span class="n">t</span><span class="p">,</span> <span class="n">y</span> <span class="o">*</span> <span class="n">t</span><span class="p">,</span> <span class="n">z</span><span class="p">]</span>
 
-        <span class="n">mobjects</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span>
-            <span class="n">Text</span><span class="p">(</span><span class="s2">"Text"</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span>
-            <span class="n">Square</span><span class="p">(),</span>
-        <span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">,</span> <span class="n">buff</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-
-        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">mobjects</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
-            <span class="o">*</span><span class="p">[</span><span class="n">Homotopy</span><span class="p">(</span>
-                <span class="n">plane_wave_homotopy</span><span class="p">,</span>
-                <span class="n">mob</span>
-            <span class="p">)</span> <span class="k">for</span> <span class="n">mob</span> <span class="ow">in</span> <span class="n">mobjects</span><span class="p">]</span>
-        <span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)</span>
+        <span class="n">mob</span> <span class="o">=</span> <span class="n">Square</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">mob</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Homotopy</span><span class="p">(</span><span class="n">homotopy_fun</span><span class="p">,</span> <span class="n">mob</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </pre></div>
 </div>
 </div></div>
@@ -255,9 +248,7 @@
 <dl class="py class">
 <dt id="manimlib.animation.movement.ComplexHomotopy">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.movement.</code><code class="sig-name descname">ComplexHomotopy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">complex_homotopy</span><span class="p">:</span> <span class="n">Callable<span class="p">[</span><span class="p">[</span>complex<span class="p">, </span>float<span class="p">]</span><span class="p">, </span>Sequence<span class="p">[</span>float<span class="p">]</span><span class="p">]</span></span></em>, <em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.movement.ComplexHomotopy" title="永久链接至目标">¶</a></dt>
-<dd><p>Given a function form (z, t) -&gt; w, where z and w
-are complex numbers and t is time, this animates
-the state over time</p>
+<dd><p>继承自 Homotopy。与 Homotopy 类似，就是用复数描述坐标。</p>
 </dd></dl>
 <div class="manim-example"><video class="manim-video" controls="" id="complexhomotopyexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/movement/ComplexHomotopyExample.mp4"></video><h5 class="example-header">ComplexHomotopyExample<a class="headerlink" href="#complexhomotopyexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ComplexHomotopyExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
