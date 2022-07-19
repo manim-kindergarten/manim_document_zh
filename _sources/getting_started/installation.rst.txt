@@ -3,7 +3,7 @@
 
 .. admonition:: 注意
 
-   Manim 运行在 Python 3.6 或者更高版本上（推荐使用 Python 3.8）
+   Manim 运行在 Python 3.7 或者更高版本上（推荐使用 Python 3.8）
 
    另外，不是特别推荐在 WSL 上安装 manimgl，因为 manimgl 在 **预览时** 不可避免地会调用 Pyglet Window 这个库，而这个库需要 GUI。不少用户为此花费大量的心血寻找解决方案，但真正解决的少之又少 qwq
 

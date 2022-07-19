@@ -216,15 +216,15 @@
 .. code-block:: python
 
     # 在水平方向上拉伸到四倍
-    play(circle.stretch, 4, {"dim": 0})
+    play(circle.animate.stretch(4, dim=0))
     # 旋转90°
     play(Rotate(circle, TAU / 4))
     # 在向右移动2单位同时缩小为原来的1/4
-    play(circle.shift, 2 * RIGHT, circle.scale, 0.25)
+    play(circle.animate.shift(2 * RIGHT), circle.animate.scale(0.25))
     # 为了非线性变换，给circle增加10段曲线（不会播放动画）
     circle.insert_n_curves(10)
     # 给circle上的所有点施加f(z)=z^2的复变换
-    play(circle.apply_complex_function, lambda z: z**2)
+    play(circle.animate.apply_complex_function(lambda z: z**2))
     # 关闭窗口并退出程序
     exit()
 

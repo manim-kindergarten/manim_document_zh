@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?72299837200be56b6c9dfdca">
-    <link rel="stylesheet" href="../_static/pygments.css?72299837200be56b6c9dfdca">
+    <link rel="stylesheet" href="../_static/styles/default.css?884ec91450ab89a514620d98">
+    <link rel="stylesheet" href="../_static/pygments.css?884ec91450ab89a514620d98">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?72299837200be56b6c9dfdca"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?884ec91450ab89a514620d98"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -384,15 +384,15 @@
 回车后将会立即运行你输入的语句。例如：向其中分别输入以下行
 （<code class="docutils literal notranslate"><span class="pre">self.play</span></code> 在此时可以简写为 <code class="docutils literal notranslate"><span class="pre">play</span></code> ）：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 在水平方向上拉伸到四倍</span>
-<span class="n">play</span><span class="p">(</span><span class="n">circle</span><span class="o">.</span><span class="n">stretch</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="p">{</span><span class="s2">"dim"</span><span class="p">:</span> <span class="mi">0</span><span class="p">})</span>
+<span class="n">play</span><span class="p">(</span><span class="n">circle</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">stretch</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
 <span class="c1"># 旋转90°</span>
 <span class="n">play</span><span class="p">(</span><span class="n">Rotate</span><span class="p">(</span><span class="n">circle</span><span class="p">,</span> <span class="n">TAU</span> <span class="o">/</span> <span class="mi">4</span><span class="p">))</span>
 <span class="c1"># 在向右移动2单位同时缩小为原来的1/4</span>
-<span class="n">play</span><span class="p">(</span><span class="n">circle</span><span class="o">.</span><span class="n">shift</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">RIGHT</span><span class="p">,</span> <span class="n">circle</span><span class="o">.</span><span class="n">scale</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">)</span>
+<span class="n">play</span><span class="p">(</span><span class="n">circle</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">RIGHT</span><span class="p">),</span> <span class="n">circle</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">0.25</span><span class="p">))</span>
 <span class="c1"># 为了非线性变换，给circle增加10段曲线（不会播放动画）</span>
 <span class="n">circle</span><span class="o">.</span><span class="n">insert_n_curves</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 <span class="c1"># 给circle上的所有点施加f(z)=z^2的复变换</span>
-<span class="n">play</span><span class="p">(</span><span class="n">circle</span><span class="o">.</span><span class="n">apply_complex_function</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">z</span><span class="p">:</span> <span class="n">z</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">play</span><span class="p">(</span><span class="n">circle</span><span class="o">.</span><span class="n">animate</span><span class="o">.</span><span class="n">apply_complex_function</span><span class="p">(</span><span class="k">lambda</span> <span class="n">z</span><span class="p">:</span> <span class="n">z</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
 <span class="c1"># 关闭窗口并退出程序</span>
 <span class="n">exit</span><span class="p">()</span>
 </pre></div>
