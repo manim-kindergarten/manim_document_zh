@@ -111,7 +111,7 @@ manim 使用三维坐标，并且用 ``ndarray`` 的类型
 颜色
 -------
 
-颜色相关工具和预览可以使用：`颜色工具 - MK官网 <https://manim.org.cn/tools/colors.html>`_
+颜色相关工具和预览可以使用：`颜色工具 - MK官网 <https://manim.org.cn/tool/color>`_
 
 这里是manim中定义的颜色的预览：(修改自 
 `elteoremadebeethoven <https://elteoremadebeethoven.github.io/manim_3feb_docs.github.io/html/_static/colors/colors.html>`_)
