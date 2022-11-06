@@ -12,7 +12,7 @@ OpenGL 预备知识
 OpenGL 运行流程
 ********************
 
-.. image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/OpenGL-sequence.svg
+.. image:: https://mkcdn.tonycrane.cc/manimgl_assets/shaders/OpenGL-sequence.svg
 
 
 
@@ -27,7 +27,7 @@ GLSL 函数
     - 当 ``x >= edge_1`` 时返回 1.0
     - 当 ``edge_0 < x < edge_1`` 时形成一个从 0 到 1 的平滑插值
 
-    .. image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/functions/smoothstep1.svg
+    .. image:: https://mkcdn.tonycrane.cc/manimgl_assets/shaders/functions/smoothstep1.svg
 
     特别的，当 ``egde_0 > edge_1`` 时，图像会翻转，即满足下面的情况
 
@@ -35,7 +35,7 @@ GLSL 函数
     - 当 ``x >= edge_0`` 时返回 0.0
     - 当 ``edge_1 < x < edge_0`` 时形成一个从 1 到 0 的平滑插值
 
-    .. image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/functions/smoothstep2.svg
+    .. image:: https://mkcdn.tonycrane.cc/manimgl_assets/shaders/functions/smoothstep2.svg
 
 --------------------
 

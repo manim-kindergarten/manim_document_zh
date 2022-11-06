@@ -6,10 +6,10 @@
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>OpenGL 预备知识 - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
-    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?e094cb9628f7acdbee1ec51d">
-    <link rel="stylesheet" href="../../_static/pygments.css?e094cb9628f7acdbee1ec51d">
+    <link rel="stylesheet" href="https://mkcdn.tonycrane.cc/manimgl_assets/custom.css" />
+    <link rel="stylesheet" href="https://mkcdn.tonycrane.cc/manimgl_assets/colors.css" />
+    <link rel="stylesheet" href="../../_static/styles/default.css?6ee4a34c787e826eba53b871">
+    <link rel="stylesheet" href="../../_static/pygments.css?6ee4a34c787e826eba53b871">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?e094cb9628f7acdbee1ec51d"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?6ee4a34c787e826eba53b871"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -220,7 +220,7 @@
 </div>
 <div class="section" id="id2">
 <h2>OpenGL 运行流程<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
-<img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/OpenGL-sequence.svg" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/OpenGL-sequence.svg"/></div>
+<img alt="https://mkcdn.tonycrane.cc/manimgl_assets/shaders/OpenGL-sequence.svg" src="https://mkcdn.tonycrane.cc/manimgl_assets/shaders/OpenGL-sequence.svg"/></div>
 <div class="section" id="glsl">
 <h2>GLSL 函数<a class="headerlink" href="#glsl" title="永久链接至标题">¶</a></h2>
 <p>这些函数主要用于片段着色</p>
@@ -232,13 +232,13 @@
 <li><p>当 <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&gt;=</span> <span class="pre">edge_1</span></code> 时返回 1.0</p></li>
 <li><p>当 <code class="docutils literal notranslate"><span class="pre">edge_0</span> <span class="pre">&lt;</span> <span class="pre">x</span> <span class="pre">&lt;</span> <span class="pre">edge_1</span></code> 时形成一个从 0 到 1 的平滑插值</p></li>
 </ul>
-<img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/functions/smoothstep1.svg" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/functions/smoothstep1.svg"/><p>特别的，当 <code class="docutils literal notranslate"><span class="pre">egde_0</span> <span class="pre">&gt;</span> <span class="pre">edge_1</span></code> 时，图像会翻转，即满足下面的情况</p>
+<img alt="https://mkcdn.tonycrane.cc/manimgl_assets/shaders/functions/smoothstep1.svg" src="https://mkcdn.tonycrane.cc/manimgl_assets/shaders/functions/smoothstep1.svg"/><p>特别的，当 <code class="docutils literal notranslate"><span class="pre">egde_0</span> <span class="pre">&gt;</span> <span class="pre">edge_1</span></code> 时，图像会翻转，即满足下面的情况</p>
 <ul class="simple">
 <li><p>当 <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&lt;=</span> <span class="pre">edge_1</span></code> 时返回 1.0</p></li>
 <li><p>当 <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&gt;=</span> <span class="pre">edge_0</span></code> 时返回 0.0</p></li>
 <li><p>当 <code class="docutils literal notranslate"><span class="pre">edge_1</span> <span class="pre">&lt;</span> <span class="pre">x</span> <span class="pre">&lt;</span> <span class="pre">edge_0</span></code> 时形成一个从 1 到 0 的平滑插值</p></li>
 </ul>
-<img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/functions/smoothstep2.svg" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/functions/smoothstep2.svg"/></dd></dl>
+<img alt="https://mkcdn.tonycrane.cc/manimgl_assets/shaders/functions/smoothstep2.svg" src="https://mkcdn.tonycrane.cc/manimgl_assets/shaders/functions/smoothstep2.svg"/></dd></dl>
 <hr class="docutils"/>
 <dl class="cpp function">
 <dt id="_CPPv43mix7genType7genTypef">

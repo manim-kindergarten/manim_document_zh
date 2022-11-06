@@ -42,17 +42,17 @@ rate_func
 
 一个动画运行的速率参数，是一个定义域为[0,1]的函数，自带的如下
 
-.. image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/image/rate_functions.png
+.. image:: https://mkcdn.tonycrane.cc/manim_assets/image/rate_functions.png
 
 效果如下：
 
 .. raw:: html
 
-    <video class="manim-video" controls loop autoplay src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/RateFunctions.mp4"></video>
+    <video class="manim-video" controls loop autoplay src="https://mkcdn.tonycrane.cc/manim_assets/mk/RateFunctions.mp4"></video>
 
 .. raw:: html
 
-    <video class="manim-video" controls loop autoplay src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/RateFunctions2.mp4"></video>
+    <video class="manim-video" controls loop autoplay src="https://mkcdn.tonycrane.cc/manim_assets/mk/RateFunctions2.mp4"></video>
 
 
 lag_ratio

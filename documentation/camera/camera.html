@@ -6,10 +6,10 @@
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>Camera - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
-    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?3fbf3eeb4f6ac706a865a410">
-    <link rel="stylesheet" href="../../_static/pygments.css?3fbf3eeb4f6ac706a865a410">
+    <link rel="stylesheet" href="https://mkcdn.tonycrane.cc/manimgl_assets/custom.css" />
+    <link rel="stylesheet" href="https://mkcdn.tonycrane.cc/manimgl_assets/colors.css" />
+    <link rel="stylesheet" href="../../_static/styles/default.css?6cb94e33775adf6986c38bc5">
+    <link rel="stylesheet" href="../../_static/pygments.css?6cb94e33775adf6986c38bc5">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?3fbf3eeb4f6ac706a865a410"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?6cb94e33775adf6986c38bc5"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -351,7 +351,7 @@
 </dd></dl>
 </dd></dl>
 <p>在 <code class="docutils literal notranslate"><span class="pre">manimgl</span></code> 版本，你可以通过改变 <code class="docutils literal notranslate"><span class="pre">CameraFrame</span></code> 的属性来控制相机所拍摄到的画面，也就是说，旋转、缩放画面大小都可以用这种方式来完成。</p>
-<div class="manim-example"><video class="manim-video" controls="" id="movecameraexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/camera/MoveCameraExample.mp4"></video><h5 class="example-header">MoveCameraExample<a class="headerlink" href="#movecameraexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MoveCameraExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="movecameraexample" src="https://mkcdn.tonycrane.cc/manimgl_assets/camera/MoveCameraExample.mp4"></video><h5 class="example-header">MoveCameraExample<a class="headerlink" href="#movecameraexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MoveCameraExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">setup</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="c1"># 初始化坐标系</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">plane</span> <span class="o">=</span> <span class="n">NumberPlane</span><span class="p">()</span>
@@ -381,7 +381,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
 </pre></div>
 </div>
-</div><div class="manim-example"><video class="manim-video" controls="" id="reorientcameraexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/camera/ReorientCameraExample.mp4"></video><h5 class="example-header">ReorientCameraExample<a class="headerlink" href="#reorientcameraexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ReorientCameraExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+</div><div class="manim-example"><video class="manim-video" controls="" id="reorientcameraexample" src="https://mkcdn.tonycrane.cc/manimgl_assets/camera/ReorientCameraExample.mp4"></video><h5 class="example-header">ReorientCameraExample<a class="headerlink" href="#reorientcameraexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ReorientCameraExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">setup</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="c1"># 初始化场景</span>
         <span class="n">axes</span> <span class="o">=</span> <span class="n">ThreeDAxes</span><span class="p">()</span>

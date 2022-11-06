@@ -6,10 +6,10 @@
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>二阶贝塞尔曲线填充色 Quadratic bezier fill - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
-    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?1623e930c1881874a7c09b34">
-    <link rel="stylesheet" href="../../_static/pygments.css?1623e930c1881874a7c09b34">
+    <link rel="stylesheet" href="https://mkcdn.tonycrane.cc/manimgl_assets/custom.css" />
+    <link rel="stylesheet" href="https://mkcdn.tonycrane.cc/manimgl_assets/colors.css" />
+    <link rel="stylesheet" href="../../_static/styles/default.css?f8d2692f34d131c36ae4c98e">
+    <link rel="stylesheet" href="../../_static/pygments.css?f8d2692f34d131c36ae4c98e">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?1623e930c1881874a7c09b34"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?f8d2692f34d131c36ae4c98e"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -521,7 +521,7 @@ triangle_strip 作为输出，其顶点数量最大值为 5.</p>
 <ul>
 <li><p>假设有一个圆，它由八段贝塞尔曲线拼接而成，每段由 3 个控制点构成。给这个圆上填充色之前，我们需要对它进行三角剖分，
 分割为一些三角形和边上的八个弓形。这些图形被称为“图元”，它们都是由 3 个控制点构成的。</p>
-<img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/fill_with_sdf.png" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/fill_with_sdf.png"/>
+<img alt="https://mkcdn.tonycrane.cc/manimgl_assets/shaders/fill_with_sdf.png" src="https://mkcdn.tonycrane.cc/manimgl_assets/shaders/fill_with_sdf.png"/>
 <p>对于内部的这些三角形，注意到它们的三个顶点索引几乎都是不相邻的整数，我们可以直接采用直接三角形方案来上色。</p>
 <p>而对于外面的这些弓形，它们的三个控制点索引几乎都是相邻的整数，因此我们不采用 <code class="docutils literal notranslate"><span class="pre">fill_all</span></code> 的方案，
 而是而采用贝塞尔曲线的上色方案。</p>
@@ -537,11 +537,11 @@ triangle_strip 作为输出，其顶点数量最大值为 5.</p>
 <ul>
 <li><p>由三个控制点构成的贝塞尔曲线的弓形，可以被这三个控制点所构成的三角形覆盖，因此我们可以先无脑地不管是什么样的图元，
 我们都按照三角图元来上色，这样也就直接覆盖了上面的情况。</p>
-<img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/fill_without_sdf.png" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/fill_without_sdf.png"/>
+<img alt="https://mkcdn.tonycrane.cc/manimgl_assets/shaders/fill_without_sdf.png" src="https://mkcdn.tonycrane.cc/manimgl_assets/shaders/fill_without_sdf.png"/>
 <p>而边缘的弓形也被涂成了三角形，这与我们的目标有一些偏差。此时 <code class="docutils literal notranslate"><span class="pre">fill_all</span></code> 参数的用途就得以体现了：当 <code class="docutils literal notranslate"><span class="pre">fill_all</span> <span class="pre">==</span> <span class="pre">1.0</span></code>
 说明此时是直接三角形绘制；否则，我们就按照贝塞尔曲线的上色方法，通过 sdf 计算，使得在弓形内部的像素点，保持其透明度不变；
 而在弓形外部的像素点，其透明度为 0</p>
-<img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/curve_fill_shader.png" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/curve_fill_shader.png"/>
+<img alt="https://mkcdn.tonycrane.cc/manimgl_assets/shaders/curve_fill_shader.png" src="https://mkcdn.tonycrane.cc/manimgl_assets/shaders/curve_fill_shader.png"/>
 <p>另外，还有一些细节，例如指定向曲线凹陷处填充等等，在此不过多阐述。</p>
 </li>
 </ul>
@@ -550,7 +550,7 @@ triangle_strip 作为输出，其顶点数量最大值为 5.</p>
 </div>
 <div class="section" id="id12">
 <h2>流程图<a class="headerlink" href="#id12" title="永久链接至标题">¶</a></h2>
-<img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/quadratic_bezier_fill_shader.svg" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/quadratic_bezier_fill_shader.svg"/></div>
+<img alt="https://mkcdn.tonycrane.cc/manimgl_assets/shaders/quadratic_bezier_fill_shader.svg" src="https://mkcdn.tonycrane.cc/manimgl_assets/shaders/quadratic_bezier_fill_shader.svg"/></div>
 </div>
 
       </article>

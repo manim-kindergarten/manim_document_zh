@@ -134,7 +134,7 @@ Quadratic bezier fill 的几何着色器中的图元有三角形和五边形，�
 -   假设有一个圆，它由八段贝塞尔曲线拼接而成，每段由 3 个控制点构成。给这个圆上填充色之前，我们需要对它进行三角剖分，
     分割为一些三角形和边上的八个弓形。这些图形被称为“图元”，它们都是由 3 个控制点构成的。
 
-    .. image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/fill_with_sdf.png
+    .. image:: https://mkcdn.tonycrane.cc/manimgl_assets/shaders/fill_with_sdf.png
 
     对于内部的这些三角形，注意到它们的三个顶点索引几乎都是不相邻的整数，我们可以直接采用直接三角形方案来上色。
 
@@ -156,13 +156,13 @@ Quadratic bezier fill 的几何着色器中的图元有三角形和五边形，�
 -   由三个控制点构成的贝塞尔曲线的弓形，可以被这三个控制点所构成的三角形覆盖，因此我们可以先无脑地不管是什么样的图元，
     我们都按照三角图元来上色，这样也就直接覆盖了上面的情况。
 
-    .. image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/fill_without_sdf.png
+    .. image:: https://mkcdn.tonycrane.cc/manimgl_assets/shaders/fill_without_sdf.png
 
     而边缘的弓形也被涂成了三角形，这与我们的目标有一些偏差。此时 ``fill_all`` 参数的用途就得以体现了：当 ``fill_all == 1.0``
     说明此时是直接三角形绘制；否则，我们就按照贝塞尔曲线的上色方法，通过 sdf 计算，使得在弓形内部的像素点，保持其透明度不变；
     而在弓形外部的像素点，其透明度为 0 
 
-    .. image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/curve_fill_shader.png
+    .. image:: https://mkcdn.tonycrane.cc/manimgl_assets/shaders/curve_fill_shader.png
 
     另外，还有一些细节，例如指定向曲线凹陷处填充等等，在此不过多阐述。
 
@@ -172,6 +172,6 @@ Quadratic bezier fill 的几何着色器中的图元有三角形和五边形，�
 流程图
 ***********************
 
-.. image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/quadratic_bezier_fill_shader.svg
+.. image:: https://mkcdn.tonycrane.cc/manimgl_assets/shaders/quadratic_bezier_fill_shader.svg
 
 

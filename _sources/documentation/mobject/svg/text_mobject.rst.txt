@@ -38,7 +38,7 @@ Text
 一些示例如下：
 
 .. manim-example:: TextExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/svg/text/TextExample.png
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/mobject/svg/text/TextExample.png
 
   from manimlib.imports import *
   
@@ -49,7 +49,7 @@ Text
 
 
 .. manim-example:: TextSlice
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/svg/text/TextSlice.png
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/mobject/svg/text/TextSlice.png
 
   from manimlib.imports import *
   
@@ -69,7 +69,7 @@ Text
 
 
 .. manim-example:: TextUTF8
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/svg/text/MultilingualTextExample.png
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/mobject/svg/text/MultilingualTextExample.png
 
   from manimlib.imports import *
   

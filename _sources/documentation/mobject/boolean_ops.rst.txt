@@ -12,7 +12,7 @@ Union
     :members:
 
 .. manim-example:: UnionExample
-    :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/boolean_ops/UnionExample.png
+    :media: https://mkcdn.tonycrane.cc/manimgl_assets/mobject/boolean_ops/UnionExample.png
 
     class UnionExample(Scene):
         def construct(self):
@@ -28,7 +28,7 @@ Difference
     :members:
 
 .. manim-example:: DifferenceExample
-    :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/boolean_ops/DifferenceExample.png
+    :media: https://mkcdn.tonycrane.cc/manimgl_assets/mobject/boolean_ops/DifferenceExample.png
 
     class DifferenceExample(Scene):
         def construct(self):
@@ -44,7 +44,7 @@ Intersection
     :members:
 
 .. manim-example:: IntersectionExample
-    :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/boolean_ops/IntersectionExample.png
+    :media: https://mkcdn.tonycrane.cc/manimgl_assets/mobject/boolean_ops/IntersectionExample.png
 
     class IntersectionExample(Scene):
         def construct(self):
@@ -60,7 +60,7 @@ Exclusion
     :members:
 
 .. manim-example:: ExclusionExample
-    :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/boolean_ops/ExclusionExample.png
+    :media: https://mkcdn.tonycrane.cc/manimgl_assets/mobject/boolean_ops/ExclusionExample.png
 
     class ExclusionExample(Scene):
         def construct(self):

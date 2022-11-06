@@ -6,10 +6,10 @@
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>Movement - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
-    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?518bcf75c6664ba418741c35">
-    <link rel="stylesheet" href="../../_static/pygments.css?518bcf75c6664ba418741c35">
+    <link rel="stylesheet" href="https://mkcdn.tonycrane.cc/manimgl_assets/custom.css" />
+    <link rel="stylesheet" href="https://mkcdn.tonycrane.cc/manimgl_assets/colors.css" />
+    <link rel="stylesheet" href="../../_static/styles/default.css?1d8818bcf3055b455b093e8b">
+    <link rel="stylesheet" href="../../_static/pygments.css?1d8818bcf3055b455b093e8b">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?518bcf75c6664ba418741c35"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?1d8818bcf3055b455b093e8b"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -231,7 +231,7 @@ t = 1 时是边长为 2 的正方形。
 与 Transform 类似，区别在于 Transform 锚点运动轨迹是直线，
 Homotopy 锚点运动轨迹是根据传入的 homotopy 计算的。</p>
 </dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="homotopyexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/movement/HomotopyExample.mp4"></video><h5 class="example-header">HomotopyExample<a class="headerlink" href="#homotopyexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">HomotopyExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="homotopyexample" src="https://mkcdn.tonycrane.cc/manimgl_assets/animations/movement/HomotopyExample.mp4"></video><h5 class="example-header">HomotopyExample<a class="headerlink" href="#homotopyexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">HomotopyExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">def</span> <span class="nf">homotopy_fun</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
             <span class="k">return</span> <span class="p">[</span><span class="n">x</span> <span class="o">*</span> <span class="n">t</span><span class="p">,</span> <span class="n">y</span> <span class="o">*</span> <span class="n">t</span><span class="p">,</span> <span class="n">z</span><span class="p">]</span>
@@ -250,7 +250,7 @@ Homotopy 锚点运动轨迹是根据传入的 homotopy 计算的。</p>
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.movement.</code><code class="sig-name descname">ComplexHomotopy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">complex_homotopy</span><span class="p">:</span> <span class="n">Callable<span class="p">[</span><span class="p">[</span>complex<span class="p">, </span>float<span class="p">]</span><span class="p">, </span>Sequence<span class="p">[</span>float<span class="p">]</span><span class="p">]</span></span></em>, <em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.movement.ComplexHomotopy" title="永久链接至目标">¶</a></dt>
 <dd><p>继承自 Homotopy。与 Homotopy 类似，就是用复数描述坐标。</p>
 </dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="complexhomotopyexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/movement/ComplexHomotopyExample.mp4"></video><h5 class="example-header">ComplexHomotopyExample<a class="headerlink" href="#complexhomotopyexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ComplexHomotopyExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="complexhomotopyexample" src="https://mkcdn.tonycrane.cc/manimgl_assets/animations/movement/ComplexHomotopyExample.mp4"></video><h5 class="example-header">ComplexHomotopyExample<a class="headerlink" href="#complexhomotopyexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ComplexHomotopyExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">def</span> <span class="nf">complex_func</span><span class="p">(</span><span class="n">z</span><span class="p">:</span> <span class="nb">complex</span><span class="p">,</span> <span class="n">t</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">complex</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">interpolate</span><span class="p">(</span><span class="n">z</span><span class="p">,</span> <span class="n">z</span><span class="o">**</span><span class="mi">3</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
@@ -277,7 +277,7 @@ Homotopy 锚点运动轨迹是根据传入的 homotopy 计算的。</p>
 <dt id="manimlib.animation.movement.PhaseFlow">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.movement.</code><code class="sig-name descname">PhaseFlow</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">function</span><span class="p">:</span> <span class="n">Callable<span class="p">[</span><span class="p">[</span>np.ndarray<span class="p">]</span><span class="p">, </span>np.ndarray<span class="p">]</span></span></em>, <em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.movement.PhaseFlow" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="phaseflowexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/movement/PhaseFlowExample.mp4"></video><h5 class="example-header">PhaseFlowExample<a class="headerlink" href="#phaseflowexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">PhaseFlowExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="phaseflowexample" src="https://mkcdn.tonycrane.cc/manimgl_assets/animations/movement/PhaseFlowExample.mp4"></video><h5 class="example-header">PhaseFlowExample<a class="headerlink" href="#phaseflowexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">PhaseFlowExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
             <span class="k">return</span> <span class="n">t</span><span class="o">*</span><span class="mf">0.5</span><span class="o">*</span><span class="n">RIGHT</span>
@@ -304,7 +304,7 @@ Homotopy 锚点运动轨迹是根据传入的 homotopy 计算的。</p>
 <dt id="manimlib.animation.movement.MoveAlongPath">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.movement.</code><code class="sig-name descname">MoveAlongPath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mobject</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="n">path</span><span class="p">:</span> <span class="n">Mobject</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.movement.MoveAlongPath" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="movealongpathexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/movement/MoveAlongPathExample.mp4"></video><h5 class="example-header">MoveAlongPathExample<a class="headerlink" href="#movealongpathexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MoveAlongPathExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="movealongpathexample" src="https://mkcdn.tonycrane.cc/manimgl_assets/animations/movement/MoveAlongPathExample.mp4"></video><h5 class="example-header">MoveAlongPathExample<a class="headerlink" href="#movealongpathexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MoveAlongPathExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">line</span><span class="o">=</span><span class="n">Line</span><span class="p">(</span><span class="n">ORIGIN</span><span class="p">,</span><span class="n">RIGHT</span><span class="o">*</span><span class="n">FRAME_WIDTH</span><span class="p">,</span><span class="n">buff</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
         <span class="n">line</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">ORIGIN</span><span class="p">)</span>

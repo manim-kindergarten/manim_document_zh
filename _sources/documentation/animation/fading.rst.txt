@@ -17,7 +17,7 @@ FadeOut
     :members:
     
 .. manim-example:: FadeOutExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/fade/FadeOutExample.mp4
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/animations/fade/FadeOutExample.mp4
 
   class FadeOutExample(Scene):
       def construct(self):
@@ -44,7 +44,7 @@ FadeIn
     :members:
     
 .. manim-example:: FadeInExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/fade/FadeInExample.mp4
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/animations/fade/FadeInExample.mp4
 
   class FadeInExample(Scene):
       def construct(self):
@@ -63,7 +63,7 @@ FadeIn
           self.wait()
     
 .. manim-example:: FadeInFromExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/fade/FadeInFromExample.mp4
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/animations/fade/FadeInFromExample.mp4
 
   class FadeInFromExample(Scene):
       def construct(self):
@@ -85,7 +85,7 @@ FadeIn
           self.wait()
 
 .. manim-example:: FadeOutAndShiftExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/fade/FadeOutAndShiftExample.mp4
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/animations/fade/FadeOutAndShiftExample.mp4
 
   class FadeOutAndShiftExample(Scene):
       def construct(self):
@@ -110,7 +110,7 @@ FadeIn
           self.wait()
 
 .. manim-example:: FadeInFromLargeExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/fade/FadeInFromLargeExample.mp4
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/animations/fade/FadeInFromLargeExample.mp4
 
   class FadeInFromLargeExample(Scene):
       def construct(self):
@@ -145,7 +145,7 @@ FadeInFromPoint
     :members:
     
 .. manim-example:: FadeInFromPointExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/fade/FadeInFromPointExample.mp4
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/animations/fade/FadeInFromPointExample.mp4
 
   class FadeInFromPointExample(Scene):
       def construct(self):
@@ -169,7 +169,7 @@ FadeOutToPoint
     :members:
 
 .. manim-example:: FadeOutToPointExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/fade/FadeOutToPointExample.mp4
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/animations/fade/FadeOutToPointExample.mp4
 
   class FadeOutToPointExample(Scene):
       def construct(self):
@@ -194,7 +194,7 @@ FadeTransform
     :members:
 
 .. manim-example:: FadeTransformExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/fade/FadeTransformExample.mp4
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/animations/fade/FadeTransformExample.mp4
 
   class FadeTransformExample(Scene):
       def construct(self):
@@ -212,7 +212,7 @@ FadeTransformPieces
     :members:
 
 .. manim-example:: FadeTransformPiecesExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/fade/FadeTransformPiecesExample.mp4
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/animations/fade/FadeTransformPiecesExample.mp4
 
 
   class FadeTransformPiecesExample(Scene):
@@ -248,7 +248,7 @@ VFadeInThenOut
 
 .. raw:: html
 
-    <video class="manim-video" controls loop autoplay src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/mk/FadeAndVFade.mp4"></video>
+    <video class="manim-video" controls loop autoplay src="https://mkcdn.tonycrane.cc/manim_assets/mk/FadeAndVFade.mp4"></video>
 
 ``FadeIn`` 的边从细变粗，从暗变亮。 ``VFadeIn`` 的边始终是正常粗细，从暗变亮。
 

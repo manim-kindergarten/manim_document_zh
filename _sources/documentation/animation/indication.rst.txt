@@ -11,7 +11,7 @@ FocusOn
     :members:
     
 .. manim-example:: FocusOnExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/indication/FocusOnExample.mp4
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/animations/indication/FocusOnExample.mp4
 
   class FocusOnExample(Scene):
       def construct(self):
@@ -41,7 +41,7 @@ Indicate
     :members:
     
 .. manim-example:: IndicateExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/indication/IndicateExample.mp4
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/animations/indication/IndicateExample.mp4
 
   class IndicateExample(Scene):
       def construct(self):
@@ -66,7 +66,7 @@ Flash
     :members:
     
 .. manim-example:: FlashExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/indication/FlashExample.mp4
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/animations/indication/FlashExample.mp4
 
   class FlashExample(Scene):
       def construct(self):
@@ -96,7 +96,7 @@ CircleIndicate
     :members:
     
 .. manim-example:: CircleIndicateExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/indication/CircleIndicateExample.mp4
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/animations/indication/CircleIndicateExample.mp4
 
   class CircleIndicateExample(Scene):
       def construct(self):
@@ -123,7 +123,7 @@ ShowCreationThenDestruction
     :members:
     
 .. manim-example:: ShowCreationThenDestructionExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/indication/ShowCreationThenDestructionExample.mp4
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/animations/indication/ShowCreationThenDestructionExample.mp4
 
   class ShowCreationThenDestructionExample(Scene):
       def construct(self):
@@ -147,7 +147,7 @@ ShowCreationThenFadeOut
     :members:
     
 .. manim-example:: ShowCreationThenFadeOutExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/indication/ShowCreationThenFadeOutExample.mp4
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/animations/indication/ShowCreationThenFadeOutExample.mp4
 
   class ShowCreationThenFadeOutExample(Scene):
       def construct(self):
@@ -176,7 +176,7 @@ ShowPassingFlashAround
     :members:
     
 .. manim-example:: ShowPassingFlashAroundExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/indication/ShowPassingFlashAroundExample.mp4
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/animations/indication/ShowPassingFlashAroundExample.mp4
 
   class ShowPassingFlashAroundExample(Scene):
       # 目前有显示不全的 bug
@@ -203,7 +203,7 @@ ShowCreationThenDestructionAround
     :members:
     
 .. manim-example:: ShowCreationThenDestructionAroundExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/indication/ShowCreationThenDestructionAroundExample.mp4
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/animations/indication/ShowCreationThenDestructionAroundExample.mp4
 
   class ShowCreationThenDestructionAroundExample(Scene):
       def construct(self):
@@ -229,7 +229,7 @@ ShowCreationThenFadeAround
     :members:
     
 .. manim-example:: ShowCreationThenFadeAroundExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/indication/ShowCreationThenFadeAroundExample.mp4
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/animations/indication/ShowCreationThenFadeAroundExample.mp4
 
   class ShowCreationThenFadeAroundExample(Scene):
       def construct(self):
@@ -255,7 +255,7 @@ ApplyWave
     :members:
     
 .. manim-example:: ApplyWaveExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/indication/ApplyWaveExample.mp4
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/animations/indication/ApplyWaveExample.mp4
 
   class ApplyWaveExample(Scene):
       def construct(self):
@@ -281,7 +281,7 @@ WiggleOutThenIn
     :members:
     
 .. manim-example:: WiggleOutThenInExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/indication/WiggleOutThenInExample.mp4
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/animations/indication/WiggleOutThenInExample.mp4
 
   class WiggleOutThenInExample(Scene):
       def construct(self):
@@ -307,7 +307,7 @@ TurnInsideOut
     :members:
     
 .. manim-example:: TurnInsideOutExample
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/indication/TurnInsideOutExample.mp4
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/animations/indication/TurnInsideOutExample.mp4
 
   class TurnInsideOutExample(Scene):
       # 对文字使用会造成非常大的问题

@@ -22,7 +22,7 @@ MTex
 下面给出用不同方式指定子串的示例：
 
 .. manim-example:: MTexSpecifySubstrings
-  :media: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/mobject/svg/mtex/MTexSpecifySubstrings.png
+  :media: https://mkcdn.tonycrane.cc/manimgl_assets/mobject/svg/mtex/MTexSpecifySubstrings.png
   
   class MTexSpecifySubstrings(Scene): 
       def construct(self):

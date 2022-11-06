@@ -6,10 +6,10 @@
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>Numbers - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
-    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?f65f678ac76384048b656f66">
-    <link rel="stylesheet" href="../../_static/pygments.css?f65f678ac76384048b656f66">
+    <link rel="stylesheet" href="https://mkcdn.tonycrane.cc/manimgl_assets/custom.css" />
+    <link rel="stylesheet" href="https://mkcdn.tonycrane.cc/manimgl_assets/colors.css" />
+    <link rel="stylesheet" href="../../_static/styles/default.css?454e65ab41b88a421ff63f28">
+    <link rel="stylesheet" href="../../_static/pygments.css?454e65ab41b88a421ff63f28">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?f65f678ac76384048b656f66"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?454e65ab41b88a421ff63f28"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -220,7 +220,7 @@
 <dt id="manimlib.animation.numbers.ChangingDecimal">
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.numbers.</code><code class="sig-name descname">ChangingDecimal</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">decimal_mob</span><span class="p">:</span> <span class="n">DecimalNumber</span></em>, <em class="sig-param"><span class="n">number_update_func</span><span class="p">:</span> <span class="n">Callable<span class="p">[</span><span class="p">[</span>float<span class="p">]</span><span class="p">, </span>float<span class="p">]</span></span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.numbers.ChangingDecimal" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="changingdecimalexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/numbers/ChangingDecimalExample.mp4"></video><h5 class="example-header">ChangingDecimalExample<a class="headerlink" href="#changingdecimalexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ChangingDecimalExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="changingdecimalexample" src="https://mkcdn.tonycrane.cc/manimgl_assets/animations/numbers/ChangingDecimalExample.mp4"></video><h5 class="example-header">ChangingDecimalExample<a class="headerlink" href="#changingdecimalexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ChangingDecimalExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">number</span> <span class="o">=</span> <span class="n">DecimalNumber</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">text_config</span><span class="o">=</span><span class="p">{</span><span class="s2">"font"</span><span class="p">:</span> <span class="s2">"monospace"</span><span class="p">})</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 
@@ -240,7 +240,7 @@
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.numbers.</code><code class="sig-name descname">ChangeDecimalToValue</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">decimal_mob</span><span class="p">:</span> <span class="n">DecimalNumber</span></em>, <em class="sig-param"><span class="n">target_number</span><span class="p">:</span> <span class="n">float | complex</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.numbers.ChangeDecimalToValue" title="永久链接至目标">¶</a></dt>
 <dd><p>从当前数字播放到目标数字</p>
 </dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="changedecimaltovalueexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/numbers/ChangeDecimalToValueExample.mp4"></video><h5 class="example-header">ChangeDecimalToValueExample<a class="headerlink" href="#changedecimaltovalueexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ChangeDecimalToValueExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="changedecimaltovalueexample" src="https://mkcdn.tonycrane.cc/manimgl_assets/animations/numbers/ChangeDecimalToValueExample.mp4"></video><h5 class="example-header">ChangeDecimalToValueExample<a class="headerlink" href="#changedecimaltovalueexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ChangeDecimalToValueExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">number</span> <span class="o">=</span> <span class="n">DecimalNumber</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">text_config</span><span class="o">=</span><span class="p">{</span><span class="s2">"font"</span><span class="p">:</span> <span class="s2">"monospace"</span><span class="p">})</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
@@ -257,7 +257,7 @@
 <em class="property">class </em><code class="sig-prename descclassname">manimlib.animation.numbers.</code><code class="sig-name descname">CountInFrom</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">decimal_mob</span><span class="p">:</span> <span class="n">DecimalNumber</span></em>, <em class="sig-param"><span class="n">source_number</span><span class="p">:</span> <span class="n">float | complex</span> <span class="o">=</span> <span class="default_value">0</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.animation.numbers.CountInFrom" title="永久链接至目标">¶</a></dt>
 <dd><p>从 source_number 开始播放到当前数字</p>
 </dd></dl>
-<div class="manim-example"><video class="manim-video" controls="" id="changedecimaltovalueexample" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/animations/numbers/CountInFromExample.mp4"></video><h5 class="example-header">ChangeDecimalToValueExample<a class="headerlink" href="#changedecimaltovalueexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CountInFromExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="manim-example"><video class="manim-video" controls="" id="changedecimaltovalueexample" src="https://mkcdn.tonycrane.cc/manimgl_assets/animations/numbers/CountInFromExample.mp4"></video><h5 class="example-header">ChangeDecimalToValueExample<a class="headerlink" href="#changedecimaltovalueexample">¶</a></h5><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CountInFromExample</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">number</span> <span class="o">=</span> <span class="n">DecimalNumber</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">text_config</span><span class="o">=</span><span class="p">{</span><span class="s2">"font"</span><span class="p">:</span> <span class="s2">"monospace"</span><span class="p">})</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>

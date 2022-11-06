@@ -57,7 +57,7 @@
 这时将没有窗口弹出，当程序运行结束后，会自动打开这张渲染得到的图片
 （默认位于同级目录的子目录 ``images/`` 中）：
 
-.. image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/quickstart/SquareToCircle.png
+.. image:: https://mkcdn.tonycrane.cc/manimgl_assets/quickstart/SquareToCircle.png
     :align: center
 
 制作图片
@@ -159,7 +159,7 @@
 
 .. raw:: html
 
-    <video class="manim-video" controls loop autoplay src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/quickstart/SquareToCircle.mp4"></video>
+    <video class="manim-video" controls loop autoplay src="https://mkcdn.tonycrane.cc/manimgl_assets/quickstart/SquareToCircle.mp4"></video>
 
 我们再来看看这次的代码。前7行和前面的一样，第8行类似第5行，
 创建了一个 :class:`~manimlib.mobject.geometry.Square` 类的实例，命名为 ``square``。
@@ -232,7 +232,7 @@
 
 .. raw:: html
 
-    <video class="manim-video" controls loop autoplay src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/quickstart/SquareToCircleEmbed.mp4"></video>
+    <video class="manim-video" controls loop autoplay src="https://mkcdn.tonycrane.cc/manimgl_assets/quickstart/SquareToCircleEmbed.mp4"></video>
 
 如果你想要直接进入交互模式的话，你不必特意编写一个只含 ``self.embed()`` 的空场景，
 你可以直接运行下面的命令（这会在弹出窗口的同时进入iPython终端）：

@@ -170,7 +170,7 @@ out         ``vec4``        ``frag_color``              片段颜色
     我们想要的效果是，曲线从首部到尾部的宽度都是均匀的，而只使用三角形来覆盖它，就会导致首部和尾部有一小块没有被覆盖到。
     因此，我们还需要对这条底边进行扩展，变成一个五边形，这样就能完全覆盖这条曲线了。
 
-    .. image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/curve_stroke_primitive.png
+    .. image:: https://mkcdn.tonycrane.cc/manimgl_assets/shaders/curve_stroke_primitive.png
 
     另外，还有一些处理逻辑，是根据上一段曲线和下一段曲线来推测曲线之间的转接点图元，这部分也被包含在了图元处理中。
     由于它的处理逻辑较为复杂，在此不过多阐述（绝对是因为笔者看不懂）
@@ -186,7 +186,7 @@ out         ``vec4``        ``frag_color``              片段颜色
 
 此处使用的依然是 sdf 符号距离函数，计算出在线宽范围内的片段，将片段之外的部分透明度都设置为 0，也就完成了着色的操作。
 
-.. image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/curve_stroke_shader.png
+.. image:: https://mkcdn.tonycrane.cc/manimgl_assets/shaders/curve_stroke_shader.png
 
 除此以外，就是一些曲线转接处的细节，此处不过多阐述。
 
@@ -194,4 +194,4 @@ out         ``vec4``        ``frag_color``              片段颜色
 流程图
 ***********************
 
-.. image:: https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/quadratic_bezier_stroke_shader.svg
+.. image:: https://mkcdn.tonycrane.cc/manimgl_assets/shaders/quadratic_bezier_stroke_shader.svg

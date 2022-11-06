@@ -6,10 +6,10 @@
     <link rel="shortcut icon" href="../../_static/mk.png"/><meta name="generator" content="sphinx-3.3.1, furo 2020.10.05.beta9"/>
         <title>二阶贝塞尔曲线轮廓线着色 Quadratic bezier stroke - ManimGL  文档</title>
       <link rel="stylesheet" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
-    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?63a615d1ca949be99114800a">
-    <link rel="stylesheet" href="../../_static/pygments.css?63a615d1ca949be99114800a">
+    <link rel="stylesheet" href="https://mkcdn.tonycrane.cc/manimgl_assets/custom.css" />
+    <link rel="stylesheet" href="https://mkcdn.tonycrane.cc/manimgl_assets/colors.css" />
+    <link rel="stylesheet" href="../../_static/styles/default.css?ebd53c201654b6f51fe134da">
+    <link rel="stylesheet" href="../../_static/pygments.css?ebd53c201654b6f51fe134da">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?63a615d1ca949be99114800a"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?ebd53c201654b6f51fe134da"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -592,7 +592,7 @@
 <p>于是我们首先会想到用三角形，因为前面贝塞尔曲线填充也提到过用三角形来覆盖弓形。但仔细思考，这样还有什么漏洞？</p>
 <p>我们想要的效果是，曲线从首部到尾部的宽度都是均匀的，而只使用三角形来覆盖它，就会导致首部和尾部有一小块没有被覆盖到。
 因此，我们还需要对这条底边进行扩展，变成一个五边形，这样就能完全覆盖这条曲线了。</p>
-<img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/curve_stroke_primitive.png" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/curve_stroke_primitive.png"/>
+<img alt="https://mkcdn.tonycrane.cc/manimgl_assets/shaders/curve_stroke_primitive.png" src="https://mkcdn.tonycrane.cc/manimgl_assets/shaders/curve_stroke_primitive.png"/>
 <p>另外，还有一些处理逻辑，是根据上一段曲线和下一段曲线来推测曲线之间的转接点图元，这部分也被包含在了图元处理中。
 由于它的处理逻辑较为复杂，在此不过多阐述（绝对是因为笔者看不懂）</p>
 </li>
@@ -604,13 +604,13 @@
 <p>从几何着色器传来的一系列图元，我们依然是无脑地，直接将传来的颜色涂在片段上。这样曲线就已经上色完成了。而接下来要做的处理，
 和之前讨论过的曲线填充方法类似，只需将不需要的片段擦去即可。</p>
 <p>此处使用的依然是 sdf 符号距离函数，计算出在线宽范围内的片段，将片段之外的部分透明度都设置为 0，也就完成了着色的操作。</p>
-<img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/curve_stroke_shader.png" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/curve_stroke_shader.png"/>
+<img alt="https://mkcdn.tonycrane.cc/manimgl_assets/shaders/curve_stroke_shader.png" src="https://mkcdn.tonycrane.cc/manimgl_assets/shaders/curve_stroke_shader.png"/>
 <p>除此以外，就是一些曲线转接处的细节，此处不过多阐述。</p>
 </div>
 </div>
 <div class="section" id="id11">
 <h2>流程图<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h2>
-<img alt="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/quadratic_bezier_stroke_shader.svg" src="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/shaders/quadratic_bezier_stroke_shader.svg"/></div>
+<img alt="https://mkcdn.tonycrane.cc/manimgl_assets/shaders/quadratic_bezier_stroke_shader.svg" src="https://mkcdn.tonycrane.cc/manimgl_assets/shaders/quadratic_bezier_stroke_shader.svg"/></div>
 </div>
 
       </article>
