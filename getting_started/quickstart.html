@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="https://mkcdn.tonycrane.cc/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://mkcdn.tonycrane.cc/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?7b960e20b0d164916f92f1f4">
-    <link rel="stylesheet" href="../_static/pygments.css?7b960e20b0d164916f92f1f4">
+    <link rel="stylesheet" href="../_static/styles/default.css?b9b27197ec1583cb8c97f582">
+    <link rel="stylesheet" href="../_static/pygments.css?b9b27197ec1583cb8c97f582">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?7b960e20b0d164916f92f1f4"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?b9b27197ec1583cb8c97f582"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -227,7 +227,7 @@
 </span></pre></div>
 </div>
 <p>然后粘贴如下代码（稍后我会详细解释其每行的作用）：</p>
-<div class="highlight-python notranslate"><div class="highlight"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
@@ -235,7 +235,7 @@
 <span class="normal">6</span>
 <span class="normal">7</span>
 <span class="normal">8</span>
-<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><span class="kn">from</span> <span class="nn">manimlib</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib</span> <span class="kn">import</span> <span class="o">*</span>
 
 <span class="k">class</span> <span class="nc">SquareToCircle</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -244,8 +244,8 @@
         <span class="n">circle</span><span class="o">.</span><span class="n">set_stroke</span><span class="p">(</span><span class="n">BLUE_E</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">circle</span><span class="p">)</span>
-</pre></div></td></tr></table></div></div>
-</div>
+</pre></div>
+</td></tr></table></div></div>
 <p>运行这个命令：</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>manimgl start.py SquareToCircle
 </pre></div>
@@ -310,7 +310,7 @@
 <div class="section" id="id3">
 <h2>添加动画<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
 <p>下面我们改变一些代码，添加一些动画来制作视频而不是仅仅只有图片。</p>
-<div class="highlight-python notranslate"><div class="highlight"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -322,7 +322,7 @@
 <span class="normal">10</span>
 <span class="normal">11</span>
 <span class="normal">12</span>
-<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><span class="kn">from</span> <span class="nn">manimlib</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib</span> <span class="kn">import</span> <span class="o">*</span>
 
 <span class="k">class</span> <span class="nc">SquareToCircle</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -335,8 +335,8 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ReplacementTransform</span><span class="p">(</span><span class="n">square</span><span class="p">,</span> <span class="n">circle</span><span class="p">))</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
-</pre></div></td></tr></table></div></div>
-</div>
+</pre></div>
+</td></tr></table></div></div>
 <p>这次运行：</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>manimgl start.py SquareToCircle
 </pre></div>

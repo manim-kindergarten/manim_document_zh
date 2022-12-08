@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../../_static/copybutton.css" />
     <link rel="stylesheet" href="https://mkcdn.tonycrane.cc/manimgl_assets/custom.css" />
     <link rel="stylesheet" href="https://mkcdn.tonycrane.cc/manimgl_assets/colors.css" />
-    <link rel="stylesheet" href="../../_static/styles/default.css?d75c73b46386891c4a89db86">
-    <link rel="stylesheet" href="../../_static/pygments.css?d75c73b46386891c4a89db86">
+    <link rel="stylesheet" href="../../_static/styles/default.css?2fa6a53c6b432d7dc1f76a4f">
+    <link rel="stylesheet" href="../../_static/pygments.css?2fa6a53c6b432d7dc1f76a4f">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../../_static/clipboard.min.js"></script>
         <script src="../../_static/copybutton.js"></script>
         <script src="../../_static/translations.js"></script>
-        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?d75c73b46386891c4a89db86"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../../_static/scripts/main.js?2fa6a53c6b432d7dc1f76a4f"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -218,7 +218,7 @@
 <h2>SampleSpace<a class="headerlink" href="#samplespace" title="永久链接至标题">¶</a></h2>
 <dl class="py class">
 <dt id="manimlib.mobject.probability.SampleSpace">
-<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.probability.</code><code class="sig-name descname">SampleSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">width</span><span class="p">:</span> <span class="n">float | None</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">height</span><span class="p">:</span> <span class="n">float | None</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.probability.SampleSpace" title="永久链接至目标">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">manimlib.mobject.probability.</code><code class="sig-name descname">SampleSpace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">width</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span>float<span class="p">, </span>None<span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">height</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span>float<span class="p">, </span>None<span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#manimlib.mobject.probability.SampleSpace" title="永久链接至目标">¶</a></dt>
 <dd><p>用于可视化概率的样本空间</p>
 <p>主体是一个 3*3 的矩形</p>
 <p>使用 <code class="docutils literal notranslate"><span class="pre">Polygon</span></code></p>
@@ -238,7 +238,7 @@
 </dd></dl>
 <dl class="py method">
 <dt id="manimlib.mobject.probability.SampleSpace.complete_p_list">
-<code class="sig-name descname">complete_p_list</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">p_list</span><span class="p">:</span> <span class="n">list<span class="p">[</span>float<span class="p">]</span></span></em><span class="sig-paren">)</span> → list<span class="p">[</span>float<span class="p">]</span><a class="headerlink" href="#manimlib.mobject.probability.SampleSpace.complete_p_list" title="永久链接至目标">¶</a></dt>
+<code class="sig-name descname">complete_p_list</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">p_list</span><span class="p">:</span> <span class="n">list</span></em><span class="sig-paren">)</span> → list<a class="headerlink" href="#manimlib.mobject.probability.SampleSpace.complete_p_list" title="永久链接至目标">¶</a></dt>
 <dd><p>将概率列表 <code class="docutils literal notranslate"><span class="pre">p_list</span></code> 补齐（如果不足，则添加一个概率 <code class="docutils literal notranslate"><span class="pre">1-sum(p_list)</span></code>），返回补齐后的列表</p>
 </dd></dl>
 <dl class="py method">

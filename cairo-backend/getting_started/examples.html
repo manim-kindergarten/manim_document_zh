@@ -8,8 +8,8 @@
       <link rel="stylesheet" href="../_static/copybutton.css" />
     <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/custom.css" />
     <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/manim-kindergarten/CDN@master/manim_assets/colors.css" />
-    <link rel="stylesheet" href="../_static/styles/default.css?e7decd9c80c8d62fd6600a79">
-    <link rel="stylesheet" href="../_static/pygments.css?e7decd9c80c8d62fd6600a79">
+    <link rel="stylesheet" href="../_static/styles/default.css?09734b3281247829833a8da3">
+    <link rel="stylesheet" href="../_static/pygments.css?09734b3281247829833a8da3">
     
 <style>
   :root {
@@ -28,7 +28,7 @@
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
         <script src="../_static/translations.js"></script>
-        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?e7decd9c80c8d62fd6600a79"></script></head>
+        <script src="https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="../_static/scripts/main.js?09734b3281247829833a8da3"></script></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -268,29 +268,29 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
 <p>运行 <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">manim</span> <span class="pre">-h</span></code> 或 <code class="docutils literal notranslate"><span class="pre">manim</span> <span class="pre">-h</span></code> 查看所有可用选项</p>
 </div>
 <p>让我们一行一行解析 <code class="docutils literal notranslate"><span class="pre">SquareToCircle</span></code> 的代码</p>
-<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manimlib.imports</span> <span class="kn">import</span> <span class="o">*</span>
 </pre></div>
 </td></tr></table></div></div>
 <p>将manim中的所有类都引入进来，可以直接使用</p>
-<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SquareToCircle</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SquareToCircle</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
 </pre></div>
 </td></tr></table></div></div>
 <p>通过编写一个 <code class="xref py py-class docutils literal notranslate"><span class="pre">Scene</span></code> 的子类来创建一个场景，用于渲染出视频</p>
-<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 </pre></div>
 </td></tr></table></div></div>
 <p>在 <code class="xref py py-meth docutils literal notranslate"><span class="pre">construct()</span></code> 方法中说明当 <code class="xref py py-class docutils literal notranslate"><span class="pre">Scene</span></code> 渲染时要进行什么操作</p>
-<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>5
-6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">circle</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">()</span>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">circle</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">()</span>
 <span class="n">square</span> <span class="o">=</span> <span class="n">Square</span><span class="p">()</span>
 </pre></div>
 </td></tr></table></div></div>
 <p><code class="docutils literal notranslate"><span class="pre">Circle()</span></code> 和 <code class="docutils literal notranslate"><span class="pre">Square()</span></code> 创建了 <a class="reference internal" href="../mobject/geometry.html#manimlib.mobject.geometry.Circle" title="manimlib.mobject.geometry.Circle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Circle</span></code></a> 和 <a class="reference internal" href="../mobject/geometry.html#manimlib.mobject.geometry.Square" title="manimlib.mobject.geometry.Square"><code class="xref py py-class docutils literal notranslate"><span class="pre">Square</span></code></a> 的实例，即一个圆一个方</p>
 <p>它们都是 <a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> 的子类，注意如果一个 <a class="reference internal" href="../mobject/mobject.html#manimlib.mobject.mobject.Mobject" title="manimlib.mobject.mobject.Mobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobject</span></code></a> 实例
 没有添加到 <code class="xref py py-class docutils literal notranslate"><span class="pre">Scene</span></code> 中, 渲染之后就不会看到任何东西</p>
-<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>7
-8
-9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">square</span><span class="o">.</span><span class="n">flip</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">square</span><span class="o">.</span><span class="n">flip</span><span class="p">(</span><span class="n">RIGHT</span><span class="p">)</span>
 <span class="n">square</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span> <span class="o">*</span> <span class="n">TAU</span> <span class="o">/</span> <span class="mi">8</span><span class="p">)</span>
 <span class="n">circle</span><span class="o">.</span><span class="n">set_fill</span><span class="p">(</span><span class="n">PINK</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
 </pre></div>
@@ -302,9 +302,9 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
 <li><p>调用 <a class="reference internal" href="../mobject/types/vectorized_mobject.html#manimlib.mobject.types.vectorized_mobject.VMobject.set_fill" title="manimlib.mobject.types.vectorized_mobject.VMobject.set_fill"><code class="xref py py-meth docutils literal notranslate"><span class="pre">set_fill()</span></code></a> 设置了 <a class="reference internal" href="../mobject/geometry.html#manimlib.mobject.geometry.Circle" title="manimlib.mobject.geometry.Circle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Circle</span></code></a> 填充颜色为粉色(PINK), 不透明度(opacity)为0.5.</p></li>
 </ul>
 <p>详细教程可以看 <a class="reference external" href="https://www.bilibili.com/video/BV1p54y197cC">〔manim教程〕第一讲 物体的位置与坐标变换</a></p>
-<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>11
-12
-13</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ShowCreation</span><span class="p">(</span><span class="n">square</span><span class="p">))</span>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ShowCreation</span><span class="p">(</span><span class="n">square</span><span class="p">))</span>
 <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Transform</span><span class="p">(</span><span class="n">square</span><span class="p">,</span> <span class="n">circle</span><span class="p">))</span>
 <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">FadeOut</span><span class="p">(</span><span class="n">square</span><span class="p">))</span>
 </pre></div>
@@ -341,10 +341,10 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
 </pre></div>
 </div>
 </div><p>前四行和前面的一样，不重复了。第五行同样创建了一个默认的正方形</p>
-<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>6
-7
-8
-9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ApplyPointwiseFunction</span><span class="p">(</span>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ApplyPointwiseFunction</span><span class="p">(</span>
     <span class="k">lambda</span> <span class="n">point</span><span class="p">:</span> <span class="n">complex_to_R3</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">R3_to_complex</span><span class="p">(</span><span class="n">point</span><span class="p">))),</span>
     <span class="n">square</span>
 <span class="p">))</span>
@@ -356,7 +356,7 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
 后求了e指数，将其结果传入 <code class="docutils literal notranslate"><span class="pre">complex_to_R3</span></code> 函数，将结果的复数转换为在复平面上的点坐标。</p>
 <p>将这个函数和物体square传入 <a class="reference internal" href="../animation/transform.html#manimlib.animation.transform.ApplyPointwiseFunction" title="manimlib.animation.transform.ApplyPointwiseFunction"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyPointwiseFunction</span></code></a> 后，
 会对square的点集施加这个函数的作用（将每个点设为将该点传入函数后的返回值），实现了复变换。</p>
-<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </pre></div>
 </td></tr></table></div></div>
 <p>添加了一个停顿，默认1秒，相当于 <code class="docutils literal notranslate"><span class="pre">self.wait(1)</span></code> 。类似的，可以使用 <code class="docutils literal notranslate"><span class="pre">self.wait(3)</span></code> 来停顿3秒。</p>
@@ -383,10 +383,10 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </pre></div>
 </div>
-</div><div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>5
-6
-7
-8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">example_text</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span>
+</div><div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">example_text</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span>
     <span class="s2">"This is a some text"</span><span class="p">,</span>
     <span class="n">tex_to_color_map</span><span class="o">=</span><span class="p">{</span><span class="s2">"text"</span><span class="p">:</span> <span class="n">YELLOW</span><span class="p">}</span>
 <span class="p">)</span>
@@ -395,25 +395,25 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
 <p>第五行到第八行创建了一个文字（<a class="reference internal" href="../mobject/svg/tex_mobject.html#manimlib.mobject.svg.tex_mobject.TextMobject" title="manimlib.mobject.svg.tex_mobject.TextMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextMobject</span></code></a>），内容是”This is a some text”（打错字了）。
 第七行传入了一个字典 <code class="docutils literal notranslate"><span class="pre">tex_to_color_map</span></code> 将”text”指定为黄色。这时 <a class="reference internal" href="../mobject/svg/tex_mobject.html#manimlib.mobject.svg.tex_mobject.TextMobject" title="manimlib.mobject.svg.tex_mobject.TextMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextMobject</span></code></a>
 会自动识别拆分开字符串，将并将”text”部分设置为黄色。</p>
-<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 9
-10
-11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">example_tex</span> <span class="o">=</span> <span class="n">TexMobject</span><span class="p">(</span>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">example_tex</span> <span class="o">=</span> <span class="n">TexMobject</span><span class="p">(</span>
     <span class="s2">"</span><span class="se">\\</span><span class="s2">sum_{k=1}^</span><span class="se">\\</span><span class="s2">infty {1 </span><span class="se">\\</span><span class="s2">over k^2} = {</span><span class="se">\\</span><span class="s2">pi^2 </span><span class="se">\\</span><span class="s2">over 6}"</span><span class="p">,</span>
 <span class="p">)</span>
 </pre></div>
 </td></tr></table></div></div>
 <p>第九行到第十一行创建了一个公式（<a class="reference internal" href="../mobject/svg/tex_mobject.html#manimlib.mobject.svg.tex_mobject.TexMobject" title="manimlib.mobject.svg.tex_mobject.TexMobject"><code class="xref py py-class docutils literal notranslate"><span class="pre">TexMobject</span></code></a>），它使用LaTeX来渲染，所以使用LaTeX的公式语法，
 并且在python中，需要将 <code class="docutils literal notranslate"><span class="pre">\</span></code> 转义写为 <code class="docutils literal notranslate"><span class="pre">\\</span></code> ，或者在字符串前加上 <code class="docutils literal notranslate"><span class="pre">r</span></code> ，例如这三行也可以写为：</p>
-<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 9
-10
-11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">example_tex</span> <span class="o">=</span> <span class="n">TexMobject</span><span class="p">(</span>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">example_tex</span> <span class="o">=</span> <span class="n">TexMobject</span><span class="p">(</span>
     <span class="sa">r</span><span class="s2">"\sum_{k=1}^\infty {1 \over k^2} = {\pi^2 \over 6}"</span><span class="p">,</span>
 <span class="p">)</span>
 </pre></div>
 </td></tr></table></div></div>
-<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>12
-13
-14</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">group</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="n">example_text</span><span class="p">,</span> <span class="n">example_tex</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">group</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="n">example_text</span><span class="p">,</span> <span class="n">example_tex</span><span class="p">)</span>
 <span class="n">group</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">)</span>
 <span class="n">group</span><span class="o">.</span><span class="n">set_width</span><span class="p">(</span><span class="n">FRAME_WIDTH</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">LARGE_BUFF</span><span class="p">)</span>
 </pre></div>
@@ -423,9 +423,9 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
 <div class="line">第十三行调用了 <code class="docutils literal notranslate"><span class="pre">arrange</span></code> 方法，将 <code class="docutils literal notranslate"><span class="pre">group</span></code> 中的物体依次向下（DOWN）排列</div>
 <div class="line">第十四行将整个 <code class="docutils literal notranslate"><span class="pre">group</span></code> 缩放到宽度为画面宽度，并且距离两边为 <code class="docutils literal notranslate"><span class="pre">LARGE_BUFF</span></code></div>
 </div>
-<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>16
-17
-18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Write</span><span class="p">(</span><span class="n">example_text</span><span class="p">))</span>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Write</span><span class="p">(</span><span class="n">example_text</span><span class="p">))</span>
 <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Write</span><span class="p">(</span><span class="n">example_tex</span><span class="p">))</span>
 <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </pre></div>
@@ -443,9 +443,9 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
     <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">decimal</span> <span class="o">=</span> <span class="n">DecimalNumber</span><span class="p">(</span>
             <span class="mi">0</span><span class="p">,</span>
-            <span class="n">show_ellipsis</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+            <span class="n">show_ellipsis</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
             <span class="n">num_decimal_places</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
-            <span class="n">include_sign</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+            <span class="n">include_sign</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
         <span class="p">)</span>
         <span class="n">square</span> <span class="o">=</span> <span class="n">Square</span><span class="p">()</span><span class="o">.</span><span class="n">to_edge</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
 
@@ -460,16 +460,16 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
         <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </pre></div>
 </div>
-</div><div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 5
- 6
- 7
- 8
- 9
-10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">decimal</span> <span class="o">=</span> <span class="n">DecimalNumber</span><span class="p">(</span>
+</div><div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">decimal</span> <span class="o">=</span> <span class="n">DecimalNumber</span><span class="p">(</span>
     <span class="mi">0</span><span class="p">,</span>
-    <span class="n">show_ellipsis</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+    <span class="n">show_ellipsis</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
     <span class="n">num_decimal_places</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
-    <span class="n">include_sign</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+    <span class="n">include_sign</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
 <span class="p">)</span>
 </pre></div>
 </td></tr></table></div></div>
@@ -477,8 +477,8 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
 <div class="line">第五行起创建了一个可变的十进制数字 <a class="reference internal" href="../mobject/numbers.html#manimlib.mobject.numbers.DecimalNumber" title="manimlib.mobject.numbers.DecimalNumber"><code class="xref py py-class docutils literal notranslate"><span class="pre">DecimalNumber</span></code></a> ，初始值为0</div>
 <div class="line">从第七行起设置了其属性，即显示省略号 <code class="docutils literal notranslate"><span class="pre">show_ellipsis=True</span></code> ，小数保留3位 <code class="docutils literal notranslate"><span class="pre">num_decimal_places=3</span></code> ，正数包含正号 <code class="docutils literal notranslate"><span class="pre">include_sign=True</span></code></div>
 </div>
-<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>13
-14</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">decimal</span><span class="o">.</span><span class="n">add_updater</span><span class="p">(</span><span class="k">lambda</span> <span class="n">d</span><span class="p">:</span> <span class="n">d</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">square</span><span class="p">,</span> <span class="n">RIGHT</span><span class="p">))</span>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">decimal</span><span class="o">.</span><span class="n">add_updater</span><span class="p">(</span><span class="k">lambda</span> <span class="n">d</span><span class="p">:</span> <span class="n">d</span><span class="o">.</span><span class="n">next_to</span><span class="p">(</span><span class="n">square</span><span class="p">,</span> <span class="n">RIGHT</span><span class="p">))</span>
 <span class="n">decimal</span><span class="o">.</span><span class="n">add_updater</span><span class="p">(</span><span class="k">lambda</span> <span class="n">d</span><span class="p">:</span> <span class="n">d</span><span class="o">.</span><span class="n">set_value</span><span class="p">(</span><span class="n">square</span><span class="o">.</span><span class="n">get_center</span><span class="p">()[</span><span class="mi">1</span><span class="p">]))</span>
 </pre></div>
 </td></tr></table></div></div>
@@ -486,13 +486,13 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
 1. 将这个数字始终放在正方形右侧（即始终调用 <code class="docutils literal notranslate"><span class="pre">next_to</span></code> 这个方法来维护数字的位置）
 2. 将这个数字的值始终设置为正方形在画面中的纵坐标</p>
 <p>设置了updater之后，每一帧在运行时都会调用传入的函数来更新当前物体，所以传入的函数的参数为一个物体，没有返回值，在函数内部调用这个物体的方法来维护属性</p>
-<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>15
-16
-17
-18
-19
-20
-21</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">square</span><span class="p">,</span> <span class="n">decimal</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">square</span><span class="p">,</span> <span class="n">decimal</span><span class="p">)</span>
 <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
     <span class="n">square</span><span class="o">.</span><span class="n">to_edge</span><span class="p">,</span> <span class="n">DOWN</span><span class="p">,</span>
     <span class="n">rate_func</span><span class="o">=</span><span class="n">there_and_back</span><span class="p">,</span>
@@ -518,7 +518,7 @@ $ <span class="c1"># manim example_scenes.py SquareToCircle -p # 通过pypi安�
         <span class="n">title</span> <span class="o">=</span> <span class="n">TextMobject</span><span class="p">(</span><span class="s2">"This is some </span><span class="se">\\</span><span class="s2">LaTeX"</span><span class="p">)</span> <span class="c1"># 文字</span>
         <span class="n">basel</span> <span class="o">=</span> <span class="n">TexMobject</span><span class="p">(</span>                         <span class="c1"># 公式</span>
             <span class="s2">"</span><span class="se">\\</span><span class="s2">sum_{n=1}^</span><span class="se">\\</span><span class="s2">infty "</span>
-            <span class="s2">"</span><span class="se">\\</span><span class="s2">frac{1}{n^2} = </span><span class="se">\\</span><span class="s2">frac{</span><span class="se">\\</span><span class="s2">pi^2}{6}"</span>
+            <span class="s2">"</span><span class="se">\\</span><span class="s2">frac</span><span class="si">{1}</span><span class="s2">{n^2} = </span><span class="se">\\</span><span class="s2">frac{</span><span class="se">\\</span><span class="s2">pi^2}</span><span class="si">{6}</span><span class="s2">"</span>
         <span class="p">)</span>
         <span class="n">VGroup</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">basel</span><span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">)</span>          <span class="c1"># 集合到一起后排列位置</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span>
