@@ -6,7 +6,7 @@ ManimGL 教程文档
 这些文档基于 `3b1b/manim 存储库 <https://github.com/3b1b/manim>`_ 的 `master 分支 <https://github.com/3b1b/manim/>`_ 。
 是这个 `官方文档 <https://3b1b.github.io/manim/>`_ 的中文版本。
 
-常见问题详见 `FAQ <https://manim-mk.netlify.app/problems/manimgl>`_
+常见问题详见 `FAQ <https://manim.org.cn/problems/manimgl>`_
 
 旧版 manim（即 cairo-backend ）的文档链接： `docs.manim.org.cn/cairo-backend <https://docs.manim.org.cn/cairo-backend>`__ 。
 

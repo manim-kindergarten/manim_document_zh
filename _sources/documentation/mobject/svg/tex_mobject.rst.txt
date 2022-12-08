@@ -7,11 +7,13 @@ Tex
 转换为物体，实现添加文字/公式的效果。
 
 关于 :class:`~manimlib.mobject.svg.tex_mobject.Tex` 和 :class:`~manimlib.mobject.svg.tex_mobject.TexText`
-的区别，还有 ``LaTeX`` 发行版安装和文字字体问题，常见问题中有更详细的解答（由于原来的删了，先拿自己部署的顶上）：
+的区别，还有 ``LaTeX`` 发行版安装和文字字体问题，常见问题中有更详细的解答：
 
-- `manim常见问题：LaTeX问题 <https://my-notes-rho.vercel.app/manim/manimgl_markdown/manimgl.html#_2-2-%E9%97%AE%E9%A2%98>`__
-- `manim常见问题：中文显示问题 <https://my-notes-rho.vercel.app/manim/manimgl_markdown/manimgl.html#q1-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E4%B8%AD%E6%96%87>`__
-- `manim常见问题：文字问题 <https://my-notes-rho.vercel.app/manim/manimgl_markdown/manimgl.html#_2-6-%E6%96%87%E5%AD%97%E9%97%AE%E9%A2%98>`__
+- `manimgl 常见问题：LaTeX 问题 <https://manim.org.cn/problems/manimgl#%F0%9F%93%8C-2.2-latex-%E9%97%AE%E9%A2%98>`__
+- `manimgl 常见问题：dvisvgm 问题 <https://manim.org.cn/problems/manimgl#2.3-dvisvgm-%E9%97%AE%E9%A2%98>`__
+- `manim 常见问题：LaTeX 问题 <https://manim.org.cn/problems/manim-cairo#2.2.-latex-%E9%97%AE%E9%A2%98>`__
+- `manim 常见问题：中文显示问题 <https://manim.org.cn/problems/manim-cairo#2.4.-%E4%B8%AD%E6%96%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98>`__
+- `manim 常见问题：文字问题 <https://manim.org.cn/problems/manim-cairo#2.5.-%E6%96%87%E5%AD%97%E9%97%AE%E9%A2%98>`__
 
 MK做了一个关于常用 :class:`~manimlib.mobject.svg.tex_mobject.Tex` 和 :class:`~manimlib.mobject.svg.tex_mobject.TexText` 的视频（该视频适用于旧版，但新版也能凑合着看）：
 `〔manim教程〕第四讲 SVG、图片与文字  <https://www.bilibili.com/video/BV1CC4y1H7kp>`__
